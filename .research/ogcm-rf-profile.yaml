@@ -1,0 +1,87 @@
+profile_schema_version: "1.0"
+
+implementation:
+  research_id: R-022
+  repository: "ArazSaieArasi3/SemRisk"
+  profile_status: active
+
+framework:
+  name: OGCM-RF
+  framework_ref: "commit:4c6994bc28736cb2100fab7ee8ac8e4e6e773b77"
+  conformance_level: not_assessed
+
+semantic_scope:
+  semantic_source_of_truth: "Future governed SemRisk concept/relation/domain registries and ontology/source/modules; W0/W1 source-mining and reconciliation artifacts are evidence, not yet canonical semantics"
+  core_boundary: "Domain-general risk semantics reusable across organizational and domain-specific contexts; Enterprise and Architecture are first application profiles; Health is the first broad domain priority; Pharma is an early bounded specialization linked to CM-PharmE"
+  extensions:
+    - "Enterprise"
+    - "Architecture"
+    - "Health"
+    - "Pharma"
+    - "Governance"
+    - "Security"
+    - "Finance"
+    - "SupplyChain"
+    - "News"
+    - "AI"
+    - "Environment"
+  historical_or_superseded: []
+
+modeling:
+  foundational_ontology: [UFO, gUFO]
+  conceptual_modeling_language: [OntoUML]
+  ontology_languages: [OWL, RDF, Turtle]
+  constraint_languages: [SHACL]
+  canonical_serialization: "Not yet declared; formalization is blocked until source-complete reconciliation and foundational-analysis gates"
+
+identity_and_release:
+  ontology_iri: ""
+  persistent_iri_status: "not yet declared"
+  current_semantic_release: "none"
+  development_state: "W0 governance/evidence architecture; W1 source-complete mining planned"
+  release_manifest: "none"
+
+traceability:
+  concept_registry: "planned after Source Completeness Gate"
+  relation_registry: "planned after Source Completeness Gate"
+  domain_or_module_registry: "docs/research/domain-profile-roadmap.md; canonical registry planned after reconciliation"
+  competency_questions: "candidate conference CQs in Issue #7; canonical CQ registry planned after source-mining synthesis"
+  evidence_provenance: "conceptualization/source-mining/ plus literature/ and datasets/ governed registries planned in W0/W1"
+  mappings: "closest-ontology/standard/framework mappings, operational spreadsheet mappings, CM-PharmE bridge and dataset mappings planned before formal release"
+
+validation_and_evaluation:
+  selected_layers: [E1, E2, E3, E4, E5, E6, E7, E8, E9, E10, E11]
+  reasoning: "HermiT/ROBOT planned after OWL formalization; no early consistency claim"
+  shacl_or_constraints: "planned after conceptual and OWA-vs-constraint separation"
+  cq_regression: "planned for Paper 1 release candidate"
+  comparative_or_expert: "E10 closest-work/method comparison required for Paper 1; bounded expert/semantic validation planned if feasible and claim-relevant"
+  reproducibility: "source coverage, mapping provenance, exact ontology/evaluation state, tool versions, queries and publication binding planned"
+
+publication_bindings: []
+
+portfolio_integration:
+  manifest: ".research/manifest.yaml"
+
+ci_execution_governance:
+  generic_policy: "ArazSaieArasi3/araz-research-portfolio/governance/ci-execution-governance.md"
+  semantic_profile: "ArazSaieArasi3/OGCM-RF/framework/semantic-ci-execution-profile.md"
+  adoption_status: staged
+  automatic_workflows: []
+  authoritative_gates: []
+  semantic_source_paths: []
+  expensive_gate_policy: "Do not add heavy semantic CI before canonical ontology/constraints/validators exist; when they do, use one change-aware development path and SHA-bound authoritative release/publication gates"
+  evidence_binding: "SHA-bound"
+  deviations: []
+
+adoption:
+  deviations:
+    - "Paper 1 uses a conference-time bounded SemRisk subset while the comprehensive ontology program remains a longer-lived Research; publication claims must be bound to the exact evaluated subset/release."
+  deferred_capabilities:
+    - "persistent IRI"
+    - "canonical modular formal ontology"
+    - "full Health profile"
+    - "full Pharma profile"
+    - "Risk Intelligence Platform"
+    - "knowledge graph and Newsium/Commentium runtime integration"
+  last_reviewed: "2026-08-29"
+  notes: "SemRisk adopts OGCM-RF Exhaustive Source Mining as a hard pre-formalization gate and the E1-E11 claim-dependent evaluation framework. Domain labels follow the no-and/no-ampersand naming convention."
