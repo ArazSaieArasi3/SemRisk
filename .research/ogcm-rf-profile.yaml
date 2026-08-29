@@ -11,8 +11,8 @@ framework:
   conformance_level: not_assessed
 
 semantic_scope:
-  semantic_source_of_truth: "Future governed SemRisk concept/relation/domain registries and ontology/source/modules; W0/W1 source-mining and reconciliation artifacts are evidence, not yet canonical semantics"
-  core_boundary: "Domain-general risk semantics reusable across organizational and domain-specific contexts; Enterprise and Architecture are first application profiles; Health is the first broad domain priority; Pharma is an early bounded specialization linked to CM-PharmE"
+  semantic_source_of_truth: "Future governed SemRisk concept/relation/module registries plus ontology/source/modules after G1/G2; W0/W1 source-mining artifacts remain evidence rather than canonical semantics"
+  core_boundary: "Domain-general risk semantics reusable across organizational and domain-specific contexts; Enterprise and Architecture are first application profiles; Health is the first broad domain priority; Pharma is the first bounded specialization linked to CM-PharmE"
   extensions:
     - "Enterprise"
     - "Architecture"
@@ -32,30 +32,30 @@ modeling:
   conceptual_modeling_language: [OntoUML]
   ontology_languages: [OWL, RDF, Turtle]
   constraint_languages: [SHACL]
-  canonical_serialization: "Not yet declared; formalization is blocked until source-complete reconciliation and foundational-analysis gates"
+  canonical_serialization: "Not yet declared; formalization remains blocked until G1 source completeness, W2 reconciliation and foundational analysis"
 
 identity_and_release:
   ontology_iri: ""
   persistent_iri_status: "not yet declared"
   current_semantic_release: "none"
-  development_state: "W0 governance/evidence architecture; W1 source-complete mining planned"
+  development_state: "W1 exhaustive source mining active; operational source complete; literature/standards/ontology/dataset mining active"
   release_manifest: "none"
 
 traceability:
-  concept_registry: "planned after Source Completeness Gate"
-  relation_registry: "planned after Source Completeness Gate"
-  domain_or_module_registry: "docs/research/domain-profile-roadmap.md; canonical registry planned after reconciliation"
-  competency_questions: "candidate conference CQs in Issue #7; canonical CQ registry planned after source-mining synthesis"
-  evidence_provenance: "conceptualization/source-mining/ plus literature/ and datasets/ governed registries planned in W0/W1"
-  mappings: "closest-ontology/standard/framework mappings, operational spreadsheet mappings, CM-PharmE bridge and dataset mappings planned before formal release"
+  concept_registry: "planned after G1 Source Completeness; source-specific candidate registries currently under conceptualization/source-mining/"
+  relation_registry: "planned after G1; source-specific relation/event/state evidence currently being extracted"
+  domain_or_module_registry: "docs/research/domain-profile-roadmap.md; canonical module/profile registry planned after reconciliation"
+  competency_questions: "candidate conference CQs in Issue #7; canonical CQ registry planned after G1/G2"
+  evidence_provenance: "conceptualization/source-mining/source-register.csv plus source-specific coverage/concept artifacts, literature/ and datasets/"
+  mappings: "closest-work/standards mappings in W1/W2; operational source mapping active; CM-PharmE bridge and dataset mappings before Paper-1 release"
 
 validation_and_evaluation:
   selected_layers: [E1, E2, E3, E4, E5, E6, E7, E8, E9, E10, E11]
   reasoning: "HermiT/ROBOT planned after OWL formalization; no early consistency claim"
   shacl_or_constraints: "planned after conceptual and OWA-vs-constraint separation"
-  cq_regression: "planned for Paper 1 release candidate"
+  cq_regression: "planned for Paper-1 release candidate"
   comparative_or_expert: "E10 closest-work/method comparison required for Paper 1; bounded expert/semantic validation planned if feasible and claim-relevant"
-  reproducibility: "source coverage, mapping provenance, exact ontology/evaluation state, tool versions, queries and publication binding planned"
+  reproducibility: "source coverage, SHA-bound operational input, dataset/PID/version records, mappings, queries, tool versions and publication binding planned"
 
 publication_bindings: []
 
@@ -75,7 +75,7 @@ ci_execution_governance:
 
 adoption:
   deviations:
-    - "Paper 1 uses a conference-time bounded SemRisk subset while the comprehensive ontology program remains a longer-lived Research; publication claims must be bound to the exact evaluated subset/release."
+    - "Paper 1 uses a conference-time bounded SemRisk subset while the comprehensive ontology program remains a longer-lived Research; publication claims must bind to the exact evaluated subset/release."
   deferred_capabilities:
     - "persistent IRI"
     - "canonical modular formal ontology"
@@ -84,4 +84,4 @@ adoption:
     - "Risk Intelligence Platform"
     - "knowledge graph and Newsium/Commentium runtime integration"
   last_reviewed: "2026-08-29"
-  notes: "SemRisk adopts OGCM-RF Exhaustive Source Mining as a hard pre-formalization gate and the E1-E11 claim-dependent evaluation framework. Domain labels follow the no-and/no-ampersand naming convention."
+  notes: "SemRisk adopts OGCM-RF Exhaustive Source Mining as a hard pre-formalization gate and E1-E11 claim-dependent evaluation. The exact Jira operational source is now SHA-bound and fully mined. Semantic CI remains staged until canonical semantic inputs and real validators exist. Domain labels follow the no-and/no-ampersand naming convention."
