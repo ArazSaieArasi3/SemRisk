@@ -1,149 +1,164 @@
 # ICAEA 2026 — SemRisk Paper 1
 
-**Status:** manuscript planning baseline  
+**Status:** manuscript planning baseline — title deliberately not frozen  
 **Target format:** IEEE conference format  
 **Target venue:** ICAEA 2026  
+**Planning envelope:** maximum **8 content pages**; exact conference/template rule must be reverified before final freeze  
 **Submission deadline:** 2026-09-25
 
-## Working title
+## Title status
 
-**SemRisk: An Ontology-Grounded Enterprise Risk Register for Architecture-Driven Risk Governance and Resilience**
+The title is **TBD**. It must represent the approved content framing rather than reducing SemRisk to a Risk Register.
 
-Alternative short title:
+Current title direction:
 
-**SemRisk-RR: Ontology-Grounded Risk Registers for Architecture-Driven Resilience**
+> **SemRisk: [Core / Domain-Extensible Risk Ontology] for Enterprise / Architecture-Driven Risk Governance — [Pharmaceutical Ecosystem Application / Case Study]**
+
+The exact wording will be selected after the evidence/contribution gate.
 
 ## Paper role in the SemRisk research programme
 
-This paper is the **first bounded publication** of the SemRisk programme. It must not attempt to publish the entire comprehensive ontology network in six pages.
+Paper 1 is the first bounded publication of a longer-lived **comprehensive, domain-extensible SemRisk ontology programme**.
 
-The paper should introduce and evaluate the subset needed to demonstrate:
+The paper's scientific story is:
 
-1. semantic separation of risk phenomena, scenarios, records, assessments, assessment results, treatments and workflow states;
-2. Enterprise Architecture linkage to objectives, capabilities, processes, controls and accountable actors;
-3. executable mapping of an operational Jira-style Risk Register;
-4. a bounded Health/Pharma scenario connected to CM-PharmE;
-5. an initial reproducible evaluation package.
+**risk-semantic fragmentation → reusable Core Risk Ontology → Enterprise/Architecture application → operational evidence mapping → Pharmaceutical/CM-PharmE case and data-grounded evaluation.**
 
-## Research questions
+A Risk Register is therefore one important operational evidence source and validation artifact, **not the identity of the ontology or the paper**.
 
-### RQ1
-How can conventional enterprise Risk Register constructs be ontologically disambiguated to separate risk phenomena, scenario descriptions, register records, assessment activities, assessment results, treatments and workflow states?
+Knowledge-graph construction, dynamic Risk Intelligence, and Newsium/Commentium runtime integration are intentionally reserved for later work unless a small semantic hook is needed to preserve forward compatibility.
 
-### RQ2
-How can ontology-grounded risk knowledge be connected to Enterprise Architecture elements so that risk governance can trace potential impacts to objectives, capabilities, processes and controls?
+## Candidate research questions — provisional
 
-### RQ3
-To what extent can the proposed SemRisk profile represent and validate a real Jira-style Risk Register schema and a bounded Health/Pharma risk scenario using executable semantic artifacts?
+### RQ1 — Core semantics
+How can a well-founded and domain-extensible Core Risk Ontology integrate heterogeneous risk concepts while preserving distinctions among risk phenomena, events, scenarios, assessments, assessment results, evidence, controls, treatments, responsibility and records?
 
-## Candidate contribution statements
+### RQ2 — Enterprise application
+How can the SemRisk Core be specialized for enterprise and architecture-driven risk governance by connecting risk knowledge to objectives, capabilities, processes, controls and accountable actors?
 
-### C1 — Operational semantic disambiguation
-A well-founded pattern for distinguishing the managed risk phenomenon from information artifacts and management activities used to describe, assess and track it.
+### RQ3 — Pharma case and evaluation
+To what extent can SemRisk represent and validate heterogeneous operational risk evidence and a pharmaceutical-ecosystem case, including traceable mappings to CM-PharmE and selected public pharmaceutical datasets/standards?
 
-### C2 — Architecture binding
-A semantic linkage pattern connecting risk knowledge to enterprise objectives, capabilities, processes, controls and accountable actors.
+## Candidate contributions — provisional
 
-### C3 — Executable demonstration
-A mapping from a real operational Risk Register to SemRisk, evaluated using ontology validation, SHACL, competency questions and a bounded Health/Pharma case.
+### C1 — Evidence-grounded Core Risk Ontology
+A reusable Core constructed through source-complete mining and reconciliation of operational data, literature, standards/frameworks, existing ontologies and datasets rather than a single-source class list.
+
+### C2 — Enterprise / Architecture specialization
+A formalized application profile that links risk semantics to enterprise objectives, capabilities, processes, controls and responsibility while keeping the Core reusable outside enterprise contexts.
+
+### C3 — Pharmaceutical specialization and empirical mapping
+A bounded Pharma/Health demonstration that preserves CM-PharmE ontological categories, uses pharmaceutical risk evidence/standards and maps selected public datasets into SemRisk for data/mapping validation.
+
+### C4 — Comparative and multilayer evaluation
+A claim-dependent evaluation package covering the applicable OGCM-RF E1–E11 layers, with particular emphasis on ontological soundness, data/standard mappings, competency questions, comparative state-of-the-art evaluation and transferability.
+
+## Evidence strategy
+
+The repository may conduct a substantially broader literature/evidence programme than can be reported in eight pages. The manuscript will report only the evidence needed to justify the paper claims, while the repository preserves:
+
+- exact review/search protocol;
+- source inventory and coverage records;
+- raw source-term extraction;
+- semantic disposition/reconciliation;
+- DOI/persistent-ID dataset registry;
+- standards/framework extraction;
+- ontology/model landscape profiles;
+- concept/relation provenance;
+- comparative matrices;
+- evaluation evidence.
+
+OGCM-RF Exhaustive Source Mining is a **pre-formalization gate**: the canonical Core, module boundaries and formal axioms must not be frozen from partial extraction.
+
+## Operational spreadsheet evidence
+
+The originally referenced `jira risk attributes.xlsx` remains a designated primary operational source, but the exact file is currently unresolved in accessible File Library search and must be rebound/reuploaded if necessary before source-complete mining is declared complete.
+
+Related Health Neobank risk/control/safety spreadsheets may be mined as **additional independent operational/Health sources**, not as substitutes for the Jira file.
 
 ## CM-PharmE relationship
 
-The paper should explicitly cite **CM-PharmE ver.1: Towards a Conceptual Model for Pharmaceutical Ecosystem with a Business-Architecture Perspective** as prior work providing the pharmaceutical ecosystem conceptual foundation.
+The paper should cite the published **CM-PharmE ver.1: Towards a Conceptual Model for Pharmaceutical Ecosystem with a Business-Architecture Perspective** and bind the case to an exact CM-PharmE semantic state.
 
-The new contribution is not a replacement for CM-PharmE. SemRisk provides a reusable risk semantic layer that can be connected to CM-PharmE entities while preserving their ontological categories.
+SemRisk does not replace CM-PharmE. It supplies reusable risk semantics that can connect to CM-PharmE kinds, roles, modes, relators and perdurants without flattening them into generic objects.
 
-The case should preferably use a risk scenario that crosses enterprise architecture, pharmaceutical ecosystem structure and health consequences.
+### Preferred primary Pharma case candidate
 
-### Preferred case candidate
+**Pharmaceutical supply disruption → medicine availability risk → healthcare/patient impact**
 
-**Medicine availability disruption caused by pharmaceutical supply-capacity or supplier disruption**
+This case is currently preferred because it can simultaneously test:
 
-Candidate chain:
+- generic risk causality and assessment;
+- Enterprise/Architecture linkage;
+- CM-PharmE ecosystem actors, supply capacity, processes and governance;
+- risk control/treatment and inherent/residual assessment;
+- public pharmaceutical supply/shortage data where a suitable qualified dataset is selected.
 
-```text
-External / supplier condition
-    -> disruption event
-    -> reduced pharmaceutical supply capacity
-    -> medicine shortage / availability impact
-    -> healthcare delivery impact
-    -> patient-related consequence
-```
+A secondary pharmacovigilance/adverse-event dataset may be used for transferability if it adds a distinct E11 test without overloading Paper 1.
 
-This case is attractive because it can connect:
+## Section plan — 8-page planning envelope
 
-- enterprise objective and capability impact;
-- CM-PharmE ecosystem actors / supply relationships / processes;
-- Health consequences;
-- risk treatment and controls;
-- inherent vs residual assessment;
-- future Newsium external-signal integration without making Newsium part of Paper 1 implementation.
-
-## Section plan and page discipline
-
-| Section | Purpose | Indicative space |
+| Section | Purpose | Target range |
 |---|---|---:|
-| I. Introduction | problem, gap, contributions | 0.7 page |
-| II. Background / Related Work | COVER, ROSE, ISO/COSO, EA, risk-register/KG work | 0.8 page |
-| III. Method | evidence, conceptualization, OGCM-RF-derived engineering | 0.6 page |
-| IV. SemRisk Model | semantic distinctions + architecture links | 1.3 pages |
-| V. Operational Mapping / Case | Jira mapping + Health/Pharma scenario | 1.0 page |
-| VI. Evaluation | logic, SHACL, CQs, mapping coverage | 0.8 page |
-| VII. Discussion / Conclusion | limitations, comprehensive SemRisk direction, Risk Intelligence future | 0.5 page |
+| I. Introduction | problem, gap, contributions | 0.7–0.9 page |
+| II. Related Work | closest ontologies/models/standards and precise gap | 0.8–1.0 page |
+| III. Research Method | review/source-mining, reconciliation, foundational analysis, formalization | 0.8–1.0 page |
+| IV. SemRisk Core | key concepts, relations, distinctions and modular architecture | 1.4–1.7 pages |
+| V. Enterprise Application | objectives/capabilities/processes/controls/responsibility + operational mapping | 0.8–1.0 page |
+| VI. Pharma Case / Data Mapping | CM-PharmE bridge + selected dataset(s) | 0.9–1.1 page |
+| VII. Evaluation | E1–E11 selected evidence, comparison, transferability | 1.0–1.2 pages |
+| VIII. Discussion / Conclusion | contribution boundary, limitations, future programme | 0.4–0.6 page |
 
-The exact page budget must be rechecked against the conference template and references.
+References and exact template behavior must be verified before the final page budget is frozen.
 
-## Required visual artifacts
+## High-value manuscript tables/figures
 
-1. **Figure A — Semantic separation pattern**
-   - risk phenomenon / scenario / record / assessment / result / treatment / workflow state.
+Priority order under page pressure:
 
-2. **Figure B — Architecture-linked risk knowledge**
-   - objective / capability / process / control / accountable actor.
+1. **Figure — SemRisk Core and profile architecture**
+2. **Figure — Enterprise/Pharma case semantic chain**
+3. **Table — SemRisk vs closest ontologies/models**
+4. **Table — source-to-concept / standard / dataset traceability sample**
+5. **Table — multilayer evaluation results**
+6. **Table — ontology-development/evaluation method comparison** if space permits; full version remains in repository
 
-3. **Table A — Closest-work comparison**
-   - COVER/ROSE, ISO/COSO, Risk Register KG, health-specific ontology example, SemRisk.
+## Evaluation target
 
-4. **Table B — Jira mapping or evaluation summary**
-   - chosen according to page pressure.
+Paper 1 plans a claim-dependent subset of **E1–E11**:
 
-## Evaluation minimum
+- E1 syntax;
+- E2 logical consistency/profile reasoning;
+- E3 structural integrity;
+- E4 UFO/OntoUML/ontological soundness;
+- E5 bounded semantic/expert validation where feasible;
+- E6 operational spreadsheet, standard and pharmaceutical dataset mapping validation;
+- E7 executable competency questions;
+- E8 meaningful mapping/query task utility, not merely visualization;
+- E9 reproducibility and exact release/publication binding;
+- E10 direct criterion-based comparison with closest ontologies/models/methods;
+- E11 transferability across at least heterogeneous operational and Pharma evidence if justified by the final claim.
 
-- RDF/Turtle syntax validity;
-- logical consistency check;
-- structural inventory;
-- mapping coverage for the Jira schema;
-- SHACL validation;
-- executable competency questions;
-- bounded application/query demonstration;
-- reproducible release binding.
+## Explicit Paper 1 non-scope
 
-## Explicit limitations
+- full Risk Intelligence Platform;
+- knowledge-graph contribution as a research claim;
+- Newsium/Commentium runtime integration;
+- dynamic risk propagation/forecasting;
+- universal completeness claim across all risk domains;
+- full implementation of every planned SemRisk profile.
 
-Paper 1 does not claim:
-
-- complete coverage of all risk domains;
-- a complete Health ontology;
-- completed Newsium/Commentium integration;
-- real-time autonomous risk prediction;
-- full validation of every future SemRisk module.
-
-## Immediate dependencies
-
-- Issue #1 — contribution freeze
-- Issue #2 — Jira mapping
-- Issue #3 — SemRisk Core inventory
-- Issue #4 — Health evidence baseline
-- Issue #5 — CM-PharmE bridge
-- Issue #7 — competency questions / evaluation
+These remain part of the wider research programme and Paper 2 roadmap.
 
 ## Manuscript freeze checks
 
 Before submission:
 
-- rerun closest-work search;
-- verify novelty wording;
-- cite the exact CM-PharmE publication and release used;
-- bind manuscript to SemRisk ontology/evaluation artifact version;
-- verify IEEE formatting and page limit;
+- rerun closest-work search and citation chaining;
+- confirm source-completeness status for the conference claim boundary;
+- verify all DOI/persistent identifiers and dataset licenses/access;
+- finalize title only after contribution/evaluation evidence is stable;
+- cite exact CM-PharmE publication and semantic release/state;
+- bind manuscript to exact SemRisk ontology/evaluation SHA or release;
+- verify IEEE formatting and actual ICAEA page rule;
+- execute novelty/claim audit against E10 comparative matrix;
 - record the conference-required generative-AI disclosure as applicable.
