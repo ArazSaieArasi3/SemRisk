@@ -1,0 +1,84 @@
+schema_version: "1.1"
+
+template:
+  id: research-manifest
+  version: "1.1.0"
+
+research:
+  id: R-022
+  title: "SemRisk — Comprehensive Cross-Domain Risk Ontology"
+  short_name: "SemRisk"
+  primary_program: P1
+  research_line_id: P1-L6
+  research_line: "Cross-Domain Foundational Semantics"
+  cross_program_bridges: [P2, P3, P5]
+  lifecycle_status: Active
+  priority: A
+
+repository:
+  name: "SemRisk"
+  url: "https://github.com/ArazSaieArasi3/SemRisk"
+  default_branch: main
+  visibility: private
+
+portfolio_bindings:
+  publications: []
+  artifacts: []
+  products: []
+
+methodology:
+  portfolio:
+    repository: "https://github.com/ArazSaieArasi3/araz-research-portfolio"
+    manifest_contract: "1.1"
+  ogcm_rf:
+    enabled: true
+    framework_ref: "commit:4c6994bc28736cb2100fab7ee8ac8e4e6e773b77"
+    implementation_profile: ".research/ogcm-rf-profile.yaml"
+  methods:
+    - "Portfolio Research Execution and Decision-Gate Workflow"
+    - "Portfolio Literature Review Evidence Repository Pattern"
+    - "Systematic mapping / scoping plus structured comparative review as claim-appropriate"
+    - "OGCM-RF Exhaustive Source Mining"
+    - "OGCM-RF Landscape Alignment Procedure"
+    - "OGCM-RF review-to-ontology evidence handoff"
+    - "OGCM-RF ontology/conceptual-model research-engineering profile"
+    - "UFO/gUFO and OntoUML foundational analysis"
+    - "Claim-dependent OGCM-RF multilayer evaluation E1-E11"
+
+execution:
+  current_wave: "W0 — Governance, evidence architecture and conference control"
+  current_workstream: "Source-complete evidence planning, closest-work control and ICAEA contribution framing"
+  next_gate:
+    name: "Source Completeness and Conference Contribution Gate"
+    criteria: "Material source families are registered; conference-relevant sources have coverage plans; closest-work and standards decisions are traceable; operational spreadsheets and Pharma evidence have governed source loci; Paper 1 claims remain bounded to evidence; canonical Core conceptualization and formalization remain blocked until source-complete reconciliation reaches the required threshold."
+  next_action: "Establish source/evidence registries and review protocol; execute source-complete mining of operational risk spreadsheets, closest ontologies, standards/frameworks, risk literature and Pharma evidence; then reconcile candidates before freezing SemRisk Core v0.1."
+
+progress:
+  problem_framing: in_progress
+  evidence_base: in_progress
+  literature_review: in_progress
+  conceptualization: planned
+  data: in_progress
+  artifact_design: in_progress
+  implementation: not_started
+  evaluation: planned
+  manuscript: in_progress
+  reproducibility: in_progress
+  publication: planned
+
+verification:
+  last_verified: "2026-08-29"
+  evidence_basis:
+    - "Araz Research Portfolio R-022 registry identity and classification"
+    - "SemRisk repository verified on 2026-08-29"
+    - "SemRisk novelty/alignment baseline and domain-profile roadmap"
+    - "OGCM-RF Exhaustive Source Mining standard"
+    - "OGCM-RF current E1-E11 evaluation framework"
+    - "Araz Research Portfolio literature-review workflow"
+    - "Existing CM-PharmE, Newsium and Commentium repository evidence"
+  coherence_debt:
+    - "Portfolio R-022 registry still needs repository/state synchronization to the newly created SemRisk repository."
+    - "The originally referenced Jira risk-attributes spreadsheet is not currently resolvable by exact filename in the accessible File Library search and must be rebound/reuploaded if needed for source-complete mining."
+    - "Paper 1 title is deliberately provisional and must not be frozen before the contribution/evidence gate."
+    - "No canonical SemRisk Core concept inventory or formal ontology is yet authorized; source completeness and reconciliation come first."
+  note: "SemRisk is a domain-general comprehensive risk-ontology Research. Enterprise/Architecture is the first application emphasis; Health is the first broad domain priority; Pharma is the first bounded specialization/case linked to CM-PharmE. Knowledge-graph and Risk Intelligence implementation are deferred beyond Paper 1."
