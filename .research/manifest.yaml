@@ -32,8 +32,9 @@ methodology:
     manifest_contract: "1.1"
   ogcm_rf:
     enabled: true
-    framework_ref: "commit:4c6994bc28736cb2100fab7ee8ac8e4e6e773b77"
+    framework_ref: "commit:4f2615dd76c302e080e69058f6237c0f82d56c4c"
     implementation_profile: ".research/ogcm-rf-profile.yaml"
+    semantic_dependencies: "semantic-dependencies.yaml"
   methods:
     - "Portfolio Research Execution and Decision-Gate Workflow"
     - "Portfolio Literature Review Evidence Repository Pattern"
@@ -47,11 +48,11 @@ methodology:
 
 execution:
   current_wave: "W1 — Exhaustive Source Mining"
-  current_workstream: "Operational evidence complete; standards, closest ontologies, Pharma literature and dataset qualification active"
+  current_workstream: "W0 governance-contract refresh completed; publication and study-design freeze (#38/#39/#1) precede continuation of broad W1 execution"
   next_gate:
     name: "G1 — Source Completeness and Cross-Source Reconciliation"
     criteria: "All material source families for the Paper-1 claim boundary have governed coverage/extraction; every extracted item is dispositioned; conflicts and source deltas are explicit; canonical Core/UL/module/foundational/formal commitments remain blocked until the applicable source-completeness boundary passes."
-  next_action: "Continue deep mining of standards/frameworks, closest ontologies, uploaded risk papers, Pharma/Health literature and qualified datasets; complete CM-PharmE bridge evidence; then execute Issue #18 reconciliation before canonical Core freeze."
+  next_action: "Verify the publication venue contract (#38), freeze Paper-1 research design/evidence roles (#39), freeze RQs/contributions/nonclaims (#1), then continue reproducible search and W1 source mining through #18 G1."
 
 progress:
   problem_framing: in_progress
@@ -67,19 +68,20 @@ progress:
   publication: planned
 
 verification:
-  last_verified: "2026-08-29"
+  last_verified: "2026-09-17"
   evidence_basis:
-    - "Araz Research Portfolio R-022 registry identity and classification"
-    - "SemRisk repository verified on 2026-08-29"
-    - "OGCM-RF Portfolio Integration contract and Implementation Profile 1.0"
+    - "Araz Research Portfolio R-022 canonical state verified: repository ArazSaieArasi3/SemRisk, lifecycle Active, priority A, current wave W1 and current gate G1"
+    - "Portfolio synchronization issue #141 completed before this refresh"
+    - "OGCM-RF current main commit 4f2615dd76c302e080e69058f6237c0f82d56c4c and Ontology Repository Bootstrap/Handover Profile"
+    - "OGCM-RF Implementation Profile 1.0 and semantic-dependencies schema 1.0"
     - "SemRisk exhaustive source-mining protocol and evidence vocabulary"
     - "SRC-OP-001 exact user-supplied Jira risk spreadsheet mining: 27/27 attributes, 121 raw records"
     - "Verified COVER, ROSE, AIRO and RISKMAN technical baselines"
     - "Verified ISO 31000/31073, IEC 31010 and ICH Q9(R1) authority/version baselines"
     - "Pharmaceutical risk evidence and DOI/PID dataset qualification work"
   coherence_debt:
-    - "Portfolio R-022 registry still needs canonical repository/state synchronization through Portfolio Issue #141."
-    - "Paper 1 title is deliberately provisional and must not be frozen before the contribution/evidence gate."
+    - "Paper-1 venue identity/deadline/template assumptions require authoritative refresh under Issue #38 before publication planning can be treated as current."
     - "No canonical SemRisk Core concept inventory or formal ontology is yet authorized; G1 source completeness and reconciliation come first."
+    - "External semantic dependencies such as COVER, ROSE and CM-PharmE require exact immutable release/commit binding before release-bound reuse/mapping claims."
     - "Several dataset/artifact licenses and exact versions remain to be qualified before publication binding."
-  note: "The previous blocker on `jira risk attributes.xlsx` is resolved: the exact user-supplied file has been SHA-bound and exhaustively mined. SemRisk remains a domain-general comprehensive risk-ontology Research. Enterprise/Architecture is the first application emphasis; Health is the first broad domain priority; Pharma is the first bounded specialization/case linked to CM-PharmE. Knowledge-graph and Risk Intelligence implementation remain deferred beyond Paper 1."
+  note: "Portfolio↔SemRisk identity synchronization is current as of 2026-09-17. The previous Jira spreadsheet blocker remains resolved and the exact source is SHA-bound and mined. SemRisk remains a domain-general comprehensive risk-ontology Research. Enterprise/Architecture is the first application emphasis; Health is the first broad domain priority; Pharma is the first bounded specialization/case linked to CM-PharmE. Knowledge-graph and Risk Intelligence implementation remain deferred beyond Paper 1. Formal OGCM-RF conformance remains not_assessed until an explicit requirement-by-requirement assessment is executed."
