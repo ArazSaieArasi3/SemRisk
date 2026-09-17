@@ -1,7 +1,7 @@
 # SemRisk Paper 1 — ICAE 2026 Venue Contract
 
 **Verified:** 2026-09-17  
-**Contract status:** CONDITIONAL PASS — venue is current/feasible, but official submission timezone is not stated and IEEE Xplore inclusion remains pending final approval/quality review.
+**Contract status:** CONDITIONAL PASS — venue is current/feasible, but official submission timezone is not stated, selected policy details are not explicitly published on the checked pages, and IEEE Xplore inclusion remains pending final approval/quality review.
 
 ## Canonical venue identity
 
@@ -44,6 +44,14 @@ For internal execution only, SemRisk uses a conservative safety cutoff of **2026
 - Initial submission must be anonymized for double-blind review.
 - At least one author/designated substitute must present; no-show papers are not submitted for publication/indexing.
 
+## Policies not explicitly resolved on the checked official pages
+
+- **Submission timezone/time-of-day:** not stated.
+- **Generative-AI assisted writing disclosure:** no explicit ICAE-specific rule was found on the checked official pages; final submission must follow any rule exposed by EDAS/IEEE/organizer at submission time and must not infer that silence means unrestricted use.
+- **Supplementary-material policy:** not explicitly stated on the checked official pages; supplementary artifacts should remain repository-hosted/release-bound unless ICAE/EDAS exposes an approved channel.
+
+These are controlled as `NOT_STATED / RECHECK_REQUIRED`, not as PASS.
+
 ## Publication / indexing status
 
 The official site states that ICAE 2026 is technically co-sponsored by **IEEE Indonesia Section** and that accepted papers within IEEE's scope are intended to be submitted for consideration to **IEEE Xplore**, subject to final approval, sponsorship agreement and IEEE quality/scope review.
@@ -75,6 +83,7 @@ The previous `publications/2026-icaea/` material is therefore historical plannin
 4. Abstract/conclusion may not claim guaranteed IEEE Xplore/Scopus indexing.
 5. The exact EDAS deadline/timezone must be rechecked before final submission; if a materially different deadline is shown, Issue #38 and this contract must be amended.
 6. Any conference-site change to page/template/publication status triggers an impact review of #1/#32/#34/#35.
+7. AI-disclosure and supplementary-material handling remain recheck items until the organizer/EDAS publishes an explicit rule.
 
 ## Gate decision
 
@@ -84,4 +93,5 @@ The venue is current and the known contract is sufficiently precise to proceed w
 
 - recheck EDAS deadline time/timezone before submission;
 - keep IEEE Xplore/indexing wording explicitly conditional;
-- use the conservative 8-total-page cap until the organizer clarifies any internal wording inconsistency.
+- use the conservative 8-total-page cap until the organizer clarifies any internal wording inconsistency;
+- recheck AI-disclosure and supplementary-material rules at the final submission gate.
