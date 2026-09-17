@@ -2,6 +2,21 @@
 
 **SemRisk** is a research-first programme for developing a **comprehensive, modular and domain-extensible risk ontology** with a well-founded reusable Core and explicit application/domain profiles.
 
+## Research identity and canonical ownership
+
+- Portfolio Research ID: **R-022**.
+- Primary programme/line: **P1 / P1-L6 — Cross-Domain Foundational Semantics**.
+- `araz-research-portfolio` owns Research identity, lifecycle, priority and cross-repository governance.
+- `OGCM-RF` owns the reusable ontology-engineering, repository-federation, validation and release method adopted by this repository.
+- **SemRisk** owns risk-domain evidence, governed semantic decisions, canonical SemRisk concept/relation/module registries, SemRisk ontology artifacts, mappings, data projections, evaluation evidence and SemRisk releases.
+- External ontologies remain canonical at their owning repositories; SemRisk consumes them only through explicit imports, references, mappings or federation contracts.
+
+The machine-readable external semantic ownership/dependency contract is [`semantic-dependencies.yaml`](semantic-dependencies.yaml). Presence of Portfolio/OGCM-RF contracts does **not** by itself establish scientific validity or formal OGCM-RF conformance; `conformance_level` remains `not_assessed` until an explicit conformance assessment is executed.
+
+## Semantic source of truth
+
+During W0/W1, literature, standards, ontology baselines, operational schemas and datasets are **evidence**, not canonical SemRisk semantics. Canonical semantic authority will move only to governed SemRisk concept/relation/module registries and their formal ontology source after the applicable G1/G2 gates pass. Generated diagrams, relational schemas, catalogs, dashboards and publication figures remain projections/consumers and cannot silently become semantic source of truth.
+
 ## Current research intent
 
 SemRisk aims to provide:
@@ -16,13 +31,11 @@ SemRisk aims to provide:
 
 ## Publication strategy
 
-### Paper 1 — ICAEA 2026 conference-first
+### Paper 1 — conference-first
 
-The first target is an IEEE-format ICAEA 2026 paper. The **title is deliberately not frozen**.
+The first paper is a bounded conference contribution. The exact venue, deadline, page limit, template and publication contract are deliberately treated as **unverified until Issue #38 is completed**; stale venue assumptions must not control the research design.
 
-Paper 1 focuses on a bounded, evaluated SemRisk Core plus Enterprise/Architecture application and a pharmaceutical-ecosystem case/data evaluation. The operational Risk Register/Excel is a major source and validation artifact, but **not the identity of the paper or ontology**.
-
-The planning envelope is **up to 8 content pages**, subject to final verification against the actual conference/template rule.
+The **title is deliberately not frozen**. Paper 1 focuses on a bounded, evaluated SemRisk Core plus Enterprise/Architecture application and a pharmaceutical-ecosystem case/data evaluation. The operational Risk Register/Excel is a major source and evaluation artifact, but **not the identity of the paper or ontology**.
 
 Knowledge-graph construction, dynamic Risk Intelligence and Newsium/Commentium runtime integration are deferred from the Paper 1 contribution.
 
@@ -66,31 +79,25 @@ Formal OWL/SHACL implementation must not outrun evidence and conceptual reconcil
 
 ## Current execution state
 
-**W0 — Governance, evidence architecture and conference control**
+The canonical execution order is governed by **Issue #8** rather than GitHub issue number order.
 
-The next gate is **Source Completeness and Conference Contribution Gate**. The immediate execution sequence is:
-
-- evidence/source registry and review protocol;
-- operational spreadsheet mining;
-- standards/framework mining;
-- closest-ontology/model mining;
-- Pharma/Health literature and dataset mining;
-- reconciliation and competitive-gap audit;
-- SemRisk Core v0.1 conceptualization;
-- foundational analysis and formalization;
-- claim-dependent multilayer evaluation;
-- manuscript/release binding.
+- W0 contract refresh is current.
+- Immediate sequence: **#38 venue contract → #39 study design/evidence roles → #1 RQs/contributions/nonclaims**.
+- W1 then resumes with reproducible search and source mining.
+- The next scientific hard gate is **G1 — Source Completeness and Cross-Source Reconciliation (#18)**.
+- Canonical Core/module/foundational/formal commitments remain blocked until the applicable evidence boundary passes.
 
 ## Start here
 
 - [Novelty and Alignment Matrix](docs/research/novelty-and-alignment-matrix.md)
 - [Domain Profile Roadmap](docs/research/domain-profile-roadmap.md)
-- [ICAEA 2026 Paper Plan](publications/2026-icaea/README.md)
 - [Portfolio Manifest](.research/manifest.yaml)
 - [OGCM-RF Implementation Profile](.research/ogcm-rf-profile.yaml)
+- [Semantic Dependencies](semantic-dependencies.yaml)
+- [Canonical Backlog / Critical Path — Issue #8](https://github.com/ArazSaieArasi3/SemRisk/issues/8)
 
 ## Governing research infrastructure
 
-SemRisk is Portfolio Research **R-022**, classified under **P1 / P1-L6 — Cross-Domain Foundational Semantics**, with P2/P3/P5 bridges. Generic Research identity and publication/product/artifact governance belong to `araz-research-portfolio`; ontology/conceptual-model engineering, source-complete semantic mining, formalization, traceability, evaluation and release discipline follow OGCM-RF.
+SemRisk is Portfolio Research **R-022**, classified under **P1 / P1-L6 — Cross-Domain Foundational Semantics**, with P2/P3/P5 bridges. Generic Research identity and publication/product/artifact governance belong to `araz-research-portfolio`; reusable ontology/conceptual-model engineering, source-complete semantic mining, formalization, traceability, evaluation and release discipline follow OGCM-RF.
 
 SemRisk maintains explicit cross-Research reuse/bridge traceability to assets such as **CM-PharmE**, with Newsium and Commentium integration reserved for the later Risk Intelligence workstream.
