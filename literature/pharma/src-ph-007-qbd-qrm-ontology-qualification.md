@@ -1,44 +1,71 @@
-# SRC-PH-007 Qualification / Deep-Mining Attempt — Pharma Quality Risk Management Ontology
+# SRC-PH-007 Qualification and Formal Bounded Disposition — Pharma Quality Risk Management Ontology
 
-Source ID: SRC-PH-007
-Citation: Guebitz et al. (2012), A risk management ontology for Quality-by-Design based on a new development approach according GAMP 5.0, Expert Systems with Applications 39(8), DOI 10.1016/j.eswa.2012.01.089
-Mining date: 2026-09-20
-Status: METADATA-QUALIFIED / FULL-TEXT-BLOCKED in this execution.
+**Source ID:** SRC-PH-007
+**Citation:** Guebitz, Schnedl & Khinast (2012), *A risk management ontology for Quality-by-Design based on a new development approach according GAMP 5.0*, Expert Systems with Applications 39(8), 7291–7301, DOI `10.1016/j.eswa.2012.01.089`.
+**Updated:** 2026-09-21
+**Status:** `PUBLISHER-SNIPPET-QUALIFIED / FULL-TEXT-BLOCKED / FORMALLY-BOUNDED`.
 
-## Why this source is material
+## 1. Verified evidence available from the publisher
 
-This is direct prior art for pharmaceutical Quality Risk Management ontology engineering associated with Quality-by-Design and GAMP-oriented development. It materially constrains SR-RQ3 / SR-C3.
+The official publisher page exposes enough of the abstract/introduction/section snippets/conclusion to establish the following without inferring unavailable details:
 
-Paper 1 therefore must not claim first pharmaceutical risk ontology, first ontology-based pharmaceutical QRM model, or novelty from merely combining ontology with ICH/QbD/GAMP-style quality-risk concepts.
+- the work presents a pharmaceutical Quality Risk Management ontology development approach;
+- the approach is explicitly aligned with Quality by Design, GMP and GAMP 5.0;
+- a V-model is used as the ontology-development/software-validation process model;
+- the development lifecycle explicitly includes requirement specification, conceptualization, formalization, implementation and a validation approach;
+- the motivation includes overall pharmaceutical risk-management knowledge, not only one isolated risk-assessment tool;
+- the paper positions systematic specification/testing of the ontology as important because GAMP 5.0 treats such customized software as high-risk software.
 
-## Verified identity
+## 2. What remains unavailable
 
-- Peer-reviewed journal article.
-- Publication year: 2012.
-- Journal: Expert Systems with Applications.
-- DOI: 10.1016/j.eswa.2012.01.089.
-- The title explicitly states a risk-management ontology for Quality-by-Design and a GAMP 5.0-based development approach.
+Because a lawful full-text copy was not available in the current execution, SemRisk does **not** assert:
+- the complete class/property inventory;
+- exact axioms or ontology-language profile;
+- full requirement set;
+- complete implemented risk-analysis-tool inventory;
+- exact validation protocol/results;
+- surviving machine-readable ontology artifact/version.
 
-## Evidence-access state
+## 3. Why this is no longer a Critical novelty blocker
 
-DOI/title identity and relevance were verified, but an accessible full-text copy suitable for source-complete section/page extraction was not obtained in this execution. Therefore no detailed class/property inventory, axiom inventory, CQ set, validation result or ontology architecture is inferred from title or metadata.
+Generic Pharma/QRM ontology prior art is independently corroborated by several other source families now deep-mined or formally profiled:
+- PH-008 ontology-supported Pharma operational-risk management;
+- PH-009/PH-011 Moroccan medicines-supply risk ontology lineage;
+- IOF Biopharma Risk Management ontology;
+- ICH Q9(R1) and current Pharma QRM evidence.
 
-## Safe conclusions
+Therefore detailed PH-007 class/axiom access is no longer required to support the bounded conclusion that **Pharma QRM ontology engineering predates SemRisk**.
 
-1. Ontology-based pharmaceutical QRM predates SemRisk.
-2. QbD/GAMP-oriented pharmaceutical risk ontology development is prior art.
-3. SR-C3 novelty must focus on SemRisk Core to CM-PharmE federation, explicit semantic separation, provenance/traceability and bounded executable evaluation.
+## 4. Claim restriction
 
-## Claim impact
+PH-007 may support only claims that are directly evidenced by publisher-visible content:
+- existence/scope of pharmaceutical QRM ontology work;
+- V-model/GAMP-oriented ontology development methodology;
+- lifecycle stages named above;
+- high-level motivation and validation-oriented development intent.
 
-- SR-CL05 CM-PharmE federation: RETAINED.
-- SR-CL06 bounded transferability: unchanged but conditional.
-- SR-C3: NARROWED to a bounded pharmaceutical ecosystem federation/application of the SemRisk Core, not a new pharmaceutical risk-management ontology.
+It must not support detailed feature-by-feature ontology comparison or claims about exact implemented semantics.
 
-## Required follow-up before G1
+## 5. Impact on SR-C3
 
-Obtain lawful full text; mine concepts/relations/method/evaluation with exact locators; identify ontology artifact/version if available; inspect surviving formal artifacts; extract method stages/evaluation; compare with ICH Q9(R1) and IOF Biopharma Risk Management; test overlap with CM-PharmE bridge targets.
+SR-C3 remains **RETAINED / NARROWED**:
 
-## Gate consequence
+SemRisk Paper 1 does not claim novelty for:
+- first Pharma risk ontology;
+- first QRM ontology;
+- first GAMP/QbD-aligned ontology development approach;
+- first ontology validation-oriented pharmaceutical risk method.
 
-This source is material and unresolved. Pharma source completeness cannot PASS while its semantic contribution remains unassessed unless G1 explicitly records the access limitation and narrows the affected claim boundary.
+The candidate contribution remains the governed SemRisk Core↔CM-PharmE federation, semantic identity/lifecycle/provenance distinctions, and bounded release/evaluation evidence.
+
+## 6. G1 disposition
+
+`BOUNDED_EVIDENCE_GAP_ACCEPTABLE_IF_CLAIMS_REMAIN_NARROW`.
+
+G1 may proceed without PH-007 full text **only if**:
+1. detailed PH-007 ontology structure/evaluation is not used as a premise;
+2. manuscript/novelty wording stays within the bounded conclusions above;
+3. the access limitation remains explicit in the unresolved-evidence register/threats;
+4. a later lawful full-text acquisition triggers comparator-regression review but does not silently rewrite prior conclusions.
+
+PH-007 full text is still desirable, but it is no longer a blocker to recognizing generic Pharma QRM ontology prior art.
