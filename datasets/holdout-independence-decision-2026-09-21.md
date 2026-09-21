@@ -51,3 +51,22 @@ It must not report a general 'independent dataset validation' result from Jira, 
 ## 6. Change control
 
 Any role change requires a dated decision record. The original role is never overwritten silently.
+---
+
+## 7. Controlled amendment — DS-002 schema-exposure regression — 2026-09-21
+
+During holdout-safe metadata qualification, the public Zitnik Lab/project documentation surfaced processed-dataset structural details. No Dataverse records were downloaded or inspected, but the original **schema-blind** assumption is no longer true.
+
+### Revised DS-002 role
+Previous: `PROTECTED CONDITIONAL HOLDOUT CANDIDATE`.
+
+Current: `RECORD_LEVEL_TRANSFERABILITY_HOLDOUT_CANDIDATE / SCHEMA-LEVEL INDEPENDENCE REVOKED`.
+
+### Consequences
+1. DS-002 cannot independently validate SemRisk Core/Profile schema semantics.
+2. Publicly exposed DS-002 structural details must not be used to add/justify SemRisk canonical concepts before G1/G2.
+3. Record-level transferability remains potentially independent because actual Harvard Dataverse records/files have not been opened in this execution.
+4. Before any record access, freeze exact Dataverse version/files/checksums, E11 tasks/CQs, expected outcomes and pass/fail interpretation.
+5. If record-level observations are used to revise mappings/rules before evaluation is completed, independent/holdout eligibility is revoked entirely.
+
+This amendment preserves the original decision historically rather than silently rewriting it.
