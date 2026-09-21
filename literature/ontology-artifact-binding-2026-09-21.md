@@ -64,17 +64,19 @@ The current Turtle source contains an ontology declaration written as `<thttps:/
 - Current fetched file blob SHA: `ce412eedf9399dc0057379159484876ae353af75`
 - Current repository search snapshot commit for biopharma documentation: `b5384d757082397a1a8bedd0fddf950f356045de`
 
-### Version discrepancy
-The official portal is labeled **Release 202603**, but the currently fetched repository RDF declares `owl:versionIRI` as `.../202602/biopharma/BiopharmaRiskManagement/`. IOF documentation states that RDF `owl:versionIRI`/maturity metadata are the source of truth for exact versions. Therefore SemRisk must not silently equate the portal's 202603 label with the current repository file's 202602 version identity.
+### Release/module version interpretation
+The official **suite release** is `202603`. The exact release merge commit inspected is `8992960035a9d7bd5f539a198d654bbe1a7ab6b2` (`Staging/202603 official release`). The `BiopharmaRiskManagement.rdf` file at that exact commit declares its own `owl:versionIRI` as `https://spec.industrialontologies.org/ontology/202602/biopharma/BiopharmaRiskManagement/`. The file blob is `ce412eedf9399dc0057379159484876ae353af75` and is unchanged in the later inspected repository head.
+
+This is treated as **suite-release vs individual-module-version semantics**, not as an unresolved contradiction: IOF documentation explicitly says individual ontologies carry their own `owl:versionIRI`, while the suite has its own release history.
 
 ### W1 decision
-`PROVISIONAL_REFERENCE_BOUND_WITH_VERSION_DISCREPANCY`. The ontology is safe as current comparative/reuse evidence and strongly material to Pharma mapping, but release-bound import/alignment must wait until the portal/RDF version discrepancy is resolved or an exact release RDF is archived/pinned.
+`EXACT_MODULE_BOUND_WITHIN_SUITE_RELEASE`. For SemRisk comparison/alignment, cite the suite release `202603`, exact release commit `899296...`, and exact module versionIRI `202602`. The module is Provisional and MIT-licensed, so alignment/reuse remains conditional on #21 semantic decisions, not on artifact identity.
 
 ## 5. Consequence for P1-R0 / G1
 
 - COVER exact reference/license blocker: **resolved for W1 by immutable commit binding**.
 - ROSE exact reference/license/erratum blocker: **resolved for W1 by immutable commit binding**.
 - CM-PharmE exact semantic baseline: **resolved to frozen v1.0.0**, with license governance still open for redistribution.
-- IOF Biopharma identity/license/maturity: **substantially resolved**, but exact portal-vs-RDF version binding remains conditional.
+- IOF Biopharma identity/license/maturity/version: **resolved for W1** as suite release `202603` containing exact module versionIRI `202602` at release commit `899296...`; semantic reuse remains conditional because the module is Provisional.
 
 These decisions reduce artifact-identity uncertainty without prematurely deciding #21 reuse/import semantics.
