@@ -169,6 +169,40 @@ plus governed source-to-claim traceability, ontology↔RDB projection fidelity a
 
 PA-006, PA-010 and PA-015 are one evolving research-program lineage for comparison purposes and must not be counted as independent evidence of three separate novelty threats.
 
+## 6C. Operational Risk Register novelty refinement — 2026-09-21
+
+Targeted Risk Register/GRC search materially narrows SR-C2 and the planned RDB/application story.
+
+### Prior art now explicit
+
+- **RisKG (2023)** constructs a knowledge graph from a semi-structured project risk register and models risk source, risk, risk rating, consequence and mitigation in Neo4j with dashboard retrieval.
+- **RiskHub / semantic-aware risk data modeling (2026)** uses ontology/framework knowledge and operational company data to redesign a spreadsheet-era risk register through As-Is/To-Be conceptual models, a 12-table relational model, MySQL implementation, dashboard workflow and exploratory expert evaluation.
+- **NIST IR 8286 Rev.1 (2025)** supplies current official Risk Register and Risk Detail Record JSON/XLSX schemas; NIST defines a risk register as a repository/central record of risk information for a scope/organization.
+
+### Consequence
+
+SemRisk must not claim novelty merely for:
+- digitizing a risk register;
+- mapping register fields into a knowledge graph;
+- ontology-informed relational redesign;
+- a risk dashboard;
+- representing owner/status/likelihood/impact/response fields;
+- connecting operational risk information to enterprise risk aggregation.
+
+### Stronger surviving differentiation hypothesis
+
+The candidate contribution is the **ontological correction and governed projection** of operational risk information:
+
+1. Risk phenomenon/event/scenario is not identical to Risk Register Entry.
+2. Risk Register Entry is an information artifact with its own workflow/history.
+3. Assessment Activity is distinct from Assessment Result.
+4. Risk State is distinct from record Workflow State.
+5. Assessment results and state changes are provenance/evidence/time bound.
+6. External-owner semantics such as business/process/Pharma entities remain federated rather than copied.
+7. RDB/KG structures are governed projections of the ontology and are checked for semantic loss/parity.
+
+These remain hypotheses until #18/#22/#49/#53 provide evidence.
+
 ## 7. Paper 2 novelty direction
 
 The journal extension should move from an enterprise-risk-register contribution to a broader **SemRisk ontology network** with:
