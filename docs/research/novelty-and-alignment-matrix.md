@@ -27,7 +27,7 @@ The strongest novelty claim must be established by **combination, integration qu
 |---|---|---|---|---|---|---|---|
 | **COVER — Common Ontology of Value and Risk** (Sales et al., ER 2018) | Well-founded reference ontology | Value, goals, risk experience, risk events, threat/loss, vulnerability | UFO / OntoUML | Core semantics of value, goals, threats, losses and risk events | Reuse or formally align foundational risk constructs; avoid redefining them without evidence | Does not by itself provide the complete operational enterprise risk-register, governance, domain-profile, evidence-history and application architecture targeted by SemRisk | **FOUNDATION / REUSE** |
 | **ROSE — Reference Ontology for Security Engineering** (Oliveira et al., ER 2022) | Well-founded reference ontology | Security from a risk-treatment perspective | UFO + COVER + prevention ontology | Treatment, prevention, security mechanism, risk events | Reuse for Security profile and treatment semantics where applicable | Security-focused; not a complete cross-domain enterprise risk knowledge model | **PROFILE REUSE** |
-| **Oliveira et al. 2025 — Toward an ontology-based modeling for risk management** | Research programme / ontology-network proposal | Integrated risk-management ontology network, semantic interoperability, DSL/services | COVER + ROSE + related well-founded ontologies | Very close to SemRisk long-term ambition | Treat as closest scientific work; continuously track its evolution | SemRisk must differentiate through operational enterprise artifacts, domain-profile execution, health-first specialization, inter-ontology bridges, concrete datasets, traceable application validation and bounded publication claims | **CLOSEST-WORK WATCH** |
+| **Oliveira et al. 2025 — Toward an ontology-based modeling for risk management** | Research programme / ontology-network proposal | Integrated risk-management ontology network, semantic interoperability, DSL/services | UFO + COVER + ROSE + ROT + ResiliOnt | Very close to SemRisk Core/method ambition; explicitly distinguishes risk scenarios as possible events from incidents as past occurrences | Mandatory closest-program comparator; track follow-up artifacts and method lineage | SemRisk must differentiate through the narrower operational phenomenon/record/assessment-result/risk-state/workflow-state/evidence pattern, governed traceability, executable projection and bounded CM-PharmE federation | **MANDATORY CLOSEST PROGRAM** |
 | **ISO 31000:2018**; Edition 3 under development in 2026 | International standard | Generic organizational risk management | Standard, not foundational ontology | Principles, identification, analysis, evaluation, treatment, monitoring, communication | Align process vocabulary and management lifecycle; version mappings because ISO/CD 31000 is under development | Not a formal ontology and not a machine-executable semantic integration model | **STANDARD ALIGNMENT** |
 | **ISO 31073:2022** | Vocabulary standard | Risk-management terminology | Standard vocabulary | Terminology | Use as terminology/evidence source; do not equate vocabulary entries automatically with ontology classes | Terminological, not a foundational ontological account | **TERMINOLOGY ALIGNMENT** |
 | **IEC 31010:2019** | Assessment-technique standard | Risk-assessment techniques | Standard | Assessment methods | Model assessment techniques as method/profile entities rather than hard-code one method into the core | Technique catalogue does not solve semantic integration among risk records, evidence, architecture and domains | **METHOD PROFILE** |
@@ -103,11 +103,11 @@ These are **candidate design commitments**, not yet final axioms.
 
 ---
 
-## 6. Paper 1 novelty boundary — ICAEA 2026
+## 6. Paper 1 novelty boundary — ICAE 2026
 
-### Recommended working title
+### Title status
 
-**SemRisk: An Ontology-Grounded Enterprise Risk Register for Architecture-Driven Risk Governance and Resilience**
+**TBD.** The old ICAEA-era working title is superseded. Final title is controlled by the ICAE 2026 research contract and #32 after evidence/evaluation maturation.
 
 ### Primary contributions to claim
 
@@ -124,6 +124,32 @@ These are **candidate design commitments**, not yet final axioms.
 - “validated applicability to all domains”.
 
 ---
+
+
+## 6A. Evidence-driven novelty refinement — 2026-09-21
+
+Deep mining of SRC-PA-005 and current-work refresh materially narrow the SemRisk novelty boundary.
+
+### Closest research-program lineage
+
+The 2025 Oliveira et al. proposal is no longer treated as an isolated proposal-only citation. Current evidence shows a continuing programme with concrete outputs, including:
+
+- **An Ontological Lens on Attack Trees: Toward Adequacy and Interoperability** (FOIS 2025) — executes COVER-grounded ontological analysis of a major risk technique.
+- **WATCHDOG** (CAiSE 2025) — operationalizes COVER notions in an ontology-aware formal risk-assessment framework with disruption graphs, logic and query language.
+- **A Unified Architecture for Risk Reasoning: Bridging Ontologies, Theorem Proving, and Model Checking** (SAFECOMP Workshops 2026) — extends the programme toward integrated ontology-grounded formal verification.
+- **News-Informed Probabilistic Models for AI Risk Analysis** (CAiSE 2026) — relevant primarily to future Risk Intelligence/Newsium claims and demonstrates current news-informed quantitative risk-analysis prior art.
+
+### Resulting Paper-1 novelty controls
+
+1. **Generic risk-management ontology network** is not a SemRisk novelty claim.
+2. **UFO/OntoUML/gUFO grounding** is not a novelty claim.
+3. **Scenario-as-possible-event vs incident-as-realized-occurrence** is prior art.
+4. **Ontology + formal risk reasoning / propagation / probabilistic analysis** is not a safe standalone novelty claim.
+5. **Ontology-driven semantic interoperability among risk techniques/data sources** is explicit prior work.
+6. SemRisk's strongest remaining candidate differentiator is the integrated operational semantic separation of:
+   **risk phenomenon/event/scenario → information artifact/register entry → assessment activity → assessment result → risk state → workflow state → evidence/provenance → treatment/responsibility**, tied to governed source traceability and bounded executable projections.
+7. SR-C2 and SR-C3 remain supporting contributions but are narrower: generic EA-risk linkage and generic Pharma QRM ontology are both prior art.
+8. Final differentiation must compare **implemented/evaluated SemRisk evidence** against both prior proposals and their concrete follow-up artifacts, not compare SemRisk implementation against an older proposal alone.
 
 ## 7. Paper 2 novelty direction
 
