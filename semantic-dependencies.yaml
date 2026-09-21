@@ -97,8 +97,8 @@ dependencies:
     canonical_owner: "Industrial Ontologies Foundry / OAGi BMIC"
     relation: aligns_with
     requirement: conditional
-    ref_policy: "portal-release:202603; module-iri:https://spec.industrialontologies.org/ontology/biopharma/BiopharmaRiskManagement/; maturity:Provisional; license:MIT; repository-file:biopharma/BiopharmaRiskManagement.rdf; blob:ce412eedf9399dc0057379159484876ae353af75"
+    ref_policy: "suite-release:202603; release-commit:8992960035a9d7bd5f539a198d654bbe1a7ab6b2; module-versionIRI:https://spec.industrialontologies.org/ontology/202602/biopharma/BiopharmaRiskManagement/; module-iri:https://spec.industrialontologies.org/ontology/biopharma/BiopharmaRiskManagement/; repository-file:biopharma/BiopharmaRiskManagement.rdf; blob:ce412eedf9399dc0057379159484876ae353af75; maturity:Provisional; license:MIT"
     mapping_path: "mappings/"
     rationale: "IOF Biopharma Risk Management is current formal Pharma QRM prior art and a potential alignment source; SemRisk must not duplicate its externally owned biopharma risk-management constructs without a governed reuse decision."
-    status: conditional
-    notes: "Official portal is Release 202603, but the currently fetched repository RDF declares owl:versionIRI 202602. Treat as a current comparative/alignment source but do not make release-bound import/equivalence claims until this version discrepancy is resolved."
+    status: active
+    notes: "Exact W1 identity is resolved: the IOF suite release is 202603 at commit 899296..., while this individual Provisional module carries owl:versionIRI 202602. This is suite-release/module-version semantics rather than a contradiction. Semantic reuse/import remains conditional on #21 because module maturity is Provisional."
