@@ -1,4 +1,4 @@
-# ICAEA Paper 1 — Pharmaceutical Dataset Selection Decision
+# ICAE 2026 Paper 1 — Pharmaceutical Dataset Selection Decision
 
 **Status:** provisional selection baseline; final primary dataset is frozen only after file/schema inspection.  
 **Date:** 2026-08-29
@@ -93,3 +93,16 @@ A dataset enters the Paper-1 release only if all are true:
 - selected fields materially test a Paper-1 claim;
 - privacy/sensitivity constraints are acceptable;
 - manuscript can cite the linked scholarly source accurately.
+
+---
+
+## Evidence-role update — 2026-09-21
+
+The original 'independent evidence bundle' wording is superseded where it implied dataset independence before role qualification.
+
+- DS-003 has already influenced concept/case design and is **not independent validation**.
+- DS-004 linked-study evidence has influenced semantics; dataset records may later provide bounded application robustness only under a predeclared untouched partition.
+- DS-002 is the only currently protected **conditional holdout candidate** for E11 and must remain untouched for design if that role is retained.
+- DS-001 remains supplementary only.
+
+Authoritative role decisions: `evaluation/evidence-role-registry.csv` and `datasets/holdout-independence-decision-2026-09-21.md`.
