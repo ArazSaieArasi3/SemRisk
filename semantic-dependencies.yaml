@@ -13,11 +13,11 @@ dependencies:
     canonical_owner: "COVER / Common Ontology of Value and Risk maintainers"
     relation: aligns_with
     requirement: required
-    ref_policy: unresolved
+    ref_policy: "commit:898a7d87d1da0f8c292620d966754a630ae3b57b; path:owl/cover.ttl; blob:185064e68ac63b602bf97247da92e10b729a77fa; license:Apache-2.0"
     mapping_path: "mappings/"
     rationale: "COVER is the primary well-founded reference ontology against which SemRisk Core overlap and reuse must be decided before local novelty is claimed."
     status: active
-    notes: "Technical baseline is mined as SRC-ON-001; immutable release/commit and license must be pinned under Issues #14/#21 before release-bound mappings."
+    notes: "W1 exact commit binding established. No governed semantic release/tag identified; use immutable commit for comparison/reuse analysis. Source-level ontology-declaration anomaly is recorded in literature/ontology-artifact-binding-2026-09-21.md and must not be silently repaired."
 
   - id: DEP-002
     repository: "https://github.com/unibz-core/security-ontology"
@@ -25,11 +25,11 @@ dependencies:
     canonical_owner: "ROSE / Reference Ontology for Security Engineering maintainers"
     relation: aligns_with
     requirement: conditional
-    ref_policy: unresolved
+    ref_policy: "commit:50ef107989d747a5d38cba1653c5309bff328048; path:owl/rose_gufo.owl; license:MIT; purl:https://purl.org/security-ontology"
     mapping_path: "mappings/"
     rationale: "ROSE is a material well-founded comparator and potential reuse/alignment source for security-mechanism and risk-prevention semantics."
     status: active
-    notes: "Technical baseline is mined as SRC-ON-002; exact immutable ref/license remains to be resolved before release-bound reuse."
+    notes: "W1 exact commit binding established to the corrected repository state; repository erratum must supersede the paper cardinality error in SemRisk comparisons."
 
   - id: DEP-003
     repository: "ArazSaieArasi3/CM-PharmE"
@@ -37,11 +37,11 @@ dependencies:
     canonical_owner: "R-006 / CM-PharmE"
     relation: federates_with
     requirement: required
-    ref_policy: unresolved
+    ref_policy: "release:v1.0.0; frozen-baseline-commit:9efd0e3ac909e4065012fae7aeb6b0a94029c440; manifest:releases/v1.0.0/manifest.yaml; current-repo-head-observed:5099888668d35f798e4759e3534e707ed906db24"
     mapping_path: "mappings/"
     rationale: "CM-PharmE remains canonical owner of pharmaceutical ecosystem concepts; SemRisk owns risk-specific semantics and context-dependent risk relevance."
-    status: planned
-    notes: "Issue #5 must pin the exact CM-PharmE release/commit and define the bridge before Paper-1 release binding."
+    status: active
+    notes: "W1 binds Paper-1 bridge design to the immutable historical v1.0.0 semantic baseline (39 concepts, 40 relations, 5 domains). License selection remains an open CM-PharmE governance decision, so redistribution/import policy must remain conditional even though mapping/citation ownership is fixed."
 
   - id: DEP-004
     repository: "ArazSaieArasi3/Newsium"
@@ -90,3 +90,15 @@ dependencies:
     rationale: "Generic ontology-quality semantics must not be duplicated inside SemRisk; SemRisk may later become an adopter/pilot."
     status: planned
     notes: "Deferred under Issue #57 until OQF has a governed Portfolio identity and stable candidate contract."
+
+  - id: DEP-008
+    repository: "https://github.com/iofoundry/ontology"
+    semantic_scope: "Current biopharmaceutical risk-management constructs used as a Pharma comparison/alignment source for hazard, harm, risk estimate, residual risk, risk assessment/control/communication/review and documented assessment outputs."
+    canonical_owner: "Industrial Ontologies Foundry / OAGi BMIC"
+    relation: aligns_with
+    requirement: conditional
+    ref_policy: "portal-release:202603; module-iri:https://spec.industrialontologies.org/ontology/biopharma/BiopharmaRiskManagement/; maturity:Provisional; license:MIT; repository-file:biopharma/BiopharmaRiskManagement.rdf; blob:ce412eedf9399dc0057379159484876ae353af75"
+    mapping_path: "mappings/"
+    rationale: "IOF Biopharma Risk Management is current formal Pharma QRM prior art and a potential alignment source; SemRisk must not duplicate its externally owned biopharma risk-management constructs without a governed reuse decision."
+    status: conditional
+    notes: "Official portal is Release 202603, but the currently fetched repository RDF declares owl:versionIRI 202602. Treat as a current comparative/alignment source but do not make release-bound import/equivalence claims until this version discrepancy is resolved."
