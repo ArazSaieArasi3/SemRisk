@@ -151,6 +151,24 @@ The 2025 Oliveira et al. proposal is no longer treated as an isolated proposal-o
 7. SR-C2 and SR-C3 remain supporting contributions but are narrower: generic EA-risk linkage and generic Pharma QRM ontology are both prior art.
 8. Final differentiation must compare **implemented/evaluated SemRisk evidence** against both prior proposals and their concrete follow-up artifacts, not compare SemRisk implementation against an older proposal alone.
 
+## 6B. Additional refinement from SRC-PA-006 — 2026-09-21
+
+Deep mining of **Beyond Risk Propagation: A Unified Approach** further narrows Paper-1 novelty:
+
+- assessor-dependent risk valuation is prior art;
+- Likelihood/Vulnerability/Mitigation/Impact/Risk assessment distinctions are explicit prior art;
+- event/object/goal/control scoped assessment is prior art;
+- ontology-grounded risk propagation and query answering are implemented prior art;
+- risk propagation should not be treated as a self-standing novelty axis for Paper 1.
+
+The strongest remaining candidate SemRisk distinction is therefore the operational lifecycle/information-artifact separation:
+
+**risk-relevant phenomenon/event pattern → scenario description → Risk Register Entry → Assessment Activity → Assessment Result and derivation provenance → Risk State → Workflow State → Evidence/Observation → Treatment/Responsibility**
+
+plus governed source-to-claim traceability, ontology↔RDB projection fidelity and bounded CM-PharmE federation.
+
+PA-006, PA-010 and PA-015 are one evolving research-program lineage for comparison purposes and must not be counted as independent evidence of three separate novelty threats.
+
 ## 7. Paper 2 novelty direction
 
 The journal extension should move from an enterprise-risk-register contribution to a broader **SemRisk ontology network** with:
