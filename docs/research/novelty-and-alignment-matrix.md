@@ -203,6 +203,46 @@ The candidate contribution is the **ontological correction and governed projecti
 
 These remain hypotheses until #18/#22/#49/#53 provide evidence.
 
+## 6D. Pharma supply-risk novelty refinement — 2026-09-21
+
+Deep mining of SRC-PH-008 and SRC-PH-009, plus lineage tracing to SRC-PH-011/012, further constrains SR-C3.
+
+### Confirmed independent prior-art lines
+
+1. **Moroccan medicines-supply ontology programme (2017 onward)**
+   - UML/OWLGred/OWL-oriented ontology for medicines-supply risk in public hospitals;
+   - partner/supply-chain interoperability;
+   - risk identification/classification across operational/tactical/strategic levels;
+   - later domain-ontology follow-up.
+
+2. **Ontology + Fuzzy QFD pharmaceutical operational-risk application (2020)**
+   - ontology queries for risk identification using probability/impact;
+   - FQFD prioritization;
+   - cause-effect mitigation;
+   - real pharmaceutical-company transport/storage case.
+
+### Consequence
+
+SemRisk must not claim novelty merely for:
+- a Pharma/medicines supply-chain risk ontology;
+- ontology-based Pharma risk identification;
+- UML→OWL formalization in Pharma risk;
+- partner interoperability/risk knowledge sharing;
+- ontology + prioritization/decision-support workflow;
+- operational/tactical/strategic Pharma risk classification.
+
+### Surviving SR-C3 hypothesis
+
+The candidate contribution is a **bounded federation/application of a reusable SemRisk Core with CM-PharmE under explicit semantic ownership**, preserving:
+- risk phenomenon vs scenario description vs register entry;
+- assessment activity vs assessment result;
+- risk state vs workflow state;
+- evidence/provenance/reassessment history;
+- external Pharma concept ownership rather than copying a local Pharma ontology;
+- release-bound mappings, CQs and executable projection/evaluation.
+
+This remains a hypothesis until #18/#22/#5/#28/#31/#53 complete.
+
 ## 7. Paper 2 novelty direction
 
 The journal extension should move from an enterprise-risk-register contribution to a broader **SemRisk ontology network** with:
