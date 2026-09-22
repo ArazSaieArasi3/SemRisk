@@ -29,4 +29,3 @@ SR-CPT-032,Risk Register,ENTERPRISE_REQUIRED,SR-CL02,Operational application rep
 SR-CPT-037,Objective,EXTERNAL_REQUIRED,SR-CL03,Enterprise linkage without ownership.
 SR-CPT-038,Capability,EXTERNAL_REQUIRED,SR-CL03,Enterprise architecture linkage.
 SR-CPT-039,Business Process,EXTERNAL_REQUIRED,SR-CL03,Enterprise process linkage.
-SR-CPT-040,Active Pharmaceutical Ingredient,EXTERNAL_CASE_REQUIRED,SR-CL05,Concrete CM-PharmE federation exemplar.
