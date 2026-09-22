@@ -39,7 +39,7 @@ identity_and_release:
   ontology_iri: ""
   persistent_iri_status: "not yet declared"
   current_semantic_release: "none"
-  development_state: "W1 exhaustive source mining; W0 contract refresh complete; publication/study-design freeze precedes resumed broad W1 execution"
+  development_state: "W2 conceptualization active after G1 CONDITIONAL_PASS; UL, CQs, Core, relations, reuse/alignment, standards comparison and Paper-1 method profile frozen; foundational analysis and G2 remain pending"
   release_manifest: "none"
 
 traceability:
@@ -87,4 +87,4 @@ adoption:
     - "knowledge graph and Newsium/Commentium runtime integration"
     - "Ontology Quality Framework adoption/pilot until the external OQF Research has a governed identity and stable candidate contract"
   last_reviewed: "2026-09-17"
-  notes: "SemRisk adopts OGCM-RF Exhaustive Source Mining as a hard pre-formalization gate and E1-E11 claim-dependent evaluation. The exact Jira operational source is SHA-bound and fully mined. Semantic CI remains staged until canonical semantic inputs and real validators exist. Domain labels follow the no-and/no-ampersand naming convention. Formal OGCM-RF conformance remains not_assessed; the W0 repository contract can pass without claiming formal scientific or OGCM conformance."
+  notes: "SemRisk adopts OGCM-RF Exhaustive Source Mining as a hard pre-formalization gate and E1-E11 claim-dependent evaluation. W2 #23 freezes the Paper-1 method profile: OGCM-RF orchestration; evidence-grounded UL/CQs; conditional UFO/gUFO+OntoUML analysis; modular OWL/RDF; SHACL for closed-world/local constraints; explicit rule/business-logic separation; PostgreSQL as projection rather than semantic source; SQL↔SPARQL parity/loss analysis; exact release binding. Theorem proving/model checking/probabilistic propagation are deferred beyond Paper 1. Formal OGCM-RF conformance remains not_assessed."
