@@ -1,0 +1,36 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix sr: <urn:semrisk:concept:> .
+@prefix cover: <https://purl.org/krdb-core/cover#> .
+@prefix rose: <http://rose.com#> .
+
+<urn:semrisk:alignment:w2-v0.1>
+  dcterms:title "SemRisk W2 provisional external alignment mappings v0.1" ;
+  dcterms:date "2026-09-22" ;
+  dcterms:description "Non-equivalence provisional mappings. SR-CPT URNs are temporary semantic IDs pending #43. No owl:equivalentClass/property is asserted." .
+
+sr:SR-CPT-001 skos:relatedMatch cover:Risk .
+sr:SR-CPT-002 skos:closeMatch cover:RiskSubject ;
+              skos:relatedMatch cover:ObjectAtRisk .
+sr:SR-CPT-007 skos:closeMatch cover:RiskEvent ;
+              skos:closeMatch rose:RiskEvent .
+sr:SR-CPT-009 skos:closeMatch cover:Vulnerability ;
+              skos:closeMatch rose:Vulnerability .
+sr:SR-CPT-005 skos:relatedMatch cover:TriggerEvent .
+sr:SR-CPT-008 skos:relatedMatch cover:ImpactfulOutcome .
+sr:SR-CPT-011 skos:relatedMatch cover:RiskAssessment ;
+              skos:relatedMatch rose:RiskAssessment .
+sr:SR-CPT-013 skos:relatedMatch cover:RiskAssessment ;
+              skos:relatedMatch rose:RiskAssessment .
+sr:SR-CPT-014 skos:relatedMatch cover:Likelihood .
+sr:SR-CPT-029 skos:relatedMatch rose:SecurityMechanism .
+sr:SR-CPT-003 skos:relatedMatch cover:ThreatObject ;
+              skos:relatedMatch rose:ThreatObject .
+sr:SR-CPT-047 skos:relatedMatch cover:ThreatEvent ;
+              skos:relatedMatch cover:OpportunityEvent .
+
+<urn:semrisk:relation:SR-REL-008> skos:relatedMatch rose:causes_2 ;
+                                     skos:relatedMatch rose:directlyCauses ;
+                                     skos:relatedMatch rose:causation .
+<urn:semrisk:relation:SR-REL-025> skos:relatedMatch rose:countermeasureTo ;
+                                     skos:relatedMatch rose:prevention .
