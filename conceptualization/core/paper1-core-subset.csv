@@ -1,0 +1,32 @@
+semantic_id,preferred_term,paper1_role,minimum_claim_support,why_in_subset
+SR-CPT-001,Risk,CORE_REQUIRED,SR-CL01,Dominant semantic anchor.
+SR-CPT-003,Risk Source,CORE_REQUIRED,SR-CL01,Required source/condition/event chain.
+SR-CPT-004,Predisposing Condition,CORE_REQUIRED,SR-CL01,Preserves enabling vs causal semantics.
+SR-CPT-005,Trigger,CORE_REQUIRED,SR-CL01,Required trigger/event distinction.
+SR-CPT-006,Risk Scenario,CORE_REQUIRED,SR-CL01,Claim-critical scenario identity.
+SR-CPT-007,Risk Event,CORE_REQUIRED,SR-CL01,Claim-critical realized-event identity.
+SR-CPT-008,Consequence,CORE_REQUIRED,SR-CL01,Required event/outcome semantics.
+SR-CPT-009,Vulnerability,CORE_REQUIRED,SR-CL01,Required cross-domain risk context.
+SR-CPT-011,Risk Assessment Activity,CORE_REQUIRED,SR-CL01,Claim-critical process/result distinction.
+SR-CPT-013,Risk Assessment Result,CORE_REQUIRED,SR-CL01,Claim-critical result anchor.
+SR-CPT-014,Likelihood Assessment Result,CORE_REQUIRED,SR-CL01,Assessment semantic capability.
+SR-CPT-015,Impact Assessment Result,CORE_REQUIRED,SR-CL01,Separates impact result from consequence.
+SR-CPT-017,Inherent Risk Assessment Result,CORE_REQUIRED,SR-CL01,Pre-treatment context distinction.
+SR-CPT-018,Residual Risk Assessment Result,CORE_REQUIRED,SR-CL01,Post-treatment context distinction.
+SR-CPT-020,Evidence Item,CORE_REQUIRED,SR-CL01; SR-CL09,Evidence/provenance semantic chain.
+SR-CPT-021,Provenance,CORE_REQUIRED,SR-CL01; SR-CL09,Traceability/reassessment requirement.
+SR-CPT-026,Risk Treatment Strategy,CORE_REQUIRED,SR-CL01; SR-CL03,Treatment semantic split.
+SR-CPT-027,Risk Treatment Plan,CORE_REQUIRED,SR-CL01; SR-CL03,Plan vs activity/mechanism distinction.
+SR-CPT-028,Risk Treatment Activity,CORE_REQUIRED,SR-CL01; SR-CL03,Execution semantics.
+SR-CPT-029,Control Mechanism,CORE_REQUIRED,SR-CL01; SR-CL03,Control/treatment distinction.
+SR-CPT-030,Risk Owner,CORE_REQUIRED,SR-CL01; SR-CL03,Role/accountability semantics.
+SR-CPT-031,Risk Responsibility,CORE_REQUIRED,SR-CL01; SR-CL03,Assignment semantics.
+SR-CPT-033,Risk Register Entry,CORE_REQUIRED,SR-CL01; SR-CL02,Dominant operational artifact distinction.
+SR-CPT-034,Scenario Description,CORE_REQUIRED,SR-CL01,Information-artifact distinction.
+SR-CPT-035,Risk State,CORE_REQUIRED,SR-CL01,Domain state semantics.
+SR-CPT-036,Workflow State,ENTERPRISE_REQUIRED,SR-CL01; SR-CL02,Operational workflow distinction.
+SR-CPT-032,Risk Register,ENTERPRISE_REQUIRED,SR-CL02,Operational application repository.
+SR-CPT-037,Objective,EXTERNAL_REQUIRED,SR-CL03,Enterprise linkage without ownership.
+SR-CPT-038,Capability,EXTERNAL_REQUIRED,SR-CL03,Enterprise architecture linkage.
+SR-CPT-039,Business Process,EXTERNAL_REQUIRED,SR-CL03,Enterprise process linkage.
+SR-CPT-040,Active Pharmaceutical Ingredient,EXTERNAL_CASE_REQUIRED,SR-CL05,Concrete CM-PharmE federation exemplar.
