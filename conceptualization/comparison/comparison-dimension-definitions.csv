@@ -1,0 +1,18 @@
+dimension_id,dimension,definition,comparison_rule
+D01,Scientific scope,Target problem/domain and breadth of the semantic model or framework.,Do not penalize intentionally narrower work; compare only when relevant to a Paper-1 claim.
+D02,Foundational rigor,"Explicit use of foundational ontology, OntoUML/UFO/gUFO or comparable identity/category discipline.",`not_reported` is not evidence of absence.
+D03,Risk-event-scenario-record separation,Whether the work explicitly distinguishes risk phenomenon/event/scenario from information artifacts such as register entries/descriptions.,A material Paper-1 differentiator only if SemRisk actually implements/evaluates it.
+D04,Assessment activity-result separation,Whether assessment process/activity is distinguished from its contextual result/estimate/rating.,Label similarity is insufficient.
+D05,Risk state-workflow state separation,Whether domain/risk state is explicitly separated from workflow/record status.,Narrower works are `not_in_scope` rather than scored negatively.
+D06,Causal/relation depth,Explicit modeling of source/condition/trigger/event/consequence and causal vs association/dependency semantics.,Propagation/formal reasoning prior art prevents novelty from mere relation depth.
+D07,Temporal/reassessment semantics,Support for time/context/history/reassessment without forcing new risk identity.,Iterative guidance alone is not identical to formal temporal semantics.
+D08,Enterprise/architecture linkage,"Links to objectives, capabilities, processes, controls and accountable actors.",Generic EA-risk linkage is established prior art.
+D09,Standards/framework alignment,Explicit mapping/use of recognized standards/frameworks.,Alignment is not certification/conformance.
+D10,Modular/profile extensibility,Architecture allowing reusable Core plus bounded domain/profile specialization.,A planned architecture is not counted as evaluated implementation.
+D11,Health/Pharma evidence,Material Health/Pharma domain grounding or case evidence.,Only relevant to SR-C3/profile claims.
+D12,Source/dataset traceability,Explicit provenance from source/dataset to semantic decisions/mappings.,"Missing publication detail is `not_reported`, not proof of absence."
+D13,Formal artifacts/constraints,Availability of OWL/RDF/SHACL/rules/formal constraints or executable semantic artifacts.,Count exact artifact/version evidence only.
+D14,Competency questions/evaluation,Use of CQs or structured semantic evaluation linked to claims.,Do not equate reasoner PASS with semantic validity.
+D15,Operational data/application mapping,Mapping from real operational schema/data into semantic model/application.,Risk-register KG/RDB mapping is prior art.
+D16,Reproducibility/version governance,"Persistent IDs, release/version/IRI, artifact bindings and reproducibility controls.",Current mutable repository is weaker than immutable release binding.
+D17,Known limitations,Whether limitations/access/validation gaps are explicitly documented.,SemRisk must show its own weaknesses alongside comparator gaps.
