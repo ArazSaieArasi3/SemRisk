@@ -1,0 +1,8 @@
+finding_id,topic,severity,finding,current_decision,downstream_owner,blocks_g2,status
+PH-BG-001,API/INN/product terminology ownership,HIGH,CM-PharmE v1.0.0 has no API/INN/medicine-product class despite earlier SemRisk assumption.,Record as unmapped external terminology gap; do not create SemRisk Core class merely to fit DS-004.,#28/#17/#21,NO,OPEN_GOVERNED
+PH-BG-002,CM-PharmE license/import policy,MEDIUM,Semantic release is fixed but redistribution/import license governance remains unresolved.,Reference/bridge only; no import/redistribution assumption.,CM-PharmE owner/#43,NO,OPEN_BOUNDED
+PH-BG-003,Enterprise Governance Relator stereotype history,MEDIUM,v1.0.0 canonical registry uses relator but source contains relator/mode conflict.,Do not use in primary case; preserve flag if later mapped.,#25/#5,NO,CONTROLLED
+PH-BG-004,Strategic Partnership Agreement mediation direction,MEDIUM,v1.0.0 keeps paired direction wording conflict.,Do not use as release-critical bridge relation in primary case.,CM-PharmE future semantics,NO,CONTROLLED
+PH-BG-005,CMPE Risk Management Activity vs SemRisk Assessment/Treatment activities,HIGH,Both are perdurant/activity semantics but granularity/identity are not equivalent.,"Use related external activity context, never equivalence.",#25/#28,YES_FOR_EQUIVALENCE_ONLY,CONTROLLED_NON_EQUIVALENCE
+PH-BG-006,Objective concept,MEDIUM,No explicit CM-PharmE Objective exists in v1.0.0.,Keep Objective externally owned by Enterprise/EA ontology; no forced mapping to Capability/Policy.,#37/#22,NO,OPEN_GOVERNED
+PH-BG-007,Exact DS-004 file mapping,HIGH,File schema/license/checksum still unresolved.,Case semantics remain dataset-independent; evaluated field mapping blocked until #28/#47.,#17/#28/#47,NO_G2_YES_G3A,OPEN_GOVERNED
