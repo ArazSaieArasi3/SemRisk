@@ -19,13 +19,13 @@
 | #17 schema coverage | **OPEN / bounded tail** | exact DS-004 file schema and DS-001 supplement file details unresolved |
 | Pharma supply/QRM search | **PARTIAL_NEAR_SATURATION** | final stopping refresh and residual artifact cleanup |
 | Risk Register/GRC search | **PARTIAL_MATERIAL_BASELINE** | final stopping/artifact checks remain |
-| #40 search stopping | **OPEN / final tail** | Foundational/EA/Pharma-QRM/dataset stopping tests MET; finish GRC/generic/propagation/PV/artifact tail |
+| #40 search stopping | **CLOSED / PASS** | final stopping decision frozen; residual debt routed to owner issues |
 | residual #12/#13/#14/#15 evidence debt | **OPEN** | resolve claim-critical locators/comparators or explicitly bound them |
 | #18 cross-source reconciliation | **NOT EXECUTED TO GATE** | build conflicts/source deltas/raw dispositions/Core-profile candidates then issue gate result |
 
 ## Critical path now
 
-1. Finish #40 residual GRC/generic/propagation/PV/artifact stopping tail.
+1. Finish/formally bound claim-critical #12/#13/#14/#15/#17 residual debt.
 2. Finish or formally bound claim-critical #12/#13/#14/#15 and #17 residual evidence debt.
 3. Execute #18 cross-source reconciliation and issue `PASS | CONDITIONAL_PASS | FAIL`.
 
