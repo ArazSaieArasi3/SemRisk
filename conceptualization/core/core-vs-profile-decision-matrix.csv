@@ -1,0 +1,48 @@
+decision_id,semantic_id,preferred_term,paper1_scope_decision,owner_module,external_owner_or_alignment,why_core_or_not,criticality,status
+DEC-001,SR-CPT-001,Risk,CORE_OR_CORE_SUPPORT,Core,COVER primary; ROSE partial; ISO terminology,Dominant Paper-1 semantic anchor; required by RQ1/C1 and cross-source reconciliation.,CRITICAL_OR_HIGH,CORE_V0_1
+DEC-002,SR-CPT-002,Risk Subject,CORE_OR_CORE_SUPPORT,Core,COVER value bearer/object patterns; external domain entities remain externally owned,Needed to connect risk semantics to externally owned domain/enterprise entities without copying their taxonomies.,CRITICAL_OR_HIGH,CORE_V0_1
+DEC-003,SR-CPT-003,Risk Source,CORE_OR_CORE_SUPPORT,Core,NIST/RisKG source concepts; ROSE threat-source overlap,"Cross-domain source semantics recur, but causal force varies; Core needs neutral anchor.",CRITICAL_OR_HIGH,CORE_V0_1
+DEC-004,SR-CPT-004,Predisposing Condition,CORE_OR_CORE_SUPPORT,Core,NIST/ROSE vulnerability-condition patterns,Needed to preserve non-causal enabling semantics in causal-chain modeling.,CRITICAL_OR_HIGH,CORE_V0_1
+DEC-005,SR-CPT-005,Trigger,CORE_OR_CORE_SUPPORT,Core,No single exact external owner; overlaps event/condition patterns,"Required to avoid conflating cause, condition and trigger in source→event chains.",CRITICAL_OR_HIGH,CORE_V0_1
+DEC-006,SR-CPT-006,Risk Scenario,CORE_OR_CORE_SUPPORT,Core,Closest UFO/COVER programme scenario semantics,One of the paper's claim-critical distinctions.,CRITICAL_OR_HIGH,CORE_V0_1
+DEC-007,SR-CPT-007,Risk Event,CORE_OR_CORE_SUPPORT,Core,UFO/COVER event/occurrence patterns,Required to prevent scenario/incident/record conflation.,CRITICAL_OR_HIGH,CORE_V0_1
+DEC-008,SR-CPT-008,Consequence,CORE_OR_CORE_SUPPORT,Core,COVER consequence semantics; RISKMAN harm narrower,Cross-domain outcome semantics required by causal chain and assessment distinction.,CRITICAL_OR_HIGH,CORE_V0_1
+DEC-009,SR-CPT-009,Vulnerability,CORE_OR_CORE_SUPPORT,Core,ROSE/NIST vulnerability semantics,Mandatory semantic family and cross-domain stress-test concept.,CRITICAL_OR_HIGH,CORE_V0_1
+DEC-010,SR-CPT-010,Exposure,CORE_OR_CORE_SUPPORT,Core,NIST/financial/safety meanings partially overlap,Required semantic family; retained as deliberately abstract cross-domain anchor.,CRITICAL_OR_HIGH,CORE_V0_1
+DEC-011,SR-CPT-011,Risk Assessment Activity,CORE_OR_CORE_SUPPORT,Core,IOF/RISKMAN/NIST assessment process,Claim-critical process/result distinction.,CRITICAL_OR_HIGH,CORE_V0_1
+DEC-012,SR-CPT-012,Risk Assessment Method,CORE_OR_CORE_SUPPORT,Method,IEC 31010 and domain methods own specific techniques,Needed to contextualize result semantics and prevent scale equivalence.,CRITICAL_OR_HIGH,CORE_SUPPORT_V0_1
+DEC-013,SR-CPT-013,Risk Assessment Result,CORE_OR_CORE_SUPPORT,Core,IOF risk estimate/result; operational ratings,Core anchor for likelihood/impact/inherent/residual separation.,CRITICAL_OR_HIGH,CORE_V0_1
+DEC-014,SR-CPT-014,Likelihood Assessment Result,CORE_OR_CORE_SUPPORT,Core,NIST/IEC/operational scales,Required to answer CQ family while keeping methods/scales external.,CRITICAL_OR_HIGH,CORE_REFINEMENT_V0_1
+DEC-015,SR-CPT-015,Impact Assessment Result,CORE_OR_CORE_SUPPORT,Core,NIST/IEC/RISKMAN severity semantics,Required to preserve outcome/result distinction.,CRITICAL_OR_HIGH,CORE_REFINEMENT_V0_1
+DEC-016,SR-CPT-016,Risk Level Assessment Result,CORE_OR_CORE_SUPPORT,Method,RISKMAN/NIST/risk matrices,"Mandatory semantic family, but method semantics must remain separate from Core identity.",NONCRITICAL,CORE_SUPPORT_V0_1
+DEC-017,SR-CPT-017,Inherent Risk Assessment Result,CORE_OR_CORE_SUPPORT,Core,Operational/NIST terminology,Claim-critical anti-conflation.,CRITICAL_OR_HIGH,CORE_REFINEMENT_V0_1
+DEC-018,SR-CPT-018,Residual Risk Assessment Result,CORE_OR_CORE_SUPPORT,Core,IOF residual risk + operational semantics,Claim-critical anti-conflation and current formal Pharma prior art.,CRITICAL_OR_HIGH,CORE_REFINEMENT_V0_1
+DEC-019,SR-CPT-019,Assessment Confidence,CORE_OR_CORE_SUPPORT,Method,NIST/empirical confidence concepts,Needed for auditable assessment context but not central novelty.,NONCRITICAL,CORE_SUPPORT_V0_1
+DEC-020,SR-CPT-020,Evidence Item,CORE_OR_CORE_SUPPORT,Core,PROV/OpenPVSignal/GRC evidence patterns,Required for provenance/reassessment and claim traceability.,CRITICAL_OR_HIGH,CORE_V0_1
+DEC-021,SR-CPT-021,Provenance,CORE_OR_CORE_SUPPORT,Core,PROV-O primary external standard/pattern,Release/source-to-claim reconstructability depends on provenance.,CRITICAL_OR_HIGH,CORE_V0_1
+DEC-022,SR-CPT-022,Observation Activity,CORE_OR_CORE_SUPPORT,Core,Observation/monitoring ontology patterns to review under #21,Needed to distinguish evidence/result from observation activity.,NONCRITICAL,CORE_V0_1
+DEC-023,SR-CPT-023,Observation Result,CORE_OR_CORE_SUPPORT,Core,Observation/result patterns; OpenPVSignal evidence,Supports evidence/observation separation.,NONCRITICAL,CORE_V0_1
+DEC-024,SR-CPT-024,Indicator,CORE_OR_CORE_SUPPORT,Method/Governance,Risk IT/GRC KRI semantics,"Mandatory semantic family, useful for later monitoring without claiming dynamic platform.",NONCRITICAL,CORE_SUPPORT_V0_1
+DEC-025,SR-CPT-025,Threshold,PROFILE_ONLY,Method/Governance,Framework/method-specific,Required family but method-specific identity argues against Core membership.,NONCRITICAL,METHOD_PROFILE_V0_1
+DEC-026,SR-CPT-026,Risk Treatment Strategy,CORE_OR_CORE_SUPPORT,Core/Governance,ISO treatment/response patterns,Claim-critical strategy/plan/activity/control distinction.,CRITICAL_OR_HIGH,CORE_V0_1
+DEC-027,SR-CPT-027,Risk Treatment Plan,CORE_OR_CORE_SUPPORT,Core/Enterprise,NIST/GRC plan structures,Separates intended actions from execution and mechanisms.,CRITICAL_OR_HIGH,CORE_V0_1
+DEC-028,SR-CPT-028,Risk Treatment Activity,CORE_OR_CORE_SUPPORT,Core,ISO treatment process; ROSE prevention semantics,Claim-critical activity/mechanism distinction.,CRITICAL_OR_HIGH,CORE_V0_1
+DEC-029,SR-CPT-029,Control Mechanism,CORE_OR_CORE_SUPPORT,Core/Governance,ROSE Security Mechanism; GRC internal controls,Cross-domain operational control semantics required by C1/C2.,CRITICAL_OR_HIGH,CORE_V0_1
+DEC-030,SR-CPT-030,Risk Owner,CORE_OR_CORE_SUPPORT,Core/Enterprise,NIST/GRC role semantics,Claim-critical responsibility distinction.,CRITICAL_OR_HIGH,CORE_V0_1
+DEC-031,SR-CPT-031,Risk Responsibility,CORE_OR_CORE_SUPPORT,Core/Governance,Governance responsibility patterns,Separates role from assignment relation/context.,CRITICAL_OR_HIGH,CORE_V0_1
+DEC-032,SR-CPT-032,Risk Register,PROFILE_ONLY,Enterprise,NIST 8286 primary authoritative register semantics,"Required operational application concept, not necessarily Core universal.",CRITICAL_OR_HIGH,ENTERPRISE_PROFILE_V0_1
+DEC-033,SR-CPT-033,Risk Register Entry,CORE_OR_CORE_SUPPORT,Core/Enterprise,NIST RDR/Register; RisKG/RiskHub operational prior art,Dominant operational-information distinction in Paper 1.,CRITICAL_OR_HIGH,CORE_INFORMATION_ARTIFACT_V0_1
+DEC-034,SR-CPT-034,Scenario Description,CORE_OR_CORE_SUPPORT,Core/Enterprise,NIST risk description semantics,Claim-critical information-artifact distinction.,CRITICAL_OR_HIGH,CORE_INFORMATION_ARTIFACT_V0_1
+DEC-035,SR-CPT-035,Risk State,CORE_OR_CORE_SUPPORT,Core,#25 foundational state treatment required,Required to prevent workflow closure from implying risk cessation.,CRITICAL_OR_HIGH,CORE_V0_1
+DEC-036,SR-CPT-036,Workflow State,PROFILE_ONLY,Enterprise,Operational workflow semantics,Explicitly profile-level to protect Core from source workflow enumeration.,CRITICAL_OR_HIGH,ENTERPRISE_PROFILE_V0_1
+DEC-037,SR-CPT-037,Objective,EXTERNAL_REFERENCE,Enterprise,Business/Enterprise ontology owner; SemRisk only links,Needed for C2 but explicitly outside SemRisk ownership.,CRITICAL_OR_HIGH,EXTERNAL_OWNER_REFERENCE
+DEC-038,SR-CPT-038,Capability,EXTERNAL_REFERENCE,Enterprise/Architecture,Enterprise/Business ontology owner,Required for C2 linkage while preserving external ownership.,CRITICAL_OR_HIGH,EXTERNAL_OWNER_REFERENCE
+DEC-039,SR-CPT-039,Business Process,EXTERNAL_REFERENCE,Enterprise/Architecture,Business/process ontology owner,Required C2 context without ownership inflation.,CRITICAL_OR_HIGH,EXTERNAL_OWNER_REFERENCE
+DEC-040,SR-CPT-040,Active Pharmaceutical Ingredient,EXTERNAL_REFERENCE,Pharma,CM-PharmE canonical owner,Concrete exemplar of federation ownership rule.,CRITICAL_OR_HIGH,EXTERNAL_OWNER_REFERENCE
+DEC-041,SR-CPT-041,Hazard,PROFILE_ONLY,Health,RISKMAN/ISO14971,Must be visible but not leak into Core from medical-device semantics.,NONCRITICAL,PROFILE_DEFERRED
+DEC-042,SR-CPT-042,Harm,PROFILE_ONLY,Health,RISKMAN/ISO14971,Preserves prior-art/profile semantics without inflating Core.,NONCRITICAL,PROFILE_DEFERRED
+DEC-043,SR-CPT-043,Signal,PROFILE_ONLY,Pharma,OpenPVSignal primary comparator/owner for PV detail,Useful bounded profile distinction and future Risk Intelligence bridge.,NONCRITICAL,PROFILE_OPTIONAL
+DEC-044,SR-CPT-044,Risk Criteria,PROFILE_ONLY,Governance/Method,ISO/Risk IT/NIST governance criteria,Needed for method/governance context but not Core identity anchor.,NONCRITICAL,PROFILE_SUPPORT
+DEC-045,SR-CPT-045,Risk Appetite,PROFILE_ONLY,Governance,External governance frameworks,Mandatory terminology family but not a universal Core concept.,NONCRITICAL,PROFILE_SUPPORT
+DEC-046,SR-CPT-046,Risk Tolerance,PROFILE_ONLY,Governance,External governance frameworks,Preserves framework distinction and keeps numeric thresholds out of Core.,NONCRITICAL,PROFILE_SUPPORT
+DEC-047,SR-CPT-047,Risk Nature,UNRESOLVED,Method/Governance,#20/#25 must resolve polarity semantics,Keeps source vocabulary visible without premature subclassing.,NONCRITICAL,UNRESOLVED_CANDIDATE
