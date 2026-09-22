@@ -1,0 +1,13 @@
+conflict_id,semrisk_construct,external_construct,conflict_type,finding,decision,severity,blocks_g2_if_unresolved,owner
+MAP-C01,Risk,COVER:Risk,foundational partial overlap,Lexical match but different current conceptualization; COVER places Risk under Value/Quality hierarchy.,ALIGN_BRIDGE only; no equivalence until #25.,HIGH,YES,#25
+MAP-C02,Risk Assessment Activity,COVER/ROSE:RiskAssessment,process-vs-ascription conflict,External construct appears closer to ascription/assessment semantics than SemRisk activity.,REFERENCE; split-map external assessment pattern to SemRisk Activity/Result only after #25.,HIGH,YES,#25
+MAP-C03,Risk Assessment Result,COVER/ROSE:RiskAssessment,partial overlap,Potentially closer to SemRisk result side but not proven exact.,ALIGN_BRIDGE provisional.,HIGH,YES,#25
+MAP-C04,Likelihood Assessment Result,COVER:Likelihood,quality-vs-result conflict,COVER models Likelihood as Quality; SemRisk models an assessment result concerning likelihood.,ALIGN_BRIDGE; keep method/result distinction.,HIGH,YES,#25/#26
+MAP-C05,Trigger,COVER:TriggerEvent,breadth/category conflict,SemRisk Trigger can be condition/threshold/event role; COVER construct is event-oriented.,Partial mapping only.,MEDIUM,NO,#25
+MAP-C06,Control Mechanism,ROSE:SecurityMechanism,scope conflict,"ROSE is security-specific, SemRisk cross-domain.","ROSE as profile specialization/reference, no universal equivalence.",HIGH,YES,#25
+MAP-C07,Risk Event,COVER/ROSE:RiskEvent,type/occurrence ambiguity,Strong semantic overlap but external ontologies use event-type modeling patterns.,"Provisional close alignment, no equivalence until #25.",HIGH,YES,#25
+MAP-C08,Vulnerability,COVER/ROSE:Vulnerability,scope/foundational refinement,Strong overlap but SemRisk spans security/supply/health profiles.,Align Core anchor; profile refinements allowed.,MEDIUM,NO,#25
+MAP-C09,Risk Owner,ROSE:RiskAssessor,false friend,Owner/accountability role is not assessor role.,Reject equivalence.,RESOLVED,NO,#21
+MAP-C10,Risk Treatment Strategy,ROSE:SecurityMechanism,artifact-vs-mechanism false friend,Strategy decision artifact is not mechanism.,Reject equivalence; keep distinct.,RESOLVED,NO,#21
+MAP-C11,Provenance,PROV-O,reuse not yet predicate-bound,"SemRisk should reuse/align generic provenance, but exact predicates not yet frozen.",Defer exact term import to #26; retain external ownership.,MEDIUM,NO,#26
+MAP-C12,Active Pharmaceutical Ingredient,CM-PharmE API entity,external-owner conflict,SemRisk must not mint duplicate Pharma class.,External-owner bridge; no local canonical duplicate.,RESOLVED,NO,#5/#21
