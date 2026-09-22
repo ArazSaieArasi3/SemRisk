@@ -21,7 +21,7 @@ M-019,"automated control",Control Mechanism,profile_refinement,Governance/Archit
 M-020,"expert interview evidence",Evidence Item,profile_refinement,Pharma,PROVISIONAL,"PH-004"
 M-021,"public dataset provenance",Provenance,pattern_mapping,Core,PROVISIONAL,"PH-004/005"
 M-022,"signal",Signal,profile_term,Pharma,PROVISIONAL,"OpenPVSignal"
-M-023,"API / active ingredient",Active Pharmaceutical Ingredient,external_owner_mapping,Pharma,PROVISIONAL,"CM-PharmE/PH-005"
+M-023,"API / active ingredient",Active Pharmaceutical Ingredient,external_owner_unmapped,Pharma,PROVISIONAL_CORRECTED,"PH-005; DS-004; CM-PharmE v1.0.0 negative catalog check"
 M-024,"risk category",Risk Taxonomy Term,profile_mapping_only,Enterprise/Profile,PROVISIONAL,"Jira/Pharma"
 M-025,"threat",Risk Nature / Risk Source,ambiguous_requires_context,Core/Method,OPEN_W2,"ROSE/NIST/ISO"
 M-026,"opportunity",Risk Nature,polarity_mapping,Core/Method,OPEN_W2,"ISO/COSO/Jira"
