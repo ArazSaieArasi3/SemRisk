@@ -1,0 +1,7 @@
+deviation_id,ogcm_expectation,semrisk_p1_decision,deviation_type,rationale,consequence,status
+DEV-001,Long-lived comprehensive ontology program,Paper 1 freezes a bounded conference subset,scope_bounding,Venue/page/time constraints and claim discipline.,Publication claims bind only evaluated subset/release.,ACCEPTED
+DEV-002,Potentially broad domain profiles,Health broad profile deferred; Pharma only bounded case,scope_deferral,Avoid unsupported universal/domain claims.,No Health completeness claim; future work owns expansion.,ACCEPTED
+DEV-003,Formal semantic CI,Semantic CI staged until canonical formal artifacts/validators exist,execution_staging,Running placeholder/heavy CI before semantic source exists gives false assurance and wastes Action minutes.,G3/G4 must activate real validators before formal/release claims.,ACCEPTED
+DEV-004,Full E1-E11 availability,E5/E11 may remain conditional if independent evidence is insufficient,claim_dependent_evaluation,Evaluation method must match evidence reality.,Affected claims narrow/remove; no invented validation.,ACCEPTED
+DEV-005,External ontology reuse may permit import,COVER/ROSE are reference/alignment-only until #25/#26,reuse_conservatism,Known semantic mismatches/partial overlaps make import premature.,No equivalence/import claim in W2.,ACCEPTED
+DEV-006,Persistent IRI/release governance,Final SemRisk IRI/release not yet declared,sequencing,Must follow G2 architecture and formal ontology decisions.,SR-CL09 remains pending until #43/#55.,TEMPORARY
