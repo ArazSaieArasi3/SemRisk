@@ -1,0 +1,9 @@
+item_id,module_or_capability,disposition,reason,paper1_claim_effect,reentry_trigger
+DEF-001,Health broad profile,DEFERRED_PAPER2,Paper 1 has only bounded Pharma case; #4 remains open.,No broad healthcare validity claim.,#4 completion + new release gate
+DEF-002,Newsium integration,DEFERRED_PAPER2,Runtime news federation not evaluated in Paper 1.,No news-aware risk intelligence claim.,#6/#36
+DEF-003,Commentium integration,DEFERRED_PAPER2,Comment-analysis runtime outside current RQs.,No comment-driven risk claim.,#6/#36
+DEF-004,Dynamic forecasting/propagation runtime,DEFERRED_PAPER2,Formal propagation/runtime is prior art and exceeds current claim burden.,No dynamic prediction claim.,#36/future method review
+DEF-005,Full pharmacovigilance runtime,DEFERRED_PAPER2,OpenPVSignal/PV semantics are profile prior art; Paper 1 only bounded relevance.,No PV platform/completeness claim.,future Pharma profile
+DEF-006,Medical-device Health profile,DEFERRED_PAPER2,RISKMAN/ISO14971 semantics intentionally outside bounded Pharma case.,No device-risk completeness claim.,#4
+DEF-007,API/INN/product terminology canonicalization,DEFERRED_EXTERNAL_OWNER_SELECTION,CM-PharmE v1.0.0 does not contain these concepts.,No claim that CM-PharmE covers product-level Pharma terminology.,#28 external terminology selection
+DEF-008,Theorem proving/model checking,DEFERRED_METHOD,Not required by Paper-1 claims.,No formal-method superiority claim.,future claim requiring proof obligations
