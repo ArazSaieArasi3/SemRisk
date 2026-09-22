@@ -1,0 +1,9 @@
+dimension,SemRisk current W2,COVER/ROSE,NIST 8286,RiskHub/RisKG,RISKMAN,Pharma prior art,safe interpretation
+Operational semantic disambiguation,covered as design,partial/different semantics,operationally partial,partial,partial,partial/unknown,Candidate difference; not yet evaluated.
+Register/record information artifacts,covered,not central,covered authoritative,covered,domain documentation,some operational cases,Not novel by itself; SemRisk focuses ontological separation.
+Assessment activity vs result,covered,different/partial,partial,partial,partial,unknown/partial,Candidate SemRisk design emphasis.
+Risk state vs workflow state,covered,not reported,operational lifecycle but not same ontology distinction,partial/not reported,not reported,not reported,"Use `not_reported`, not absence; SemRisk distinction requires evaluation."
+Enterprise linkage,covered conceptually,not central,covered ERM integration,covered,not in scope,not in scope,Generic linkage is prior art.
+Formal artifact/constraints,not yet W3,OWL,guidance/schema not ontology,KG/RDB implementations,OWL+SHACL,varies,SemRisk currently weaker on implemented formal artifacts.
+Evidence/provenance/research trace,strong governance design,limited/not central,record/history guidance,partial,artifact/version strong,varies,Potential differentiator in governed research traceability.
+Pharma federation,"designed, not evaluated",not in scope,not in scope,not in scope,not in scope,Pharma ontologies already exist,"Difference is external-owner federation, not first Pharma ontology."
