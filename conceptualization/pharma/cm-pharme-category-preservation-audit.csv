@@ -1,0 +1,13 @@
+audit_id,cmpe_id,label,frozen_stereotype,bridge_use,preservation_result,risk_if_flattened,status
+CAT-001,CMPE-C0001,Pharmaceutical Enterprise,kind,Risk subject/context target,PRESERVED,Would reduce enterprise identity to generic object.,PASS
+CAT-002,CMPE-C0005,Enterprise Capability,mode,Affected capability target,PRESERVED,Could be incorrectly modeled as process/object class.,PASS
+CAT-003,CMPE-C0015,Pharmaceutical Business Process,perdurant,Affected/participating process,PRESERVED,Could collapse process into static object.,PASS
+CAT-004,CMPE-C0011,Ecosystem Supply Capacity,mode,Supply-risk condition/context,PRESERVED,Could become a generic resource entity instead of capacity mode.,PASS
+CAT-005,CMPE-C0032,Supply Chain Relationship,relator,Supply-chain context,PRESERVED,Could flatten relationship into actor/object.,PASS
+CAT-006,CMPE-C0003,Organizational Stakeholder,role,Potential Risk Owner bearer,PRESERVED,Could confuse actor role with risk-owner role.,PASS
+CAT-007,CMPE-C0008,Ecosystem Actor,role,Potential responsibility bearer,PRESERVED,Could create new actor kind from contextual role.,PASS
+CAT-008,CMPE-C0028,Risk Management Activity,perdurant,Related Pharma risk-management activity,PRESERVED,Could conflate activity with plan/control/result.,PASS
+CAT-009,CMPE-C0038,Real-World Evidence Platform,kind,Evidence infrastructure context,PRESERVED,Could incorrectly become Evidence Item.,PASS
+CAT-010,CMPE-C0010,Ecosystem Demand Signal,mode,Supply demand context/possible indicator,PRESERVED,Could incorrectly become SemRisk Signal or event.,PASS
+CAT-011,CMPE-C0036,Pharmacovigilance Requirement,mode,Regulatory/PV context,PRESERVED,Could incorrectly become Hazard or risk event.,PASS
+CAT-012,CMPE-C0025,Enterprise Governance Relator,relator,Not selected for primary case,PRESERVED_WITH_SOURCE_FLAG,Frozen release contains historical stereotype conflict; canonical registry uses relator.,PASS_WITH_FLAG
