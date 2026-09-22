@@ -17,7 +17,7 @@ dependencies:
     mapping_path: "mappings/"
     rationale: "COVER is the primary well-founded reference ontology against which SemRisk Core overlap and reuse must be decided before local novelty is claimed."
     status: active
-    notes: "W1 exact commit binding established. No governed semantic release/tag identified; use immutable commit for comparison/reuse analysis. Source-level ontology-declaration anomaly is recorded in literature/ontology-artifact-binding-2026-09-21.md and must not be silently repaired."
+    notes: "W1 exact commit binding established. W2 #21 decision: REFERENCE + ALIGN_BRIDGE; no bulk import and no equivalence before #25. No governed semantic release/tag identified; use immutable commit. Source-level ontology-declaration anomaly remains recorded and must not be silently repaired."
 
   - id: DEP-002
     repository: "https://github.com/unibz-core/security-ontology"
@@ -29,7 +29,7 @@ dependencies:
     mapping_path: "mappings/"
     rationale: "ROSE is a material well-founded comparator and potential reuse/alignment source for security-mechanism and risk-prevention semantics."
     status: active
-    notes: "W1 exact commit binding established to the corrected repository state; repository erratum must supersede the paper cardinality error in SemRisk comparisons."
+    notes: "W1 exact commit binding established to corrected repository state. W2 #21 decision: REFERENCE + EXTEND_PROFILE/ALIGN_BRIDGE; no bulk import into Core before #25. Repository erratum supersedes the paper cardinality error."
 
   - id: DEP-003
     repository: "ArazSaieArasi3/CM-PharmE"
@@ -41,7 +41,7 @@ dependencies:
     mapping_path: "mappings/"
     rationale: "CM-PharmE remains canonical owner of pharmaceutical ecosystem concepts; SemRisk owns risk-specific semantics and context-dependent risk relevance."
     status: active
-    notes: "W1 binds Paper-1 bridge design to the immutable historical v1.0.0 semantic baseline (39 concepts, 40 relations, 5 domains). License selection remains an open CM-PharmE governance decision, so redistribution/import policy must remain conditional even though mapping/citation ownership is fixed."
+    notes: "W1 binds Paper-1 bridge design to immutable v1.0.0. W2 #21 decision: external-owner ALIGN_BRIDGE only; no import/redistribution until CM-PharmE license governance is resolved. Mapping/citation ownership is fixed."
 
   - id: DEP-004
     repository: "ArazSaieArasi3/Newsium"
