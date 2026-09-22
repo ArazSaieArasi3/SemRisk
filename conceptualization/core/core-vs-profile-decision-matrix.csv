@@ -38,7 +38,7 @@ DEC-036,SR-CPT-036,Workflow State,PROFILE_ONLY,Enterprise,Operational workflow s
 DEC-037,SR-CPT-037,Objective,EXTERNAL_REFERENCE,Enterprise,Business/Enterprise ontology owner; SemRisk only links,Needed for C2 but explicitly outside SemRisk ownership.,CRITICAL_OR_HIGH,EXTERNAL_OWNER_REFERENCE
 DEC-038,SR-CPT-038,Capability,EXTERNAL_REFERENCE,Enterprise/Architecture,Enterprise/Business ontology owner,Required for C2 linkage while preserving external ownership.,CRITICAL_OR_HIGH,EXTERNAL_OWNER_REFERENCE
 DEC-039,SR-CPT-039,Business Process,EXTERNAL_REFERENCE,Enterprise/Architecture,Business/process ontology owner,Required C2 context without ownership inflation.,CRITICAL_OR_HIGH,EXTERNAL_OWNER_REFERENCE
-DEC-040,SR-CPT-040,Active Pharmaceutical Ingredient,EXTERNAL_REFERENCE,Pharma,CM-PharmE canonical owner,Concrete exemplar of federation ownership rule.,CRITICAL_OR_HIGH,EXTERNAL_OWNER_REFERENCE
+DEC-040,SR-CPT-040,Active Pharmaceutical Ingredient,EXTERNAL_REFERENCE,Pharma,"External Pharma terminology owner TBD; not CM-PharmE v1.0.0","Source-grounded Pharma data/profile entity retained as unmapped external terminology; not required for the bounded CM-PharmE bridge.",NONCRITICAL,EXTERNAL_OWNER_REFERENCE_UNMAPPED
 DEC-041,SR-CPT-041,Hazard,PROFILE_ONLY,Health,RISKMAN/ISO14971,Must be visible but not leak into Core from medical-device semantics.,NONCRITICAL,PROFILE_DEFERRED
 DEC-042,SR-CPT-042,Harm,PROFILE_ONLY,Health,RISKMAN/ISO14971,Preserves prior-art/profile semantics without inflating Core.,NONCRITICAL,PROFILE_DEFERRED
 DEC-043,SR-CPT-043,Signal,PROFILE_ONLY,Pharma,OpenPVSignal primary comparator/owner for PV detail,Useful bounded profile distinction and future Risk Intelligence bridge.,NONCRITICAL,PROFILE_OPTIONAL
