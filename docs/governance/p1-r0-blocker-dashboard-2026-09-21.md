@@ -21,7 +21,7 @@
 | Risk Register/GRC search | **PARTIAL_MATERIAL_BASELINE** | final stopping/artifact checks remain |
 | #40 search stopping | **CLOSED / PASS** | final stopping decision frozen; residual debt routed to owner issues |
 | residual #12/#13/#14/#15 evidence debt | **OPEN** | resolve claim-critical locators/comparators or explicitly bound them |
-| #18 cross-source reconciliation | **NOT EXECUTED TO GATE** | build conflicts/source deltas/raw dispositions/Core-profile candidates then issue gate result |
+| #18 cross-source reconciliation | **CLOSED / CONDITIONAL_PASS** | 274/274 raw rows dispositioned; 191 candidates consolidated; W2 authorized under gate conditions |
 
 ## Critical path now
 
