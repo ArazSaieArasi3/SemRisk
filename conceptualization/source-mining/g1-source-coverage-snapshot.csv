@@ -1,0 +1,51 @@
+source_id,material_for_paper1,extraction_status,g1_coverage,claim_consequence,recheck_owner
+SRC-OP-001,yes,source-mined-v0.1,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-ON-001,yes,technical-baseline-mined-artifact-bound,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-ON-002,yes,technical-baseline-mined-artifact-bound,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-ON-003,yes,technical-baseline-artifact-bound,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-ON-004,yes,deep-profiled-artifact-bound,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-ST-001,yes,authority-version-verified,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-ST-002,yes,authority-version-verified,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-ST-003,yes,authority-version-verified,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-ST-004,yes,authority-version-verified,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-ST-005,Personal licensed copy surfaced from File Library; do not redistribute/full-text reproduce. Store only derived semantic evidence and citations within permitted use.,optional,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-PA-001,yes,source-mined-v0.1,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-PA-002,yes,source-mining-active,BOUNDED_PENDING,Known material source with residual mining/locator/schema debt; no claim may rely on unmined details.,#12/#13/#14/#15/#17
+SRC-PA-003,yes,source-mining-active,BOUNDED_PENDING,Known material source with residual mining/locator/schema debt; no claim may rely on unmined details.,#12/#13/#14/#15/#17
+SRC-PA-004,yes,source-mining-active,BOUNDED_PENDING,Known material source with residual mining/locator/schema debt; no claim may rely on unmined details.,#12/#13/#14/#15/#17
+SRC-PH-001,yes,source-mined-v0.1,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-PH-002,yes,discovery-verified-deep-mining-pending,BOUNDED_PENDING,Known material source with residual mining/locator/schema debt; no claim may rely on unmined details.,#12/#13/#14/#15/#17
+SRC-PH-003,yes,discovery-verified-deep-mining-pending,BOUNDED_PENDING,Known material source with residual mining/locator/schema debt; no claim may rely on unmined details.,#12/#13/#14/#15/#17
+SRC-PH-004,yes,source-mined-v0.1,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-PH-005,yes,source-mined-v0.1,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-PH-006,yes,discovery-verified-deep-mining-pending,BOUNDED_PENDING,Known material source with residual mining/locator/schema debt; no claim may rely on unmined details.,#12/#13/#14/#15/#17
+SRC-DS-001,yes,DOWNGRADED_SUPPLEMENTARY_NOT_PRIMARY,SUPPLEMENTARY_ONLY,Cannot support primary empirical claims.,#16/#17
+SRC-DS-002,optional,identity-qualified-schema-mining-pending,BOUNDED_OR_DEFERRED,Not required for Core freeze; use only for profile/future/comparison claims already bounded.,#14/#15/#4/#36
+SRC-DS-003,yes,qualified-public-doi-license-schema-mining-pending,BOUNDED_PENDING,Known material source with residual mining/locator/schema debt; no claim may rely on unmined details.,#12/#13/#14/#15/#17
+SRC-DS-004,yes,candidate-public-data-doi-license-pending,BOUNDED_PENDING,Known material source with residual mining/locator/schema debt; no claim may rely on unmined details.,#12/#13/#14/#15/#17
+SRC-PA-005,yes,deep-mined-v0.1-followup-lineage-open,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-PA-006,yes,deep-mined-v0.1-artifact-binding-pending,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-ON-005,conditional,family-qualified-noncore,BOUNDED_OR_DEFERRED,Not required for Core freeze; use only for profile/future/comparison claims already bounded.,#14/#15/#4/#36
+SRC-PA-007,conditional,discovery-verified-screening-pending,BOUNDED_OR_DEFERRED,Not required for Core freeze; use only for profile/future/comparison claims already bounded.,#14/#15/#4/#36
+SRC-PA-008,conditional,discovery-verified-screening-pending,BOUNDED_OR_DEFERRED,Not required for Core freeze; use only for profile/future/comparison claims already bounded.,#14/#15/#4/#36
+SRC-PA-009,yes,deep-mined-v0.1-locator-normalization-pending,BOUNDED_PENDING,Known material source with residual mining/locator/schema debt; no claim may rely on unmined details.,#12/#13/#14/#15/#17
+SRC-PH-007,yes,publisher-snippet-qualified-fulltext-blocked-formally-bounded,BOUNDED_ACCESS_GAP,Only publisher-visible/bounded claims allowed; detailed feature claims prohibited.,#14/#15
+SRC-PA-010,yes,discovery-verified-deep-mining-pending,BOUNDED_PENDING,Known material source with residual mining/locator/schema debt; no claim may rely on unmined details.,#12/#13/#14/#15/#17
+SRC-ON-006,conditional,deep-profiled-exact-module-bound,BOUNDED_OR_DEFERRED,Not required for Core freeze; use only for profile/future/comparison claims already bounded.,#14/#15/#4/#36
+SRC-ST-006,conditional,authority-discovery-verified,BOUNDED_OR_DEFERRED,Not required for Core freeze; use only for profile/future/comparison claims already bounded.,#14/#15/#4/#36
+SRC-PA-011,yes,deep-profiled-v0.1-artifact-binding-pending,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-PA-012,yes,deep-profiled-v0.1-artifact-binding-pending,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-PA-013,yes,deep-profiled-v0.1,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-PA-014,conditional,discovery-verified-future-profile-relevant,BOUNDED_OR_DEFERRED,Not required for Core freeze; use only for profile/future/comparison claims already bounded.,#14/#15/#4/#36
+SRC-PA-015,yes,deep-mined-v0.1,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-PA-016,yes,deep-profiled-v0.1-artifact-binding-pending,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-PA-017,yes,deep-profiled-v0.1-artifact-binding-pending,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-ST-007,yes,deep-profiled-v0.1-clause-mining-pending,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-ST-008,yes,deep-profiled-v0.1-clause-mining-pending,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-ST-009,yes,deep-profiled-v0.1-clause-mining-pending,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-PH-008,yes,deep-mined-v0.1-artifact-lineage-pending,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-PH-009,yes,deep-mined-v0.1-lineage-artifact-pending,ADEQUATE_FOR_G1,May support bounded Paper-1 claims within recorded extraction scope.,#18
+SRC-PH-010,conditional,discovery-verified-screening-pending,BOUNDED_OR_DEFERRED,Not required for Core freeze; use only for profile/future/comparison claims already bounded.,#14/#15/#4/#36
+SRC-ON-007,conditional,deep-profiled-artifact-bound,BOUNDED_OR_DEFERRED,Not required for Core freeze; use only for profile/future/comparison claims already bounded.,#14/#15/#4/#36
+SRC-PH-011,yes,discovery-verified-deep-profile-pending,BOUNDED_PENDING,Known material source with residual mining/locator/schema debt; no claim may rely on unmined details.,#12/#13/#14/#15/#17
+SRC-PH-012,conditional,metadata-qualified-lineage-material,BOUNDED_OR_DEFERRED,Not required for Core freeze; use only for profile/future/comparison claims already bounded.,#14/#15/#4/#36
