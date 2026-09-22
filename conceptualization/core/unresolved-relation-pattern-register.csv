@@ -1,0 +1,13 @@
+pattern_id,topic,severity,uncertainty,current_decision,downstream_owner,blocks_g2_if_unresolved
+RP-001,Risk Scenario foundational category,HIGH,Possible event/type/situation treatment unresolved.,Keep semantic distinction; no exact UFO category yet.,#25,YES
+RP-002,Predisposing Condition vs Vulnerability,HIGH,"Potential overlap between disposition, condition and vulnerability.",Keep distinct provisional participants; resolve identity/foundationalization.,#25,YES
+RP-003,Trigger category,MEDIUM,"Trigger may be event, condition, threshold or contextual role.",Keep relation/pattern; no universal class/category assertion.,#20/#25,NO
+RP-004,Control Mechanism vs ROSE Security Mechanism,HIGH,Exact reuse/superpattern decision unresolved.,ALIGN_EXTERNAL_BEFORE_NEW; no novelty claim.,#21,YES
+RP-005,Risk State bearer/category,HIGH,Exact state bearer and state ontology pattern unresolved.,Preserve state/workflow distinction; foundationalize later.,#25,YES
+RP-006,Responsibility vs Accountability,MEDIUM,Could require separate normative/relator patterns.,Keep common assignment pattern; refine if evidence demands.,#25/#21,NO
+RP-007,Association symmetry,MEDIUM,Generic association may be symmetric; directed dependency is not.,Do not assign symmetry at v0.1; split later if required.,#26,NO
+RP-008,Cardinality/functionality hypotheses,MEDIUM,Local data constraints may not be universal ontology truths.,All cardinalities remain hypotheses pending #26 and SHACL design.,#26,NO
+RP-009,Workflow transition graph,MEDIUM,Operational rules vary by product/process.,Keep in application/rule layer; no universal OWL transition graph.,#26/#45,NO
+RP-010,Pharma bridge exact predicates,MEDIUM,Exact relation reuse/alignment to CM-PharmE not finalized.,Use governed bridge subset; finalize in #5/#21.,#5/#21,NO
+RP-011,PROV-O predicate selection,LOW,Provenance concept selected but exact PROV predicates not yet frozen.,Prefer reuse; finalize in #21/#26.,#21/#26,NO
+RP-012,Exposure relation semantics,MEDIUM,Financial/physical/assessment meanings vary.,Keep generic exposure pattern with profile refinements.,#24/#25,NO
