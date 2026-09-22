@@ -1,0 +1,11 @@
+conflict_id,topic,severity,architecture_effect,current_disposition,downstream_owner,recheck_trigger,gate_effect
+G2-C01,Risk vs COVER Risk foundational meaning,HIGH,No ownership/module ambiguity; foundational category unresolved.,Keep SemRisk Core Risk + COVER alignment bridge; prohibit equivalence.,#25,#25 foundational rationale completed,CONDITION
+G2-C02,Assessment Activity/Result vs COVER/ROSE RiskAssessment,HIGH,No duplicate owner; split semantics are architecturally fixed.,External assessment construct may map partially after foundational analysis.,#25,#25 activity/result mapping decision,CONDITION
+G2-C03,Likelihood Assessment Result vs COVER Likelihood,HIGH,Core result semantics preserved; quality/result relation unresolved.,No equivalence; method/result architecture retained.,#25/#26,#25 category + #26 formalization decision,CONDITION
+G2-C04,Risk Event type vs occurrence,HIGH,Core Risk Event required; exact foundational typing unresolved.,Keep event/scenario/description separation.,#25,#25 event identity analysis,CONDITION
+G2-C05,Control Mechanism vs ROSE SecurityMechanism,HIGH,Generic Core vs security-profile scope is architecturally clear.,ROSE remains narrower profile alignment; no equivalence.,#25,#25 mechanism/category analysis,CONDITION
+G2-C06,Vulnerability vs Predisposing Condition,HIGH,Both remain distinct provisional Core participants.,Resolve disposition/condition identity before stable axioms.,#25,#25 distinction decision,CONDITION
+G2-C07,Risk State foundational bearer,HIGH,Risk State vs Workflow State architecture is fixed.,Exact state bearer/category deferred.,#25,#25 state analysis,CONDITION
+G2-C08,Broad Health boundary,MEDIUM,Health module deferred; no Paper-1 Health claim.,#4 can proceed independently without blocking P1 G2.,#4,Any attempt to promote Health semantics into P1 Core,NONBLOCKING
+G2-C09,API/INN/product terminology owner,HIGH,Explicit external-unmapped Pharma data/profile term; not Core.,Select terminology owner only if later dataset mapping requires it.,#28,#28/DS-004 field mapping,NONBLOCKING_G2
+G2-C10,CM-PharmE import/license,MEDIUM,Reference bridge only; no import needed for conceptual architecture.,Resolve before redistribution/import if chosen.,#43/CM-PharmE owner,Any import/redistribution decision,NONBLOCKING_G2
