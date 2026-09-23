@@ -1,0 +1,16 @@
+finding_id,pattern,severity,finding,remediation,recheck_status
+FAP-001,Risk forced into COVER:Risk/Quality,critical,Lexical identity would erase SemRisk's broader operational pattern.,No equivalence; derived pattern treatment.,PASS
+FAP-002,Assessment Activity = Assessment Result,critical,Event and information artifact categories collapse.,Separate Event/Action and Information Object.,PASS
+FAP-003,Scenario Description = Risk Scenario/Event,critical,Information object conflated with possible pattern/occurrence.,Use representation/aboutness relations.,PASS
+FAP-004,Residual/Inherent as Risk subkinds,high,Assessment context becomes identity criterion.,Keep as Assessment Result subkinds/context.,PASS
+FAP-005,Risk Owner as actor kind,critical,Anti-rigid contextual role mistaken for identity provider.,Risk Owner = Role; actor identity external.,PASS
+FAP-006,Role represented as an individual object-property target,high,OntoUML role type would be reified incorrectly.,Replace `bearsRiskOwnerRole` with derived `hasRiskOwner` truthmade by Risk Responsibility.,PASS
+FAP-007,Risk Responsibility as simple binary property,high,Assignment/history/validity truthmaker lost.,Use Relator + mediation/aboutness.,PASS
+FAP-008,Control Mechanism = ROSE SecurityMechanism,high,Security specialization universalized.,Generic RoleMixin + control capability helper; ROSE narrower profile.,PASS
+FAP-009,Vulnerability = Predisposing Condition,high,Intrinsic disposition and situation collapse.,Keep distinct; relate explicitly.,PASS
+FAP-010,Risk State = Workflow State,critical,Record status would entail domain state.,Situation vs workflow quality/value.,PASS
+FAP-011,Likelihood Result = Likelihood Quality,high,Estimate artifact and estimated quality collapse.,Result information object links to value/quality.,PASS
+FAP-012,Global cardinalities copied from Jira/RDB,high,Application completeness constraints become universal ontology truth.,Defer local cardinalities to SHACL/RDB unless ontologically justified.,PASS
+FAP-013,Causation inferred from temporal sequence/association,critical,Epistemic overclaim.,Keep causal relation separate and evidence-bound.,PASS
+FAP-014,CM-PharmE stereotype flattening,high,kind/mode/role/relator/perdurant distinctions lost.,Preserve frozen v1.0.0 stereotypes in bridge.,PASS
+FAP-015,Diagram-only entities,high,Visual convenience becomes ontology truth.,Model source must reference canonical SR-CPT/SR-REL IDs only.,PASS
