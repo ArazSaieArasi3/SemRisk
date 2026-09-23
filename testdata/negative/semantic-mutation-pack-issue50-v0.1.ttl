@@ -1,0 +1,38 @@
+@prefix sr: <urn:semrisk:entity:> .
+@prefix mut: <urn:semrisk:test:mutation:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+# Synthetic negative-control pack for SemRisk Issue #50.
+# Baseline: bae1480138ed713bfc0af6161a5ae2ed2d8a6024
+# These triples are intentionally invalid semantic mutations. They MUST NOT be
+# imported into canonical ontology modules and MUST NOT be treated as domain evidence.
+
+mut:NC-SEM-001 a mut:SemanticMutation ;
+  dcterms:identifier "NC-SEM-001" ;
+  rdfs:label "Risk record conflated with risk phenomenon"@en ;
+  dcterms:description "Intentionally asserts Risk Register Entry equivalent to Risk. Expected detector: semantic-mutation guard; expected result: FAIL/detected."@en .
+sr:SR-CPT-033 owl:equivalentClass sr:SR-CPT-001 .
+
+mut:NC-SEM-002 a mut:SemanticMutation ;
+  dcterms:identifier "NC-SEM-002" ;
+  rdfs:label "Workflow state conflated with risk state"@en ;
+  dcterms:description "Intentionally asserts Workflow State equivalent to Risk State. Expected detector: semantic-mutation guard; expected result: FAIL/detected."@en .
+sr:SR-CPT-036 owl:equivalentClass sr:SR-CPT-035 .
+
+mut:NC-SEM-003 a mut:SemanticMutation ;
+  dcterms:identifier "NC-SEM-003" ;
+  rdfs:label "Unsupported mapping equivalence"@en ;
+  dcterms:description "Intentionally asserts an unapproved equivalence between Assessment Result and Risk. Expected detector: mapping-integrity guard; expected result: FAIL/detected."@en .
+sr:SR-CPT-018 owl:equivalentClass sr:SR-CPT-001 .
+
+mut:NC-SEM-004 a mut:SemanticMutation ;
+  dcterms:identifier "NC-SEM-004" ;
+  rdfs:label "Expected entailment regression"@en ;
+  dcterms:description "Mutation marker declaring the expected subclass relation SR-CPT-017 -> SR-CPT-013 absent. The executable detector must verify this against a mutated graph rather than infer PASS from this metadata."@en ;
+  mut:mutationKind "remove-expected-subclass-entailment" ;
+  mut:subject sr:SR-CPT-017 ;
+  mut:predicate rdfs:subClassOf ;
+  mut:object sr:SR-CPT-013 .
