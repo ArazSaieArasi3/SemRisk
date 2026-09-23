@@ -2,14 +2,14 @@
 
 ## Bound execution
 - Workflow: `SemRisk Semantic CI`
-- Workflow run: `35849810091`
-- Run number: `2`
-- Exact commit: `a9a655b3bf95092039dda75181604823213a62cc`
+- Workflow run: `35850078877`
+- Run number: `5`
+- Exact commit: `8fa6e221d4e2e7cf36817e666bf374ba11a921b7`
 - Conclusion: **SUCCESS**
-- Artifact ID: `10744687751`
-- Artifact name: `semrisk-semantic-ci-a9a655b3bf95092039dda75181604823213a62cc`
-- Artifact SHA-256 digest: `702cec4b8457cadb38acd82a114f71d087b3deaa7c70e52271ebebc598de4114`
-- Artifact retention expiry: `2026-10-23T10:37:16Z`
+- Artifact ID: `10744654947`
+- Artifact name: `semrisk-semantic-ci-8fa6e221d4e2e7cf36817e666bf374ba11a921b7`
+- Artifact SHA-256 digest: `f8a5fd06d12faef23aca0095fe5877a507cf1673755037525a73328faffeaca6`
+- Artifact retention expiry: `2026-10-23T10:40:17Z`
 
 ## Executed checks
 - RDF/Turtle parsing: PASS
@@ -41,3 +41,6 @@
 This is **verification evidence for the declared formal/build checks**, not independent semantic/domain validation. It establishes that the P1-R2 formal candidate is reproducibly parseable, OWL-2-DL-profile compatible under the declared toolchain, reasoner-consistent for the tested closure, SHACL-testable, and traceable to the governed conceptual subset.
 
 It does not establish expert validity, transferability, application/RDB parity or overall ontology quality; those remain W4/W3A work.
+
+## Finalization note
+The final governed run above validates the post-fix candidate manifest in which exact CI evidence is externalized to this record, avoiding a self-referential manifest→run→manifest loop.
