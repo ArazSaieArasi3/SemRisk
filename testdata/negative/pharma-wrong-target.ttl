@@ -1,0 +1,4 @@
+@prefix sr: <urn:semrisk:entity:> .
+@prefix test: <urn:semrisk:test:negative:> .
+test:risk a sr:SR-CPT-001 ;
+  sr:SR-REL-037 <urn:not-cm-pharme:wrong-target> .
