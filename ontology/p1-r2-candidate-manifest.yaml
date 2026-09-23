@@ -67,9 +67,6 @@ prohibitions:
   - "No unregistered equivalence mapping."
 
 build_validation:
-  status: "PASS"
-  workflow_run_id: 35849810091
-  validated_commit: "a9a655b3bf95092039dda75181604823213a62cc"
-  evidence_artifact_id: 10744687751
-  evidence_artifact_digest: "sha256:702cec4b8457cadb38acd82a114f71d087b3deaa7c70e52271ebebc598de4114"
+  status: "PASS_EVIDENCE_EXTERNALIZED"
   evidence_record: "build/p1-r2-semantic-build-evidence-2026-09-23.md"
+  binding_rule: "The evidence record, not this self-referential manifest, owns the exact workflow run, commit and artifact digest."
