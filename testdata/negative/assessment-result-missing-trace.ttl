@@ -1,0 +1,5 @@
+@prefix sr: <urn:semrisk:entity:> .
+@prefix test: <urn:semrisk:test:negative:> .
+test:result-no-generation-evidence a sr:SR-CPT-013 ;
+  sr:SR-REL-016 test:risk .
+test:risk a sr:SR-CPT-001 .
