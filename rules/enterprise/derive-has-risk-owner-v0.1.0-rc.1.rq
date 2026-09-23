@@ -1,0 +1,18 @@
+PREFIX sr: <urn:semrisk:entity:>
+
+# SR-RULE-001 — derive hasRiskOwner
+# Owning module: Enterprise
+# Semantics: derived convenience relation only.
+# Truthmaker: SR-CPT-031 Risk Responsibility assignment.
+# Inputs: SR-REL-027 assignsResponsibilityFor, SR-REL-028 responsibilityAssignedTo.
+# Output: target SR-REL-026 hasRiskOwner actor.
+# This rule does not create a Risk Owner individual and does not change actor identity.
+
+CONSTRUCT {
+  ?target sr:SR-REL-026 ?actor .
+}
+WHERE {
+  ?responsibility a sr:SR-CPT-031 ;
+                  sr:SR-REL-027 ?target ;
+                  sr:SR-REL-028 ?actor .
+}
