@@ -1,0 +1,7 @@
+module_id,module,ontology_iri,reserved_initial_version,reserved_version_iri,release_state,public_https_status,notes
+ONT-CORE,core,urn:semrisk:ontology:core,0.1.0-rc.1,urn:semrisk:ontology:core:0.1.0-rc.1,RESERVED_NOT_RELEASED,UNCLAIMED,Release only after #27/#44 candidate passes.
+ONT-ENT,enterprise,urn:semrisk:ontology:enterprise,0.1.0-rc.1,urn:semrisk:ontology:enterprise:0.1.0-rc.1,RESERVED_NOT_RELEASED,UNCLAIMED,Operational/register profile.
+ONT-METHOD,method,urn:semrisk:ontology:method,0.1.0-rc.1,urn:semrisk:ontology:method:0.1.0-rc.1,RESERVED_NOT_RELEASED,UNCLAIMED,Assessment-method/profile semantics.
+ONT-GOV,governance,urn:semrisk:ontology:governance,0.1.0-rc.1,urn:semrisk:ontology:governance:0.1.0-rc.1,RESERVED_NOT_RELEASED,UNCLAIMED,Governance refinements.
+ONT-PHARMA,pharma,urn:semrisk:ontology:pharma,0.1.0-rc.1,urn:semrisk:ontology:pharma:0.1.0-rc.1,RESERVED_NOT_RELEASED,UNCLAIMED,Bounded Paper-1 Pharma profile; external-owner bridge preserved.
+ONT-MAP,mappings,urn:semrisk:ontology:mappings,0.1.0-rc.1,urn:semrisk:ontology:mappings:0.1.0-rc.1,RESERVED_NOT_RELEASED,UNCLAIMED,COVER/ROSE/CM-PharmE and other governed mappings.
