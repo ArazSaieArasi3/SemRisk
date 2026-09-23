@@ -71,7 +71,7 @@ relation,SR-REL-022,planImplementsStrategy,P1_REQUIRED,SemRisk,Core,NIST/GRC,GOV
 relation,SR-REL-023,activityExecutesPlan,P1_REQUIRED,SemRisk,Core,ISO/PH-008,GOVERNED_UNIQUE,relation-registry-v0.1.csv
 relation,SR-REL-024,activityUsesControl,P1_REQUIRED,SemRisk,Core/Governance,ROSE Security Mechanism,GOVERNED_UNIQUE,relation-registry-v0.1.csv
 relation,SR-REL-025,controlProtects,P1_REQUIRED,SemRisk,Core/Governance,ROSE,GOVERNED_UNIQUE,relation-registry-v0.1.csv
-relation,SR-REL-026,bearsRiskOwnerRole,P1_REQUIRED,SemRisk,Core/Enterprise,gUFO/UFO role patterns; NIST,GOVERNED_UNIQUE,relation-registry-v0.1.csv
+relation,SR-REL-026,hasRiskOwner,P1_REQUIRED,SemRisk,Core/Enterprise,gUFO/UFO role patterns; NIST,GOVERNED_UNIQUE,relation-registry-v0.1.csv
 relation,SR-REL-027,assignsResponsibilityFor,P1_REQUIRED,SemRisk,Core/Governance,NIST/GRC; UFO relator candidate,GOVERNED_UNIQUE,relation-registry-v0.1.csv
 relation,SR-REL-028,responsibilityAssignedTo,P1_REQUIRED,SemRisk,Core/Governance,UFO relator candidate,GOVERNED_UNIQUE,relation-registry-v0.1.csv
 relation,SR-REL-029,registerContainsEntry,P1_REQUIRED,SemRisk,Enterprise,NIST,GOVERNED_UNIQUE,relation-registry-v0.1.csv
