@@ -11,7 +11,7 @@ test:fixture-v001
 test:risk-001 a sr:SR-CPT-001 ;
   sr:SR-REL-003 test:event-001 ;
   sr:SR-REL-031 test:risk-state-001 ;
-  sr:SR-REL-037 test:pharma-enterprise-001 .
+  sr:SR-REL-037 <urn:cm-pharme:v1.0.0:CMPE-C0001> .
 
 test:scenario-001 a sr:SR-CPT-006 ;
   sr:SR-REL-003 test:event-001 ;
@@ -59,6 +59,3 @@ test:treatment-001 a sr:SR-CPT-028 ;
   sr:SR-REL-024 test:control-001 .
 test:control-001 a sr:SR-CPT-029 .
 
-test:pharma-enterprise-001
-  dcterms:type <urn:cm-pharme:v1.0.0:CMPE-C0001> ;
-  dcterms:source "Synthetic Pharma bridge target; CM-PharmE v1.0.0 concept CMPE-C0001 supplies the external semantic type descriptor." .
