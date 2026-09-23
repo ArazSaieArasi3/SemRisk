@@ -57,7 +57,7 @@ relation,SR-REL-022,planImplementsStrategy,Core,REQUIRED,CQ-010; CQ-026,PROVISIO
 relation,SR-REL-023,activityExecutesPlan,Core,REQUIRED,CQ-010; CQ-026,PROVISIONAL_V0_1
 relation,SR-REL-024,activityUsesControl,Core/Governance,REQUIRED,CQ-010; CQ-026,PROVISIONAL_V0_1
 relation,SR-REL-025,controlProtects,Core/Governance,REQUIRED,CQ-010; CQ-013,PROVISIONAL_V0_1
-relation,SR-REL-026,bearsRiskOwnerRole,Core/Enterprise,REQUIRED,CQ-009; CQ-025,PROVISIONAL_V0_1
+relation,SR-REL-026,hasRiskOwner,Core/Enterprise,REQUIRED,CQ-009; CQ-025,PROVISIONAL_V0_1
 relation,SR-REL-027,assignsResponsibilityFor,Core/Governance,REQUIRED,CQ-009,PROVISIONAL_V0_1
 relation,SR-REL-028,responsibilityAssignedTo,Core/Governance,REQUIRED,CQ-009,PROVISIONAL_V0_1
 relation,SR-REL-029,registerContainsEntry,Enterprise,REQUIRED,CQ-001; CQ-014,PROVISIONAL_V0_1
