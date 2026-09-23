@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri id="gufo-version" name="http://purl.org/nemo/gufo#/1.0.0" uri="vendor/gufo-v1.0.0.ttl"/>
+  <uri id="gufo-ontology" name="http://purl.org/nemo/gufo#" uri="vendor/gufo-v1.0.0.ttl"/>
+  <uri id="semrisk-core-version" name="urn:semrisk:ontology:core:0.1.0-rc.1" uri="core/semrisk-core-v0.1.0-rc.1.ttl"/>
+  <uri id="semrisk-core" name="urn:semrisk:ontology:core" uri="core/semrisk-core-v0.1.0-rc.1.ttl"/>
+  <uri id="semrisk-enterprise-version" name="urn:semrisk:ontology:enterprise:0.1.0-rc.1" uri="enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl"/>
+  <uri id="semrisk-method-version" name="urn:semrisk:ontology:method:0.1.0-rc.1" uri="method/semrisk-method-v0.1.0-rc.1.ttl"/>
+  <uri id="semrisk-governance-version" name="urn:semrisk:ontology:governance:0.1.0-rc.1" uri="governance/semrisk-governance-v0.1.0-rc.1.ttl"/>
+  <uri id="semrisk-pharma-version" name="urn:semrisk:ontology:pharma:0.1.0-rc.1" uri="pharma/semrisk-pharma-v0.1.0-rc.1.ttl"/>
+  <uri id="semrisk-mappings-version" name="urn:semrisk:ontology:mappings:0.1.0-rc.1" uri="mappings/semrisk-mappings-v0.1.0-rc.1.ttl"/>
+</catalog>
