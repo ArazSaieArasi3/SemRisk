@@ -1,0 +1,5 @@
+@prefix sr: <urn:semrisk:entity:> .
+@prefix test: <urn:semrisk:test:negative:> .
+test:entry-no-risk a sr:SR-CPT-033 ;
+  sr:SR-REL-030 test:open .
+test:open a sr:SR-CPT-036 .
