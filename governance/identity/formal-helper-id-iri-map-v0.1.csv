@@ -1,0 +1,7 @@
+formal_id,formal_iri,kind,module,conceptual_source,release_critical,helper_reason,status
+SR-SHP-001,urn:semrisk:shape:SR-SHP-001,SHACL NodeShape,Enterprise,"SR-CPT-033; SR-REL-001",yes,"Closed-world evaluated register-entry completeness; does not alter OWL semantics.",CANDIDATE
+SR-SHP-002,urn:semrisk:shape:SR-SHP-002,SHACL NodeShape,Enterprise,"SR-CPT-033; SR-REL-030; SR-CPT-036",yes,"Named snapshot constraint only; historical workflow-state semantics remain open.",CANDIDATE
+SR-SHP-003,urn:semrisk:shape:SR-SHP-003,SHACL NodeShape,Core/Enterprise,"SR-CPT-031; SR-REL-027; SR-REL-028",yes,"Assignment completeness for evaluated responsibility instances.",CANDIDATE
+SR-SHP-004,urn:semrisk:shape:SR-SHP-004,SHACL NodeShape,Evaluation,"SR-CPT-013; SR-REL-015; SR-REL-016; SR-REL-017",yes,"Paper-1 evaluated profile traceability; stricter than Core OWL.",CANDIDATE
+SR-SHP-005,urn:semrisk:shape:SR-SHP-005,SHACL NodeShape,Pharma,"SR-REL-037",yes,"Ensures declared Pharma bridge subjects actually contain a bridge target.",CANDIDATE
+SR-RULE-001,urn:semrisk:rule:SR-RULE-001,SPARQL CONSTRUCT rule,Enterprise,"SR-REL-026; SR-CPT-031; SR-REL-027; SR-REL-028",yes,"Materializes derived hasRiskOwner without reifying Risk Owner as an individual.",CANDIDATE
