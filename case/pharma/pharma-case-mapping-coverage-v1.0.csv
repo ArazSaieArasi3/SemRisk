@@ -1,0 +1,4 @@
+metric_id,denominator_definition,denominator,mapped,partial,unmapped_or_unobserved,conflict,coverage_result,interpretation
+PHCOV-001,All 18 governed DS-003 structural/coding elements registered in pharma-case-field-mapping-v1.0.csv,18,8,9,1,0,44.4% direct/context mapped; 50.0% partial; 5.6% unobserved,Disposition completeness is 18/18=100%; direct mapping percentage is not ontology correctness.
+PHCOV-002,Seven PESTELI framework categories,7,0,6,1,0,0% direct; 85.7% partial; 14.3% unobserved,"Framework categories are method/profile codes, not Core classes; ecological category is intentionally preserved as unobserved."
+PHCOV-003,"Five analysed-content semantic element types: quote, cause/driver, consequence, mitigation/response, actor/responsibility",5,2,3,0,0,40% direct; 60% partial,Partial state is expected because statement context determines event/situation/role/activity identity.
