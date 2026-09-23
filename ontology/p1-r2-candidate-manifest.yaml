@@ -1,0 +1,67 @@
+schema_version: "1.0"
+candidate:
+  planning_release: "P1-R2"
+  semantic_version: "0.1.0-rc.1"
+  state: "IMPLEMENTED_NOT_RELEASED"
+  date: "2026-09-23"
+  note: "Candidate identity is reserved/implemented by #27 but becomes a reproducible semantic candidate only after #44 PASS."
+
+canonical_sources:
+  ontology_serialization: "Turtle"
+  shapes_serialization: "Turtle"
+  rule_language:
+    implemented: "SPARQL 1.1 CONSTRUCT"
+    scope: "derived hasRiskOwner only"
+
+modules:
+  - id: ONT-CORE
+    ontology_iri: "urn:semrisk:ontology:core"
+    version_iri: "urn:semrisk:ontology:core:0.1.0-rc.1"
+    path: "ontology/core/semrisk-core-v0.1.0-rc.1.ttl"
+  - id: ONT-ENT
+    ontology_iri: "urn:semrisk:ontology:enterprise"
+    version_iri: "urn:semrisk:ontology:enterprise:0.1.0-rc.1"
+    path: "ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl"
+  - id: ONT-METHOD
+    ontology_iri: "urn:semrisk:ontology:method"
+    version_iri: "urn:semrisk:ontology:method:0.1.0-rc.1"
+    path: "ontology/method/semrisk-method-v0.1.0-rc.1.ttl"
+  - id: ONT-GOV
+    ontology_iri: "urn:semrisk:ontology:governance"
+    version_iri: "urn:semrisk:ontology:governance:0.1.0-rc.1"
+    path: "ontology/governance/semrisk-governance-v0.1.0-rc.1.ttl"
+  - id: ONT-PHARMA
+    ontology_iri: "urn:semrisk:ontology:pharma"
+    version_iri: "urn:semrisk:ontology:pharma:0.1.0-rc.1"
+    path: "ontology/pharma/semrisk-pharma-v0.1.0-rc.1.ttl"
+  - id: ONT-MAP
+    ontology_iri: "urn:semrisk:ontology:mappings"
+    version_iri: "urn:semrisk:ontology:mappings:0.1.0-rc.1"
+    path: "ontology/mappings/semrisk-mappings-v0.1.0-rc.1.ttl"
+
+constraints:
+  path: "shapes/semrisk-paper1-shapes-v0.1.0-rc.1.ttl"
+  policy: "SHACL Core only in #27"
+
+rules:
+  registry: "rules/rule-registry-v0.1.csv"
+  implemented:
+    - "SR-RULE-001"
+
+test_data:
+  positive_fixture: "testdata/p1-r2-positive-smoke-v0.1.ttl"
+  semantic_role: "synthetic regression only"
+
+external_dependencies:
+  registry: "governance/identity/external-dependency-binding-registry-v1.0.csv"
+  gufo: "v1.0.0 / commit 12b098158a9244179c5e0e2534cd85254a2d3b7e"
+  prov_o: "W3C Recommendation 2013-04-30"
+  cover: "reference/alignment only"
+  rose: "reference/alignment only"
+  cm_pharme: "v1.0.0 external-owner bridge only"
+
+prohibitions:
+  - "No validated/stable/conformant claim from #27 implementation alone."
+  - "No generated serialization is canonical."
+  - "No test individual is ontology evidence."
+  - "No unregistered equivalence mapping."
