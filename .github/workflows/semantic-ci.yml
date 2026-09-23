@@ -1,0 +1,133 @@
+name: SemRisk Semantic CI
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "ontology/**"
+      - "shapes/**"
+      - "rules/**"
+      - "testdata/**"
+      - "formalization/**"
+      - "foundational/**"
+      - "architecture/g2/**"
+      - "governance/identity/**"
+      - "tools/semrisk_semantic_ci.py"
+      - "tools/requirements-semantic-ci.txt"
+      - "tools/semantic-tool-manifest.csv"
+      - ".github/workflows/semantic-ci.yml"
+  pull_request:
+    paths:
+      - "ontology/**"
+      - "shapes/**"
+      - "rules/**"
+      - "testdata/**"
+      - "formalization/**"
+      - "foundational/**"
+      - "architecture/g2/**"
+      - "governance/identity/**"
+      - "tools/semrisk_semantic_ci.py"
+      - "tools/requirements-semantic-ci.txt"
+      - "tools/semantic-tool-manifest.csv"
+      - ".github/workflows/semantic-ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  semantic-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip"
+          cache-dependency-path: tools/requirements-semantic-ci.txt
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "17"
+
+      - name: Install pinned Python validators
+        run: python -m pip install --disable-pip-version-check -r tools/requirements-semantic-ci.txt
+
+      - name: Run deterministic pre-reasoner checks
+        run: python tools/semrisk_semantic_ci.py --stage pre
+
+      - name: Cache ROBOT 1.9.10
+        id: robot-cache
+        uses: actions/cache@v4
+        with:
+          path: .tools/robot.jar
+          key: robot-1.9.10-sha256-16a73c074f3df359
+
+      - name: Install and verify ROBOT 1.9.10
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p .tools build/semantic-ci
+          if [ ! -f .tools/robot.jar ]; then
+            curl -L --fail --retry 3               https://github.com/ontodev/robot/releases/download/v1.9.10/robot.jar               -o .tools/robot.jar
+          fi
+          echo "16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105  .tools/robot.jar" | sha256sum -c -
+          java -jar .tools/robot.jar --version | tee build/semantic-ci/robot-version.txt
+          java -version 2>&1 | tee build/semantic-ci/java-version.txt
+          python --version | tee build/semantic-ci/python-version.txt
+          python -m pip freeze | sort > build/semantic-ci/python-packages.txt
+
+      - name: Assemble deterministic ontology closure
+        shell: bash
+        run: |
+          set -euo pipefail
+          java -jar .tools/robot.jar merge             --catalog ontology/catalog-v001.xml             --input ontology/core/semrisk-core-v0.1.0-rc.1.ttl             --input ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl             --input ontology/method/semrisk-method-v0.1.0-rc.1.ttl             --input ontology/governance/semrisk-governance-v0.1.0-rc.1.ttl             --input ontology/pharma/semrisk-pharma-v0.1.0-rc.1.ttl             --input ontology/mappings/semrisk-mappings-v0.1.0-rc.1.ttl             --output build/semantic-ci/merged.owl
+
+      - name: Validate OWL 2 DL profile
+        run: |
+          java -jar .tools/robot.jar validate-profile             --profile DL             --input build/semantic-ci/merged.owl             --output build/semantic-ci/owl-profile.txt
+
+      - name: Run HermiT consistency and classification
+        run: |
+          java -jar .tools/robot.jar reason             --reasoner HermiT             --input build/semantic-ci/merged.owl             --output build/semantic-ci/reasoned.owl
+
+      - name: Check expected reasoned consequences
+        run: python tools/semrisk_semantic_ci.py --stage post --reasoned build/semantic-ci/reasoned.owl
+
+      - name: Prove inconsistent negative fixture is detected
+        shell: bash
+        run: |
+          set -euo pipefail
+          java -jar .tools/robot.jar merge             --catalog ontology/catalog-v001.xml             --input build/semantic-ci/merged.owl             --input testdata/negative/reasoner-inconsistent-record-risk.ttl             --output build/semantic-ci/negative-inconsistent.owl
+          set +e
+          java -jar .tools/robot.jar reason             --reasoner HermiT             --input build/semantic-ci/negative-inconsistent.owl             --output build/semantic-ci/negative-should-not-exist.owl             > build/semantic-ci/negative-reasoner.log 2>&1
+          code=$?
+          set -e
+          if [ "$code" -eq 0 ]; then
+            echo "ERROR: known-inconsistent fixture unexpectedly passed HermiT."
+            cat build/semantic-ci/negative-reasoner.log
+            exit 1
+          fi
+          echo "PASS: HermiT rejected the known-inconsistent fixture." | tee build/semantic-ci/negative-reasoner-status.txt
+
+      - name: Emit exact checksum inventory
+        shell: bash
+        run: |
+          set -euo pipefail
+          find ontology shapes rules testdata tools governance/identity architecture/g2 formalization foundational             -type f             \( -name '*.ttl' -o -name '*.rq' -o -name '*.csv' -o -name '*.yaml' -o -name '*.xml' -o -name '*.py' -o -name '*.md' \)             -print0 | sort -z | xargs -0 sha256sum > build/semantic-ci/repository-input-sha256.txt
+          git rev-parse HEAD > build/semantic-ci/git-commit.txt
+          git status --porcelain=v1 > build/semantic-ci/git-status.txt
+          test ! -s build/semantic-ci/git-status.txt
+
+      - name: Upload semantic evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: semrisk-semantic-ci-${{ github.sha }}
+          path: build/semantic-ci/
+          if-no-files-found: error
+          retention-days: 30
