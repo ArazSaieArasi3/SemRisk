@@ -4,7 +4,12 @@ repository: "ArazSaieArasi3/SemRisk"
 semantic_owner:
   research_id: R-022
   canonical_scope: "Domain-general SemRisk risk semantics plus governed SemRisk-owned profiles, mappings, evaluation evidence and data projections; external ontology semantics remain externally canonical."
-  namespaces: []
+  namespaces:
+    - "urn:semrisk:entity:"
+    - "urn:semrisk:ontology:"
+    - "urn:semrisk:shape:"
+    - "urn:semrisk:rule:"
+    - "urn:semrisk:release:"
 
 dependencies:
   - id: DEP-001
@@ -102,3 +107,39 @@ dependencies:
     rationale: "IOF Biopharma Risk Management is current formal Pharma QRM prior art and a potential alignment source; SemRisk must not duplicate its externally owned biopharma risk-management constructs without a governed reuse decision."
     status: active
     notes: "Exact W1 identity is resolved: the IOF suite release is 202603 at commit 899296..., while this individual Provisional module carries owl:versionIRI 202602. This is suite-release/module-version semantics rather than a contradiction. Semantic reuse/import remains conditional on #21 because module maturity is Provisional."
+
+  - id: DEP-009
+    repository: "https://github.com/nemo-ufes/gufo"
+    semantic_scope: "Foundational implementation vocabulary for selected UFO/gUFO categories and relations."
+    canonical_owner: "gUFO maintainers / NEMO"
+    relation: imports_or_reuses
+    requirement: required
+    ref_policy: "release:v1.0.0; tag-commit:12b098158a9244179c5e0e2534cd85254a2d3b7e; ontologyIRI:http://purl.org/nemo/gufo#; versionIRI:http://purl.org/nemo/gufo#/1.0.0; license:CC-BY-4.0"
+    mapping_path: "foundational/"
+    rationale: "Issue #25 selected UFO/gUFO foundational patterns; #43 binds the exact stable gUFO release instead of mutable master."
+    status: active
+    notes: "Paper-1 formal implementation must bind v1.0.0. Current master is not scholarly identity and must not silently replace this dependency."
+
+  - id: DEP-010
+    repository: "https://www.w3.org/TR/2013/REC-prov-o-20130430/"
+    semantic_scope: "Qualified provenance, derivation, generation, attribution and revision semantics."
+    canonical_owner: "W3C PROV"
+    relation: reuses
+    requirement: required
+    ref_policy: "W3C-Recommendation:2013-04-30; namespace:http://www.w3.org/ns/prov#; exact-spec:http://www.w3.org/TR/2013/REC-prov-o-20130430/"
+    mapping_path: "formalization/"
+    rationale: "Issue #26 selected PROV-O rather than a local monolithic provenance class."
+    status: active
+    notes: "Use the dated Recommendation as normative Paper-1 binding; a latest TR alias is not the release identity."
+
+  - id: DEP-011
+    repository: "https://www.w3.org/TR/2017/REC-owl-time-20171019/"
+    semantic_scope: "Temporal entities/order relations used if #27 requires explicit temporal reuse."
+    canonical_owner: "W3C OWL-Time"
+    relation: references
+    requirement: conditional
+    ref_policy: "W3C-Recommendation:2017-10-19; namespace:http://www.w3.org/2006/time#; exact-spec:https://www.w3.org/TR/2017/REC-owl-time-20171019/"
+    mapping_path: "formalization/"
+    rationale: "Issue #26 prefers established temporal vocabulary rather than ad-hoc transitive ordering."
+    status: active
+    notes: "A later Candidate Recommendation Draft exists, but Paper-1 intentionally binds the 2017 Recommendation unless an explicit migration decision is recorded."
