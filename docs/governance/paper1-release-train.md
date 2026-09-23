@@ -63,14 +63,23 @@ Planning IDs are stable backlog coordination identifiers. They are not yet ontol
 
 ## 6. Current state
 
-- P1-R0: IN PROGRESS
-- P1-R1: BLOCKED by P1-R0 / G1
-- P1-R2: BLOCKED by G2
-- P1-R3: BLOCKED by semantic candidate
-- P1-R4: BLOCKED by executable candidate
-- P1-R5: BLOCKED by G4
-- P1-S1: BLOCKED by P1-R5 and G5 requirements
+- P1-R0: **COMPLETE / CONDITIONAL_PASS** — #18 G1 closed with bounded source-mining debt.
+- P1-R1: **COMPLETE / PASS_FOR_FORMALIZATION** — #24 G2 closed and its foundational condition was cleared by #25.
+- P1-R2: **IN PROGRESS** — #25, #26 and #43 completed; #27 and #44 remain.
+- P1-R3: BLOCKED by P1-R2 semantic candidate.
+- P1-R4: BLOCKED by executable candidate.
+- P1-R5: BLOCKED by G4.
+- P1-S1: BLOCKED by P1-R5 and G5 requirements.
 
 ## 7. GitHub milestone note
 
 At definition time, the SemRisk issues inspected have no GitHub milestone assigned. The current connector exposes issue milestone assignment but does not expose milestone creation, so this document and MASTER #8 are the authoritative release-train mapping until milestones are created through GitHub UI or another supported action.
+## 8. Formal identity/version integration — #43
+
+- Planning release IDs remain gate/work-package identities, not ontology semantic versions.
+- P1-R1 conceptual package is `conceptual v0.1.0`.
+- First P1-R2 formal ontology/shapes/mapping candidate starts at `v0.1.0-rc.1` unless #27 documents a prior governed formal version.
+- Component versions are independent: ontology, SHACL, mappings, rules, projection, datasets and evaluation can change separately.
+- Internal formal IRIs use repository-independent `urn:semrisk:*` namespaces until a persistent HTTPS resolver is actually configured and tested.
+- P1-R2 and later release bundles must bind exact component versions, Git SHAs, checksums and external refs.
+- Publication does not automatically make the ontology `1.0.0`; P1-R5 binds the exact evaluated semantic version that actually exists.
