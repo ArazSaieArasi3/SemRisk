@@ -120,8 +120,9 @@ jobs:
           set -euo pipefail
           find ontology shapes rules testdata tools governance/identity architecture/g2 formalization foundational             -type f             \( -name '*.ttl' -o -name '*.rq' -o -name '*.csv' -o -name '*.yaml' -o -name '*.xml' -o -name '*.py' -o -name '*.md' \)             -print0 | sort -z | xargs -0 sha256sum > build/semantic-ci/repository-input-sha256.txt
           git rev-parse HEAD > build/semantic-ci/git-commit.txt
-          git status --porcelain=v1 > build/semantic-ci/git-status.txt
-          test ! -s build/semantic-ci/git-status.txt
+          git diff --exit-code > build/semantic-ci/tracked-source-diff.txt
+          git diff --cached --exit-code > build/semantic-ci/staged-source-diff.txt
+          printf "clean tracked sources\n" > build/semantic-ci/git-status.txt
 
       - name: Upload semantic evidence
         if: always()
