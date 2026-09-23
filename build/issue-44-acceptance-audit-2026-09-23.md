@@ -19,11 +19,11 @@
 - exact successful run evidence bound to commit and workflow artifact.
 
 ## Successful governed run
-- Run: 35849810091
-- Commit: a9a655b3bf95092039dda75181604823213a62cc
+- Run: 35850078877
+- Commit: 8fa6e221d4e2e7cf36817e666bf374ba11a921b7
 - Conclusion: SUCCESS
-- Artifact: 10744687751
-- Artifact digest: sha256:702cec4b8457cadb38acd82a114f71d087b3deaa7c70e52271ebebc598de4114
+- Artifact: 10744654947
+- Artifact digest: sha256:f8a5fd06d12faef23aca0095fe5877a507cf1673755037525a73328faffeaca6
 
 ## Acceptance findings
 - Same governed semantic sources have a deterministic parse/assembly/check path and exact checksum inventory.
@@ -43,3 +43,6 @@
 
 ## Consequence
 P1-R2 is now a **reproducible semantic candidate**. This does not complete W3A application projection or W4 semantic/domain evaluation.
+
+## Final run note
+The final success is run 5 after externalizing run-specific evidence from the candidate manifest, eliminating recursive evidence mutation.
