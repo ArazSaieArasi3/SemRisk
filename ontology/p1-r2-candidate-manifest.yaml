@@ -2,9 +2,9 @@ schema_version: "1.0"
 candidate:
   planning_release: "P1-R2"
   semantic_version: "0.1.0-rc.1"
-  state: "IMPLEMENTED_NOT_RELEASED"
+  state: "BUILD_VALIDATED_CANDIDATE_NOT_EVALUATED"
   date: "2026-09-23"
-  note: "Candidate identity is reserved/implemented by #27 but becomes a reproducible semantic candidate only after #44 PASS."
+  note: "Issue #44 PASS established a reproducible semantic candidate. This state is not independent semantic/domain validation and is not the publication-bound release."
 
 canonical_sources:
   ontology_serialization: "Turtle"
@@ -65,3 +65,11 @@ prohibitions:
   - "No generated serialization is canonical."
   - "No test individual is ontology evidence."
   - "No unregistered equivalence mapping."
+
+build_validation:
+  status: "PASS"
+  workflow_run_id: 35849810091
+  validated_commit: "a9a655b3bf95092039dda75181604823213a62cc"
+  evidence_artifact_id: 10744687751
+  evidence_artifact_digest: "sha256:702cec4b8457cadb38acd82a114f71d087b3deaa7c70e52271ebebc598de4114"
+  evidence_record: "build/p1-r2-semantic-build-evidence-2026-09-23.md"
