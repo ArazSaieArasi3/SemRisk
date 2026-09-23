@@ -66,7 +66,7 @@ Planning IDs are stable backlog coordination identifiers. They are not yet ontol
 - P1-R0: **COMPLETE / CONDITIONAL_PASS** — #18 G1 closed with bounded source-mining debt.
 - P1-R1: **COMPLETE / PASS_FOR_FORMALIZATION** — #24 G2 closed and its foundational condition was cleared by #25.
 - P1-R2: **COMPLETE / REPRODUCIBLE_SEMANTIC_CANDIDATE** — #25/#26/#43/#27/#44 complete; application projection and independent evaluation remain later gates.
-- P1-R3: BLOCKED by P1-R2 semantic candidate.
+- P1-R3: **IN PROGRESS** — #28 bounded Pharma case complete; #45–#49 relational/application projection sequence remains.
 - P1-R4: BLOCKED by executable candidate.
 - P1-R5: BLOCKED by G4.
 - P1-S1: BLOCKED by P1-R5 and G5 requirements.
