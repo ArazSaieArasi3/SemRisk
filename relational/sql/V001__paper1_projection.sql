@@ -412,7 +412,7 @@ CREATE TABLE pharma.context_link (
 CREATE OR REPLACE FUNCTION pharma.enforce_cm_pharme_target()
 RETURNS trigger
 LANGUAGE plpgsql
-AS $
+AS $semrisk$
 DECLARE
   ns text;
   vr text;
@@ -426,7 +426,7 @@ BEGIN
       USING ERRCODE = '23514';
   END IF;
   RETURN NEW;
-END $;
+END $semrisk$;
 
 CREATE TRIGGER trg_pharma_context_cm_pharme_target
 BEFORE INSERT OR UPDATE OF external_entity_id ON pharma.context_link
