@@ -1,0 +1,122 @@
+@prefix sr: <urn:semrisk:entity:> .
+@prefix case: <urn:semrisk:scenario:p1:e2e:> .
+@prefix base: <urn:semrisk:case:pharma:v1:> .
+@prefix cmpe: <urn:cm-pharme:v1.0.0:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+case:package
+  dcterms:title "SemRisk Paper-1 executable end-to-end scenario v1.0"@en ;
+  dcterms:type "BOUNDED_CONSTRUCTED_CASE_WITH_EXPLICIT_SYNTHETIC_EXECUTION_EXTENSION" ;
+  dcterms:source <https://doi.org/10.25375/uct.29178665.v4> ;
+  dcterms:hasVersion "1.0" .
+
+base:risk-context a sr:SR-CPT-001 ;
+  sr:SR-REL-031 case:risk-state-pre, case:risk-state-post ;
+  sr:SR-REL-037 cmpe:CMPE-C0011, cmpe:CMPE-C0032, cmpe:CMPE-C0010 .
+
+base:scenario a sr:SR-CPT-006 ;
+  sr:SR-REL-006 base:supply-concentration-condition, base:forecasting-condition ;
+  sr:SR-REL-003 case:event .
+
+case:trigger a sr:SR-CPT-005 ;
+  dcterms:description "Synthetic trigger; not an observed DS-003 event."@en .
+
+case:event a sr:SR-CPT-007 ;
+  sr:SR-REL-007 case:trigger ;
+  sr:SR-REL-004 case:consequence ;
+  dcterms:description "Synthetic realization used only to execute the semantic path."@en .
+
+case:consequence a sr:SR-CPT-008 ;
+  dcterms:description "Synthetic consequence used to test event/consequence vs impact-result distinction."@en .
+
+case:register a sr:SR-CPT-032 ;
+  sr:SR-REL-029 case:entry .
+
+case:entry a sr:SR-CPT-033 ;
+  sr:SR-REL-001 base:risk-context ;
+  sr:SR-REL-030 case:workflow-open, case:workflow-treated .
+
+case:scenario-description a sr:SR-CPT-034 ;
+  sr:SR-REL-002 base:scenario ;
+  dcterms:description "Information artifact describing the scenario; not the scenario/event."@en .
+
+case:responsibility a sr:SR-CPT-031 ;
+  sr:SR-REL-027 base:risk-context ;
+  sr:SR-REL-028 case:actor .
+
+case:actor
+  dcterms:type "SYNTHETIC_EXTERNAL_ACTOR" ;
+  dcterms:title "Synthetic Supply Risk Manager"@en .
+
+base:pooled-procurement-strategy a sr:SR-CPT-026 .
+
+case:plan a sr:SR-CPT-027 ;
+  sr:SR-REL-022 base:pooled-procurement-strategy .
+
+case:treatment-activity a sr:SR-CPT-028 ;
+  sr:SR-REL-023 case:plan ;
+  sr:SR-REL-024 case:control .
+
+case:control a sr:SR-CPT-029 ;
+  sr:SR-REL-025 base:risk-context .
+
+case:assessment-pre a sr:SR-CPT-011 ;
+  sr:SR-REL-013 base:risk-context ;
+  sr:SR-REL-015 case:result-inherent .
+
+case:result-inherent a sr:SR-CPT-017 ;
+  sr:SR-REL-016 base:risk-context ;
+  sr:SR-REL-017 base:evidence-ds003 ;
+  dcterms:description "Synthetic inherent-context qualitative result; no numeric score."@en .
+
+case:assessment-post a sr:SR-CPT-011 ;
+  sr:SR-REL-013 base:risk-context ;
+  sr:SR-REL-034 case:assessment-pre ;
+  sr:SR-REL-015 case:result-residual .
+
+case:result-residual a sr:SR-CPT-018 ;
+  sr:SR-REL-016 base:risk-context ;
+  sr:SR-REL-017 base:evidence-ds003 ;
+  sr:SR-REL-033 case:result-inherent ;
+  dcterms:description "Synthetic residual-context result; no treatment-effect magnitude asserted."@en .
+
+case:risk-state-pre a sr:SR-CPT-035 ;
+  dcterms:description "Synthetic risk state: attention_required."@en ;
+  sr:SR-REL-032 case:risk-state-post .
+
+case:risk-state-post a sr:SR-CPT-035 ;
+  dcterms:description "Synthetic risk state: treated_monitoring."@en .
+
+case:workflow-open a sr:SR-CPT-036 ;
+  dcterms:description "Synthetic record workflow state: open."@en ;
+  sr:SR-REL-032 case:workflow-treated .
+
+case:workflow-treated a sr:SR-CPT-036 ;
+  dcterms:description "Synthetic record workflow state: treated."@en .
+
+base:evidence-ds003 a sr:SR-CPT-020, prov:Entity ;
+  dcterms:source <https://doi.org/10.25375/uct.29178665.v4> .
+
+case:trigger prov:wasGeneratedBy case:synthetic-generation .
+case:event prov:wasGeneratedBy case:synthetic-generation .
+case:consequence prov:wasGeneratedBy case:synthetic-generation .
+case:register prov:wasGeneratedBy case:synthetic-generation .
+case:entry prov:wasGeneratedBy case:synthetic-generation .
+case:scenario-description prov:wasGeneratedBy case:synthetic-generation .
+case:responsibility prov:wasGeneratedBy case:synthetic-generation .
+case:plan prov:wasGeneratedBy case:synthetic-generation .
+case:treatment-activity prov:wasGeneratedBy case:synthetic-generation .
+case:control prov:wasGeneratedBy case:synthetic-generation .
+case:assessment-pre prov:wasGeneratedBy case:synthetic-generation .
+case:result-inherent prov:wasGeneratedBy case:synthetic-generation .
+case:assessment-post prov:wasGeneratedBy case:synthetic-generation .
+case:result-residual prov:wasGeneratedBy case:synthetic-generation .
+case:risk-state-pre prov:wasGeneratedBy case:synthetic-generation .
+case:risk-state-post prov:wasGeneratedBy case:synthetic-generation .
+case:workflow-open prov:wasGeneratedBy case:synthetic-generation .
+case:workflow-treated prov:wasGeneratedBy case:synthetic-generation .
+
+case:synthetic-generation a prov:Activity ;
+  dcterms:description "Deterministic synthetic scenario extension for application/query testing; not empirical evidence."@en .
