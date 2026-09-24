@@ -70,7 +70,7 @@ sr:SR-REL-030 a owl:ObjectProperty ;
   rdfs:domain sr:SR-CPT-033 ;
   rdfs:range sr:SR-CPT-036 .
 
-sr:SR-REL-001 rdfs:domain sr:SR-CPT-033 ; rdfs:range sr:SR-CPT-001 .
+sr:SR-REL-001 rdfs:range sr:SR-CPT-001 .
 sr:SR-REL-002 rdfs:domain sr:SR-CPT-034 ; rdfs:range sr:SR-CPT-006 .
 sr:SR-CPT-033 owl:disjointWith sr:SR-CPT-001 .
 sr:SR-CPT-034 owl:disjointWith sr:SR-CPT-006, sr:SR-CPT-007 .
