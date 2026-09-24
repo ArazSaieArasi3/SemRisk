@@ -156,7 +156,7 @@ VALUES
 ('47000000-0000-0000-0003-000000000002','47000000-0000-0000-0000-000000000001','47000000-0000-0000-0000-000000000103','PCI-002','linked study Results / dataset v4 analysed data','Political engagement and government investment are discussed in relation to mitigation capability.','PCI-002 partial/context','urn:semrisk:case:pharma:v1:risk-context','partial'),
 ('47000000-0000-0000-0003-000000000003','47000000-0000-0000-0000-000000000001','47000000-0000-0000-0000-000000000103','PCI-003','linked study Results / dataset v4 analysed data','Forecasting and demand estimation challenges are discussed as management constraints.','PCI-003→SR-CPT-004','urn:semrisk:case:pharma:v1:forecasting-condition','loaded'),
 ('47000000-0000-0000-0003-000000000004','47000000-0000-0000-0000-000000000001','47000000-0000-0000-0000-000000000103','PCI-004','linked study Results / dataset v4 analysed data','Pooled procurement is discussed as a possible mitigation strategy.','PCI-004→SR-CPT-026','urn:semrisk:case:pharma:v1:pooled-procurement-strategy','loaded'),
-('47000000-0000-0000-0003-000000000005','47000000-0000-0000-0000-000000000103'::uuid,'47000000-0000-0000-0000-000000000103'::uuid,'PCI-005','linked study Results / dataset v4 analysed data','Greater transparency in manufacturing and supply chains is discussed as a management need.','PCI-005→SR-CPT-026','urn:semrisk:case:pharma:v1:transparency-strategy','loaded')
+('47000000-0000-0000-0003-000000000005','47000000-0000-0000-0000-000000000001','47000000-0000-0000-0000-000000000103','PCI-005','linked study Results / dataset v4 analysed data','Greater transparency in manufacturing and supply chains is discussed as a management need.','PCI-005→SR-CPT-026','urn:semrisk:case:pharma:v1:transparency-strategy','loaded')
 ON CONFLICT (source_record_id) DO NOTHING;
 
 -- Deterministic synthetic operational fixture (seed 4701), explicitly non-empirical.
@@ -197,16 +197,28 @@ VALUES('47000000-0000-0000-0010-000000000005','47000000-0000-0000-0011-000000000
 ON CONFLICT DO NOTHING;
 
 INSERT INTO meta.instance_provenance(instance_provenance_id,instance_id,source_artifact_id,activity_iri,agent_iri,generated_at,derivation_note)
-SELECT gen_random_uuid(), instance_id, '47000000-0000-0000-0000-000000000199',
-       'urn:semrisk:generator:SYNTH-P1-0.1.0','urn:semrisk:agent:deterministic-generator',
-       transaction_timestamp(),'seed=4701; deterministic synthetic fixture; not empirical evidence'
-FROM meta.semantic_instance
-WHERE instance_iri LIKE 'urn:semrisk:synthetic:p1:4701:%'
-  AND NOT EXISTS (
-    SELECT 1 FROM meta.instance_provenance p
-    WHERE p.instance_id=meta.semantic_instance.instance_id
-      AND p.source_artifact_id='47000000-0000-0000-0000-000000000199'
-  );
+VALUES
+('47000000-0000-0000-0012-000000000001','47000000-0000-0000-0010-000000000001','47000000-0000-0000-0000-000000000199','urn:semrisk:generator:SYNTH-P1-0.1.0','urn:semrisk:agent:deterministic-generator',NULL,'seed=4701; deterministic synthetic fixture; not empirical evidence'),
+('47000000-0000-0000-0012-000000000002','47000000-0000-0000-0010-000000000002','47000000-0000-0000-0000-000000000199','urn:semrisk:generator:SYNTH-P1-0.1.0','urn:semrisk:agent:deterministic-generator',NULL,'seed=4701; deterministic synthetic fixture; not empirical evidence'),
+('47000000-0000-0000-0012-000000000003','47000000-0000-0000-0010-000000000003','47000000-0000-0000-0000-000000000199','urn:semrisk:generator:SYNTH-P1-0.1.0','urn:semrisk:agent:deterministic-generator',NULL,'seed=4701; deterministic synthetic fixture; not empirical evidence'),
+('47000000-0000-0000-0012-000000000004','47000000-0000-0000-0010-000000000004','47000000-0000-0000-0000-000000000199','urn:semrisk:generator:SYNTH-P1-0.1.0','urn:semrisk:agent:deterministic-generator',NULL,'seed=4701; deterministic synthetic fixture; not empirical evidence'),
+('47000000-0000-0000-0012-000000000005','47000000-0000-0000-0010-000000000005','47000000-0000-0000-0000-000000000199','urn:semrisk:generator:SYNTH-P1-0.1.0','urn:semrisk:agent:deterministic-generator',NULL,'seed=4701; deterministic synthetic fixture; not empirical evidence')
+ON CONFLICT (instance_provenance_id) DO NOTHING;
+
+-- Constructed Pharma transformation lineage; these are abstractions, not raw DS-003 rows.
+INSERT INTO meta.instance_provenance(instance_provenance_id,instance_id,source_artifact_id,activity_iri,agent_iri,generated_at,derivation_note)
+VALUES
+('47000000-0000-0000-0013-000000000001','47000000-0000-0000-0001-000000000001','47000000-0000-0000-0000-000000000103','urn:semrisk:transformation:pharma-case-v1.0','urn:semrisk:agent:governed-transformation',NULL,'Constructed from DS-003 study-level thematic summary under case protocol v1.0.'),
+('47000000-0000-0000-0013-000000000002','47000000-0000-0000-0001-000000000002','47000000-0000-0000-0000-000000000103','urn:semrisk:transformation:pharma-case-v1.0','urn:semrisk:agent:governed-transformation',NULL,'PCI-001 source-supported thematic condition.'),
+('47000000-0000-0000-0013-000000000003','47000000-0000-0000-0001-000000000003','47000000-0000-0000-0000-000000000103','urn:semrisk:transformation:pharma-case-v1.0','urn:semrisk:agent:governed-transformation',NULL,'PCI-003 source-supported thematic condition.'),
+('47000000-0000-0000-0013-000000000004','47000000-0000-0000-0001-000000000004','47000000-0000-0000-0000-000000000103','urn:semrisk:transformation:pharma-case-v1.0','urn:semrisk:agent:governed-transformation',NULL,'Constructed scenario; no realized event fabricated.'),
+('47000000-0000-0000-0013-000000000005','47000000-0000-0000-0001-000000000005','47000000-0000-0000-0000-000000000103','urn:semrisk:transformation:pharma-case-v1.0','urn:semrisk:agent:governed-transformation',NULL,'PCI-004 proposed strategy; no effectiveness claim.'),
+('47000000-0000-0000-0013-000000000006','47000000-0000-0000-0001-000000000006','47000000-0000-0000-0000-000000000103','urn:semrisk:transformation:pharma-case-v1.0','urn:semrisk:agent:governed-transformation',NULL,'PCI-005 proposed strategy/need; no effectiveness claim.'),
+('47000000-0000-0000-0013-000000000007','47000000-0000-0000-0001-000000000007','47000000-0000-0000-0000-000000000103','urn:semrisk:transformation:pharma-case-v1.0','urn:semrisk:agent:governed-transformation',NULL,'DS-003 evidence anchor.'),
+('47000000-0000-0000-0013-000000000008','47000000-0000-0000-0001-000000000008','47000000-0000-0000-0000-000000000103','urn:semrisk:transformation:pharma-case-v1.0','urn:semrisk:agent:governed-transformation',NULL,'Projection-required constructed assessment activity; not an observed empirical activity.'),
+('47000000-0000-0000-0013-000000000009','47000000-0000-0000-0001-000000000009','47000000-0000-0000-0000-000000000103','urn:semrisk:transformation:pharma-case-v1.0','urn:semrisk:agent:governed-transformation',NULL,'Constructed qualitative result; no numeric score.'),
+('47000000-0000-0000-0013-000000000010','47000000-0000-0000-0001-000000000010','47000000-0000-0000-0000-000000000103','urn:semrisk:transformation:pharma-case-v1.0','urn:semrisk:agent:governed-transformation',NULL,'Constructed contextual state; not measured real-world state.')
+ON CONFLICT (instance_provenance_id) DO NOTHING;
 
 UPDATE staging.load_batch
 SET status='completed', completed_at=transaction_timestamp()
