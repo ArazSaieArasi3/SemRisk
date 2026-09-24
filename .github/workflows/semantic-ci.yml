@@ -16,6 +16,8 @@ on:
       - "tools/issue50_semantic_mutation_check.py"
       - "tools/issue50_entailment_mutation_check.py"
       - "tools/r1_foundational_guardrail_check.py"
+      - "tools/r2_owner_rule_temporal_check.py"
+      - "tools/r2_formal_semantics_guard_check.py"
       - "tools/requirements-semantic-ci.txt"
       - "tools/semantic-tool-manifest.csv"
       - ".github/workflows/semantic-ci.yml"
@@ -71,6 +73,12 @@ jobs:
 
       - name: Run R1 foundational guardrails
         run: python tools/r1_foundational_guardrail_check.py
+
+      - name: Run R2 formal-semantics guardrails
+        run: python tools/r2_formal_semantics_guard_check.py
+
+      - name: Run R2 owner temporal-rule regression
+        run: python tools/r2_owner_rule_temporal_check.py
 
       - name: Cache ROBOT 1.9.10
         id: robot-cache
@@ -128,6 +136,22 @@ jobs:
             exit 1
           fi
           echo "PASS: HermiT rejected the known-inconsistent fixture." | tee build/semantic-ci/negative-reasoner-status.txt
+
+      - name: Prove Risk/Assessment Result conflation is inconsistent
+        shell: bash
+        run: |
+          set -euo pipefail
+          java -jar .tools/robot.jar merge --catalog ontology/catalog-v001.xml --input build/semantic-ci/merged.owl --input testdata/negative/reasoner-inconsistent-result-risk.ttl --output build/semantic-ci/negative-result-risk.owl
+          set +e
+          java -jar .tools/robot.jar reason --reasoner HermiT --input build/semantic-ci/negative-result-risk.owl --output build/semantic-ci/negative-result-risk-should-not-exist.owl > build/semantic-ci/negative-result-risk.log 2>&1
+          code=$?
+          set -e
+          if [ "$code" -eq 0 ]; then
+            echo "ERROR: Risk/Assessment Result conflation unexpectedly passed HermiT."
+            cat build/semantic-ci/negative-result-risk.log
+            exit 1
+          fi
+          echo "PASS: HermiT rejected Risk/Assessment Result conflation." | tee build/semantic-ci/negative-result-risk-status.txt
 
       - name: Emit exact checksum inventory
         shell: bash
