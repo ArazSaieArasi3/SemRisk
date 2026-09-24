@@ -1,0 +1,21 @@
+constraint_id,table,type,fields,rule,semantic_basis,scope_note
+RC-001,meta.semantic_instance,UNIQUE,instance_iri,Each persisted instance IRI is unique.,#43 identity,Projection identity only.
+RC-002,core.event_consequence,CHECK,"event_id,scenario_id",Exactly one source is non-null.,SR-REL-004,#45 projection integrity.
+RC-003,core.risk_source_link,CHECK,"risk_id,scenario_id",Exactly one risk/scenario target is non-null.,SR-REL-005,Does not create universal ontology cardinality.
+RC-004,core.semantic_relation_assertion,CHECK,relation_semantic_id,"Allowed initially: SR-REL-008, SR-REL-009, SR-REL-010.",#26/#45,Prevents generic edge/EAV abuse.
+RC-005,assessment.assessment_result,CHECK,result_kind,"Allowed governed values include generic, likelihood, impact, inherent, residual.",SR-CPT-013/014/015/017/018,Value set is projection profile.
+RC-006,assessment.assessment_result,CHECK,value_*,At most one primary typed value column populated unless method profile explicitly allows compound result.,#26 method boundary,Avoid ambiguous value duplication.
+RC-007,enterprise.workflow_state_history,EXCLUDE/UNIQUE_PARTIAL,"entry_id,is_current",At most one current state row per entry/profile snapshot.,SR-REL-030,"DB/profile completeness, not universal ontology truth."
+RC-008,enterprise.risk_state_history,CHECK,"valid_from,valid_to",valid_to > valid_from when both present.,SR-CPT-035,Temporal integrity only.
+RC-009,enterprise.risk_responsibility,CHECK,"risk_id,entry_id,plan_id",Exactly one assignment target family per row in P1 projection.,SR-CPT-031; SR-REL-027,Scope simplification; multi-target relator would require separate association table later.
+RC-010,enterprise.risk_responsibility,FK,actor_id,Assignment must reference an actor identity.,SR-REL-028,Local completeness for evaluated projection.
+RC-011,pharma.context_link,CHECK,"risk_id,scenario_id,event_id,consequence_id",Exactly one SemRisk source is non-null.,SR-REL-037,Typed bridge helper.
+RC-012,pharma.context_link,CHECK,external_entity_id,External target must resolve to owner_namespace=CM-PharmE and version=v1.0.0.,#5/#28,#46 implementation may enforce by trigger or FK-to-qualified key.
+RC-013,meta.source_artifact,CHECK,evidence_role,Must use governed #41 role vocabulary.,#41,#47 loads inherit role.
+RC-014,meta.semantic_instance,CHECK,"synthetic_flag,evidence_role",Synthetic instances cannot carry independent_validation role.,ER-003,Prevent evidence-role leakage.
+RC-015,assessment.assessment_result,FK,"assessment_id,risk_id",Result links to generating assessment and concerned risk.,SR-REL-015/016,Evaluated profile completeness.
+RC-016,assessment.assessment_evidence,FK,"result_id,evidence_id",Support relation requires existing result/evidence.,SR-REL-017,No causal validity inference.
+RC-017,treatment.plan,FK,strategy_id,Plan may implement one selected strategy in bounded P1 projection.,SR-REL-022,Nullable because plan may be recorded before explicit strategy.
+RC-018,treatment.activity,FK,plan_id,Activity may execute a plan.,SR-REL-023,Nullable outside evaluated scenario.
+RC-019,meta.instance_provenance,FK,"instance_id,source_artifact_id",Evaluated instance provenance must resolve.,SR-REL-019,Release profile may make source_artifact mandatory.
+RC-020,meta.state_transition,CHECK,state_family,"Allowed P1 values: risk_state, workflow_state.",SR-REL-032,Prevents cross-family state precedence conflation.
