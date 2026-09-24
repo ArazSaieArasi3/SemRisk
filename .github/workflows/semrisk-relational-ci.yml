@@ -77,6 +77,9 @@ jobs:
       - name: End-to-end RDF scenario tests
         run: python3 tools/e2e_scenario_rdf_tests.py
 
+      - name: SQL-SPARQL semantic parity
+        run: python3 tools/p49_sql_sparql_parity.py
+
       - name: Catalog snapshot
         run: |
           psql -Atc "SELECT table_schema||'.'||table_name FROM information_schema.tables WHERE table_schema IN ('meta','ref','core','assessment','treatment','enterprise','governance','pharma','staging') ORDER BY 1;"
