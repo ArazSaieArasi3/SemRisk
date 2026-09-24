@@ -61,6 +61,25 @@ BEGIN
   IF risk_state_count <> 2 OR workflow_state_count <> 2 THEN
     RAISE EXCEPTION 'Expected two risk states and two workflow states; got % / %',risk_state_count,workflow_state_count;
   END IF;
+
+  -- R1/#70: Core Risk State fixture must not use workflow/management labels.
+  IF EXISTS (
+    SELECT 1 FROM enterprise.risk_state_history
+    WHERE risk_id=v_risk_id
+      AND lower(state_code) IN ('open','closed','analyzed','treated','attention_required','escalated','treated_monitoring','monitoring')
+  ) THEN
+    RAISE EXCEPTION 'Management/workflow label leaked into Core Risk State fixture';
+  END IF;
+
+  IF NOT EXISTS (
+    SELECT 1 FROM enterprise.risk_state_history
+    WHERE risk_id=v_risk_id AND state_code='supply_disruption_context_realized'
+  ) OR NOT EXISTS (
+    SELECT 1 FROM enterprise.risk_state_history
+    WHERE risk_id=v_risk_id AND state_code='supply_disruption_context_persists_after_treatment_activity'
+  ) THEN
+    RAISE EXCEPTION 'Expected situational Risk State codes are missing';
+  END IF;
   IF EXISTS (
     SELECT 1 FROM meta.state_transition
     WHERE transition_id IN ('48000000-0000-0000-0003-000000000001','48000000-0000-0000-0003-000000000002')
