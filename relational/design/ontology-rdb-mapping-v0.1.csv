@@ -1,0 +1,70 @@
+mapping_id,semantic_id,semantic_term,rdb_representation,pattern,loss_class,scenario_required,notes
+ORM-001,SR-CPT-001,Risk,core.risk,typed entity table,LOSS-002,yes,No score/state fields.
+ORM-002,SR-CPT-004,Predisposing Condition,core.predisposing_condition,typed situation table,none,yes,Source-grounded Pharma case uses it.
+ORM-003,SR-CPT-005,Trigger,core.trigger_event,typed event-role table,none,yes,May be absent in DS-003 constructed case; scenario can add synthetic only with provenance.
+ORM-004,SR-CPT-006,Risk Scenario,core.risk_scenario,typed entity table,LOSS-010,yes,Distinct from description/event.
+ORM-005,SR-CPT-007,Risk Event,core.risk_event,typed occurrence table,none,yes,Only load observed/constructed per #48 provenance.
+ORM-006,SR-CPT-008,Consequence,core.consequence,typed situation table,none,yes,Distinct from impact result.
+ORM-007,SR-CPT-009,Vulnerability,core.vulnerability,typed disposition projection,none,support,Bearer FK preserves dependence.
+ORM-008,SR-CPT-010,Exposure,core.exposure,typed situation table,none,support,Subject/source links explicit.
+ORM-009,SR-CPT-011,Risk Assessment Activity,assessment.assessment_activity,typed activity table,none,yes,Distinct from result.
+ORM-010,SR-CPT-012,Risk Assessment Method,assessment.assessment_method,method reference table,none,support,Versioned.
+ORM-011,SR-CPT-013,Risk Assessment Result,assessment.assessment_result,typed result table,LOSS-007,yes,result_kind refines subtype.
+ORM-012,SR-CPT-014,Likelihood Assessment Result,assessment.assessment_result[result_kind=likelihood],single-table subtype code,LOSS-007,support,Method-specific value.
+ORM-013,SR-CPT-015,Impact Assessment Result,assessment.assessment_result[result_kind=impact],single-table subtype code,LOSS-007,support,Not consequence.
+ORM-014,SR-CPT-017,Inherent Risk Assessment Result,assessment.assessment_result[result_kind=inherent],context subtype code,LOSS-007,yes,Same underlying risk.
+ORM-015,SR-CPT-018,Residual Risk Assessment Result,assessment.assessment_result[result_kind=residual],context subtype code,LOSS-007,yes,Same underlying risk.
+ORM-016,SR-CPT-020,Evidence Item,assessment.evidence_item,typed information artifact,none,yes,Source role preserved.
+ORM-017,SR-CPT-021,Provenance,meta.source_artifact + meta.instance_provenance,qualified helper pattern,LOSS-008,yes,No local provenance class table.
+ORM-018,SR-CPT-026,Risk Treatment Strategy,treatment.strategy,typed information object,none,yes,Proposal not execution.
+ORM-019,SR-CPT-027,Risk Treatment Plan,treatment.plan,typed plan table,none,yes,Separate.
+ORM-020,SR-CPT-028,Risk Treatment Activity,treatment.activity,typed event table,none,yes,Separate.
+ORM-021,SR-CPT-029,Control Mechanism,treatment.control_mechanism,role projection,LOSS-011,yes,May reference external bearer.
+ORM-022,SR-CPT-030,Risk Owner,enterprise.v_risk_owner derived role view,derived role pattern,LOSS-005,yes,Never actor subtype table.
+ORM-023,SR-CPT-031,Risk Responsibility,enterprise.risk_responsibility,relator/assignment table,none,yes,Truthmaker for ownership.
+ORM-024,SR-CPT-032,Risk Register,enterprise.risk_register,information collection table,none,yes,Contains entries.
+ORM-025,SR-CPT-033,Risk Register Entry,enterprise.risk_register_entry,information artifact table,none,yes,FK to risk preserves distinction.
+ORM-026,SR-CPT-034,Scenario Description,enterprise.scenario_description,information artifact table,none,yes,Text/version separate from scenario.
+ORM-027,SR-CPT-035,Risk State,enterprise.risk_state_history,temporal state table,LOSS-006,yes,Separate state family.
+ORM-028,SR-CPT-036,Workflow State,enterprise.workflow_state_history,temporal state table,LOSS-006,yes,Separate state family.
+ORM-029,SR-CPT-037,Objective,ref.external_entity,external reference,LOSS-009,support,No local ontology ownership.
+ORM-030,SR-CPT-038,Capability,ref.external_entity,external reference,LOSS-009,yes,CM-PharmE capability may be referenced.
+ORM-031,SR-CPT-039,Business Process,ref.external_entity,external reference,LOSS-009,yes,External owner.
+ORM-032,SR-REL-001,concernsRisk,enterprise.risk_register_entry.risk_id,direct FK,none,yes,Record→Risk.
+ORM-033,SR-REL-002,describesScenario,enterprise.scenario_description.scenario_id,direct FK,none,yes,Description→Scenario.
+ORM-034,SR-REL-003,realizedAs,core.risk_event.realizes_scenario_id,direct FK,none,yes,Scenario↔event.
+ORM-035,SR-REL-004,hasConsequence,core.event_consequence,typed junction,none,yes,Scenario/event to consequence.
+ORM-036,SR-REL-005,hasRiskSource,core.risk_source_link,typed link,LOSS-003,yes,Heterogeneous source bearer.
+ORM-037,SR-REL-006,predisposedBy,core.scenario_condition,typed junction,none,yes,Scenario→condition.
+ORM-038,SR-REL-007,triggeredBy,core.event_trigger,typed junction,none,yes,Event→trigger.
+ORM-039,SR-REL-008,causes,core.semantic_relation_assertion[SR-REL-008],whitelisted assertion,LOSS-004,support,Requires provenance.
+ORM-040,SR-REL-009,associatedWith,core.semantic_relation_assertion[SR-REL-009],whitelisted assertion,LOSS-004,support,No causal promotion.
+ORM-041,SR-REL-010,affects,core.semantic_relation_assertion[SR-REL-010],whitelisted assertion,LOSS-009,yes,Can target ref.external_entity via semantic_instance/external link policy.
+ORM-042,SR-REL-011,exposes,core.exposure,situation pattern,none,support,Exposure row truthmaker.
+ORM-043,SR-REL-012,hasVulnerability,core.vulnerability.bearer_instance_id,direct FK,none,support,Inherence projection.
+ORM-044,SR-REL-013,performedAssessmentOf,assessment.assessment_activity.risk_id,direct FK,none,yes,Activity→Risk.
+ORM-045,SR-REL-014,usesAssessmentMethod,assessment.assessment_activity.method_id,direct FK,none,support,Optional.
+ORM-046,SR-REL-015,producesAssessmentResult,assessment.assessment_result.assessment_id,direct FK,none,yes,Activity→Result.
+ORM-047,SR-REL-016,assessmentResultConcerns,assessment.assessment_result.risk_id,direct FK,none,yes,Result→Risk.
+ORM-048,SR-REL-017,supportedByEvidence,assessment.assessment_evidence,typed junction,none,yes,Contextual evidence role.
+ORM-049,SR-REL-018,generatedByObservation,assessment.observation_result.observation_id,direct FK,none,support,Optional.
+ORM-050,SR-REL-019,hasProvenance,meta.instance_provenance,qualified helper,LOSS-008,yes,PROV subset.
+ORM-051,SR-REL-020,qualifiedByConfidence,assessment.assessment_confidence,typed dependent table,none,support,Optional.
+ORM-052,SR-REL-021,selectsTreatmentStrategy,treatment.risk_strategy_selection,typed relation table,none,yes,Selection context.
+ORM-053,SR-REL-022,planImplementsStrategy,treatment.plan.strategy_id,direct FK,none,yes,Plan→Strategy.
+ORM-054,SR-REL-023,activityExecutesPlan,treatment.activity.plan_id,direct FK,none,yes,Activity→Plan.
+ORM-055,SR-REL-024,activityUsesControl,treatment.activity_control,typed junction,none,yes,Activity→Control.
+ORM-056,SR-REL-025,controlProtects,treatment.control_protection,typed relation table,none,support,No effectiveness inference.
+ORM-057,SR-REL-026,hasRiskOwner,enterprise.v_risk_owner,derived view,LOSS-005,yes,Derived only.
+ORM-058,SR-REL-027,assignsResponsibilityFor,enterprise.risk_responsibility target FK set,relator target columns,none,yes,Exactly one target in P1.
+ORM-059,SR-REL-028,responsibilityAssignedTo,enterprise.risk_responsibility.actor_id,direct FK,none,yes,Assignment→actor.
+ORM-060,SR-REL-029,registerContainsEntry,enterprise.risk_register_entry.register_id,direct FK,none,yes,Register→entry.
+ORM-061,SR-REL-030,hasWorkflowState,enterprise.workflow_state_history,temporal child table,LOSS-006,yes,Current uniqueness local.
+ORM-062,SR-REL-031,hasRiskState,enterprise.risk_state_history,temporal child table,LOSS-006,yes,Separate family.
+ORM-063,SR-REL-032,precedesState,meta.state_transition or valid_from ordering,explicit/derived temporal pattern,LOSS-006,support,Never cross state families.
+ORM-064,SR-REL-033,supersedesAssessmentResult,assessment.assessment_result.supersedes_result_id,self FK,none,yes,Historical result preserved.
+ORM-065,SR-REL-034,basedOnPriorAssessment,assessment.assessment_activity.prior_assessment_id,self FK,none,yes,Reassessment lineage.
+ORM-066,SR-REL-035,hasIndicator,governance.risk_indicator,typed relation table,none,support,Profile only.
+ORM-067,SR-REL-036,hasThreshold,governance.threshold,method/profile table,LOSS-013,support,Rule/profile semantics.
+ORM-068,SR-REL-037,pharmaEntityInRiskContext,pharma.context_link,typed bridge table,LOSS-014,yes,Exact CM-PharmE owner/version.
+ORM-069,SR-REL-038,profileExtendsCoreConcept,release/mapping metadata only,intentional non-runtime,LOSS-012,no,Not operational DB relation.
