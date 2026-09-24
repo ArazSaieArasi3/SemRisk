@@ -102,7 +102,7 @@ Report compact #29 results: parser/profile/reasoning/satisfiability/traceability
 
 ### C. E8 application/CQ/projection utility — OBSERVED, BOUNDED
 - #48 end-to-end scenario.
-- #49 SQL↔SPARQL: 5 task-equivalent, 2 equivalent after declared normalization, 1 partial.
+- #49 SQL↔SPARQL after R2 remediation: 6 task-equivalent, 2 equivalent after declared normalization, 0 partial.
 - #52: 40 CQs retained; 26 executable, 7 partial, 6 conceptual-only, 1 deferred.
 
 ### D. E9–E11 reproducibility/comparison/transferability — PENDING FINAL #31
