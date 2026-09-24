@@ -1,0 +1,12 @@
+section,target_pages,hard_range_pages,priority,compression_rule,status
+"Abstract + Keywords",0.20,"0.15-0.25",critical,"Finalize last; no extra background",provisional
+"I. Introduction",0.65,"0.55-0.75",critical,"Problem + 3 RQs + 3 contributions only",planned
+"II. Related Work and Gap",0.75,"0.65-0.85",critical,"Closest comparators; no generic survey",planned
+"III. Method",0.85,"0.75-0.95",critical,"Compress workflow; preserve evidence-role/circularity/evaluation method",planned
+"IV. SemRisk Architecture",1.40,"1.25-1.55",critical,"One strong figure; focus central distinctions",planned
+"V. Operationalization + Pharma",0.85,"0.70-0.95",high,"Combine RDB and bounded case; no implementation catalog",planned
+"VI. Evaluation",1.25,"1.10-1.40",critical,"Compact E-layer table + key negative/partial results",partially_observed
+"VII. Discussion + Threats",0.55,"0.45-0.65",critical,"Claim-linked limitations, not boilerplate",pending
+"VIII. Conclusion",0.20,"0.15-0.25",critical,"Calibrated claims only",pending
+"References",1.30,"1.10-1.45",critical,"Curated closest/authoritative sources; total paper <=8",planned
+"TOTAL",8.00,"<=8.00",hard_cap,"If overflow: narrow claims/scope; do not hide evaluation",controlled
