@@ -80,6 +80,9 @@ jobs:
       - name: SQL-SPARQL semantic parity
         run: python3 tools/p49_sql_sparql_parity.py
 
+      - name: Cross-layer negative controls
+        run: python3 tools/issue50_crosslayer_mutation_check.py
+
       - name: Catalog snapshot
         run: |
           psql -Atc "SELECT table_schema||'.'||table_name FROM information_schema.tables WHERE table_schema IN ('meta','ref','core','assessment','treatment','enterprise','governance','pharma','staging') ORDER BY 1;"
