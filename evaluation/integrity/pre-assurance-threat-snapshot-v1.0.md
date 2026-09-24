@@ -29,7 +29,7 @@ The #51 protocol is frozen but no expert judgments exist yet. Any wording such a
 The operational schema and Pharma case show heterogeneous applicability, but both influenced design. DS-002 remains protected and unexecuted; DS-004 remains file-level blocked. SR-CL06 cannot currently support independent/general transferability.
 
 ### 4. Projection fidelity is task-specific
-#49 produced 5 task-equivalent pairs, 2 equivalent after declared normalization and 1 partial representation. Therefore SR-CL04 is defensible only for selected tasks; “lossless ontology-to-RDB mapping” is prohibited.
+#49 now produces 6 task-equivalent pairs and 2 equivalent after declared normalization after the R2 qualified-evidence remediation. SR-CL04 remains defensible only for the selected tasks because representation normalization, OWA/CWA differences and broader semantic-loss risks remain; “lossless ontology-to-RDB mapping” is still prohibited.
 
 ### 5. Closest-work/standards tail remains open
 #14 comparator saturation and #13 clause/schema completeness are not final. Strong novelty, completeness, conformance or broad standards-alignment wording must remain provisional.
