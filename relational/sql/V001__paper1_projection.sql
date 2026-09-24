@@ -409,6 +409,29 @@ CREATE TABLE pharma.context_link (
   )
 );
 
+CREATE OR REPLACE FUNCTION pharma.enforce_cm_pharme_target()
+RETURNS trigger
+LANGUAGE plpgsql
+AS $
+DECLARE
+  ns text;
+  vr text;
+BEGIN
+  SELECT owner_namespace, version_ref INTO ns, vr
+  FROM ref.external_entity
+  WHERE external_entity_id = NEW.external_entity_id;
+
+  IF ns IS DISTINCT FROM 'CM-PharmE' OR vr IS DISTINCT FROM 'v1.0.0' THEN
+    RAISE EXCEPTION 'pharma.context_link requires CM-PharmE v1.0.0 target; got namespace=%, version=%', ns, vr
+      USING ERRCODE = '23514';
+  END IF;
+  RETURN NEW;
+END $;
+
+CREATE TRIGGER trg_pharma_context_cm_pharme_target
+BEFORE INSERT OR UPDATE OF external_entity_id ON pharma.context_link
+FOR EACH ROW EXECUTE FUNCTION pharma.enforce_cm_pharme_target();
+
 CREATE INDEX ix_semantic_instance_type ON meta.semantic_instance(semantic_type_id);
 CREATE INDEX ix_semantic_instance_source ON meta.semantic_instance(source_artifact_id);
 CREATE INDEX ix_instance_provenance_instance ON meta.instance_provenance(instance_id);
