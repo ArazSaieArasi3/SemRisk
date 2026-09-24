@@ -56,6 +56,15 @@ jobs:
       - name: Integrity and negative tests
         run: psql -v ON_ERROR_STOP=1 -f relational/sql/tests/V001__integrity_tests.sql
 
+      - name: Governed data-load support
+        run: psql -v ON_ERROR_STOP=1 -f relational/sql/V002__data_load_support.sql
+
+      - name: Load governed Paper-1 data snapshot
+        run: psql -v ON_ERROR_STOP=1 -f relational/sql/load/P1_DATA_0_1_0_rc1.sql
+
+      - name: Data-load reconciliation tests
+        run: psql -v ON_ERROR_STOP=1 -f relational/sql/tests/V002__data_load_tests.sql
+
       - name: Catalog snapshot
         run: |
           psql -Atc "SELECT table_schema||'.'||table_name FROM information_schema.tables WHERE table_schema IN ('meta','ref','core','assessment','treatment','enterprise','governance','pharma','staging') ORDER BY 1;"
