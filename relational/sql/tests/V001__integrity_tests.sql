@@ -111,4 +111,32 @@ BEGIN
   DELETE FROM enterprise.actor_ref WHERE actor_id=actor;
 END $$;
 
+
+DO $
+DECLARE
+ src uuid; risk_i uuid; ext_i uuid; ext_id uuid;
+BEGIN
+  SELECT source_artifact_id INTO src FROM meta.source_artifact
+  WHERE source_artifact_id='00000000-0000-0000-0000-000000000001';
+
+  INSERT INTO meta.semantic_instance(instance_iri,semantic_type_id,source_artifact_id,evidence_role,synthetic_flag)
+  VALUES ('urn:semrisk:test:pharma-risk','SR-CPT-001',src,'synthetic_test',true) RETURNING instance_id INTO risk_i;
+  INSERT INTO core.risk(risk_id,title) VALUES(risk_i,'pharma bridge test risk');
+
+  INSERT INTO meta.semantic_instance(instance_iri,semantic_type_id,source_artifact_id,evidence_role,synthetic_flag)
+  VALUES ('urn:semrisk:test:wrong-external','EXT-TEST',src,'synthetic_test',true) RETURNING instance_id INTO ext_i;
+  INSERT INTO ref.external_entity(instance_id,owner_namespace,owner_semantic_id,version_ref,label)
+  VALUES(ext_i,'WrongOwner','X-1','v0','wrong owner') RETURNING external_entity_id INTO ext_id;
+
+  BEGIN
+    INSERT INTO pharma.context_link(risk_id,external_entity_id)
+    VALUES(risk_i,ext_id);
+    RAISE EXCEPTION 'TEST FAILED: non-CM-PharmE Pharma bridge target unexpectedly succeeded';
+  EXCEPTION WHEN check_violation THEN NULL;
+  END;
+
+  DELETE FROM ref.external_entity WHERE external_entity_id=ext_id;
+  DELETE FROM meta.semantic_instance WHERE instance_id IN (ext_i,risk_i);
+END $;
+
 SELECT 'SEM_RISK_ISSUE_46_INTEGRITY_TESTS_PASS' AS test_result;
