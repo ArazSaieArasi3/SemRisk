@@ -1,0 +1,15 @@
+@prefix sr: <urn:semrisk:entity:> .
+@prefix test: <urn:semrisk:test:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Historical/invalidated responsibility for R2/#75.
+# It targets the same Risk as the active responsibility in the positive fixture
+# but MUST NOT derive hasRiskOwner.
+
+test:responsibility-old a sr:SR-CPT-031 ;
+  sr:SR-REL-027 test:risk-001 ;
+  sr:SR-REL-028 test:actor-old ;
+  prov:invalidatedAtTime "2026-01-01T00:00:00Z"^^xsd:dateTime .
+
+test:actor-old a prov:Agent .
