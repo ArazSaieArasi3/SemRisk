@@ -35,9 +35,9 @@ The synthetic extension tests semantic/application behavior only. It is not empi
 - T2: synthetic pre-treatment assessment produces an inherent-context result.
 - T3: pooled-procurement strategy is selected; synthetic plan/activity/control represent execution.
 - T4: synthetic reassessment is explicitly based on the prior assessment and produces a residual-context result that supersedes the prior result.
-- T5: Risk State history changes from `attention_required` to `treated_monitoring`; independently, record Workflow State changes from `open` to `treated`.
+- T5: Risk State history changes from `supply_disruption_context_realized` to `supply_disruption_context_persists_after_treatment_activity`; independently, record Workflow State changes from `open` to `treated`.
 
-No numeric magnitude or improvement is asserted; the state transition only exercises model semantics.
+The Risk State labels denote synthetic situational contexts rather than management/monitoring classifications. No numeric magnitude, improvement or treatment effectiveness is asserted; the transition only exercises model semantics.
 
 ## Predeclared expected outcomes
 Canonical expected answers are frozen in `e2e-scenario-expected-v1.0.csv` before execution. CI must test those outcomes without rewriting them after observing results.
