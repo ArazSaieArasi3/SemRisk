@@ -140,7 +140,7 @@ E5 human semantic validation remains pending. The expert-review protocol, review
 
 Application evidence combines the end-to-end scenario, SQL↔SPARQL parity, and competency-question regression.
 
-For the eight predeclared SQL↔SPARQL tasks, five are equivalent for the tested task, two are equivalent after a declared normalization, and one remains partial. The two normalization cases concern representation differences such as the external actor identity representation. The partial case concerns assessment-evidence support role: the relational projection stores `support_role=context` more explicitly than the current RDF fixture. This asymmetry is retained rather than normalized away.
+For the eight predeclared SQL↔SPARQL tasks, six are equivalent for the tested task and two are equivalent after a declared normalization. The two normalization cases concern representation differences such as external actor identity and CM-PharmE target representation. After the R2 remediation, the assessment-evidence task also compares the qualified support role (`context`) explicitly in both RDF and PostgreSQL. These results remain task-bounded and do not establish lossless global ontology-to-database equivalence.
 
 The CQ registry contains 40 original questions. CQ-039 is explicitly deferred, leaving 39 Paper-1-applicable CQs. Twenty-six are executable, seven partially executable, six conceptual-only, and one deferred; none is failed. These categories describe execution status, not a quality score.
 
