@@ -1,6 +1,6 @@
 # R2 Semantic Web / KR Review Remediation Acceptance Audit — 2026-09-24
 
-**Issues:** #73, #74, #75, #76, #77  
+**Issues:** #73, #74, #75, #76, #77, #78  
 **Origin:** specialist-style simulated Semantic Web / OWL 2 DL / SHACL / Knowledge Representation review (R2), used as an adversarial review aid. This is **not independent human expert validation**.
 
 ## Decision
@@ -79,6 +79,23 @@ Implemented trigger coverage for:
 - relational sources and the workflow itself.
 
 The workflow-file change automatically triggered run **36015074346**, and the subsequent case-file correction automatically triggered run **36015300327**, demonstrating that the trigger blind spot is closed.
+
+## #78 — Predisposing Condition definition↔axiom alignment
+Implemented:
+- narrowed the canonical definition from "state or disposition" to a contextual state-of-affairs / situational condition;
+- retained `gufo:Situation` formalization and explicit disjointness from Vulnerability;
+- aligned conceptual/foundational registries;
+- extended the R2 formal guard to prevent prose/axiom drift.
+
+Semantic CI run **36017187020**: **SUCCESS**.
+Relational/E2E regression run **36017167764**: **SUCCESS**.
+Guard output confirms the Predisposing Condition prose/formalization is situational and disjoint from Vulnerability.
+
+## Residual R2 review observations mapped to existing governance
+- mutation-coverage limitations remain governed by #50 and the growing negative-control suite; coverage is representative, not exhaustive;
+- the Provenance umbrella risk remains controlled by the #72 PROV-O guard and the Core scope note that qualified PROV-O is normative;
+- SKOS mapping predicates remain alignment metadata, not OWL equivalence; no substitutability claim is authorized;
+- CM-PharmE license governance remains an explicit release/availability dependency for #55/#56 and is not falsely marked resolved.
 
 ## Claim boundary
 The R2 remediations strengthen formal and task-level application fidelity. They do not establish independent human semantic validation, universal correctness, complete SHACL coverage, or global lossless ontology↔database equivalence.
