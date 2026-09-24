@@ -1,0 +1,8 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<urn:semrisk:test:NC-IMPORT-001>
+    a owl:Ontology ;
+    dcterms:identifier "NC-IMPORT-001" ;
+    dcterms:description "Synthetic negative control: imports an IRI intentionally absent from the SemRisk XML catalog." ;
+    owl:imports <urn:semrisk:ontology:intentionally-unresolved-import> .

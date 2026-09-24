@@ -2,19 +2,24 @@
 """Deterministic negative-control detector for SemRisk Issue #50.
 
 This script succeeds only when the synthetic semantic mutation pack is parseable,
-all predeclared semantic defects are detected, and the parser negative control is
-rejected as expected. It never imports mutation artifacts into the canonical
-ontology candidate.
+all predeclared semantic defects are detected, the parser negative control is
+rejected as expected, and the unresolved-import fixture is proven absent from
+the canonical XML catalog. It never imports mutation artifacts into the
+canonical ontology candidate.
 """
 from pathlib import Path
 import sys
+import xml.etree.ElementTree as ET
 from rdflib import Graph, URIRef
 from rdflib.namespace import OWL, RDF
 
 ROOT = Path(__file__).resolve().parents[1]
 PACK = ROOT / "testdata/negative/semantic-mutation-pack-issue50-v0.1.ttl"
+IMPORT_FIXTURE = ROOT / "testdata/negative/import-unresolved-reference.ttl"
+CATALOG = ROOT / "ontology/catalog-v001.xml"
 SR = "urn:semrisk:entity:"
 MUT = "urn:semrisk:test:mutation:"
+UNRESOLVED_IMPORT = URIRef("urn:semrisk:ontology:intentionally-unresolved-import")
 
 EXPECTED = {
     "NC-SEM-001": ("SR-CPT-033", OWL.equivalentClass, "SR-CPT-001"),
@@ -37,6 +42,30 @@ def parser_negative_control() -> bool:
     except Exception:
         return True
     return False
+
+
+def unresolved_import_negative_control() -> bool:
+    """Return True only when NC-IMPORT-001 contains an import absent from catalog.
+
+    The expected result is defined by the repository's canonical import catalog,
+    not by attempting a network fetch. This makes the control deterministic and
+    distinguishes a broken reference from transient network/tool failure.
+    """
+    g = Graph()
+    try:
+        g.parse(IMPORT_FIXTURE, format="turtle")
+        catalog_root = ET.parse(CATALOG).getroot()
+    except Exception as exc:
+        print(f"ERROR: NC-IMPORT-001 setup could not be parsed: {exc}")
+        return False
+
+    imports = {obj for _, _, obj in g.triples((None, OWL.imports, None))}
+    if UNRESOLVED_IMPORT not in imports:
+        return False
+
+    ns = {"c": "urn:oasis:names:tc:entity:xmlns:xml:catalog"}
+    catalog_names = {entry.attrib.get("name") for entry in catalog_root.findall("c:uri", ns)}
+    return str(UNRESOLVED_IMPORT) not in catalog_names
 
 
 def main() -> int:
@@ -68,8 +97,11 @@ def main() -> int:
     if not parser_negative_control():
         print("FAIL: NC-PARSE-001 malformed Turtle unexpectedly parsed successfully")
         return 1
+    if not unresolved_import_negative_control():
+        print("FAIL: NC-IMPORT-001 did not prove an unresolved catalog import")
+        return 1
 
-    print("PASS: detected NC-SEM-001..003; NC-SEM-004 specification present; NC-PARSE-001 malformed Turtle rejected as expected.")
+    print("PASS: detected NC-SEM-001..003; NC-SEM-004 specification present; NC-PARSE-001 rejected; NC-IMPORT-001 unresolved catalog import detected.")
     return 0
 
 
