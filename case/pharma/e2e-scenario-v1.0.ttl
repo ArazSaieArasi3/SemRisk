@@ -1,4 +1,5 @@
 @prefix sr: <urn:semrisk:entity:> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix case: <urn:semrisk:scenario:p1:e2e:> .
 @prefix base: <urn:semrisk:case:pharma:v1:> .
 @prefix cmpe: <urn:cm-pharme:v1.0.0:> .
