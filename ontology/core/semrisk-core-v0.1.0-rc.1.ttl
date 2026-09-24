@@ -233,6 +233,7 @@ sr:SR-REL-001 a owl:ObjectProperty ;
   dcterms:identifier "SR-REL-001" ;
   rdfs:label "concernsRisk"@en ;
   rdfs:comment "Links a Risk Register Entry or Scenario Description to the Risk it concerns."@en ;
+  skos:scopeNote "No global OWL domain is asserted: using concernsRisk must not infer that every subject is a Risk Register Entry. Register-entry completeness is a SHACL/profile constraint."@en ;
   dcterms:conformsTo "SR-REQ-001; SR-REQ-019" ;
   dcterms:relation "CQ-001; CQ-002; CQ-016; CQ-038" .
 
@@ -465,6 +466,7 @@ sr:SR-REL-034 a owl:ObjectProperty ;
   dcterms:relation "CQ-015; CQ-031" .
 
 sr:SR-CPT-011 owl:disjointWith sr:SR-CPT-013 .
+sr:SR-CPT-001 owl:disjointWith sr:SR-CPT-013 .
 sr:SR-CPT-008 owl:disjointWith sr:SR-CPT-015 .
 sr:SR-CPT-004 owl:disjointWith sr:SR-CPT-009 .
 sr:SR-CPT-006 owl:disjointWith sr:SR-CPT-007 .
