@@ -19,6 +19,8 @@ PREFIX="""PREFIX sr: <urn:semrisk:entity:>
 PREFIX case: <urn:semrisk:scenario:p1:e2e:>
 PREFIX base: <urn:semrisk:case:pharma:v1:>
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 """
 
 pairs={
@@ -117,11 +119,18 @@ FROM enterprise.workflow_state_history w JOIN meta.semantic_instance i ON i.inst
 WHERE w.workflow_state_id IN ('48000000-0000-0000-0001-000000000017','48000000-0000-0000-0001-000000000018');"""
 ),
 "P49-07":(
-PREFIX+"""SELECT ?result ?evidence WHERE {
+PREFIX+"""SELECT ?result ?evidence ?role WHERE {
  VALUES ?result { case:result-inherent case:result-residual }
  ?result sr:SR-REL-017 ?evidence .
+ ?stmt a rdf:Statement ;
+       rdf:subject ?result ;
+       rdf:predicate sr:SR-REL-017 ;
+       rdf:object ?evidence ;
+       dcterms:type ?roleNode .
+ ?roleNode skos:prefLabel ?role .
+ FILTER(LANG(?role) = "" || LANGMATCHES(LANG(?role), "en"))
 }""",
-"""SELECT ri.instance_iri,ei.instance_iri
+"""SELECT ri.instance_iri,ei.instance_iri,ae.support_role
 FROM assessment.assessment_evidence ae
 JOIN meta.semantic_instance ri ON ri.instance_id=ae.result_id
 JOIN meta.semantic_instance ei ON ei.instance_id=ae.evidence_id
@@ -165,11 +174,7 @@ for pid,(sq,pq) in pairs.items():
     rdf=normalize(pid,sparql_rows(sq),"rdf")
     sql=normalize(pid,sql_rows(pq),"sql")
     expected=registry[pid]["expected_parity_class"]
-    if pid=="P49-07":
-        # Task-level result/evidence pair is equal; classification remains partial due RDB-only support_role.
-        ok=(rdf==sql)
-        actual="partial" if ok else "implementation_bug"
-    elif pid in ("P49-05","P49-08"):
+    if pid in ("P49-05","P49-08"):
         ok=(rdf==sql)
         actual="equivalent_after_declared_normalization" if ok else "implementation_bug"
     else:
