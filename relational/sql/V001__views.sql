@@ -8,7 +8,7 @@ SELECT
   rr.actor_id,
   rr.responsibility_id
 FROM enterprise.risk_responsibility rr
-WHERE rr.valid_from IS NULL OR rr.valid_from <= transaction_timestamp()
+WHERE (rr.valid_from IS NULL OR rr.valid_from <= transaction_timestamp())
   AND (rr.valid_to IS NULL OR rr.valid_to > transaction_timestamp())
   AND (rr.risk_id IS NOT NULL OR rr.entry_id IS NOT NULL);
 
