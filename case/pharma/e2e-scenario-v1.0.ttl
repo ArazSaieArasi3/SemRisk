@@ -83,11 +83,11 @@ case:result-residual a sr:SR-CPT-018 ;
   dcterms:description "Synthetic residual-context result; no treatment-effect magnitude asserted."@en .
 
 case:risk-state-pre a sr:SR-CPT-035 ;
-  dcterms:description "Synthetic risk state: attention_required."@en ;
+  dcterms:description "Synthetic situational Risk State: supply disruption context realized."@en ;
   sr:SR-REL-032 case:risk-state-post .
 
 case:risk-state-post a sr:SR-CPT-035 ;
-  dcterms:description "Synthetic risk state: treated_monitoring."@en .
+  dcterms:description "Synthetic situational Risk State: supply disruption context persists after treatment activity; no treatment effectiveness or improvement is inferred."@en .
 
 case:workflow-open a sr:SR-CPT-036 ;
   dcterms:description "Synthetic record workflow state: open."@en ;
