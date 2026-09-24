@@ -43,6 +43,9 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y postgresql-client
 
+      - name: Install RDF test dependency
+        run: python3 -m pip install rdflib
+
       - name: Static catalog and mapping consistency
         run: python3 relational/scripts/validate_relational_catalog.py
 
@@ -64,6 +67,15 @@ jobs:
 
       - name: Data-load reconciliation tests
         run: psql -v ON_ERROR_STOP=1 -f relational/sql/tests/V002__data_load_tests.sql
+
+      - name: Load end-to-end scenario
+        run: psql -v ON_ERROR_STOP=1 -f relational/sql/load/P1_E2E_SCENARIO_v1.sql
+
+      - name: End-to-end relational scenario tests
+        run: psql -v ON_ERROR_STOP=1 -f relational/sql/tests/V003__e2e_scenario_tests.sql
+
+      - name: End-to-end RDF scenario tests
+        run: python3 tools/e2e_scenario_rdf_tests.py
 
       - name: Catalog snapshot
         run: |
