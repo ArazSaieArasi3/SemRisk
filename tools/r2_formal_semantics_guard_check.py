@@ -20,6 +20,9 @@ concerns=URIRef(SR+"SR-REL-001")
 entry=URIRef(SR+"SR-CPT-033")
 risk=URIRef(SR+"SR-CPT-001")
 result=URIRef(SR+"SR-CPT-013")
+predisposing=URIRef(SR+"SR-CPT-004")
+vulnerability=URIRef(SR+"SR-CPT-009")
+gufo_situation=URIRef("http://purl.org/nemo/gufo#Situation")
 
 def fail(m):
     raise SystemExit("FAIL R2 guardrail: "+m)
@@ -34,6 +37,17 @@ if (concerns,RDFS.range,risk) not in g:
 if (risk,OWL.disjointWith,result) not in g and (result,OWL.disjointWith,risk) not in g:
     fail("Risk and Risk Assessment Result are not explicitly owl:disjointWith")
 
+# #78: prose/formal alignment for Predisposing Condition.
+if (predisposing,RDFS.subClassOf,gufo_situation) not in g:
+    fail("Predisposing Condition is no longer a gUFO Situation")
+if (predisposing,OWL.disjointWith,vulnerability) not in g and (vulnerability,OWL.disjointWith,predisposing) not in g:
+    fail("Predisposing Condition is no longer disjoint with Vulnerability")
+core_text=(ROOT/"ontology/core/semrisk-core-v0.1.0-rc.1.ttl").read_text(encoding="utf-8")
+block=core_text[core_text.find("sr:SR-CPT-004"):core_text.find("sr:SR-CPT-005")]
+if "state or disposition" in block.lower():
+    fail("Predisposing Condition definition reintroduced state-or-disposition ambiguity")
+
 print("PASS: concernsRisk has no global OWL domain and retains Risk range")
 print("PASS: Risk is explicitly disjoint with Risk Assessment Result")
+print("PASS: Predisposing Condition prose/formalization remains situational and disjoint from Vulnerability")
 print("SEM_RISK_R2_FORMAL_GUARDRAILS_PASS")
