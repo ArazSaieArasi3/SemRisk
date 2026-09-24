@@ -1,0 +1,5 @@
+layer,checks,pass,fail,not_assessed,headline_result,paper1_wording_boundary
+E1,3,3,0,0,"Syntax/profile/version checks passed for exact P1-R2 candidate","May state parseable and OWL-2-DL-profile compatible under declared toolchain; not semantically validated"
+E2,7,7,0,0,"Selected consistency/satisfiability/entailment/SHACL/rule checks passed","May report formal verification results; no domain-validity inference"
+E3,6,6,0,0,"Selected structural/identity/trace/dependency integrity checks passed","May report governed structural integrity for declared subset"
+E4,5,5,0,0,"Foundational review completed for release-critical Paper-1 semantics","May report UFO/gUFO-grounded analysis and resolved category risks; not correctness proof"
