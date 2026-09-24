@@ -4,10 +4,29 @@ on:
   push:
     paths:
       - 'relational/**'
+      - 'case/pharma/**'
+      - 'ontology/core/**'
+      - 'ontology/enterprise/**'
+      - 'evaluation/parity/**'
+      - 'evaluation/cq/**'
+      - 'tools/e2e_scenario_rdf_tests.py'
+      - 'tools/p49_sql_sparql_parity.py'
+      - 'tools/issue50_crosslayer_mutation_check.py'
+      - 'tools/issue52_cq_regression_check.py'
       - '.github/workflows/semrisk-relational-ci.yml'
   pull_request:
     paths:
       - 'relational/**'
+      - 'case/pharma/**'
+      - 'ontology/core/**'
+      - 'ontology/enterprise/**'
+      - 'evaluation/parity/**'
+      - 'evaluation/cq/**'
+      - 'tools/e2e_scenario_rdf_tests.py'
+      - 'tools/p49_sql_sparql_parity.py'
+      - 'tools/issue50_crosslayer_mutation_check.py'
+      - 'tools/issue52_cq_regression_check.py'
+      - '.github/workflows/semrisk-relational-ci.yml'
   workflow_dispatch:
 
 jobs:
