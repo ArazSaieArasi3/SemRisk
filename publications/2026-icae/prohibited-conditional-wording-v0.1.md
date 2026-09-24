@@ -11,7 +11,7 @@ Until the listed gates are satisfied, the following wording must not appear unqu
 | comprehensive risk ontology | PROHIBITED | Paper-1 scope explicitly bounded |
 | aligned/conformant with ISO/COSO/NIST | CONFORMANCE wording PROHIBITED | current evidence is bounded terminology/process alignment, not full conformance |
 | 100% correct mapping | PROHIBITED | 27/27 and 18/18 are disposition denominators, not correctness scores |
-| lossless ontology–RDB mapping | PROHIBITED | #49 has 2 normalized and 1 partial task |
+| lossless ontology–RDB mapping | PROHIBITED | #49 now has 6 direct and 2 normalized tasks after R2 remediation; normalization plus known broader semantic-loss/OWA–CWA differences still preclude global lossless-equivalence wording |
 | formally proven valid | PROHIBITED | formal consistency/satisfiability ≠ semantic/domain validity |
 | reproducible | CONDITIONAL | must state public/synthetic scope and private/licensed restrictions |
 | Pharma validated / health validated | PROHIBITED | one bounded case plus pending expert review |
