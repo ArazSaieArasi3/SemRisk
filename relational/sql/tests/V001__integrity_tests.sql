@@ -2,7 +2,7 @@
 -- Run after V001__paper1_projection.sql and V001__views.sql.
 -- This script must terminate successfully; expected failures are isolated in PL/pgSQL blocks.
 
-DO $$
+DO $semrisk$
 DECLARE src uuid; i1 uuid; i2 uuid;
 BEGIN
   SELECT source_artifact_id INTO src FROM meta.source_artifact
@@ -39,9 +39,9 @@ BEGIN
   END;
 
   DELETE FROM meta.semantic_instance WHERE instance_id IN (i1,i2);
-END $$;
+END $semrisk$;
 
-DO $$
+DO $semrisk$
 DECLARE
  src uuid; risk_i uuid; reg_i uuid; entry_i uuid; actor uuid;
  resp_i uuid; wf1 uuid; wf2 uuid; plan_i uuid;
@@ -109,10 +109,10 @@ BEGIN
   -- Cleanup cascades through semantic subtype tables.
   DELETE FROM meta.semantic_instance WHERE instance_id IN (wf2,wf1,resp_i,entry_i,reg_i,risk_i);
   DELETE FROM enterprise.actor_ref WHERE actor_id=actor;
-END $$;
+END $semrisk$;
 
 
-DO $
+DO $semrisk$
 DECLARE
  src uuid; risk_i uuid; ext_i uuid; ext_id uuid;
 BEGIN
@@ -137,6 +137,6 @@ BEGIN
 
   DELETE FROM ref.external_entity WHERE external_entity_id=ext_id;
   DELETE FROM meta.semantic_instance WHERE instance_id IN (ext_i,risk_i);
-END $;
+END $semrisk$;
 
 SELECT 'SEM_RISK_ISSUE_46_INTEGRITY_TESTS_PASS' AS test_result;
