@@ -2,16 +2,16 @@
 
 DO $semrisk$
 DECLARE
-  risk_id uuid := '47000000-0000-0000-0001-000000000001';
-  scenario_id uuid := '47000000-0000-0000-0001-000000000004';
-  event_id uuid := '48000000-0000-0000-0001-000000000002';
+  v_risk_id uuid := '47000000-0000-0000-0001-000000000001';
+  v_scenario_id uuid := '47000000-0000-0000-0001-000000000004';
+  v_event_id uuid := '48000000-0000-0000-0001-000000000002';
   owner_count int;
   risk_state_count int;
   workflow_state_count int;
 BEGIN
   -- Q01 scenario/event distinction.
-  IF scenario_id = event_id THEN RAISE EXCEPTION 'Scenario and event identity conflated'; END IF;
-  IF NOT EXISTS (SELECT 1 FROM core.risk_event WHERE event_id=event_id AND realizes_scenario_id=scenario_id)
+  IF v_scenario_id = v_event_id THEN RAISE EXCEPTION 'Scenario and event identity conflated'; END IF;
+  IF NOT EXISTS (SELECT 1 FROM core.risk_event WHERE core.risk_event.event_id=v_event_id AND realizes_scenario_id=v_scenario_id)
     THEN RAISE EXCEPTION 'Scenario realization path missing'; END IF;
 
   -- Q02 trigger/event/consequence executable chain.
@@ -19,7 +19,7 @@ BEGIN
     SELECT 1 FROM core.risk_event e
     JOIN core.event_trigger et ON et.event_id=e.event_id
     JOIN core.event_consequence ec ON ec.event_id=e.event_id
-    WHERE e.event_id=event_id
+    WHERE e.event_id=v_event_id
   ) THEN RAISE EXCEPTION 'Trigger-event-consequence chain missing'; END IF;
 
   -- Q03/Q07 reassessment lineage and same Risk identity.
@@ -32,7 +32,7 @@ BEGIN
       AND post.prior_assessment_id='48000000-0000-0000-0001-000000000011'
       AND residual.result_kind='residual'
       AND inherent.result_kind='inherent'
-      AND residual.risk_id=risk_id AND inherent.risk_id=risk_id
+      AND residual.risk_id=v_risk_id AND inherent.risk_id=v_risk_id
   ) THEN RAISE EXCEPTION 'Reassessment/supersession/same-risk path missing'; END IF;
 
   -- Q04 strategy/plan/activity/control are four distinct nodes.
@@ -48,14 +48,14 @@ BEGIN
   ) THEN RAISE EXCEPTION 'Treatment distinction chain missing'; END IF;
 
   -- Q05 derived owner through responsibility.
-  SELECT count(*) INTO owner_count FROM enterprise.v_risk_owner WHERE risk_id=risk_id;
+  SELECT count(*) INTO owner_count FROM enterprise.v_risk_owner WHERE risk_id=v_risk_id;
   IF owner_count <> 1 THEN RAISE EXCEPTION 'Expected exactly one derived synthetic owner, got %',owner_count; END IF;
   IF EXISTS (SELECT 1 FROM information_schema.columns WHERE table_schema='core' AND table_name='risk' AND column_name='owner_id')
     THEN RAISE EXCEPTION 'Primitive owner_id found'; END IF;
 
   -- Q06 separate state families.
   SELECT count(*) INTO risk_state_count FROM enterprise.risk_state_history
-    WHERE risk_id=risk_id AND risk_state_id IN ('48000000-0000-0000-0001-000000000015','48000000-0000-0000-0001-000000000016');
+    WHERE risk_id=v_risk_id AND risk_state_id IN ('48000000-0000-0000-0001-000000000015','48000000-0000-0000-0001-000000000016');
   SELECT count(*) INTO workflow_state_count FROM enterprise.workflow_state_history
     WHERE entry_id='48000000-0000-0000-0001-000000000005';
   IF risk_state_count <> 2 OR workflow_state_count <> 2 THEN
@@ -79,7 +79,7 @@ BEGIN
   IF NOT EXISTS (
     SELECT 1 FROM pharma.context_link pc
     JOIN ref.external_entity ee ON ee.external_entity_id=pc.external_entity_id
-    WHERE (pc.risk_id=risk_id OR pc.scenario_id=scenario_id)
+    WHERE (pc.risk_id=v_risk_id OR pc.scenario_id=v_scenario_id)
       AND ee.owner_namespace='CM-PharmE' AND ee.version_ref='v1.0.0'
   ) THEN RAISE EXCEPTION 'CM-PharmE bridge missing'; END IF;
 END $semrisk$;
