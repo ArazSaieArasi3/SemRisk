@@ -14,6 +14,7 @@ on:
       - "governance/identity/**"
       - "tools/semrisk_semantic_ci.py"
       - "tools/issue50_semantic_mutation_check.py"
+      - "tools/issue50_entailment_mutation_check.py"
       - "tools/requirements-semantic-ci.txt"
       - "tools/semantic-tool-manifest.csv"
       - ".github/workflows/semantic-ci.yml"
@@ -29,6 +30,7 @@ on:
       - "governance/identity/**"
       - "tools/semrisk_semantic_ci.py"
       - "tools/issue50_semantic_mutation_check.py"
+      - "tools/issue50_entailment_mutation_check.py"
       - "tools/requirements-semantic-ci.txt"
       - "tools/semantic-tool-manifest.csv"
       - ".github/workflows/semantic-ci.yml"
@@ -102,6 +104,9 @@ jobs:
 
       - name: Check expected reasoned consequences
         run: python tools/semrisk_semantic_ci.py --stage post --reasoned build/semantic-ci/reasoned.owl
+
+      - name: Prove missing-entailment mutation is detected
+        run: python tools/issue50_entailment_mutation_check.py
 
       - name: Prove inconsistent negative fixture is detected
         shell: bash
