@@ -1,0 +1,11 @@
+@prefix sr: <urn:semrisk:entity:> .
+@prefix test: <urn:semrisk:test:r2:> .
+
+# Known-inconsistent fixture for Issue #74.
+# The same individual is deliberately typed as both the governed Risk
+# phenomenon/pattern and a Risk Assessment Result information artifact.
+# HermiT MUST reject the merged ontology+fixture because SR-CPT-001 and
+# SR-CPT-013 are disjoint.
+
+test:result-risk-conflation
+  a sr:SR-CPT-001, sr:SR-CPT-013 .
