@@ -1,0 +1,9 @@
+pair_id,actual_class,rdf_rows,sql_rows,finding,claim_consequence
+P49-01,equivalent_for_task,1,1,"Scenario↔event stable identities preserved","Supports bounded projection fidelity for realization task"
+P49-02,equivalent_for_task,1,1,"Trigger-event-consequence chain preserved","Supports bounded chain-query fidelity"
+P49-03,equivalent_for_task,1,1,"Reassessment/supersession/same-Risk identity preserved","Supports temporal assessment projection task"
+P49-04,equivalent_for_task,1,1,"Strategy-plan-activity-control separation preserved","Supports treatment-path projection task"
+P49-05,equivalent_after_declared_normalization,1,1,"RDF external actor IRI normalized to RDB actor label because actor_ref has no semantic_instance IRI","Do not claim lossless actor-identity projection"
+P49-06,equivalent_for_task,4,4,"Risk-state and workflow-state families preserved","Supports state-separation task; SQL current-state convenience remains application-specific"
+P49-07,partial,2,2,"Result↔evidence pairs match but RDB support_role=context is more explicit than RDF fixture","Declare projection/serialization asymmetry; do not claim full evidence-role equivalence"
+P49-08,equivalent_after_declared_normalization,5,5,"CM-PharmE target IRI normalized to owner_semantic_id","Supports external-owner bridge task, not global ontology equivalence"
