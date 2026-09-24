@@ -43,7 +43,8 @@ sr:SR-CPT-003 a owl:Class ;
 sr:SR-CPT-004 a owl:Class ;
   dcterms:identifier "SR-CPT-004" ;
   rdfs:label "Predisposing Condition"@en ;
-  rdfs:comment "A contextual state or disposition that increases susceptibility to a risk-relevant event/effect without necessarily directly causing it."@en ;
+  rdfs:comment "A contextual state-of-affairs or situational condition that increases susceptibility to a risk-relevant event/effect without necessarily directly causing it."@en ;
+  skos:scopeNote "Intrinsic disposition-like susceptibility belongs under Vulnerability or an explicit profile refinement; Predisposing Condition remains situational in the Paper-1 Core."@en ;
   dcterms:conformsTo "SR-REQ-009" ;
   dcterms:relation "CQ-012; CQ-028" ;
   rdfs:subClassOf gufo:Situation .
