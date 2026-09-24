@@ -1,0 +1,13 @@
+check_id,topic,state,decision_or_requirement,residual_note
+INT-001,Private operational data,PASS_WITH_RESTRICTION,"Do not redistribute Jira source bytes; retain hash/schema/mappings only","Limits full public reproduction"
+INT-002,Expert reviewer privacy,READY,"Use pseudonymous IDs; retain expertise/independence metadata only; respect consent/comment-sharing limits","Final wording depends on actual reviewer process"
+INT-003,Dataset licensing,PARTIAL,"DS-003 license governed; DS-004 file use blocked until exact license/version freeze; DS-002 exact release/license before access","Blocked sources cannot enter evaluated load"
+INT-004,External ontology licensing/version,PASS_BOUNDED,"Use exact external version bindings; reference rather than silently copy/import by default","CM-PharmE governance boundary remains explicit"
+INT-005,Standards access/copyright,PASS_WITH_LIMITS,"Record exact edition/locator; do not reproduce paywalled text; summarize only what access/evidence supports","Clause completeness still open in #13"
+INT-006,Synthetic/constructed data labeling,PASS,"All constructed/synthetic instances explicitly provenance-labeled and barred from independent-validation role","Must remain visible in manuscript"
+INT-007,Conflict of interest / reviewer independence,READY,"Record prior SemRisk/CM-PharmE involvement and independence classification","No reviewer data yet"
+INT-008,AI-assisted research/drafting,READY,"AI-generated/drafted text is not evidence; all central claims/citations must bind to repository evidence; provide disclosure if venue requires","Final venue disclosure rule must be rechecked near submission"
+INT-009,Code availability,PASS_BOUNDED,"Repository contains ontology/RDB/tests and reproducible CI; final scholarly release must be exact-ref bound","Final DOI/tag/release pending #55"
+INT-010,Data availability,PARTIAL,"Public/synthetic artifacts can ship; private/licensed sources described with metadata/hash and restrictions","Final statement refreshed after #55"
+INT-011,Research-claim integrity,PASS_PREASSURANCE,"No mapping percentage, green CI, or citation alone may be used as proof of semantic validity","Enforced by #53/#54"
+INT-012,Post-freeze drift,READY,"Any semantic/data/mapping change after #54/#55 requires impact analysis and re-binding","Final release control pending"
