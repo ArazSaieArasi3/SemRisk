@@ -68,3 +68,5 @@ ORM-066,SR-REL-035,hasIndicator,governance.risk_indicator,typed relation table,n
 ORM-067,SR-REL-036,hasThreshold,governance.threshold,method/profile table,LOSS-013,support,Rule/profile semantics.
 ORM-068,SR-REL-037,pharmaEntityInRiskContext,pharma.context_link,typed bridge table,LOSS-014,yes,Exact CM-PharmE owner/version.
 ORM-069,SR-REL-038,profileExtendsCoreConcept,release/mapping metadata only,intentional non-runtime,LOSS-012,no,Not operational DB relation.
+ORM-070,SR-CPT-002,Risk Subject,"ref.external_entity and/or existing typed instance referenced by contextual links",contextual role projection,LOSS-009,yes,"No local RiskSubject entity table; heterogeneous bearers retain their own identity and play the contextual role."
+ORM-071,SR-CPT-003,Risk Source,"target semantic instance referenced by core.risk_source_link",cross-category role projection,LOSS-003,yes,"No one-table RiskSource class; the source bearer retains its concrete semantic type."
