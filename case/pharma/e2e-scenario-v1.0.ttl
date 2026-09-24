@@ -4,6 +4,7 @@
 @prefix cmpe: <urn:cm-pharme:v1.0.0:> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 case:package
@@ -98,6 +99,24 @@ case:workflow-treated a sr:SR-CPT-036 ;
 
 base:evidence-ds003 a sr:SR-CPT-020, prov:Entity ;
   dcterms:source <https://doi.org/10.25375/uct.29178665.v4> .
+
+# R2/#76 qualified RDF fixture metadata for the role played by the evidence
+# relation. This is deliberately case/evaluation-level qualification and does
+# not promote "context" into a universal SemRisk Core evidence-role taxonomy.
+case:evidence-support-role-context a skos:Concept ;
+  skos:prefLabel "context"@en .
+
+case:evidence-link-inherent a rdf:Statement ;
+  rdf:subject case:result-inherent ;
+  rdf:predicate sr:SR-REL-017 ;
+  rdf:object base:evidence-ds003 ;
+  dcterms:type case:evidence-support-role-context .
+
+case:evidence-link-residual a rdf:Statement ;
+  rdf:subject case:result-residual ;
+  rdf:predicate sr:SR-REL-017 ;
+  rdf:object base:evidence-ds003 ;
+  dcterms:type case:evidence-support-role-context .
 
 case:trigger prov:wasGeneratedBy case:synthetic-generation .
 case:event prov:wasGeneratedBy case:synthetic-generation .
