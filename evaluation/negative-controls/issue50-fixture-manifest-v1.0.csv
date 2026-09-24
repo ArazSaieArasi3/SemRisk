@@ -1,0 +1,17 @@
+fixture_id,family,baseline,mutation_kind,intended_defect,expected_detector,expected_result,evaluation_layer,synthetic_test_only,status
+NC-PARSE-001,RDF syntax,"canonical parseable Turtle inputs",single,"Malformed unterminated Turtle IRI","rdflib parser","rejected","verification",yes,EXECUTED_PASS
+NC-SHACL-001,SHACL cardinality,"positive smoke fixture",single,"Risk Register Entry missing required risk link","pySHACL","nonconformant","verification",yes,EXECUTED_PASS
+NC-SHACL-002,SHACL cardinality,"positive smoke fixture",single,"Two current Workflow States","pySHACL","nonconformant","verification",yes,EXECUTED_PASS
+NC-SHACL-003,SHACL responsibility,"positive smoke fixture",single,"Responsibility missing assignee","pySHACL","nonconformant","verification",yes,EXECUTED_PASS
+NC-SHACL-004,provenance/evidence,"positive smoke fixture",single,"Assessment Result missing required trace/evidence","pySHACL","nonconformant","verification",yes,EXECUTED_PASS
+NC-SHACL-005,external-owner bridge,"positive smoke fixture",single,"Pharma bridge points to wrong target","pySHACL","nonconformant","verification",yes,EXECUTED_PASS
+NC-SEM-001,semantic conflation,"P1-R2 ontology candidate",single,"Risk Register Entry equivalent to Risk","semantic mutation guard","detected","semantic-regression",yes,EXECUTED_PASS
+NC-SEM-002,semantic conflation,"P1-R2 ontology candidate",single,"Workflow State equivalent to Risk State","semantic mutation guard","detected","semantic-regression",yes,EXECUTED_PASS
+NC-SEM-003,unsupported equivalence,"P1-R2 ontology candidate",single,"Residual Assessment Result equivalent to Risk","mapping-integrity guard","detected","semantic-regression",yes,EXECUTED_PASS
+NC-SEM-004,missing entailment,"HermiT reasoned baseline",single,"Remove SR-CPT-017 subclass SR-CPT-013","post-reasoning validator","detected","formal-reasoning",yes,EXECUTED_PASS
+NC-REASON-001,inconsistency,"merged ontology closure",single,"Risk Register Entry instance also Risk under disjointness","HermiT","inconsistency/rejection","formal-reasoning",yes,EXECUTED_PASS
+NC-IMPORT-001,broken reference,"canonical XML catalog",single,"Import intentionally unresolved ontology IRI","catalog integrity guard","detected","reproducibility",yes,EXECUTED_PASS
+NC-RDB-001,stale ontology-RDB mapping,"ontology-rdb-mapping-v0.1.csv",single,"Replace one RDB target with core.__missing_projection_target","cross-layer mapping validator","detected","projection-integrity",yes,PLANNED_EXECUTION
+NC-CQ-001,CQ expected mismatch,"e2e-scenario-expected-v1.0.csv",single,"Alter expected parity class for P49-01 away from executable actual","parity expected-vs-actual guard","detected","CQ/parity-regression",yes,PLANNED_EXECUTION
+NC-SCEN-001,scenario reassessment mutation,"e2e-scenario-v1.0.ttl",single,"Remove residual→inherent supersedes relation","scenario semantic detector","detected","application-regression",yes,PLANNED_EXECUTION
+NC-STATE-001,state-family mutation,"e2e-scenario-v1.0.ttl",single,"Type workflow-treated as Risk State","scenario semantic detector","detected","application-regression",yes,PLANNED_EXECUTION
