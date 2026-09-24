@@ -6,7 +6,7 @@
 ## E8 application / query utility
 Strong bounded executable evidence now exists:
 - #48: 10/10 predeclared end-to-end answer families represented; RDF and PostgreSQL scenario tests pass.
-- #49: eight paired SQL↔SPARQL tasks yield 5 task-equivalent, 2 equivalent after declared normalization and 1 explicit partial result.
+- #49 after R2 remediation: eight paired SQL↔SPARQL tasks yield 6 task-equivalent and 2 equivalent after declared normalization; no task remains partial in the governed fixture.
 - #52: all 40 original CQs retained; 26 executable, 7 partial, 6 conceptual-only, 1 deferred.
 
 Interpretation: this supports selected application/query capabilities, not universal utility.
