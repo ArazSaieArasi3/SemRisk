@@ -1,0 +1,11 @@
+trace_id,source_or_fixture,provenance_class,semrisk_entity_relation,rdb_representation,query_ids,result_boundary
+E2E-T01,"DS-003 PCI-001 / PCI-003","constructed_from_source_summary","SR-CPT-004 + SR-REL-006","core.predisposing_condition + core.scenario_condition","E2E-Q02","Study-supported thematic conditions; not occurrence or causal strength"
+E2E-T02,"Synthetic E2E trigger/event","synthetic_test","SR-CPT-005/007 + SR-REL-003/007","core.trigger_event + core.risk_event + core.event_trigger","E2E-Q01;E2E-Q02","Application fixture only"
+E2E-T03,"Synthetic consequence","synthetic_test","SR-CPT-008 + SR-REL-004","core.consequence + core.event_consequence","E2E-Q02","No empirical impact magnitude"
+E2E-T04,"DS-003 evidence anchor","constructed_case","SR-CPT-020 + SR-REL-017","assessment.evidence_item + assessment.assessment_evidence","E2E-Q03;E2E-Q08","Evidence role is contextual; not independent validation"
+E2E-T05,"Synthetic pre/post assessments","synthetic_test","SR-CPT-011/017/018 + SR-REL-013/015/016/033/034","assessment.assessment_activity + assessment.assessment_result","E2E-Q03;E2E-Q07","No real risk score/effectiveness claim"
+E2E-T06,"DS-003 pooled procurement + synthetic execution","constructed strategy + synthetic execution","SR-CPT-026/027/028/029 + SR-REL-022/023/024/025","treatment.strategy/plan/activity/control_mechanism + link tables","E2E-Q04","Strategy grounded as proposed; execution is synthetic"
+E2E-T07,"Synthetic actor/responsibility","synthetic_test","SR-CPT-031 + SR-REL-027/028; derived SR-REL-026","enterprise.actor_ref + risk_responsibility + v_risk_owner","E2E-Q05","No automatic sector→owner inference"
+E2E-T08,"Synthetic risk/workflow state histories","synthetic_test","SR-CPT-035/036 + SR-REL-030/031/032","enterprise.risk_state_history + workflow_state_history + meta.state_transition","E2E-Q06;E2E-Q07","State-family distinction preserved"
+E2E-T09,"CM-PharmE v1.0.0 references","external_owner","SR-REL-037","ref.external_entity + pharma.context_link","E2E-Q09","External ownership; no SemRisk class duplication"
+E2E-T10,"CI execution evidence","verification/application evidence","CQ-040 boundary","V003 SQL tests + RDF structural tests","E2E-Q10","PASS is not semantic/domain validation"
