@@ -20,6 +20,7 @@ sr:SR-CPT-001 a owl:Class ;
   dcterms:identifier "SR-CPT-001" ;
   rdfs:label "Risk"@en ;
   rdfs:comment "A context-dependent risk phenomenon or pattern concerning possible effects on value/objectives; distinct from records, descriptions, scores and workflow artifacts."@en ;
+  skos:scopeNote "Paper-1 identity continuity is governed by a stable semantic identity and the #69 identity/continuity contract. Mutable record, assessment, state, ownership and treatment fields do not automatically define or replace Risk identity."@en ;
   dcterms:conformsTo "SR-REQ-001; SR-REQ-019" ;
   dcterms:relation "CQ-001; CQ-002; CQ-016" .
 
@@ -35,6 +36,7 @@ sr:SR-CPT-003 a owl:Class ;
   dcterms:identifier "SR-CPT-003" ;
   rdfs:label "Risk Source"@en ;
   rdfs:comment "A risk-relevant origin, source or contextual contributor that may participate in a scenario or event; causal status is not implied by the label alone."@en ;
+  skos:scopeNote "Cross-category contextual/source role pattern. Do not force Risk Source under one gUFO primitive; use typed refinements when the underlying category is known."@en ;
   dcterms:conformsTo "SR-REQ-009" ;
   dcterms:relation "CQ-012; CQ-028" .
 
@@ -204,7 +206,8 @@ sr:SR-CPT-030 a owl:Class ;
 sr:SR-CPT-031 a owl:Class ;
   dcterms:identifier "SR-CPT-031" ;
   rdfs:label "Risk Responsibility"@en ;
-  rdfs:comment "A responsibility/accountability assignment connecting an actor/role to a risk-management obligation or artifact."@en ;
+  rdfs:comment "A concrete responsibility/accountability assignment context that depends on an Actor/role bearer and any modeled governance participants, and is about the Risk, artifact, plan or obligation it concerns."@en ;
+  skos:scopeNote "Under the #71 grounding contract, mediation applies to endurant participants; the derived Risk pattern is an aboutness/assignment target rather than a mediated endurant."@en ;
   dcterms:conformsTo "SR-REQ-006" ;
   dcterms:relation "CQ-009; CQ-025" ;
   rdfs:subClassOf gufo:Relator .
@@ -212,7 +215,8 @@ sr:SR-CPT-031 a owl:Class ;
 sr:SR-CPT-035 a owl:Class ;
   dcterms:identifier "SR-CPT-035" ;
   rdfs:label "Risk State"@en ;
-  rdfs:comment "A state of the risk-relevant situation or risk context, distinct from record/workflow progression."@en ;
+  rdfs:comment "A time- and context-bound state-of-affairs concerning the governed Risk context, distinct from assessment results, record/workflow progression and management/monitoring classifications."@en ;
+  skos:scopeNote "Core Risk State is situational. Workflow, management-attention, escalation and monitoring classifications stay outside this class unless a later profile explicitly introduces them."@en ;
   dcterms:conformsTo "SR-REQ-005; SR-REQ-019" ;
   dcterms:relation "CQ-008; CQ-024; CQ-038" ;
   rdfs:subClassOf gufo:Situation .
