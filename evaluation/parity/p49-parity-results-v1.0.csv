@@ -5,5 +5,5 @@ P49-03,equivalent_for_task,1,1,"Reassessment/supersession/same-Risk identity pre
 P49-04,equivalent_for_task,1,1,"Strategy-plan-activity-control separation preserved","Supports treatment-path projection task"
 P49-05,equivalent_after_declared_normalization,1,1,"RDF external actor IRI normalized to RDB actor label because actor_ref has no semantic_instance IRI","Do not claim lossless actor-identity projection"
 P49-06,equivalent_for_task,4,4,"Risk-state and workflow-state families preserved","Supports state-separation task; SQL current-state convenience remains application-specific"
-P49-07,partial,2,2,"Result↔evidence pairs match but RDB support_role=context is more explicit than RDF fixture","Declare projection/serialization asymmetry; do not claim full evidence-role equivalence"
+P49-07,equivalent_for_task,2,2,"Result↔evidence pairs and qualified support_role=context are preserved in both RDF and RDB for the governed E2E fixture","Supports bounded qualified evidence-role parity for this task; no global ontology↔RDB equivalence claim"
 P49-08,equivalent_after_declared_normalization,5,5,"CM-PharmE target IRI normalized to owner_semantic_id","Supports external-owner bridge task, not global ontology equivalence"
