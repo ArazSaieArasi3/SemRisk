@@ -176,6 +176,20 @@ def run_post(reasoned):
         if (URIRef("urn:semrisk:entity:"+a),RDFS.subClassOf,URIRef("urn:semrisk:entity:"+b)) not in g:
             miss.append(a+"<"+b)
     add("REASON-POST-001","REASONING","PASS" if not miss else "FAIL","Expected subclass entailments present." if not miss else "Missing: "+",".join(miss))
+
+    # Release-critical named-class satisfiability check after HermiT classification.
+    # An ontology can be globally consistent while still containing unsatisfiable
+    # named classes, so this is recorded separately from consistency.
+    unsat=set()
+    for s,_,_ in g.triples((None,RDFS.subClassOf,OWL.Nothing)):
+        if str(s).startswith("urn:semrisk:entity:"):
+            unsat.add(str(s))
+    for s,_,_ in g.triples((None,OWL.equivalentClass,OWL.Nothing)):
+        if str(s).startswith("urn:semrisk:entity:"):
+            unsat.add(str(s))
+    add("REASON-SAT-001","REASONING_SATISFIABILITY","PASS" if not unsat else "FAIL",
+        "No named SemRisk class classified as owl:Nothing." if not unsat else "Unsatisfiable named classes: "+",".join(sorted(unsat)))
+
     same=list(g.triples((URIRef("urn:semrisk:entity:SR-CPT-033"),OWL.equivalentClass,URIRef("urn:semrisk:entity:SR-CPT-001"))))
     add("REASON-NON-001","REASONING_NON_ENTAILMENT","PASS" if not same else "FAIL","Risk Register Entry is not equivalent to Risk.")
 
