@@ -1,0 +1,4 @@
+semantic_id,term,paper1_binding_state,canonical_external_owner,reference_sources,profile_owner,semrisk_role,claim_rule
+SR-CPT-037,Objective,UNBOUND_EXTERNAL_FAMILY,,"TOGAF Standard 10th Edition; ArchiMate 3.2; COSO ERM",,"risk-link target/reference marker","Do not claim a canonical generic owner or local class."
+SR-CPT-038,Capability,UNBOUND_EXTERNAL_FAMILY,,"TOGAF Standard 10th Edition; ArchiMate 3.2","CM-PharmE v1.0.0 CMPE-C0005 for Pharma profile","risk-link target/reference marker","Generic Capability remains externally owned; profile-specific CM-PharmE ownership is version-bound."
+SR-CPT-039,Business Process,UNBOUND_EXTERNAL_FAMILY,,"TOGAF Standard 10th Edition; ArchiMate 3.2","CM-PharmE v1.0.0 CMPE-C0015 for Pharma profile","risk-link target/reference marker","Generic Business Process remains externally owned; Pharma process is a profile narrowing."
