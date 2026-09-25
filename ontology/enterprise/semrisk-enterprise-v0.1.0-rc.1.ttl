@@ -41,6 +41,7 @@ sr:SR-CPT-036 a owl:Class ;
   dcterms:identifier "SR-CPT-036" ;
   rdfs:label "Workflow State"@en ;
   rdfs:comment "A state of a management record/process indicating processing/progression, independent from the existence/state of the underlying risk."@en ;
+  skos:scopeNote "Workflow-state value vocabularies are source/profile specific. Open/Analyzed/Treated/Closed from SRC-OP-001 are not asserted as a universal ERM lifecycle taxonomy."@en ;
   dcterms:conformsTo "SR-REQ-005; SR-REQ-011" ;
   dcterms:relation "CQ-008; CQ-014; CQ-024" .
 
