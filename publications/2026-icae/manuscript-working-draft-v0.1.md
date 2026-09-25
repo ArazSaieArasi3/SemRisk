@@ -76,7 +76,7 @@ A **Risk Assessment Activity** is the activity of assessing. A **Risk Assessment
 
 **Risk State** and **Workflow State** are likewise separated. A record may be administratively closed while the underlying modeled risk remains active, uncertain, treated, monitored, or otherwise not ceased. Workflow history belongs to the information/management process; risk-state history concerns the modeled risk context.
 
-Treatment is represented as a sequence of distinct semantics: **Risk Treatment Strategy**, **Treatment Plan**, **Treatment Activity**, and **Control Mechanism**. This avoids treating a persistent control, a planned activity, and an abstract strategy as interchangeable.
+Treatment is represented as a sequence of distinct semantics: **Risk Treatment Strategy**, **Treatment Plan**, **Treatment Activity**, and **Control Mechanism**. This avoids treating a persistent control, a planned activity, and an abstract strategy as interchangeable. The existence or use of a Control Mechanism is not treated as evidence of control design adequacy, operating effectiveness, assurance success, or measured risk reduction.
 
 Evidence and provenance remain explicit. Evidence items, observation or assessment results, source/version identifiers, derivation notes, and provenance activities are represented without reducing provenance to a source URL alone.
 
@@ -96,7 +96,7 @@ Responsibility is modeled through an actor–responsibility–risk pattern. The 
 
 The operational source is a Jira-style risk-register schema with 27 governed attributes. All 27 fields have semantic dispositions in the master mapping rather than a class-per-column transformation. A field may map to a concept, relation, result, workflow value, profile term, metadata artifact, or an explicitly partial/deferred status.
 
-This mapping provides evidence that the Core can be operationalized without making the spreadsheet schema the canonical semantic model. Because the complete schema influenced conceptualization, its 27/27 coverage is an operational mapping result, not an independent correctness percentage.
+This mapping provides evidence that the Core can be operationalized without making the spreadsheet schema the canonical semantic model. Because the complete schema influenced conceptualization, its 27/27 coverage is an operational mapping result, not an independent correctness percentage and not evidence of complete enterprise-risk-management or generic risk-register functionality. Common capabilities such as delegation/RACI, control assurance/effectiveness, due-date/escalation governance, portfolio aggregation and emerging/systemic-risk management remain outside the demonstrated Paper-1 operational scope.
 
 ### B. Relational Projection
 
