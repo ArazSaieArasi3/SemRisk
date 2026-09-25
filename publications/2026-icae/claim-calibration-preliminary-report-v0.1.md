@@ -58,3 +58,9 @@ SR-CL04, SR-CL08 and much of SR-CL09 can be finalized after exact #54/#55 releas
 
 ## Conclusion
 The evidence currently supports a credible Paper-1 story, but it is a **bounded formal + executable semantic architecture story**, not a universal validation/generalization story. The claim set has been narrowed accordingly before final manuscript assurance.
+
+## Dated current-state correction — 2026-09-25 (R8 / #109)
+
+The preliminary report above retains its original 2026-09-24 state. Its **6 direct + 2 normalized** wording for SR-CL04 is now superseded by `evaluation/parity/p49-parity-results-v1.0.csv`: **8/8 direct `equivalent_for_task` for eight predeclared paired tasks**, with stable actor and CM-PharmE external identities preserved directly. The claim remains restricted to those tasks, versions and fixtures; no global, lossless or OWL/CWA semantic equivalence follows. Later manuscript text must use the new tally and the eight-task denominator, while preserving the historical trajectory in the audit trail.
+
+R7 establishes only a bounded DS-003-grounded constructed Pharma case plus a separately synthetic E2E execution. DS-004 file-level robustness remains blocked and DS-002/FAERS remains an unopened cross-domain stress candidate, so SR-CL05 stays one-case bounded and SR-CL06 remains insufficient for independent transferability. This simulated R8 review does not satisfy the separate #51 human semantic-validation requirement. The final #53 claim calibration must reconcile these dated updates before #54 assurance.
