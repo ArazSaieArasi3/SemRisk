@@ -26,6 +26,10 @@ on:
       - "publications/2026-icae/prohibited-conditional-wording-v0.1.md"
       - "literature/standards-frameworks-baseline.md"
       - "tools/r4_standards_governance_check.py"
+      - "evaluation/architecture/**"
+      - "relational/design/r5-architecture-federation-extension-v1.0.csv"
+      - "relational/sql/V005__r5_architecture_federation.sql"
+      - "tools/r5_architecture_governance_check.py"
       - ".github/workflows/semantic-ci.yml"
   pull_request:
     paths:
@@ -49,6 +53,10 @@ on:
       - "publications/2026-icae/prohibited-conditional-wording-v0.1.md"
       - "literature/standards-frameworks-baseline.md"
       - "tools/r4_standards_governance_check.py"
+      - "evaluation/architecture/**"
+      - "relational/design/r5-architecture-federation-extension-v1.0.csv"
+      - "relational/sql/V005__r5_architecture_federation.sql"
+      - "tools/r5_architecture_governance_check.py"
       - ".github/workflows/semantic-ci.yml"
 
 permissions:
@@ -94,6 +102,9 @@ jobs:
 
       - name: Run R4 standards evidence-governance guard
         run: python tools/r4_standards_governance_check.py
+
+      - name: Run R5 architecture federation governance guard
+        run: python tools/r5_architecture_governance_check.py
 
       - name: Cache ROBOT 1.9.10
         id: robot-cache
