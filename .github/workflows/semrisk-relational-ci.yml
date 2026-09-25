@@ -13,6 +13,12 @@ on:
       - 'tools/p49_sql_sparql_parity.py'
       - 'tools/issue50_crosslayer_mutation_check.py'
       - 'tools/issue52_cq_regression_check.py'
+      - 'evaluation/erm/**'
+      - 'profiles/enterprise/**'
+      - 'method/**'
+      - 'docs/governance/**'
+      - 'publications/2026-icae/**'
+      - 'tools/r3_erm_governance_check.py'
       - '.github/workflows/semrisk-relational-ci.yml'
   pull_request:
     paths:
@@ -26,6 +32,12 @@ on:
       - 'tools/p49_sql_sparql_parity.py'
       - 'tools/issue50_crosslayer_mutation_check.py'
       - 'tools/issue52_cq_regression_check.py'
+      - 'evaluation/erm/**'
+      - 'profiles/enterprise/**'
+      - 'method/**'
+      - 'docs/governance/**'
+      - 'publications/2026-icae/**'
+      - 'tools/r3_erm_governance_check.py'
       - '.github/workflows/semrisk-relational-ci.yml'
   workflow_dispatch:
 
@@ -104,6 +116,12 @@ jobs:
 
       - name: CQ regression governance
         run: python3 tools/issue52_cq_regression_check.py
+
+      - name: R3 ERM governance guard
+        run: python3 tools/r3_erm_governance_check.py
+
+      - name: R3 co-ownership and profile regression
+        run: psql -v ON_ERROR_STOP=1 -f relational/sql/tests/V004__r3_erm_profile_tests.sql
 
       - name: Catalog snapshot
         run: |
