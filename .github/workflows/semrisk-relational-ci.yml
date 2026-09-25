@@ -25,6 +25,9 @@ on:
       - 'evaluation/data/**'
       - 'tools/r6_migration_governance_check.py'
       - 'tools/r6_relational_governance_check.py'
+      - 'datasets/**'
+      - 'evaluation/e11/**'
+      - 'tools/r7_pharma_governance_check.py'
       - '.github/workflows/semrisk-relational-ci.yml'
   pull_request:
     paths:
@@ -50,6 +53,9 @@ on:
       - 'evaluation/data/**'
       - 'tools/r6_migration_governance_check.py'
       - 'tools/r6_relational_governance_check.py'
+      - 'datasets/**'
+      - 'evaluation/e11/**'
+      - 'tools/r7_pharma_governance_check.py'
       - '.github/workflows/semrisk-relational-ci.yml'
   workflow_dispatch:
 
@@ -112,7 +118,7 @@ jobs:
         run: psql -v ON_ERROR_STOP=1 -f relational/sql/tests/V001__integrity_tests.sql
 
       - name: Load governed Paper-1 data snapshot
-        run: psql -v ON_ERROR_STOP=1 -f relational/sql/load/P1_DATA_0_1_0_rc1.sql
+        run: psql -v ON_ERROR_STOP=1 -f relational/sql/load/P1_DATA_0_1_0_rc2.sql
 
       - name: Data-load reconciliation tests
         run: psql -v ON_ERROR_STOP=1 -f relational/sql/tests/V002__data_load_tests.sql
@@ -125,6 +131,9 @@ jobs:
 
       - name: R6 projection integrity regression
         run: psql -v ON_ERROR_STOP=1 -f relational/sql/tests/V006__r6_projection_integrity_tests.sql
+
+      - name: R7 Pharma case governance regression
+        run: psql -v ON_ERROR_STOP=1 -f relational/sql/tests/V007__r7_pharma_case_tests.sql
 
       - name: End-to-end RDF scenario tests
         run: python3 tools/e2e_scenario_rdf_tests.py
