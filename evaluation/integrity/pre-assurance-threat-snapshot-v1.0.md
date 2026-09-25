@@ -61,3 +61,9 @@ If the final abstract/conclusion mentions:
 ## Handoff
 
 This snapshot is now authoritative input to #53 and #54. It is **not** the final #56 closure because #51 results and the final #55 release/availability wording must still be incorporated.
+
+## Dated evidence update — 2026-09-25 (R8 / #109)
+
+The 2026-09-24 snapshot above is preserved as historical pre-assurance evidence. Its statement of **6 direct + 2 normalized** parity pairs describes the earlier R2 state and must not be copied as the current result. After R6, the authoritative `evaluation/parity/p49-parity-results-v1.0.csv` records **8/8 direct `equivalent_for_task`** results for the eight frozen paired tasks, including actor and CM-PharmE identity without identity-erasing normalization. This is task-specific fixture and query fidelity, not global/lossless ontology-to-RDB equivalence or domain-semantic validation.
+
+R7 then bounded the Pharma case further: the DS-003 case is constructed, its E2E occurrence is synthetic, DS-002/FAERS records remain unopened for cross-domain stress, and DS-004 remains blocked for file-level robustness. Consequently the independent E11 shortage-domain holdout is still unexecuted and SR-CL06 remains narrowed to bounded cross-context applicability. See `docs/governance/r7-remediation-acceptance-audit-2026-09-25.md` and #109. The final #53/#54 claim package must cite the post-R6/R7 state explicitly.
