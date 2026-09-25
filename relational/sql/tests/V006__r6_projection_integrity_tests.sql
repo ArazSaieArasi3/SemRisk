@@ -7,6 +7,7 @@ DECLARE
   risk2 uuid := '4a000000-0000-0000-0000-000000000001';
   a_old uuid := '4a000000-0000-0000-0000-0000000000ff';
   a_new uuid := '4a000000-0000-0000-0000-000000000002';
+  a_branch uuid := '4a000000-0000-0000-0000-000000000003';
   r_old uuid := '4b000000-0000-0000-0000-0000000000ff';
   r_new uuid := '4b000000-0000-0000-0000-000000000002';
   latest uuid;
@@ -25,15 +26,17 @@ BEGIN
     (risk2,'urn:semrisk:test:r6:risk2','SR-CPT-001',src,'synthetic_test',true),
     (a_old,'urn:semrisk:test:r6:assessment-old','SR-CPT-011',src,'synthetic_test',true),
     (a_new,'urn:semrisk:test:r6:assessment-new','SR-CPT-011',src,'synthetic_test',true),
+    (a_branch,'urn:semrisk:test:r6:assessment-branch','SR-CPT-011',src,'synthetic_test',true),
     (r_old,'urn:semrisk:test:r6:result-old','SR-CPT-013',src,'synthetic_test',true),
     (r_new,'urn:semrisk:test:r6:result-new','SR-CPT-013',src,'synthetic_test',true);
 
   INSERT INTO core.risk(risk_id,title) VALUES(risk2,'R6 temporal lineage test risk');
 
-  INSERT INTO assessment.assessment_activity(assessment_id,risk_id,started_at,ended_at)
+  INSERT INTO assessment.assessment_activity(assessment_id,risk_id,prior_assessment_id,started_at,ended_at)
   VALUES
-    (a_old,risk2,'2026-01-01T10:00:00Z','2026-01-01T11:00:00Z'),
-    (a_new,risk2,'2026-02-01T10:00:00Z','2026-02-01T11:00:00Z');
+    (a_old,risk2,NULL,'2026-01-01T10:00:00Z','2026-01-01T11:00:00Z'),
+    (a_new,risk2,a_old,'2026-02-01T10:00:00Z','2026-02-01T11:00:00Z'),
+    (a_branch,risk2,a_old,'2026-01-20T10:00:00Z','2026-01-20T11:00:00Z');
 
   INSERT INTO assessment.assessment_result(result_id,assessment_id,risk_id,result_kind,value_text)
   VALUES
@@ -57,12 +60,17 @@ BEGIN
   EXCEPTION WHEN check_violation THEN NULL;
   END;
 
-  -- #99 two-node assessment cycle must fail.
+  -- #99 branching from the same prior assessment is explicitly allowed.
+  IF (SELECT count(*) FROM assessment.assessment_activity WHERE prior_assessment_id=a_old) <> 2 THEN
+    RAISE EXCEPTION 'R6 FAILED: valid branching reassessment lineage was not preserved';
+  END IF;
+
+  -- #99 multi-hop assessment cycle must fail: old <- new, then old -> new.
   BEGIN
     UPDATE assessment.assessment_activity
-    SET prior_assessment_id='48000000-0000-0000-0001-000000000013'
-    WHERE assessment_id='48000000-0000-0000-0001-000000000011';
-    RAISE EXCEPTION 'R6 FAILED: assessment lineage cycle unexpectedly succeeded';
+    SET prior_assessment_id=a_new
+    WHERE assessment_id=a_old;
+    RAISE EXCEPTION 'R6 FAILED: multi-hop assessment lineage cycle unexpectedly succeeded';
   EXCEPTION WHEN check_violation THEN NULL;
   END;
 
@@ -75,12 +83,32 @@ BEGIN
   EXCEPTION WHEN check_violation THEN NULL;
   END;
 
-  -- #99 two-node result supersession cycle must fail.
+  -- #99 multi-hop result cycle must fail. First create a third same-Risk result
+  -- after the existing inherent <- residual chain, then point inherent back to it.
+  INSERT INTO meta.semantic_instance(
+    instance_id,instance_iri,semantic_type_id,source_artifact_id,evidence_role,synthetic_flag
+  ) VALUES (
+    '4b000000-0000-0000-0000-000000000003',
+    'urn:semrisk:test:r6:result-third',
+    'SR-CPT-013',src,'synthetic_test',true
+  );
+
+  INSERT INTO assessment.assessment_result(
+    result_id,assessment_id,risk_id,result_kind,supersedes_result_id,value_text
+  ) VALUES (
+    '4b000000-0000-0000-0000-000000000003',
+    '48000000-0000-0000-0001-000000000013',
+    '47000000-0000-0000-0001-000000000001',
+    'generic',
+    '48000000-0000-0000-0001-000000000014',
+    'R6 third result for cycle detector'
+  );
+
   BEGIN
     UPDATE assessment.assessment_result
-    SET supersedes_result_id='48000000-0000-0000-0001-000000000014'
+    SET supersedes_result_id='4b000000-0000-0000-0000-000000000003'
     WHERE result_id='48000000-0000-0000-0001-000000000012';
-    RAISE EXCEPTION 'R6 FAILED: result supersession cycle unexpectedly succeeded';
+    RAISE EXCEPTION 'R6 FAILED: multi-hop result supersession cycle unexpectedly succeeded';
   EXCEPTION WHEN check_violation THEN NULL;
   END;
 
