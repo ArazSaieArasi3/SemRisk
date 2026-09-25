@@ -22,7 +22,9 @@ The Core ontology IRI is `urn:semrisk:ontology:core`, with version IRI `urn:semr
 
 The candidate manifest is `ontology/p1-r2-candidate-manifest.yaml` (inspected blob `41033f26912d7b14853583a1545095d7d11e0176`). The complete controlled build process is documented in `docs/reproducibility/semantic-build.md`. Ontology source files, mappings, shapes, rules, test individuals and SQL tables are distinct artifacts.
 
-## FD-C/D/E/F — Source-derived entity reference
+## FD-C — Classes; FD-D — Object properties; FD-E — Datatype properties; FD-F — Individuals and enumerations
+
+The four dimensions share one source-derived inventory, but remain distinct in the completeness assessment below.
 
 `docs/ontology/p1-r2-formal-source-entity-reference-v0.1.csv` enumerates **76 locally declared semantic IDs** directly from the six inspected modules: **35 `owl:Class`**, **37 `owl:ObjectProperty`**, **four `skos:Concept` markers**; no local `owl:DatatypeProperty` or `owl:NamedIndividual` declaration was found in those six files. Each row records actual type, label, module, asserted subclass/domain/range/inverse *in its declaration*, CQ annotation, source path and blob. Empty fields mean **not asserted in that declaration**; cross-module statements and import-closure inference are separate. The five externally owned CM-PharmE reference nodes in Mappings are not counted as locally owned classes. These source counts differ in unit and purpose from the **71/71 release-critical conceptual IDs** checked by E3: do not report either as an ontology-quality score.
 
