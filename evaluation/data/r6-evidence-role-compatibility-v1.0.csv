@@ -1,0 +1,11 @@
+role_id,source_or_instance_role,synthetic_flag,paper1_allowed,target_use,guard_rule
+ER6-001,discovery,false,yes,"source discovery/design only","not independent validation"
+ER6-002,design,false,yes,"design evidence","not independent validation"
+ER6-003,reconciliation,false,yes,"semantic reconciliation","not independent validation"
+ER6-004,regression,true,yes,"test/regression only","must not support empirical/domain validity"
+ER6-005,bounded_case,false,yes,"bounded empirical/case evidence","claim ceiling follows source design"
+ER6-006,constructed_case,true,yes,"constructed abstraction from bounded source","must remain visibly constructed/non-empirical"
+ER6-007,synthetic_test,true,yes,"application/regression fixture","must never carry independent_validation"
+ER6-008,transferability_holdout,false,protected,"future E11 holdout","record-level use prohibited until holdout protocol/version freeze"
+ER6-009,independent_validation,false,conditional,"independent evaluation only","must not be synthetic and must not have shaped target semantics"
+ER6-010,provenance_only,false,yes,"schema/build/source provenance","no semantic validity inference"
