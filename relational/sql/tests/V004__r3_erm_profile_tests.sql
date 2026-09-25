@@ -10,9 +10,10 @@ INSERT INTO meta.semantic_instance(
   'SR-CPT-031','synthetic_test',true
 );
 
-INSERT INTO enterprise.actor_ref(actor_id,actor_kind,label)
+INSERT INTO enterprise.actor_ref(actor_id,actor_iri,actor_kind,label)
 VALUES (
   '49000000-0000-0000-0001-000000000002',
+  'urn:semrisk:test:r3:coowner',
   'synthetic_external_actor',
   'R3 synthetic co-owner'
 );
