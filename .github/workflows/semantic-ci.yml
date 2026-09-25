@@ -20,7 +20,13 @@ on:
       - "tools/r2_formal_semantics_guard_check.py"
       - "tools/requirements-semantic-ci.txt"
       - "tools/semantic-tool-manifest.csv"
-      - "evaluation/standards/**"\n      - "conceptualization/comparison/standard-framework-crosswalk-v0.1.csv"\n      - "publications/2026-icae/manuscript-working-draft-v0.1.md"\n      - "publications/2026-icae/prohibited-conditional-wording-v0.1.md"\n      - "literature/standards-frameworks-baseline.md"\n      - "tools/r4_standards_governance_check.py"\n      - ".github/workflows/semantic-ci.yml"
+      - "evaluation/standards/**"
+      - "conceptualization/comparison/standard-framework-crosswalk-v0.1.csv"
+      - "publications/2026-icae/manuscript-working-draft-v0.1.md"
+      - "publications/2026-icae/prohibited-conditional-wording-v0.1.md"
+      - "literature/standards-frameworks-baseline.md"
+      - "tools/r4_standards_governance_check.py"
+      - ".github/workflows/semantic-ci.yml"
   pull_request:
     paths:
       - "ontology/**"
@@ -37,7 +43,13 @@ on:
       - "tools/r1_foundational_guardrail_check.py"
       - "tools/requirements-semantic-ci.txt"
       - "tools/semantic-tool-manifest.csv"
-      - "evaluation/standards/**"\n      - "conceptualization/comparison/standard-framework-crosswalk-v0.1.csv"\n      - "publications/2026-icae/manuscript-working-draft-v0.1.md"\n      - "publications/2026-icae/prohibited-conditional-wording-v0.1.md"\n      - "literature/standards-frameworks-baseline.md"\n      - "tools/r4_standards_governance_check.py"\n      - ".github/workflows/semantic-ci.yml"
+      - "evaluation/standards/**"
+      - "conceptualization/comparison/standard-framework-crosswalk-v0.1.csv"
+      - "publications/2026-icae/manuscript-working-draft-v0.1.md"
+      - "publications/2026-icae/prohibited-conditional-wording-v0.1.md"
+      - "literature/standards-frameworks-baseline.md"
+      - "tools/r4_standards_governance_check.py"
+      - ".github/workflows/semantic-ci.yml"
 
 permissions:
   contents: read
