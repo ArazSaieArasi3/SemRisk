@@ -1,0 +1,5 @@
+profile_id,source_id,state_code,source_semantics,semrisk_semantic_id,scope,status,nonclaim
+WF-SRC-OP-001,SRC-OP-001,open,"source workflow state: record open/in progress",SR-CPT-036,Enterprise source profile,OBSERVED,"not a universal Risk State or ERM lifecycle state"
+WF-SRC-OP-001,SRC-OP-001,analyzed,"source workflow state: analysis stage",SR-CPT-036,Enterprise source profile,OBSERVED,"not a universal lifecycle state"
+WF-SRC-OP-001,SRC-OP-001,treated,"source workflow state: treatment-processing stage",SR-CPT-036,Enterprise source profile,OBSERVED,"does not imply treatment effectiveness or Risk cessation"
+WF-SRC-OP-001,SRC-OP-001,closed,"source workflow state: record/workflow closure",SR-CPT-036,Enterprise source profile,OBSERVED,"does not imply underlying Risk ceased"
