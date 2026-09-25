@@ -6,6 +6,6 @@ ER6-004,regression,true,yes,"test/regression only","must not support empirical/d
 ER6-005,bounded_case,false,yes,"bounded empirical/case evidence","claim ceiling follows source design"
 ER6-006,constructed_case,true,yes,"constructed abstraction from bounded source","must remain visibly constructed/non-empirical"
 ER6-007,synthetic_test,true,yes,"application/regression fixture","must never carry independent_validation"
-ER6-008,transferability_holdout,false,protected,"future E11 holdout","record-level use prohibited until holdout protocol/version freeze"
+ER6-008,transferability_holdout,false,protected,"future E11 cross-domain stress/transfer candidate","record-level use prohibited until exact source and predeclared E11 protocol/task freeze"
 ER6-009,independent_validation,false,conditional,"independent evaluation only","must not be synthetic and must not have shaped target semantics"
 ER6-010,provenance_only,false,yes,"schema/build/source provenance","no semantic validity inference"
