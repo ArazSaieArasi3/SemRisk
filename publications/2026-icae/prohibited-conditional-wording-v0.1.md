@@ -16,3 +16,9 @@ Until the listed gates are satisfied, the following wording must not appear unqu
 | reproducible | CONDITIONAL | must state public/synthetic scope and private/licensed restrictions |
 | Pharma validated / health validated | PROHIBITED | one bounded case plus pending expert review |
 | treatment effective / risk reduced | PROHIBITED | E2E treatment/reassessment portions are synthetic |
+
+| complete/comprehensive ERM or risk-register coverage | PROHIBITED | 27/27 refers only to the selected SRC-OP-001 schema |
+| control is effective / treatment reduced risk | PROHIBITED unless independently evidenced | Paper-1 E2E control and post-treatment assessment are synthetic application fixtures |
+| current risk = residual risk | PROHIBITED as universal equivalence | current/net/target/gross labels are method/framework-profile terms |
+| Open/Analyzed/Treated/Closed is the SemRisk lifecycle | PROHIBITED | these are SRC-OP-001 workflow-profile values, not universal Risk State values |
+| full opportunity/systemic/cascading/emerging risk support | PROHIBITED | advanced ERM families are explicit Paper-1 nonclaims |
