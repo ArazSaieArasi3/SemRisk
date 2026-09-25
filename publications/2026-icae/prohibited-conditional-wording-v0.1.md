@@ -11,7 +11,7 @@ Until the listed gates are satisfied, the following wording must not appear unqu
 | comprehensive risk ontology | PROHIBITED | Paper-1 scope explicitly bounded |
 | aligned/conformant with ISO/COSO/NIST | CONFORMANCE wording PROHIBITED | current evidence is bounded terminology/process alignment, not full conformance |
 | 100% correct mapping | PROHIBITED | 27/27 and 18/18 are disposition denominators, not correctness scores |
-| lossless ontology–RDB mapping | PROHIBITED | #49 now has 6 direct and 2 normalized tasks after R2 remediation; normalization plus known broader semantic-loss/OWA–CWA differences still preclude global lossless-equivalence wording |
+| lossless ontology–RDB mapping | PROHIBITED | #49 now has 8/8 direct task-equivalent results after R6, but only for eight frozen tasks / 17 directly represented CQs; broader semantic-loss and OWA–CWA differences still preclude global lossless-equivalence wording |
 | formally proven valid | PROHIBITED | formal consistency/satisfiability ≠ semantic/domain validity |
 | reproducible | CONDITIONAL | must state public/synthetic scope and private/licensed restrictions |
 | Pharma validated / health validated | PROHIBITED | one bounded case plus pending expert review |
@@ -34,3 +34,9 @@ Until the listed gates are satisfied, the following wording must not appear unqu
 | same label across external ontologies means same entity | PROHIBITED | external identity is namespace + semantic ID + version; correspondence must be explicit |
 | complete enterprise-architecture risk integration | PROHIBITED | propagation, portfolio reasoning, capability degradation and objective-performance causality are not demonstrated |
 | ArchiMate-conformant / TOGAF-conformant | PROHIBITED | Paper 1 provides bounded reference alignment only |
+
+| supply-chain transparency is definitively a Risk Treatment Strategy | PROHIBITED | DS-003 frames it as a management need; R7 retains a context-sensitive Pharma response candidate |
+| DS-004 demonstrates structured-shortage robustness | PROHIBITED until activation gates pass | exact file/version/license/checksum/schema/quality/transformation state remains blocked |
+| FAERS validates shortage semantics | PROHIBITED | DS-002 is a pharmacovigilance/adverse-event source and is reserved only as a protected cross-domain Pharma stress candidate |
+| current Pharma case is comprehensive / Pharma-validated | PROHIBITED | several generic stress dimensions and product/INN/manufacturer/jurisdiction/ATC anchors remain unexercised/external |
+| synthetic E2E event/control/reassessment is observed DS-003 evidence | PROHIBITED | these nodes are deterministic application/regression fixtures with synthetic-generation provenance |
