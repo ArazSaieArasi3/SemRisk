@@ -19,6 +19,9 @@ on:
       - 'docs/governance/**'
       - 'publications/2026-icae/**'
       - 'tools/r3_erm_governance_check.py'
+      - 'ontology/mappings/**'
+      - 'evaluation/architecture/**'
+      - 'tools/r5_architecture_governance_check.py'
       - '.github/workflows/semrisk-relational-ci.yml'
   pull_request:
     paths:
@@ -38,6 +41,9 @@ on:
       - 'docs/governance/**'
       - 'publications/2026-icae/**'
       - 'tools/r3_erm_governance_check.py'
+      - 'ontology/mappings/**'
+      - 'evaluation/architecture/**'
+      - 'tools/r5_architecture_governance_check.py'
       - '.github/workflows/semrisk-relational-ci.yml'
   workflow_dispatch:
 
@@ -90,6 +96,9 @@ jobs:
       - name: Integrity and negative tests
         run: psql -v ON_ERROR_STOP=1 -f relational/sql/tests/V001__integrity_tests.sql
 
+      - name: R5 architecture federation extension
+        run: psql -v ON_ERROR_STOP=1 -f relational/sql/V005__r5_architecture_federation.sql
+
       - name: Governed data-load support
         run: psql -v ON_ERROR_STOP=1 -f relational/sql/V002__data_load_support.sql
 
@@ -122,6 +131,9 @@ jobs:
 
       - name: R3 co-ownership and profile regression
         run: psql -v ON_ERROR_STOP=1 -f relational/sql/tests/V004__r3_erm_profile_tests.sql
+
+      - name: R5 architecture federation regression
+        run: psql -v ON_ERROR_STOP=1 -f relational/sql/tests/V005__r5_architecture_federation_tests.sql
 
       - name: Catalog snapshot
         run: |
