@@ -187,8 +187,8 @@ INSERT INTO enterprise.workflow_state_history(workflow_state_id,entry_id,state_c
 VALUES('47000000-0000-0000-0010-000000000004','47000000-0000-0000-0010-000000000003','open',true)
 ON CONFLICT DO NOTHING;
 
-INSERT INTO enterprise.actor_ref(actor_id,actor_kind,label)
-VALUES('47000000-0000-0000-0011-000000000001','synthetic','Synthetic Risk Manager')
+INSERT INTO enterprise.actor_ref(actor_id,actor_iri,actor_kind,label)
+VALUES('47000000-0000-0000-0011-000000000001','urn:semrisk:fixture:p1:synthetic:risk-manager','synthetic','Synthetic Risk Manager')
 ON CONFLICT DO NOTHING;
 
 INSERT INTO enterprise.risk_responsibility(responsibility_id,actor_id,risk_id)
