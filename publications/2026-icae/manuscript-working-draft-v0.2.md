@@ -1,8 +1,8 @@
 # SemRisk: An Evidence-Grounded and Well-Founded Semantic Architecture for Operational Risk Knowledge
 
-**Working manuscript draft v0.2 for author review — 2026-09-25**  
-**Target:** ICAE 2026, Track 2 / Cluster B — Informatics & AI  
-**Status:** AUTHOR-REVIEW DRAFT / not submission-ready. This revision uses the current 8/8 task result, the R7 Pharma boundary and R8/meta-review findings. Expert semantic validation (#51/#30), independent E11 (#31), final comparative/standards locators (#14/#13), claim calibration (#53), assurance (#54), release binding (#55), and final submission audit (#35) remain pending. Expert semantic validation (#51/#30), final E10/E11 evaluation (#31), threats/claim calibration (#56/#53), assurance (#54), publication-bound release (#55), and final venue audit (#35) remain pending.
+**Working manuscript draft v0.2 — 2026-09-25**  
+**Target:** ICAE 2026, Track 2 / Cluster B — Informatics & AI.  
+**Status:** AUTHOR-REVIEW DRAFT. The present results support bounded formal and application claims. Human semantic validation (#51/#30), an independent shortage-domain E11 test (#31), final comparator/standards locators (#14/#13), claim calibration (#53), assurance (#54), release binding (#55) and the submission audit (#35) remain pending.
 
 ## Abstract — provisional
 
