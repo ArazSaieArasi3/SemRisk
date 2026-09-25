@@ -92,13 +92,12 @@ JOIN meta.semantic_instance ci ON ci.instance_id=ac.control_id
 WHERE p.plan_id='48000000-0000-0000-0001-000000000008';"""
 ),
 "P49-05":(
-PREFIX+"""SELECT ?risk ?actorLabel WHERE {
+PREFIX+"""SELECT ?risk ?actor WHERE {
   VALUES ?resp { case:responsibility }
   ?resp sr:SR-REL-027 ?risk ;
         sr:SR-REL-028 ?actor .
-  ?actor dcterms:title ?actorLabel .
 }""",
-"""SELECT r.instance_iri,a.label
+"""SELECT r.instance_iri,a.actor_iri
 FROM enterprise.v_risk_owner v
 JOIN meta.semantic_instance r ON r.instance_id=v.risk_id
 JOIN enterprise.actor_ref a ON a.actor_id=v.actor_id
@@ -142,9 +141,10 @@ PREFIX+"""SELECT ?context ?target WHERE {
  ?context sr:SR-REL-037 ?target .
  FILTER(STRSTARTS(STR(?target),"urn:cm-pharme:v1.0.0:"))
 }""",
-"""SELECT ci.instance_iri,ee.owner_semantic_id
+"""SELECT ci.instance_iri,ei.instance_iri
 FROM pharma.context_link pc
 JOIN ref.external_entity ee ON ee.external_entity_id=pc.external_entity_id
+JOIN meta.semantic_instance ei ON ei.instance_id=ee.instance_id
 JOIN meta.semantic_instance ci ON ci.instance_id=COALESCE(pc.risk_id,pc.scenario_id)
 WHERE pc.risk_id='47000000-0000-0000-0001-000000000001'
    OR pc.scenario_id='47000000-0000-0000-0001-000000000004';"""
@@ -160,13 +160,9 @@ def sql_rows(q):
     return {tuple(line.split("\t")) for line in p.stdout.splitlines() if line.strip()}
 
 def normalize(pid,rows,side):
-    out=set()
-    for row in rows:
-        r=list(row)
-        if pid=="P49-08" and side=="rdf":
-            r[1]=r[1].rsplit(":",1)[-1]
-        out.add(tuple(r))
-    return out
+    # R6 preserves stable actor/external IRIs directly; no task currently
+    # requires identity-erasing normalization.
+    return set(rows)
 
 registry={r["pair_id"]:r for r in csv.DictReader(REG.open(encoding="utf-8"))}
 results=[]
@@ -174,12 +170,8 @@ for pid,(sq,pq) in pairs.items():
     rdf=normalize(pid,sparql_rows(sq),"rdf")
     sql=normalize(pid,sql_rows(pq),"sql")
     expected=registry[pid]["expected_parity_class"]
-    if pid in ("P49-05","P49-08"):
-        ok=(rdf==sql)
-        actual="equivalent_after_declared_normalization" if ok else "implementation_bug"
-    else:
-        ok=(rdf==sql)
-        actual="equivalent_for_task" if ok else "implementation_bug"
+    ok=(rdf==sql)
+    actual="equivalent_for_task" if ok else "implementation_bug"
     results.append((pid,expected,actual,len(rdf),len(sql),rdf,sql))
     if actual!=expected:
         print(f"{pid}: expected {expected}, actual {actual}\nRDF={rdf}\nSQL={sql}")
