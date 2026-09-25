@@ -50,7 +50,7 @@ The requirements stage froze 20 semantic requirements and 40 competency question
 
 ### C. Reuse, Architecture, and External Ownership
 
-SemRisk uses an explicit reuse/reference policy. COVER and ROSE are referenced and aligned by default; import or equivalence requires stronger evidence and additional gates. No `owl:equivalentClass` or `owl:equivalentProperty` relationship is inferred from lexical similarity. CM-PharmE entities remain externally owned in the pharmaceutical bridge. The Core is kept independent of profiles and application projections, while Enterprise, Method, Governance, and Pharma modules depend on or specialize the Core.
+SemRisk uses an explicit reuse/reference policy. COVER and ROSE are referenced and aligned by default; import or equivalence requires stronger evidence and additional gates. No `owl:equivalentClass` or `owl:equivalentProperty` relationship is inferred from lexical similarity. CM-PharmE entities remain externally owned in the pharmaceutical bridge. Generic Objective, Capability, and Business Process families are likewise not redefined as local SemRisk classes: Paper 1 treats TOGAF 10 and ArchiMate 3.2 as reference/alignment sources while leaving the generic canonical semantic owner unbound. The Core is kept independent of profiles and application projections, while Enterprise, Method, Governance, and Pharma modules depend on or specialize the Core.
 
 The Paper-1 architecture assigns each release-critical concept or relation to exactly one governed semantic owner or external owner. The publication subset is a governed view of that architecture, not a second ontology.
 
@@ -82,7 +82,7 @@ Evidence and provenance remain explicit. Evidence items, observation or assessme
 
 ### B. Modules and Federation
 
-SemRisk is modularized into Core, Enterprise, Method, Governance, and Pharma concerns. External enterprise or domain semantics are referenced rather than absorbed into the Core when their identity belongs elsewhere. In the Pharma case, CM-PharmE v1.0.0 remains the semantic owner of pharmaceutical entities. SemRisk contributes risk-specific participation or contextual relations around those external entities.
+SemRisk is modularized into Core, Enterprise, Method, Governance, and Pharma concerns. External enterprise or domain semantics are referenced rather than absorbed into the Core when their identity belongs elsewhere. Architecture-facing `affects` assertions are interpreted as bounded links whose target family, effect mode and provenance may be qualified in the Enterprise/DataProjection layer; a bare link does not imply objective failure, capability degradation, process disruption or causal propagation. In the Pharma case, CM-PharmE v1.0.0 remains the semantic owner of pharmaceutical entities. SemRisk contributes risk-specific participation or contextual relations around those external entities.
 
 ### C. Temporal Assessment and Responsibility
 
@@ -170,7 +170,7 @@ These limitations do not invalidate the formal and application results already o
 
 ## VIII. Conclusion — provisional
 
-SemRisk provides an evidence-grounded, foundationally analyzed, formally implemented, and operationally executable semantic architecture for separating key operational risk concepts that are commonly conflated in registers and software systems. The current Paper-1 candidate passes its declared formal/structural checks, preserves all original competency questions, supports a bounded executable scenario, and demonstrates task-specific relational projection fidelity with explicit representation losses. The work also establishes controlled enterprise and pharmaceutical federation patterns while preserving external semantic ownership.
+SemRisk provides an evidence-grounded, foundationally analyzed, formally implemented, and operationally executable semantic architecture for separating key operational risk concepts that are commonly conflated in registers and software systems. The current Paper-1 candidate passes its declared formal/structural checks, preserves all original competency questions, supports a bounded executable scenario, and demonstrates task-specific relational projection fidelity with explicit representation losses. The work also establishes controlled, bounded enterprise and pharmaceutical federation patterns while preserving external source identity and versioning. It does not claim complete enterprise-architecture risk integration, architecture dependency propagation, objective-performance causality, capability degradation reasoning, or TOGAF/ArchiMate conformance.
 
 The present results should be interpreted within their evaluated scope. Expert semantic validation, final comparative and transferability evaluation, threats-to-validity synthesis, claim calibration, and publication-bound release are still required before final manuscript wording is frozen. Accordingly, this draft supports bounded formal and application claims and does not claim universal risk-domain validity, overall superiority, complete standards conformance, or general cross-domain transferability.
 
