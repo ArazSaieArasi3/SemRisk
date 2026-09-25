@@ -6,7 +6,7 @@
 ## E8 application / query utility
 Strong bounded executable evidence now exists:
 - #48: 10/10 predeclared end-to-end answer families represented; RDF and PostgreSQL scenario tests pass.
-- #49 after R2 remediation: eight paired SQL↔SPARQL tasks yield 6 task-equivalent and 2 equivalent after declared normalization; no task remains partial in the governed fixture.
+- #49 after R6 identity remediation: all eight predeclared SQL↔SPARQL tasks are directly `equivalent_for_task`; no identity-erasing normalization remains. The denominator is still only eight frozen tasks / 17 directly represented CQs.
 - #52: all 40 original CQs retained; 26 executable, 7 partial, 6 conceptual-only, 1 deferred.
 
 Interpretation: this supports selected application/query capabilities, not universal utility.
@@ -21,10 +21,11 @@ Principal automated semantic, relational, load, scenario, parity and regression 
 Current evidence is **partial and bounded**:
 - an operational Jira-style schema and a Pharma constructed case exercise/shared-map several Core distinctions;
 - neither is independent semantic validation because both shaped design;
-- DS-002 records remain unopened and are the only remaining candidate for bounded record-level holdout evidence;
-- DS-004 remains blocked for file-level evaluated robustness.
+- DS-002 records remain unopened. R7 reclassifies FAERS as a protected **cross-domain Pharma stress candidate** for selected generic Core semantics; it is not a direct shortage-semantic holdout.
+- DS-004 is the more domain-aligned structured shortage extension but remains blocked for file-level evaluated robustness and is not independent for semantics that its study-level evidence already shaped.
+- Consequently, Paper 1 currently has **no executed clean independent shortage-domain holdout**.
 
-Therefore the current defensible statement is “bounded cross-context applicability evidence”, not independent/general transferability.
+Therefore the current defensible statement remains **“bounded cross-context applicability evidence”**, not independent/general transferability. A future E11 test must distinguish same-domain structured shortage robustness (DS-004, if activated) from cross-domain Core stress (DS-002/FAERS).
 
 ## Gate consequence
 #31 cannot close yet because #30 human semantic validation is pending and E10/E11 finality is incomplete. However E8/E9 are substantially executable now, and E11 limitations are explicit rather than hidden.
