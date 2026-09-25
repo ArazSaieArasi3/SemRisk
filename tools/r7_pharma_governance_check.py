@@ -68,11 +68,13 @@ for r in gaps:
 # Coverage matrix must keep known omitted stress dimensions visible.
 cov=list(csv.DictReader((ROOT/"case/pharma/pharma-case-coverage-nonclaim-matrix-v1.0.csv").open(encoding="utf-8",newline="")))
 by={r["semantic_area"]:r["paper1_case_state"] for r in cov}
-for term in ("Risk Source","Vulnerability","Exposure","Indicator / Threshold","Control effectiveness / assurance"):
+for term in ("Risk Source","Vulnerability","Exposure","Indicator / Threshold"):
     if by.get(term)!="NOT_EXERCISED":
         fail(f"{term} must remain explicit NOT_EXERCISED in current Pharma case")
 if by.get("Assessment Method")!="NOT_POPULATED":
     fail("Assessment Method must remain NOT_POPULATED in current Pharma case")
+if by.get("Control effectiveness / assurance")!="NOT_DEMONSTRATED":
+    fail("Control effectiveness / assurance must remain explicit NOT_DEMONSTRATED")
 
 # DS-002 role must be cross-domain stress, never direct shortage validation.
 stress=(ROOT/"evaluation/e11/ds002-cross-domain-pharma-stress-contract-v1.0.md").read_text(encoding="utf-8").lower()
