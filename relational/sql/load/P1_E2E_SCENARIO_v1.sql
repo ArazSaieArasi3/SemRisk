@@ -62,8 +62,8 @@ VALUES('48000000-0000-0000-0001-000000000006','47000000-0000-0000-0001-000000000
 'Information artifact describing the bounded supply-disruption scenario; not the scenario or event itself.')
 ON CONFLICT DO NOTHING;
 
-INSERT INTO enterprise.actor_ref(actor_id,actor_kind,label)
-VALUES('48000000-0000-0000-0002-000000000001','synthetic_external_actor','Synthetic Supply Risk Manager')
+INSERT INTO enterprise.actor_ref(actor_id,actor_iri,actor_kind,label)
+VALUES('48000000-0000-0000-0002-000000000001','urn:semrisk:scenario:p1:e2e:actor','synthetic_external_actor','Synthetic Supply Risk Manager')
 ON CONFLICT DO NOTHING;
 
 INSERT INTO enterprise.risk_responsibility(responsibility_id,actor_id,risk_id,valid_from)
