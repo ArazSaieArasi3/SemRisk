@@ -22,3 +22,9 @@ Until the listed gates are satisfied, the following wording must not appear unqu
 | current risk = residual risk | PROHIBITED as universal equivalence | current/net/target/gross labels are method/framework-profile terms |
 | Open/Analyzed/Treated/Closed is the SemRisk lifecycle | PROHIBITED | these are SRC-OP-001 workflow-profile values, not universal Risk State values |
 | full opportunity/systemic/cascading/emerging risk support | PROHIBITED | advanced ERM families are explicit Paper-1 nonclaims |
+
+| standard term = SemRisk class / exact ontology equivalence | PROHIBITED without inspected definition and explicit mapping evidence | lexical or process alignment is not ontological identity |
+| ISO 31000 Edition 3 is the current published standard | PROHIBITED | ISO 31000:2018 remains current published while ISO/CD 31000 Edition 3 is under development |
+| NIST Status = SemRisk Workflow State exactly | PROHIBITED | NIST Status is operational/profile evidence, not automatic ontological identity |
+| SemRisk covers ICH Hazard/Harm semantics in Paper 1 | PROHIBITED | Hazard/Harm remain deferred profile concepts |
+| complete standards alignment / full framework coverage | PROHIBITED | #13 clause/section coverage remains incomplete for several sources |
