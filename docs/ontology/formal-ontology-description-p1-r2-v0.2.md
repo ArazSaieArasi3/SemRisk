@@ -3,7 +3,7 @@
 **Documentation state:** source-checked candidate reference; publication-release binding and final generated reference pending #55/#115/#117.  
 **Semantic authority:** exact Turtle OWL modules, SHACL shapes and SPARQL rule, never this page.  
 **Documentation standard:** OGCM-RF `framework/documentation/formal-ontology-description-standard.md`, FD-A…FD-J.  
-**Evaluated candidate:** P1-R2 / `0.1.0-rc.1`. The build evidence records successful SemRisk Semantic CI at commit `8fa6e221d4e2e7cf36817e666bf374ba11a921b7`, run `35850078877`, artifact digest `f8a5fd06d12faef23aca0095fe5877a507cf1673755037525a73328faffeaca6`. Later E1–E4 result rows refer to run `35990633287`; their exact run-to-current-commit closure and final publication ref are a separate #115/#55 recheck. Source file blobs inspected for this page are listed below, so the reader can distinguish source inspection from an evaluated workflow run.
+**Evaluated candidate:** P1-R2 / `0.1.0-rc.1`. The build evidence records successful SemRisk Semantic CI at commit `8fa6e221d4e2e7cf36817e666bf374ba11a921b7`, run `35850078877`, artifact digest `f8a5fd06d12faef23aca0095fe5877a507cf1673755037525a73328faffeaca6`. Later E1–E4 result rows refer to run `35990633287`. A newer independently inspected Semantic CI job, run `36145965757`, checked out commit `6e18964c3267a36fa4bef80ac8ed7e0419d32f37` and completed successfully. All six current local ontology module blobs, the SHACL file and the implemented owner rule (8/8 compared paths) match that tested commit exactly. The final publication-bound release and any later changed dependencies still require #55 binding. Source file blobs inspected for this page are listed below, so the reader can distinguish source inspection from an evaluated workflow run.
 
 ## FD-A — Identity, language and dependency policy
 
@@ -62,7 +62,7 @@ The evaluated SHACL file `shapes/semrisk-paper1-shapes-v0.1.0-rc.1.ttl` (blob `f
 
 ## FD-H — Reasoning and formal assurance
 
-The bound 2026-09-23 semantic build record reports RDF parse, OWL 2 DL profile validation, HermiT consistency/classification, expected entailments, a critical non-entailment, five rejected negative SHACL fixtures, a rejected known-inconsistent ontology, one derived-owner rule and checksum/source-drift controls. Tool manifest: RDFLib 7.6.0, PySHACL 0.40.1, ROBOT 1.9.10 (jar digest `16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105`) invoking bundled HermiT, Python 3.13. `evaluation/e1-e4/issue29-e1-e4-results-v1.0.csv` records a later semantic run `35990633287`, 14 Turtle inputs and 5/5 known-negative SHACL fixtures. These are **reported version-bound verification results**; #115/#55 still must bind any final revised candidate and verify run metadata after source changes. Neither logical consistency nor a SHACL pass proves the intended domain semantics.
+The bound 2026-09-23 semantic build record reports RDF parse, OWL 2 DL profile validation, HermiT consistency/classification, expected entailments, a critical non-entailment, five rejected negative SHACL fixtures, a rejected known-inconsistent ontology, one derived-owner rule and checksum/source-drift controls. Tool manifest: RDFLib 7.6.0, PySHACL 0.40.1, ROBOT 1.9.10 (jar digest `16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105`) invoking bundled HermiT, Python 3.13. `evaluation/e1-e4/issue29-e1-e4-results-v1.0.csv` records a later semantic run `35990633287`, 14 Turtle inputs and 5/5 known-negative SHACL fixtures. The later run `36145965757` was inspected directly: semantic-validation job SUCCESS, with OWL 2 DL, HermiT, expected consequences and negative-control steps successful. Its checkout SHA is recorded above and the eight inspected local source blobs match. These are **bounded version-bound verification results**; #55 still must bind a final publication release and any new source/dependency change triggers recheck. Neither logical consistency nor a SHACL pass proves the intended domain semantics.
 
 ## FD-I — Conceptual/formal traceability
 
@@ -80,7 +80,7 @@ The bound 2026-09-23 semantic build record reports RDF parse, OWL 2 DL profile v
 | FD-C/D | 35 class + 37 object-property declaration rows; selected interpretation | DOCUMENTED_CANDIDATE | review cross-file axioms and import-closure effects on curated reference |
 | FD-E/F | zero local datatype-property/NamedIndividual declarations in six module sources; external/test nodes distinguished | DOCUMENTED_WITH_APPLICABILITY | state separately for other future modules/instance datasets |
 | FD-G | local disjointness, five SHACL shapes, one rule and two deferred rules | DOCUMENTED_CANDIDATE | exact axiom/shape/rule release binding and examples |
-| FD-H | reported CI runs/tool manifest and negative controls | CONDITIONAL | verify final candidate CI SHA/runner/import closure |
+| FD-H | reported CI runs/tool manifest and negative controls | CONDITIONAL | final #55 release/ref binding; recheck after semantic/dependency change |
 | FD-I | 71/71 critical IDs with separate 76 source declarations | DOCUMENTED_CANDIDATE | final conceptual-to-formal impact review |
 | FD-J | 40 CQ outcome records plus eight paired tasks | DOCUMENTED_CANDIDATE | selected query prerequisite/answer review at exact release |
 
