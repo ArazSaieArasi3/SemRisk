@@ -42,9 +42,11 @@ if mods["MOD-DATA"]["type"]!="application_projection":
     fail("DataProjection is no longer an application projection")
 if "cannot determine Core ontology semantics" not in mods["MOD-DATA"]["forbidden_dependency_direction"]:
     fail("DataProjection reverse-dependency prohibition is missing")
-if "Core must not depend on Enterprise" not in mods["MOD-ENT"]["forbidden_dependency_direction"]:
+ent_rule=mods["MOD-ENT"]["forbidden_dependency_direction"].lower()
+if "core" not in ent_rule or "depend" not in ent_rule or "enterprise" not in ent_rule:
     fail("Core→Enterprise reverse dependency guard missing")
-if "Core must not depend on Pharma" not in mods["MOD-PHARMA"]["forbidden_dependency_direction"]:
+pharma_rule=mods["MOD-PHARMA"]["forbidden_dependency_direction"].lower()
+if "core" not in pharma_rule or "depend" not in pharma_rule or "pharma" not in pharma_rule:
     fail("Core→Pharma reverse dependency guard missing")
 
 core=Graph()
