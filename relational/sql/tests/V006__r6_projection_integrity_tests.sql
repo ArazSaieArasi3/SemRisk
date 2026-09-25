@@ -10,6 +10,7 @@ DECLARE
   a_branch uuid := '4a000000-0000-0000-0000-000000000003';
   r_old uuid := '4b000000-0000-0000-0000-0000000000ff';
   r_new uuid := '4b000000-0000-0000-0000-000000000002';
+  state2 uuid := '4c000000-0000-0000-0000-000000000010';
   latest uuid;
 BEGIN
   -- #97 duplicate stable actor IRI must fail.
@@ -28,9 +29,13 @@ BEGIN
     (a_new,'urn:semrisk:test:r6:assessment-new','SR-CPT-011',src,'synthetic_test',true),
     (a_branch,'urn:semrisk:test:r6:assessment-branch','SR-CPT-011',src,'synthetic_test',true),
     (r_old,'urn:semrisk:test:r6:result-old','SR-CPT-013',src,'synthetic_test',true),
-    (r_new,'urn:semrisk:test:r6:result-new','SR-CPT-013',src,'synthetic_test',true);
+    (r_new,'urn:semrisk:test:r6:result-new','SR-CPT-013',src,'synthetic_test',true),
+    (state2,'urn:semrisk:test:r6:risk2-state','SR-CPT-035',src,'synthetic_test',true);
 
   INSERT INTO core.risk(risk_id,title) VALUES(risk2,'R6 temporal lineage test risk');
+
+  INSERT INTO enterprise.risk_state_history(risk_state_id,risk_id,state_code,valid_from)
+  VALUES(state2,risk2,'r6_other_risk_state','2026-02-01T12:00:00Z');
 
   INSERT INTO assessment.assessment_activity(assessment_id,risk_id,prior_assessment_id,started_at,ended_at)
   VALUES
@@ -117,7 +122,7 @@ BEGIN
     INSERT INTO meta.state_transition(transition_id,state_family,prior_instance_id,next_instance_id)
     VALUES('4c000000-0000-0000-0000-000000000001','risk_state',
       '48000000-0000-0000-0001-000000000015',
-      '47000000-0000-0000-0001-000000000010');
+      state2);
     RAISE EXCEPTION 'R6 FAILED: cross-Risk state transition unexpectedly succeeded';
   EXCEPTION WHEN check_violation THEN NULL;
   END;
