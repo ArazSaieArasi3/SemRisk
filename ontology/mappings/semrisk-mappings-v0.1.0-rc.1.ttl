@@ -24,7 +24,7 @@ sr:SR-CPT-037 a skos:Concept ;
   rdfs:comment "An externally owned enterprise/governance objective that may be affected by or provide context for risk."@en ;
   dcterms:conformsTo "SR-REQ-010" ;
   dcterms:relation "CQ-013; CQ-017" ;
-  skos:scopeNote "Externally owned semantic descriptor; deliberately not asserted as a local owl:Class."@en .
+  skos:scopeNote "Externally owned semantic descriptor; deliberately not asserted as a local owl:Class. Generic canonical owner remains unbound in Paper 1; TOGAF 10 and ArchiMate 3.2 are reference/alignment sources, not asserted semantic owners."@en .
 
 sr:SR-CPT-038 a skos:Concept ;
   dcterms:identifier "SR-CPT-038" ;
@@ -32,7 +32,7 @@ sr:SR-CPT-038 a skos:Concept ;
   rdfs:comment "An externally owned enterprise capability that may be exposed to/affected by risk."@en ;
   dcterms:conformsTo "SR-REQ-010" ;
   dcterms:relation "CQ-013; CQ-017" ;
-  skos:scopeNote "Externally owned semantic descriptor; deliberately not asserted as a local owl:Class."@en .
+  skos:scopeNote "Externally owned semantic descriptor; deliberately not asserted as a local owl:Class. Generic canonical owner remains unbound in Paper 1; TOGAF 10 and ArchiMate 3.2 are reference/alignment sources, not asserted semantic owners."@en .
 
 sr:SR-CPT-039 a skos:Concept ;
   dcterms:identifier "SR-CPT-039" ;
@@ -40,7 +40,7 @@ sr:SR-CPT-039 a skos:Concept ;
   rdfs:comment "An externally owned process/business activity context that may generate, encounter or be affected by risk."@en ;
   dcterms:conformsTo "SR-REQ-010" ;
   dcterms:relation "CQ-013; CQ-017" ;
-  skos:scopeNote "Externally owned semantic descriptor; deliberately not asserted as a local owl:Class."@en .
+  skos:scopeNote "Externally owned semantic descriptor; deliberately not asserted as a local owl:Class. Generic canonical owner remains unbound in Paper 1; TOGAF 10 and ArchiMate 3.2 are reference/alignment sources, not asserted semantic owners."@en .
 
 sr:SR-REL-038 a owl:AnnotationProperty ;
   dcterms:identifier "SR-REL-038" ;
