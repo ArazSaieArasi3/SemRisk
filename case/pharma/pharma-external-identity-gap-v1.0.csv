@@ -1,0 +1,12 @@
+gap_id,domain_anchor,paper1_owner_state,semrisk_disposition,current_reference_or_owner,ds004_relevance,claim_rule
+PH-GAP-001,Active pharmaceutical ingredient / INN,EXTERNAL_OWNER_TBD,external_reference_only,"not owned by CM-PharmE v1.0.0; terminology owner to be selected",high,"Do not mint API/INN as SemRisk Core class."
+PH-GAP-002,Medicinal/drug product identity,EXTERNAL_OWNER_TBD,external_reference_only,"not explicitly owned by CM-PharmE v1.0.0",high,"Paper 1 is not a medicinal-product ontology."
+PH-GAP-003,Manufacturer / marketing-authorisation-holder identity,EXTERNAL_OWNER_TBD,external_reference_only,"organization/product ecosystem vocabulary required",high,"Use versioned external identity when activated."
+PH-GAP-004,Jurisdiction / geography,EXTERNAL_OWNER_TBD,external_reference_only,"external geographic/administrative vocabulary",high,"Geography is context, not SemRisk Core taxonomy."
+PH-GAP-005,ATC / therapeutic class,EXTERNAL_OWNER_TBD,external_reference_only,"external medicinal terminology/classification",high,"Classification remains externally governed."
+PH-GAP-006,Administration route,EXTERNAL_OWNER_TBD,external_reference_only,"external medicinal terminology",medium_high,"Do not model as generic risk concept."
+PH-GAP-007,Shortage record / registry record,DOMAIN_PROFILE_ARTIFACT,profile_only,"future shortage-data profile; distinct from generic Risk Register Entry",high,"Do not conflate public shortage registry record with SemRisk enterprise Risk Register Entry."
+PH-GAP-008,Criticality / essentiality classification,EXTERNAL_OR_METHOD_PROFILE_TBD,profile_or_method_only,"source/jurisdiction/method-specific classification",high,"No universal Criticality class/scale in Core."
+PH-GAP-009,Ecosystem Supply Capacity,CM_PHARME_V1_0_0,external_reference,"CMPE-C0011",high,"External owner retained."
+PH-GAP-010,Supply Chain Relationship,CM_PHARME_V1_0_0,external_reference,"CMPE-C0032",high,"External owner retained."
+PH-GAP-011,Ecosystem Demand Signal,CM_PHARME_V1_0_0,external_reference,"CMPE-C0010",medium_high,"Related context; not generic SemRisk Signal equivalence."
