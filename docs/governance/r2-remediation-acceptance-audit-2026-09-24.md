@@ -99,3 +99,8 @@ Guard output confirms the Predisposing Condition prose/formalization is situatio
 
 ## Claim boundary
 The R2 remediations strengthen formal and task-level application fidelity. They do not establish independent human semantic validation, universal correctness, complete SHACL coverage, or global lossless ontology↔database equivalence.
+
+
+## Superseding R6 parity note — 2026-09-25
+
+The R2 6/8 direct + 2/8 normalized result above remains the historical R2 outcome. Subsequent R6 data-architecture remediation preserved stable actor identity and exact CM-PharmE target IRIs in the relational projection. Final validated run **36123602513** therefore reports **8/8 `equivalent_for_task`**, with no identity-erasing normalization. This remains an eight-task, task-bounded result rather than global ontology↔RDB equivalence.
