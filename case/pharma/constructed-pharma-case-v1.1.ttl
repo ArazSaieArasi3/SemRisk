@@ -1,0 +1,54 @@
+@prefix sr: <urn:semrisk:entity:> .
+@prefix case: <urn:semrisk:case:pharma:v1:> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+case:package
+  dcterms:title "Paper-1 bounded antibiotic-shortage case v1.1"@en ;
+  dcterms:source <https://doi.org/10.25375/uct.29178665.v4> ;
+  dcterms:type "CONSTRUCTED_ILLUSTRATIVE_CASE_NOT_RAW_EMPIRICAL_ROWS" ;
+  dcterms:hasVersion "1.1" .
+
+case:risk-context a sr:SR-CPT-001 ;
+  dcterms:description "Bounded antibiotic-shortage management risk context."@en ;
+  sr:SR-REL-037 <urn:cm-pharme:v1.0.0:CMPE-C0011>,
+                <urn:cm-pharme:v1.0.0:CMPE-C0032> ;
+  sr:SR-REL-031 case:risk-state-contextual .
+
+case:risk-state-contextual a sr:SR-CPT-035 ;
+  dcterms:description "Constructed case state used for semantic/application testing; not a measured real-world state."@en .
+
+case:supply-concentration-condition a sr:SR-CPT-004 ;
+  dcterms:source <https://doi.org/10.25375/uct.29178665.v4> ;
+  dcterms:description "Study-supported thematic condition concerning concentration/limited suppliers in antibiotic/API supply."@en .
+
+case:forecasting-condition a sr:SR-CPT-004 ;
+  dcterms:source <https://doi.org/10.25375/uct.29178665.v4> ;
+  dcterms:description "Study-supported thematic condition concerning forecasting/demand-estimation challenges."@en ;
+  sr:SR-REL-037 <urn:cm-pharme:v1.0.0:CMPE-C0010> .
+
+case:scenario a sr:SR-CPT-006 ;
+  sr:SR-REL-006 case:supply-concentration-condition,
+                case:forecasting-condition ;
+  sr:SR-REL-037 <urn:cm-pharme:v1.0.0:CMPE-C0011>,
+                <urn:cm-pharme:v1.0.0:CMPE-C0032> ;
+  dcterms:description "Possible antibiotic supply disruption scenario constructed from bounded source themes."@en .
+
+case:pooled-procurement-strategy a sr:SR-CPT-026 ;
+  dcterms:source <https://doi.org/10.25375/uct.29178665.v4> ;
+  dcterms:description "Pooled procurement represented as a proposed treatment strategy, not a proven effect."@en .
+
+case:transparency-response-candidate a skos:Concept ;
+  dcterms:source <https://doi.org/10.25375/uct.29178665.v4> ;
+  dcterms:type "PROFILE-PHARMA-RESPONSE-CANDIDATE-REQUIRES-CONTEXTUAL-TYPING" ;
+  skos:prefLabel "Supply-chain transparency response candidate"@en ;
+  skos:scopeNote "DS-003 frames greater transparency as a management need. Paper 1 does not force Strategy, Activity, Control, Policy, Capability or Requirement identity without stronger context."@en .
+
+case:evidence-ds003 a sr:SR-CPT-020, prov:Entity ;
+  dcterms:source <https://doi.org/10.25375/uct.29178665.v4> ;
+  dcterms:description "Evidence anchor to DS-003 v4; design/reconciliation/illustrative role only."@en .
+
+case:assessment-result a sr:SR-CPT-013 ;
+  sr:SR-REL-016 case:risk-context ;
+  sr:SR-REL-017 case:evidence-ds003 ;
+  dcterms:description "Constructed assessment-result node for application/path testing; no numeric risk score asserted."@en .
