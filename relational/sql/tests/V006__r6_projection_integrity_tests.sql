@@ -182,12 +182,6 @@ BEGIN
 END
 $semrisk$;
 
-SELECT
-  'SEM_RISK_R6_PROJECTION_INTEGRITY_PASS' AS test_result,
-  (SELECT count(*) FROM evaluation_dummy WHERE false) AS unused
-WHERE false;
-
--- Emit visible marker without relying on a helper table.
 SELECT 'SEM_RISK_R6_PROJECTION_INTEGRITY_PASS' AS test_result;
 
 ROLLBACK;
