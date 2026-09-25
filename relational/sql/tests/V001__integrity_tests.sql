@@ -62,7 +62,7 @@ BEGIN
   INSERT INTO enterprise.risk_register_entry(entry_id,register_id,risk_id,title)
   VALUES(entry_i,reg_i,risk_i,'test entry');
 
-  INSERT INTO enterprise.actor_ref(label,actor_kind) VALUES('test actor','synthetic') RETURNING actor_id INTO actor;
+  INSERT INTO enterprise.actor_ref(actor_iri,label,actor_kind) VALUES('urn:semrisk:test:actor','test actor','synthetic') RETURNING actor_id INTO actor;
 
   INSERT INTO meta.semantic_instance(instance_iri,semantic_type_id,source_artifact_id,evidence_role,synthetic_flag)
   VALUES ('urn:semrisk:test:responsibility','SR-CPT-031',src,'synthetic_test',true) RETURNING instance_id INTO resp_i;
