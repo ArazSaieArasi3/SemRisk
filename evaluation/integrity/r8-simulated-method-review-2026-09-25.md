@@ -1,4 +1,4 @@
-# R8 — Simulated Research Methodology Review, initial adversarial assessment
+# R8 — Simulated Research Methodology Review, completed adversarial assessment
 
 **Date:** 2026-09-25  
 **Review type:** specialist-style simulated adversarial review. **Not independent human expert validation.**  
@@ -50,6 +50,22 @@ Strengths: frozen bounded research contract; 40-CQ retention with partials expos
 
 ## Next controlled steps
 
-1. Verify #109 addenda against the exact current P49 CSV and close only after audit/CI.
-2. Register separate remediation tasks for R8-F01/F02/F03/F05 where existing #30/#31/#13/#14/#51/#53/#56 do not already own them. Avoid duplicate issues.
-3. Complete R8 claim-to-evidence matrix and then cross-role meta-review. Human #51 and E11 gates remain independently open.
+1. #109 is CLOSED after dated addenda and verification against all eight P49 result rows; relational CI run 36156336036 was SUCCESS for the publication-document update. The review-file-only commit did not trigger a workflow under the configured path filters.
+2. Existing issues own the remaining findings: R8-F01 → #31/#53/#56; R8-F02 → #51/#30/#53; R8-F03 → #14/#31/#53; R8-F05 → #28/#31/#53. #13 owns standards locators. No duplicate remediation issue is needed.
+3. Run a cross-role Meta-Review with the claim-to-evidence map below. Keep human #51 and independent E11 gates open unless real evidence arrives.
+
+## Claim-to-evidence and residual-risk map
+
+| Claim | Current positive evidence | Residual challenge / owner |
+|---|---|---|
+| SR-CL01 | G1, conceptual Core, formal/negative tests, 40-CQ registry | Human semantic adequacy absent: #51/#30; closest-work novelty #14 |
+| SR-CL02 | 27/27 selected Jira attributes dispositioned | Schema coverage does not prove mapping correctness; #51/#53 |
+| SR-CL03 | External ownership and selected execution | Broader EA/standards alignments and locators: #13/#30 |
+| SR-CL04 | P49 8/8 direct equivalence for frozen tasks | Other tasks and OWA/CWA semantics untested; #49/#53; #109 corrected stale text |
+| SR-CL05 | One bounded DS-003 constructed Pharma case and synthetic E2E fixture | Human Pharma review and DS-004 file-level robustness absent: #51/#17/#31 |
+| SR-CL06 | Cross-context applicability of selected distinctions | No independent shortage holdout; FAERS only unopened cross-domain candidate: #31 |
+| SR-CL07 | 12×17 closest-work comparison with bounded evidence | Source/artifact saturation and final E10 unresolved: #14/#31 |
+| SR-CL08 | Exact-scope OWL/HermiT consistency and mutation checks | No inference of domain truth; #54 exact candidate binding |
+| SR-CL09 | Clean CI and reconstructable public/synthetic artifacts | Private Jira/licensed sources and release identity: #55/#56 |
+
+**R8 review disposition:** 18/18 protocol questions assessed; five named findings; one documentation remediation (#109) closed. R8 review is COMPLETE as a simulated methodological challenge. Paper 1 is NOT submission-ready on this evidence alone; human validation, independent transfer decision, comparator/standards debt and integrated #53/#54 assurance remain separate gates.
