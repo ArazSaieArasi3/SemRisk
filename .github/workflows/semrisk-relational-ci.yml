@@ -22,6 +22,9 @@ on:
       - 'ontology/mappings/**'
       - 'evaluation/architecture/**'
       - 'tools/r5_architecture_governance_check.py'
+      - 'evaluation/data/**'
+      - 'tools/r6_migration_governance_check.py'
+      - 'tools/r6_relational_governance_check.py'
       - '.github/workflows/semrisk-relational-ci.yml'
   pull_request:
     paths:
@@ -44,6 +47,9 @@ on:
       - 'ontology/mappings/**'
       - 'evaluation/architecture/**'
       - 'tools/r5_architecture_governance_check.py'
+      - 'evaluation/data/**'
+      - 'tools/r6_migration_governance_check.py'
+      - 'tools/r6_relational_governance_check.py'
       - '.github/workflows/semrisk-relational-ci.yml'
   workflow_dispatch:
 
@@ -86,21 +92,24 @@ jobs:
       - name: Static catalog and mapping consistency
         run: python3 relational/scripts/validate_relational_catalog.py
 
-      - name: Clean build
+      - name: R6 migration manifest governance
+        run: python3 tools/r6_migration_governance_check.py
+
+      - name: R6 relational governance
+        run: python3 tools/r6_relational_governance_check.py
+
+      - name: Clean build with ordered migrations
         run: |
           psql -v ON_ERROR_STOP=1 -f relational/sql/reset.sql
           psql -v ON_ERROR_STOP=1 -f relational/sql/V001__paper1_projection.sql
           psql -v ON_ERROR_STOP=1 -f relational/sql/V001__views.sql
           psql -v ON_ERROR_STOP=1 -f relational/sql/V001__reference_data.sql
+          psql -v ON_ERROR_STOP=1 -f relational/sql/V002__data_load_support.sql
+          psql -v ON_ERROR_STOP=1 -f relational/sql/V005__r5_architecture_federation.sql
+          psql -v ON_ERROR_STOP=1 -f relational/sql/V006__r6_projection_integrity.sql
 
       - name: Integrity and negative tests
         run: psql -v ON_ERROR_STOP=1 -f relational/sql/tests/V001__integrity_tests.sql
-
-      - name: R5 architecture federation extension
-        run: psql -v ON_ERROR_STOP=1 -f relational/sql/V005__r5_architecture_federation.sql
-
-      - name: Governed data-load support
-        run: psql -v ON_ERROR_STOP=1 -f relational/sql/V002__data_load_support.sql
 
       - name: Load governed Paper-1 data snapshot
         run: psql -v ON_ERROR_STOP=1 -f relational/sql/load/P1_DATA_0_1_0_rc1.sql
@@ -113,6 +122,9 @@ jobs:
 
       - name: End-to-end relational scenario tests
         run: psql -v ON_ERROR_STOP=1 -f relational/sql/tests/V003__e2e_scenario_tests.sql
+
+      - name: R6 projection integrity regression
+        run: psql -v ON_ERROR_STOP=1 -f relational/sql/tests/V006__r6_projection_integrity_tests.sql
 
       - name: End-to-end RDF scenario tests
         run: python3 tools/e2e_scenario_rdf_tests.py
