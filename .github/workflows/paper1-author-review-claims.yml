@@ -1,0 +1,25 @@
+name: SemRisk Paper 1 author review claim guard
+on:
+  push:
+    paths:
+      - 'publications/2026-icae/manuscript-working-draft-v0.2.md'
+      - 'publications/2026-icae/author-review-claim-evidence-v0.2.csv'
+      - 'tools/author_review_claim_guard.py'
+      - '.github/workflows/paper1-author-review-claims.yml'
+  pull_request:
+    paths:
+      - 'publications/2026-icae/manuscript-working-draft-v0.2.md'
+      - 'publications/2026-icae/author-review-claim-evidence-v0.2.csv'
+      - 'tools/author_review_claim_guard.py'
+      - '.github/workflows/paper1-author-review-claims.yml'
+  workflow_dispatch:
+jobs:
+  bounded-claim-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check bounded claims and negative fixtures
+        run: python3 tools/author_review_claim_guard.py --selftest
