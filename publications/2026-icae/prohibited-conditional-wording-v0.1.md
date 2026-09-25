@@ -28,3 +28,9 @@ Until the listed gates are satisfied, the following wording must not appear unqu
 | NIST Status = SemRisk Workflow State exactly | PROHIBITED | NIST Status is operational/profile evidence, not automatic ontological identity |
 | SemRisk covers ICH Hazard/Harm semantics in Paper 1 | PROHIBITED | Hazard/Harm remain deferred profile concepts |
 | complete standards alignment / full framework coverage | PROHIBITED | #13 clause/section coverage remains incomplete for several sources |
+
+| ArchiMate/TOGAF is the canonical semantic owner of Objective/Capability/Business Process | PROHIBITED | Paper 1 uses them as version-bound reference/alignment sources; generic external owner remains unbound |
+| bare affects assertion proves objective failure/capability degradation/process disruption | PROHIBITED | architecture-facing effects require profile qualification/evidence |
+| same label across external ontologies means same entity | PROHIBITED | external identity is namespace + semantic ID + version; correspondence must be explicit |
+| complete enterprise-architecture risk integration | PROHIBITED | propagation, portfolio reasoning, capability degradation and objective-performance causality are not demonstrated |
+| ArchiMate-conformant / TOGAF-conformant | PROHIBITED | Paper 1 provides bounded reference alignment only |
