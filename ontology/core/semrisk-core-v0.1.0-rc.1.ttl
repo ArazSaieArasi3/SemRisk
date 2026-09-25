@@ -132,6 +132,7 @@ sr:SR-CPT-017 a owl:Class ;
   dcterms:identifier "SR-CPT-017" ;
   rdfs:label "Inherent Risk Assessment Result"@en ;
   rdfs:comment "A risk assessment result representing a pre-treatment/pre-control assessment context."@en ;
+  skos:scopeNote "Framework labels such as gross risk require explicit method/profile mapping and are not universal synonyms of inherent risk."@en ;
   dcterms:conformsTo "SR-REQ-004" ;
   dcterms:relation "CQ-007; CQ-023" ;
   rdfs:subClassOf sr:SR-CPT-013 .
@@ -140,6 +141,7 @@ sr:SR-CPT-018 a owl:Class ;
   dcterms:identifier "SR-CPT-018" ;
   rdfs:label "Residual Risk Assessment Result"@en ;
   rdfs:comment "A risk assessment result representing a post-treatment/control assessment context."@en ;
+  skos:scopeNote "Current, net, target or desired risk labels require explicit method/profile mapping; none is universally equivalent to residual risk."@en ;
   dcterms:conformsTo "SR-REQ-004" ;
   dcterms:relation "CQ-007; CQ-023" ;
   rdfs:subClassOf sr:SR-CPT-013 .
@@ -192,6 +194,7 @@ sr:SR-CPT-029 a owl:Class ;
   dcterms:identifier "SR-CPT-029" ;
   rdfs:label "Control Mechanism"@en ;
   rdfs:comment "A persistent mechanism, capability or implemented measure used in prevention, detection, protection or risk treatment."@en ;
+  skos:scopeNote "Existence or use of a Control Mechanism does not entail design adequacy, operating effectiveness, assurance success, or risk reduction."@en ;
   dcterms:conformsTo "SR-REQ-007; SR-REQ-010" ;
   dcterms:relation "CQ-010; CQ-013; CQ-026" ;
   a gufo:RoleMixin .
@@ -200,6 +203,7 @@ sr:SR-CPT-030 a owl:Class ;
   dcterms:identifier "SR-CPT-030" ;
   rdfs:label "Risk Owner"@en ;
   rdfs:comment "A context-dependent role borne by an actor with responsibility/accountability for specified risk-management obligations."@en ;
+  skos:scopeNote "Paper 1 permits multiple valid responsibility assignments/co-owners and does not impose a unique-owner cardinality; delegation/RACI/committee authority remain profile-level future refinements."@en ;
   dcterms:conformsTo "SR-REQ-006" ;
   dcterms:relation "CQ-009; CQ-025" ;
   a gufo:Role .
