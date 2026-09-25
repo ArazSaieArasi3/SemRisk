@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Bounded author-review claim guard for SemRisk Paper 1 v0.2.
+"""Bounded author-review claim guard for SemRisk Paper 1 v0.3.
 
 This is a textual regression aid. Passing it does not replace scientific review.
 """
@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-MANUSCRIPT = ROOT / "publications/2026-icae/manuscript-working-draft-v0.2.md"
+MANUSCRIPT = ROOT / "publications/2026-icae/manuscript-working-draft-v0.3.md"
 MATRIX = ROOT / "publications/2026-icae/author-review-claim-evidence-v0.2.csv"
 
 REQUIRED = {
