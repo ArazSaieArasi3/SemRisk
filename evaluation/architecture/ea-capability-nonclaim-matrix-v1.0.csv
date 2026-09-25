@@ -1,0 +1,13 @@
+ea_capability_id,capability,paper1_state,evidence,claim_rule
+EA-001,Reference external Objective/Capability/Business Process,DEMONSTRATED_BOUNDED,"mapping package; ref.external_entity","external identity preserved; generic canonical owner unresolved"
+EA-002,Link Risk/Event/Consequence to external architecture context,DEMONSTRATED_BOUNDED,"SR-REL-010; qualified architecture context link","no automatic degradation/causality inference"
+EA-003,Versioned external identity,DEMONSTRATED_BOUNDED,"ref.external_entity namespace/id/version","source identity only; richer external taxonomy remains external"
+EA-004,Profile-specific Pharma capability/process federation,DEMONSTRATED_BOUNDED,"CM-PharmE v1.0.0 bridge","profile ownership only"
+EA-005,Objective-performance causal impact,NOT_DEMONSTRATED,"no validated causal model","Paper-1 nonclaim"
+EA-006,Capability degradation state model,NOT_DEMONSTRATED,"no capability-state ontology/evaluation","Paper-1 nonclaim"
+EA-007,Architecture dependency propagation,NOT_DEMONSTRATED,"no architecture graph propagation engine","Paper-1 nonclaim"
+EA-008,Portfolio/aggregate enterprise risk reasoning,NOT_DEMONSTRATED,"advanced ERM deferred","Paper-1 nonclaim"
+EA-009,Architecture change-to-risk propagation,NOT_DEMONSTRATED,"no change propagation semantics","Paper-1 nonclaim"
+EA-010,Enterprise architecture assurance,NOT_DEMONSTRATED,"no EA assurance profile","Paper-1 nonclaim"
+EA-011,Complete ArchiMate/TOGAF conformance,NOT_DEMONSTRATED,"reference mapping only","Paper-1 nonclaim"
+EA-012,Multi-ontology identity reconciliation,DEMONSTRATED_BOUNDED,"explicit crosswalk policy + RDB mapping table","no automatic sameAs/row merge"
