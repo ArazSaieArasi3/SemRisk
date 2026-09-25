@@ -1,0 +1,3 @@
+reference_id,authority,reference,version_status,official_locator,semrisk_use,binding_role,claim_ceiling
+EA-REF-001,The Open Group,TOGAF Standard,"10th Edition; Technical Corrigendum 1 listed as current product family","https://publications.opengroup.org/standards/togaf","enterprise architecture framework context",REFERENCE_FRAMEWORK,"bounded architecture alignment only"
+EA-REF-002,The Open Group,ArchiMate Specification,"3.2; released October 2022 and listed as latest version","https://www.opengroup.org/archimate-licensed-downloads","EA modeling-language/reference vocabulary for Objective/Capability/Business Process context",REFERENCE_VOCABULARY,"RELATED/PROFILE_SUPPORT only; not canonical ontology owner"
