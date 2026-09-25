@@ -9,4 +9,4 @@ STD-007,Risk IT Framework 2nd Edition,yes,OFFICIAL_METADATA_PLUS_LOCAL_LICENSED_
 STD-008,ICH Q9(R1),yes,OFFICIAL_PUBLIC_FULL_GUIDELINE,full guideline+EMA version history,PARTIAL_STRONG,"bounded Pharma profile alignment","exact section-to-SemRisk mapping still incomplete; #13"
 STD-009,ISO 14971,yes,OFFICIAL_PUBLIC_METADATA,publication metadata,OUT_OF_SCOPE,"out-of-scope comparison only","none unless Health scope activated"
 STD-010,Open FAIR,no,OFFICIAL_PUBLIC_LOCUS,family locus,OUT_OF_SCOPE,"out-of-scope method-profile comparison only","exact release recheck if cited"
-STD-011,TOGAF/ArchiMate,no,OFFICIAL_FAMILY_LOCUS,family locus,INCOMPLETE,"bounded architecture relation only","exact guide/version/section binding required; #13"
+STD-011,TOGAF/ArchiMate,yes,OFFICIAL_PUBLIC_REFERENCE_LOCUS,"TOGAF product family + ArchiMate 3.2 official version page",INCOMPLETE,"bounded RELATED/PROFILE_SUPPORT architecture alignment only","exact section/element-to-SemRisk mapping remains #13"
