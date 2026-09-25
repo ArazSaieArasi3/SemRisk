@@ -52,3 +52,8 @@ Each reported result must have `claim_id; function; E-layer; exact target ref; m
 - OGCM-RF: `framework/documentation/formal-ontology-description-standard.md` (FD-A…FD-J) for companion formal page #115; E-layer taxonomy/profile exact ref to record in final manuscript.
 - OQF: `synthesis/OQUO-OQF-SEMANTIC-DELTA-W2-R2.md` (research-stage comparison; not an adopted release).
 - External: https://github.com/tecnomod-um/oquo and https://github.com/tecnomod-um/oquo/tree/main/oquo-qasar; https://github.com/tecnomod-um/oquare-metrics.
+
+
+## 2026-09-25 claim-level checkpoint
+
+The machine-readable claim→function→E-layer→method→unit→actual result→evidence role→adverse finding crosswalk is `evaluation/vveaa/paper1-vveaa-claim-method-evidence-v0.1.csv` (9/9 headline claims). It deliberately leaves SR-CL06 blocked for independent transfer and SR-CL07 provisional. The latest primary P49 results are eight of eight directly task-equivalent; the stale E8-002 row in `evaluation/e8-e11/issue31-readiness-results-v0.1.csv` was reconciled in commit `5f6d8d3ac8e348ea9a1e6663c98cff5ba968d0f6`, with historical wording retained in Git history. The full candidate SHA and #54 assurance decision remain pending, so this checkpoint does not close #113.
