@@ -4,7 +4,9 @@
 **Origin:** specialist-style simulated Semantic Web / OWL 2 DL / SHACL / Knowledge Representation review (R2), used as an adversarial review aid. This is **not independent human expert validation**.
 
 ## Decision
-**PASS / CLOSED for all five remediation issues.**
+**PASS / CLOSED for all six remediation issues (#73–#78).**
+
+**Meta-Review correction — 2026-09-25:** The original decision sentence counted five although the audit lists and assesses six numbered issues. This corrects only the arithmetic; the historical R2 parity result and its later R6 amendment are unchanged.
 
 The remediations were deliberately minimal:
 - no broad new domain ontology was introduced;
