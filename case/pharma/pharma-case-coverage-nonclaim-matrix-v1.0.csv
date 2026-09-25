@@ -1,0 +1,19 @@
+coverage_id,semantic_area,paper1_case_state,evidence_mode,claim_rule,future_stress_need
+PHC-001,Risk,CONSTRUCTED_EXECUTED,DS-003 themes + constructed case,"bounded risk-management context only",none
+PHC-002,Predisposing Condition,CONSTRUCTED_SOURCE_GROUNDED,DS-003 thematic synthesis,"conditions are source-grounded abstractions; not causal proof",none
+PHC-003,Risk Scenario,CONSTRUCTED,DS-003 themes,"possible scenario; not observed occurrence",none
+PHC-004,Trigger,SYNTHETIC_EXECUTION_ONLY,E2E fixture,"not observed DS-003 evidence",future empirical occurrence source
+PHC-005,Risk Event,SYNTHETIC_EXECUTION_ONLY,E2E fixture,"not observed shortage event",DS-004 or other record-level shortage source
+PHC-006,Consequence,SYNTHETIC_EXECUTION_ONLY,E2E fixture,"fixture tests distinction only",source-grounded consequence instance
+PHC-007,Risk Source,NOT_EXERCISED,none,"do not claim full source/causal-chain execution",predeclared stress case
+PHC-008,Vulnerability,NOT_EXERCISED,none,"no Pharma vulnerability instance in current case",predeclared stress case
+PHC-009,Exposure,NOT_EXERCISED,none,"no exposure situation in current case",predeclared stress case
+PHC-010,Assessment Method,NOT_POPULATED,method optional in fixture,"no complete method-context execution claim",method-specific Pharma assessment
+PHC-011,Indicator / Threshold,NOT_EXERCISED,none,"no shortage KRI/threshold validation",method/profile extension
+PHC-012,Treatment Strategy,CONSTRUCTED_SOURCE_GROUNDED,pooled procurement only,"proposed strategy; no effectiveness",none
+PHC-013,Transparency response,PROFILE_RESPONSE_CANDIDATE,DS-003 management-need theme,"contextual typing unresolved; not fixed Core strategy",future source-specific typing
+PHC-014,Treatment Plan / Activity / Control,SYNTHETIC_EXECUTION_ONLY,E2E fixture,"application path only; no real intervention/effectiveness",empirical implementation evidence
+PHC-015,Risk State / Workflow State,SYNTHETIC_EXECUTION_ONLY,E2E fixture,"state-separation test only",operational longitudinal data
+PHC-016,API/INN/Product/Manufacturer/Jurisdiction/ATC,EXTERNAL_OR_UNBOUND,DS-004-relevant anchors,"outside SemRisk Core; external terminology required",DS-004 activation
+PHC-017,CM-PharmE federation,CONSTRUCTED_EXECUTED,CMPE-C0011/C0032/C0010,"bounded external-owner federation only",additional profile entities if justified
+PHC-018,Control effectiveness / assurance,NOT_DEMONSTRATED,none,"control existence does not imply effectiveness",future assurance profile
