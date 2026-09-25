@@ -12,8 +12,8 @@ g=Graph()
 for p in [
     ROOT/"ontology/core/semrisk-core-v0.1.0-rc.1.ttl",
     ROOT/"ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl",
-    ROOT/"case/pharma/constructed-pharma-case-v1.0.ttl",
-    ROOT/"case/pharma/e2e-scenario-v1.0.ttl",
+    ROOT/"case/pharma/constructed-pharma-case-v1.1.ttl",
+    ROOT/"case/pharma/e2e-scenario-v1.1.ttl",
 ]:
     g.parse(p,format="turtle")
 
