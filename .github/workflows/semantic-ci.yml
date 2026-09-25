@@ -30,6 +30,10 @@ on:
       - "relational/design/r5-architecture-federation-extension-v1.0.csv"
       - "relational/sql/V005__r5_architecture_federation.sql"
       - "tools/r5_architecture_governance_check.py"
+      - "case/pharma/**"
+      - "datasets/**"
+      - "evaluation/e11/**"
+      - "tools/r7_pharma_governance_check.py"
       - ".github/workflows/semantic-ci.yml"
   pull_request:
     paths:
@@ -57,6 +61,10 @@ on:
       - "relational/design/r5-architecture-federation-extension-v1.0.csv"
       - "relational/sql/V005__r5_architecture_federation.sql"
       - "tools/r5_architecture_governance_check.py"
+      - "case/pharma/**"
+      - "datasets/**"
+      - "evaluation/e11/**"
+      - "tools/r7_pharma_governance_check.py"
       - ".github/workflows/semantic-ci.yml"
 
 permissions:
@@ -105,6 +113,9 @@ jobs:
 
       - name: Run R5 architecture federation governance guard
         run: python tools/r5_architecture_governance_check.py
+
+      - name: Run R7 Pharma domain governance guard
+        run: python tools/r7_pharma_governance_check.py
 
       - name: Cache ROBOT 1.9.10
         id: robot-cache
@@ -183,7 +194,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          find ontology shapes rules testdata tools governance/identity architecture/g2 formalization foundational evaluation/standards conceptualization/comparison publications/2026-icae -type f \( -name '*.ttl' -o -name '*.rq' -o -name '*.csv' -o -name '*.yaml' -o -name '*.xml' -o -name '*.py' -o -name '*.md' \) -print0 | sort -z | xargs -0 sha256sum > build/semantic-ci/repository-input-sha256.txt
+          find ontology shapes rules testdata tools governance/identity architecture/g2 formalization foundational evaluation/standards evaluation/e11 conceptualization/comparison publications/2026-icae case/pharma datasets -type f \( -name '*.ttl' -o -name '*.rq' -o -name '*.csv' -o -name '*.yaml' -o -name '*.xml' -o -name '*.py' -o -name '*.md' \) -print0 | sort -z | xargs -0 sha256sum > build/semantic-ci/repository-input-sha256.txt
           git rev-parse HEAD > build/semantic-ci/git-commit.txt
           git diff --exit-code > build/semantic-ci/tracked-source-diff.txt
           git diff --cached --exit-code > build/semantic-ci/staged-source-diff.txt
