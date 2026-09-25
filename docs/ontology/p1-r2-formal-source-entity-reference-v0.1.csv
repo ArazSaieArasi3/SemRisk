@@ -1,0 +1,77 @@
+semantic_id,iri,rdf_type,module,label,asserted_subclass,asserted_domain_in_declaration,asserted_range_in_declaration,asserted_inverse_in_declaration,cq_annotations,source_path,source_blob_sha
+SR-CPT-001,urn:semrisk:entity:SR-CPT-001,owl:Class,Core,Risk,,,,,CQ-001; CQ-002; CQ-016,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-002,urn:semrisk:entity:SR-CPT-002,owl:Class,Core,Risk Subject,,,,,CQ-013; CQ-017,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-003,urn:semrisk:entity:SR-CPT-003,owl:Class,Core,Risk Source,,,,,CQ-012; CQ-028,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-004,urn:semrisk:entity:SR-CPT-004,owl:Class,Core,Predisposing Condition,gufo:Situation,,,,CQ-012; CQ-028,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-005,urn:semrisk:entity:SR-CPT-005,owl:Class,Core,Trigger,gufo:Event,,,,CQ-012,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-006,urn:semrisk:entity:SR-CPT-006,owl:Class,Core,Risk Scenario,,,,,CQ-003; CQ-004; CQ-021,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-007,urn:semrisk:entity:SR-CPT-007,owl:Class,Core,Risk Event,gufo:Event,,,,CQ-003; CQ-012; CQ-021,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-008,urn:semrisk:entity:SR-CPT-008,owl:Class,Core,Consequence,gufo:Situation,,,,CQ-012; CQ-019,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-009,urn:semrisk:entity:SR-CPT-009,owl:Class,Core,Vulnerability,gufo:IntrinsicMode,,,,CQ-012,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-010,urn:semrisk:entity:SR-CPT-010,owl:Class,Core,Exposure,gufo:Situation,,,,CQ-012; CQ-019,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-011,urn:semrisk:entity:SR-CPT-011,owl:Class,Core,Risk Assessment Activity,gufo:Event,,,,CQ-005; CQ-006; CQ-015; CQ-022,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-013,urn:semrisk:entity:SR-CPT-013,owl:Class,Core,Risk Assessment Result,,,,,CQ-005; CQ-006; CQ-007; CQ-015; CQ-022; CQ-031,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-014,urn:semrisk:entity:SR-CPT-014,owl:Class,Core,Likelihood Assessment Result,sr:SR-CPT-013,,,,CQ-019; CQ-032,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-015,urn:semrisk:entity:SR-CPT-015,owl:Class,Core,Impact Assessment Result,sr:SR-CPT-013,,,,CQ-019,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-017,urn:semrisk:entity:SR-CPT-017,owl:Class,Core,Inherent Risk Assessment Result,sr:SR-CPT-013,,,,CQ-007; CQ-023,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-018,urn:semrisk:entity:SR-CPT-018,owl:Class,Core,Residual Risk Assessment Result,sr:SR-CPT-013,,,,CQ-007; CQ-023,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-020,urn:semrisk:entity:SR-CPT-020,owl:Class,Core,Evidence Item,,,,,CQ-011; CQ-027; CQ-037,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-022,urn:semrisk:entity:SR-CPT-022,owl:Class,Core,Observation Activity,gufo:Event,,,,CQ-011; CQ-030,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-023,urn:semrisk:entity:SR-CPT-023,owl:Class,Core,Observation Result,,,,,CQ-011; CQ-030,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-026,urn:semrisk:entity:SR-CPT-026,owl:Class,Core,Risk Treatment Strategy,,,,,CQ-010; CQ-026,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-027,urn:semrisk:entity:SR-CPT-027,owl:Class,Core,Risk Treatment Plan,,,,,CQ-010; CQ-026,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-028,urn:semrisk:entity:SR-CPT-028,owl:Class,Core,Risk Treatment Activity,gufo:Event,,,,CQ-010; CQ-026,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-029,urn:semrisk:entity:SR-CPT-029,owl:Class,Core,Control Mechanism,,,,,CQ-010; CQ-013; CQ-026,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-030,urn:semrisk:entity:SR-CPT-030,owl:Class,Core,Risk Owner,,,,,CQ-009; CQ-025,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-031,urn:semrisk:entity:SR-CPT-031,owl:Class,Core,Risk Responsibility,gufo:Relator,,,,CQ-009; CQ-025,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-035,urn:semrisk:entity:SR-CPT-035,owl:Class,Core,Risk State,gufo:Situation,,,,CQ-008; CQ-024; CQ-038,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-021,urn:semrisk:entity:SR-CPT-021,skos:Concept,Core,Provenance,,,,,CQ-011; CQ-027; CQ-037; CQ-038,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-001,urn:semrisk:entity:SR-REL-001,owl:ObjectProperty,Core,concernsRisk,,,,,CQ-001; CQ-002; CQ-016; CQ-038,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-002,urn:semrisk:entity:SR-REL-002,owl:ObjectProperty,Core,describesScenario,,,,,CQ-003; CQ-004; CQ-021,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-003,urn:semrisk:entity:SR-REL-003,owl:ObjectProperty,Core,realizedAs,,sr:SR-CPT-006,sr:SR-CPT-007,,CQ-003; CQ-021,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-004,urn:semrisk:entity:SR-REL-004,owl:ObjectProperty,Core,hasConsequence,,,sr:SR-CPT-008,,CQ-012; CQ-028,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-005,urn:semrisk:entity:SR-REL-005,owl:ObjectProperty,Core,hasRiskSource,,,sr:SR-CPT-003,,CQ-012,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-006,urn:semrisk:entity:SR-REL-006,owl:ObjectProperty,Core,predisposedBy,,,sr:SR-CPT-004,,CQ-012; CQ-028,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-007,urn:semrisk:entity:SR-REL-007,owl:ObjectProperty,Core,triggeredBy,,sr:SR-CPT-007,sr:SR-CPT-005,,CQ-012,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-008,urn:semrisk:entity:SR-REL-008,owl:ObjectProperty,Core,causes,,,,,CQ-012; CQ-028,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-009,urn:semrisk:entity:SR-REL-009,owl:ObjectProperty,Core,associatedWith,,,,,CQ-012; CQ-028,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-010,urn:semrisk:entity:SR-REL-010,owl:ObjectProperty,Core,affects,,,,,CQ-013; CQ-017,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-011,urn:semrisk:entity:SR-REL-011,owl:ObjectProperty,Core,exposes,,,,,CQ-012; CQ-013,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-012,urn:semrisk:entity:SR-REL-012,owl:ObjectProperty,Core,hasVulnerability,,,sr:SR-CPT-009,,CQ-012,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-013,urn:semrisk:entity:SR-REL-013,owl:ObjectProperty,Core,performedAssessmentOf,,sr:SR-CPT-011,sr:SR-CPT-001,,CQ-005; CQ-006; CQ-015,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-015,urn:semrisk:entity:SR-REL-015,owl:ObjectProperty,Core,producesAssessmentResult,,sr:SR-CPT-011,sr:SR-CPT-013,,CQ-005; CQ-006; CQ-022,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-016,urn:semrisk:entity:SR-REL-016,owl:ObjectProperty,Core,assessmentResultConcerns,,sr:SR-CPT-013,sr:SR-CPT-001,,CQ-007; CQ-015; CQ-031,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-017,urn:semrisk:entity:SR-REL-017,owl:ObjectProperty,Core,supportedByEvidence,,,sr:SR-CPT-020,,CQ-006; CQ-011; CQ-027; CQ-037,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-018,urn:semrisk:entity:SR-REL-018,owl:ObjectProperty,Core,generatedByObservation,,sr:SR-CPT-023,sr:SR-CPT-022,,CQ-011,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-019,urn:semrisk:entity:SR-REL-019,owl:ObjectProperty,Core,hasProvenance,,,,,CQ-011; CQ-027; CQ-037; CQ-038,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-021,urn:semrisk:entity:SR-REL-021,owl:ObjectProperty,Core,selectsTreatmentStrategy,,,sr:SR-CPT-026,,CQ-010; CQ-026,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-022,urn:semrisk:entity:SR-REL-022,owl:ObjectProperty,Core,planImplementsStrategy,,sr:SR-CPT-027,sr:SR-CPT-026,,CQ-010; CQ-026,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-023,urn:semrisk:entity:SR-REL-023,owl:ObjectProperty,Core,activityExecutesPlan,,sr:SR-CPT-028,sr:SR-CPT-027,,CQ-010; CQ-026,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-024,urn:semrisk:entity:SR-REL-024,owl:ObjectProperty,Core,activityUsesControl,,sr:SR-CPT-028,sr:SR-CPT-029,,CQ-010; CQ-026,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-025,urn:semrisk:entity:SR-REL-025,owl:ObjectProperty,Core,controlProtects,,sr:SR-CPT-029,,,CQ-010; CQ-013,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-027,urn:semrisk:entity:SR-REL-027,owl:ObjectProperty,Core,assignsResponsibilityFor,,sr:SR-CPT-031,,,CQ-009; CQ-038,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-028,urn:semrisk:entity:SR-REL-028,owl:ObjectProperty,Core,responsibilityAssignedTo,,sr:SR-CPT-031,,,CQ-009; CQ-038,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-031,urn:semrisk:entity:SR-REL-031,owl:ObjectProperty,Core,hasRiskState,,sr:SR-CPT-001,sr:SR-CPT-035,,CQ-008; CQ-024; CQ-038,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-032,urn:semrisk:entity:SR-REL-032,owl:ObjectProperty,Core,precedesState,,,,,CQ-015; CQ-031; CQ-038,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-033,urn:semrisk:entity:SR-REL-033,owl:ObjectProperty,Core,supersedesAssessmentResult,,sr:SR-CPT-013,sr:SR-CPT-013,,CQ-015; CQ-031; CQ-038,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-REL-034,urn:semrisk:entity:SR-REL-034,owl:ObjectProperty,Core,basedOnPriorAssessment,,,,,CQ-015; CQ-031,ontology/core/semrisk-core-v0.1.0-rc.1.ttl,cf20fe78687a4db4dcffc21e75297f6801cc5cb4
+SR-CPT-032,urn:semrisk:entity:SR-CPT-032,owl:Class,Enterprise,Risk Register,,,,,CQ-001; CQ-014; CQ-016,ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl,b3c559b520442423a175db72e32f8fd7384d02cb
+SR-CPT-033,urn:semrisk:entity:SR-CPT-033,owl:Class,Enterprise,Risk Register Entry,,,,,CQ-001; CQ-002; CQ-014; CQ-016; CQ-038,ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl,b3c559b520442423a175db72e32f8fd7384d02cb
+SR-CPT-034,urn:semrisk:entity:SR-CPT-034,owl:Class,Enterprise,Scenario Description,,,,,CQ-003; CQ-004; CQ-021; CQ-038,ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl,b3c559b520442423a175db72e32f8fd7384d02cb
+SR-CPT-036,urn:semrisk:entity:SR-CPT-036,owl:Class,Enterprise,Workflow State,,,,,CQ-008; CQ-014; CQ-024,ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl,b3c559b520442423a175db72e32f8fd7384d02cb
+SR-REL-026,urn:semrisk:entity:SR-REL-026,owl:ObjectProperty,Enterprise,hasRiskOwner,,,,,CQ-009; CQ-025,ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl,b3c559b520442423a175db72e32f8fd7384d02cb
+SR-REL-029,urn:semrisk:entity:SR-REL-029,owl:ObjectProperty,Enterprise,registerContainsEntry,,sr:SR-CPT-032,sr:SR-CPT-033,,CQ-001; CQ-014,ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl,b3c559b520442423a175db72e32f8fd7384d02cb
+SR-REL-030,urn:semrisk:entity:SR-REL-030,owl:ObjectProperty,Enterprise,hasWorkflowState,,sr:SR-CPT-033,sr:SR-CPT-036,,CQ-008; CQ-014; CQ-024; CQ-038,ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl,b3c559b520442423a175db72e32f8fd7384d02cb
+SR-CPT-012,urn:semrisk:entity:SR-CPT-012,owl:Class,Method,Risk Assessment Method,,,,,CQ-006; CQ-019; CQ-032,ontology/method/semrisk-method-v0.1.0-rc.1.ttl,a265e500ee210ec3bb4bbb065524a875a8402c9b
+SR-CPT-016,urn:semrisk:entity:SR-CPT-016,owl:Class,Method,Risk Level Assessment Result,sr:SR-CPT-013,,,,CQ-019; CQ-032,ontology/method/semrisk-method-v0.1.0-rc.1.ttl,a265e500ee210ec3bb4bbb065524a875a8402c9b
+SR-CPT-019,urn:semrisk:entity:SR-CPT-019,owl:Class,Method,Assessment Confidence,,,,,CQ-006; CQ-031,ontology/method/semrisk-method-v0.1.0-rc.1.ttl,a265e500ee210ec3bb4bbb065524a875a8402c9b
+SR-CPT-024,urn:semrisk:entity:SR-CPT-024,owl:Class,Method,Indicator,,,,,CQ-006,ontology/method/semrisk-method-v0.1.0-rc.1.ttl,a265e500ee210ec3bb4bbb065524a875a8402c9b
+SR-CPT-025,urn:semrisk:entity:SR-CPT-025,owl:Class,Method,Threshold,,,,,CQ-019; CQ-032,ontology/method/semrisk-method-v0.1.0-rc.1.ttl,a265e500ee210ec3bb4bbb065524a875a8402c9b
+SR-REL-014,urn:semrisk:entity:SR-REL-014,owl:ObjectProperty,Method,usesAssessmentMethod,,sr:SR-CPT-011,sr:SR-CPT-012,,CQ-006; CQ-019; CQ-032,ontology/method/semrisk-method-v0.1.0-rc.1.ttl,a265e500ee210ec3bb4bbb065524a875a8402c9b
+SR-REL-020,urn:semrisk:entity:SR-REL-020,owl:ObjectProperty,Method,qualifiedByConfidence,,sr:SR-CPT-013,sr:SR-CPT-019,,CQ-006; CQ-031,ontology/method/semrisk-method-v0.1.0-rc.1.ttl,a265e500ee210ec3bb4bbb065524a875a8402c9b
+SR-REL-035,urn:semrisk:entity:SR-REL-035,owl:ObjectProperty,Governance,hasIndicator,,,sr:SR-CPT-024,,CQ-006,ontology/governance/semrisk-governance-v0.1.0-rc.1.ttl,3e6e1ec0824f266052e7c8dbcfc402b2ecdcac93
+SR-REL-036,urn:semrisk:entity:SR-REL-036,owl:ObjectProperty,Governance,hasThreshold,,,sr:SR-CPT-025,,CQ-019; CQ-032,ontology/governance/semrisk-governance-v0.1.0-rc.1.ttl,3e6e1ec0824f266052e7c8dbcfc402b2ecdcac93
+SR-REL-037,urn:semrisk:entity:SR-REL-037,owl:ObjectProperty,Pharma,pharmaEntityInRiskContext,,,,,CQ-020; CQ-033; CQ-034,ontology/pharma/semrisk-pharma-v0.1.0-rc.1.ttl,0fddc6e7be7db52ab75f18389a8ce7ad937cf410
+SR-CPT-037,urn:semrisk:entity:SR-CPT-037,skos:Concept,Mappings,Objective,,,,,CQ-013; CQ-017,ontology/mappings/semrisk-mappings-v0.1.0-rc.1.ttl,459145e4a1d7d1f20377b4eb2ed89b3d43e3420e
+SR-CPT-038,urn:semrisk:entity:SR-CPT-038,skos:Concept,Mappings,Capability,,,,,CQ-013; CQ-017,ontology/mappings/semrisk-mappings-v0.1.0-rc.1.ttl,459145e4a1d7d1f20377b4eb2ed89b3d43e3420e
+SR-CPT-039,urn:semrisk:entity:SR-CPT-039,skos:Concept,Mappings,Business Process,,,,,CQ-013; CQ-017,ontology/mappings/semrisk-mappings-v0.1.0-rc.1.ttl,459145e4a1d7d1f20377b4eb2ed89b3d43e3420e
