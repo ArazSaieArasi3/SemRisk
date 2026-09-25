@@ -34,3 +34,25 @@
 4. Retain the R2 count correction and historical-versus-current parity timeline. Do not close #110 solely because all 41 Issues have a CSV row.
 
 **Interpretation:** documentation trace coverage now exists for 41/41, but current-candidate verification coverage is still conditional. The closed historical remediation issues remain closed as historical bounded decisions; this ledger audits their use in a later publication claim.
+
+
+## Follow-up: exact CI checkout recovered — 2026-09-25
+
+The prior 8/2/31 count above records the *initial* checkpoint and is retained as audit history. Subsequently, `git log -1 --format=%H` lines were extracted from the successful GitHub Actions job logs for each role. The CSV ledger was refreshed without rewriting that earlier observation:
+
+| Role | Successful run | Exact checkout commit |
+|---|---:|---|
+| R1 | 36003691215 | `573eb36518454809bbc9d24c1396525cffe7736c` |
+| R2 | 36017187020 | `2c72a0fc4c501d27112f652cc5c2380a821e2b34` |
+| R3 | 36113296441 | `6b6e401d1b4b34f0e9691f00508b2309e6d2a815` |
+| R4 | 36116720075 | `06bff3804062ecae9c018f84b2eaed93dd0c57c3` |
+| R5 | 36120388638 | `e78ed06f1469a9f4f692edd327a01690d3bffa08` |
+| R6 | 36124075870 | `2259cbfce023c063366e0c27ca1b8b76cd97ff70` |
+| R7 | 36145965757 | `6e18964c3267a36fa4bef80ac8ed7e0419d32f37` |
+| R8 | 36156336036 | `3c2bd8dd1dc24758221435f4673c2a5431cd5029` |
+
+Primary artifact SHA comparison at each role's listed run: **34/41 match**; **7/41 changed later**. All seven current primary blobs matched a later successful tested checkout: #76 and #85/#87/#88/#90 at R6 run 36124075870; #77 and #101 at R7 semantic run 36145965757 (and R7 relational run 36145811696 also contains them). This confirms version inclusion, **not automatically that every affected assertion had a relevant test in that run**. Inspect changed-file semantics and guard coverage before release binding.
+
+#97's historical mismatch at the earlier R6 run `36123602513` is resolved at the **final** R6 run `36124075870`: its current parity-result blob matches that later exact checkout. The second R6 primary artifact change (#101) is resolved at R7's tested checkout, where DS-002 was reclassified as a cross-domain candidate. Current headline parity remains eight direct equivalents for eight frozen tasks.
+
+**Remaining #110 condition:** assess full dependency closure and changed-file test relevance, including R2 workflow path expansion, R4→R5/6 standards edits and R6→R7 evidence-role changes, then bind the final candidate for #54. A match of one representative blob per issue is not a full reproducibility bundle and does not by itself close #110.
