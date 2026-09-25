@@ -50,9 +50,12 @@ if data["type"]!="application_projection" or "cannot determine Core ontology sem
     fail("DataProjection semantic-authority boundary drifted")
 
 man=(ROOT/"publications/2026-icae/manuscript-working-draft-v0.1.md").read_text(encoding="utf-8").lower()
-for forbidden in ("lossless global ontology-to-database equivalence","database is the semantic source of truth"):
-    if forbidden in man:
-        fail(f"unsafe manuscript wording detected: {forbidden}")
+if "task-bounded" not in man:
+    fail("manuscript lost the task-bounded parity claim ceiling")
+if "do not establish lossless global ontology-to-database equivalence" not in man:
+    fail("manuscript lost the explicit global-equivalence nonclaim")
+if "database is the semantic source of truth" in man and "database is not the semantic source of truth" not in man:
+    fail("unsafe database semantic-authority wording detected")
 
 print("PASS: parity denominator is 8 predeclared tasks covering 17 CQs directly")
 print("PASS: no identity-erasing normalization remains in the P49 expected contract")
