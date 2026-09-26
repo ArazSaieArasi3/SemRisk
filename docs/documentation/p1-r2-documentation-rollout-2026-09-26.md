@@ -11,7 +11,7 @@ Research/Ontology is primary. Data/Engineering applies to the relational project
 | Reader / type | Actual route | State / gap | Owner |
 |---|---|---|---|
 | Academic: PT-01 overview | Wiki Home → Scope and Contributions | Live private Wiki; source and rendered read-back completed | #116 |
-| Academic: PT-02 research explanation | Scope and Contributions → Evidence and VVEAA → Pharma Case | Partial: integrated evidence→decision→model research journey and explicit limitations route still needed | #118, #53, #54 |
+| Academic: PT-02 research explanation | Scope and Contributions → Evidence and VVEAA → Pharma Case | Partial: bounded evidence→model→check→claim route live; decision trace and claim-linked limitations need depth | #118, #53, #54 |
 | Academic: PT-05 evaluation/evidence | Evidence and VVEAA → repository evaluation records | Bounded candidate results; expert and independent holdout remain pending | #113, #51, #31, #54 |
 | Academic: PT-06 evolution/lineage | Reproduce and Release → release train | Partial: decision/lineage narrative and semantic-vs-label changes are not yet a reader page | #118, #55 |
 | Academic: PT-09 governance/status/history | Home → Reproduce and Release; Wiki history; source manifest | Partial: candidate state explicit, frozen baseline and public read-back absent | #118, #55, #56 |
@@ -37,7 +37,7 @@ States: `bounded` means evidence exists for a narrow slice, `partial` means acce
 | 06 IA/journeys | Mandatory | partial: dual-audience Home route is live and source-matched; usability/coverage review pending | #118 |
 | 07 Editorial integrity | Mandatory | partial: source-to-Wiki exact parity; E0–E4 editorial review absent | #118/#55 |
 | 08 References/citation | Mandatory, scholarly | missing: governed REF corpus and manuscript membership proof | #118 with #53/#55 |
-| 09 Research journey/evolution | Mandatory | missing: integrated decision/lineage reader route | #118 |
+| 09 Research journey/evolution | Mandatory | partial: four-step route live in private Wiki; complete decisions and entity-level lineage absent | #118 |
 | 10 Ontology/module | Mandatory | bounded: architecture Wiki and source module links | #115/#118 |
 | 11 Entity reference | Mandatory, stable candidate entities | partial: 76 local inventory, generated index; conceptual/formal coverage caveat | #115/#117 |
 | 12 Formal semantics | Conditional, OWL/SHACL exists | partial: FD-A…FD-J and local QA; reasoned effects/release binding pending | #115 |
@@ -60,7 +60,7 @@ Gate state: G-DOC-0 `partial` (#118); G-DOC-1 `partial` (#118/#117); G-DOC-2 `bl
 
 ## Refresh and closure order
 
-1. #118: complete the remaining RO/PT/RW evidence, research journey, reference corpus, diagram manifest, editorial and QN/QL checks. `.research` authority/status, composition and private Wiki academic/engineering Home route have candidate-level records.
+1. #118: deepen the bounded research journey with decision/entity lineage, then complete the REF corpus, editorial, independent usability/accessibility and QN/QL checks. `.research` authority/status, composition, diagrams and private Wiki reader routes have candidate-level records.
 2. #115/#113 and related evidence gates: complete exact formal/reasoning and VVEAA claims at the candidate ref.
 3. #119/#117: reproducible offline WebVOWL, Pages privacy/access and rendered versioned reference checks. Existing `0.1.0-rc.1` route is immutable.
 4. #55/#56: decide actual publication identity, licensing/access and frozen baseline, then deploy/read back if authorized by those gates.
