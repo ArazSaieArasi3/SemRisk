@@ -1,0 +1,124 @@
+profile_composition_schema_version: "1.0"
+repository:
+  name: ArazSaieArasi3/SemRisk
+  research_id: R-022
+  documentation_profile_ref: "ArazSaieArasi3/OGCM-RF@4822b1a1b7978e94e66bd6a283024bac78b6a0b8:OGCM-RF-DOC-RO-0.1"
+  home_page: "https://github.com/ArazSaieArasi3/SemRisk/wiki"
+profiles:
+  research_ontology:
+    applicability: Primary
+    entry_page: "https://github.com/ArazSaieArasi3/SemRisk/wiki"
+    reader_purpose: "Explain the Paper-1 research, semantic candidate, evidence, limits and release state."
+    canonical_owner: semrisk_semantic_and_evidence_sources
+    major_artifacts:
+      - docs/wiki/pages/Home.md
+      - docs/wiki/pages/Semantic-Architecture.md
+      - docs/wiki/pages/Evidence-and-VVEAA.md
+      - docs/ontology/formal-ontology-description-p1-r2-v0.2.md
+    limitations_or_na:
+      - "P1-R2 is a candidate; independent validation, assurance and release are open."
+  data_engineering:
+    applicability: Secondary
+    entry_page: "https://github.com/ArazSaieArasi3/SemRisk/wiki/Relational-Projection"
+    reader_purpose: "Explain bounded ontology-to-relational realization and task parity."
+    canonical_owner: semrisk_relational_mapping_sources
+    major_artifacts:
+      - docs/wiki/pages/Relational-Projection.md
+      - relational/
+    limitations_or_na:
+      - "The relational twin is a projection, not a semantic authority; no KG/API realization is claimed."
+  software_product:
+    applicability: N/A
+    entry_page: null
+    reader_purpose: "No Paper-1 product/API documentation scope."
+    canonical_owner: project_or_generic_product_owner
+    major_artifacts: []
+    limitations_or_na: ["Reassess if a product/API becomes part of the governed Paper-1 scope."]
+  business:
+    applicability: N/A
+    entry_page: null
+    reader_purpose: "Pharma is bounded research case evidence, not an independent business documentation profile."
+    canonical_owner: project_or_generic_business_owner
+    major_artifacts: []
+    limitations_or_na: ["Reassess if a separate business process/value model becomes material."]
+subject_ownership:
+  - subject: ontology_semantic_definition
+    canonical_owner: semrisk_semantic_source
+    canonical_path: ontology/
+    consuming_profiles: [research_ontology, data_engineering]
+    contextualization_allowed: true
+    duplication_prohibited: true
+  - subject: evaluation_observation
+    canonical_owner: semrisk_evaluation_source
+    canonical_path: evaluation/
+    consuming_profiles: [research_ontology]
+    contextualization_allowed: true
+    duplication_prohibited: true
+  - subject: relational_schema_and_mapping
+    canonical_owner: semrisk_relational_source
+    canonical_path: relational/
+    consuming_profiles: [data_engineering, research_ontology]
+    contextualization_allowed: true
+    duplication_prohibited: true
+cross_profile_links:
+  - from_profile: data_engineering
+    from_page: docs/wiki/pages/Relational-Projection.md
+    to_profile: research_ontology
+    to_page: docs/wiki/pages/Formal-Reference.md
+    relation: uses_canonical_semantics
+audience_paths:
+  - journey_id: AUD-ACA-001
+    audience: academic_reviewer
+    applicability: Primary
+    primary_goal: "Assess contribution, method, bounded evaluation and reproducibility."
+    recommended_profiles: [research_ontology]
+    entry_page: "https://github.com/ArazSaieArasi3/SemRisk/wiki"
+    required_checkpoints: [scope_and_contributions, semantic_architecture, pharma_case, evidence_and_vveaa, reproduction_and_release_limits]
+    optional_shortcuts: []
+    canonical_semantic_refs: [ontology/p1-r2-candidate-manifest.yaml]
+    evidence_limitation_checkpoint_required: true
+    maturity_note: "Candidate research, not final publication or independent domain validation."
+    exit_outcome: "Reader can locate exact candidate source and see the explicit pending gates."
+  - journey_id: AUD-IND-001
+    audience: ontology_and_data_engineer
+    applicability: Secondary
+    primary_goal: "Inspect source-bound formal semantics and relational projection safely."
+    recommended_profiles: [research_ontology, data_engineering]
+    entry_page: "https://github.com/ArazSaieArasi3/SemRisk/wiki"
+    required_checkpoints: [semantic_architecture, formal_reference, relational_projection, reproduction_and_release_limits]
+    optional_shortcuts: [static_svg_atlas]
+    canonical_semantic_refs: [ontology/p1-r2-candidate-manifest.yaml, shapes/semrisk-paper1-shapes-v0.1.0-rc.1.ttl]
+    evidence_limitation_checkpoint_required: true
+    maturity_note: "Private Wiki; offline Pages candidate; WebVOWL and public access pending."
+    exit_outcome: "Reader can navigate to canonical modules and identify mapping limitations."
+home:
+  identity_block_required: true
+  profile_cards_required: true
+  quick_start_links:
+    - docs/wiki/pages/Scope-and-Contributions.md
+    - docs/wiki/pages/Semantic-Architecture.md
+    - docs/wiki/pages/Relational-Projection.md
+  current_state_required: true
+  authority_surface_links_required: true
+  hide_na_profiles: true
+ownership_conflicts: []
+verification:
+  active_profiles_have_entry_pages: true
+  na_profiles_hidden_or_marked: true
+  canonical_owners_unique: true
+  cross_profile_links_valid: true
+  home_matches_declared_profiles: true
+  no_semantic_definition_forks: true
+  adr009_boundary_checked: false
+  surface_allocation_checked: true
+  audience_paths_valid: true
+  audience_profile_separation_checked: true
+  dual_audience_semantic_core_shared: true
+  audience_limitations_visible: true
+summary:
+  result: FAIL
+  blockers:
+    - "ADR-009 boundary and full multi-profile quality review have not been independently checked under #118."
+    - "Research journey, REF corpus and QN/QL assessment remain open under #118."
+    - "Pages/WebVOWL and public release/access gates remain open under #117/#119/#55/#56."
+  notes: "Source-controlled composition for the private P1-R2 Wiki candidate. This is not profile conformance."
