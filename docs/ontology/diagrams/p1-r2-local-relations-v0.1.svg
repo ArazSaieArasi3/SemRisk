@@ -1,0 +1,383 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3200" height="1930" viewBox="0 0 3200 1930" role="img" aria-labelledby="title desc">
+<title id="title">SemRisk P1-R2 asserted object-property relation map</title>
+<desc id="desc">All 37 locally declared object properties. For each, the asserted OWL domain and range are shown, or explicitly marked not asserted. Arrows indicate domain to relation to range, not data flow or cardinality.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M1,1 L8,4.5 L1,8 Z" fill="#617589"/></marker></defs>
+<rect width="3200" height="1930" fill="#f8fafc"/>
+<text x="60" y="65" font-size="37" fill="#172632" font-weight="bold">SemRisk · asserted relation map</text>
+<text x="60" y="105" font-size="22" fill="#172632" font-weight="normal">37 local OWL object properties · 19 asserted domain statements · 25 asserted range statements</text>
+<text x="60" y="139" font-size="17" fill="#405466" font-weight="normal">P1-R2 0.1.0-rc.1 · source ref c17cc111f02309270a60474623259cefcf907c6f · missing domain/range means not asserted locally</text>
+<text x="70" y="187" font-size="21" fill="#263d50" font-weight="bold">OWL domain (if asserted)</text>
+<text x="1110" y="187" font-size="21" fill="#263d50" font-weight="bold">Object property · module</text>
+<text x="2250" y="187" font-size="21" fill="#263d50" font-weight="bold">OWL range (if asserted)</text>
+<line x1="970" y1="229" x2="1080" y2="229" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="229" x2="2230" y2="229" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="209" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="235" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="209" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="235" font-size="17" fill="#172632" font-weight="bold">SR-REL-001  concernsRisk  ·  Core</text>
+</a>
+<rect x="2240" y="209" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="235" font-size="17" fill="#172632" font-weight="normal">SR-CPT-001</text>
+<line x1="970" y1="273" x2="1080" y2="273" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="273" x2="2230" y2="273" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="253" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="279" font-size="17" fill="#172632" font-weight="normal">SR-CPT-034</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="253" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="279" font-size="17" fill="#172632" font-weight="bold">SR-REL-002  describesScenario  ·  Core</text>
+</a>
+<rect x="2240" y="253" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="279" font-size="17" fill="#172632" font-weight="normal">SR-CPT-006</text>
+<line x1="970" y1="317" x2="1080" y2="317" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="317" x2="2230" y2="317" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="297" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="323" font-size="17" fill="#172632" font-weight="normal">SR-CPT-006</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="297" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="323" font-size="17" fill="#172632" font-weight="bold">SR-REL-003  realizedAs  ·  Core</text>
+</a>
+<rect x="2240" y="297" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="323" font-size="17" fill="#172632" font-weight="normal">SR-CPT-007</text>
+<line x1="970" y1="361" x2="1080" y2="361" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="361" x2="2230" y2="361" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="341" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="367" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="341" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="367" font-size="17" fill="#172632" font-weight="bold">SR-REL-004  hasConsequence  ·  Core</text>
+</a>
+<rect x="2240" y="341" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="367" font-size="17" fill="#172632" font-weight="normal">SR-CPT-008</text>
+<line x1="970" y1="405" x2="1080" y2="405" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="405" x2="2230" y2="405" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="385" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="411" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="385" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="411" font-size="17" fill="#172632" font-weight="bold">SR-REL-005  hasRiskSource  ·  Core</text>
+</a>
+<rect x="2240" y="385" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="411" font-size="17" fill="#172632" font-weight="normal">SR-CPT-003</text>
+<line x1="970" y1="449" x2="1080" y2="449" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="449" x2="2230" y2="449" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="429" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="455" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="429" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="455" font-size="17" fill="#172632" font-weight="bold">SR-REL-006  predisposedBy  ·  Core</text>
+</a>
+<rect x="2240" y="429" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="455" font-size="17" fill="#172632" font-weight="normal">SR-CPT-004</text>
+<line x1="970" y1="493" x2="1080" y2="493" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="493" x2="2230" y2="493" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="473" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="499" font-size="17" fill="#172632" font-weight="normal">SR-CPT-007</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="473" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="499" font-size="17" fill="#172632" font-weight="bold">SR-REL-007  triggeredBy  ·  Core</text>
+</a>
+<rect x="2240" y="473" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="499" font-size="17" fill="#172632" font-weight="normal">SR-CPT-005</text>
+<line x1="970" y1="537" x2="1080" y2="537" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="537" x2="2230" y2="537" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="517" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="543" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="517" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="543" font-size="17" fill="#172632" font-weight="bold">SR-REL-008  causes  ·  Core</text>
+</a>
+<rect x="2240" y="517" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="543" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<line x1="970" y1="581" x2="1080" y2="581" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="581" x2="2230" y2="581" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="561" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="587" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="561" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="587" font-size="17" fill="#172632" font-weight="bold">SR-REL-009  associatedWith  ·  Core</text>
+</a>
+<rect x="2240" y="561" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="587" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<line x1="970" y1="625" x2="1080" y2="625" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="625" x2="2230" y2="625" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="605" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="631" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="605" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="631" font-size="17" fill="#172632" font-weight="bold">SR-REL-010  affects  ·  Core</text>
+</a>
+<rect x="2240" y="605" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="631" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<line x1="970" y1="669" x2="1080" y2="669" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="669" x2="2230" y2="669" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="649" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="675" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="649" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="675" font-size="17" fill="#172632" font-weight="bold">SR-REL-011  exposes  ·  Core</text>
+</a>
+<rect x="2240" y="649" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="675" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<line x1="970" y1="713" x2="1080" y2="713" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="713" x2="2230" y2="713" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="693" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="719" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="693" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="719" font-size="17" fill="#172632" font-weight="bold">SR-REL-012  hasVulnerability  ·  Core</text>
+</a>
+<rect x="2240" y="693" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="719" font-size="17" fill="#172632" font-weight="normal">SR-CPT-009</text>
+<line x1="970" y1="757" x2="1080" y2="757" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="757" x2="2230" y2="757" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="737" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="763" font-size="17" fill="#172632" font-weight="normal">SR-CPT-011</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="737" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="763" font-size="17" fill="#172632" font-weight="bold">SR-REL-013  performedAssessmentOf  ·  Core</text>
+</a>
+<rect x="2240" y="737" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="763" font-size="17" fill="#172632" font-weight="normal">SR-CPT-001</text>
+<line x1="970" y1="801" x2="1080" y2="801" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="801" x2="2230" y2="801" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="781" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="807" font-size="17" fill="#172632" font-weight="normal">SR-CPT-011</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="781" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="807" font-size="17" fill="#172632" font-weight="bold">SR-REL-015  producesAssessmentResult  ·  Core</text>
+</a>
+<rect x="2240" y="781" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="807" font-size="17" fill="#172632" font-weight="normal">SR-CPT-013</text>
+<line x1="970" y1="845" x2="1080" y2="845" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="845" x2="2230" y2="845" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="825" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="851" font-size="17" fill="#172632" font-weight="normal">SR-CPT-013</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="825" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="851" font-size="17" fill="#172632" font-weight="bold">SR-REL-016  assessmentResultConcerns  ·  Core</text>
+</a>
+<rect x="2240" y="825" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="851" font-size="17" fill="#172632" font-weight="normal">SR-CPT-001</text>
+<line x1="970" y1="889" x2="1080" y2="889" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="889" x2="2230" y2="889" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="869" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="895" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="869" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="895" font-size="17" fill="#172632" font-weight="bold">SR-REL-017  supportedByEvidence  ·  Core</text>
+</a>
+<rect x="2240" y="869" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="895" font-size="17" fill="#172632" font-weight="normal">SR-CPT-020</text>
+<line x1="970" y1="933" x2="1080" y2="933" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="933" x2="2230" y2="933" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="913" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="939" font-size="17" fill="#172632" font-weight="normal">SR-CPT-023</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="913" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="939" font-size="17" fill="#172632" font-weight="bold">SR-REL-018  generatedByObservation  ·  Core</text>
+</a>
+<rect x="2240" y="913" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="939" font-size="17" fill="#172632" font-weight="normal">SR-CPT-022</text>
+<line x1="970" y1="977" x2="1080" y2="977" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="977" x2="2230" y2="977" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="957" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="983" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="957" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="983" font-size="17" fill="#172632" font-weight="bold">SR-REL-019  hasProvenance  ·  Core</text>
+</a>
+<rect x="2240" y="957" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="983" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<line x1="970" y1="1021" x2="1080" y2="1021" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="1021" x2="2230" y2="1021" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="1001" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="1027" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="1001" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="1027" font-size="17" fill="#172632" font-weight="bold">SR-REL-021  selectsTreatmentStrategy  ·  Core</text>
+</a>
+<rect x="2240" y="1001" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="1027" font-size="17" fill="#172632" font-weight="normal">SR-CPT-026</text>
+<line x1="970" y1="1065" x2="1080" y2="1065" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="1065" x2="2230" y2="1065" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="1045" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="1071" font-size="17" fill="#172632" font-weight="normal">SR-CPT-027</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="1045" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="1071" font-size="17" fill="#172632" font-weight="bold">SR-REL-022  planImplementsStrategy  ·  Core</text>
+</a>
+<rect x="2240" y="1045" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="1071" font-size="17" fill="#172632" font-weight="normal">SR-CPT-026</text>
+<line x1="970" y1="1109" x2="1080" y2="1109" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="1109" x2="2230" y2="1109" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="1089" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="1115" font-size="17" fill="#172632" font-weight="normal">SR-CPT-028</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="1089" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="1115" font-size="17" fill="#172632" font-weight="bold">SR-REL-023  activityExecutesPlan  ·  Core</text>
+</a>
+<rect x="2240" y="1089" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="1115" font-size="17" fill="#172632" font-weight="normal">SR-CPT-027</text>
+<line x1="970" y1="1153" x2="1080" y2="1153" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="1153" x2="2230" y2="1153" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="1133" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="1159" font-size="17" fill="#172632" font-weight="normal">SR-CPT-028</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="1133" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="1159" font-size="17" fill="#172632" font-weight="bold">SR-REL-024  activityUsesControl  ·  Core</text>
+</a>
+<rect x="2240" y="1133" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="1159" font-size="17" fill="#172632" font-weight="normal">SR-CPT-029</text>
+<line x1="970" y1="1197" x2="1080" y2="1197" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="1197" x2="2230" y2="1197" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="1177" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="1203" font-size="17" fill="#172632" font-weight="normal">SR-CPT-029</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="1177" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="1203" font-size="17" fill="#172632" font-weight="bold">SR-REL-025  controlProtects  ·  Core</text>
+</a>
+<rect x="2240" y="1177" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="1203" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<line x1="970" y1="1241" x2="1080" y2="1241" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="1241" x2="2230" y2="1241" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="1221" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="1247" font-size="17" fill="#172632" font-weight="normal">SR-CPT-031</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="1221" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="1247" font-size="17" fill="#172632" font-weight="bold">SR-REL-027  assignsResponsibilityFor  ·  Core</text>
+</a>
+<rect x="2240" y="1221" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="1247" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<line x1="970" y1="1285" x2="1080" y2="1285" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="1285" x2="2230" y2="1285" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="1265" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="1291" font-size="17" fill="#172632" font-weight="normal">SR-CPT-031</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="1265" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="1291" font-size="17" fill="#172632" font-weight="bold">SR-REL-028  responsibilityAssignedTo  ·  Core</text>
+</a>
+<rect x="2240" y="1265" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="1291" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<line x1="970" y1="1329" x2="1080" y2="1329" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="1329" x2="2230" y2="1329" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="1309" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="1335" font-size="17" fill="#172632" font-weight="normal">SR-CPT-001</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="1309" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="1335" font-size="17" fill="#172632" font-weight="bold">SR-REL-031  hasRiskState  ·  Core</text>
+</a>
+<rect x="2240" y="1309" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="1335" font-size="17" fill="#172632" font-weight="normal">SR-CPT-035</text>
+<line x1="970" y1="1373" x2="1080" y2="1373" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="1373" x2="2230" y2="1373" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="1353" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="1379" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="1353" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="1379" font-size="17" fill="#172632" font-weight="bold">SR-REL-032  precedesState  ·  Core</text>
+</a>
+<rect x="2240" y="1353" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="1379" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<line x1="970" y1="1417" x2="1080" y2="1417" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="1417" x2="2230" y2="1417" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="1397" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="1423" font-size="17" fill="#172632" font-weight="normal">SR-CPT-013</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="1397" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="1423" font-size="17" fill="#172632" font-weight="bold">SR-REL-033  supersedesAssessmentResult  ·  Core</text>
+</a>
+<rect x="2240" y="1397" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="1423" font-size="17" fill="#172632" font-weight="normal">SR-CPT-013</text>
+<line x1="970" y1="1461" x2="1080" y2="1461" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="1461" x2="2230" y2="1461" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="1441" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="1467" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">
+<rect x="1090" y="1441" width="1030" height="40" rx="5" fill="#e8f3ff" stroke="#14558a" stroke-width="2"/>
+<text x="1103" y="1467" font-size="17" fill="#172632" font-weight="bold">SR-REL-034  basedOnPriorAssessment  ·  Core</text>
+</a>
+<rect x="2240" y="1441" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="1467" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<line x1="970" y1="1505" x2="1080" y2="1505" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="1505" x2="2230" y2="1505" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="1485" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="1511" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl">
+<rect x="1090" y="1485" width="1030" height="40" rx="5" fill="#e9f8f2" stroke="#16684c" stroke-width="2"/>
+<text x="1103" y="1511" font-size="17" fill="#172632" font-weight="bold">SR-REL-026  hasRiskOwner  ·  Enterprise</text>
+</a>
+<rect x="2240" y="1485" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="1511" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<line x1="970" y1="1549" x2="1080" y2="1549" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="1549" x2="2230" y2="1549" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="1529" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="1555" font-size="17" fill="#172632" font-weight="normal">SR-CPT-032</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl">
+<rect x="1090" y="1529" width="1030" height="40" rx="5" fill="#e9f8f2" stroke="#16684c" stroke-width="2"/>
+<text x="1103" y="1555" font-size="17" fill="#172632" font-weight="bold">SR-REL-029  registerContainsEntry  ·  Enterprise</text>
+</a>
+<rect x="2240" y="1529" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="1555" font-size="17" fill="#172632" font-weight="normal">SR-CPT-033</text>
+<line x1="970" y1="1593" x2="1080" y2="1593" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="1593" x2="2230" y2="1593" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="1573" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="1599" font-size="17" fill="#172632" font-weight="normal">SR-CPT-033</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl">
+<rect x="1090" y="1573" width="1030" height="40" rx="5" fill="#e9f8f2" stroke="#16684c" stroke-width="2"/>
+<text x="1103" y="1599" font-size="17" fill="#172632" font-weight="bold">SR-REL-030  hasWorkflowState  ·  Enterprise</text>
+</a>
+<rect x="2240" y="1573" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="1599" font-size="17" fill="#172632" font-weight="normal">SR-CPT-036</text>
+<line x1="970" y1="1637" x2="1080" y2="1637" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="1637" x2="2230" y2="1637" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="1617" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="1643" font-size="17" fill="#172632" font-weight="normal">SR-CPT-011</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/method/semrisk-method-v0.1.0-rc.1.ttl">
+<rect x="1090" y="1617" width="1030" height="40" rx="5" fill="#fff0e0" stroke="#9b5310" stroke-width="2"/>
+<text x="1103" y="1643" font-size="17" fill="#172632" font-weight="bold">SR-REL-014  usesAssessmentMethod  ·  Method</text>
+</a>
+<rect x="2240" y="1617" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="1643" font-size="17" fill="#172632" font-weight="normal">SR-CPT-012</text>
+<line x1="970" y1="1681" x2="1080" y2="1681" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="1681" x2="2230" y2="1681" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="1661" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="1687" font-size="17" fill="#172632" font-weight="normal">SR-CPT-013</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/method/semrisk-method-v0.1.0-rc.1.ttl">
+<rect x="1090" y="1661" width="1030" height="40" rx="5" fill="#fff0e0" stroke="#9b5310" stroke-width="2"/>
+<text x="1103" y="1687" font-size="17" fill="#172632" font-weight="bold">SR-REL-020  qualifiedByConfidence  ·  Method</text>
+</a>
+<rect x="2240" y="1661" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="1687" font-size="17" fill="#172632" font-weight="normal">SR-CPT-019</text>
+<line x1="970" y1="1725" x2="1080" y2="1725" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="1725" x2="2230" y2="1725" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="1705" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="1731" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/governance/semrisk-governance-v0.1.0-rc.1.ttl">
+<rect x="1090" y="1705" width="1030" height="40" rx="5" fill="#f3edff" stroke="#68409a" stroke-width="2"/>
+<text x="1103" y="1731" font-size="17" fill="#172632" font-weight="bold">SR-REL-035  hasIndicator  ·  Governance</text>
+</a>
+<rect x="2240" y="1705" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="1731" font-size="17" fill="#172632" font-weight="normal">SR-CPT-024</text>
+<line x1="970" y1="1769" x2="1080" y2="1769" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="1769" x2="2230" y2="1769" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="1749" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="1775" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/governance/semrisk-governance-v0.1.0-rc.1.ttl">
+<rect x="1090" y="1749" width="1030" height="40" rx="5" fill="#f3edff" stroke="#68409a" stroke-width="2"/>
+<text x="1103" y="1775" font-size="17" fill="#172632" font-weight="bold">SR-REL-036  hasThreshold  ·  Governance</text>
+</a>
+<rect x="2240" y="1749" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="1775" font-size="17" fill="#172632" font-weight="normal">SR-CPT-025</text>
+<line x1="970" y1="1813" x2="1080" y2="1813" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="2120" y1="1813" x2="2230" y2="1813" stroke="#617589" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="1793" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="82" y="1819" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<a xlink:href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/pharma/semrisk-pharma-v0.1.0-rc.1.ttl">
+<rect x="1090" y="1793" width="1030" height="40" rx="5" fill="#ffecef" stroke="#a03953" stroke-width="2"/>
+<text x="1103" y="1819" font-size="17" fill="#172632" font-weight="bold">SR-REL-037  pharmaEntityInRiskContext  ·  Pharma</text>
+</a>
+<rect x="2240" y="1793" width="900" height="40" rx="5" fill="#ffffff" stroke="#93a7b6" stroke-width="2"/>
+<text x="2252" y="1819" font-size="17" fill="#172632" font-weight="normal">not asserted locally</text>
+<text x="70" y="1883" font-size="17" fill="#405466" font-weight="normal">Arrows express the asserted property signature only. OWL domain/range infer types; they do not validate row completeness. Cardinalities, SHACL, SQL, inverses and inferred/imported effects are separate.</text>
+</svg>
