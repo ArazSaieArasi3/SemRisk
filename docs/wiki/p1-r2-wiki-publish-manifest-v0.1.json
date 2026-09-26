@@ -1,0 +1,78 @@
+{
+  "candidate": "P1-R2/0.1.0-rc.1",
+  "state": "SOURCE_READY_LIVE_WIKI_UNVERIFIED",
+  "source_commit": "c5f947eae0d801428e9ac3cb43382ef02bfd1326",
+  "pages": [
+    {
+      "page": "Home",
+      "source_path": "docs/wiki/pages/Home.md",
+      "sha256": "49c1ea997fbc0af87de9ded688d9bea10535e305a4582682897ff8b265368d4b",
+      "navigation_targets": [
+        "Evidence-and-VVEAA.md",
+        "Formal-Reference.md",
+        "Pharma-Case.md",
+        "Relational-Projection.md",
+        "Reproduce-and-Release.md",
+        "Scope-and-Contributions.md",
+        "Semantic-Architecture.md"
+      ]
+    },
+    {
+      "page": "Scope-and-Contributions",
+      "source_path": "docs/wiki/pages/Scope-and-Contributions.md",
+      "sha256": "21ed579c88c99dbc4aa6f04e278f44f999ec7ee6360b939507fecbe797c75be9",
+      "navigation_targets": [
+        "Home.md"
+      ]
+    },
+    {
+      "page": "Semantic-Architecture",
+      "source_path": "docs/wiki/pages/Semantic-Architecture.md",
+      "sha256": "9f7e0d8da6019dc1d281c143a5546a4ca75219c8fcd5e5ae801c4aa4cff272e4",
+      "navigation_targets": [
+        "Home.md"
+      ]
+    },
+    {
+      "page": "Formal-Reference",
+      "source_path": "docs/wiki/pages/Formal-Reference.md",
+      "sha256": "c31af58df85b801680ceb93593241997fa109c7328fd7cf160d03ffde4baab59",
+      "navigation_targets": [
+        "Home.md"
+      ]
+    },
+    {
+      "page": "Evidence-and-VVEAA",
+      "source_path": "docs/wiki/pages/Evidence-and-VVEAA.md",
+      "sha256": "62e8ffcd8d068cdb052b248c3ba0df51ad5c15d7b6cd725d64bf4a9c5308c0d5",
+      "navigation_targets": [
+        "Home.md"
+      ]
+    },
+    {
+      "page": "Relational-Projection",
+      "source_path": "docs/wiki/pages/Relational-Projection.md",
+      "sha256": "8f260a60e5809fbc3f0b5dcf325a751cfb404c70983ec9cbfe8040122b03c137",
+      "navigation_targets": [
+        "Home.md"
+      ]
+    },
+    {
+      "page": "Pharma-Case",
+      "source_path": "docs/wiki/pages/Pharma-Case.md",
+      "sha256": "c240ae1640e4c54940f9d4fc4816bd02a5e030cb92648547d95c0bdc9caee02f",
+      "navigation_targets": [
+        "Home.md"
+      ]
+    },
+    {
+      "page": "Reproduce-and-Release",
+      "source_path": "docs/wiki/pages/Reproduce-and-Release.md",
+      "sha256": "c3827d22ef18f253b47d0b80a7173175802088205195ca347ead1db82c476254",
+      "navigation_targets": [
+        "Home.md"
+      ]
+    }
+  ],
+  "publication_rule": "Preserve existing live pages/revisions; verify content, navigation, access and rollback after sync. No scholarly release claim."
+}

@@ -1,0 +1,29 @@
+name: Paper-1 Wiki source manifest
+
+on:
+  push:
+    paths:
+      - 'docs/wiki/pages/**'
+      - 'docs/wiki/p1-r2-wiki-publish-manifest-v0.1.json'
+      - 'tools/wiki_publication_guard.py'
+      - '.github/workflows/paper1-wiki-source-manifest.yml'
+  pull_request:
+    paths:
+      - 'docs/wiki/pages/**'
+      - 'docs/wiki/p1-r2-wiki-publish-manifest-v0.1.json'
+      - 'tools/wiki_publication_guard.py'
+      - '.github/workflows/paper1-wiki-source-manifest.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  source-hashes-and-navigation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python tools/wiki_publication_guard.py
