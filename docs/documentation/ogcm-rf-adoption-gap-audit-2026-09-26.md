@@ -23,7 +23,7 @@
 | RO-15 | PARTIAL | Citation is explicitly pending release/availability | #55/#56 |
 | RO-16 | PARTIAL | Banners and threats source exist; dedicated claim-linked route incomplete | #118 |
 | RO-17 | PARTIAL | Executable semantic build linked; Wiki tutorial route untested | #118 |
-| RO-18 | BOUNDED | 76-ID atlas, 37-property SVG and scope statement | #116 |
+| RO-18 | BOUNDED | 76-ID atlas, 37-property SVG and schema-checked diagram manifest; independent semantic/accessibility review pending | #118 |
 | RO-19 | PENDING_PAGES | No deployed WIDOCO/equivalent Pages explorer | #117/#119 |
 | RO-20 | BOUNDED | Wiki history and source manifest/read-back | #116 |
 | RO-21 | PARTIAL | Hash/CI/read-back done; QN/QL conformance not assessed | #118 |
