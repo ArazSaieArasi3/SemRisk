@@ -60,3 +60,32 @@ The new checker detects integrity drift. Updating a hash or declared assessment 
 - #53/#54/#55: final claim calibration, integrated assurance and publication release remain OPEN.
 
 No semantic model, dataset, expert judgment or transferability result was invented by this checkpoint.
+
+## Completed follow-up — exact repaired candidate
+
+This section supersedes the earlier local-only execution and outstanding #110 row-disposition notes above. It preserves them as the sequence of this audit.
+
+Repaired candidate: `5f5fa72a6eb2d4571a2b75870b8c445c87b1fee6`.
+
+- Semantic CI **36233389639**, job **108380649807**: SUCCESS. Job checkout and all steps inspected, including OWL 2 DL profile, HermiT consistency/classification, expected entailments, missing-entailment mutation, both reasoner inconsistency controls and R1/R2/R4/R5/R7 guards.
+- Claim/VVEAA CI **36233389644**, job **108380649885**: SUCCESS. Checkout and all four PASS markers inspected. Nine VVEAA negative controls rejected; nine evidence bindings checked. Artifact **10903397318** retains the per-claim JSON assessment/limitation snapshot for this exact run.
+- Relational runtime inputs and workflow are unchanged from successful **36215963073**. No SQL, data or mapping files changed in the seven-file repair commit, so a redundant relational rebuild was not needed. The semantic and claim changes received their own fresh runs.
+
+`r1-r8-remediation-evidence-ledger-v0.2.csv` now supplies all 41 findings with exact source and closure-audit links, primary hashes, current evaluated candidate, verification method, observed marker/manual check, historical/current state, residual and recheck trigger. Manual entries audit the existing acceptance boundaries and source identity; they do not rerun a human domain judgment. Automated entries are limited to encoded assertions and frozen tasks.
+
+| Audit disposition | Count | Meaning |
+|---|---:|---|
+| PASS_BOUNDED | 41/41 remediation rows | Engineering evidence traceability and the applicable recorded/manual checks at the stated candidate |
+| RECHECK_REQUIRED | 0/41 remediation rows | No unresolved source-version or recorded-check mismatch remains within this audit scope |
+| OPEN_EXTERNAL_DEPENDENCY | 9 distinct linked issues | #13, #14, #17, #31, #51, #53, #54, #55, #56; these overlap row residuals and are not additional remediation rows |
+
+Cross-role reconciliation remains bounded:
+
+| Interaction | Reconciled disposition | Surviving limit |
+|---|---|---|
+| R1/R2/R6 identity | Contract boundaries, active-owner rule and stable SQL/SPARQL identity coexist; eight frozen tasks retain direct parity | No universal Risk identity theorem or global lossless mapping |
+| R3/R4 governance | Selected schema coverage and controlled standards mapping strengths preserve deferred ERM families | #13 locators and #51 semantic adequacy remain open |
+| R5/R7 external ownership | Generic enterprise families remain unbound; CM-PharmE is version-bound only for available profile identities; missing drug terminology stays external | Broader domain identity coverage and #17 DS-004 activation unresolved |
+| R6/R7/R8 evidence roles | Constructed/synthetic roles and DS-002 cross-domain status align; current 8/8 parity is separated from the historical 6+2 result | No clean independent shortage holdout or real expert validation |
+
+#54 consumes this ledger through `evaluation/assurance/paper1-assurance-evidence-intake-v0.1.md`, which carries positive evidence, all nine unresolved owners and the explicit absence of a final assurance decision. Therefore #110 is complete **as a bounded engineering/evidence audit at this candidate**. #111/#113 and final #53/#54/#55 remain OPEN; no submission authorization follows from this closure. A later material source/test change invalidates this dated binding and requires impact assessment.
