@@ -66,8 +66,28 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p build/webvowl/json
-          curl -sf -X POST             -F "ontology=@build/webvowl/p1-r2-webvowl-local.ttl"             -F "sessionId=semrisk-local"             http://127.0.0.1:18080/convert             -o build/webvowl/json/p1-r2-local-webvowl.json
-          curl -sf -X POST             -F "ontology=@build/webvowl/p1-r2-webvowl-import-closure.ttl"             -F "sessionId=semrisk-imports"             http://127.0.0.1:18080/convert             -o build/webvowl/json/p1-r2-imports-webvowl.json
+
+          convert_one() {
+            local input="$1"
+            local output="$2"
+            local session="$3"
+            local body="${output}.response"
+            local code
+            code="$(curl -sS -o "$body" -w "%{http_code}" -X POST               -F "ontology=@${input};type=text/turtle"               -F "sessionId=${session}"               http://127.0.0.1:18080/convert || true)"
+            if [ "$code" != "200" ]; then
+              echo "::error::OWL2VOWL conversion failed for ${input} with HTTP ${code}"
+              echo "--- converter response ---"
+              cat "$body" || true
+              echo
+              echo "--- converter logs ---"
+              docker logs semrisk-owl2vowl || true
+              exit 1
+            fi
+            mv "$body" "$output"
+          }
+
+          convert_one             build/webvowl/p1-r2-webvowl-local.ttl             build/webvowl/json/p1-r2-local-webvowl.json             semrisk-local
+          convert_one             build/webvowl/p1-r2-webvowl-import-closure.ttl             build/webvowl/json/p1-r2-imports-webvowl.json             semrisk-imports
 
       - name: Reconcile converted JSON with SemRisk source inventory
         run: |
