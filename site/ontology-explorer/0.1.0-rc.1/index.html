@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>SemRisk P1-R2 WebVOWL Explorer Candidate</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;max-width:980px;margin:0 auto;padding:32px 20px;line-height:1.55}
+    code{overflow-wrap:anywhere}.badge{display:inline-block;padding:.2rem .55rem;border:1px solid currentColor;border-radius:999px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.card{border:1px solid #bbb;border-radius:10px;padding:16px}
+    @media (prefers-color-scheme:dark){body{background:#111;color:#eee}.card{border-color:#555}a{color:#8ab4f8}}
+  </style>
+</head>
+<body>
+  <p class="badge">OFFLINE CANDIDATE — NOT PUBLICLY DEPLOYED</p>
+  <h1>SemRisk P1-R2 WebVOWL Explorer</h1>
+  <p>This route is reserved for the source-bound interactive explorer produced under issue #119. It is deliberately separate from the frozen formal-reference route <code>/ontology/0.1.0-rc.1/</code>.</p>
+  <div class="grid">
+    <section class="card"><h2>Preferred scope</h2><p>35 local OWL classes, 37 local object properties and four SKOS markers. Imported gUFO declarations are excluded from the default reading view.</p></section>
+    <section class="card"><h2>Import scope</h2><p>The second generated view preserves the 1,409-triple asserted import closure for foundational context. It is not an entailment closure.</p></section>
+    <section class="card"><h2>Authority</h2><p>WebVOWL is a derived exploration view only. Canonical authority remains the governed SemRisk Turtle source and its formal documentation.</p></section>
+  </div>
+  <h2>Build identity</h2>
+  <ul>
+    <li>SemRisk candidate: P1-R2 / 0.1.0-rc.1</li>
+    <li>Canonical source commit: <code>dfdd7ca68c7fae460f5764afc8d9965aa00c20ae</code></li>
+    <li>WebVOWL: v1.1.7, MIT</li>
+    <li>OWL2VOWL: <code>c6331c4c79b0034b8537a11cccd1a6587cedb0b9</code>, MIT</li>
+  </ul>
+  <p>The interactive assets are intentionally not published from this branch. Public deployment requires the #117/#55/#56 release and access gates. The reproducible offline candidate is produced by <code>.github/workflows/paper1-webvowl-offline.yml</code>.</p>
+</body>
+</html>
