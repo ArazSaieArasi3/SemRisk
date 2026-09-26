@@ -58,11 +58,11 @@ progress:
   problem_framing: in_progress
   evidence_base: in_progress
   literature_review: in_progress
-  conceptualization: planned
+  conceptualization: in_progress
   data: in_progress
   artifact_design: in_progress
-  implementation: not_started
-  evaluation: planned
+  implementation: in_progress
+  evaluation: in_progress
   manuscript: in_progress
   reproducibility: in_progress
   publication: planned
