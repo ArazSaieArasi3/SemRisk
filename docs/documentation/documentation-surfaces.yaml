@@ -7,7 +7,7 @@ repository:
 
 semantic_source:
   roots: [ontology/, conceptualization/]
-  conceptual_model: [docs/ontology/diagrams/p1-r2-local-ontology-atlas-v0.1.svg]
+  conceptual_model: [conceptualization/]
   ontology_sources:
     - ontology/p1-r2-candidate-manifest.yaml
     - ontology/core/semrisk-core-v0.1.0-rc.1.ttl
@@ -18,6 +18,7 @@ semantic_source:
     - ontology/mappings/semrisk-mappings-v0.1.0-rc.1.ttl
   constraint_sources: [shapes/semrisk-paper1-shapes-v0.1.0-rc.1.ttl]
   registries: [ontology/formal-entity-inventory-v0.1.csv]
+  diagram_manifest: docs/ontology/diagrams/manifest.yaml
   evidence_sources: [evaluation/]
   evaluation_sources: [evaluation/vveaa/paper1-vveaa-execution-profile-v0.1.md]
   decision_records: [docs/governance/paper1-release-train.md]
