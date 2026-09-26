@@ -112,5 +112,5 @@ summary:
   blockers:
     - Pages not deployed or rendered; public access decision pending #55/#56.
     - Cross-surface backlinks, WebVOWL and full privacy/licensing review pending #117/#119.
-    - Profile adoption and remaining RO/PT/RW dispositions pending #118.
-  notes: "Private Wiki 8/8 live source hashes match; Pages is offline candidate. This manifest is staged, not conformance or release approval."
+    - RO/PT/RW provisional dispositions recorded; reader-route publication, REF corpus and QN/QL closure pending #118.
+  notes: "Private Wiki 8/8 live source hashes match; Pages is offline candidate. See p1-r2-documentation-rollout-2026-09-26.md. This manifest is staged, not conformance or release approval."
