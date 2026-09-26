@@ -51,7 +51,13 @@ def check(text, rows):
         for match in re.finditer(p, flat, re.I):
             prefix = flat[max(0, match.start()-140):match.start()]
             clause = re.split(r"[.;!?]", prefix)[-1]
-            if re.search(r"\b(no|not|never|without|cannot|can't)\b", clause, re.I):
+            # A negation elsewhere in the clause does not negate this claim.
+            # This deliberately recognizes only direct, bounded nonclaims;
+            # scientific prose still requires manual review.
+            direct_nonclaim = re.search(r"(?:\bno\s+|\b(?:do not|does not|did not|cannot|can't|never)\s+(?:claim|assert|suggest|conclude)\s+(?:that\s+)?(?:the\s+)?|\bwithout\s+(?:claiming|asserting)\s+(?:that\s+)?|\b(?:must|should)\s+not\s+be\s+described\s+as\s+)$", clause, re.I)
+            nonclaim_list = re.search(r"\b(?:does not|do not|cannot)\s+(?:claim|assert)\s+([^.;!?]+,\s*)$", clause, re.I)
+            safe_list = nonclaim_list and not re.search(r"\b(but|however|yet|is|are|has|have|demonstrates|proves)\b", nonclaim_list.group(1), re.I)
+            if direct_nonclaim or safe_list:
                 continue
             failures.append(f"affirmative overclaim matched: {p}")
     return failures
@@ -96,6 +102,17 @@ def selftest(rows, placements, preliminary):
         faults = check(base + "\n" + phrase, rows)
         assert any("affirmative overclaim" in x for x in faults), phrase
     assert not check(base + "\nNo global ontology-to-database equivalence is demonstrated.", rows)
+    for phrase in [
+        "We do not claim that independent transferability has been demonstrated.",
+        "We cannot assert that the ontology is expert-validated.",
+    ]:
+        assert not check(base + "\n" + phrase, rows), phrase
+    for phrase in [
+        "Not only is this useful, independent transferability has been demonstrated.",
+        "The limitation is not material, global ontology-to-database equivalence has been established.",
+        "We do not claim superiority, but the ontology is expert-validated.",
+    ]:
+        assert any("affirmative overclaim" in x for x in check(base + "\n" + phrase, rows)), phrase
     print("SEM_RISK_PAPER1_CLAIM_GUARD_SELFTEST_PASS")
 
 def main():

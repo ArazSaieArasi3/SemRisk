@@ -49,6 +49,8 @@ on:
       - "tools/issue50_semantic_mutation_check.py"
       - "tools/issue50_entailment_mutation_check.py"
       - "tools/r1_foundational_guardrail_check.py"
+      - "tools/r2_owner_rule_temporal_check.py"
+      - "tools/r2_formal_semantics_guard_check.py"
       - "tools/requirements-semantic-ci.txt"
       - "tools/semantic-tool-manifest.csv"
       - "evaluation/standards/**"
