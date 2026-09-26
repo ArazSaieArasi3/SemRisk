@@ -109,11 +109,11 @@ capabilities:
   - id: RO-13
     title: "Research journey and decision trace"
     applicability: Mandatory
-    status: missing
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    status: partial
+    evidence_paths: [docs/wiki/pages/Scope-and-Contributions.md, docs/wiki/p1-r2-live-wiki-readback-2026-09-26.md]
     deviations: []
     blockers: ["#118"]
-    notes: "No integrated reader-facing research journey/decision trace; provisional triage, not capability verification."
+    notes: "Private Wiki now explains evidence→boundary→model→check→claim with source links; complete decision trace and entity lineage pending."
   - id: RO-14
     title: "Version/evolution lineage"
     applicability: Conditional
