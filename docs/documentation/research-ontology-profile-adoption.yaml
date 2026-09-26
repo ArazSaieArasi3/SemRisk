@@ -150,10 +150,10 @@ capabilities:
     title: "Visual documentation"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md, docs/ontology/diagrams/manifest.yaml]
     deviations: []
     blockers: ["#116"]
-    notes: "76-ID atlas, 37-property SVG and scope statement; provisional triage, not capability verification."
+    notes: "Two candidate SVGs registered with exact source, scopes, omissions and pending independent semantic/accessibility review."
   - id: RO-19
     title: "Generated formal reference / WIDOCO adapter"
     applicability: Conditional
