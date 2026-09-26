@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "publication_status": "OFFLINE_ONLY",
+  "versions": [
+    {
+      "id": "0.1.0-rc.1",
+      "route": "/ontology/0.1.0-rc.1/",
+      "state": "OFFLINE_CANDIDATE_NOT_DEPLOYED",
+      "source_commit": "dfdd7ca68c7fae460f5764afc8d9965aa00c20ae",
+      "asserted_graph_sha256": "7f190ca4729b3b66aeb8146d89b71bfbacc9483ef57580cb05be8cd702215a8a",
+      "html_sha256": "af82773aeb40787cd8257e7f57b4407bf252ce16c59f82e31fd8d793e6758a71"
+    }
+  ]
+}
