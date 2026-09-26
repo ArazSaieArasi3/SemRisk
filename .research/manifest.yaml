@@ -32,7 +32,7 @@ methodology:
     manifest_contract: "1.1"
   ogcm_rf:
     enabled: true
-    framework_ref: "commit:4f2615dd76c302e080e69058f6237c0f82d56c4c"
+    framework_ref: "commit:4822b1a1b7978e94e66bd6a283024bac78b6a0b8"
     implementation_profile: ".research/ogcm-rf-profile.yaml"
     semantic_dependencies: "semantic-dependencies.yaml"
   methods:
@@ -47,12 +47,12 @@ methodology:
     - "Claim-dependent OGCM-RF multilayer evaluation E1-E11"
 
 execution:
-  current_wave: "W1 — Exhaustive Source Mining"
-  current_workstream: "W0 governance-contract refresh completed; publication and study-design freeze (#38/#39/#1) precede continuation of broad W1 execution"
+  current_wave: "P1-R2 formal/evaluation candidate and W4/W5 publication preparation"
+  current_workstream: "G1 and G2 closed with recorded conditions; bounded P1-R2 semantic build and private Wiki are available; assurance, release and Pages remain open"
   next_gate:
-    name: "G1 — Source Completeness and Cross-Source Reconciliation"
-    criteria: "All material source families for the Paper-1 claim boundary have governed coverage/extraction; every extracted item is dispositioned; conflicts and source deltas are explicit; canonical Core/UL/module/foundational/formal commitments remain blocked until the applicable source-completeness boundary passes."
-  next_action: "Verify the publication venue contract (#38), freeze Paper-1 research design/evidence roles (#39), freeze RQs/contributions/nonclaims (#1), then continue reproducible search and W1 source mining through #18 G1."
+    name: "Paper-1 assurance and publication-bound release"
+    criteria: "Resolve claim-dependent #53/#54 evidence and limitations, then #55/#56 exact release and access decisions; candidate documentation does not imply public publication."
+  next_action: "Complete #118 documentation adoption and #119 offline WebVOWL exploration, alongside #113/#115/#117; bind final scholarly release only through #54/#55/#56."
 
 progress:
   problem_framing: in_progress
@@ -68,11 +68,11 @@ progress:
   publication: planned
 
 verification:
-  last_verified: "2026-09-17"
+  last_verified: "2026-09-26"
   evidence_basis:
     - "Araz Research Portfolio R-022 canonical state verified: repository ArazSaieArasi3/SemRisk, lifecycle Active, priority A, current wave W1 and current gate G1"
     - "Portfolio synchronization issue #141 completed before this refresh"
-    - "OGCM-RF current main commit 4f2615dd76c302e080e69058f6237c0f82d56c4c and Ontology Repository Bootstrap/Handover Profile"
+    - "OGCM-RF documentation profile pinned at 4822b1a1b7978e94e66bd6a283024bac78b6a0b8; SemRisk adoption remains partial."
     - "OGCM-RF Implementation Profile 1.0 and semantic-dependencies schema 1.0"
     - "SemRisk exhaustive source-mining protocol and evidence vocabulary"
     - "SRC-OP-001 exact user-supplied Jira risk spreadsheet mining: 27/27 attributes, 121 raw records"
@@ -81,7 +81,7 @@ verification:
     - "Pharmaceutical risk evidence and DOI/PID dataset qualification work"
   coherence_debt:
     - "Paper-1 venue identity/deadline/template assumptions require authoritative refresh under Issue #38 before publication planning can be treated as current."
-    - "No canonical SemRisk Core concept inventory or formal ontology is yet authorized; G1 source completeness and reconciliation come first."
+    - "P1-R2 is a governed candidate, not a publication-bound scholarly release; G1/G2 conditions and #54/#55/#56 gates remain visible."
     - "External semantic dependencies such as COVER, ROSE and CM-PharmE require exact immutable release/commit binding before release-bound reuse/mapping claims."
     - "Several dataset/artifact licenses and exact versions remain to be qualified before publication binding."
-  note: "Portfolio↔SemRisk identity synchronization is current as of 2026-09-17. The previous Jira spreadsheet blocker remains resolved and the exact source is SHA-bound and mined. SemRisk remains a domain-general comprehensive risk-ontology Research. Enterprise/Architecture is the first application emphasis; Health is the first broad domain priority; Pharma is the first bounded specialization/case linked to CM-PharmE. Knowledge-graph and Risk Intelligence implementation remain deferred beyond Paper 1. Formal OGCM-RF conformance remains not_assessed until an explicit requirement-by-requirement assessment is executed."
+  note: "R-022 identity and portfolio lifecycle are separate from the OGCM-RF documentation adoption state. P1-R2 0.1.0-rc.1 is a candidate with canonical OWL/RDF/SHACL source and bounded evaluation, not a frozen scholarly release. The private Wiki has eight live pages; Pages is offline only. See docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md and docs/documentation/p1-r2-documentation-rollout-2026-09-26.md. Documentation adoption is partial; full OGCM-RF conformance has not been assessed."
