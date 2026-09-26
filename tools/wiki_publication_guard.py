@@ -37,8 +37,10 @@ def build():
         if local_links:
             raise ValueError("Unpublished relative Wiki navigation: " + name + " -> " + str(local_links))
         wiki_links = sorted(set(re.findall(r"\]\((https://github\.com/ArazSaieArasi3/SemRisk/wiki(?:/[^)#]+)?)\)", content)))
-        expected = [WIKI_ROOT + "/" + target for target in NAMES[1:]] if name == "Home" else [WIKI_ROOT]
-        if wiki_links != sorted(expected):
+        allowed = {WIKI_ROOT, *(WIKI_ROOT + "/" + target for target in NAMES[1:])}
+        expected_home = sorted(allowed - {WIKI_ROOT})
+        if ((name == "Home" and wiki_links != expected_home)
+                or (name != "Home" and (WIKI_ROOT not in wiki_links or not set(wiki_links) <= allowed))):
             raise ValueError("Published Wiki navigation drift: " + name + " -> " + str(wiki_links))
         entries.append({"page": name, "source_path": path.relative_to(ROOT).as_posix(),
                         "sha256": hashlib.sha256(data).hexdigest(), "navigation_targets": wiki_links})
