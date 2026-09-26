@@ -32,12 +32,12 @@
 | RO-24 | PARTIAL | Staged surface manifest at `docs/documentation/documentation-surfaces.yaml`; allocation and Pages checks remain false | #118 |
 | RO-25 | PARTIAL | Authority stated in pages; implementation profile stale | #118 |
 | RO-26 | PARTIAL | Pinned partial adoption YAML exists; capability evidence and QN/QL closure pending | #118 |
-| RO-27 | GAP | No governed REF corpus contract/coverage evidence found | #118 |
+| RO-27 | PARTIAL | Seven stable REF seed identities in `docs/documentation/research-reference-corpus.yaml`; manuscript placement, source coverage, metadata/link checks and IEEE render QA pending | #118/#53 |
 | RO-28 | PARTIAL | Wiki candidate manifest and Pages registry; no release snapshot | #55/#118 |
 | RO-29 | PARTIAL | FD/source QA and offline reference; final parity/reasoning gate open | #115/#117 |
 | RO-30 | GAP | Dual-audience usability audit/route absent | #118 |
 
-**Count:** 7 BOUNDED, 19 PARTIAL, 2 GAP, 2 PENDING_PAGES. These are triage categories, not a weighted progress percentage. RO-27/30 remain absent corpus/usability deliverables; RO-13 now has a bounded reader route but not a complete decision/lineage record. PT-01…PT-10 and RW-01…RW-26 have provisional disposition in `docs/documentation/p1-r2-documentation-rollout-2026-09-26.md`; this does not pass RW-24.
+**Count:** 7 BOUNDED, 20 PARTIAL, 1 GAP, 2 PENDING_PAGES. These are triage categories, not a weighted progress percentage. RO-27 now has a bounded seed corpus but no complete/verified citation coverage; RO-30 remains without a usability deliverable. RO-13 has a bounded reader route but not a complete decision/lineage record. PT-01…PT-10 and RW-01…RW-26 have provisional disposition in `docs/documentation/p1-r2-documentation-rollout-2026-09-26.md`; this does not pass RW-24.
 
 **Governance refresh:** `.research/manifest.yaml` and `.research/ogcm-rf-profile.yaml` were refreshed on 2026-09-26 to replace the obsolete pre-Core/G2-pending narrative and pin the documentation profile ref. Semantic release is still `none`, OGCM overall conformance remains `not_assessed`, documentation adoption is `partial`, and Pages remains offline. Portfolio lifecycle ownership remains separate from OGCM documentation conformance.
 
