@@ -181,19 +181,19 @@ capabilities:
   - id: RO-22
     title: "Multi-profile declaration"
     applicability: Conditional
-    status: missing
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    status: partial
+    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md, docs/documentation/p1-r2-documentation-rollout-2026-09-26.md]
     deviations: []
     blockers: ["#118"]
-    notes: "Research + Data/Engineering profile declaration absent; provisional triage, not capability verification."
+    notes: "Research/Ontology primary; Data/Engineering scoped to relational twin in rollout record. Formal profile-composition manifest still pending."
   - id: RO-23
     title: "Audience journeys"
     applicability: Recommended
-    status: missing
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    status: partial
+    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md, docs/documentation/p1-r2-documentation-rollout-2026-09-26.md]
     deviations: []
     blockers: ["#118"]
-    notes: "Academic and engineer reader paths not explicit; provisional triage, not capability verification."
+    notes: "Academic and engineering reader routes mapped; Wiki Home revision and live route read-back pending."
   - id: RO-24
     title: "Surface allocation manifest"
     applicability: Mandatory
@@ -213,11 +213,11 @@ capabilities:
   - id: RO-26
     title: "Profile adoption/conformance record"
     applicability: Mandatory
-    status: missing
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    status: partial
+    evidence_paths: [docs/documentation/research-ontology-profile-adoption.yaml, docs/documentation/p1-r2-documentation-rollout-2026-09-26.md]
     deviations: []
     blockers: ["#118"]
-    notes: "No current documentation adoption/conformance record; provisional triage, not capability verification."
+    notes: "Pinned partial adoption record exists; full capability proof, QN/QL and publication gates remain open."
   - id: RO-27
     title: "Reference/citation corpus integrity"
     applicability: Mandatory
