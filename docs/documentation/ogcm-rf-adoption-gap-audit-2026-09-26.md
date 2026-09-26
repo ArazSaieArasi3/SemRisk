@@ -18,7 +18,7 @@
 | RO-10 | BOUNDED | Relational projection and task-bounded parity | #116 |
 | RO-11 | PARTIAL | VVEAA page; #51/#54 remain open | #112 |
 | RO-12 | PARTIAL | Build instructions and candidate status; final bundle pending | #55 |
-| RO-13 | GAP | No integrated reader-facing research journey/decision trace | #118 |
+| RO-13 | PARTIAL | Four-step evidence→boundary→model→check→claim route live on Scope Wiki; decision-level trace/lineage depth pending | #118 |
 | RO-14 | PARTIAL | Release train exists; Wiki evolution/lineage route incomplete | #118 |
 | RO-15 | PARTIAL | Citation is explicitly pending release/availability | #55/#56 |
 | RO-16 | PARTIAL | Banners and threats source exist; dedicated claim-linked route incomplete | #118 |
@@ -37,7 +37,7 @@
 | RO-29 | PARTIAL | FD/source QA and offline reference; final parity/reasoning gate open | #115/#117 |
 | RO-30 | GAP | Dual-audience usability audit/route absent | #118 |
 
-**Count:** 7 BOUNDED, 18 PARTIAL, 3 GAP, 2 PENDING_PAGES. These are triage categories, not a weighted progress percentage. RO-13/27/30 remain absent reader/corpus/usability deliverables. PT-01…PT-10 and RW-01…RW-26 have provisional disposition in `docs/documentation/p1-r2-documentation-rollout-2026-09-26.md`; this does not pass RW-24.
+**Count:** 7 BOUNDED, 19 PARTIAL, 2 GAP, 2 PENDING_PAGES. These are triage categories, not a weighted progress percentage. RO-27/30 remain absent corpus/usability deliverables; RO-13 now has a bounded reader route but not a complete decision/lineage record. PT-01…PT-10 and RW-01…RW-26 have provisional disposition in `docs/documentation/p1-r2-documentation-rollout-2026-09-26.md`; this does not pass RW-24.
 
 **Governance refresh:** `.research/manifest.yaml` and `.research/ogcm-rf-profile.yaml` were refreshed on 2026-09-26 to replace the obsolete pre-Core/G2-pending narrative and pin the documentation profile ref. Semantic release is still `none`, OGCM overall conformance remains `not_assessed`, documentation adoption is `partial`, and Pages remains offline. Portfolio lifecycle ownership remains separate from OGCM documentation conformance.
 
