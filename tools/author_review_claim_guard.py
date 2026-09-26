@@ -11,6 +11,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MANUSCRIPT = ROOT / "publications/2026-icae/manuscript-working-draft-v0.3.md"
 MATRIX = ROOT / "publications/2026-icae/author-review-claim-evidence-v0.2.csv"
+PRELIM = ROOT / "publications/2026-icae/claim-calibration-preliminary-v0.1.csv"
+PLACEMENT = ROOT / "publications/2026-icae/manuscript-claim-placement-audit-v0.3.csv"
 
 REQUIRED = {
     "27/27": r"27/27.{0,110}(jira|schema|fields|attributes)",
@@ -54,9 +56,34 @@ def check(text, rows):
             failures.append(f"affirmative overclaim matched: {p}")
     return failures
 
-def selftest(rows):
+def check_placements(text, placements, preliminary):
+    failures = []
+    expected = [f"SR-CL{i:02d}" for i in range(1, 10)]
+    ids = [r["claim_id"] for r in placements]
+    if ids != expected:
+        failures.append(f"placement IDs/order mismatch: {ids}")
+    preliminary_by_id = {r["claim_id"]: r for r in preliminary}
+    for row in placements:
+        claim_id = row["claim_id"]
+        anchor = row["unique_anchor"]
+        if not anchor or text.count(anchor) != 1:
+            failures.append(f"placement anchor missing or nonunique: {claim_id}")
+        source = preliminary_by_id.get(claim_id)
+        if not source:
+            failures.append(f"preliminary claim missing: {claim_id}")
+        elif (row["preliminary_status"] != source["preliminary_status"]
+              or row["material_threats"] != source["material_threats"]):
+            failures.append(f"preliminary status/threat drift: {claim_id}")
+        if not row["manuscript_section"] or not row["ceiling_and_residual"]:
+            failures.append(f"placement scope missing: {claim_id}")
+    return failures
+
+def selftest(rows, placements, preliminary):
     base = MANUSCRIPT.read_text(encoding="utf-8")
     assert not check(base, rows), check(base, rows)
+    assert not check_placements(base, placements, preliminary)
+    altered = base.replace(placements[0]["unique_anchor"], "[removed]", 1)
+    assert any("placement anchor" in x for x in check_placements(altered, placements, preliminary))
     for phrase in [
         "The ontology is expert-validated.",
         "Independent transferability has been demonstrated.",
@@ -74,9 +101,14 @@ def selftest(rows):
 def main():
     with MATRIX.open(newline="", encoding="utf-8") as fh:
         rows = list(csv.DictReader(fh))
+    with PRELIM.open(newline="", encoding="utf-8") as fh:
+        preliminary = list(csv.DictReader(fh))
+    with PLACEMENT.open(newline="", encoding="utf-8") as fh:
+        placements = list(csv.DictReader(fh))
     if "--selftest" in sys.argv:
-        selftest(rows)
-    failures = check(MANUSCRIPT.read_text(encoding="utf-8"), rows)
+        selftest(rows, placements, preliminary)
+    manuscript = MANUSCRIPT.read_text(encoding="utf-8")
+    failures = check(manuscript, rows) + check_placements(manuscript, placements, preliminary)
     if failures:
         print("\n".join("FAIL: " + x for x in failures), file=sys.stderr)
         return 1
