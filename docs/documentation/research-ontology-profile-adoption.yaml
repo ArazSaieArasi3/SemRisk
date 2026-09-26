@@ -221,11 +221,11 @@ capabilities:
   - id: RO-27
     title: "Reference/citation corpus integrity"
     applicability: Mandatory
-    status: missing
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    status: partial
+    evidence_paths: [docs/documentation/research-reference-corpus.yaml, docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
     deviations: []
     blockers: ["#118"]
-    notes: "No governed REF corpus contract/coverage evidence found; provisional triage, not capability verification."
+    notes: "Seven stable REF identities seeded from existing literature/standards baselines; manuscript membership, complete source coverage, metadata/link verification and page-local IEEE QA remain open. Provisional triage, not capability verification."
   - id: RO-28
     title: "Documentation baseline/snapshot"
     applicability: Conditional
@@ -259,7 +259,7 @@ machine_artifacts:
   documentation_quality_assessment: ""
   documentation_baseline_manifest: docs/wiki/p1-r2-wiki-publish-manifest-v0.1.json
   ontology_reference_manifest: docs/ontology/generated/p1-r2-closure-manifest.json
-  reference_corpus: ""
+  reference_corpus: docs/documentation/research-reference-corpus.yaml
   documentation_rollout_plan: ""
 surfaces:
   semantic_source: [ontology/]
