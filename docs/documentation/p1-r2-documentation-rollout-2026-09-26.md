@@ -42,7 +42,7 @@ States: `bounded` means evidence exists for a narrow slice, `partial` means acce
 | 11 Entity reference | Mandatory, stable candidate entities | partial: 76 local inventory, generated index; conceptual/formal coverage caveat | #115/#117 |
 | 12 Formal semantics | Conditional, OWL/SHACL exists | partial: FD-A…FD-J and local QA; reasoned effects/release binding pending | #115 |
 | 13 Generated reference | Conditional, formal ontology exists | blocked: offline versioned reference exists, Pages and WebVOWL absent | #117/#119 |
-| 14 Visual documentation | Recommended, diagrams exist | partial: 76-ID atlas and 37-property map; diagram manifest/accessibility audit missing | #118/#119 |
+| 14 Visual documentation | Recommended, diagrams exist | partial: 76-ID atlas and 37-property map in schema-checked manifest; independent semantic/accessibility audit pending | #118/#119 |
 | 15 Evaluation/reproducibility | Mandatory, claim-bearing | partial: VVEAA and build records; independent validation/assurance pending | #113/#54 |
 | 16 Data/RDB/KG mapping | Conditional, relational twin exists | partial: RDB projection and parity; no KG/API claim | #118/#117 |
 | 17 Software/Product | N/A, no Paper-1 product/API scope | no product surface; reassess on product/API commitment | #112 scope review |
