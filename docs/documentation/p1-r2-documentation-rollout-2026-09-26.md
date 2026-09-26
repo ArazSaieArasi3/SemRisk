@@ -4,7 +4,7 @@ Pinned profile: `OGCM-RF-DOC-RO 0.1`, `ArazSaieArasi3/OGCM-RF@4822b1a1b7978e94e6
 
 ## Authority and profile composition
 
-Research/Ontology is primary. Data/Engineering applies to the relational projection, mapping and task-bounded parity only; it consumes SemRisk's ontology definitions. Software/Product and Business documentation are not active Paper-1 documentation profiles; reassess if a product/API or independent business process becomes material. OWL/RDF, SHACL, registries and evidence in the repository define their respective semantics or observations. `docs/wiki/pages/` is curated explanation published to the private Wiki; `site/ontology/0.1.0-rc.1/` is an offline generated candidate. Neither publication surface changes semantic authority. The source-controlled Wiki manifest, 8/8 live read-back, generated asserted closure, Pages registry and surface manifest are the present evidence. Wiki is private, Pages is not deployed.
+Research/Ontology is primary. Data/Engineering applies to the relational projection, mapping and task-bounded parity only; it consumes SemRisk's ontology definitions. Software/Product and Business documentation are not active Paper-1 documentation profiles; reassess if a product/API or independent business process becomes material. `docs/documentation/profile-composition.yaml` records the owners and audience paths. OWL/RDF, SHACL, registries and evidence in the repository define their respective semantics or observations. `docs/wiki/pages/` is curated explanation published to the private Wiki; `site/ontology/0.1.0-rc.1/` is an offline generated candidate. Neither publication surface changes semantic authority. The source-controlled Wiki manifest, 8/8 live read-back, generated asserted closure, Pages registry and surface manifest are the present evidence. Wiki is private, Pages is not deployed.
 
 ## Reader journeys and page types
 
@@ -21,7 +21,7 @@ Research/Ontology is primary. Data/Engineering applies to the relational project
 | Engineer: PT-08 tutorial | Reproduce and Release → semantic-build instructions | Partial: version-specific end-to-end tutorial/browser verification still needed | #118, #117 |
 | Engineer: PT-10 mapping/realization | Relational Projection → task-bounded mapping/parity | Bounded relational twin; no KG/API realization claim | #116, #118 |
 
-Both journeys share semantic definitions, version state, evidence and limitations. Home currently offers one ordered route; the distinct routes above are an adoption record, not yet a newly published Wiki navigation design. Its revision and live read-back belong to #118 and #116's refresh procedure.
+Both journeys share semantic definitions, version state, evidence and limitations. Home now displays both routes in the signed-in private Wiki, with source/live body parity and revision `9827a5211d864bc1b6a2eda587ca5741a2f64f0f` recorded in `docs/wiki/p1-r2-live-wiki-readback-2026-09-26.md`. This is a rendered route check, not a usability study or public access result.
 
 ## Rollout factory reverse mapping
 
@@ -30,11 +30,11 @@ States: `bounded` means evidence exists for a narrow slice, `partial` means acce
 | RW | Applicability / trigger | Current state and evidence or gap | Issue / next action |
 |---|---|---|---|
 | 01 Assessment | Mandatory | partial: RO matrix and source/surface inventory; full current audit and maturity record here | #118 verify paths/ref |
-| 02 Profile adoption | Mandatory | partial: pinned adoption YAML; profile composition and deviations still need review | #118 |
+| 02 Profile adoption | Mandatory | partial: pinned adoption YAML and schema-checked profile composition; full quality/deviation review pending | #118 |
 | 03 Epic/plan | Mandatory | partial: #112 and this reverse map; children predate strict factory format | #112/#118 link gates and closure |
 | 04 Authority | Mandatory | partial: surface manifest; stale implementation profile | #118 refresh governance |
 | 05 Surface allocation | Mandatory | partial: source/Wiki/Pages mapped; Pages checks false | #118/#117 |
-| 06 IA/journeys | Mandatory | partial: Home works; dual-audience route above is not yet live | #118 |
+| 06 IA/journeys | Mandatory | partial: dual-audience Home route is live and source-matched; usability/coverage review pending | #118 |
 | 07 Editorial integrity | Mandatory | partial: source-to-Wiki exact parity; E0–E4 editorial review absent | #118/#55 |
 | 08 References/citation | Mandatory, scholarly | missing: governed REF corpus and manuscript membership proof | #118 with #53/#55 |
 | 09 Research journey/evolution | Mandatory | missing: integrated decision/lineage reader route | #118 |
@@ -60,7 +60,7 @@ Gate state: G-DOC-0 `partial` (#118); G-DOC-1 `partial` (#118/#117); G-DOC-2 `bl
 
 ## Refresh and closure order
 
-1. #118: reconcile `.research` authority/status, profile composition, RO/PT/RW evidence and the academic/engineering Home route; register research journey, reference corpus, diagram manifest and QN/QL gaps without inventing evidence.
+1. #118: complete the remaining RO/PT/RW evidence, research journey, reference corpus, diagram manifest, editorial and QN/QL checks. `.research` authority/status, composition and private Wiki academic/engineering Home route have candidate-level records.
 2. #115/#113 and related evidence gates: complete exact formal/reasoning and VVEAA claims at the candidate ref.
 3. #119/#117: reproducible offline WebVOWL, Pages privacy/access and rendered versioned reference checks. Existing `0.1.0-rc.1` route is immutable.
 4. #55/#56: decide actual publication identity, licensing/access and frozen baseline, then deploy/read back if authorized by those gates.
