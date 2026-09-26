@@ -10,6 +10,7 @@ on:
       - 'docs/ontology/pages-version-registry-v0.1.json'
       - 'site/ontology/**'
       - 'tools/build_pages_reference.py'
+      - 'tools/check_pages_route_history.py'
       - '.github/workflows/paper1-pages-offline-reference.yml'
   pull_request:
     paths:
@@ -20,6 +21,7 @@ on:
       - 'docs/ontology/pages-version-registry-v0.1.json'
       - 'site/ontology/**'
       - 'tools/build_pages_reference.py'
+      - 'tools/check_pages_route_history.py'
       - '.github/workflows/paper1-pages-offline-reference.yml'
 
 permissions:
@@ -31,9 +33,13 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
       - run: python -m pip install 'rdflib==7.6.0'
       - name: Check source binding, route and generated HTML without deployment
         run: python tools/build_pages_reference.py --check
+      - name: Reject changes to routes in the parent commit
+        run: python tools/check_pages_route_history.py
