@@ -28,3 +28,9 @@ The linked repository paths were inspected or created on 2026-09-26; this verifi
 5. Retain a rollback revision and flag any change in semantics, evidence, private/public access or #55 release identity.
 
 **Boundary:** the Wiki is a readable entry point, not the semantic source or scholarly release.
+
+## Source-controlled page drafts — 2026-09-26
+
+Eight curated drafts are now tracked under `docs/wiki/pages/`: [Home](pages/Home.md) · [Scope-and-Contributions](pages/Scope-and-Contributions.md) · [Semantic-Architecture](pages/Semantic-Architecture.md) · [Formal-Reference](pages/Formal-Reference.md) · [Evidence-and-VVEAA](pages/Evidence-and-VVEAA.md) · [Relational-Projection](pages/Relational-Projection.md) · [Pharma-Case](pages/Pharma-Case.md) · [Reproduce-and-Release](pages/Reproduce-and-Release.md). Their canonical source links pin `b9217100a4342fc61f0fedb19513126028f55370`. All eight draft files, local navigation targets and pinned source paths were checked against the repository tree at that ref. The drafts contain no protected raw Jira rows; their status text retains the open human E5, independent E11, assurance and release gates.
+
+**Publication checkpoint:** Wiki live content, access, page rendering, drift and rollback remain unverified. The repository metadata reports `has_wiki: true`, which establishes availability of the feature but not the state of any live Wiki pages. Do not mark #116 complete until the live state is inspected and the synchronization gate above is executed.
