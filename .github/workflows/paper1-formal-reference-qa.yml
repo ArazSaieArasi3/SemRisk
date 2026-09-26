@@ -1,0 +1,40 @@
+name: SemRisk Paper 1 formal reference QA
+
+on:
+  push:
+    paths:
+      - 'ontology/**'
+      - 'shapes/**'
+      - 'rules/**'
+      - 'docs/ontology/formal-ontology-description-p1-r2-v0.2.md'
+      - 'docs/ontology/p1-r2-formal-source-entity-reference-v0.1.csv'
+      - 'evaluation/cq/issue52-cq-results-v1.0.csv'
+      - 'tools/formal_reference_qa.py'
+      - '.github/workflows/paper1-formal-reference-qa.yml'
+  pull_request:
+    paths:
+      - 'ontology/**'
+      - 'shapes/**'
+      - 'rules/**'
+      - 'docs/ontology/formal-ontology-description-p1-r2-v0.2.md'
+      - 'docs/ontology/p1-r2-formal-source-entity-reference-v0.1.csv'
+      - 'evaluation/cq/issue52-cq-results-v1.0.csv'
+      - 'tools/formal_reference_qa.py'
+      - '.github/workflows/paper1-formal-reference-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  local-source-reference-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install pinned RDF parser
+        run: python3 -m pip install 'rdflib==7.6.0'
+      - name: Check curated reference against exact local sources
+        run: python3 tools/formal_reference_qa.py
