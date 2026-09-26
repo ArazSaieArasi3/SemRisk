@@ -7,6 +7,7 @@ on:
       - 'docs/ontology/p1-r2-formal-source-entity-reference-v0.1.csv'
       - 'docs/ontology/generated/**'
       - 'docs/wiki/pages/Semantic-Architecture.md'
+      - 'docs/wiki/pages/Formal-Reference.md'
       - 'tools/wiki_formal_parity_qa.py'
       - '.github/workflows/paper1-wiki-formal-parity.yml'
   pull_request:
@@ -15,6 +16,7 @@ on:
       - 'docs/ontology/p1-r2-formal-source-entity-reference-v0.1.csv'
       - 'docs/ontology/generated/**'
       - 'docs/wiki/pages/Semantic-Architecture.md'
+      - 'docs/wiki/pages/Formal-Reference.md'
       - 'tools/wiki_formal_parity_qa.py'
       - '.github/workflows/paper1-wiki-formal-parity.yml'
 

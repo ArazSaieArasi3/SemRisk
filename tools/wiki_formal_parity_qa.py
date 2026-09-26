@@ -14,8 +14,14 @@ rows = {r["semantic_id"]: r for r in csv.DictReader(
     (ROOT / "docs/ontology/p1-r2-formal-source-entity-reference-v0.1.csv").open())}
 index = (ROOT / "docs/ontology/generated/p1-r2-generated-reference.md").read_text()
 wiki = (ROOT / "docs/wiki/pages/Semantic-Architecture.md").read_text()
+formal_wiki = (ROOT / "docs/wiki/pages/Formal-Reference.md").read_text()
 graph = Graph().parse(ROOT / "docs/ontology/generated/p1-r2-asserted-closure.nt", format="nt")
 local_graphs = {}
+
+for filename in ("p1-r2-generated-reference.md", "p1-r2-asserted-closure.nt",
+                 "p1-r2-closure-manifest.json"):
+    assert filename in formal_wiki, "Formal Wiki draft lacks generated reference link: " + filename
+assert "not an OWL entailment closure" in formal_wiki
 
 for semantic_id in ids:
     row = rows[semantic_id]
