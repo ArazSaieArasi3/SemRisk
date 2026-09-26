@@ -24,3 +24,9 @@ The live Wiki editor's Markdown body was read back for each page in a signed-in 
 **Automated source checks:** Wiki manifest run `36240700066`, Wiki formal parity run `36240700096`, and offline Pages reference run `36240700105` succeeded at `84b2a7f3`. They validate their scoped source artifacts, not the live Wiki or deployed Pages.
 
 **Access/release boundary:** The Wiki belongs to a private repository. Its signed-in view was verified; public Pages is not deployed. The Wiki's candidate banners retain #51/#31/#53/#54/#55/#56 limitations. A future source edit, Wiki edit, semantic candidate change, Pages deployment, access change or release binding requires a fresh source hash, rendered link and history read-back. Generated reference/WebVOWL remains a Pages concern under OGCM-RF; no WebVOWL view is claimed here.
+
+## Audience-route refresh — 2026-09-26
+
+Source-controlled Home and its publication manifest were updated atomically at [commit 8f71a75](https://github.com/ArazSaieArasi3/SemRisk/commit/8f71a75d9aa4fbe013c78f5a1122d7277ed47a1d). Home source SHA-256 is `63e921e4c950a7d95252b8aeaa4f2462265208056c118c05446265324a4adba6`. The signed-in Wiki Home editor displayed the exact source body (terminal newline included) after save; rendered Home showed distinct research/review and ontology/data-engineering routes, their existing seven Wiki page destinations, the candidate/nonclaim banner and eight-page sidebar. History shows new revision `9827a5211d864bc1b6a2eda587ca5741a2f64f0f` and retains `d23cb7807bcb2aaa8585ffeaaf8aec5e7501e823` as the immediately previous Home revision. No rollback was performed.
+
+The source manifest, formal parity guard and offline Pages builder passed locally on this change. This check is for the private signed-in Wiki Home and source parity; no public or mobile usability claim, independent editorial QN/QL score, or Pages deployment is inferred. Next publication baseline requires a fresh read-back.
