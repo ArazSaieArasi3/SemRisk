@@ -27,8 +27,8 @@
 | RO-19 | PENDING_PAGES | No deployed WIDOCO/equivalent Pages explorer | #117/#119 |
 | RO-20 | BOUNDED | Wiki history and source manifest/read-back | #116 |
 | RO-21 | PARTIAL | Hash/CI/read-back done; QN/QL conformance not assessed | #118 |
-| RO-22 | PARTIAL | Research/Ontology primary and Data/Engineering scoped in rollout record; machine composition manifest pending | #118 |
-| RO-23 | PARTIAL | Academic/engineering routes mapped in rollout; Wiki Home and live route read-back pending | #118 |
+| RO-22 | PARTIAL | Schema-checked composition manifest declares Research/Ontology primary, Data/Engineering secondary, other profiles N/A with triggers; full review pending | #118 |
+| RO-23 | PARTIAL | Academic/engineering routes published in private Wiki Home and source-matched at revision `9827a52`; usability audit pending | #118 |
 | RO-24 | PARTIAL | Staged surface manifest at `docs/documentation/documentation-surfaces.yaml`; allocation and Pages checks remain false | #118 |
 | RO-25 | PARTIAL | Authority stated in pages; implementation profile stale | #118 |
 | RO-26 | PARTIAL | Pinned partial adoption YAML exists; capability evidence and QN/QL closure pending | #118 |
