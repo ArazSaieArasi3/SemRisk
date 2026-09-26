@@ -29,7 +29,7 @@
 | RO-21 | PARTIAL | Hash/CI/read-back done; QN/QL conformance not assessed | #118 |
 | RO-22 | GAP | Research + Data/Engineering profile declaration absent | #118 |
 | RO-23 | GAP | Academic and engineer reader paths not explicit | #118 |
-| RO-24 | GAP | No OGCM surface-allocation manifest found | #118 |
+| RO-24 | PARTIAL | Staged surface manifest at `docs/documentation/documentation-surfaces.yaml`; allocation and Pages checks remain false | #118 |
 | RO-25 | PARTIAL | Authority stated in pages; implementation profile stale | #118 |
 | RO-26 | GAP | No current documentation adoption/conformance record | #118 |
 | RO-27 | GAP | No governed REF corpus contract/coverage evidence found | #118 |
@@ -37,7 +37,7 @@
 | RO-29 | PARTIAL | FD/source QA and offline reference; final parity/reasoning gate open | #115/#117 |
 | RO-30 | GAP | Dual-audience usability audit/route absent | #118 |
 
-**Count:** 7 BOUNDED, 14 PARTIAL, 7 GAP, 2 PENDING_PAGES. These are triage categories, not a weighted progress percentage. RO-13/22–27/30 require actual adoption artifacts or evidence before closure. PT-01…PT-10 and RW-01…RW-26 remain to be dispositioned under #118; this table alone does not pass RW-24.
+**Count:** 7 BOUNDED, 15 PARTIAL, 6 GAP, 2 PENDING_PAGES. These are triage categories, not a weighted progress percentage. RO-13/22–27/30 require adoption artifacts or further evidence before closure. PT-01…PT-10 and RW-01…RW-26 remain to be dispositioned under #118; this table alone does not pass RW-24.
 
 **Stale governance:** `.research/manifest.yaml` and `.research/ogcm-rf-profile.yaml` were last reviewed 2026-09-17 and still describe pre-Core G1/W2, absent canonical ontology/reasoner/SHACL and a framework ref `4f2615d`. They must be reconciled with the current P1-R2 candidate, CI, Wiki/Pages and pinned documentation profile without silently promoting semantic release or OGCM conformance. Portfolio lifecycle ownership remains separate from OGCM documentation conformance.
 
