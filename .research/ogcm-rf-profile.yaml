@@ -45,8 +45,8 @@ identity_and_release:
 traceability:
   concept_registry: "Governed conceptualization/ and ontology/ inventories; exact P1-R2 local formal denominator in ontology/formal-entity-inventory-v0.1.csv"
   relation_registry: "Governed conceptualization/ relation records and P1-R2 object-property inventory; exact candidate source under ontology/"
-  domain_or_module_registry: "docs/research/domain-profile-roadmap.md; canonical module/profile registry planned after reconciliation"
-  competency_questions: "Issue #7 now owns implementation-independent semantic requirements and conceptual CQs after G1 and before G2; executable CQ regression is separated into Issue #52"
+  domain_or_module_registry: "Governed conceptualization/ and ontology/ architecture artifacts; P1-R2 candidate module set in ontology/p1-r2-candidate-manifest.yaml"
+  competency_questions: "Governed conceptual CQs and exact-candidate executable regression; #52 retains evaluation interpretation and release-bound rerun obligations"
   evidence_provenance: "conceptualization/source-mining/source-register.csv plus source-specific coverage/concept artifacts, literature/ and datasets/"
   mappings: "closest-work/standards mappings in W1/W2; operational source mapping active; CM-PharmE bridge and dataset mappings before Paper-1 release"
   semantic_dependencies: "semantic-dependencies.yaml"
@@ -67,11 +67,18 @@ portfolio_integration:
 ci_execution_governance:
   generic_policy: "ArazSaieArasi3/araz-research-portfolio/governance/ci-execution-governance.md"
   semantic_profile: "ArazSaieArasi3/OGCM-RF/framework/semantic-ci-execution-profile.md"
-  adoption_status: staged
-  automatic_workflows: []
+  adoption_status: partial
+  automatic_workflows:
+    - .github/workflows/semantic-ci.yml
+    - .github/workflows/semrisk-relational-ci.yml
+    - .github/workflows/paper1-formal-reference-qa.yml
+    - .github/workflows/paper1-asserted-closure-reference.yml
+    - .github/workflows/paper1-wiki-source-manifest.yml
+    - .github/workflows/paper1-wiki-formal-parity.yml
+    - .github/workflows/paper1-pages-offline-reference.yml
   authoritative_gates: []
   semantic_source_paths: []
-  expensive_gate_policy: "Do not add heavy semantic CI before canonical ontology/constraints/validators exist; when they do, use one change-aware development path and SHA-bound authoritative release/publication gates"
+  expensive_gate_policy: "Use change-aware cheap CI for semantic/doc drift and exact-ref heavier semantic/release gates; passing candidate CI does not discharge #54/#55 assurance"
   evidence_binding: "SHA-bound"
   deviations: []
 
