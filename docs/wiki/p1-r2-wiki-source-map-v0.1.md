@@ -13,7 +13,7 @@
 | Pharma-Case | DS-003 constructed context and synthetic fixtures | [transformation specification](../../case/pharma/pharma-case-transformation-spec-v1.1.md); [manuscript case section](../../publications/2026-icae/manuscript-working-draft-v0.3.md) | Do not publish protected rows; distinguish source from synthetic execution. |
 | Reproduce-and-Release | Build, version, access and citation | [semantic build](../reproducibility/semantic-build.md); [release train](../governance/paper1-release-train.md) | Final public release URL and exact citation wait for #55/#56. |
 
-All eleven distinct repository links above were fetched on 2026-09-26; this verifies source-path existence, **not** Wiki publication or rendered link behavior. Relative links are valid in this repository document; published Wiki pages must use version-specific canonical repository URLs because Wiki relative paths resolve differently.
+The linked repository paths were inspected or created on 2026-09-26; this verifies source-path existence, **not** Wiki publication or rendered link behavior. Relative links are valid in this repository document; published Wiki pages must use version-specific canonical repository URLs because Wiki relative paths resolve differently.
 
 ## Proposed Home page copy
 
