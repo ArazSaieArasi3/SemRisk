@@ -1,0 +1,116 @@
+documentation_surface_schema_version: "1.0"
+
+repository:
+  name: ArazSaieArasi3/SemRisk
+  research_id: R-022
+  documentation_profile_ref: "ArazSaieArasi3/OGCM-RF@4822b1a1b7978e94e66bd6a283024bac78b6a0b8"
+
+semantic_source:
+  roots: [ontology/, conceptualization/]
+  conceptual_model: [docs/ontology/diagrams/p1-r2-local-ontology-atlas-v0.1.svg]
+  ontology_sources:
+    - ontology/p1-r2-candidate-manifest.yaml
+    - ontology/core/semrisk-core-v0.1.0-rc.1.ttl
+    - ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl
+    - ontology/method/semrisk-method-v0.1.0-rc.1.ttl
+    - ontology/governance/semrisk-governance-v0.1.0-rc.1.ttl
+    - ontology/pharma/semrisk-pharma-v0.1.0-rc.1.ttl
+    - ontology/mappings/semrisk-mappings-v0.1.0-rc.1.ttl
+  constraint_sources: [shapes/semrisk-paper1-shapes-v0.1.0-rc.1.ttl]
+  registries: [ontology/formal-entity-inventory-v0.1.csv]
+  evidence_sources: [evaluation/]
+  evaluation_sources: [evaluation/vveaa/paper1-vveaa-execution-profile-v0.1.md]
+  decision_records: [docs/governance/paper1-release-train.md]
+  lineage_records: []
+  release_manifests: []
+
+wiki:
+  curated_source_root: docs/wiki/pages/
+  published_url: "https://github.com/ArazSaieArasi3/SemRisk/wiki"
+  primary_roles:
+    - research_narrative
+    - ontology_explanation
+    - formalization_explanation
+    - evaluation_interpretation
+    - publication_and_citation
+  required_backlinks_to_pages: true
+  required_source_links: true
+
+pages:
+  enabled: false
+  provider: github-pages
+  published_root: ""
+  current_path: ""
+  versioned_root: ontology/
+  generated_outputs:
+    - id: p1-r2-formal-reference
+      adapter: semrisk-offline-reference-builder
+      source_ref: dfdd7ca68c7fae460f5764afc8d9965aa00c20ae
+      ontology_input: ontology/p1-r2-candidate-manifest.yaml
+      output_path: site/ontology/0.1.0-rc.1/
+      status: candidate
+      features:
+        webvowl: false
+        asserted_reference: true
+
+allocation:
+  - artifact_family: ontology_and_constraints
+    canonical_owner: semantic_source
+    wiki_role: selected_explanation_and_links
+    pages_role: generated_reference_and_downloads
+    duplication_policy: projection_only
+  - artifact_family: evidence_and_evaluation
+    canonical_owner: evidential_source
+    wiki_role: bounded_interpretation_and_limits
+    pages_role: link_only
+    duplication_policy: summary_only
+  - artifact_family: curated_research_narrative
+    canonical_owner: curated_documentation
+    wiki_role: primary
+    pages_role: short_context_and_backlink
+    duplication_policy: link_only
+  - artifact_family: interactive_ontology_explorer
+    canonical_owner: semantic_source
+    wiki_role: explanation_and_link
+    pages_role: future_webvowl_under_issue_119
+    duplication_policy: projection_only
+
+cross_links:
+  wiki_to_pages: []
+  pages_to_wiki: []
+  pages_to_source: []
+  wiki_to_source:
+    - docs/wiki/p1-r2-wiki-publish-manifest-v0.1.json
+
+versioning:
+  current_is_mutable_alias: true
+  stable_version_paths_immutable: true
+  release_bound_requires_exact_source_ref: true
+  historical_overwrite_prohibited: true
+
+publication:
+  build_trigger_policy: semantic_or_release_relevant
+  rendered_verification_required: true
+  deployment_evidence_path: ""
+  content_negotiation:
+    required: false
+    provided_by_pages: false
+    external_infrastructure: null
+
+verification:
+  allocation_complete: false
+  no_competing_semantic_authority: true
+  generated_outputs_bound_to_exact_ref: true
+  wiki_pages_source_links_checked: true
+  pages_backlinks_checked: false
+  version_paths_checked: true
+  rendered_pages_checked: false
+  sensitive_content_reviewed: false
+
+summary:
+  result: FAIL
+  blockers:
+    - Pages not deployed or rendered; public access decision pending #55/#56.
+    - Cross-surface backlinks, WebVOWL and full privacy/licensing review pending #117/#119.
+    - Profile adoption and remaining RO/PT/RW dispositions pending #118.
+  notes: "Private Wiki 8/8 live source hashes match; Pages is offline candidate. This manifest is staged, not conformance or release approval."
