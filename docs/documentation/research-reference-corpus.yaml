@@ -1,0 +1,126 @@
+reference_corpus_schema_version: "1.0"
+corpus:
+  id: SemRisk-P1-R2-reference-candidate
+  repository: ArazSaieArasi3/SemRisk
+  research_id: SemRisk-Paper-1
+  portfolio_resource_registry_ref: ""
+  status: candidate
+  last_verified_at: null
+
+# Stable identities for a bounded seed, transcribed from the existing literature
+# baselines. A DOI recorded there is not a fresh DOI-resolution or metadata check.
+references:
+  - ref_id: REF-0001
+    source_class: conference_paper
+    title: The Common Ontology of Value and Risk
+    doi: 10.1007/978-3-030-00847-5_11
+    canonical_url: https://doi.org/10.1007/978-3-030-00847-5_11
+    evidence_roles: [closest_work, foundational_alignment]
+    research_uses: [{target_type: comparator, target: COVER, role: prior_art}]
+    manuscript_memberships: []
+    source_status: active_unverified
+    link_health: {status: not_checked, checked_at: null, resolved_url: null}
+    metadata_status: partial
+    notes: "DOI/title from literature/closest-ontology-technical-baseline.md; final publisher metadata and DOI resolution pending. Artifact version is separately bound in literature/ontology-artifact-binding-registry.csv."
+  - ref_id: REF-0002
+    source_class: conference_paper
+    title: An Ontology of Security from a Risk Treatment Perspective
+    doi: 10.1007/978-3-031-17995-2_26
+    canonical_url: https://doi.org/10.1007/978-3-031-17995-2_26
+    evidence_roles: [closest_work, treatment_alignment]
+    research_uses: [{target_type: comparator, target: ROSE, role: prior_art}]
+    manuscript_memberships: []
+    source_status: active_unverified
+    link_health: {status: not_checked, checked_at: null, resolved_url: null}
+    metadata_status: partial
+    notes: "DOI/title from literature baseline; corrected artifact commit recorded in binding registry; paper and living model may differ."
+  - ref_id: REF-0003
+    source_class: peer_reviewed_article
+    title: Supporting Risk Management for Medical Devices via the RISKMAN Ontology and Shapes
+    doi: 10.3233/ssw250023
+    canonical_url: https://doi.org/10.3233/ssw250023
+    evidence_roles: [closest_work, health_method_comparator]
+    research_uses: [{target_type: comparator, target: RISKMAN, role: prior_art}]
+    manuscript_memberships: []
+    source_status: active_unverified
+    link_health: {status: not_checked, checked_at: null, resolved_url: null}
+    metadata_status: partial
+    notes: "Peer-reviewed DOI in literature baseline; preprint DOI is a different version and is not collapsed into this identity."
+  - ref_id: REF-0004
+    source_class: standard_specification
+    title: "ISO 31000:2018 Risk management — Guidelines"
+    standard_number: ISO 31000:2018
+    canonical_url: https://www.iso.org/standard/65694.html
+    evidence_roles: [terminology_and_framework_alignment]
+    research_uses: [{target_type: manuscript_section, target: II/III, role: standard_alignment}]
+    manuscript_memberships: []
+    source_status: active_unverified
+    link_health: {status: not_checked, checked_at: null, resolved_url: null}
+    metadata_status: partial
+    notes: "Edition and official locator from literature/standards-frameworks-baseline.md; exact clause and current status need release check. No conformance implication."
+  - ref_id: REF-0005
+    source_class: standard_specification
+    title: "ISO 31073:2022 Risk management — Vocabulary"
+    standard_number: ISO 31073:2022
+    canonical_url: https://www.iso.org/standard/79637.html
+    evidence_roles: [terminology_alignment]
+    research_uses: [{target_type: manuscript_section, target: II/III, role: vocabulary}]
+    manuscript_memberships: []
+    source_status: active_unverified
+    link_health: {status: not_checked, checked_at: null, resolved_url: null}
+    metadata_status: partial
+    notes: "Edition and official locator from standards baseline; clause-level support and current link status pending."
+  - ref_id: REF-0006
+    source_class: standard_specification
+    title: "IEC 31010:2019 Risk management — Risk assessment techniques"
+    standard_number: IEC 31010:2019
+    canonical_url: https://webstore.iec.ch/en/publication/59809
+    evidence_roles: [assessment_method_alignment]
+    research_uses: [{target_type: manuscript_section, target: II/III, role: assessment_methods}]
+    manuscript_memberships: []
+    source_status: active_unverified
+    link_health: {status: not_checked, checked_at: null, resolved_url: null}
+    metadata_status: partial
+    notes: "Edition and official locator from standards baseline; method-specific patterns must not be universalized."
+  - ref_id: REF-0007
+    source_class: authoritative_institutional_regulatory
+    title: "ICH Q9(R1) Quality Risk Management"
+    canonical_url: https://www.ema.europa.eu/en/ich-q9-quality-risk-management-scientific-guideline
+    evidence_roles: [pharma_standard_alignment]
+    research_uses: [{target_type: manuscript_section, target: V, role: domain_alignment}]
+    manuscript_memberships: []
+    source_status: active_unverified
+    link_health: {status: not_checked, checked_at: null, resolved_url: null}
+    metadata_status: partial
+    notes: "Official EMA locus and revision from standards baseline; exact correction/version and sections pending."
+
+page_reference_usage: []
+manuscript_reference_maps: []
+rendering:
+  stable_authoring_token_pattern: "[@REF-####]"
+  page_numbering: first_occurrence
+  style: IEEE
+  global_manual_numbering_prohibited: true
+  missing_metadata_policy: render_verified_fields_and_flag_gap
+link_governance:
+  verify_volatile_before_release: true
+  preserve_historical_urls: true
+  replacement_requires_same_resource_identity: true
+  broken_link_register: literature/unresolved-source-queue.csv
+verification:
+  unique_ref_ids: true
+  duplicate_persistent_ids_checked: true
+  manuscript_cited_refs_present: false
+  page_tokens_resolve: false
+  required_metadata_checked: false
+  link_health_checked: false
+  volatile_access_dates_checked: false
+  ieee_rendering_checked: false
+  no_internal_links_mislabeled_as_scholarly: true
+summary:
+  result: INCOMPLETE
+  blockers:
+    - "#53: manuscript v0.3 has no numbered in-text citations or final bibliography."
+    - "#118: remaining source families, exact metadata/DOI and link checks, page tokens and IEEE render QA are pending."
+    - "#55/#56: publication and public-surface release checks remain pending."
+  notes: "Seven bounded seed references, not a complete research corpus or a verified bibliography. IDs stay stable across page-local numbering; manuscript memberships are intentionally empty until citation placement is reviewed."
