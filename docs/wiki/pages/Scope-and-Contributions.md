@@ -6,4 +6,4 @@ Paper 1 studies selected semantic distinctions, operational mapping, and bounded
 
 [Preliminary nine-claim calibration](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/publications/2026-icae/claim-calibration-preliminary-v0.1.csv) · [Claim-to-method/evidence matrix](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/evaluation/vveaa/paper1-vveaa-claim-method-evidence-v0.1.csv) · [Author-review manuscript v0.3](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/publications/2026-icae/manuscript-working-draft-v0.3.md)
 
-Final abstract, comparison, limitations and submission wording await #13/#14/#31/#51/#53/#54/#55/#56. Return to [Home](Home.md).
+Final abstract, comparison, limitations and submission wording await #13/#14/#31/#51/#53/#54/#55/#56. Return to [Home](https://github.com/ArazSaieArasi3/SemRisk/wiki).

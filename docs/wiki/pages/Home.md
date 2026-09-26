@@ -6,10 +6,10 @@ SemRisk organizes operational risk knowledge through a Core ontology and bounded
 
 ## Read in order
 
-1. [Scope and contributions](Scope-and-Contributions.md)
-2. [Semantic architecture](Semantic-Architecture.md) and [formal reference](Formal-Reference.md)
-3. [Evidence and VVEAA](Evidence-and-VVEAA.md)
-4. [Relational projection](Relational-Projection.md) and [Pharma case](Pharma-Case.md)
-5. [Reproduction and release](Reproduce-and-Release.md)
+1. [Scope and contributions](https://github.com/ArazSaieArasi3/SemRisk/wiki/Scope-and-Contributions)
+2. [Semantic architecture](https://github.com/ArazSaieArasi3/SemRisk/wiki/Semantic-Architecture) and [formal reference](https://github.com/ArazSaieArasi3/SemRisk/wiki/Formal-Reference)
+3. [Evidence and VVEAA](https://github.com/ArazSaieArasi3/SemRisk/wiki/Evidence-and-VVEAA)
+4. [Relational projection](https://github.com/ArazSaieArasi3/SemRisk/wiki/Relational-Projection) and [Pharma case](https://github.com/ArazSaieArasi3/SemRisk/wiki/Pharma-Case)
+5. [Reproduction and release](https://github.com/ArazSaieArasi3/SemRisk/wiki/Reproduce-and-Release)
 
 [Project README](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/README.md) · [Release train](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/docs/governance/paper1-release-train.md) · [Current assurance intake](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/evaluation/assurance/paper1-assurance-evidence-intake-v0.1.md)

@@ -1,7 +1,7 @@
-"""Freeze the eight source-controlled Wiki drafts for a bounded live sync.
+"""Check the eight source-controlled Wiki pages and publication link contract.
 
-This checks source files only. Live Wiki revision/rendering must be checked after
-publishing in a signed-in session.
+This checks source files only. Live Wiki revisions, rendering and access need a
+separate signed-in read-back at each publication baseline.
 """
 import argparse
 import hashlib
@@ -12,7 +12,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = ROOT / "docs/wiki/pages"
 MANIFEST = ROOT / "docs/wiki/p1-r2-wiki-publish-manifest-v0.1.json"
-SOURCE_REF = "c5f947eae0d801428e9ac3cb43382ef02bfd1326"
+PREPUBLICATION_REF = "c5f947eae0d801428e9ac3cb43382ef02bfd1326"
+WIKI_ROOT = "https://github.com/ArazSaieArasi3/SemRisk/wiki"
 NAMES = ("Home", "Scope-and-Contributions", "Semantic-Architecture",
          "Formal-Reference", "Evidence-and-VVEAA", "Relational-Projection",
          "Pharma-Case", "Reproduce-and-Release")
@@ -33,15 +34,19 @@ def build():
             raise ValueError("Protected-data marker: " + name)
         local_links = [target for target in re.findall(r"\]\(([^)#]+\.md)\)", content)
                        if not target.startswith(("https://", "http://"))]
-        for target in local_links:
-            if "/" in target or not (PAGES / target).is_file():
-                raise ValueError("Wiki navigation target missing: " + name + " -> " + target)
+        if local_links:
+            raise ValueError("Unpublished relative Wiki navigation: " + name + " -> " + str(local_links))
+        wiki_links = sorted(set(re.findall(r"\]\((https://github\.com/ArazSaieArasi3/SemRisk/wiki(?:/[^)#]+)?)\)", content)))
+        expected = [WIKI_ROOT + "/" + target for target in NAMES[1:]] if name == "Home" else [WIKI_ROOT]
+        if wiki_links != sorted(expected):
+            raise ValueError("Published Wiki navigation drift: " + name + " -> " + str(wiki_links))
         entries.append({"page": name, "source_path": path.relative_to(ROOT).as_posix(),
-                        "sha256": hashlib.sha256(data).hexdigest(), "navigation_targets": sorted(set(local_links))})
+                        "sha256": hashlib.sha256(data).hexdigest(), "navigation_targets": wiki_links})
     if len(set(x["sha256"] for x in entries)) != 8:
         raise ValueError("Duplicate Wiki page bodies")
-    return {"candidate": "P1-R2/0.1.0-rc.1", "state": "SOURCE_READY_LIVE_WIKI_UNVERIFIED",
-            "source_commit": SOURCE_REF, "pages": entries,
+    return {"candidate": "P1-R2/0.1.0-rc.1", "state": "PRIVATE_WIKI_PUBLISHED_PENDING_FULL_DRIFT_AUDIT",
+            "prepublication_source_commit": PREPUBLICATION_REF, "wiki_root": WIKI_ROOT,
+            "pages": entries,
             "publication_rule": "Preserve existing live pages/revisions; verify content, navigation, access and rollback after sync. No scholarly release claim."}
 
 
@@ -54,7 +59,7 @@ def main():
         MANIFEST.write_text(expected)
     elif not MANIFEST.is_file() or MANIFEST.read_text() != expected:
         raise SystemExit("WIKI_SOURCE_MANIFEST_DRIFT")
-    print("SEM_RISK_WIKI_SOURCE_SYNC_READY | 8 pages; exact content hashes; live state pending")
+    print("SEM_RISK_WIKI_SOURCE_LINKS_PASS | 8 pages; exact source hashes; live drift audit separate")
 
 
 if __name__ == "__main__":

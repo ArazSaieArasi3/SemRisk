@@ -6,4 +6,4 @@ The DS-003-based constructed antibiotic-shortage case encodes selected source-gr
 
 [Transformation specification](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/case/pharma/pharma-case-transformation-spec-v1.1.md) · [Coverage/nonclaim matrix](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/case/pharma/pharma-case-coverage-nonclaim-matrix-v1.0.csv) · [DS-004 activation conditions](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/datasets/ds004-activation-gate-v1.0.csv) · [DS-002 evidence role](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/evaluation/e11/ds002-cross-domain-pharma-stress-contract-v1.0.md)
 
-Return to [Home](Home.md).
+Return to [Home](https://github.com/ArazSaieArasi3/SemRisk/wiki).

@@ -6,4 +6,4 @@ The PostgreSQL relational twin projects selected ontology semantics for applicat
 
 [Relational twin manifest](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/docs/governance/relational-twin-v0.1.0-rc.1-manifest.md) · [SQL build order](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/relational/sql/README.md) · [Eight-task parity results](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/evaluation/parity/p49-parity-results-v1.0.csv) · [CQ coverage and limits](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/evaluation/data/r6-parity-cq-coverage-v1.0.csv)
 
-Return to [Home](Home.md).
+Return to [Home](https://github.com/ArazSaieArasi3/SemRisk/wiki).

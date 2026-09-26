@@ -10,4 +10,4 @@ For the **full local declaration set**, use the [zoomable 76-ID ontology atlas](
 
 [FD-B/C architecture and class interpretation](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/docs/ontology/formal-ontology-description-p1-r2-v0.2.md) · [Selected vector figure](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/publications/2026-icae/paper1-core-distinction-figure-v0.1.svg) · [Candidate manifest](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/ontology/p1-r2-candidate-manifest.yaml)
 
-Return to [Home](Home.md).
+Return to [Home](https://github.com/ArazSaieArasi3/SemRisk/wiki).

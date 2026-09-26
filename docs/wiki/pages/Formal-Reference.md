@@ -10,4 +10,4 @@ The six local modules declare 35 OWL classes, 37 object properties and four SKOS
 
 [Generated asserted reference and its scope](https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/docs/ontology/generated/p1-r2-generated-reference.md) · [Complete asserted N-Triples graph](https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/docs/ontology/generated/p1-r2-asserted-closure.nt) · [Source and graph manifest](https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/docs/ontology/generated/p1-r2-closure-manifest.json)
 
-Return to [Home](Home.md).
+Return to [Home](https://github.com/ArazSaieArasi3/SemRisk/wiki).

@@ -6,4 +6,4 @@ The evidence profile separates verification, validation, evaluation, assessment 
 
 [VVEAA execution profile](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/evaluation/vveaa/paper1-vveaa-execution-profile-v0.1.md) · [Nine-claim matrix](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/evaluation/vveaa/paper1-vveaa-claim-method-evidence-v0.1.csv) · [Bounded results table](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/publications/2026-icae/paper1-vveaa-results-table-v0.1.md) · [Assurance intake (NOT_ASSESSED)](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/evaluation/assurance/paper1-assurance-evidence-intake-v0.1.md)
 
-Return to [Home](Home.md).
+Return to [Home](https://github.com/ArazSaieArasi3/SemRisk/wiki).

@@ -6,4 +6,4 @@ The deterministic semantic and relational pipelines record versioned inputs and 
 
 [Semantic build instructions](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/docs/reproducibility/semantic-build.md) · [Release train](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/docs/governance/paper1-release-train.md) · [Evidence audit](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/evaluation/integrity/candidate-evidence-audit-2026-09-26.md) · [Current gate intake](https://github.com/ArazSaieArasi3/SemRisk/blob/b9217100a4342fc61f0fedb19513126028f55370/evaluation/assurance/paper1-assurance-evidence-intake-v0.1.md)
 
-**Citation:** final version/DOI/availability statement pending #55/#56. Return to [Home](Home.md).
+**Citation:** final version/DOI/availability statement pending #55/#56. Return to [Home](https://github.com/ArazSaieArasi3/SemRisk/wiki).

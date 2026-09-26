@@ -1,76 +1,77 @@
 {
   "candidate": "P1-R2/0.1.0-rc.1",
-  "state": "SOURCE_READY_LIVE_WIKI_UNVERIFIED",
-  "source_commit": "c5f947eae0d801428e9ac3cb43382ef02bfd1326",
+  "state": "PRIVATE_WIKI_PUBLISHED_PENDING_FULL_DRIFT_AUDIT",
+  "prepublication_source_commit": "c5f947eae0d801428e9ac3cb43382ef02bfd1326",
+  "wiki_root": "https://github.com/ArazSaieArasi3/SemRisk/wiki",
   "pages": [
     {
       "page": "Home",
       "source_path": "docs/wiki/pages/Home.md",
-      "sha256": "49c1ea997fbc0af87de9ded688d9bea10535e305a4582682897ff8b265368d4b",
+      "sha256": "db3dde4b4f96d9e40f50d7542d920622e9ad154624f5776ef4c9cc0e9e6f5bfa",
       "navigation_targets": [
-        "Evidence-and-VVEAA.md",
-        "Formal-Reference.md",
-        "Pharma-Case.md",
-        "Relational-Projection.md",
-        "Reproduce-and-Release.md",
-        "Scope-and-Contributions.md",
-        "Semantic-Architecture.md"
+        "https://github.com/ArazSaieArasi3/SemRisk/wiki/Evidence-and-VVEAA",
+        "https://github.com/ArazSaieArasi3/SemRisk/wiki/Formal-Reference",
+        "https://github.com/ArazSaieArasi3/SemRisk/wiki/Pharma-Case",
+        "https://github.com/ArazSaieArasi3/SemRisk/wiki/Relational-Projection",
+        "https://github.com/ArazSaieArasi3/SemRisk/wiki/Reproduce-and-Release",
+        "https://github.com/ArazSaieArasi3/SemRisk/wiki/Scope-and-Contributions",
+        "https://github.com/ArazSaieArasi3/SemRisk/wiki/Semantic-Architecture"
       ]
     },
     {
       "page": "Scope-and-Contributions",
       "source_path": "docs/wiki/pages/Scope-and-Contributions.md",
-      "sha256": "21ed579c88c99dbc4aa6f04e278f44f999ec7ee6360b939507fecbe797c75be9",
+      "sha256": "1eb9f802b82ab55a1bb555c2edd2b854e7a6cf3af848918595e2b5621e24fd6b",
       "navigation_targets": [
-        "Home.md"
+        "https://github.com/ArazSaieArasi3/SemRisk/wiki"
       ]
     },
     {
       "page": "Semantic-Architecture",
       "source_path": "docs/wiki/pages/Semantic-Architecture.md",
-      "sha256": "9f7e0d8da6019dc1d281c143a5546a4ca75219c8fcd5e5ae801c4aa4cff272e4",
+      "sha256": "91fc4063e66fed0b6471e1db44b33423b59264a7ce9c40192d7e8309f68726b7",
       "navigation_targets": [
-        "Home.md"
+        "https://github.com/ArazSaieArasi3/SemRisk/wiki"
       ]
     },
     {
       "page": "Formal-Reference",
       "source_path": "docs/wiki/pages/Formal-Reference.md",
-      "sha256": "c31af58df85b801680ceb93593241997fa109c7328fd7cf160d03ffde4baab59",
+      "sha256": "b29afd5a34783146859ba8b560a527078d4b712eeb8b03dcfd89815d267d3121",
       "navigation_targets": [
-        "Home.md"
+        "https://github.com/ArazSaieArasi3/SemRisk/wiki"
       ]
     },
     {
       "page": "Evidence-and-VVEAA",
       "source_path": "docs/wiki/pages/Evidence-and-VVEAA.md",
-      "sha256": "62e8ffcd8d068cdb052b248c3ba0df51ad5c15d7b6cd725d64bf4a9c5308c0d5",
+      "sha256": "8b9c968ad7f2edafb81c738356938d0f691ed9405fa47b716d5f78697c99311e",
       "navigation_targets": [
-        "Home.md"
+        "https://github.com/ArazSaieArasi3/SemRisk/wiki"
       ]
     },
     {
       "page": "Relational-Projection",
       "source_path": "docs/wiki/pages/Relational-Projection.md",
-      "sha256": "8f260a60e5809fbc3f0b5dcf325a751cfb404c70983ec9cbfe8040122b03c137",
+      "sha256": "492ff0a53b211b7eb2e1be71e3e29d3b71586b02318c7b38694820ec03918feb",
       "navigation_targets": [
-        "Home.md"
+        "https://github.com/ArazSaieArasi3/SemRisk/wiki"
       ]
     },
     {
       "page": "Pharma-Case",
       "source_path": "docs/wiki/pages/Pharma-Case.md",
-      "sha256": "c240ae1640e4c54940f9d4fc4816bd02a5e030cb92648547d95c0bdc9caee02f",
+      "sha256": "55b9fa2f2dc4c52bb35cbf72e6aeed4d377f440135ba0502779603c28c0c359a",
       "navigation_targets": [
-        "Home.md"
+        "https://github.com/ArazSaieArasi3/SemRisk/wiki"
       ]
     },
     {
       "page": "Reproduce-and-Release",
       "source_path": "docs/wiki/pages/Reproduce-and-Release.md",
-      "sha256": "c3827d22ef18f253b47d0b80a7173175802088205195ca347ead1db82c476254",
+      "sha256": "16417efefff77860216c6638a1b3e984c1e4d3493d16d9aaeac8ba301132ac09",
       "navigation_targets": [
-        "Home.md"
+        "https://github.com/ArazSaieArasi3/SemRisk/wiki"
       ]
     }
   ],
