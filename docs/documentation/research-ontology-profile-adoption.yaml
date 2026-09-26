@@ -182,18 +182,18 @@ capabilities:
     title: "Multi-profile declaration"
     applicability: Conditional
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md, docs/documentation/p1-r2-documentation-rollout-2026-09-26.md]
+    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md, docs/documentation/p1-r2-documentation-rollout-2026-09-26.md, docs/documentation/profile-composition.yaml]
     deviations: []
     blockers: ["#118"]
-    notes: "Research/Ontology primary; Data/Engineering scoped to relational twin in rollout record. Formal profile-composition manifest still pending."
+    notes: "Schema-checked composition manifest declares Research/Ontology primary and Data/Engineering secondary for relational twin; full review pending."
   - id: RO-23
     title: "Audience journeys"
     applicability: Recommended
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md, docs/documentation/p1-r2-documentation-rollout-2026-09-26.md]
+    evidence_paths: [docs/documentation/profile-composition.yaml, docs/wiki/pages/Home.md, docs/wiki/p1-r2-live-wiki-readback-2026-09-26.md]
     deviations: []
     blockers: ["#118"]
-    notes: "Academic and engineering reader routes mapped; Wiki Home revision and live route read-back pending."
+    notes: "Academic and engineering routes now live in private Wiki Home; source-matched revision 9827a52. Usability assessment pending."
   - id: RO-24
     title: "Surface allocation manifest"
     applicability: Mandatory
