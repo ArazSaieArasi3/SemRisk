@@ -7,11 +7,11 @@ implementation:
 
 framework:
   name: OGCM-RF
-  framework_ref: "commit:4f2615dd76c302e080e69058f6237c0f82d56c4c"
+  framework_ref: "commit:4822b1a1b7978e94e66bd6a283024bac78b6a0b8"
   conformance_level: not_assessed
 
 semantic_scope:
-  semantic_source_of_truth: "Governed SemRisk concept/relation/module registries plus canonical ontology source after G1/G2; W0/W1 source-mining artifacts remain evidence rather than canonical semantics"
+  semantic_source_of_truth: "Governed conceptual/core/relation/module registries and P1-R2 canonical ontology modules under ontology/; W0/W1 source-mining artifacts remain evidence rather than canonical semantics"
   core_boundary: "Domain-general risk semantics reusable across organizational and domain-specific contexts; Enterprise and Architecture are first application profiles; Health is the first broad domain priority; Pharma is the first bounded specialization linked to CM-PharmE"
   external_owner_policy: "Externally owned semantics remain externally canonical and are consumed through explicit versioned imports, references, alignments or bridges recorded in semantic-dependencies.yaml and mapping artifacts"
   extensions:
@@ -33,18 +33,18 @@ modeling:
   conceptual_modeling_language: [OntoUML]
   ontology_languages: [OWL, RDF, Turtle]
   constraint_languages: [SHACL]
-  canonical_serialization: "Not yet declared; formalization remains blocked until G1 source completeness, W2 reconciliation, G2 architecture freeze and foundational analysis"
+  canonical_serialization: "Six P1-R2 candidate Turtle modules under ontology/, with local catalog-resolved gUFO import; publication-bound serialization remains pending #55"
 
 identity_and_release:
-  ontology_iri: ""
+  ontology_iri: "See ontology/p1-r2-candidate-manifest.yaml and module headers; no persistent scholarly release IRI claimed"
   persistent_iri_status: "not yet declared"
-  current_semantic_release: "none"
-  development_state: "W2 conceptualization active after G1 CONDITIONAL_PASS; UL, CQs, Core, relations, reuse/alignment, standards comparison and Paper-1 method profile frozen; foundational analysis and G2 remain pending"
+  current_semantic_release: "none; P1-R2 0.1.0-rc.1 is a candidate, not a release"
+  development_state: "G1/G2 closed with recorded conditions; P1-R2 formal/evaluation candidate built; #54 assurance and #55 publication binding pending"
   release_manifest: "none"
 
 traceability:
-  concept_registry: "planned after G1 Source Completeness; source-specific candidate registries currently under conceptualization/source-mining/"
-  relation_registry: "planned after G1; source-specific relation/event/state evidence currently being extracted"
+  concept_registry: "Governed conceptualization/ and ontology/ inventories; exact P1-R2 local formal denominator in ontology/formal-entity-inventory-v0.1.csv"
+  relation_registry: "Governed conceptualization/ relation records and P1-R2 object-property inventory; exact candidate source under ontology/"
   domain_or_module_registry: "docs/research/domain-profile-roadmap.md; canonical module/profile registry planned after reconciliation"
   competency_questions: "Issue #7 now owns implementation-independent semantic requirements and conceptual CQs after G1 and before G2; executable CQ regression is separated into Issue #52"
   evidence_provenance: "conceptualization/source-mining/source-register.csv plus source-specific coverage/concept artifacts, literature/ and datasets/"
@@ -53,9 +53,9 @@ traceability:
 
 validation_and_evaluation:
   selected_layers: [E1, E2, E3, E4, E5, E6, E7, E8, E9, E10, E11]
-  reasoning: "HermiT/ROBOT or justified alternatives planned after OWL formalization; no early consistency claim"
-  shacl_or_constraints: "planned after conceptual and OWA-vs-constraint separation"
-  cq_regression: "conceptual CQs are defined before implementation; executable regression is planned under Issue #52 against exact release/data refs"
+  reasoning: "Deterministic P1-R2 semantic build and regression evidence under #44; reasoner claims are limited to executed exact-ref checks, not domain validation or final assurance"
+  shacl_or_constraints: "shapes/semrisk-paper1-shapes-v0.1.0-rc.1.ttl; SHACL is separate from OWL entailment and database constraints"
+  cq_regression: "40 governed CQs with 26 executable, seven partial, six conceptual and one deferred in the P1-R2 formal source QA; #52 and #54 govern claim-level interpretation"
   comparative_or_expert: "E10 closest-work/method comparison required for Paper 1; bounded expert semantic validation has a dedicated protocol under Issue #51"
   reproducibility: "source coverage, SHA-bound operational input, dataset/PID/version records, mappings, queries, tool versions, negative controls and publication binding are required by the current backlog"
 
@@ -86,5 +86,5 @@ adoption:
     - "Risk Intelligence Platform"
     - "knowledge graph and Newsium/Commentium runtime integration"
     - "Ontology Quality Framework adoption/pilot until the external OQF Research has a governed identity and stable candidate contract"
-  last_reviewed: "2026-09-17"
-  notes: "SemRisk adopts OGCM-RF Exhaustive Source Mining as a hard pre-formalization gate and E1-E11 claim-dependent evaluation. W2 #23 freezes the Paper-1 method profile: OGCM-RF orchestration; evidence-grounded UL/CQs; conditional UFO/gUFO+OntoUML analysis; modular OWL/RDF; SHACL for closed-world/local constraints; explicit rule/business-logic separation; PostgreSQL as projection rather than semantic source; SQL↔SPARQL parity/loss analysis; exact release binding. Theorem proving/model checking/probabilistic propagation are deferred beyond Paper 1. Formal OGCM-RF conformance remains not_assessed."
+  last_reviewed: "2026-09-26"
+  notes: "SemRisk retains the claim-dependent E1-E11 method and Paper-1 bounded candidate. Research/Ontology documentation adoption is partial at OGCM-RF-DOC-RO 0.1, ref 4822b1a1b7978e94e66bd6a283024bac78b6a0b8; see docs/documentation/research-ontology-profile-adoption.yaml, documentation-surfaces.yaml and p1-r2-documentation-rollout-2026-09-26.md. Wiki is private and live; Pages is offline only. Theorem proving, model checking and probabilistic propagation remain deferred. No full OGCM conformance or scholarly release is claimed."
