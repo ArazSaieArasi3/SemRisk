@@ -1,0 +1,121 @@
+name: Paper1 WebVOWL Offline Candidate
+
+on:
+  push:
+    branches:
+      - work/119-webvowl-offline-candidate
+    paths:
+      - ".github/workflows/paper1-webvowl-offline.yml"
+      - "tools/build_p1_r2_webvowl_inputs.py"
+      - "tools/qa_p1_r2_webvowl_json.py"
+      - "docs/ontology/generated/p1-r2-asserted-closure.nt"
+      - "docs/ontology/generated/p1-r2-closure-manifest.json"
+      - "docs/ontology/p1-r2-formal-source-entity-reference-v0.1.csv"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Checkout SemRisk
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install pinned RDF parser
+        run: python -m pip install --disable-pip-version-check "rdflib==7.6.0"
+
+      - name: Build source-bound visualization inputs
+        run: python tools/build_p1_r2_webvowl_inputs.py
+
+      - name: Pin OWL2VOWL source
+        shell: bash
+        run: |
+          set -euo pipefail
+          git clone https://github.com/VisualDataWeb/OWL2VOWL.git /tmp/owl2vowl
+          git -C /tmp/owl2vowl checkout c6331c4c79b0034b8537a11cccd1a6587cedb0b9
+          test "$(git -C /tmp/owl2vowl rev-parse HEAD)" = "c6331c4c79b0034b8537a11cccd1a6587cedb0b9"
+          grep -q "The MIT License" /tmp/owl2vowl/LICENSE.txt
+
+      - name: Build pinned OWL2VOWL converter
+        run: docker build -t semrisk-owl2vowl:c6331c4 /tmp/owl2vowl
+
+      - name: Start local converter
+        shell: bash
+        run: |
+          set -euo pipefail
+          docker run -d --rm --name semrisk-owl2vowl -p 18080:8080 semrisk-owl2vowl:c6331c4
+          for i in $(seq 1 50); do
+            if curl -sf http://127.0.0.1:18080/serverTimeStamp >/dev/null; then
+              exit 0
+            fi
+            sleep 3
+          done
+          docker logs semrisk-owl2vowl
+          exit 1
+
+      - name: Convert local and import scopes without third-party upload
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p build/webvowl/json
+          curl -sf -X POST             -F "ontology=@build/webvowl/p1-r2-webvowl-local.ttl"             -F "sessionId=semrisk-local"             http://127.0.0.1:18080/convert             -o build/webvowl/json/p1-r2-local-webvowl.json
+          curl -sf -X POST             -F "ontology=@build/webvowl/p1-r2-webvowl-import-closure.ttl"             -F "sessionId=semrisk-imports"             http://127.0.0.1:18080/convert             -o build/webvowl/json/p1-r2-imports-webvowl.json
+
+      - name: Reconcile converted JSON with SemRisk source inventory
+        run: |
+          python tools/qa_p1_r2_webvowl_json.py build/webvowl/json/p1-r2-local-webvowl.json --scope local
+          python tools/qa_p1_r2_webvowl_json.py build/webvowl/json/p1-r2-imports-webvowl.json --scope imports
+
+      - name: Pin and build WebVOWL viewer
+        shell: bash
+        run: |
+          set -euo pipefail
+          git clone --depth 1 --branch v1.1.7 https://github.com/VisualDataWeb/WebVOWL.git /tmp/webvowl
+          test "$(git -C /tmp/webvowl rev-parse HEAD)" = "28e7dd9540622e8cb723dc000824b5eef5ae775f"
+          grep -q '"version": "1.1.7"' /tmp/webvowl/package.json
+          grep -q "The MIT License" /tmp/webvowl/license.txt
+          docker build -t semrisk-webvowl:v1.1.7 /tmp/webvowl
+
+      - name: Smoke-test local viewer
+        shell: bash
+        run: |
+          set -euo pipefail
+          docker run -d --rm --name semrisk-webvowl -p 18081:8080 semrisk-webvowl:v1.1.7
+          for i in $(seq 1 40); do
+            if curl -sf http://127.0.0.1:18081/ > /tmp/webvowl-index.html; then
+              break
+            fi
+            sleep 3
+          done
+          test -s /tmp/webvowl-index.html
+          grep -qi "webvowl" /tmp/webvowl-index.html
+          grep -qi "viewport" /tmp/webvowl-index.html
+
+      - name: Freeze candidate hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          sha256sum             build/webvowl/p1-r2-webvowl-local.ttl             build/webvowl/p1-r2-webvowl-import-closure.ttl             build/webvowl/p1-r2-webvowl-input-manifest.json             build/webvowl/json/p1-r2-local-webvowl.json             build/webvowl/json/p1-r2-imports-webvowl.json             > build/webvowl/p1-r2-webvowl-sha256.txt
+          cat build/webvowl/p1-r2-webvowl-sha256.txt
+          echo "SEM_RISK_WEBVOWL_OFFLINE_PASS"
+
+      - name: Upload offline candidate
+        uses: actions/upload-artifact@v4
+        with:
+          name: semrisk-p1-r2-webvowl-offline-candidate
+          path: |
+            build/webvowl/p1-r2-webvowl-local.ttl
+            build/webvowl/p1-r2-webvowl-import-closure.ttl
+            build/webvowl/p1-r2-webvowl-input-manifest.json
+            build/webvowl/p1-r2-webvowl-sha256.txt
+            build/webvowl/json/*.json
+          if-no-files-found: error
+          retention-days: 30
