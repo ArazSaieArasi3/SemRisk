@@ -225,7 +225,7 @@ capabilities:
     evidence_paths: [docs/documentation/research-reference-corpus.yaml, docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
     deviations: []
     blockers: ["#118"]
-    notes: "Seven stable REF identities seeded from existing literature/standards baselines; manuscript membership, complete source coverage, metadata/link verification and page-local IEEE QA remain open. Provisional triage, not capability verification."
+    notes: "Seven seed landing pages reviewed 2026-09-27: four institutional links valid, three DOI resolvers unverified despite publisher/institutional metadata. RISKMAN corrected to conference paper. Manuscript placement, complete coverage and IEEE QA remain open; no full capability verification."
   - id: RO-28
     title: "Documentation baseline/snapshot"
     applicability: Conditional

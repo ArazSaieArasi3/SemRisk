@@ -5,94 +5,115 @@ corpus:
   research_id: SemRisk-Paper-1
   portfolio_resource_registry_ref: ""
   status: candidate
-  last_verified_at: null
+  last_verified_at: "2026-09-27"
 
-# Stable identities for a bounded seed, transcribed from the existing literature
-# baselines. A DOI recorded there is not a fresh DOI-resolution or metadata check.
+# Bounded seed. Official publisher/institutional landing pages were read on
+# 2026-09-27; the three DOI resolver URLs were not independently resolved.
 references:
   - ref_id: REF-0001
     source_class: conference_paper
     title: The Common Ontology of Value and Risk
     doi: 10.1007/978-3-030-00847-5_11
+    creators: [{family: Sales, given: Tiago Prince}, {family: Baião, given: Fernanda}, {family: Guizzardi, given: Giancarlo}, {family: Almeida, given: João Paulo A.}, {family: Guarino, given: Nicola}, {family: Mylopoulos, given: John}]
+    container_title: "Conceptual Modeling (ER 2018), Lecture Notes in Computer Science 11157"
+    publisher: "Springer, Cham"
+    issued: {year: 2018, date: "2018-09-26"}
+    pages_or_article_number: "121–135"
     canonical_url: https://doi.org/10.1007/978-3-030-00847-5_11
     evidence_roles: [closest_work, foundational_alignment]
     research_uses: [{target_type: comparator, target: COVER, role: prior_art}]
     manuscript_memberships: []
     source_status: active_unverified
-    link_health: {status: not_checked, checked_at: null, resolved_url: null}
+    link_health: {status: unverifiable, checked_at: "2026-09-27", resolved_url: "https://link.springer.com/chapter/10.1007/978-3-030-00847-5_11", notes: "Publisher landing page confirms title, DOI, authors, year and pages; DOI resolver itself not tested."}
     metadata_status: partial
-    notes: "DOI/title from literature/closest-ontology-technical-baseline.md; final publisher metadata and DOI resolution pending. Artifact version is separately bound in literature/ontology-artifact-binding-registry.csv."
+    notes: "Publisher metadata checked at https://link.springer.com/chapter/10.1007/978-3-030-00847-5_11 on 2026-09-27. DOI resolution and IEEE rendering pending. Artifact version separately bound in literature/ontology-artifact-binding-registry.csv."
   - ref_id: REF-0002
     source_class: conference_paper
     title: An Ontology of Security from a Risk Treatment Perspective
     doi: 10.1007/978-3-031-17995-2_26
+    creators: [{family: Oliveira, given: Ítalo}, {family: Sales, given: Tiago Prince}, {family: Baratella, given: Riccardo}, {family: Fumagalli, given: Mattia}, {family: Guizzardi, given: Giancarlo}]
+    container_title: "Conceptual Modeling (ER 2022), Lecture Notes in Computer Science 13607"
+    publisher: "Springer, Cham"
+    issued: {year: 2022, date: "2022-10-10"}
+    pages_or_article_number: "365–379"
     canonical_url: https://doi.org/10.1007/978-3-031-17995-2_26
     evidence_roles: [closest_work, treatment_alignment]
     research_uses: [{target_type: comparator, target: ROSE, role: prior_art}]
     manuscript_memberships: []
     source_status: active_unverified
-    link_health: {status: not_checked, checked_at: null, resolved_url: null}
+    link_health: {status: unverifiable, checked_at: "2026-09-27", resolved_url: "https://link.springer.com/chapter/10.1007/978-3-031-17995-2_26", notes: "Publisher landing page confirms identity and metadata; DOI resolver itself not tested."}
     metadata_status: partial
-    notes: "DOI/title from literature baseline; corrected artifact commit recorded in binding registry; paper and living model may differ."
+    notes: "Publisher metadata checked at https://link.springer.com/chapter/10.1007/978-3-031-17995-2_26 on 2026-09-27. DOI resolution and IEEE rendering pending; paper and living model may differ."
   - ref_id: REF-0003
-    source_class: peer_reviewed_article
+    source_class: conference_paper
     title: Supporting Risk Management for Medical Devices via the RISKMAN Ontology and Shapes
     doi: 10.3233/ssw250023
+    creators: [{family: Gorczyca, given: Piotr}, {family: Arndt, given: Dörthe}, {family: Diller, given: Martin}, {family: Hampe, given: Jochen}, {family: Heidenreich, given: Georg}, {family: Kettmann, given: Pascal}, {family: Krötzsch, given: Markus}, {family: Mennicke, given: Stephan}, {family: Rudolph, given: Sebastian}, {family: Straß, given: Hannes}]
+    container_title: "Proceedings of the 21st International Conference on Semantic Systems (SEMANTiCS 2025)"
+    issued: {year: 2025, date: "2025-09"}
+    pages_or_article_number: "226–246"
     canonical_url: https://doi.org/10.3233/ssw250023
     evidence_roles: [closest_work, health_method_comparator]
     research_uses: [{target_type: comparator, target: RISKMAN, role: prior_art}]
     manuscript_memberships: []
     source_status: active_unverified
-    link_health: {status: not_checked, checked_at: null, resolved_url: null}
+    link_health: {status: unverifiable, checked_at: "2026-09-27", resolved_url: "https://iccl.inf.tu-dresden.de/web/Inproceedings3424/en", notes: "Author institution confirms conference citation and DOI; DOI resolver/publisher landing page inaccessible to this check."}
     metadata_status: partial
-    notes: "Peer-reviewed DOI in literature baseline; preprint DOI is a different version and is not collapsed into this identity."
+    notes: "Corrected source class from journal article to conference paper using https://iccl.inf.tu-dresden.de/web/Inproceedings3424/en (checked 2026-09-27). Preprint DOI is a separate version; publisher landing/DOI resolution and IEEE rendering pending."
   - ref_id: REF-0004
     source_class: standard_specification
     title: "ISO 31000:2018 Risk management — Guidelines"
     standard_number: ISO 31000:2018
+    issued: {year: 2018, date: "2018-02"}
+    edition: "2"
     canonical_url: https://www.iso.org/standard/65694.html
     evidence_roles: [terminology_and_framework_alignment]
     research_uses: [{target_type: manuscript_section, target: II/III, role: standard_alignment}]
     manuscript_memberships: []
     source_status: active_unverified
-    link_health: {status: not_checked, checked_at: null, resolved_url: null}
+    link_health: {status: valid, checked_at: "2026-09-27", resolved_url: "https://www.iso.org/standard/65694.html"}
     metadata_status: partial
-    notes: "Edition and official locator from literature/standards-frameworks-baseline.md; exact clause and current status need release check. No conformance implication."
+    notes: "ISO landing page checked 2026-09-27: published, stage 90.92 to be revised. Exact clause support is pending; no conformance implication."
   - ref_id: REF-0005
     source_class: standard_specification
     title: "ISO 31073:2022 Risk management — Vocabulary"
     standard_number: ISO 31073:2022
+    issued: {year: 2022, date: "2022-02"}
+    edition: "1"
     canonical_url: https://www.iso.org/standard/79637.html
     evidence_roles: [terminology_alignment]
     research_uses: [{target_type: manuscript_section, target: II/III, role: vocabulary}]
     manuscript_memberships: []
     source_status: active_unverified
-    link_health: {status: not_checked, checked_at: null, resolved_url: null}
+    link_health: {status: valid, checked_at: "2026-09-27", resolved_url: "https://www.iso.org/standard/79637.html"}
     metadata_status: partial
-    notes: "Edition and official locator from standards baseline; clause-level support and current link status pending."
+    notes: "ISO landing page checked 2026-09-27: published, stage 60.60; French correction 2023-01. Clause-level support pending."
   - ref_id: REF-0006
     source_class: standard_specification
     title: "IEC 31010:2019 Risk management — Risk assessment techniques"
     standard_number: IEC 31010:2019
+    issued: {year: 2019, date: "2019-06-13"}
+    edition: "2.0"
     canonical_url: https://webstore.iec.ch/en/publication/59809
     evidence_roles: [assessment_method_alignment]
     research_uses: [{target_type: manuscript_section, target: II/III, role: assessment_methods}]
     manuscript_memberships: []
     source_status: active_unverified
-    link_health: {status: not_checked, checked_at: null, resolved_url: null}
+    link_health: {status: valid, checked_at: "2026-09-27", resolved_url: "https://webstore.iec.ch/en/publication/59809"}
     metadata_status: partial
-    notes: "Edition and official locator from standards baseline; method-specific patterns must not be universalized."
+    notes: "IEC landing page checked 2026-09-27: edition 2.0, published 2019-06-13, stability date 2027. Method-specific patterns must not be universalized."
   - ref_id: REF-0007
     source_class: authoritative_institutional_regulatory
     title: "ICH Q9(R1) Quality Risk Management"
+    issued: {year: 2023, date: "2023-07-26"}
     canonical_url: https://www.ema.europa.eu/en/ich-q9-quality-risk-management-scientific-guideline
     evidence_roles: [pharma_standard_alignment]
     research_uses: [{target_type: manuscript_section, target: V, role: domain_alignment}]
     manuscript_memberships: []
     source_status: active_unverified
-    link_health: {status: not_checked, checked_at: null, resolved_url: null}
+    link_health: {status: valid, checked_at: "2026-09-27", resolved_url: "https://www.ema.europa.eu/en/ich-q9-quality-risk-management-scientific-guideline"}
     metadata_status: partial
-    notes: "Official EMA locus and revision from standards baseline; exact correction/version and sections pending."
+    notes: "EMA landing page checked 2026-09-27: current effective Q9(R1) Step 5 Revision 2, EMA/CHMP/ICH/24235/2006 Corr.2; PDF first published 2025-01-31, legal effective date 2023-07-26. Section-level support pending."
 
 page_reference_usage: []
 manuscript_reference_maps: []
@@ -121,6 +142,6 @@ summary:
   result: INCOMPLETE
   blockers:
     - "#53: manuscript v0.3 has no numbered in-text citations or final bibliography."
-    - "#118: remaining source families, exact metadata/DOI and link checks, page tokens and IEEE render QA are pending."
+    - "#118: seven seed landing pages checked (four official links valid; three DOI resolver URLs still unverified); remaining source families, full metadata, page tokens and IEEE render QA pending."
     - "#55/#56: publication and public-surface release checks remain pending."
-  notes: "Seven bounded seed references, not a complete research corpus or a verified bibliography. IDs stay stable across page-local numbering; manuscript memberships are intentionally empty until citation placement is reviewed."
+  notes: "Seven bounded seed references, not a complete research corpus or verified bibliography. RISKMAN source class corrected to conference paper. IDs stay stable across page-local numbering; manuscript memberships are intentionally empty until citation placement is reviewed."
