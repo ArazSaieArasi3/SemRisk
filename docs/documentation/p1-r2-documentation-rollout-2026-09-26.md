@@ -41,7 +41,7 @@ States: `bounded` means evidence exists for a narrow slice, `partial` means acce
 | 10 Ontology/module | Mandatory | bounded: architecture Wiki and source module links | #115/#118 |
 | 11 Entity reference | Mandatory, stable candidate entities | partial: 76 local inventory, generated index; conceptual/formal coverage caveat | #115/#117 |
 | 12 Formal semantics | Conditional, OWL/SHACL exists | partial: FD-A…FD-J and local QA; reasoned effects/release binding pending | #115 |
-| 13 Generated reference | Conditional, formal ontology exists | partial/blocked: offline versioned reference and source-bound WebVOWL JSON/static viewer exist; browser QA and deployed Pages absent | #117/#119 |
+| 13 Generated reference | Conditional, formal ontology exists | partial/blocked: offline versioned reference and source-bound WebVOWL viewer pass private browser smoke; readable module view and deployed Pages absent | #117/#119 |
 | 14 Visual documentation | Recommended, diagrams exist | partial: 76-ID atlas and 37-property map in schema-checked manifest; independent semantic/accessibility audit pending | #118/#119 |
 | 15 Evaluation/reproducibility | Mandatory, claim-bearing | partial: VVEAA and build records; independent validation/assurance pending | #113/#54 |
 | 16 Data/RDB/KG mapping | Conditional, relational twin exists | partial: RDB projection and parity; no KG/API claim | #118/#117 |
@@ -62,7 +62,7 @@ Gate state: G-DOC-0 `partial` (#118); G-DOC-1 `partial` (#118/#117); G-DOC-2 `bl
 
 1. #118: deepen the bounded research journey with decision/entity lineage, then complete the REF corpus, editorial, independent usability/accessibility and QN/QL checks. `.research` authority/status, composition, diagrams and private Wiki reader routes have candidate-level records.
 2. #115/#113 and related evidence gates: complete exact formal/reasoning and VVEAA claims at the candidate ref.
-3. #119/#117: source-bound offline WebVOWL JSON and viewer passed static integrity checks; next inspect browser rendering, module readability and privacy/access, then create and verify a new versioned Pages route. Existing `0.1.0-rc.1` route is immutable.
+3. #119/#117: source-bound offline WebVOWL JSON and viewer passed static integrity and private desktop/mobile browser smoke; next address module readability, target-reader tasks and full privacy/access, then create and verify a new versioned Pages route. Existing `0.1.0-rc.1` route is immutable.
 4. #55/#56: decide actual publication identity, licensing/access and frozen baseline, then deploy/read back if authorized by those gates.
 5. Reassess RW-21/24/26 and close #118/#112 only from evidence; no issue closure itself makes a release.
 
