@@ -54,6 +54,14 @@ async function inspect(browser, name, viewport) {
       );
       const canvasBox = await page.locator("#canvasArea").boundingBox();
       assert(canvasBox && canvasBox.width >= viewport.width - 2, "mobile canvas is restricted by details rail");
+      const overflow = await page.evaluate(() => ({
+        scrollWidth: document.documentElement.scrollWidth,
+        offenders: [...document.querySelectorAll("body *")].map(element => {
+          const rect = element.getBoundingClientRect();
+          return { tag: element.tagName, id: element.id, className: typeof element.className === "string" ? element.className : "", right: Math.round(rect.right), width: Math.round(rect.width) };
+        }).filter(row => row.right > window.innerWidth + 3 && row.width > 0).slice(0, 12)
+      }));
+      console.log("MOBILE_OVERFLOW " + JSON.stringify(overflow));
     }
     assert(jsonResponses.includes(200), "local SemRisk JSON was not loaded");
     assert.equal(pageErrors.length, 0, JSON.stringify(pageErrors));
