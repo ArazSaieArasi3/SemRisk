@@ -1,0 +1,61 @@
+{
+  "build_environment": "Node 24.19.0, npm 11.9.0, NODE_OPTIONS=--openssl-legacy-provider grunt release; npm install --ignore-scripts --legacy-peer-deps",
+  "files": [
+    {
+      "bytes": 42680,
+      "path": "css/webvowl.app.css",
+      "sha256": "8323ad062f40675bcd3af6c6d11c1515fb4cb7066fac323039187d366e43b006"
+    },
+    {
+      "bytes": 5341,
+      "path": "css/webvowl.css",
+      "sha256": "067bb2fe6dfb69a4ef4be734a7b3788335f4c3cd419ce3e42d86c3cf302c49f8"
+    },
+    {
+      "bytes": 159674,
+      "path": "data/semrisk.json",
+      "sha256": "4f2f9f90703e4ba8682705a1caa96262e4adf67fdb996ee2c196d2674142864a"
+    },
+    {
+      "bytes": 35516,
+      "path": "index.html",
+      "sha256": "89724deaf7f2bc31c9123eec661264589d2d48332f3218c4841edd17fdebd8d3"
+    },
+    {
+      "bytes": 151725,
+      "path": "js/d3.min.js",
+      "sha256": "76c39718d1c0a3fb321676b3b7e29306c0907919a5716d5728bd1b08ae0169e7"
+    },
+    {
+      "bytes": 350026,
+      "path": "js/webvowl.app.js",
+      "sha256": "34d237ab13873798aeb04ec83e9d7415127817cca5e1cbc5082cb062d7b5ddb9"
+    },
+    {
+      "bytes": 755727,
+      "path": "js/webvowl.js",
+      "sha256": "cf45907686fb827f1fce86cc415e90419a3f87bf25939d0dd40d727a7dc2913b"
+    },
+    {
+      "bytes": 1167,
+      "path": "license.txt",
+      "sha256": "d07986d8f3441f0a563f237aa3778489c763def2e151911e1774a18deff89cde"
+    }
+  ],
+  "json_source": "docs/ontology/generated/webvowl-candidate-v0.1/combined.json",
+  "license": "MIT upstream license.txt; transitive license review pending #56",
+  "route": "candidate local static bundle only; not deployed Pages",
+  "semantic_source_ref": "c17cc111f02309270a60474623259cefcf907c6f",
+  "status": "OFFLINE_STATIC_BUNDLE_RENDER_NOT_VERIFIED",
+  "verification": {
+    "browser_rendered": false,
+    "duplicate_html_ids": false,
+    "js_syntax_checked": true,
+    "json_identical_to_source": true,
+    "local_assets_present": true,
+    "mobile_readability_checked": false,
+    "public_access_checked": false
+  },
+  "webvowl_source_ref": "VisualDataWeb/WebVOWL@28e7dd9540622e8cb723dc000824b5eef5ae775f",
+  "webvowl_version": "1.1.7"
+}
