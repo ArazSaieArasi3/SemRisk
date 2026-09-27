@@ -1,6 +1,6 @@
 # P1-R2 WebVOWL conversion decision and offline gate
 
-**State:** source and tool versions selected; converter executable, generated JSON and rendered viewer not yet obtained/tested. Owner: #119. This is a candidate derived view, not the formal ontology authority or a public Pages deployment.
+**State:** offline conversion JSON candidate produced and inventory-checked; viewer not yet rendered/deployed. Owner: #119. This is a derived view, not formal ontology authority or public Pages deployment.
 
 ## Pinned upstream source choices
 
@@ -9,7 +9,7 @@
 | OWL2VOWL | `0.3.7` (tag has **no** `v` prefix) | `VisualDataWeb/OWL2VOWL@2833ead00122ca252a0fd0e18c5e5b696d711d2c` | `LICENSE.txt` Git blob `b04cd03ac00b1570f1f56e0e80320abce747ed58` (MIT) | Local OWL → WebVOWL JSON conversion |
 | WebVOWL | `v1.1.7` | `VisualDataWeb/WebVOWL@28e7dd9540622e8cb723dc000824b5eef5ae775f` | `license.txt` Git blob `6df36dbfe044376b68e8c9348cfcae0472623665` (MIT); `package.json` version 1.1.7 | Local static viewer candidate |
 
-Upstream source and release tags were cross-checked at those commits. A built JAR or distributable viewer bundle is a **different artifact**: its SHA-256, dependency tree and included license text must be recorded before use. No `master-SNAPSHOT`, floating CDN, online ontology upload or remote conversion service is a reproducible substitute.
+Upstream source and release tags were cross-checked at those commits. The locally built standalone JAR used in this check has SHA-256 `f61a49c9bfee60e0a3e02c23f780f3d07d7edaad5b1dd63ced2d4c4c292dc4a9` (Java 17 with `--add-opens java.base/java.lang=ALL-UNNAMED`, Maven 3.9.9, `package -P standalone-release -DskipTests`). It is **not** committed to SemRisk; a viewer distribution and its dependency/license inventory remain pending. No `master-SNAPSHOT`, floating CDN, online ontology upload or remote conversion service is a reproducible substitute.
 
 ## Exact SemRisk input boundary
 
@@ -18,11 +18,17 @@ Upstream source and release tags were cross-checked at those commits. A built JA
 - Local declaration denominator: 35 OWL classes, 37 object properties, four separate SKOS markers in `docs/ontology/p1-r2-formal-source-entity-reference-v0.1.csv`. Imported gUFO declarations have a separate denominator and should be filterable, not silently counted as local SemRisk classes.
 - SHACL shapes, SPARQL rules, synthetic test individuals, SQL schemas and external-owner COVER/ROSE/CM-PharmE semantics are outside this WebVOWL input. The viewer must not invent them.
 
-## Conversion sequence and acceptance
+## Conversion result and compatibility finding
 
-1. Acquire the pinned OWL2VOWL executable and viewer bundle; record SHA-256, dependencies, source/asset licenses and exact build commands. Keep the private ontology local.
-2. In a network-isolated process, try the official `java -jar <pinned-jar> -file <local-module.ttl> -dependencies <other-local-modules-and-gufo.ttl>` form, starting with Core. The upstream README documents `-file` and `-dependencies`; the actual import resolution for this catalog is **unproven**. Record errors and do not silently fall back to remote IRIs.
-3. Convert each of the six modules with local dependencies if Core succeeds; choose separate module views when a combined gUFO graph is unreadable. Preserve a deterministic input list, command, tool hashes, JSON hashes and omission register. Check all 35 class and 37 property IRIs against source inventory; treat missing or unsupported constructs as findings.
-4. Build a new candidate route, separate from frozen `site/ontology/0.1.0-rc.1/index.html`. Test search, zoom, labels, legend, desktop/mobile use, static links, privacy and rendering. Link canonical OWL, FD-A…FD-J, version registry and limitations. #117/#55/#56 govern publication and public read-back.
+The exact `-file Core -dependencies gUFO` smoke run emitted **zero** SemRisk local classes/properties despite successful CLI exit; it showed vendor terms only. An isolated diagnostic using HTTP-shaped surrogate IRIs exposed the 26 Core classes and 29 Core object properties. In the generated-only adapter, seven catalog-bound asserted graphs are combined locally, `owl:imports` and original ontology-type triples are omitted from the derived conversion input, one derived view identity is inserted, and local `urn:` IRIs are temporarily mapped to `https://semrisk.invalid/` IRIs. After OWL2VOWL, those aliases are restored to canonical URNs throughout JSON. The seven original Turtle files are unchanged. This is a visualization bridge, **not** an alternate canonical OWL serialization or entailment closure.
 
-**Current gate:** steps 1–4 remain open. The source pin resolves a version-selection ambiguity, but neither a JSON output nor a WebVOWL link exists yet. The existing source-derived SVG atlas and relation map remain available in the private repository.
+`python tools/build_webvowl_candidate.py --jar <locally-built-shaded-jar>` generated `docs/ontology/generated/webvowl-candidate-v0.1/combined.json` and its `manifest.json`. A second `--check` reproduced the bytes exactly. The manifest records source/ref/blobs, conversion-input and output digests, 35/35 local class IRIs and 37/37 local object-property IRIs, and status `OFFLINE_JSON_CANDIDATE_NOT_RENDERED`. The four SKOS markers are outside the WebVOWL class/property denominator. The 1,394 conversion-input triples differ from the 1,409 asserted-source triples because import triples and original ontology-type declarations were removed and two derived view triples were added; the source graph itself remains unchanged.
+
+## Remaining sequence and acceptance
+
+1. Obtain/build the pinned WebVOWL viewer bundle, record its SHA-256/dependency/license inventory, and test this JSON in a local static viewer. No network fetch of private ontology is permitted.
+2. Assess combined graph readability (108 class nodes and 212 property nodes in the raw JSON, including imported/structural terms). Add module-scoped/filterable views if needed; clearly separate locally declared SemRisk nodes from referenced/imported gUFO nodes and generated structural stubs.
+3. Inspect JSON schema/behavior and all unsupported constructs, labels, navigation, search/zoom/legend, desktop/mobile rendering, privacy and static links. Reconcile the exact 35/37 local IRIs after rendering, not merely in raw JSON.
+4. Build a new candidate route, separate from frozen `site/ontology/0.1.0-rc.1/index.html`, with canonical OWL, FD-A…FD-J, version registry and limitation links. #117/#55/#56 govern actual publication and public read-back.
+
+**Current gate:** converter JSON exists and passes the raw local-inventory check; viewer behavior, usability, licensing/privacy and deployment remain open. There is no rendered WebVOWL link yet. The existing source-derived SVG atlas and relation map remain available in the private repository.
