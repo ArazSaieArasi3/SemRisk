@@ -6,6 +6,7 @@ This is an integrity and static asset check, not rendered usability or privacy Q
 import hashlib
 import html.parser
 import json
+import re
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -62,6 +63,9 @@ def check():
         if parsed.scheme or parsed.netloc or name.startswith("/") or ".." in Path(parsed.path).parts:
             raise ValueError(f"external or unsafe HTML asset: {name}")
         assert parsed.path in expected, f"missing HTML asset: {name}"
+    for name, content in expected.items():
+        if name.endswith(".css") and re.search(rb"url\(\s*['\"]?(?:https?:)?//", content, re.I):
+            raise ValueError(f"remote CSS asset in {name}")
     assert 'semrisk' in expected["js/webvowl.app.js"].decode(), "default SemRisk JSON not referenced"
     assert 'semrisk.invalid' not in expected["data/semrisk.json"].decode(), "temporary converter alias leaked"
     data = json.loads(expected["data/semrisk.json"])
