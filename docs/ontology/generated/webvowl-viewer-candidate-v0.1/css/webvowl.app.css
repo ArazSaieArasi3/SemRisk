@@ -2475,3 +2475,27 @@ a#locateSearchResult {
 .disabledLabelForSlider {
     color: #808080;
 }
+
+/* The read-only candidate begins with the details rail collapsed on phones. */
+@media screen and (max-width: 700px) {
+    #semriskNotice {
+        left: 8px !important;
+        right: 8px !important;
+        top: 8px !important;
+        max-width: none !important;
+        padding: 6px 8px !important;
+        font-size: 11px !important;
+    }
+    #WarningErrorMessages {
+        width: calc(100% - 24px);
+        margin-top: 112px;
+        padding-right: 0;
+    }
+    #WarningErrorMessages > div {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    #swipeBarContainer {
+        width: 100% !important;
+    }
+}
