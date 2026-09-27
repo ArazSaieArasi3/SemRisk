@@ -158,10 +158,10 @@ capabilities:
     title: "Generated formal reference / WIDOCO adapter"
     applicability: Conditional
     status: blocked
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md, docs/ontology/generated/webvowl-candidate-v0.1/manifest.json, docs/ontology/generated/webvowl-viewer-candidate-v0.1/manifest.json]
+    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md, docs/ontology/generated/webvowl-candidate-v0.1/manifest.json, docs/ontology/generated/webvowl-viewer-candidate-v0.1/manifest.json, docs/ontology/diagrams/p1-r2-webvowl-browser-qa-2026-09-27.md]
     deviations: []
     blockers: ["#117/#119"]
-    notes: "Source-bound WebVOWL JSON and offline static viewer candidate exist; static integrity CI passes. No browser render, readable module scope, versioned Pages route or deployment has been verified."
+    notes: "Source-bound WebVOWL JSON and offline viewer pass static and private Chromium desktop/mobile smoke. Combined/mobile graph readability, target-reader tasks, versioned Pages route and deployment remain open."
   - id: RO-20
     title: "Documentation history/governance"
     applicability: Mandatory
@@ -294,7 +294,7 @@ summary:
   blockers:
     - "No public/rendered Pages deployment or cross-surface QA (#117)."
     - "OGCM-RF reader journey, reference completeness and qualitative quality evidence incomplete (#118)."
-    - "Offline WebVOWL candidate exists; rendered usability and Pages integration are unverified (#119/#117)."
+    - "Offline WebVOWL candidate passes narrow rendered smoke; readable module views, usability and Pages integration remain open (#119/#117)."
   deferred: ["Release-bound documentation until #54/#55/#56 decisions."]
   last_reviewed: "2026-09-27"
   notes: "30 capability rows are provisional applicability/status triage; no conforming claim."
