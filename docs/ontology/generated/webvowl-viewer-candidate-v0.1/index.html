@@ -497,7 +497,12 @@
     <script src="js/webvowl.js"></script>
     <script src="js/webvowl.app.js"></script>
     <script>
-        window.onload = webvowl.app().initialize;
+        window.onload = function () {
+            webvowl.app().initialize();
+            if (window.innerWidth <= 700) {
+                document.getElementById("sidebarExpandButton").click();
+            }
+        };
     </script>
 </body>
 
