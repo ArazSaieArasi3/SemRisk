@@ -24,7 +24,7 @@
 | RO-16 | PARTIAL | Banners and threats source exist; dedicated claim-linked route incomplete | #118 |
 | RO-17 | PARTIAL | Executable semantic build linked; Wiki tutorial route untested | #118 |
 | RO-18 | BOUNDED | 76-ID atlas, 37-property SVG and schema-checked diagram manifest; independent semantic/accessibility review pending | #118 |
-| RO-19 | PENDING_PAGES | Source-bound WebVOWL JSON and offline static viewer exist with successful static CI; browser usability and deployed Pages explorer absent | #117/#119 |
+| RO-19 | PENDING_PAGES | Source-bound WebVOWL viewer passes static CI and private desktop/mobile render smoke; combined/mobile readability and deployed Pages explorer absent | #117/#119 |
 | RO-20 | BOUNDED | Wiki history and source manifest/read-back | #116 |
 | RO-21 | PARTIAL | `p1-r2-documentation-quality-audit-2026-09-27.yaml` inventories 18 QN + 18 QL criteria; two mechanical Wiki ratings, no QN/QL totals or expert verdict | #118 |
 | RO-22 | PARTIAL | Schema-checked composition manifest declares Research/Ontology primary, Data/Engineering secondary, other profiles N/A with triggers; full review pending | #118 |
@@ -41,4 +41,4 @@
 
 **Governance refresh:** `.research/manifest.yaml` and `.research/ogcm-rf-profile.yaml` were refreshed on 2026-09-26 to replace the obsolete pre-Core/G2-pending narrative and pin the documentation profile ref. Semantic release is still `none`, OGCM overall conformance remains `not_assessed`, documentation adoption is `partial`, and Pages remains offline. Portfolio lifecycle ownership remains separate from OGCM documentation conformance.
 
-**Critical path:** #116 Wiki bounded completion → #118 adoption/authority and missing reader routes; #115 exact formal description → #117 offline reference/render/access QA and #119 WebVOWL browser/module-scope review → #55/#56 publication identity/access → Pages public deployment and final conformance review. #51/#31/#53/#54 retain their evidence gates. A future documentation baseline must trigger read-back and drift checks. The WebVOWL offline candidate passes static integrity CI at `c499ce6c5018f74e28c4b3a7a1ab31cbcf7cc5c2`; no rendered or public result follows from that check.
+**Critical path:** #116 Wiki bounded completion → #118 adoption/authority and missing reader routes; #115 exact formal description → #117 offline reference/render/access QA and #119 WebVOWL module-scope/usability review → #55/#56 publication identity/access → Pages public deployment and final conformance review. #51/#31/#53/#54 retain their evidence gates. A future documentation baseline must trigger read-back and drift checks. The WebVOWL offline candidate passes private desktop/mobile smoke at [run 36312545968](https://github.com/ArazSaieArasi3/SemRisk/actions/runs/36312545968); no public deployment or reader usability pass follows from that check.
