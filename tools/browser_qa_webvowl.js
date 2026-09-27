@@ -62,6 +62,7 @@ async function inspect(browser, name, viewport) {
         }).filter(row => row.right > window.innerWidth + 3 && row.width > 0).slice(0, 12)
       }));
       console.log("MOBILE_OVERFLOW " + JSON.stringify(overflow));
+      assert(overflow.scrollWidth <= viewport.width + 1, "mobile document overflows viewport");
     }
     assert(jsonResponses.includes(200), "local SemRisk JSON was not loaded");
     assert.equal(pageErrors.length, 0, JSON.stringify(pageErrors));
@@ -73,10 +74,12 @@ async function inspect(browser, name, viewport) {
     await page.waitForTimeout(800);
     const after = await page.locator("#graph svg.vowlGraph > g").getAttribute("transform");
     assert.notEqual(after, before, "zoom control did not change graph transform");
-    await page.screenshot({ path: path.join(artifacts, `webvowl-${name}.png`), fullPage: true });
+    const filterHint = page.locator('[id^="killFilterMessages_"]').first();
+    if (await filterHint.count()) await filterHint.click();
+    await page.screenshot({ path: path.join(artifacts, `webvowl-${name}.png`), fullPage: false });
     console.log(JSON.stringify({ viewport: name, nodeCount, jsonResponses, outbound, pageErrors, zoom: "changed" }));
   } catch (error) {
-    await page.screenshot({ path: path.join(artifacts, `webvowl-${name}-failure.png`), fullPage: true }).catch(() => {});
+    await page.screenshot({ path: path.join(artifacts, `webvowl-${name}-failure.png`), fullPage: false }).catch(() => {});
     throw error;
   } finally {
     await page.close();
