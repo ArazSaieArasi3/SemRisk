@@ -47,6 +47,14 @@ async function inspect(browser, name, viewport) {
     const nodeCount = await page.locator("#graph svg.vowlGraph .nodeContainer .node").count();
     const graphBox = await page.locator("#graph svg.vowlGraph").boundingBox();
     assert(graphBox && graphBox.width > 250 && graphBox.height > 250);
+    if (name === "mobile") {
+      await page.waitForFunction(
+        () => document.querySelector("#detailsArea").classList.contains("hidden"),
+        null, { timeout: 10000 }
+      );
+      const canvasBox = await page.locator("#canvasArea").boundingBox();
+      assert(canvasBox && canvasBox.width >= viewport.width - 2, "mobile canvas is restricted by details rail");
+    }
     assert(jsonResponses.includes(200), "local SemRisk JSON was not loaded");
     assert.equal(pageErrors.length, 0, JSON.stringify(pageErrors));
     assert.equal(outbound.length, 0, JSON.stringify(outbound));
