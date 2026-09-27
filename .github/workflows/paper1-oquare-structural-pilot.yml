@@ -1,0 +1,43 @@
+name: Paper-1 OQuaRE bounded structural pilot
+
+on:
+  push:
+    paths:
+      - 'ontology/**'
+      - 'docs/ontology/generated/p1-r2-asserted-closure.nt'
+      - 'docs/ontology/generated/p1-r2-closure-manifest.json'
+      - 'tools/pilot_oquare_structural.py'
+      - 'evaluation/oquare/**'
+      - '.github/workflows/paper1-oquare-structural-pilot.yml'
+  pull_request:
+    paths:
+      - 'ontology/**'
+      - 'docs/ontology/generated/p1-r2-asserted-closure.nt'
+      - 'docs/ontology/generated/p1-r2-closure-manifest.json'
+      - 'tools/pilot_oquare_structural.py'
+      - 'evaluation/oquare/**'
+      - '.github/workflows/paper1-oquare-structural-pilot.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'rdflib==7.6.0'
+      - run: python tools/pilot_oquare_structural.py --check
+      - name: Parse OQUO-compatible raw RDF
+        run: |
+          python - <<'PY'
+          from rdflib import Graph
+          graph = Graph()
+          graph.parse('evaluation/oquare/p1-r2-structural-pilot-v0.1.nt', format='nt')
+          assert len(graph) == 32, len(graph)
+          print('SEM_RISK_OQUO_RAW_RDF_PARSE_PASS')
+          PY
