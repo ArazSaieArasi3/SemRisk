@@ -158,10 +158,10 @@ capabilities:
     title: "Generated formal reference / WIDOCO adapter"
     applicability: Conditional
     status: blocked
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md, docs/ontology/generated/webvowl-candidate-v0.1/manifest.json, docs/ontology/generated/webvowl-viewer-candidate-v0.1/manifest.json]
     deviations: []
     blockers: ["#117/#119"]
-    notes: "No deployed WIDOCO/equivalent Pages explorer; provisional triage, not capability verification."
+    notes: "Source-bound WebVOWL JSON and offline static viewer candidate exist; static integrity CI passes. No browser render, readable module scope, versioned Pages route or deployment has been verified."
   - id: RO-20
     title: "Documentation history/governance"
     applicability: Mandatory
@@ -209,7 +209,7 @@ capabilities:
     evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
     deviations: []
     blockers: ["#118"]
-    notes: "Authority stated in pages; implementation profile stale; provisional triage, not capability verification."
+    notes: "Authority stated in pages and .research profile refreshed on 2026-09-26; release-bound authority and publication review remain open."
   - id: RO-26
     title: "Profile adoption/conformance record"
     applicability: Mandatory
@@ -252,15 +252,15 @@ capabilities:
     notes: "Bounded source route/task audit exists; target-reader observation, mobile accessibility and Pages/WebVOWL read-back remain open. Not a usability pass."
 machine_artifacts:
   documentation_surface_manifest: docs/documentation/documentation-surfaces.yaml
-  profile_composition_manifest: ""
-  research_journey_record: ""
-  diagram_manifest: ""
+  profile_composition_manifest: docs/documentation/profile-composition.yaml
+  research_journey_record: docs/documentation/p1-r2-dual-audience-route-audit-2026-09-27.md
+  diagram_manifest: docs/ontology/diagrams/manifest.yaml
   documentation_qa_evidence: docs/wiki/p1-r2-live-wiki-readback-2026-09-26.md
   documentation_quality_assessment: docs/documentation/p1-r2-documentation-quality-audit-2026-09-27.yaml
   documentation_baseline_manifest: docs/wiki/p1-r2-wiki-publish-manifest-v0.1.json
   ontology_reference_manifest: docs/ontology/generated/p1-r2-closure-manifest.json
   reference_corpus: docs/documentation/research-reference-corpus.yaml
-  documentation_rollout_plan: ""
+  documentation_rollout_plan: docs/documentation/p1-r2-documentation-rollout-2026-09-26.md
 surfaces:
   semantic_source: [ontology/]
   evidential_source: [evaluation/]
@@ -293,8 +293,8 @@ summary:
   conformance_state: partial
   blockers:
     - "No public/rendered Pages deployment or cross-surface QA (#117)."
-    - "OGCM-RF authority/profile, reader journey, references and quality evidence incomplete (#118)."
-    - "WebVOWL explorer not yet built (#119)."
+    - "OGCM-RF reader journey, reference completeness and qualitative quality evidence incomplete (#118)."
+    - "Offline WebVOWL candidate exists; rendered usability and Pages integration are unverified (#119/#117)."
   deferred: ["Release-bound documentation until #54/#55/#56 decisions."]
-  last_reviewed: "2026-09-26"
+  last_reviewed: "2026-09-27"
   notes: "30 capability rows are provisional applicability/status triage; no conforming claim."
