@@ -89,6 +89,40 @@ async function inspect(browser, name, viewport) {
   }
 }
 
+async function inspectModule(browser, slug, viewport) {
+  const page = await browser.newPage({ viewport });
+  const pageErrors = [];
+  const outbound = [];
+  const jsonResponses = [];
+  page.on("pageerror", error => pageErrors.push(error.message));
+  page.on("request", request => {
+    if (!request.url().startsWith(origin + "/")) outbound.push(request.url());
+  });
+  page.on("response", response => {
+    if (response.url().endsWith("/data/semrisk-" + slug + ".json")) jsonResponses.push(response.status());
+  });
+  try {
+    await page.goto(origin + "/#semrisk-" + slug, { waitUntil: "domcontentloaded" });
+    await page.waitForFunction(
+      () => document.querySelectorAll("#graph svg.vowlGraph .nodeContainer .node").length > 0,
+      null, { timeout: 60000 }
+    );
+    assert(jsonResponses.includes(200), "module JSON was not loaded: " + slug);
+    assert.deepEqual(pageErrors, [], slug);
+    assert.deepEqual(outbound, [], slug);
+    const nodes = await page.locator("#graph svg.vowlGraph .nodeContainer .node").count();
+    if (slug === "enterprise") {
+      await page.screenshot({ path: path.join(artifacts, "webvowl-enterprise.png"), fullPage: false });
+    }
+    console.log(JSON.stringify({ module: slug, visibleNodes: nodes, jsonResponses, outbound, pageErrors }));
+  } catch (error) {
+    await page.screenshot({ path: path.join(artifacts, "webvowl-module-" + slug + "-failure.png"), fullPage: false }).catch(() => {});
+    throw error;
+  } finally {
+    await page.close();
+  }
+}
+
 async function main() {
   const server = spawn("python3", ["-m", "http.server", String(port), "--bind", "127.0.0.1"], {
     cwd: bundle, stdio: "ignore"
@@ -99,7 +133,10 @@ async function main() {
     browser = await chromium.launch({ headless: true });
     await inspect(browser, "desktop", { width: 1440, height: 900 });
     await inspect(browser, "mobile", { width: 390, height: 844 });
-    console.log("SEM_RISK_WEBVOWL_RENDER_SMOKE_PASS | private offline Chromium; no public URL");
+    for (const slug of ["core", "enterprise", "method", "governance", "pharma"]) {
+      await inspectModule(browser, slug, { width: 1440, height: 900 });
+    }
+    console.log("SEM_RISK_WEBVOWL_RENDER_SMOKE_PASS | combined plus five module views; private offline Chromium; no public URL");
   } finally {
     if (browser) await browser.close();
     server.kill("SIGTERM");

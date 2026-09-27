@@ -6,6 +6,8 @@ The initial private Chromium smoke run found an upstream Google Fonts CSS import
 
 The bundled `index.html` loads `data/semrisk.json` by default. The JSON is byte-identical to `../webvowl-candidate-v0.1/combined.json`; that file's manifest checks 35/35 SemRisk OWL classes and 37/37 object properties against the exact source inventory. The displayed graph also contains vendored gUFO and structural/reference nodes; the raw WebVOWL JSON has 108 class nodes and 212 property nodes. These are visualizer nodes, not 108/212 SemRisk declarations. Four SKOS markers are outside the class/property denominator. A combined view may be too dense; module-scoped filtering remains #119 work.
 
+The Ontology menu offers five smaller **source-only** projections from Core, Enterprise, Method, Governance and Pharma. Each is generated from one exact Turtle module and does not carry imported gUFO or cross-module definitions; referenced terms are context stubs. The [module manifest](../webvowl-module-v0.1/manifest.json) records source blobs and local IRI coverage. Mappings has only three SKOS markers and no local OWL class/object property, so it is documented outside the WebVOWL module menu. The combined view remains the seven-file asserted union. Module browser/readability QA is tracked separately and is not implied by the combined-view smoke.
+
 ## Local preview
 
 From this directory, serve files over a local HTTP server (a `file://` open may block JSON loading):

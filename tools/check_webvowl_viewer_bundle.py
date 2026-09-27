@@ -41,6 +41,19 @@ def check():
     assert manifest["verification"]["public_access_checked"] is False
     source = ROOT / manifest["json_source"]
     assert (BUNDLE / "data/semrisk.json").read_bytes() == source.read_bytes()
+    module_manifest = json.loads((ROOT / manifest["module_json_source"]).read_text())
+    assert sum(row["local_class_coverage"] for row in module_manifest["modules"]) == 35
+    assert sum(row["local_object_property_coverage"] for row in module_manifest["modules"]) == 37
+    for module in module_manifest["modules"]:
+        slug = module["module"].lower()
+        source_bytes = (ROOT / module["source_path"]).read_bytes()
+        source_blob = hashlib.sha1(b"blob " + str(len(source_bytes)).encode() + b"\0" + source_bytes).hexdigest()
+        assert source_blob == module["source_blob_sha"], slug
+        module_json = ROOT / "docs/ontology/generated/webvowl-module-v0.1" / (slug + ".json")
+        bundled_json = BUNDLE / "data" / ("semrisk-" + slug + ".json")
+        assert bundled_json.read_bytes() == module_json.read_bytes(), slug
+        assert hashlib.sha256(bundled_json.read_bytes()).hexdigest() == module["json_sha256"], slug
+        assert ('href="#semrisk-' + slug + '"') in (BUNDLE / "index.html").read_text(), slug
 
     expected = {}
     for entry in manifest["files"]:

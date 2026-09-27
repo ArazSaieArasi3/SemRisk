@@ -17,7 +17,7 @@
 <body>
     <main>
         <aside id="semriskNotice" role="note" style="position:absolute;right:1rem;top:1rem;z-index:1000;max-width:25rem;padding:.65rem .9rem;background:#fff;color:#172b4d;border:1px solid #7c8da5;border-radius:.5rem;font:14px/1.4 Arial,sans-serif">
-            <strong>SemRisk P1-R2 ontology explorer</strong><br>Derived candidate view; OWL is authoritative. <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/p1-r2-candidate-manifest.yaml">Semantic source</a> · <a href="https://github.com/ArazSaieArasi3/SemRisk/wiki/Formal-Reference">Formal explanation</a> · <a href="data/semrisk.json" download>JSON candidate</a>. Public release and independent validation are pending.
+            <strong>SemRisk P1-R2 ontology explorer</strong><br>Derived candidate view; OWL is authoritative. Use Ontology menu for focused source-only modules. <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/c17cc111f02309270a60474623259cefcf907c6f/ontology/p1-r2-candidate-manifest.yaml">Semantic source</a> · <a href="https://github.com/ArazSaieArasi3/SemRisk/wiki/Formal-Reference">Formal explanation</a> · <a href="data/semrisk.json" download>Combined JSON</a>. Public release and independent validation are pending.
         </aside>
         <section id="canvasArea">
             <div id="browserCheck" class="hidden">
@@ -121,7 +121,12 @@
             <div id="menuContainer">
                 <!--Ontology Menu-->
                 <ul id="m_select" class="toolTipMenu noselect">
-                    <li><a href="#semrisk" id="semrisk">SemRisk P1-R2 candidate</a></li>
+                    <li><a href="#semrisk" id="semrisk">Combined asserted union</a></li>
+                    <li><a href="#semrisk-core" id="semrisk-core">Core (source only)</a></li>
+                    <li><a href="#semrisk-enterprise" id="semrisk-enterprise">Enterprise (source only)</a></li>
+                    <li><a href="#semrisk-method" id="semrisk-method">Method (source only)</a></li>
+                    <li><a href="#semrisk-governance" id="semrisk-governance">Governance (source only)</a></li>
+                    <li><a href="#semrisk-pharma" id="semrisk-pharma">Pharma (source only)</a></li>
                     <li class="option" id="converter-option" style="display:none">
                         <form class="converter-form" id="iri-converter-form">
                             <label for="iri-converter-input">Custom Ontology:</label>

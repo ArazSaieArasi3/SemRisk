@@ -12,14 +12,39 @@
       "sha256": "067bb2fe6dfb69a4ef4be734a7b3788335f4c3cd419ce3e42d86c3cf302c49f8"
     },
     {
+      "bytes": 48099,
+      "path": "data/semrisk-core.json",
+      "sha256": "e354dc8eb5d0d93e1dd722649b4f53e744b35ae7f091ff901e7060925a2cfccb"
+    },
+    {
+      "bytes": 8008,
+      "path": "data/semrisk-enterprise.json",
+      "sha256": "83aa59b696a8c9ab0ce320f34e5d0a4ef18ae5a44fdac6db6050be93b6b8b91c"
+    },
+    {
+      "bytes": 2904,
+      "path": "data/semrisk-governance.json",
+      "sha256": "6a7a2058ef8141699fe58c6e9d76ee0530e046f3d49db148124ac3f8aa8991cc"
+    },
+    {
+      "bytes": 5961,
+      "path": "data/semrisk-method.json",
+      "sha256": "2c86a74cd9cb481656a498861aef6b34b4484b8e061e892e5e52ce1f143383c8"
+    },
+    {
+      "bytes": 1827,
+      "path": "data/semrisk-pharma.json",
+      "sha256": "3a39e4ce50542603f6b62eb5f7cfe114a711f70a72b3b9f09e956939e5df9fdb"
+    },
+    {
       "bytes": 159674,
       "path": "data/semrisk.json",
       "sha256": "4f2f9f90703e4ba8682705a1caa96262e4adf67fdb996ee2c196d2674142864a"
     },
     {
-      "bytes": 35686,
+      "bytes": 36254,
       "path": "index.html",
-      "sha256": "7b8f4f004236b28dbe0a4ba8127d06935732bd6fa6f3b9be671384175f7d3a57"
+      "sha256": "2658b763d6521621898c27af9bbe035977f87e6215c8d9e8848c087a58e1052b"
     },
     {
       "bytes": 151725,
@@ -59,5 +84,7 @@
   "browser_qa_run": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/36312545968",
   "mobile_readability_result": "Partial: full-width canvas after rail collapse, but labels too small for reliable phone reading",
   "webvowl_source_ref": "VisualDataWeb/WebVOWL@28e7dd9540622e8cb723dc000824b5eef5ae775f",
-  "webvowl_version": "1.1.7"
+  "webvowl_version": "1.1.7",
+  "module_json_source": "docs/ontology/generated/webvowl-module-v0.1/manifest.json",
+  "module_browser_qa": "pending"
 }
