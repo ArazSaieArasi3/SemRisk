@@ -75,7 +75,10 @@ async function inspect(browser, name, viewport) {
     const after = await page.locator("#graph svg.vowlGraph > g").getAttribute("transform");
     assert.notEqual(after, before, "zoom control did not change graph transform");
     const filterHint = page.locator('[id^="killFilterMessages_"]').first();
-    if (await filterHint.count()) await filterHint.click();
+    if (await filterHint.count()) {
+      await filterHint.click();
+      await page.waitForTimeout(800);
+    }
     await page.screenshot({ path: path.join(artifacts, `webvowl-${name}.png`), fullPage: false });
     console.log(JSON.stringify({ viewport: name, nodeCount, jsonResponses, outbound, pageErrors, zoom: "changed" }));
   } catch (error) {
