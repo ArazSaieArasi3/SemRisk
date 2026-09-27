@@ -504,9 +504,9 @@
     <script>
         window.onload = function () {
             webvowl.app().initialize();
-            if (window.innerWidth <= 700) {
-                document.getElementById("sidebarExpandButton").click();
-            }
+            // Start with the graph canvas at full width on every viewport;
+            // the details rail remains available through its expand button.
+            document.getElementById("sidebarExpandButton").click();
         };
     </script>
 </body>

@@ -48,13 +48,13 @@ async function inspect(browser, name, viewport) {
     const nodeCount = await page.locator("#graph svg.vowlGraph .nodeContainer .node").count();
     const graphBox = await page.locator("#graph svg.vowlGraph").boundingBox();
     assert(graphBox && graphBox.width > 250 && graphBox.height > 250);
+    await page.waitForFunction(
+      () => document.querySelector("#detailsArea").classList.contains("hidden"),
+      null, { timeout: 10000 }
+    );
+    const canvasBox = await page.locator("#canvasArea").boundingBox();
+    assert(canvasBox && canvasBox.width >= viewport.width - 2, "graph canvas is restricted by details rail");
     if (name === "mobile") {
-      await page.waitForFunction(
-        () => document.querySelector("#detailsArea").classList.contains("hidden"),
-        null, { timeout: 10000 }
-      );
-      const canvasBox = await page.locator("#canvasArea").boundingBox();
-      assert(canvasBox && canvasBox.width >= viewport.width - 2, "mobile canvas is restricted by details rail");
       const overflow = await page.evaluate(() => ({
         scrollWidth: document.documentElement.scrollWidth,
         offenders: [...document.querySelectorAll("body *")].map(element => {
@@ -115,6 +115,10 @@ async function inspectModule(browser, slug, viewport) {
     );
     await page.locator("#loading-info").waitFor({ state: "hidden", timeout: 120000 });
     await page.waitForTimeout(500);
+    await page.waitForFunction(
+      () => document.querySelector("#detailsArea").classList.contains("hidden"),
+      null, { timeout: 10000 }
+    );
     assert(jsonResponses.includes(200), "module JSON was not loaded: " + slug);
     assert.deepEqual(pageErrors, [], slug);
     assert.deepEqual(outbound, [], slug);
