@@ -88,6 +88,12 @@ async function inspect(browser, name, viewport) {
       await page.waitForTimeout(800);
     }
     await page.screenshot({ path: path.join(artifacts, `webvowl-${name}.png`), fullPage: false });
+    await Promise.all([
+      page.waitForResponse(response => response.url().endsWith("/data/semrisk-enterprise.json") && response.status() === 200),
+      page.locator("#semriskModuleSelect").selectOption("semrisk-enterprise")
+    ]);
+    await page.locator("#loading-info").waitFor({ state: "hidden", timeout: 120000 });
+    assert.equal(await page.locator("#semriskModuleSelect").inputValue(), "semrisk-enterprise");
     console.log(JSON.stringify({ viewport: name, nodeCount, jsonResponses, outbound, pageErrors, zoom: "changed" }));
   } catch (error) {
     await page.screenshot({ path: path.join(artifacts, `webvowl-${name}-failure.png`), fullPage: false }).catch(() => {});
