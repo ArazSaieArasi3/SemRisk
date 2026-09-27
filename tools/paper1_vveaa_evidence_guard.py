@@ -25,7 +25,8 @@ EXPECTED = {
     'SR-CL08': 'SUPPORTED_FORMAL_BOUNDED',
     'SR-CL09': 'SUPPORTED_WITH_ACCESS_LIMITS',
 }
-FIELDS = ('claim_id', 'vveaa_functions', 'e_layers', 'method_and_test',
+FIELDS = ('claim_id', 'vveaa_functions', 'e_layers', 'dataset_role',
+          'tool_version_ref', 'method_and_test',
           'unit_denominator', 'expected_criterion', 'observed_result',
           'current_assessment', 'primary_artifact_and_blob', 'evidence_role',
           'challenging_or_missing_evidence', 'claim_ceiling', 'next_recheck')
@@ -51,6 +52,10 @@ def check(rows, root=ROOT):
             errors.append(f'{cid}: unknown VVEAA function')
         if not set(row.get('e_layers', '').split('|')) <= {f'E{i}' for i in range(1, 12)}:
             errors.append(f'{cid}: unknown E-layer')
+        if cid == 'SR-CL06' and 'NOT_EXECUTED' not in row.get('dataset_role', ''):
+            errors.append(f'{cid}: independent holdout cannot be reported as executed')
+        if cid in ('SR-CL01', 'SR-CL08') and 'semantic CI 35850078877@8fa6e221d4e2e7cf36817e666bf374ba11a921b7' not in row.get('tool_version_ref', ''):
+            errors.append(f'{cid}: missing exact prior semantic execution binding')
         ref = row.get('primary_artifact_and_blob', '')
         match = re.fullmatch(r'(.+)@([0-9a-f]{40})', ref)
         if not match:
@@ -80,6 +85,8 @@ def selftest(rows):
     r = copy.deepcopy(rows); r[0]['primary_artifact_and_blob'] = r[0]['primary_artifact_and_blob'].split('@')[0] + '@' + '0' * 40; mutations.append(('wrong evidence hash', r))
     r = copy.deepcopy(rows); r[0]['primary_artifact_and_blob'] = 'missing-evidence.csv@' + '0' * 40; mutations.append(('missing evidence', r))
     r = copy.deepcopy(rows); r[0]['primary_artifact_and_blob'] = '../outside.csv@' + '0' * 40; mutations.append(('path escape', r))
+    r = copy.deepcopy(rows); r[0]['tool_version_ref'] = ''; mutations.append(('missing tool and ref', r))
+    r = copy.deepcopy(rows); r[5]['dataset_role'] = 'independent_holdout_executed'; mutations.append(('invented holdout', r))
     for label, altered in mutations:
         if not check(altered):
             raise SystemExit('Undetected negative control: ' + label)
