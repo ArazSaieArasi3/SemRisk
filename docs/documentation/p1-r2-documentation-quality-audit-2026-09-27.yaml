@@ -1,0 +1,319 @@
+documentation_quality_assessment_schema_version: "1.0"
+assessment:
+  id: SemRisk-P1-R2-DOC-QA-2026-09-27
+  type: audit_only
+  repository: ArazSaieArasi3/SemRisk
+  research_id: R-022
+  rubric_id: OGCM-RF-DOC-QM
+  rubric_version: "1.0"
+  scope: "Eight private Wiki pages and staged source/Pages artifacts; candidate 0.1.0-rc.1; no public Pages"
+  source_ref: "21a0b2605237ccbea01c9532fe44c0e6d1c87a98"
+  published_ref: "private Wiki; page revisions in docs/wiki/p1-r2-live-wiki-readback-2026-09-26.md"
+  documentation_baseline: "candidate; docs/wiki/p1-r2-wiki-publish-manifest-v0.1.json"
+  assessed_at: "2026-09-27"
+  assessors: ["Codex: mechanical evidence inventory only"]
+thresholds:
+  quantitative_minimum: null
+  qualitative_minimum: null
+  criterion_floors: []
+  zero_tolerance_conditions: []
+quantitative:
+  core: {score: null, applicable_weight: null}
+  research_ontology: {score: null, applicable_weight: null}
+  total: {score: null, applicable_weight: null}
+  criteria:
+    - id: "QN-C01"
+      applicability: "Mandatory"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Denominator, mixed review, current published access, or release evidence incomplete; N/A not asserted."
+    - id: "QN-C02"
+      applicability: "Mandatory"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Denominator, mixed review, current published access, or release evidence incomplete; N/A not asserted."
+    - id: "QN-C03"
+      applicability: "Mandatory"
+      disposition: applicable
+      rating: 4
+      weighted_score: 4
+      evidence_refs: ["docs/wiki/pages/Home.md", "docs/wiki/p1-r2-live-wiki-readback-2026-09-26.md"]
+      measured_value: "8/8"
+      unit: "pages"
+      notes: "Bounded private Wiki measurement; not a whole-repository or public-surface score."
+    - id: "QN-C04"
+      applicability: "Mandatory"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Denominator, mixed review, current published access, or release evidence incomplete; N/A not asserted."
+    - id: "QN-C05"
+      applicability: "Mandatory"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Denominator, mixed review, current published access, or release evidence incomplete; N/A not asserted."
+    - id: "QN-C06"
+      applicability: "Conditional"
+      disposition: applicable
+      rating: 4
+      weighted_score: 5
+      evidence_refs: ["docs/wiki/p1-r2-live-wiki-readback-2026-09-26.md", "docs/wiki/p1-r2-wiki-publish-manifest-v0.1.json"]
+      measured_value: "8/8"
+      unit: "pages"
+      notes: "Bounded private Wiki measurement; not a whole-repository or public-surface score."
+    - id: "QN-C07"
+      applicability: "Mandatory"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Denominator, mixed review, current published access, or release evidence incomplete; N/A not asserted."
+    - id: "QN-C08"
+      applicability: "Mandatory"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Denominator, mixed review, current published access, or release evidence incomplete; N/A not asserted."
+    - id: "QN-C09"
+      applicability: "Conditional"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Denominator, mixed review, current published access, or release evidence incomplete; N/A not asserted."
+    - id: "QN-R01"
+      applicability: "Conditional"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Denominator, mixed review, current published access, or release evidence incomplete; N/A not asserted."
+    - id: "QN-R02"
+      applicability: "Conditional"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Denominator, mixed review, current published access, or release evidence incomplete; N/A not asserted."
+    - id: "QN-R03"
+      applicability: "Conditional"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Denominator, mixed review, current published access, or release evidence incomplete; N/A not asserted."
+    - id: "QN-R04"
+      applicability: "Conditional"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Denominator, mixed review, current published access, or release evidence incomplete; N/A not asserted."
+    - id: "QN-R05"
+      applicability: "Conditional"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Denominator, mixed review, current published access, or release evidence incomplete; N/A not asserted."
+    - id: "QN-R06"
+      applicability: "Conditional"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Denominator, mixed review, current published access, or release evidence incomplete; N/A not asserted."
+    - id: "QN-R07"
+      applicability: "Mandatory"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Denominator, mixed review, current published access, or release evidence incomplete; N/A not asserted."
+    - id: "QN-R08"
+      applicability: "Conditional"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Denominator, mixed review, current published access, or release evidence incomplete; N/A not asserted."
+    - id: "QN-R09"
+      applicability: "Mandatory"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Denominator, mixed review, current published access, or release evidence incomplete; N/A not asserted."
+qualitative:
+  core: {score: null, applicable_weight: null}
+  research_ontology: {score: null, applicable_weight: null}
+  total: {score: null, applicable_weight: null}
+  criteria:
+    - id: "QL-C01"
+      applicability: "Mandatory"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Expert reader/semantic/editorial judgment not performed; applicable until independently dispositioned."
+    - id: "QL-C02"
+      applicability: "Mandatory"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Expert reader/semantic/editorial judgment not performed; applicable until independently dispositioned."
+    - id: "QL-C03"
+      applicability: "Mandatory"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Expert reader/semantic/editorial judgment not performed; applicable until independently dispositioned."
+    - id: "QL-C04"
+      applicability: "Mandatory"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Expert reader/semantic/editorial judgment not performed; applicable until independently dispositioned."
+    - id: "QL-C05"
+      applicability: "Mandatory"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Expert reader/semantic/editorial judgment not performed; applicable until independently dispositioned."
+    - id: "QL-C06"
+      applicability: "Conditional"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Expert reader/semantic/editorial judgment not performed; applicable until independently dispositioned."
+    - id: "QL-C07"
+      applicability: "Mandatory"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Expert reader/semantic/editorial judgment not performed; applicable until independently dispositioned."
+    - id: "QL-C08"
+      applicability: "Conditional"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Expert reader/semantic/editorial judgment not performed; applicable until independently dispositioned."
+    - id: "QL-C09"
+      applicability: "Mandatory"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Expert reader/semantic/editorial judgment not performed; applicable until independently dispositioned."
+    - id: "QL-R01"
+      applicability: "Mandatory"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Expert reader/semantic/editorial judgment not performed; applicable until independently dispositioned."
+    - id: "QL-R02"
+      applicability: "Mandatory"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Expert reader/semantic/editorial judgment not performed; applicable until independently dispositioned."
+    - id: "QL-R03"
+      applicability: "Mandatory"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Expert reader/semantic/editorial judgment not performed; applicable until independently dispositioned."
+    - id: "QL-R04"
+      applicability: "Mandatory"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Expert reader/semantic/editorial judgment not performed; applicable until independently dispositioned."
+    - id: "QL-R05"
+      applicability: "Conditional"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Expert reader/semantic/editorial judgment not performed; applicable until independently dispositioned."
+    - id: "QL-R06"
+      applicability: "Conditional"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Expert reader/semantic/editorial judgment not performed; applicable until independently dispositioned."
+    - id: "QL-R07"
+      applicability: "Conditional"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Expert reader/semantic/editorial judgment not performed; applicable until independently dispositioned."
+    - id: "QL-R08"
+      applicability: "Conditional"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Expert reader/semantic/editorial judgment not performed; applicable until independently dispositioned."
+    - id: "QL-R09"
+      applicability: "Conditional"
+      disposition: blocked
+      rating: null
+      weighted_score: null
+      evidence_refs: []
+      notes: "Expert reader/semantic/editorial judgment not performed; applicable until independently dispositioned."
+comparison:
+  baseline_assessment_id: null
+  previous_assessment_id: null
+  comparable_scope: false
+  scope_change_notes: "First audit inventory; no baseline/final delta claim."
+  quantitative_delta: null
+  qualitative_delta: null
+  criterion_deltas: []
+gaps:
+  register_path: docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md
+  open_count: null
+  accepted_limitation_count: null
+  blocked_count: null
+  deferred_count: null
+verification:
+  rubric_frozen_before_scoring: true
+  weights_match_rubric: true
+  applicability_checked: false
+  na_rationales_checked: false
+  quantitative_evidence_complete: false
+  qualitative_evidence_complete: false
+  score_recalculation_verified: false
+  source_published_refs_verified: false
+  no_post_hoc_rubric_change: true
+summary:
+  result: INCOMPLETE
+  quantitative_score: null
+  qualitative_score: null
+  threshold_result: not_evaluated
+  blockers:
+    - "#118: criteria applicability/denominators and full quantitative evidence remain to be reviewed."
+    - "#118/#51/#53: independent qualitative/semantic and citation review is not complete."
+    - "#117/#119/#55/#56: Pages, explorer, publication and public-readback gates remain open."
+  notes: "Two bounded mechanical criterion ratings only; no QN/QL totals or conformance claim. N/A is not used to hide incomplete applicable work."
