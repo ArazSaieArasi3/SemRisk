@@ -9,6 +9,7 @@ import copy
 import csv
 import hashlib
 import json
+import os
 import re
 from pathlib import Path
 
@@ -108,8 +109,10 @@ def main():
     if args.report:
         report = {
             'integrity_status': 'PASS_BOUNDED',
+            'tested_ref': os.environ.get('GITHUB_SHA', 'LOCAL_UNBOUND'),
             'matrix_blob': git_blob(MATRIX.read_bytes()),
             'claims': [{k: row[k] for k in ('claim_id', 'current_assessment',
+                        'dataset_role', 'tool_version_ref',
                         'primary_artifact_and_blob', 'claim_ceiling',
                         'challenging_or_missing_evidence')} for row in rows],
             'human_validation': 'PENDING_ISSUE_51',

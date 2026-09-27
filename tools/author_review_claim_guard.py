@@ -32,6 +32,8 @@ UNSAFE = [
     r"27/27 (proves|demonstrates) (ERM|ontology) completeness",
     r"DS-003 (proves|demonstrates) (treatment effectiveness|observed impact)",
     r"DS-002 (validates|proves) (antibiotic|shortage)",
+    r"(?:simulated (?:R1[-– ]R8 )?(?:reviewer|panel|meta[- ]review)|R1[-– ]R8 simulated (?:review|panel)) (?:is|was|counts as|constitutes|provides) (?:real |independent )?(?:human |expert )?(?:validation|review|evidence)",
+    r"(?:external )?(?:EA|Pharma|CM[-– ]PharmE) (?:owner|entity|identity|ontology) (?:is|was|has been) (?:locally |fully )?(?:owned|defined|absorbed) (?:by|in) (?:SemRisk|Core)",
 ]
 
 def check(text, rows):
@@ -98,6 +100,8 @@ def selftest(rows, placements, preliminary):
         "27/27 proves ERM completeness.",
         "DS-003 demonstrates treatment effectiveness.",
         "DS-002 validates antibiotic shortage.",
+        "Simulated R1–R8 panel is independent human validation.",
+        "External Pharma ontology is locally owned by SemRisk Core.",
     ]:
         faults = check(base + "\n" + phrase, rows)
         assert any("affirmative overclaim" in x for x in faults), phrase
@@ -105,6 +109,8 @@ def selftest(rows, placements, preliminary):
     for phrase in [
         "We do not claim that independent transferability has been demonstrated.",
         "We cannot assert that the ontology is expert-validated.",
+        "We do not claim that simulated R1–R8 panel is independent human validation.",
+        "We cannot assert that external Pharma ontology is locally owned by SemRisk Core.",
     ]:
         assert not check(base + "\n" + phrase, rows), phrase
     for phrase in [
