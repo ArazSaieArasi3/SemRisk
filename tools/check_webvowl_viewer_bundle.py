@@ -42,6 +42,8 @@ def check():
     source = ROOT / manifest["json_source"]
     assert (BUNDLE / "data/semrisk.json").read_bytes() == source.read_bytes()
     module_manifest = json.loads((ROOT / manifest["module_json_source"]).read_text())
+    assert module_manifest["status"] == "OFFLINE_MODULE_JSON_BROWSER_SMOKE_PASS_READABILITY_PARTIAL"
+    assert manifest["module_browser_qa"] == module_manifest["browser_qa_run"]
     assert sum(row["local_class_coverage"] for row in module_manifest["modules"]) == 35
     assert sum(row["local_object_property_coverage"] for row in module_manifest["modules"]) == 37
     for module in module_manifest["modules"]:

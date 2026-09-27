@@ -1,4 +1,5 @@
 {
+  "browser_qa_run": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/36319497749",
   "converter_jar_sha256": "f61a49c9bfee60e0a3e02c23f780f3d07d7edaad5b1dd63ced2d4c4c292dc4a9",
   "converter_source_ref": "2833ead00122ca252a0fd0e18c5e5b696d711d2c",
   "modules": [
@@ -65,11 +66,12 @@
   ],
   "policy": "One exact SemRisk module per view; omit owl:imports and ontology-type triples only in derived input; no imported gUFO or cross-module definitions, no entailment. Referenced terms are context stubs. Combined asserted-union view remains separate.",
   "public_url": null,
+  "readability": "partial: focused views reduce nodes, but external context stubs and edge clipping require reader review",
   "semantic_source_ref": "c17cc111f02309270a60474623259cefcf907c6f",
   "skos_markers_outside_owl_views": {
     "Core": 1,
     "Mappings": 3,
     "note": "Mappings contains no local OWL class/object-property declaration and is intentionally not presented as an empty WebVOWL module."
   },
-  "status": "OFFLINE_MODULE_JSON_BROWSER_QA_PENDING"
+  "status": "OFFLINE_MODULE_JSON_BROWSER_SMOKE_PASS_READABILITY_PARTIAL"
 }

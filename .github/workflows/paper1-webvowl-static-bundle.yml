@@ -4,13 +4,21 @@ on:
   push:
     paths:
       - 'docs/ontology/generated/webvowl-candidate-v0.1/**'
+      - 'docs/ontology/generated/webvowl-module-v0.1/**'
       - 'docs/ontology/generated/webvowl-viewer-candidate-v0.1/**'
+      - 'ontology/**/*.ttl'
+      - 'docs/ontology/p1-r2-formal-source-entity-reference-v0.1.csv'
+      - 'tools/build_webvowl_module_views.py'
       - 'tools/check_webvowl_viewer_bundle.py'
       - '.github/workflows/paper1-webvowl-static-bundle.yml'
   pull_request:
     paths:
       - 'docs/ontology/generated/webvowl-candidate-v0.1/**'
+      - 'docs/ontology/generated/webvowl-module-v0.1/**'
       - 'docs/ontology/generated/webvowl-viewer-candidate-v0.1/**'
+      - 'ontology/**/*.ttl'
+      - 'docs/ontology/p1-r2-formal-source-entity-reference-v0.1.csv'
+      - 'tools/build_webvowl_module_views.py'
       - 'tools/check_webvowl_viewer_bundle.py'
       - '.github/workflows/paper1-webvowl-static-bundle.yml'
 

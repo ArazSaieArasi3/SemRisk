@@ -8,7 +8,6 @@ seven-file JSON remains the separate asserted-union view.
 
 import argparse
 import csv
-import hashlib
 import json
 import os
 import subprocess
@@ -109,12 +108,14 @@ def build(jar):
             "visualizer_property_nodes": len(data.get("property", [])),
         })
     manifest = {
-        "status": "OFFLINE_MODULE_JSON_BROWSER_QA_PENDING",
+        "status": "OFFLINE_MODULE_JSON_BROWSER_SMOKE_PASS_READABILITY_PARTIAL",
         "semantic_source_ref": SOURCE_REF,
         "converter_source_ref": CONVERTER_REF,
         "converter_jar_sha256": CONVERTER_SHA256,
         "policy": "One exact SemRisk module per view; omit owl:imports and ontology-type triples only in derived input; no imported gUFO or cross-module definitions, no entailment. Referenced terms are context stubs. Combined asserted-union view remains separate.",
         "modules": reports,
+        "browser_qa_run": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/36319497749",
+        "readability": "partial: focused views reduce nodes, but external context stubs and edge clipping require reader review",
         "skos_markers_outside_owl_views": {
             "Core": 1, "Mappings": 3,
             "note": "Mappings contains no local OWL class/object-property declaration and is intentionally not presented as an empty WebVOWL module."
