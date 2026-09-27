@@ -27,7 +27,8 @@ jobs:
         with:
           node-version: '24'
       - run: npm install --prefix "$RUNNER_TEMP/webvowl-qa" --no-save --no-audit --no-fund playwright@1.55.1
-      - run: "$RUNNER_TEMP/webvowl-qa/node_modules/.bin/playwright" install --with-deps chromium
+      - run: |
+          "$RUNNER_TEMP/webvowl-qa/node_modules/.bin/playwright" install --with-deps chromium
       - run: NODE_PATH="$RUNNER_TEMP/webvowl-qa/node_modules" node tools/browser_qa_webvowl.js
       - uses: actions/upload-artifact@v4
         if: always()
