@@ -112,6 +112,6 @@ summary:
   result: FAIL
   blockers:
     - Pages not deployed or rendered; public access decision pending #55/#56.
-    - Cross-surface backlinks, WebVOWL browser/route QA and full privacy/licensing review pending #117/#119.
+    - Cross-surface backlinks, WebVOWL readable module/reader-route QA and full privacy/licensing review pending #117/#119.
     - RO/PT/RW provisional dispositions recorded; reader-route publication, REF coverage and QN/QL closure pending #118.
-  notes: "Private Wiki 8/8 live source hashes match; Pages is offline. A separate source-bound WebVOWL static viewer candidate exists under docs/ontology/generated/ with successful integrity CI, but is not a Pages output or rendered verification. See p1-r2-documentation-rollout-2026-09-26.md. This manifest is staged, not conformance or release approval."
+  notes: "Private Wiki 8/8 live source hashes match; Pages is offline. A separate source-bound WebVOWL static viewer candidate under docs/ontology/generated/ passes private desktop/mobile Chromium smoke, but is not a deployed Pages output or reader usability pass. See p1-r2-documentation-rollout-2026-09-26.md. This manifest is staged, not conformance or release approval."
