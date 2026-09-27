@@ -45,6 +45,7 @@ async function inspect(browser, name, viewport) {
     );
     await page.locator("#loading-info").waitFor({ state: "hidden", timeout: 120000 });
     await page.waitForTimeout(500);
+    assert(!((await page.locator('meta[name="viewport"]').getAttribute("content")) || "").includes("user-scalable=no"), "browser pinch zoom disabled");
     const nodeCount = await page.locator("#graph svg.vowlGraph .nodeContainer .node").count();
     const graphBox = await page.locator("#graph svg.vowlGraph").boundingBox();
     assert(graphBox && graphBox.width > 250 && graphBox.height > 250);
