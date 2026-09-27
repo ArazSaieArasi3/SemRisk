@@ -1,0 +1,34 @@
+name: Paper-1 WebVOWL static bundle
+
+on:
+  push:
+    paths:
+      - 'docs/ontology/generated/webvowl-candidate-v0.1/**'
+      - 'docs/ontology/generated/webvowl-viewer-candidate-v0.1/**'
+      - 'tools/check_webvowl_viewer_bundle.py'
+      - '.github/workflows/paper1-webvowl-static-bundle.yml'
+  pull_request:
+    paths:
+      - 'docs/ontology/generated/webvowl-candidate-v0.1/**'
+      - 'docs/ontology/generated/webvowl-viewer-candidate-v0.1/**'
+      - 'tools/check_webvowl_viewer_bundle.py'
+      - '.github/workflows/paper1-webvowl-static-bundle.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: python tools/check_webvowl_viewer_bundle.py
+      - run: node --check docs/ontology/generated/webvowl-viewer-candidate-v0.1/js/webvowl.app.js
+      - run: node --check docs/ontology/generated/webvowl-viewer-candidate-v0.1/js/webvowl.js
