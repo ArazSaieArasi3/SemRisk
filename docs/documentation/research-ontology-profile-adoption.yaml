@@ -245,11 +245,11 @@ capabilities:
   - id: RO-30
     title: "Academic/industrial dual-audience usability"
     applicability: Conditional
-    status: missing
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    status: partial
+    evidence_paths: [docs/documentation/p1-r2-dual-audience-route-audit-2026-09-27.md, docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
     deviations: []
     blockers: ["#118"]
-    notes: "Dual-audience usability audit/route absent; provisional triage, not capability verification."
+    notes: "Bounded source route/task audit exists; target-reader observation, mobile accessibility and Pages/WebVOWL read-back remain open. Not a usability pass."
 machine_artifacts:
   documentation_surface_manifest: docs/documentation/documentation-surfaces.yaml
   profile_composition_manifest: ""
