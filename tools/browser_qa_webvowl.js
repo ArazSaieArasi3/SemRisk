@@ -80,6 +80,7 @@ async function inspect(browser, name, viewport) {
     await page.waitForTimeout(350);
     const after = await page.locator("#graph svg.vowlGraph > g").getAttribute("transform");
     assert.notEqual(after, before, "zoom control did not change graph transform");
+    await page.locator("#semriskNotice a").first().click({ trial: true });
     const filterHint = page.locator('[id^="killFilterMessages_"]').first();
     if (await filterHint.count()) {
       await filterHint.click();

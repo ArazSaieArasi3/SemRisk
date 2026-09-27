@@ -16,7 +16,7 @@ From this directory, serve files over a local HTTP server (a `file://` open may 
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-Open `http://127.0.0.1:8765/` and check search, zoom, labels, filter controls and side panel. The converter/upload controls are visually hidden in this static candidate; no ontology needs to be sent to an online converter. A formal browser QA record is still required before the candidate can be called usable.
+Open `http://127.0.0.1:8765/` and check search, zoom, labels, filter controls and side panel. The converter/upload controls are visually hidden in this static candidate; no ontology needs to be sent to an online converter. Browser QA runs in GitHub Actions and records private screenshots. Desktop and mobile start with the details rail collapsed; a reader can expand it. Readability remains partial, especially on phones.
 
 ## Build provenance
 
