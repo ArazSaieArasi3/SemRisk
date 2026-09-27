@@ -2,6 +2,16 @@ name: SemRisk Paper 1 author review claim guard
 on:
   push:
     paths:
+      - 'ontology/**'
+      - 'shapes/**'
+      - 'rules/**'
+      - '.research/manifest.yaml'
+      - 'docs/research/**'
+      - 'evaluation/integrity/**'
+      - 'evaluation/assurance/**'
+      - 'evaluation/oquare/**'
+      - 'evaluation/vveaa/**'
+      - 'publications/2026-icae/**'
       - 'publications/2026-icae/manuscript-working-draft-v0.3.md'
       - 'publications/2026-icae/author-review-claim-evidence-v0.2.csv'
       - 'publications/2026-icae/claim-calibration-preliminary-v0.1.csv'
@@ -18,6 +28,16 @@ on:
       - '.github/workflows/paper1-author-review-claims.yml'
   pull_request:
     paths:
+      - 'ontology/**'
+      - 'shapes/**'
+      - 'rules/**'
+      - '.research/manifest.yaml'
+      - 'docs/research/**'
+      - 'evaluation/integrity/**'
+      - 'evaluation/assurance/**'
+      - 'evaluation/oquare/**'
+      - 'evaluation/vveaa/**'
+      - 'publications/2026-icae/**'
       - 'publications/2026-icae/manuscript-working-draft-v0.3.md'
       - 'publications/2026-icae/author-review-claim-evidence-v0.2.csv'
       - 'publications/2026-icae/claim-calibration-preliminary-v0.1.csv'
