@@ -46,16 +46,18 @@
   "license": "MIT upstream license.txt; transitive license review pending #56",
   "route": "candidate local static bundle only; not deployed Pages",
   "semantic_source_ref": "c17cc111f02309270a60474623259cefcf907c6f",
-  "status": "OFFLINE_STATIC_BUNDLE_RENDER_NOT_VERIFIED",
+  "status": "OFFLINE_BROWSER_SMOKE_PASS_READABILITY_PARTIAL",
   "verification": {
-    "browser_rendered": false,
+    "browser_rendered": true,
     "duplicate_html_ids": false,
     "js_syntax_checked": true,
     "json_identical_to_source": true,
     "local_assets_present": true,
-    "mobile_readability_checked": false,
+    "mobile_readability_checked": true,
     "public_access_checked": false
   },
+  "browser_qa_run": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/36312545968",
+  "mobile_readability_result": "Partial: full-width canvas after rail collapse, but labels too small for reliable phone reading",
   "webvowl_source_ref": "VisualDataWeb/WebVOWL@28e7dd9540622e8cb723dc000824b5eef5ae775f",
   "webvowl_version": "1.1.7"
 }
