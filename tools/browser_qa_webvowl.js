@@ -43,7 +43,8 @@ async function inspect(browser, name, viewport) {
       () => document.querySelectorAll("#graph svg.vowlGraph .nodeContainer .node").length >= 35,
       null, { timeout: 120000 }
     );
-    await page.waitForTimeout(1500);
+    await page.locator("#loading-info").waitFor({ state: "hidden", timeout: 120000 });
+    await page.waitForTimeout(500);
     const nodeCount = await page.locator("#graph svg.vowlGraph .nodeContainer .node").count();
     const graphBox = await page.locator("#graph svg.vowlGraph").boundingBox();
     assert(graphBox && graphBox.width > 250 && graphBox.height > 250);
@@ -107,6 +108,8 @@ async function inspectModule(browser, slug, viewport) {
       () => document.querySelectorAll("#graph svg.vowlGraph .nodeContainer .node").length > 0,
       null, { timeout: 60000 }
     );
+    await page.locator("#loading-info").waitFor({ state: "hidden", timeout: 120000 });
+    await page.waitForTimeout(500);
     assert(jsonResponses.includes(200), "module JSON was not loaded: " + slug);
     assert.deepEqual(pageErrors, [], slug);
     assert.deepEqual(outbound, [], slug);
