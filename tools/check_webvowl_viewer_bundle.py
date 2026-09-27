@@ -66,7 +66,10 @@ def check():
         assert len(content) == entry["bytes"], str(rel)
         assert hashlib.sha256(content).hexdigest() == entry["sha256"], str(rel)
         expected[rel.as_posix()] = content
-    assert "license.txt" in expected and "data/semrisk.json" in expected
+    assert {"license.txt", "licenses/d3-3.5.17-LICENSE.txt", "licenses/lodash-4.18.1-LICENSE.txt", "data/semrisk.json"} <= set(expected)
+    assert b"Michael Bostock" in expected["licenses/d3-3.5.17-LICENSE.txt"]
+    assert b"OpenJS Foundation" in expected["licenses/lodash-4.18.1-LICENSE.txt"]
+    assert "lodash/lodash#4.18.1" in expected["js/webvowl.js"].decode(), "bundled Lodash version drift"
     assert "index.html" in expected
     present = {p.relative_to(BUNDLE).as_posix() for p in BUNDLE.rglob("*") if p.is_file()}
     assert present == set(expected) | {"README.md", "manifest.json"}, sorted(present ^ (set(expected) | {"README.md", "manifest.json"}))
