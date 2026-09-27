@@ -174,10 +174,10 @@ capabilities:
     title: "Documentation QA/conformance evidence"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/documentation/p1-r2-documentation-quality-audit-2026-09-27.yaml, docs/wiki/p1-r2-live-wiki-readback-2026-09-26.md, docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
     deviations: []
     blockers: ["#118"]
-    notes: "Hash/CI/read-back done; QN/QL conformance not assessed; provisional triage, not capability verification."
+    notes: "36 rubric criteria inventoried; two bounded mechanical Wiki criteria rated, no QN/QL total or qualitative expert scores. Applicability and full conformance review remain open."
   - id: RO-22
     title: "Multi-profile declaration"
     applicability: Conditional
@@ -256,7 +256,7 @@ machine_artifacts:
   research_journey_record: ""
   diagram_manifest: ""
   documentation_qa_evidence: docs/wiki/p1-r2-live-wiki-readback-2026-09-26.md
-  documentation_quality_assessment: ""
+  documentation_quality_assessment: docs/documentation/p1-r2-documentation-quality-audit-2026-09-27.yaml
   documentation_baseline_manifest: docs/wiki/p1-r2-wiki-publish-manifest-v0.1.json
   ontology_reference_manifest: docs/ontology/generated/p1-r2-closure-manifest.json
   reference_corpus: docs/documentation/research-reference-corpus.yaml
