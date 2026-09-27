@@ -2,6 +2,8 @@
 
 **Status:** locally built static bundle; JavaScript syntax, internal asset presence and JSON identity checked. A browser render, desktop/mobile usability and public Pages deployment have **not** been verified. This is an exploratory derived view, not ontology authority, evaluation evidence or the #55 scholarly release.
 
+The initial private Chromium smoke run found an upstream Google Fonts CSS import. It was removed from the bundled stylesheet; system font fallbacks remain. Rerun the browser QA before treating the no-external-request check as passed.
+
 The bundled `index.html` loads `data/semrisk.json` by default. The JSON is byte-identical to `../webvowl-candidate-v0.1/combined.json`; that file's manifest checks 35/35 SemRisk OWL classes and 37/37 object properties against the exact source inventory. The displayed graph also contains vendored gUFO and structural/reference nodes; the raw WebVOWL JSON has 108 class nodes and 212 property nodes. These are visualizer nodes, not 108/212 SemRisk declarations. Four SKOS markers are outside the class/property denominator. A combined view may be too dense; module-scoped filtering remains #119 work.
 
 ## Local preview
