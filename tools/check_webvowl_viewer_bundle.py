@@ -35,8 +35,9 @@ class AssetParser(html.parser.HTMLParser):
 
 def check():
     manifest = json.loads((BUNDLE / "manifest.json").read_text())
-    assert manifest["status"] == "OFFLINE_STATIC_BUNDLE_RENDER_NOT_VERIFIED"
-    assert manifest["verification"]["browser_rendered"] is False
+    assert manifest["status"] == "OFFLINE_BROWSER_SMOKE_PASS_READABILITY_PARTIAL"
+    assert manifest["verification"]["browser_rendered"] is True
+    assert manifest["verification"]["mobile_readability_checked"] is True
     assert manifest["verification"]["public_access_checked"] is False
     source = ROOT / manifest["json_source"]
     assert (BUNDLE / "data/semrisk.json").read_bytes() == source.read_bytes()
@@ -70,7 +71,7 @@ def check():
     assert 'semrisk.invalid' not in expected["data/semrisk.json"].decode(), "temporary converter alias leaked"
     data = json.loads(expected["data/semrisk.json"])
     assert data["header"]["iri"] == "urn:semrisk:documentation:webvowl:p1-r2:0.1.0-rc.1"
-    print("SEM_RISK_WEBVOWL_STATIC_BUNDLE_PASS | source JSON, hashes and local assets; render pending")
+    print("SEM_RISK_WEBVOWL_STATIC_BUNDLE_PASS | source JSON, hashes and local assets; independent browser QA recorded")
 
 
 if __name__ == "__main__":
