@@ -71,8 +71,13 @@ async function inspect(browser, name, viewport) {
     await page.locator("#search-input-text").fill("Risk");
     assert.equal(await page.locator("#search-input-text").inputValue(), "Risk");
     const before = await page.locator("#graph svg.vowlGraph > g").getAttribute("transform");
-    await page.locator("#zoomInButton").click();
-    await page.waitForTimeout(800);
+    const zoomButton = await page.locator("#zoomInButton").boundingBox();
+    assert(zoomButton, "zoom button is not visible");
+    await page.mouse.move(zoomButton.x + zoomButton.width / 2, zoomButton.y + zoomButton.height / 2);
+    await page.mouse.down();
+    await page.waitForTimeout(450);
+    await page.mouse.up();
+    await page.waitForTimeout(350);
     const after = await page.locator("#graph svg.vowlGraph > g").getAttribute("transform");
     assert.notEqual(after, before, "zoom control did not change graph transform");
     const filterHint = page.locator('[id^="killFilterMessages_"]').first();
