@@ -1,4 +1,5 @@
 {
+  "browser_qa_run": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/36312545968",
   "conversion_input_asserted_triples": 1394,
   "conversion_input_nt_sha256": "c5ba30fbcd4152611b870a4d4dd19c9281fb6d4c50d3c59e92b788e2702f0d53",
   "conversion_policy": "seven local asserted graphs; omit owl:imports and original ontology-type triples only in derived document; temporary HTTP IRI aliases restored in JSON; no entailment",
@@ -9,6 +10,7 @@
   "local_class_coverage": 35,
   "local_object_property_coverage": 37,
   "public_url": null,
+  "readability": "partial: combined graph and phone labels remain difficult to read",
   "semantic_source_ref": "c17cc111f02309270a60474623259cefcf907c6f",
   "skos_markers_outside_vowl_denominator": 4,
   "source_closure_sha256": "7f190ca4729b3b66aeb8146d89b71bfbacc9483ef57580cb05be8cd702215a8a",
@@ -42,6 +44,6 @@
       "path": "ontology/vendor/gufo-v1.0.0.ttl"
     }
   ],
-  "status": "OFFLINE_JSON_CANDIDATE_NOT_RENDERED",
-  "viewer_rendered": false
+  "status": "OFFLINE_JSON_CANDIDATE_BROWSER_SMOKE_PASS",
+  "viewer_rendered": true
 }
