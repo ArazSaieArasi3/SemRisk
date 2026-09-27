@@ -1,6 +1,6 @@
 # P1-R2 WebVOWL conversion decision and offline gate
 
-**State:** offline conversion JSON candidate produced and inventory-checked; viewer not yet rendered/deployed. Owner: #119. This is a derived view, not formal ontology authority or public Pages deployment.
+**State:** offline conversion JSON and static WebVOWL viewer bundle produced; browser rendering and deployment not yet verified. Owner: #119. This is a derived view, not formal ontology authority or public Pages deployment.
 
 ## Pinned upstream source choices
 
@@ -26,9 +26,9 @@ The exact `-file Core -dependencies gUFO` smoke run emitted **zero** SemRisk loc
 
 ## Remaining sequence and acceptance
 
-1. Obtain/build the pinned WebVOWL viewer bundle, record its SHA-256/dependency/license inventory, and test this JSON in a local static viewer. No network fetch of private ontology is permitted.
-2. Assess combined graph readability (108 class nodes and 212 property nodes in the raw JSON, including imported/structural terms). Add module-scoped/filterable views if needed; clearly separate locally declared SemRisk nodes from referenced/imported gUFO nodes and generated structural stubs.
-3. Inspect JSON schema/behavior and all unsupported constructs, labels, navigation, search/zoom/legend, desktop/mobile rendering, privacy and static links. Reconcile the exact 35/37 local IRIs after rendering, not merely in raw JSON.
-4. Build a new candidate route, separate from frozen `site/ontology/0.1.0-rc.1/index.html`, with canonical OWL, FD-A…FD-J, version registry and limitation links. #117/#55/#56 govern actual publication and public read-back.
+1. The pinned WebVOWL source was built locally with Node 24.19.0/npm 11.9.0 and `NODE_OPTIONS=--openssl-legacy-provider grunt release`. A reduced static bundle at `docs/ontology/generated/webvowl-viewer-candidate-v0.1/` loads the exact JSON by default, includes upstream MIT license, source/formal links and a candidate notice. Its manifest records asset hashes and explicitly marks browser rendering false. A lockfile/transitive dependency license review remains for release-bound reproducibility.
+2. Assess combined graph readability (108 class nodes and 212 property nodes in raw JSON, including imported/structural terms). Add module-scoped/filterable views if needed; clearly separate locally declared SemRisk nodes from referenced/imported gUFO nodes and generated structural stubs.
+3. Test actual browser behavior, unsupported constructs, labels, search/zoom/legend, desktop/mobile rendering, privacy and static links. Reconcile exact 35/37 local IRIs after rendering, not merely in raw JSON. The current static checks found no duplicate HTML IDs or missing local CSS/JS assets; JS syntax parses; bundled JSON equals the source-bound JSON. These do not substitute for rendered QA.
+4. Move only a verified bundle to a new versioned candidate route, separate from frozen `site/ontology/0.1.0-rc.1/index.html`. #117/#55/#56 govern actual publication and public read-back.
 
-**Current gate:** converter JSON exists and passes the raw local-inventory check; viewer behavior, usability, licensing/privacy and deployment remain open. There is no rendered WebVOWL link yet. The existing source-derived SVG atlas and relation map remain available in the private repository.
+**Current gate:** converter JSON and a locally servable static bundle exist in the private repository; browser behavior, usability, transitive licensing/privacy and deployment remain open. There is no public WebVOWL link yet. The existing source-derived SVG atlas and relation map remain available in the private repository.
