@@ -2,9 +2,9 @@
   "build_environment": "Node 24.19.0, npm 11.9.0, NODE_OPTIONS=--openssl-legacy-provider grunt release; npm install --ignore-scripts --legacy-peer-deps",
   "files": [
     {
-      "bytes": 42680,
+      "bytes": 42618,
       "path": "css/webvowl.app.css",
-      "sha256": "8323ad062f40675bcd3af6c6d11c1515fb4cb7066fac323039187d366e43b006"
+      "sha256": "b6ff24d586471926b116ce8a358e848c6f50f87e092d3a0fd9e01951843790f9"
     },
     {
       "bytes": 5341,
