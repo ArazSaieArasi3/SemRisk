@@ -121,7 +121,7 @@ def build(jar):
         raise ValueError("Derived-view header mismatch")
     json_bytes = (json.dumps(data, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n").encode()
     report = {
-        "status": "OFFLINE_JSON_CANDIDATE_NOT_RENDERED",
+        "status": "OFFLINE_JSON_CANDIDATE_BROWSER_SMOKE_PASS",
         "semantic_source_ref": SOURCE_REF,
         "converter_source_ref": CONVERTER_REF,
         "converter_jar_sha256": CONVERTER_SHA256,
@@ -135,7 +135,9 @@ def build(jar):
         "local_class_coverage": len(actual["owl:Class"]),
         "local_object_property_coverage": len(actual["owl:ObjectProperty"]),
         "skos_markers_outside_vowl_denominator": 4,
-        "viewer_rendered": False,
+        "viewer_rendered": True,
+        "browser_qa_run": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/36312545968",
+        "readability": "partial: combined graph and phone labels remain difficult to read",
         "public_url": None,
     }
     return json_bytes, (json.dumps(report, indent=2, sort_keys=True) + "\n").encode()
@@ -156,7 +158,7 @@ def main():
         OUTPUT.mkdir(parents=True, exist_ok=True)
         for path, content in targets.items():
             path.write_bytes(content)
-    print("SEM_RISK_WEBVOWL_OFFLINE_JSON_PASS | 35 classes; 37 object properties; no viewer rendering")
+    print("SEM_RISK_WEBVOWL_OFFLINE_JSON_PASS | 35 classes; 37 object properties; private browser smoke recorded")
 
 
 if __name__ == "__main__":
