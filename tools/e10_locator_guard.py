@@ -60,6 +60,14 @@ EXPECTED_AUDIT_IDS = {
     "RISK-HUB-D16",
     "RISK-HUB-D17",
     "RISK-HUB-D07",
+    "RISKMAN-D03",
+    "RISKMAN-D04",
+    "RISKMAN-D11",
+    "RISKMAN-D12",
+    "RISKMAN-D13",
+    "RISKMAN-D14",
+    "RISKMAN-D16",
+    "RISKMAN-D17",
 }
 
 def rows(path):
@@ -93,9 +101,9 @@ def check(self_rows, external_rows, legacy_rows, dimensions, root=ROOT):
         if row.get("current_status") not in SELF_STATUSES:
             errors.append(f"{cid}: uncontrolled status")
         for field in ("observed_source_or_result", "unit_or_denominator", "claim_ids", "residual_or_unassessed"):
-            if not row.get(field, "").strip():
+            if not (row.get(field) or "").strip():
                 errors.append(f"{cid}: empty {field}")
-        refs = row.get("source_artifact_at_blob", "").split(";")
+        refs = (row.get("source_artifact_at_blob") or "").split(";")
         if not refs or any(not ref for ref in refs):
             errors.append(f"{cid}: empty source blob ref")
         for ref in refs:
@@ -110,11 +118,13 @@ def check(self_rows, external_rows, legacy_rows, dimensions, root=ROOT):
             elif git_blob(target.read_bytes()) != expected_sha:
                 errors.append(f"{cid}: source blob drift {path}")
     ids = [r.get("audit_id") for r in external_rows]
-    if len(ids) != 38 or len(set(ids)) != 38 or set(ids) != EXPECTED_AUDIT_IDS:
-        errors.append("external locator ledger must contain exactly the 38 selected audit IDs")
+    if len(ids) != 46 or len(set(ids)) != 46 or set(ids) != EXPECTED_AUDIT_IDS:
+        errors.append("external locator ledger must contain exactly the 46 selected audit IDs")
     mapped = 0
     for row in external_rows:
         aid = row.get("audit_id", "?")
+        if None in row or any(value is None for value in row.values()):
+            errors.append(f"{aid}: malformed column count")
         old_id = row.get("legacy_cell_id", "")
         if old_id:
             mapped += 1
@@ -127,15 +137,15 @@ def check(self_rows, external_rows, legacy_rows, dimensions, root=ROOT):
             errors.append(f"{aid}: outside-row legacy status mismatch")
         if row.get("source_level_status") not in EXTERNAL_STATUSES:
             errors.append(f"{aid}: uncontrolled source-level status")
-        if row.get("source_id") not in {"SRC-PA-006", "SRC-PA-009", "SRC-PH-003", "SRC-ON-001", "SRC-ON-002", "SRC-PA-017"}:
+        if row.get("source_id") not in {"SRC-PA-006", "SRC-PA-009", "SRC-PH-003", "SRC-ON-001", "SRC-ON-002", "SRC-PA-017", "SRC-ON-004"}:
             errors.append(f"{aid}: unexpected source")
-        if not row.get("source_url", "").startswith("https://"):
+        if not (row.get("source_url") or "").startswith("https://"):
             errors.append(f"{aid}: missing HTTPS primary source")
         for field in ("exact_publication_locator", "observed_evidence", "calibrated_semrisk_consequence", "artifact_or_reproduction_limit"):
-            if not row.get(field, "").strip():
+            if not (row.get(field) or "").strip():
                 errors.append(f"{aid}: empty {field}")
-    if mapped != 30:
-        errors.append(f"expected 30 old external cells, got {mapped}")
+    if mapped != 38:
+        errors.append(f"expected 38 old external cells, got {mapped}")
     correction = [r for r in external_rows if r.get("audit_id") == "PA006-D08"]
     if len(correction) != 1 or correction[0].get("legacy_cell_id") != "CELL-059" or correction[0].get("legacy_status") != "not_in_scope" or correction[0].get("source_level_status") != "CORRECTION_PRIOR_ART":
         errors.append("CELL-059 prior-art correction missing")
@@ -152,6 +162,7 @@ def selftest(self_rows, external_rows, legacy_rows, dimensions):
     e = copy.deepcopy(external_rows); e[0]["legacy_status"] = "covered_by_assumption"; mutations.append(("historical status drift", self_rows, e))
     e = copy.deepcopy(external_rows); next(r for r in e if r["audit_id"] == "PA006-D08")["source_level_status"] = "not_in_scope"; mutations.append(("lost counterevidence", self_rows, e))
     e = copy.deepcopy(external_rows); e[0]["source_url"] = ""; mutations.append(("missing primary URL", self_rows, e))
+    e = copy.deepcopy(external_rows); e[-1]["source_url"] = None; mutations.append(("malformed external row", self_rows, e))
     for label, s, e in mutations:
         if not check(s, e, legacy_rows, dimensions):
             raise AssertionError("negative control not detected: " + label)
@@ -168,7 +179,7 @@ def main():
         raise SystemExit("\n".join("FAIL: " + x for x in failures))
     if args.selftest:
         selftest(s, e, l, d)
-    print("SEM_RISK_E10_LOCATOR_INTEGRITY_PASS (17 self + 38 external selected rows)")
+    print("SEM_RISK_E10_LOCATOR_INTEGRITY_PASS (17 self + 46 external selected rows)")
 
 
 if __name__ == "__main__":
