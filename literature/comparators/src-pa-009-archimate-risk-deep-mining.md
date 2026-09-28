@@ -45,3 +45,19 @@ Candidate differentiators still requiring evidence are: operational risk-registe
 ## Remaining extraction debt
 
 Before G1: normalize exact page/figure/table locators; reconcile terminology against COVER/ROSE; record exact ArchiMate constructs and redesign relations in comparator registry; check newer ArchiMate-risk work for supersession/extensions.
+
+## Exact primary-source locator and novelty recalibration — 2026-09-28
+
+**Primary author-hosted full text:** https://nemo.inf.ufes.br/wp-content/papercite-data/pdf/ontological_analysis_and_redesign_of_risk_modeling_in_archimate_2018.pdf (10 PDF pages; corresponding IEEE EDOC 2018 pp. 154–163; DOI above). Page references below use printed conference pagination: PDF page index + 154.
+
+| Claim-critical evidence | Exact locator | SemRisk consequence |
+| --- | --- | --- |
+| Risk and Security Overlay (RSO) terms and original ArchiMate mapping | Table 1, p. 155; Fig. 1, pp. 155–156 | Original RSO Risk and Vulnerability mapped to ArchiMate Assessment; do not equate original RSO with authors' redesign. |
+| Ontology distinguishes experiential event, assessor-linked relation and quantifiable quality | §3, Figs. 5–6, pp. 157–158 | A risk experience comprises threat/loss events; an objectified Risk Assessment relates assessor to event/object; Risk quality inheres in assessment. Generic experience/assessment/value separation is established prior art. |
+| Original RSO deficiencies L1–L8 | §4, Table 2, p. 161 | L1 conflates vulnerability and its assessment; L8 collapses risk experience, asset-level risk and a judgment about action. These exact critique categories precede SemRisk. |
+| Redesign of threat/object/goal roles | §5, Figs. 7–8, pp. 161–162 | Threat enabler vs asset at risk, hazardous-situation assessment, affected subject's goal and loss-event damage are explicit; generic EA goal/asset/risk semantics are prior art. |
+| Three risk perspectives, final scheme and exact ArchiMate representation | §5, Figs. 9–10 and Table 3, p. 162 | Risk Experience→Grouping; Risk→Driver; Risk Assessment→Assessment; Risk Assessor→Stakeholder. The authors explicitly allow different stakeholder judgments to coexist. |
+
+**Corrected novelty boundary:** SemRisk must not claim novelty for risk-event/experience vs risk-assessment vs risk-value separation, assessor perspective, EA goal/asset links, or an ontologically grounded ArchiMate risk redesign. Candidate contribution is the *joint, formally specified and evaluated operational chain* that also identifies the register entry as an information artifact, connects activity/result/evidence and record workflow to temporal state, and tests a governed relational projection. The 2018 paper does not, on these inspected pages, establish that entire chain or its SQL↔SPARQL parity; this is an evidence-bound comparison, not a claim of capability absence. PA-006 further narrows assessor/result/provenance novelty.
+
+**Formal artifact boundary:** the inspected article supplies conceptual diagrams, an ontological analysis and an ArchiMate mapping table. No exact downloadable OWL/OntoUML repository, semantic release, license for code/model import or executable reproduction ref is established by these pages. The author-hosted PDF is the publication artifact; do not call it a machine-readable ontology. Source-code/semantic-artifact status stays `UNKNOWN/NOT_REPORTED` pending a targeted author-repository check if reuse is proposed.
