@@ -81,6 +81,18 @@ async function inspect(browser, name, viewport) {
     await page.waitForTimeout(350);
     const after = await page.locator("#graph svg.vowlGraph > g").getAttribute("transform");
     assert.notEqual(after, before, "zoom control did not change graph transform");
+    const keyboardBefore = await page.locator("#graph svg.vowlGraph > g").getAttribute("transform");
+    await page.locator("#zoomInButton").focus();
+    await page.keyboard.down("Enter");
+    await page.waitForTimeout(450);
+    await page.keyboard.up("Enter");
+    await page.waitForTimeout(350);
+    assert.notEqual(await page.locator("#graph svg.vowlGraph > g").getAttribute("transform"), keyboardBefore, "keyboard zoom did not change graph");
+    await page.locator("#sidebarExpandButton").focus();
+    await page.keyboard.press("Enter");
+    await page.waitForFunction(() => !document.querySelector("#detailsArea").classList.contains("hidden"));
+    await page.keyboard.press("Enter");
+    await page.waitForFunction(() => document.querySelector("#detailsArea").classList.contains("hidden"));
     await page.locator("#semriskNotice a").first().click({ trial: true });
     const filterHint = page.locator('[id^="killFilterMessages_"]').first();
     if (await filterHint.count()) {

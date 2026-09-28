@@ -11,7 +11,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" type="text/css" href="css/webvowl.css" />
     <link rel="stylesheet" type="text/css" href="css/webvowl.app.css" />
-    <style>#semriskNotice a, #semriskModuleSelect { pointer-events: auto; } #semriskModuleSelect { width:100%;margin-top:.35rem;font:inherit; } @media(max-width:700px){#semriskNotice{left:.5rem!important;right:.5rem!important;max-width:none!important}#logo{display:none!important}}</style>
+    <style>#semriskNotice a, #semriskModuleSelect { pointer-events: auto; } #semriskModuleSelect { width:100%;margin-top:.35rem;font:inherit; } [role="button"]:focus-visible { outline: 3px solid #f4a261; outline-offset: 2px; } @media(max-width:700px){#semriskNotice{left:.5rem!important;right:.5rem!important;max-width:none!important}#logo{display:none!important}}</style>
     <title>SemRisk P1-R2 | WebVOWL candidate</title>
 </head>
 
@@ -107,7 +107,7 @@
             <div class="noselect">
                 <span id="leftSideBarCollapseButton" class="btn_shadowed hidden"> > </span>
             </div>
-            <div class="noselect"><span id="sidebarExpandButton" class="btn_shadowed"> > </span></div>
+            <div class="noselect"><span id="sidebarExpandButton" class="btn_shadowed" role="button" tabindex="0" aria-label="Toggle details panel"> > </span></div>
 
             <div id="containerForLeftSideBar">
                 <div id="leftSideBar">
@@ -244,7 +244,7 @@
                                 </g>
                             </svg>
                         </i>
-                        <input class="searchInputText" type="text" id="search-input-text" placeholder="Search">
+                        <input class="searchInputText" type="text" id="search-input-text" placeholder="Search" aria-label="Search ontology">
                     </li>
                     <li id="c_locate">
                         <a style="padding: 0 8px 5px 8px;" draggable="false" title="Nothing to locate, enter search term." href="#" id="locateSearchResult">&#8982;
@@ -334,10 +334,10 @@
             <div class="noselect" id="scrollRightButton"></div>
             <div class="noselect" id="scrollLeftButton"></div>
             <div id="zoomSlider" class="btn_shadowed">
-                <p class="noselect" id="centerGraphButton">&#8982;</p>
-                <p class="noselect" id="zoomInButton">+</p>
+                <p class="noselect" id="centerGraphButton" role="button" tabindex="0" aria-label="Center graph">&#8982;</p>
+                <p class="noselect" id="zoomInButton" role="button" tabindex="0" aria-label="Zoom in">+</p>
                 <p class="noselect" id="zoomSliderParagraph"></p>
-                <p class="noselect" id="zoomOutButton">-</p>
+                <p class="noselect" id="zoomOutButton" role="button" tabindex="0" aria-label="Zoom out">-</p>
             </div>
         </section>
         <aside id="detailsArea" style="background-color: #18202A;">
@@ -525,6 +525,36 @@
             viewSelect.addEventListener("change", () => document.getElementById(viewSelect.value).click());
             window.addEventListener("hashchange", syncView);
             syncView();
+            const detailsButton = document.getElementById("sidebarExpandButton");
+            detailsButton.addEventListener("keydown", event => {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    detailsButton.click();
+                }
+            });
+            document.getElementById("centerGraphButton").addEventListener("keydown", event => {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    event.currentTarget.click();
+                }
+            });
+            for (const id of ["zoomInButton", "zoomOutButton"]) {
+                const button = document.getElementById(id);
+                const stop = () => button.dispatchEvent(new MouseEvent("mouseup", { bubbles: true }));
+                button.addEventListener("keydown", event => {
+                    if ((event.key === "Enter" || event.key === " ") && !event.repeat) {
+                        event.preventDefault();
+                        button.dispatchEvent(new MouseEvent("mousedown", { bubbles: true }));
+                    }
+                });
+                button.addEventListener("keyup", event => {
+                    if (event.key === "Enter" || event.key === " ") {
+                        event.preventDefault();
+                        stop();
+                    }
+                });
+                button.addEventListener("blur", stop);
+            }
         };
     </script>
 </body>
