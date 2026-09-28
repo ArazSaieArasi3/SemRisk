@@ -93,7 +93,15 @@ jobs:
           sudo apt-get install -y postgresql-client
 
       - name: Install RDF test dependency
-        run: python3 -m pip install rdflib
+        run: python3 -m pip install 'rdflib==7.6.0'
+
+      - name: Record effective parity toolchain
+        run: |
+          python3 --version
+          python3 -c 'import rdflib; print("RDFLib", rdflib.__version__)'
+          psql --version
+          psql -Atc "SHOW server_version"
+          psql -Atc "SELECT version()"
 
       - name: Static catalog and mapping consistency
         run: python3 relational/scripts/validate_relational_catalog.py
