@@ -3,7 +3,7 @@
 Source ID: SRC-PA-009
 Citation: Sales et al. (2018), Ontological Analysis and Redesign of Risk Modeling in ArchiMate, IEEE EDOC 2018, DOI 10.1109/EDOC.2018.00028
 Mining date: 2026-09-20
-Status: DEEP-MINED v0.1 — full text inspected; final locator normalization remains.
+Status: DEEP-MINED v0.2 — author-hosted full text and claim-critical locators inspected; reusable machine-readable artifact remains unknown.
 
 ## Why this source is material
 
@@ -42,9 +42,9 @@ Candidate differentiators still requiring evidence are: operational risk-registe
 - Objective/Value linkage: treat as reused/aligned context, not novelty.
 - Risk Register Entry, Assessment Result, Workflow State: remain candidate differentiation points requiring direct comparison.
 
-## Remaining extraction debt
+## Residual comparison debt
 
-Before G1: normalize exact page/figure/table locators; reconcile terminology against COVER/ROSE; record exact ArchiMate constructs and redesign relations in comparator registry; check newer ArchiMate-risk work for supersession/extensions.
+Exact page/figure/table locators are normalized below. Reconcile detailed terminology against COVER/ROSE during E10, record redesign relations at the selected unit of comparison, and keep machine-readable artifact status explicit. The bounded #40 current-work search is complete for Paper 1; reopen on a changed claim scope or material comparator.
 
 ## Exact primary-source locator and novelty recalibration — 2026-09-28
 
