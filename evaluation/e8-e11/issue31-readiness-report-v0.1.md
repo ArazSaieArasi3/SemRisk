@@ -15,7 +15,7 @@ Interpretation: this supports selected application/query capabilities, not unive
 Principal automated semantic, relational, load, scenario, parity and regression results rebuild in clean CI from repository-controlled artifacts and exact versions. Public/synthetic evaluation artifacts are reproducible from the governed paths. The private Jira source remains non-redistributable; its SHA and extracted governed schema evidence are available, so full public byte-level reproduction is intentionally limited.
 
 ## E10 closest-work comparison
-#22 already provides a 12-comparator × 17-dimension evidence matrix (204 evidence cells) and bounded differentiator hypotheses. It preserves comparator strengths and nonclaims. Final E10 should not close until remaining #14 source/artifact tail and claim wording are reconciled; no overall ranking/winner is permitted.
+#22 provides a historical 12-row × 17-dimension snapshot (11 external works/lineages plus SemRisk, 204 cells), not 12 external comparators. Its per-cell evidence locators are generic repeated references, and the SemRisk self-row predates implemented P1-R2. The targeted MedSupplyKG source comparison is recorded separately in `evaluation/e10/medsupplykg-vs-semrisk-source-comparison-v0.1.md`. These are provisional differentiation hypotheses pending exact source-locator and current release review. It preserves comparator strengths and nonclaims. Final E10 should not close until remaining #14 source/artifact tail and claim wording are reconciled; no overall ranking/winner is permitted.
 
 ## E11 transferability
 Current evidence is **partial and bounded**:
