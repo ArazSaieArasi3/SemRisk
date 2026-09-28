@@ -42,3 +42,12 @@ The paper presents an architectural framework and integration direction. It shou
 - #26 formalization policy;
 - #31 E10 comparison;
 - #53 claim calibration.
+## 7. Source-to-artifact binding and reproducibility — 2026-09-28
+
+- The publisher landing page for DOI `10.1007/978-3-032-35506-5_47` describes the contribution as a **vision paper**, lists first online publication on 2026-09-03, and links the author's `lean-ufo` repository in a note: https://link.springer.com/chapter/10.1007/978-3-032-35506-5_47 . Its book citation uses 2027 while the associated SAFECOMP workshop is 2026; preserve both dates instead of silently normalizing the bibliography.
+- Linked source artifact: https://github.com/smnicoletti/lean-ufo/tree/0f818fcfd54d53892041e74008556337ecd7bdb5 (immutable main snapshot, committed 2026-09-25). Repository license is AGPL-3.0. Its README and `docs/status.md` describe a Lean 4 UFO axiomatization, finite `ufo_model ... certify` DSL, generated Lean certificates, regression tests, and explicit trust/coverage limits. They report a 2026-09-17 local Lean/mathlib 4.34.0 test pass. This is author-linked **foundational/DSL artifact evidence**, not a verified end-to-end realization of the proposed risk architecture.
+- The inspected recursive tree at that commit has 322 entries and no path named for Storm, risk, probabilistic reasoning, or model checking. This narrow observation does **not** prove such integration is absent in every branch, separate repository, private prototype, or future version. Exact risk-DSL bridge, Storm invocation, exchange format, run recipe, evaluated case set, and end-to-end result remain `UNKNOWN/NOT_REPORTED` in inspected sources.
+- Version relation: published paper DOI ↔ author-linked evolving `lean-ufo` repository at the immutable commit above. No paper-specific release/tag or commit attribution was evidenced. Do not equate the later repository snapshot with the version used to produce the paper.
+- Reuse implication: reference/compare only at present. AGPL-3.0 and the changing research version require a separate legal/dependency review before importing code. No semantic equivalence mapping follows from a shared UFO label.
+
+**Qualification:** high confidence in publication identity and linked Lean UFO artifact; low/unknown confidence in an executable ontology→Lean→Storm risk pipeline or comparative operational evaluation. Keep #14 open for other comparator bindings and closest-work saturation.
