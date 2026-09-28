@@ -58,3 +58,8 @@ The paper proposes broader future validation with final users. This means it is 
 - #5/#28 Pharma federation/case;
 - #31 E10;
 - #53 claim calibration.
+## 9. Same-group IEOM 2017 sibling and register evidence — 2026-09-28
+
+The separate official [IEOM 2017 conference paper](https://ieomsociety.org/ieom2017/papers/90.pdf), *Using Ontology as a Decision Support System for Manage Risks in Medicines Supply Chain: Case of Public Hospitals in Morocco* (Benazzouz, Echchtabi & Charkaoui, pp. 281–292), belongs to the same Moroccan research lineage. It is the precise [22] cited by PH-008, although PH-008's bibliography misdates it as 2013. The IEOM paper's **Table 3** explicitly calls its categories/subcategories/descriptions a medicines-supply `Risk Register`; **Figures 2–4** show OWLGred views of supply-chain partners, risk management and the domain ontology. The MATEC PH-011 DOI identifies a distinct publication in the lineage; avoid treating these titles as identical or as independent novelty votes.
+
+This limits SemRisk's wording: a Pharma supply-risk register/taxonomy and OWLGred ontology diagrams already existed in 2017. A narrower claim about governed *register-entry information-artifact identity*, integrated assessment/result/state/workflow/evidence and tested federation remains a hypothesis requiring direct comparison. Exact downloadable OWL for either publication is still not bound.
