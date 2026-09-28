@@ -156,3 +156,10 @@ These are comparison boundaries, not proof that SemRisk is superior.
 ## 12. Gate consequence
 
 PA-006 materially reduces novelty space but does not invalidate SemRisk Paper 1. It strengthens the need to anchor novelty in operational information-artifact, lifecycle/state, evidence/provenance and governed projection semantics rather than generic ontology-based risk assessment/propagation.
+## 13. Implementation locator qualification — 2026-09-28
+
+The canonical CEUR full text https://ceur-ws.org/Vol-4176/shields-2.pdf explicitly says in footnote 5 (printed p. 9 / PDF page 9) that the **complete implementation** is accessible at https://purl.archive.org/brp . The paper reports its ProbLog rules/assertions and queries in §5, plus a separate footnote 4 for query-elicitation material. This is a source-declared implementation locator, stronger than an inferred repository search match.
+
+The PURL target was not retrievable through the available source inspection route on 2026-09-28. Its final destination, file inventory, version/commit, license, checksum, executable commands and independent outcomes therefore remain `UNKNOWN/NOT_ASSESSED`. Do not mark the implementation absent or equate the publisher's printed example with an audited software release. Resolve the PURL and pin artifact contents before making a reproducibility claim; the publication-level ProbLog proof of concept remains a valid prior-art comparison.
+
+The SAC 2023 PA-010 predecessor is separately profiled in [the PA-010 technical profile](src-pa-010-process-aware-risk-propagation-profile.md); its OWL→Neo4j/Python DFS/max-per-aspect method is not the same formal implementation as the richer 2025 ProbLog model.
