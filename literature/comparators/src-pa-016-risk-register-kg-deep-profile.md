@@ -56,3 +56,15 @@ RisKG appears primarily data/model driven. SemRisk's candidate distinction remai
 - input to #45 ontology-grounded relational/KG projection design;
 - anti-pattern evidence against class-per-column/entity-per-register-field modeling;
 - input to #49 projection fidelity criteria.
+## 8. Appendix-linked artifact binding — 2026-09-28
+
+The author-uploaded full-text appendix for DOI `10.1007/s12205-023-2886-7` lists two GitHub links; their current default-branch heads were frozen for this comparison:
+
+| Role | Immutable reference | Inspected top-level evidence |
+| --- | --- | --- |
+| RisKG data/model | https://github.com/Murry01/RisKG/tree/435b6b0ecebc49a4e82e62bdffbe9c4c2e2c4448 | `Data and results.xlsx`, `RisKG(Townsville ).cql`, `Townsvill-construction-risk-register.pdf`, ontology/overview/graph images and README. |
+| ConRisk dashboard | https://github.com/Murry01/ConRisk_Dashboard/tree/9738b8e9a3c6a1b1bcee604452ce6f787688531f | `Home.py`, `neo4japp.py`, `pages/`, `requirements.txt`, CQL, query text, risk-assessment XLSX and MP4. |
+
+Both snapshots date to March 2023; no repository license was exposed in the GitHub metadata/top-level files inspected. The appendix links and concrete files resolve the prior **artifact identity** gap. They do not establish an independently successful build, code/data licensing permission, a governed release tag, complete input provenance, or equality between the published 392-entity/391-relationship case and a rerun. No import of their source/data is proposed without a separate license decision. Reproduction remains `NOT_ASSESSED`.
+
+**Status:** two implementation repositories COMMIT_BOUND; exact reproducibility and reuse permission still open. The publication's operational graph/dashboard prior art remains material to SR-C2.
