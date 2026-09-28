@@ -8,3 +8,4 @@ CIT-06,"DS-003 Pharma dataset/study","V/VI","exact DOI v4","Bounded constructed 
 CIT-07,"DS-004","VII if mentioned","blocked exact release","Do not cite file-level evaluated results until freeze"
 CIT-08,"DS-002/FAERS holdout","VII/future if mentioned","protected","Do not imply executed transfer validation"
 CIT-09,"ICAE venue/template","internal only","verified #38","Not normally scientific bibliography; final compliance recheck"
+CIT-10,"MedSupplyKG Eberhardt et al. (2025), DOI 10.1080/00207543.2025.2496671","II/VII","full-text source-level profile SRC-PH-003; exact OWL/code/data unavailable","Cite Tables 2–3/Fig. 4 for Report/Shortage prior art; no exact Risk Register Entry equivalence or independent rerun assertion"
