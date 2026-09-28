@@ -68,6 +68,30 @@ EXPECTED_AUDIT_IDS = {
     "RISKMAN-D14",
     "RISKMAN-D16",
     "RISKMAN-D17",
+    "OLIVEIRA-D02",
+    "OLIVEIRA-D03",
+    "OLIVEIRA-D04",
+    "OLIVEIRA-D06",
+    "OLIVEIRA-D10",
+    "OLIVEIRA-D13",
+    "OLIVEIRA-D14",
+    "OLIVEIRA-D16",
+    "RISKG-D03",
+    "RISKG-D04",
+    "RISKG-D08",
+    "RISKG-D13",
+    "RISKG-D15",
+    "RISKG-D16",
+    "IOF-D03",
+    "IOF-D04",
+    "IOF-D07",
+    "IOF-D11",
+    "IOF-D13",
+    "IOF-D16",
+    "PA010-D04",
+    "PA010-D06",
+    "PA010-D13",
+    "PA010-D16",
 }
 
 def rows(path):
@@ -118,8 +142,8 @@ def check(self_rows, external_rows, legacy_rows, dimensions, root=ROOT):
             elif git_blob(target.read_bytes()) != expected_sha:
                 errors.append(f"{cid}: source blob drift {path}")
     ids = [r.get("audit_id") for r in external_rows]
-    if len(ids) != 46 or len(set(ids)) != 46 or set(ids) != EXPECTED_AUDIT_IDS:
-        errors.append("external locator ledger must contain exactly the 46 selected audit IDs")
+    if len(ids) != 70 or len(set(ids)) != 70 or set(ids) != EXPECTED_AUDIT_IDS:
+        errors.append("external locator ledger must contain exactly the 70 selected audit IDs")
     mapped = 0
     for row in external_rows:
         aid = row.get("audit_id", "?")
@@ -137,18 +161,24 @@ def check(self_rows, external_rows, legacy_rows, dimensions, root=ROOT):
             errors.append(f"{aid}: outside-row legacy status mismatch")
         if row.get("source_level_status") not in EXTERNAL_STATUSES:
             errors.append(f"{aid}: uncontrolled source-level status")
-        if row.get("source_id") not in {"SRC-PA-006", "SRC-PA-009", "SRC-PH-003", "SRC-ON-001", "SRC-ON-002", "SRC-PA-017", "SRC-ON-004"}:
+        if row.get("source_id") not in {"SRC-PA-006", "SRC-PA-009", "SRC-PH-003", "SRC-ON-001", "SRC-ON-002", "SRC-PA-017", "SRC-ON-004", "SRC-PA-005", "SRC-PA-016", "SRC-ON-006", "SRC-PA-010"}:
             errors.append(f"{aid}: unexpected source")
         if not (row.get("source_url") or "").startswith("https://"):
             errors.append(f"{aid}: missing HTTPS primary source")
         for field in ("exact_publication_locator", "observed_evidence", "calibrated_semrisk_consequence", "artifact_or_reproduction_limit"):
             if not (row.get(field) or "").strip():
                 errors.append(f"{aid}: empty {field}")
-    if mapped != 38:
-        errors.append(f"expected 38 old external cells, got {mapped}")
+    if mapped != 52:
+        errors.append(f"expected 52 old external cells, got {mapped}")
     correction = [r for r in external_rows if r.get("audit_id") == "PA006-D08"]
     if len(correction) != 1 or correction[0].get("legacy_cell_id") != "CELL-059" or correction[0].get("legacy_status") != "not_in_scope" or correction[0].get("source_level_status") != "CORRECTION_PRIOR_ART":
         errors.append("CELL-059 prior-art correction missing")
+    changed = [r for r in external_rows if r.get("audit_id") == "RISKG-D04"]
+    if len(changed) != 1 or changed[0].get("legacy_cell_id") != "CELL-089" or changed[0].get("legacy_status") != "not_reported" or changed[0].get("source_level_status") != "CORRECTION_PRIOR_ART":
+        errors.append("CELL-089 prior-art correction missing")
+    iof = [r for r in external_rows if r.get("audit_id") == "IOF-D04"]
+    if len(iof) != 1 or iof[0].get("source_level_status") != "CORRECTION_PRIOR_ART":
+        errors.append("IOF assessment process/result counterexample missing")
     return errors
 
 
@@ -163,6 +193,8 @@ def selftest(self_rows, external_rows, legacy_rows, dimensions):
     e = copy.deepcopy(external_rows); next(r for r in e if r["audit_id"] == "PA006-D08")["source_level_status"] = "not_in_scope"; mutations.append(("lost counterevidence", self_rows, e))
     e = copy.deepcopy(external_rows); e[0]["source_url"] = ""; mutations.append(("missing primary URL", self_rows, e))
     e = copy.deepcopy(external_rows); e[-1]["source_url"] = None; mutations.append(("malformed external row", self_rows, e))
+    e = copy.deepcopy(external_rows); next(r for r in e if r["audit_id"] == "RISKG-D04")["source_level_status"] = "ARTIFACT_UNKNOWN"; mutations.append(("lost RisKG counterevidence", self_rows, e))
+    e = copy.deepcopy(external_rows); next(r for r in e if r["audit_id"] == "IOF-D04")["source_level_status"] = "ARTIFACT_UNKNOWN"; mutations.append(("lost IOF counterevidence", self_rows, e))
     for label, s, e in mutations:
         if not check(s, e, legacy_rows, dimensions):
             raise AssertionError("negative control not detected: " + label)
@@ -179,7 +211,7 @@ def main():
         raise SystemExit("\n".join("FAIL: " + x for x in failures))
     if args.selftest:
         selftest(s, e, l, d)
-    print("SEM_RISK_E10_LOCATOR_INTEGRITY_PASS (17 self + 46 external selected rows)")
+    print("SEM_RISK_E10_LOCATOR_INTEGRITY_PASS (17 self + 70 external selected rows)")
 
 
 if __name__ == "__main__":
