@@ -69,6 +69,12 @@ async function inspect(browser, name, viewport) {
     assert(jsonResponses.includes(200), "local SemRisk JSON was not loaded");
     assert.equal(pageErrors.length, 0, JSON.stringify(pageErrors));
     assert.equal(outbound.length, 0, JSON.stringify(outbound));
+    const filterHint = page.locator('[id^="killFilterMessages_"]').first();
+    if (await filterHint.count()) {
+      await filterHint.click();
+      await page.waitForTimeout(800);
+    }
+    await page.screenshot({ path: path.join(artifacts, `webvowl-${name}.png`), fullPage: false });
     await page.locator("#search-input-text").fill("Risk");
     assert.equal(await page.locator("#search-input-text").inputValue(), "Risk");
     const before = await page.locator("#graph svg.vowlGraph > g").getAttribute("transform");
@@ -82,12 +88,6 @@ async function inspect(browser, name, viewport) {
     const after = await page.locator("#graph svg.vowlGraph > g").getAttribute("transform");
     assert.notEqual(after, before, "zoom control did not change graph transform");
     await page.locator("#semriskNotice a").first().click({ trial: true });
-    const filterHint = page.locator('[id^="killFilterMessages_"]').first();
-    if (await filterHint.count()) {
-      await filterHint.click();
-      await page.waitForTimeout(800);
-    }
-    await page.screenshot({ path: path.join(artifacts, `webvowl-${name}.png`), fullPage: false });
     const keyboardBefore = await page.locator("#graph svg.vowlGraph > g").getAttribute("transform");
     await page.locator("#zoomInButton").focus();
     await page.keyboard.down("Enter");
