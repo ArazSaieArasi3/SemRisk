@@ -34,6 +34,8 @@ UNSAFE = [
     r"DS-002 (validates|proves) (antibiotic|shortage)",
     r"(?:simulated (?:R1[-– ]R8 )?(?:reviewer|panel|meta[- ]review)|R1[-– ]R8 simulated (?:review|panel)) (?:is|was|counts as|constitutes|provides) (?:real |independent )?(?:human |expert )?(?:validation|review|evidence)",
     r"(?:external )?(?:EA|Pharma|CM[-– ]PharmE) (?:owner|entity|identity|ontology) (?:is|was|has been) (?:locally |fully )?(?:owned|defined|absorbed) (?:by|in) (?:SemRisk|Core)",
+    r"\bfirst (?:ontology |knowledge graph |model )?(?:to )?(?:distinguish|separate).{0,100}(?:report|notification).{0,70}shortage",
+    r"\bfirst (?:pharma(?:ceutical)?|drug[- ]shortage) (?:risk )?(?:ontology|knowledge graph|KG)\b",
 ]
 
 def check(text, rows):
@@ -102,6 +104,8 @@ def selftest(rows, placements, preliminary):
         "DS-002 validates antibiotic shortage.",
         "Simulated R1–R8 panel is independent human validation.",
         "External Pharma ontology is locally owned by SemRisk Core.",
+        "We are the first to separate reports from shortages.",
+        "SemRisk provides the first pharmaceutical risk knowledge graph.",
     ]:
         faults = check(base + "\n" + phrase, rows)
         assert any("affirmative overclaim" in x for x in faults), phrase
@@ -111,6 +115,8 @@ def selftest(rows, placements, preliminary):
         "We cannot assert that the ontology is expert-validated.",
         "We do not claim that simulated R1–R8 panel is independent human validation.",
         "We cannot assert that external Pharma ontology is locally owned by SemRisk Core.",
+        "We do not claim first to separate reports from shortages.",
+        "We do not claim first pharmaceutical risk knowledge graph status.",
     ]:
         assert not check(base + "\n" + phrase, rows), phrase
     for phrase in [
