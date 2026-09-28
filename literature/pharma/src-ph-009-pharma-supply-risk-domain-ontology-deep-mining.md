@@ -1,13 +1,13 @@
 # SRC-PH-009 Deep Mining — Domain Ontology for Risks Management in Pharmaceutical Supply Chain
 
 **Source ID:** SRC-PH-009  
-**Citation:** Touria Benazzouz, *Domain Ontology for Risks Management in Pharmaceutical Supply Chain*, JOMODS Vol.1 Issue 1, pp.13–18, DOI 10.34874/IMIST.PRSM/jomods-v1i1.29052  
+**Citation:** Touria Benazzouz (publisher issue year **2021**), *Domain Ontology for Risks Management in Pharmaceutical Supply Chain*, JOMODS Vol. 1 Issue 1, DOI 10.34874/IMIST.PRSM/jomods-v1i1.29052. Page range under reconciliation (publisher issue listing 13–20; earlier extracted PDF/profiling note 13–18).  
 **Mining date:** 2026-09-21  
 **Status:** DEEP-MINED v0.1 — full public text inspected; publication-year metadata is inconsistent across sources and exact ontology artifact is unresolved.
 
 ## 1. Bibliographic quality note
 
-The public PDF header states **2020, Volume 1, Issue 1**, while DOI/profile/indexing records surfaced in this search describe the publication as **2021**. SemRisk must preserve this discrepancy rather than silently normalize it. DOI is treated as the stable scholarly identity; year requires final bibliographic verification.
+The public PDF header states **2020, Volume 1, Issue 1**. The journal publisher’s [article record](https://revues.imist.ma/index.php/JOMODS/en/article/view/29052) and [Vol. 1 No. 1 issue listing](https://revues.imist.ma/index.php/JOMODS/issue/view/1841) identify **2021** (listed 2021-11-09), corroborated by the author’s [university research profile](https://ucarech.uca.ma/open-research/teacher.php?book=4118&id=1890). Use **2021 as the publisher bibliographic year** and preserve **2020 as an internal PDF-header discrepancy**, not a separate work. The issue listing gives pp. **13–20**, while the earlier local profile had 13–18; verify against page images before final manuscript pagination. These public metadata pages were indexed but returned a transient 502 on direct read on 2026-09-28, so the page-range correction remains provisional. DOI remains the stable identity.
 
 ## 2. Scientific scope
 
