@@ -50,6 +50,16 @@ EXPECTED_AUDIT_IDS = {
     "ROSE-D13",
     "ROSE-D16",
     "ROSE-D17",
+    "RISK-HUB-D03",
+    "RISK-HUB-D04",
+    "RISK-HUB-D05",
+    "RISK-HUB-D08",
+    "RISK-HUB-D13",
+    "RISK-HUB-D14",
+    "RISK-HUB-D15",
+    "RISK-HUB-D16",
+    "RISK-HUB-D17",
+    "RISK-HUB-D07",
 }
 
 def rows(path):
@@ -100,8 +110,8 @@ def check(self_rows, external_rows, legacy_rows, dimensions, root=ROOT):
             elif git_blob(target.read_bytes()) != expected_sha:
                 errors.append(f"{cid}: source blob drift {path}")
     ids = [r.get("audit_id") for r in external_rows]
-    if len(ids) != 28 or len(set(ids)) != 28 or set(ids) != EXPECTED_AUDIT_IDS:
-        errors.append("external locator ledger must contain exactly the 28 selected audit IDs")
+    if len(ids) != 38 or len(set(ids)) != 38 or set(ids) != EXPECTED_AUDIT_IDS:
+        errors.append("external locator ledger must contain exactly the 38 selected audit IDs")
     mapped = 0
     for row in external_rows:
         aid = row.get("audit_id", "?")
@@ -117,15 +127,15 @@ def check(self_rows, external_rows, legacy_rows, dimensions, root=ROOT):
             errors.append(f"{aid}: outside-row legacy status mismatch")
         if row.get("source_level_status") not in EXTERNAL_STATUSES:
             errors.append(f"{aid}: uncontrolled source-level status")
-        if row.get("source_id") not in {"SRC-PA-006", "SRC-PA-009", "SRC-PH-003", "SRC-ON-001", "SRC-ON-002"}:
+        if row.get("source_id") not in {"SRC-PA-006", "SRC-PA-009", "SRC-PH-003", "SRC-ON-001", "SRC-ON-002", "SRC-PA-017"}:
             errors.append(f"{aid}: unexpected source")
         if not row.get("source_url", "").startswith("https://"):
             errors.append(f"{aid}: missing HTTPS primary source")
         for field in ("exact_publication_locator", "observed_evidence", "calibrated_semrisk_consequence", "artifact_or_reproduction_limit"):
             if not row.get(field, "").strip():
                 errors.append(f"{aid}: empty {field}")
-    if mapped != 20:
-        errors.append(f"expected 20 old external cells, got {mapped}")
+    if mapped != 30:
+        errors.append(f"expected 30 old external cells, got {mapped}")
     correction = [r for r in external_rows if r.get("audit_id") == "PA006-D08"]
     if len(correction) != 1 or correction[0].get("legacy_cell_id") != "CELL-059" or correction[0].get("legacy_status") != "not_in_scope" or correction[0].get("source_level_status") != "CORRECTION_PRIOR_ART":
         errors.append("CELL-059 prior-art correction missing")
@@ -158,7 +168,7 @@ def main():
         raise SystemExit("\n".join("FAIL: " + x for x in failures))
     if args.selftest:
         selftest(s, e, l, d)
-    print("SEM_RISK_E10_LOCATOR_INTEGRITY_PASS (17 self + 28 external selected rows)")
+    print("SEM_RISK_E10_LOCATOR_INTEGRITY_PASS (17 self + 38 external selected rows)")
 
 
 if __name__ == "__main__":
