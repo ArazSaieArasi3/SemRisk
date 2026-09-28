@@ -15,6 +15,7 @@ LEGACY = ROOT / "conceptualization/comparison/comparison-cell-evidence-index.csv
 DIMS = ROOT / "conceptualization/comparison/comparison-dimension-definitions.csv"
 SELF = ROOT / "evaluation/e10/semrisk-p1-r2-self-row-v0.1.csv"
 EXTERNAL = ROOT / "evaluation/e10/claim-critical-external-locator-ledger-v0.1.csv"
+RESULTS = ROOT / "evaluation/e10/claim-unit-source-comparison-v0.1.csv"
 SELF_STATUSES = {"SUPPORTED_BOUNDED", "PARTIAL", "NOT_ASSESSED"}
 EXTERNAL_STATUSES = {
     "POSITIVE_PRIOR_ART", "PARTIAL_OVERLAP", "CORRECTION_PRIOR_ART",
@@ -242,17 +243,65 @@ def selftest(self_rows, external_rows, legacy_rows, dimensions):
     print(f"SEM_RISK_E10_LOCATOR_NEGATIVE_CONTROLS_PASS ({len(mutations)}/{len(mutations)})")
 
 
+def check_results(result_rows, external_rows, self_rows):
+    errors = []
+    external = {r["audit_id"]: r for r in external_rows}
+    current = {r["old_cell_id"]: r for r in self_rows}
+    expected = {f"E10-U{i:02d}" for i in range(1, 8)}
+    ids = [r.get("unit_id") for r in result_rows]
+    if len(ids) != 7 or len(set(ids)) != 7 or set(ids) != expected:
+        errors.append("E10 source result must have seven defined units")
+    states = {
+        "PRIOR_ART_OVERLAP_WITH_BOUNDED_INTEGRATION", "PRIOR_ART_OVERLAP_AND_SEMANTIC_CONFLICT",
+        "DESCRIPTIVE_DIFFERENCE_UNPROVEN_EXCLUSIVITY", "MATERIAL_PRIOR_ART_SEMRISK_PARTIAL",
+        "SEMRISK_TASK_RESULT_NO_HEAD_TO_HEAD", "BOUNDED_APPLICATION_PRIOR_ART",
+        "NO_OVERALL_REPRODUCIBILITY_RANKING",
+    }
+    for row in result_rows:
+        uid = row.get("unit_id", "?")
+        if None in row or any(value is None for value in row.values()):
+            errors.append(f"{uid}: malformed source-result row")
+        if row.get("candidate_ref") != "P1-R2/0.1.0-rc.1":
+            errors.append(f"{uid}: candidate ref drift")
+        if row.get("comparative_disposition") not in states:
+            errors.append(f"{uid}: uncontrolled comparison disposition")
+        for field in ("claim_ids", "common_comparison_unit", "source_observed_prior_art",
+                      "semrisk_observed_in_exact_candidate", "unassessed_or_adverse", "next_e10_action"):
+            if not (row.get(field) or "").strip():
+                errors.append(f"{uid}: empty {field}")
+        cited = set((row.get("comparator_source_ids") or "").split(";"))
+        for aid in (row.get("external_audit_ids") or "").split(";"):
+            if aid not in external or external[aid]["source_id"] not in cited:
+                errors.append(f"{uid}: missing/mismatched external audit ID {aid}")
+        for cid in (row.get("semrisk_cell_ids") or "").split(";"):
+            if cid not in current:
+                errors.append(f"{uid}: missing self cell {cid}")
+    return errors
+
+
+def result_selftest(result_rows, external_rows, self_rows):
+    assert not check_results(result_rows, external_rows, self_rows)
+    x = copy.deepcopy(result_rows); x[0]["external_audit_ids"] += ";INVENTED-LOCATOR"
+    if not check_results(x, external_rows, self_rows):
+        raise AssertionError("missing external result reference not detected")
+    x = copy.deepcopy(result_rows); x[1]["unassessed_or_adverse"] = ""
+    if not check_results(x, external_rows, self_rows):
+        raise AssertionError("hidden result limit not detected")
+    print("SEM_RISK_E10_RESULT_NEGATIVE_CONTROLS_PASS (2/2)")
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--selftest", action="store_true")
     args = parser.parse_args()
-    s, e, l, d = rows(SELF), rows(EXTERNAL), rows(LEGACY), rows(DIMS)
-    failures = check(s, e, l, d)
+    s, e, l, d, result_rows = rows(SELF), rows(EXTERNAL), rows(LEGACY), rows(DIMS), rows(RESULTS)
+    failures = check(s, e, l, d) + check_results(result_rows, e, s)
     if failures:
         raise SystemExit("\n".join("FAIL: " + x for x in failures))
     if args.selftest:
         selftest(s, e, l, d)
-    print("SEM_RISK_E10_LOCATOR_INTEGRITY_PASS (17 self + 93 external selected rows)")
+        result_selftest(result_rows, e, s)
+    print("SEM_RISK_E10_LOCATOR_INTEGRITY_PASS (17 self + 93 external selected rows + 7 source-result units)")
 
 
 if __name__ == "__main__":
