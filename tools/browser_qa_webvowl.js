@@ -81,6 +81,13 @@ async function inspect(browser, name, viewport) {
     await page.waitForTimeout(350);
     const after = await page.locator("#graph svg.vowlGraph > g").getAttribute("transform");
     assert.notEqual(after, before, "zoom control did not change graph transform");
+    await page.locator("#semriskNotice a").first().click({ trial: true });
+    const filterHint = page.locator('[id^="killFilterMessages_"]').first();
+    if (await filterHint.count()) {
+      await filterHint.click();
+      await page.waitForTimeout(800);
+    }
+    await page.screenshot({ path: path.join(artifacts, `webvowl-${name}.png`), fullPage: false });
     const keyboardBefore = await page.locator("#graph svg.vowlGraph > g").getAttribute("transform");
     await page.locator("#zoomInButton").focus();
     await page.keyboard.down("Enter");
@@ -93,13 +100,6 @@ async function inspect(browser, name, viewport) {
     await page.waitForFunction(() => !document.querySelector("#detailsArea").classList.contains("hidden"));
     await page.keyboard.press("Enter");
     await page.waitForFunction(() => document.querySelector("#detailsArea").classList.contains("hidden"));
-    await page.locator("#semriskNotice a").first().click({ trial: true });
-    const filterHint = page.locator('[id^="killFilterMessages_"]').first();
-    if (await filterHint.count()) {
-      await filterHint.click();
-      await page.waitForTimeout(800);
-    }
-    await page.screenshot({ path: path.join(artifacts, `webvowl-${name}.png`), fullPage: false });
     await Promise.all([
       page.waitForResponse(response => response.url().endsWith("/data/semrisk-enterprise.json") && response.status() === 200),
       page.locator("#semriskModuleSelect").selectOption("semrisk-enterprise")
