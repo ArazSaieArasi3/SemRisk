@@ -6,7 +6,7 @@
 **Venue lineage:** JOWO 2025 / CEUR-WS Vol. 4176; volume published 2026
 **License:** CC BY 4.0
 **Mining date:** 2026-09-21
-**Status:** DEEP-MINED v0.1 — complete 13-page paper inspected; formal implementation/ref binding still to be qualified.
+**Status:** DEEP-MINED v0.2 — complete paper and a matching public prototype repository inspected at immutable commit; paper PURL-to-repository redirect still unverified; execution not assessed.
 
 ## 1. Why this source is material
 
@@ -163,3 +163,16 @@ The canonical CEUR full text https://ceur-ws.org/Vol-4176/shields-2.pdf explicit
 The PURL target was not retrievable through the available source inspection route on 2026-09-28. Its final destination, file inventory, version/commit, license, checksum, executable commands and independent outcomes therefore remain `UNKNOWN/NOT_ASSESSED`. Do not mark the implementation absent or equate the publisher's printed example with an audited software release. Resolve the PURL and pin artifact contents before making a reproducibility claim; the publication-level ProbLog proof of concept remains a valid prior-art comparison.
 
 The SAC 2023 PA-010 predecessor is separately profiled in [the PA-010 technical profile](src-pa-010-process-aware-risk-propagation-profile.md); its OWL→Neo4j/Python DFS/max-per-aspect method is not the same formal implementation as the richer 2025 ProbLog model.
+
+## 14. Public prototype repository inspected — 2026-09-28
+
+A public repository with matching title and a paper coauthor's account is [gal-engelberg-acn/Beyond-Risk-Propagation-An-Ontology-based-Approach](https://github.com/gal-engelberg-acn/Beyond-Risk-Propagation-An-Ontology-based-Approach), pinned at commit `76cf94dabe00d525b6f0d61ceba128f9e0edbc61` (2024-05-12). The repository README describes the same ontology-driven paper/proof of concept and declares CC BY-NC-SA 4.0, with `LICENCE.md` blob `cbe5ad1670406e4402217edfb82d2c56af7e8631`. The article's CC BY 4.0 license and the repository's CC BY-NC-SA 4.0 license apply to **different artifacts**. Do not import or redistribute this code into SemRisk under an assumed article license.
+
+| Repository artifact | Pinned blob | Observation |
+| --- | --- | --- |
+| `README.md` | `a31d1219ecbcff6a5387b6109f793aa81117084e` | Paper-like overview; contributor/acknowledgement fields anonymized. |
+| `Prototype-Implementation/riskprop_a_v6.py` | `d0939180f80dc824b1d9c157cac087e3f7a266bf` | 15,185-byte **ProbLog-style declarative program despite .py extension**: probabilistic facts/rules, event/object/capability/assessor/control assertions, computed values, assessment relations and one active `query(mitigationAssessment(...))`. Many alternative queries are commented. Contains explicit `TO BE FIXED` / scale-update comments, so it is a prototype snapshot, not an audited release. |
+| `Risk-Propagation-Query-Elicitation/Elicited-Queries.md` | `3d94d06cf3d33d13c40219eb9ccfa6bc83fc6483` | Elicited risk quantification, propagation, mission/value, and mitigation query candidates; this list is broader than the single active program query and is not evidence that all questions were executed. |
+| `Risk-Propagation-Query-Elicitation/Query-processing.xlsx` | `4db81aa8ab907fb384eb2fedb0b294d458cb0ff0` | Binary elicitation workbook identity/size (25,913 bytes) observed; contents not inspected. |
+
+The root listing contains no dependency lockfile, executable instructions or automated tests. The last commit message deletes a different `riskprop-POC.v00.py`; preserve the pinned snapshot identity. **Provenance strength:** a matching public author-associated prototype is bound, but the PURL `https://purl.archive.org/brp` could not be resolved to its target through the available route, so identity with the paper-declared destination remains unverified. The inspected repository can support a bounded implementation comparison; it does not establish paper-exact release correspondence, successful independent execution, or completeness of paper claims. If E10 needs a reproduced outcome, resolve that redirect and execute a clean, versioned ProbLog run with recorded queries/outputs; otherwise mark reproduction `NOT_ASSESSED`.
