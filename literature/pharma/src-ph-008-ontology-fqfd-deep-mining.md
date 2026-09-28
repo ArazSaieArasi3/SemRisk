@@ -117,3 +117,13 @@ The paper explicitly cites earlier pharmaceutical/medicines supply-chain ontolog
 - bind the pharmaceutical ontology predecessor cited as [22];
 - normalize exact table/figure/page locators in comparator registry;
 - determine whether any machine-readable ontology file survives publicly.
+## 11. Reused-ontology bibliography and artifact boundary — 2026-09-28
+
+The primary publication (DOI above, references [22] and [28] in its printed bibliography) identifies the ontology reused for ground transportation as:
+
+- [28] Osorio-Gómez, Manotas-Duque & García-Alcaráz (2019), *Operational Risk Identification in Ground Transportation Activities: Ontology—Approach*, in *Current Trends in Semantic Web Technologies: Theory and Practice*, SCI 815, pp. 121–151, chapter DOI `10.1007/978-3-030-06149-4_5` (publisher book https://link.springer.com/book/10.1007/978-3-030-06149-4). The paper says the PH-008 ontology classes are drawn from [28]. This binds the **scholarly predecessor**, not its exact OWL file, namespace, release, or permission to import.
+- [22] Benazzouz, Echchtabi & Charkaoui, *Using Ontology as a Decision Support System for Manage Risks in Medicines Supply Chain: Case of Public Hospitals in Morocco*, IEOM 2017, pp. 281–292, official conference PDF https://ieomsociety.org/ieom2017/papers/90.pdf . The PH-008 reference list gives **2013**, whereas the official proceedings and paper are **2017**. This is a bibliographic discrepancy in the citing paper; preserve it. The IEOM paper is a distinct same-group output alongside PH-011 (MATEC 2017), not an independent research lineage.
+
+The IEOM paper explicitly labels Table 3 (printed p. 286 onward) a medicines-supply **Risk Register** and shows risk categories/subcategories/descriptions; Figures 2–4 (pp. 288–291) depict the OWLGred partner/risk/domain ontology views. This is prior art for a *domain risk register/taxonomy*. It does not by itself prove a separately identified, versioned register-entry information artifact or SemRisk's complete assessment/result/state/workflow/evidence chain. Hence a generic claim of “first Pharma risk register ontology” is unsafe.
+
+**Remaining artifact debt:** retrieve and version-qualify any public OWL files for [28]/[22]/PH-011 before formal reuse or axiom-level comparison. Do not infer file absence from the inspected publications.
