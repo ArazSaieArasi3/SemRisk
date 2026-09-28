@@ -18,7 +18,7 @@ EXTERNAL = ROOT / "evaluation/e10/claim-critical-external-locator-ledger-v0.1.cs
 SELF_STATUSES = {"SUPPORTED_BOUNDED", "PARTIAL", "NOT_ASSESSED"}
 EXTERNAL_STATUSES = {
     "POSITIVE_PRIOR_ART", "PARTIAL_OVERLAP", "CORRECTION_PRIOR_ART",
-    "POSITIVE_PUBLICATION_ARTIFACT_UNBOUND", "PARTIAL_BINDING", "ARTIFACT_UNKNOWN",
+    "POSITIVE_PUBLICATION_ARTIFACT_UNBOUND", "PARTIAL_BINDING", "ARTIFACT_UNKNOWN", "SEMANTIC_CONFLICT",
 }
 
 EXPECTED_AUDIT_IDS = {
@@ -92,6 +92,29 @@ EXPECTED_AUDIT_IDS = {
     "PA010-D06",
     "PA010-D13",
     "PA010-D16",
+    "NIST-D03",
+    "NIST-D04",
+    "NIST-D05",
+    "NIST-D07",
+    "NIST-D08",
+    "NIST-D12",
+    "NIST-D15",
+    "NIST-D16",
+    "AIRO-D04",
+    "AIRO-D06",
+    "AIRO-D09",
+    "AIRO-D12",
+    "AIRO-D13",
+    "AIRO-D16",
+    "PH008-D06",
+    "PH008-D11",
+    "PH008-D13",
+    "PH008-D14",
+    "PH008-D16",
+    "PH011-D03",
+    "PH011-D08",
+    "PH011-D13",
+    "PH011-D17",
 }
 
 def rows(path):
@@ -142,9 +165,16 @@ def check(self_rows, external_rows, legacy_rows, dimensions, root=ROOT):
             elif git_blob(target.read_bytes()) != expected_sha:
                 errors.append(f"{cid}: source blob drift {path}")
     ids = [r.get("audit_id") for r in external_rows]
-    if len(ids) != 70 or len(set(ids)) != 70 or set(ids) != EXPECTED_AUDIT_IDS:
-        errors.append("external locator ledger must contain exactly the 70 selected audit IDs")
+    if len(ids) != 93 or len(set(ids)) != 93 or set(ids) != EXPECTED_AUDIT_IDS:
+        errors.append("external locator ledger must contain exactly the 93 selected audit IDs")
     mapped = 0
+    mapped_ids = []
+    source_comparator = {
+        'SRC-ON-001': 'CMP-001', 'SRC-ON-002': 'CMP-002', 'SRC-PA-005': 'CMP-003',
+        'SRC-PA-006': 'CMP-004', 'SRC-ST-007': 'CMP-005', 'SRC-PA-016': 'CMP-006',
+        'SRC-PA-017': 'CMP-007', 'SRC-ON-004': 'CMP-008', 'SRC-ON-003': 'CMP-009',
+        'SRC-PH-008': 'CMP-011',
+    }
     for row in external_rows:
         aid = row.get("audit_id", "?")
         if None in row or any(value is None for value in row.values()):
@@ -152,24 +182,29 @@ def check(self_rows, external_rows, legacy_rows, dimensions, root=ROOT):
         old_id = row.get("legacy_cell_id", "")
         if old_id:
             mapped += 1
+            mapped_ids.append(old_id)
             old = legacy.get(old_id)
             if not old or old["comparator_id"] == "CMP-012":
                 errors.append(f"{aid}: missing/nonexternal old cell")
             elif row.get("dimension_id") != old["dimension_id"] or row.get("legacy_status") != old["status"]:
                 errors.append(f"{aid}: old dimension/status drift")
+            elif old["comparator_id"] != source_comparator.get(row.get("source_id")):
+                errors.append(f"{aid}: source/comparator mismatch")
         elif row.get("legacy_status") != "OUTSIDE_HISTORICAL_204":
             errors.append(f"{aid}: outside-row legacy status mismatch")
         if row.get("source_level_status") not in EXTERNAL_STATUSES:
             errors.append(f"{aid}: uncontrolled source-level status")
-        if row.get("source_id") not in {"SRC-PA-006", "SRC-PA-009", "SRC-PH-003", "SRC-ON-001", "SRC-ON-002", "SRC-PA-017", "SRC-ON-004", "SRC-PA-005", "SRC-PA-016", "SRC-ON-006", "SRC-PA-010"}:
+        if row.get("source_id") not in {"SRC-PA-006", "SRC-PA-009", "SRC-PH-003", "SRC-ON-001", "SRC-ON-002", "SRC-PA-017", "SRC-ON-004", "SRC-PA-005", "SRC-PA-016", "SRC-ON-006", "SRC-PA-010", "SRC-ST-007", "SRC-ON-003", "SRC-PH-008", "SRC-PH-011"}:
             errors.append(f"{aid}: unexpected source")
         if not (row.get("source_url") or "").startswith("https://"):
             errors.append(f"{aid}: missing HTTPS primary source")
         for field in ("exact_publication_locator", "observed_evidence", "calibrated_semrisk_consequence", "artifact_or_reproduction_limit"):
             if not (row.get(field) or "").strip():
                 errors.append(f"{aid}: empty {field}")
-    if mapped != 52:
-        errors.append(f"expected 52 old external cells, got {mapped}")
+    if len(set(mapped_ids)) != len(mapped_ids):
+        errors.append("duplicate historical external cell")
+    if mapped != 71:
+        errors.append(f"expected 71 old external cells, got {mapped}")
     correction = [r for r in external_rows if r.get("audit_id") == "PA006-D08"]
     if len(correction) != 1 or correction[0].get("legacy_cell_id") != "CELL-059" or correction[0].get("legacy_status") != "not_in_scope" or correction[0].get("source_level_status") != "CORRECTION_PRIOR_ART":
         errors.append("CELL-059 prior-art correction missing")
@@ -179,6 +214,9 @@ def check(self_rows, external_rows, legacy_rows, dimensions, root=ROOT):
     iof = [r for r in external_rows if r.get("audit_id") == "IOF-D04"]
     if len(iof) != 1 or iof[0].get("source_level_status") != "CORRECTION_PRIOR_ART":
         errors.append("IOF assessment process/result counterexample missing")
+    airo = [r for r in external_rows if r.get("audit_id") == "AIRO-D04"]
+    if len(airo) != 1 or airo[0].get("source_level_status") != "SEMANTIC_CONFLICT":
+        errors.append("AIRO residual-risk identity conflict missing")
     return errors
 
 
@@ -195,6 +233,9 @@ def selftest(self_rows, external_rows, legacy_rows, dimensions):
     e = copy.deepcopy(external_rows); e[-1]["source_url"] = None; mutations.append(("malformed external row", self_rows, e))
     e = copy.deepcopy(external_rows); next(r for r in e if r["audit_id"] == "RISKG-D04")["source_level_status"] = "ARTIFACT_UNKNOWN"; mutations.append(("lost RisKG counterevidence", self_rows, e))
     e = copy.deepcopy(external_rows); next(r for r in e if r["audit_id"] == "IOF-D04")["source_level_status"] = "ARTIFACT_UNKNOWN"; mutations.append(("lost IOF counterevidence", self_rows, e))
+    e = copy.deepcopy(external_rows); next(r for r in e if r["audit_id"] == "AIRO-D04")["source_level_status"] = "PARTIAL_OVERLAP"; mutations.append(("lost AIRO conflict", self_rows, e))
+    e = copy.deepcopy(external_rows); next(r for r in e if r["audit_id"] == "NIST-D04")["source_id"] = "SRC-ON-003"; mutations.append(("wrong source/comparator", self_rows, e))
+    e = copy.deepcopy(external_rows); next(r for r in e if r["audit_id"] == "NIST-D05")["legacy_cell_id"] = "CELL-072"; mutations.append(("duplicate cell", self_rows, e))
     for label, s, e in mutations:
         if not check(s, e, legacy_rows, dimensions):
             raise AssertionError("negative control not detected: " + label)
@@ -211,7 +252,7 @@ def main():
         raise SystemExit("\n".join("FAIL: " + x for x in failures))
     if args.selftest:
         selftest(s, e, l, d)
-    print("SEM_RISK_E10_LOCATOR_INTEGRITY_PASS (17 self + 70 external selected rows)")
+    print("SEM_RISK_E10_LOCATOR_INTEGRITY_PASS (17 self + 93 external selected rows)")
 
 
 if __name__ == "__main__":
