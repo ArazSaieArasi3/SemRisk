@@ -81,3 +81,10 @@ RiskHub is a strong alternative engineering path for #23: bottom-up requirements
 - key prior art for #45–#49;
 - source for #23 method comparison;
 - input to #53 claim calibration.
+## 11. Publisher supplement and cited predecessor artifact — 2026-09-28
+
+- Publisher article/version of record: https://link.springer.com/article/10.1007/s43069-026-00666-7 (published 2026-06-22). Its Supplementary Information section links one `Supplementary file 1`, a JPG image reported as 95 KB: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs43069-026-00666-7/MediaObjects/43069_2026_666_MOESM1_ESM.jpg . This binds the publicly listed supplemental artifact identity, but does not establish a machine-readable ontology/ER schema or executable implementation.
+- The paper's reference 17 cites Flores (2021) and links https://github.com/sydalabnavid/Risk-Hub , which redirects to https://github.com/NaviDATA-Repos/Risk-Hub/tree/f0664c1dbdbdf40f59361751b9f55807ff6dddaf . At that immutable 2024-03-08 snapshot, the top level contains `CITATION.cff`, `README.md`, and `RiskHub.pdf`; GitHub does not report a repository license. The README describes a thesis risk-assessment database/dashboard prototype. Treat it as a **cited predecessor**, not as source code or a release of the 2026 paper's RiskHub implementation.
+- Exact 2026 data model/code version, executable build, dataset and reproduction commands remain `UNKNOWN/NOT_REPORTED` in these inspected public artifacts. No code or ontology reuse is approved by this binding. The 2026 article's conceptual/relational and exploratory expert prior-art comparisons remain valid at the publication evidence level.
+
+**Status:** publication supplement and predecessor identity bound; implementation reproducibility remains open. Do not conflate a publisher image, a cited thesis PDF, and the evaluated platform.
