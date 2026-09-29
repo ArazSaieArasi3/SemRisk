@@ -1,35 +1,28 @@
-# Citation corpus follow-up — 2026-09-29
+# Paper-1 citation corpus coverage — 2026-09-29
 
-The initial 30-target audit below remains as the pre-binding baseline. A subsequent primary-source/owner-registry pass assigned stable *candidate* REF identities to all **14 P0 named targets**. DS-003 splits into two publication objects: dataset v4 (`REF-0021`) and linked study version 2 (`REF-0022`). Together with the seven original seeds, the corpus now has **22 candidate records** covering **21 of 30 named targets**; the remaining **nine P1 framework/foundational/specification targets** still have `REF_PENDING`. All manuscript memberships are `candidate`, with a local `PUB-0001` manuscript key; no `cited` status, IEEE number, exact released publication ID, or complete bibliography is claimed.
+**Issue:** #121 / #112. **Frozen comparison input:** working manuscript `publications/2026-icae/manuscript-working-draft-v0.3.md` at `6e0de461b4f045cb30de1d49ec4fefec0abe22a2`. The named-mention worklist has **30 targets**. This is a worklist denominator, not an approved bibliography count.
 
-Identity/source checks use the publisher or author institution for EDOC/PA-009, CEUR Vols. 4129 and 4176, Springer PA-016/PA-017, IOF 202603, NIST IR 8286 Rev. 1, AIRO, the author-institution/publisher paths for PA-010/PH-003, the CM-PharmE owner repository's publication and v1.0.0 release record, the official ZivaHub dataset landing, and the version-2 study DOI. Restricted or unrendered source pages, paper-to-code identity, exact unpublished DOI metadata, link resolution, and human citation placement remain explicit in each REF note. This step is identity binding, not a complete metadata/link health pass.
+## Source identity passes
 
-**Correction found:** official ZivaHub v4 is dated 2025-07-02; 2025-06-02 is v1. The current landing displays “Download all (1.94 MB)” whereas prior SemRisk sources reported 18.01 MB. Dataset file-level byte totals are now unverified pending version-specific manifest/checksum reconciliation. The bounded qualitative case interpretation remains unchanged.
+| Pass | Named targets with candidate REF | Candidate records | Remaining identity gaps |
+| --- | ---: | ---: | ---: |
+| Initial audit | 7/30 | 7 seed records | 23 |
+| Priority comparator/case binding | 21/30 | 22 | 9 |
+| Framework/foundation/specification binding | 30/30 | 31 | 0 within the 30-target worklist |
 
-**Next:** resolve the nine P1 targets (COSO, OCEG, Risk IT, UFO, gUFO, OntoUML, OWL, SHACL, PROV-O); then place and check each actual citation in the manuscript and Wiki, verify incomplete link/metadata fields and render IEEE references. #121 stays open.
+The extra record is deliberate: `REF-0021` identifies the DS-003 dataset v4 (DOI `10.25375/uct.29178665.v4`) and `REF-0022` the linked study version 2 (DOI `10.12688/wellcomeopenres.24292.2`). Seven original seeds remain candidate and their prior DOI resolver status is preserved. The nine final targets map to COSO 2017, OCEG 3.5, Risk IT 2nd edition, the UFO research article, pinned gUFO v1.0.0, a pinned OntoUML metamodel snapshot, and the date-specific W3C OWL 2 structural specification, SHACL Recommendation and PROV-O Recommendation. The gUFO release tag and current OntoUML metamodel snapshot are bibliography candidates, not proof that every modeling decision used their exact historical files.
 
----
+## Outstanding quality and citation work
 
-# Paper-1 citation corpus coverage checkpoint — 2026-09-29
+- `PUB-0001` is a **local candidate manuscript identity**. All 31 memberships are `candidate`; the working manuscript contains no stable `[@REF-####]` tokens or rendered IEEE list. No record is marked `cited`.
+- Source status and metadata remain partial. Several DOI resolvers and publisher pages were unrendered or access restricted; full COSO/OCEG/ISACA clauses cannot be asserted. Eight foundational/framework/specification targets still lack binding in the 50-row legacy source register; the REF entries do not silently invent source IDs.
+- The current manuscript may contain unnamed or implicit sources beyond these 30 named mentions. Claim-local citation placement must check *all* factual/source-dependent passages, not just each name once. Exact PDF section/table locators and external artifact versions remain governed by literature profiles; a publisher page alone does not show head-to-head comparator behavior.
+- The official ZivaHub page dates DS-003 v4 to 2025-07-02 and v1 to 2025-06-02. It currently displays Download all (1.94 MB), conflicting with SemRisk's historical 18.01 MB. Byte-level package size remains unverified pending exact v4 file manifest/checksum reconciliation.
 
-**Owner:** #121, under #112. **Manuscript:** `publications/2026-icae/manuscript-working-draft-v0.3.md` at `6e0de461b4f045cb30de1d49ec4fefec0abe22a2`. **Corpus:** `docs/documentation/research-reference-corpus.yaml` at the same ref. This is a named-mention audit, not an approved bibliography or claim that the current manuscript has only 30 sources.
+## Next
 
-The companion CSV checks **30 distinct named citation targets** actually appearing in the working manuscript against the governed REF corpus and 50-source SemRisk source register. **Seven** have seed `REF-0001…0007` identities, but all seven still have empty manuscript membership and `active_unverified` source status. **Twenty-three** targets lack a stable REF entry (14 P0 claim-bearing or case/data targets; nine P1 framework/foundational/specification targets). Eight of the 23 also lack a corresponding identity in the 50-row source register as checked here; that means *registry binding pending*, not absence of an authoritative source. Several target names may resolve to one verified publication or multiple specification references; the 30 is a worklist denominator, not a final citation count.
+1. Add claim-local candidate REF tokens and a generated draft IEEE list to the manuscript; resolve the candidate publication ID with #55 at release, not by inference.
+2. Verify each entry's remaining author/edition/DOI/link metadata and role; bind the eight missing legacy source-register identities or record why a framework/spec reference is separately governed.
+3. Refresh source-controlled Wiki routes and check the live private Wiki after any page edit. Execute the research-journey and QN/QL documentation review; #121 remains open until those outputs are inspectable.
 
-## Method and boundaries
-
-1. Match explicit source names/IDs in the current manuscript, including closest comparators, standards, foundational/formal dependencies, CM-PharmE and DS-003.
-2. Compare with the seven REF seeds and `conceptualization/source-mining/source-register.csv`; preserve `REF_PENDING` rather than inventing IEEE numbers.
-3. Prioritize named E10 closest-work sources, CM-PharmE artifact/publication identity and DS-003 DOI/version. Exact publication, DOI, edition, URL health, source role, manuscript membership and rendered citation remain verification work.
-4. Treat URLs embedded in manuscript prose and internal source IDs as leads, not a finished bibliography. Paywalled and restricted sources retain their access ceilings.
-
-The CSV includes an observed manuscript token, section/claim route, corpus state, source-register identity if found, priority and next verification step. The seven seed REF rows are **not** citation-ready simply because they have IDs. Current manuscript reference prose explicitly awaits a verified numbered list.
-
-## Next actions
-
-- P0: resolve the 14 pending claim-bearing/case/data targets using their governed source profiles, exact publication/artifact versions and primary DOI/landing pages, then add stable REF entries and manuscript membership.
-- P1: resolve the nine foundational/framework/specification targets; especially COSO/OCEG and UFO/gUFO/OntoUML/OWL/SHACL/PROV-O provenance where no source-register identity was found in this check.
-- Recheck the seven seed records' metadata, DOI/link health, evidence roles and memberships before IEEE rendering. Only after coverage and order are frozen should page-local IEEE numbers be generated.
-- Update source-controlled Wiki evidence/citation routes and perform live private Wiki read-back if their bodies change. #55/#56 still own final scholarly release/citation and public access.
-
-**State:** #121 remains open. This work exposes the exact citation debt and its priority; it does not pass RO-27, #53 final citation consistency or #35 submission audit.
+**Ceiling:** reference *identity coverage* for 30 named targets only; no final citation completeness, public release or conformance pass.

@@ -166,7 +166,7 @@ references:
     title: "Biopharma Risk Management Ontology"
     issued: {year: 2026}
     ontology_iri: "https://spec.industrialontologies.org/ontology/biopharma/BiopharmaRiskManagement/"
-    ontology_version_iri: "https://spec.industrialontologies.org/ontology/biopharma/BiopharmaRiskManagement/202602"
+    ontology_version_iri: "https://spec.industrialontologies.org/ontology/202602/biopharma/BiopharmaRiskManagement/"
     canonical_url: "https://spec.industrialontologies.org/portal/release/202603/biopharma/BiopharmaRiskManagementOntology.html"
     evidence_roles: [formal_pharma_prior_art]
     research_uses: [{target_type: source_register, target: "SRC-ON-006", role: prior_art_or_case}]
@@ -335,6 +335,122 @@ references:
     metadata_status: partial
     notes: "V/VI candidate source; Distinct linked study version 2 and DOI verified through author-institution and indexed article metadata; publisher page not directly readable in this pass. The dataset is REF-0021; no independent validation from design-influencing source."
 
+#+ Framework, foundation and version-specific specification candidates (bounded source identity).
+  - ref_id: REF-0023
+    source_class: standard_specification
+    title: "Enterprise Risk Management—Integrating with Strategy and Performance"
+    issued: {year: 2017}
+    canonical_url: "https://www.coso.org/enterprise-risk-management"
+    evidence_roles: [enterprise_framework_alignment]
+    research_uses: [{target_type: manuscript_section, target: "II/III", role: framework_foundation_or_specification}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0023"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://www.coso.org/enterprise-risk-management", notes: "COSO owner page confirms updated 2017 framework identity; full framework/clauses not inspected. No conformance claim."}
+    metadata_status: partial
+    notes: "COSO ERM; COSO owner page confirms updated 2017 framework identity; full framework/clauses not inspected. No conformance claim."
+  - ref_id: REF-0024
+    source_class: standard_specification
+    title: "The GRC Capability Model 3.5 (OCEG Red Book)"
+    edition: "3.5"
+    issued: {year: 2023}
+    canonical_url: "https://www.oceg.org/grccapabilitymodel35/"
+    evidence_roles: [grc_framework_alignment]
+    research_uses: [{target_type: manuscript_section, target: "II/III", role: framework_foundation_or_specification}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0024"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://www.oceg.org/grccapabilitymodel35/", notes: "OCEG owner page confirms version 3.5 in 2023; full member-only Red Book and 90 tools not inspected. No clause-level coverage."}
+    metadata_status: partial
+    notes: "OCEG; OCEG owner page confirms version 3.5 in 2023; full member-only Red Book and 90 tools not inspected. No clause-level coverage."
+  - ref_id: REF-0025
+    source_class: standard_specification
+    title: "Risk IT Framework, 2nd Edition"
+    edition: "2"
+    issued: {year: 2020}
+    canonical_url: "https://www.isaca.org/store2/product/RITF2P-C"
+    evidence_roles: [it_risk_framework_alignment]
+    research_uses: [{target_type: manuscript_section, target: "II/III", role: framework_foundation_or_specification}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0025"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://www.isaca.org/store2/product/RITF2P-C", notes: "ISACA owner product page and release notice identify second edition; full licensed framework not inspected. No conformance or clause-level assertion."}
+    metadata_status: partial
+    notes: "SRC-ST-005; ISACA owner product page and release notice identify second edition; full licensed framework not inspected. No conformance or clause-level assertion."
+  - ref_id: REF-0026
+    source_class: peer_reviewed_article
+    title: "Towards ontological foundations for conceptual modeling: The unified foundational ontology (UFO) story"
+    doi: "10.3233/AO-150157"
+    container_title: "Applied Ontology 10(3–4)"
+    pages_or_article_number: "259–271"
+    issued: {year: 2015}
+    canonical_url: "https://journals.sagepub.com/doi/10.3233/AO-150157"
+    evidence_roles: [foundational_ontology]
+    research_uses: [{target_type: manuscript_section, target: "III/IV", role: framework_foundation_or_specification}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0026"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://journals.sagepub.com/doi/10.3233/AO-150157", notes: "Publisher article and DOI checked; conceptual UFO source distinct from implementable gUFO release. Specific endurant/event theses may require further claim-level citation."}
+    metadata_status: partial
+    notes: "UFO; Publisher article and DOI checked; conceptual UFO source distinct from implementable gUFO release. Specific endurant/event theses may require further claim-level citation."
+  - ref_id: REF-0027
+    source_class: ontology_model_framework
+    title: "gUFO: A Lightweight Implementation of the Unified Foundational Ontology (UFO)"
+    ontology_iri: "http://purl.org/nemo/gufo#"
+    ontology_version_iri: "http://purl.org/nemo/gufo#/1.0.0"
+    software_version: "v1.0.0"
+    canonical_url: "https://github.com/nemo-ufes/gufo/tree/12b098158a9244179c5e0e2534cd85254a2d3b7e"
+    evidence_roles: [foundational_implementation]
+    research_uses: [{target_type: manuscript_section, target: "III/IV", role: framework_foundation_or_specification}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0027"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://github.com/nemo-ufes/gufo/tree/12b098158a9244179c5e0e2534cd85254a2d3b7e", notes: "Owner tag v1.0.0 resolves to commit 12b098158a9244179c5e0e2534cd85254a2d3b7e and versionIRI from SemRisk dependency registry; gUFO is a lightweight implementation of selected UFO categories, not all of UFO."}
+    metadata_status: partial
+    notes: "gUFO; Owner tag v1.0.0 resolves to commit 12b098158a9244179c5e0e2534cd85254a2d3b7e and versionIRI from SemRisk dependency registry; gUFO is a lightweight implementation of selected UFO categories, not all of UFO."
+  - ref_id: REF-0028
+    source_class: ontology_model_framework
+    title: "OntoUML Metamodel"
+    canonical_url: "https://github.com/OntoUML/ontouml-metamodel/tree/a76f8adef3b615d81645a558078bfe2bc98c7fc0"
+    evidence_roles: [conceptual_modeling_language]
+    research_uses: [{target_type: manuscript_section, target: "III/IV", role: framework_foundation_or_specification}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0028"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://github.com/OntoUML/ontouml-metamodel/tree/a76f8adef3b615d81645a558078bfe2bc98c7fc0", notes: "Official OntoUML metamodel repository snapshot pinned 2026-09-29 at a76f8adef3b615d81645a558078bfe2bc98c7fc0; repository is a modeling-language specification, not evidence that this commit was the exact historical input to SemRisk modeling. Scholarly OntoUML method citation remains claim-level review."}
+    metadata_status: partial
+    notes: "OntoUML; Official OntoUML metamodel repository snapshot pinned 2026-09-29 at a76f8adef3b615d81645a558078bfe2bc98c7fc0; repository is a modeling-language specification, not evidence that this commit was the exact historical input to SemRisk modeling. Scholarly OntoUML method citation remains claim-level review."
+  - ref_id: REF-0029
+    source_class: standard_specification
+    title: "OWL 2 Web Ontology Language Structural Specification and Functional-Style Syntax (Second Edition)"
+    issued: {year: 2012, date: "2012-12-11"}
+    canonical_url: "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/"
+    evidence_roles: [formal_language_specification]
+    research_uses: [{target_type: manuscript_section, target: "III/IV/VI", role: framework_foundation_or_specification}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0029"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/", notes: "Version-specific W3C Recommendation; this structural specification includes OWL 2 DL global restrictions. OWL 2 overview/profiles are distinct documents; cite them if the precise claim requires them."}
+    metadata_status: partial
+    notes: "OWL; Version-specific W3C Recommendation; this structural specification includes OWL 2 DL global restrictions. OWL 2 overview/profiles are distinct documents; cite them if the precise claim requires them."
+  - ref_id: REF-0030
+    source_class: standard_specification
+    title: "Shapes Constraint Language (SHACL)"
+    issued: {year: 2017, date: "2017-07-20"}
+    canonical_url: "https://www.w3.org/TR/2017/REC-shacl-20170720/"
+    evidence_roles: [constraint_language_specification]
+    research_uses: [{target_type: manuscript_section, target: "III/IV/VI", role: framework_foundation_or_specification}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0030"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://www.w3.org/TR/2017/REC-shacl-20170720/", notes: "Version-specific W3C Recommendation; SemRisk uses SHACL Core in candidate. 2026 SHACL 1.2 drafts are not substituted for this evaluated baseline."}
+    metadata_status: partial
+    notes: "SHACL; Version-specific W3C Recommendation; SemRisk uses SHACL Core in candidate. 2026 SHACL 1.2 drafts are not substituted for this evaluated baseline."
+  - ref_id: REF-0031
+    source_class: standard_specification
+    title: "PROV-O: The PROV Ontology"
+    issued: {year: 2013, date: "2013-04-30"}
+    canonical_url: "https://www.w3.org/TR/2013/REC-prov-o-20130430/"
+    evidence_roles: [provenance_vocabulary_specification]
+    research_uses: [{target_type: manuscript_section, target: "III/IV", role: framework_foundation_or_specification}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0031"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://www.w3.org/TR/2013/REC-prov-o-20130430/", notes: "Version-specific W3C Recommendation. Source citation is not a claim of complete PROV-O conformance or imported entailment coverage."}
+    metadata_status: partial
+    notes: "PROV-O; Version-specific W3C Recommendation. Source citation is not a claim of complete PROV-O conformance or imported entailment coverage."
+
 page_reference_usage: []
 manuscript_reference_maps:
   - {publication_id: PUB-0001, ref_id: REF-0001, status: candidate}
@@ -359,6 +475,15 @@ manuscript_reference_maps:
   - {publication_id: PUB-0001, ref_id: REF-0020, status: candidate}
   - {publication_id: PUB-0001, ref_id: REF-0021, status: candidate}
   - {publication_id: PUB-0001, ref_id: REF-0022, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0023, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0024, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0025, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0026, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0027, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0028, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0029, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0030, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0031, status: candidate}
 rendering:
   stable_authoring_token_pattern: "[@REF-####]"
   page_numbering: first_occurrence
@@ -384,6 +509,6 @@ summary:
   result: INCOMPLETE
   blockers:
     - "#53: manuscript v0.3 has no numbered in-text citations or final bibliography."
-    - "#121: nine foundational/framework/specification targets lack candidate REF identities; 22 candidate references have partial metadata and no rendered citation tokens. Some source pages/DOI resolvers remain unverified."
+    - "#121: all 30 named targets have candidate identities across 31 REF records, but claim-local in-text citation placement, source-register binding for eight targets, complete metadata/link checks and IEEE rendering remain open."
     - "#55/#56: publication and public-surface release checks remain pending."
-  notes: "Twenty-two candidate REF records: seven original seeds, 14 priority named targets, and a separate DS-003 linked-study version. PUB-0001 is a local candidate manuscript identity, not a publication/release binding. All memberships remain candidate; no rendered in-text citation/IEEE bibliography is asserted."
+  notes: "Thirty-one candidate REF records cover 30 named targets (the DS-003 dataset and linked study are distinct). PUB-0001 is a local candidate manuscript identity, not a publication/release binding. All memberships remain candidate; no rendered in-text citation/IEEE bibliography is asserted."
