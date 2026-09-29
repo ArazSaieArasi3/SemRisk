@@ -67,3 +67,7 @@ Gate state: G-DOC-0 `partial` (#118); G-DOC-1 `partial` (#118/#117); G-DOC-2 `bl
 5. Reassess RW-21/24/26 and close #118/#112 only from evidence; no issue closure itself makes a release.
 
 Reassess on OGCM profile upgrade, semantic candidate/release change, evaluation rerun, Wiki source or live drift, diagram change, new RDB/KG/API surface, Pages deployment, reference corpus change, or publication binding. Owner: #118 until documentation governance is assigned to a durable release process. The audit and manifest should be updated together.
+
+## Dated #118 audit handoff — 2026-09-29
+
+The original 2026-09-26 reverse mapping above is retained as history. The complete 30 RO + 10 PT + 26 RW evidence/owner disposition is in `ogcm-rf-adoption-evidence-map-2026-09-29.csv`; `ogcm-rf-adoption-audit-closure-2026-09-29.md` records exact checks. The bounded #118 audit is complete while the adopter remains `partial`. Unfinished research journey/reference/editorial/QN-QL work is now #121; reader routes/tutorial/accessibility are #122; WebVOWL-specific checks remain #119; formal/Pages/release work remains #115/#117/#54/#55/#56. RW-24 and final conformance stay with parent #112. The offline Pages and private Wiki are not a public scholarly release.

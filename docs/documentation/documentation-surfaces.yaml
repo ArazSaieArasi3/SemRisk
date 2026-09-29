@@ -22,7 +22,7 @@ semantic_source:
   evidence_sources: [evaluation/]
   evaluation_sources: [evaluation/vveaa/paper1-vveaa-execution-profile-v0.1.md]
   decision_records: [docs/governance/paper1-release-train.md]
-  lineage_records: []
+  lineage_records: [docs/wiki/pages/Scope-and-Contributions.md]
   release_manifests: []
 
 wiki:

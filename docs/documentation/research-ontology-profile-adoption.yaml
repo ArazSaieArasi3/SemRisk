@@ -14,47 +14,47 @@ capabilities:
     title: "Start Here / Overview"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/wiki/pages/Home.md, docs/wiki/p1-r2-live-wiki-readback-2026-09-26.md]
     deviations: []
-    blockers: ["#116"]
-    notes: "Wiki Home; 8-page read-back; provisional triage, not capability verification."
+    blockers: ["#122"]
+    notes: "Private Wiki Home and 8/8 read-back verified; target-reader route validation is assigned to #122. This is not public Pages conformance."
   - id: RO-02
     title: "Research problem, gap, RQ/CQ and method"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/wiki/pages/Scope-and-Contributions.md, publications/2026-icae/research-contract.md]
     deviations: []
-    blockers: ["#118"]
+    blockers: ["#121"]
     notes: "Scope page, RQ/CQ and method require reader route; provisional triage, not capability verification."
   - id: RO-03
     title: "Evidence / literature / data basis"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/wiki/pages/Evidence-and-VVEAA.md, docs/documentation/research-reference-corpus.yaml]
     deviations: []
-    blockers: ["#118"]
+    blockers: ["#121"]
     notes: "Evidence/VVEAA links; source basis not fully narrated; provisional triage, not capability verification."
   - id: RO-04
     title: "Conceptual model"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/wiki/pages/Semantic-Architecture.md, docs/ontology/diagrams/p1-r2-local-ontology-atlas-v0.1.svg]
     deviations: []
-    blockers: ["#118"]
+    blockers: ["#121", "#115"]
     notes: "Conceptual registry/atlas linked; semantics and diagram role audit; provisional triage, not capability verification."
   - id: RO-05
     title: "Ontology architecture and semantic commitments"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/wiki/pages/Semantic-Architecture.md, ontology/p1-r2-candidate-manifest.yaml]
     deviations: []
-    blockers: ["#116"]
-    notes: "Semantic Architecture and canonical module refs; provisional triage, not capability verification."
+    blockers: ["#115"]
+    notes: "Semantic Architecture links canonical module sources; #115 formal interpretation and release binding remain."
   - id: RO-06
     title: "Formal ontology explanation"
-    applicability: Recommended
+    applicability: Conditional
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/wiki/pages/Formal-Reference.md, docs/ontology/formal-ontology-description-p1-r2-v0.2.md]
     deviations: []
     blockers: ["#115"]
     notes: "FD-A…FD-J page with source limits; provisional triage, not capability verification."
@@ -62,7 +62,7 @@ capabilities:
     title: "Exhaustive formal ontology reference"
     applicability: Conditional
     status: blocked
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/ontology/generated/p1-r2-generated-reference.md, site/ontology/0.1.0-rc.1/index.html]
     deviations: []
     blockers: ["#117"]
     notes: "Offline generated reference only; provisional triage, not capability verification."
@@ -70,190 +70,190 @@ capabilities:
     title: "Concept/relation/property reference"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/ontology/generated/p1-r2-generated-reference.md, ontology/formal-entity-inventory-v0.1.csv]
     deviations: []
-    blockers: ["#115"]
+    blockers: ["#115", "#117"]
     notes: "76-entity source index and selected Wiki links; provisional triage, not capability verification."
   - id: RO-09
     title: "Data/dataset provenance"
     applicability: Conditional
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/wiki/pages/Pharma-Case.md, datasets/master-dataset-semantic-mapping-v1.0.csv]
     deviations: []
-    blockers: ["#118"]
+    blockers: ["#121"]
     notes: "Pharma dataset provenance linked; breadth/limits audit; provisional triage, not capability verification."
   - id: RO-10
     title: "Ontology↔RDB/KG/API mappings"
     applicability: Conditional
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/wiki/pages/Relational-Projection.md, evaluation/parity/p49-parity-results-v1.0.csv]
     deviations: []
-    blockers: ["#116"]
+    blockers: ["#122"]
     notes: "Relational projection and task-bounded parity; provisional triage, not capability verification."
   - id: RO-11
     title: "Evaluation/validation/assurance"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/wiki/pages/Evidence-and-VVEAA.md, evaluation/vveaa/paper1-vveaa-execution-profile-v0.1.md]
     deviations: []
-    blockers: ["#112"]
+    blockers: ["#113", "#54"]
     notes: "VVEAA page; #51/#54 remain open; provisional triage, not capability verification."
   - id: RO-12
     title: "Reproducibility"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/wiki/pages/Reproduce-and-Release.md, docs/reproducibility/semantic-build.md]
     deviations: []
-    blockers: ["#55"]
+    blockers: ["#122", "#55"]
     notes: "Build instructions and candidate status; final bundle pending; provisional triage, not capability verification."
   - id: RO-13
     title: "Research journey and decision trace"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/wiki/pages/Scope-and-Contributions.md, docs/wiki/p1-r2-live-wiki-readback-2026-09-26.md]
+    evidence_paths: [docs/wiki/pages/Scope-and-Contributions.md, docs/governance/paper1-release-train.md]
     deviations: []
-    blockers: ["#118"]
+    blockers: ["#121"]
     notes: "Private Wiki now explains evidence→boundary→model→check→claim with source links; complete decision trace and entity lineage pending."
   - id: RO-14
     title: "Version/evolution lineage"
     applicability: Conditional
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/governance/paper1-release-train.md, docs/ontology/pages-version-registry-v0.1.json]
     deviations: []
-    blockers: ["#118"]
+    blockers: ["#121", "#55"]
     notes: "Release train exists; Wiki evolution/lineage route incomplete; provisional triage, not capability verification."
   - id: RO-15
     title: "Publications/citation"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/wiki/pages/Reproduce-and-Release.md, docs/documentation/research-reference-corpus.yaml]
     deviations: []
-    blockers: ["#55/#56"]
+    blockers: ["#121", "#55"]
     notes: "Citation is explicitly pending release/availability; provisional triage, not capability verification."
   - id: RO-16
     title: "Limitations/threats/non-claims"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/wiki/pages/Evidence-and-VVEAA.md, evaluation/integrity/pre-assurance-threat-snapshot-v1.0.md]
     deviations: []
-    blockers: ["#118"]
+    blockers: ["#121", "#56"]
     notes: "Banners and threats source exist; dedicated claim-linked route incomplete; provisional triage, not capability verification."
   - id: RO-17
     title: "Tutorials/how-to"
     applicability: Conditional
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/wiki/pages/Reproduce-and-Release.md, docs/reproducibility/semantic-build.md]
     deviations: []
-    blockers: ["#118"]
+    blockers: ["#122"]
     notes: "Executable semantic build linked; Wiki tutorial route untested; provisional triage, not capability verification."
   - id: RO-18
     title: "Visual documentation"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md, docs/ontology/diagrams/manifest.yaml]
+    evidence_paths: [docs/ontology/diagrams/manifest.yaml, docs/ontology/diagrams/p1-r2-local-ontology-atlas-v0.1.svg, docs/ontology/diagrams/p1-r2-local-relations-v0.1.svg]
     deviations: []
-    blockers: ["#116"]
+    blockers: ["#122", "#119"]
     notes: "Two candidate SVGs registered with exact source, scopes, omissions and pending independent semantic/accessibility review."
   - id: RO-19
     title: "Generated formal reference / WIDOCO adapter"
     applicability: Conditional
     status: blocked
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md, docs/ontology/generated/webvowl-candidate-v0.1/manifest.json, docs/ontology/generated/webvowl-viewer-candidate-v0.1/manifest.json, docs/ontology/diagrams/p1-r2-webvowl-browser-qa-2026-09-27.md, docs/ontology/diagrams/p1-r2-webvowl-reader-task-protocol-v0.1.md]
+    evidence_paths: [docs/ontology/generated/webvowl-viewer-candidate-v0.1/index.html, docs/ontology/diagrams/p1-r2-webvowl-browser-qa-2026-09-27.md]
     deviations: []
-    blockers: ["#117/#119"]
+    blockers: ["#117", "#119"]
     notes: "Source-bound WebVOWL JSON and offline viewer pass static and private Chromium desktop/mobile smoke. Combined phone graph readability, unexecuted target-reader tasks, versioned Pages route and deployment remain open; native module selector and narrow keyboard smoke passed."
   - id: RO-20
     title: "Documentation history/governance"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/wiki/p1-r2-live-wiki-readback-2026-09-26.md, docs/wiki/p1-r2-wiki-publish-manifest-v0.1.json]
     deviations: []
-    blockers: ["#116"]
-    notes: "Wiki history and source manifest/read-back; provisional triage, not capability verification."
+    blockers: ["#117", "#55"]
+    notes: "Wiki revision history and source manifest read-back exist; frozen cross-surface baseline awaits #55/#117."
   - id: RO-21
     title: "Documentation QA/conformance evidence"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/documentation/p1-r2-documentation-quality-audit-2026-09-27.yaml, docs/wiki/p1-r2-live-wiki-readback-2026-09-26.md, docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/documentation/p1-r2-documentation-quality-audit-2026-09-27.yaml]
     deviations: []
-    blockers: ["#118"]
+    blockers: ["#121"]
     notes: "36 rubric criteria inventoried; two bounded mechanical Wiki criteria rated, no QN/QL total or qualitative expert scores. Applicability and full conformance review remain open."
   - id: RO-22
     title: "Multi-profile declaration"
     applicability: Conditional
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md, docs/documentation/p1-r2-documentation-rollout-2026-09-26.md, docs/documentation/profile-composition.yaml]
+    evidence_paths: [docs/documentation/profile-composition.yaml]
     deviations: []
-    blockers: ["#118"]
+    blockers: ["#112"]
     notes: "Schema-checked composition manifest declares Research/Ontology primary and Data/Engineering secondary for relational twin; full review pending."
   - id: RO-23
     title: "Audience journeys"
-    applicability: Recommended
+    applicability: Conditional
     status: partial
-    evidence_paths: [docs/documentation/profile-composition.yaml, docs/wiki/pages/Home.md, docs/wiki/p1-r2-live-wiki-readback-2026-09-26.md]
+    evidence_paths: [docs/documentation/p1-r2-dual-audience-route-audit-2026-09-27.md, docs/wiki/pages/Home.md]
     deviations: []
-    blockers: ["#118"]
+    blockers: ["#122"]
     notes: "Academic and engineering routes now live in private Wiki Home; source-matched revision 9827a52. Usability assessment pending."
   - id: RO-24
     title: "Surface allocation manifest"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/documentation/documentation-surfaces.yaml]
     deviations: []
-    blockers: ["#118"]
+    blockers: ["#117"]
     notes: "Staged surface manifest at `docs/documentation/documentation-surfaces.yaml`; allocation and Pages checks remain false; provisional triage, not capability verification."
   - id: RO-25
     title: "Authority declaration"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [.research/ogcm-rf-profile.yaml, docs/documentation/documentation-surfaces.yaml]
     deviations: []
-    blockers: ["#118"]
+    blockers: ["#112"]
     notes: "Authority stated in pages and .research profile refreshed on 2026-09-26; release-bound authority and publication review remain open."
   - id: RO-26
     title: "Profile adoption/conformance record"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/documentation/research-ontology-profile-adoption.yaml, docs/documentation/p1-r2-documentation-rollout-2026-09-26.md]
+    evidence_paths: [docs/documentation/research-ontology-profile-adoption.yaml]
     deviations: []
-    blockers: ["#118"]
+    blockers: ["#112"]
     notes: "Pinned partial adoption record exists; full capability proof, QN/QL and publication gates remain open."
   - id: RO-27
     title: "Reference/citation corpus integrity"
     applicability: Mandatory
     status: partial
-    evidence_paths: [docs/documentation/research-reference-corpus.yaml, docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/documentation/research-reference-corpus.yaml]
     deviations: []
-    blockers: ["#118"]
+    blockers: ["#121"]
     notes: "Seven seed landing pages reviewed 2026-09-27: four institutional links valid, three DOI resolvers unverified despite publisher/institutional metadata. RISKMAN corrected to conference paper. Manuscript placement, complete coverage and IEEE QA remain open; no full capability verification."
   - id: RO-28
     title: "Documentation baseline/snapshot"
     applicability: Conditional
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/wiki/p1-r2-wiki-publish-manifest-v0.1.json, docs/ontology/pages-version-registry-v0.1.json]
     deviations: []
-    blockers: ["#55/#118"]
+    blockers: ["#55", "#117"]
     notes: "Wiki candidate manifest and Pages registry; no release snapshot; provisional triage, not capability verification."
   - id: RO-29
     title: "Formal ontology logical-semantics completeness"
     applicability: Conditional
     status: partial
-    evidence_paths: [docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/ontology/formal-ontology-description-p1-r2-v0.2.md, docs/ontology/generated/p1-r2-closure-manifest.json]
     deviations: []
-    blockers: ["#115/#117"]
+    blockers: ["#115", "#117"]
     notes: "FD/source QA and offline reference; final parity/reasoning gate open; provisional triage, not capability verification."
   - id: RO-30
     title: "Academic/industrial dual-audience usability"
     applicability: Conditional
     status: partial
-    evidence_paths: [docs/documentation/p1-r2-dual-audience-route-audit-2026-09-27.md, docs/ontology/diagrams/p1-r2-webvowl-reader-task-protocol-v0.1.md, docs/documentation/ogcm-rf-adoption-gap-audit-2026-09-26.md]
+    evidence_paths: [docs/documentation/p1-r2-dual-audience-route-audit-2026-09-27.md, docs/ontology/diagrams/p1-r2-webvowl-reader-task-protocol-v0.1.md]
     deviations: []
-    blockers: ["#118"]
+    blockers: ["#122", "#119"]
     notes: "Bounded source route/task audit exists; target-reader protocol is unexecuted; mobile readability/accessibility and public Pages read-back remain open. Not a usability pass."
 machine_artifacts:
   documentation_surface_manifest: docs/documentation/documentation-surfaces.yaml
   profile_composition_manifest: docs/documentation/profile-composition.yaml
-  research_journey_record: docs/documentation/p1-r2-dual-audience-route-audit-2026-09-27.md
+  research_journey_record: docs/wiki/pages/Scope-and-Contributions.md
   diagram_manifest: docs/ontology/diagrams/manifest.yaml
   documentation_qa_evidence: docs/wiki/p1-r2-live-wiki-readback-2026-09-26.md
   documentation_quality_assessment: docs/documentation/p1-r2-documentation-quality-audit-2026-09-27.yaml
@@ -269,12 +269,12 @@ surfaces:
   published_surfaces: ["https://github.com/ArazSaieArasi3/SemRisk/wiki"]
 dependencies:
   normative_open: [OGCM-RF-DOC-RO-staged]
-  additional_reconciliation: ["#115", "#117", "#118", "#119", "#55", "#56"]
+  additional_reconciliation: ["#115", "#117", "#119", "#121", "#122", "#55", "#56"]
 verification:
-  mandatory_capabilities_assessed: false
-  conditional_capabilities_dispositioned: false
+  mandatory_capabilities_assessed: true
+  conditional_capabilities_dispositioned: true
   authority_declared: true
-  evidence_links_checked: false
+  evidence_links_checked: true
   generated_curated_boundary_checked: true
   version_evolution_checked: false
   documentation_lifecycle_checked: false
@@ -285,7 +285,7 @@ verification:
   ontology_reference_checked: false
   formal_semantics_completeness_checked: false
   portfolio_documentation_integration_checked: false
-  rollout_factory_checked: false
+  rollout_factory_checked: true
   limitations_present: true
   profile_dependency_state_checked: true
 upgrade_history: []
@@ -293,8 +293,8 @@ summary:
   conformance_state: partial
   blockers:
     - "No public/rendered Pages deployment or cross-surface QA (#117)."
-    - "OGCM-RF reader journey, reference completeness and qualitative quality evidence incomplete (#118)."
+    - "Research journey, reference completeness and qualitative quality evidence incomplete (#121); reader/tutorial validation incomplete (#122)."
     - "Offline WebVOWL candidate passes narrow rendered smoke; target-reader/mobile usability and Pages integration remain open (#119/#117)."
   deferred: ["Release-bound documentation until #54/#55/#56 decisions."]
-  last_reviewed: "2026-09-27"
-  notes: "30 capability rows are provisional applicability/status triage; no conforming claim."
+  last_reviewed: "2026-09-29"
+  notes: "RO-01..30 and PT-01..10/RW-01..26 were assessed for evidence-path existence and owned gaps on 2026-09-29. This is an audit, not capability verification or a conforming claim. Private Wiki is live; Pages/public release remain pending."
