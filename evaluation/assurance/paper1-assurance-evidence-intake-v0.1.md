@@ -55,3 +55,7 @@ The nine external dependencies are not nine failed remediation rows. They remain
 - The textual claim guard covers known phrase families, not all paraphrases; manual reading of Abstract, contributions, results and Conclusion remains mandatory.
 - CI successes and 41 bounded audit rows do not replace independent experts, E11 evidence, complete source extraction, or #54's assurance decision.
 - No overall quality score is calculated. Do not convert this intake state to PASS or submission-ready without the remaining evidence and explicit scoped decision.
+
+## E10 source-level intake — 2026-09-29
+
+#14's bounded comparator source handoff is closed. #31 has seven source-inspected E10 units at `cf96d17ce73957ae2e2a65fcd56f76f1ac26a6ce`, with 93 selected external locators and current P1-R2 self rows. The #53 [claim-impact handoff](../../publications/2026-icae/e10-claim-impact-handoff-2026-09-29.md) retains material prior art and no comparator winner. This is evidence intake only; the final #54 gate remains `NOT_ASSESSED` pending #53 final judgment, #51/#30 human validation where required, E11 independence/explicit unsupported status and #55 release binding.

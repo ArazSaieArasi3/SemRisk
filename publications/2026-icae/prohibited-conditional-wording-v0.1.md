@@ -6,7 +6,7 @@ Until the listed gates are satisfied, the following wording must not appear unqu
 |---|---|---|
 | validated ontology / semantically validated | PROHIBITED until #51/#30 | no real expert-review results yet |
 | generalizable / transferable across domains | PROHIBITED as result | E11 independent holdout not executed |
-| first / novel first-ever | PROHIBITED | #14 comparator saturation incomplete; absence cannot prove first |
+| first / novel first-ever | PROHIBITED | #14 source profiling is closed, but 116 historical external cells retain generic locators and no source set proves exclusive firstness |
 | superior / better than prior ontologies | PROHIBITED | no validated overall scoring/ranking method |
 | comprehensive risk ontology | PROHIBITED | Paper-1 scope explicitly bounded |
 | aligned/conformant with ISO/COSO/NIST | CONFORMANCE wording PROHIBITED | current evidence is bounded terminology/process alignment, not full conformance |

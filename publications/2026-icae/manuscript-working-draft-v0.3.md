@@ -2,7 +2,7 @@
 
 **Working manuscript draft v0.3 — 2026-09-25**  
 **Target:** ICAE 2026, Track 2 / Cluster B — Informatics & AI.  
-**Status:** AUTHOR-REVIEW DRAFT v0.3 — VVEAA/formal-documentation checkpoint; final citations, figures, claim assurance and release binding pending. The present results support bounded formal and application claims. Human semantic validation (#51/#30), an independent shortage-domain E11 test (#31), final comparator/standards locators (#14/#13), claim calibration (#53), assurance (#54), release binding (#55) and the submission audit (#35) remain pending.
+**Status:** AUTHOR-REVIEW DRAFT v0.3 — VVEAA/formal-documentation checkpoint; final citations, figures, claim assurance and release binding pending. The present results support bounded formal and application claims. Human semantic validation (#51/#30), an independent shortage-domain E11 test (#31), final standards locators (#13), release-bound comparative synthesis (#31/#53), assurance (#54), release binding (#55) and the submission audit (#35) remain pending. #14 bounded closest-work source profiling is closed.
 
 ## Abstract — provisional
 
@@ -24,11 +24,11 @@ The corresponding contributions are: **SR-C1**, a well-founded operational risk 
 
 ## II. Related Work and Semantic Gap
 
-SemRisk is positioned relative to existing risk ontologies, conceptual models, standards, enterprise-risk frameworks, and operational risk-register representations. The historical #22 comparison snapshot has 12 rows—11 external works or lineages plus SemRisk—across 17 dimensions, producing 204 evidence cells. That snapshot predates the implemented P1-R2 candidate. MedSupplyKG is a subsequent targeted Pharma prior-art check outside that fixed denominator; final E10 requires release-bound source-locator review. The purpose of this comparison is not to produce a league table or an overall winner, but to determine which semantic capabilities are already established, where SemRisk reuses or aligns with prior work, and which integrated distinctions require explicit treatment in the present architecture.
+SemRisk is positioned relative to existing risk ontologies, conceptual models, standards, enterprise-risk frameworks, and operational risk-register representations. The historical #22 comparison snapshot has 12 rows—11 external works or lineages plus SemRisk—across 17 dimensions, producing 204 evidence cells. That snapshot predates the implemented P1-R2 candidate. The #14 source handoff and #31 seven-unit E10 result now bind 93 selected external locators (71 of 187 historical external cells plus 22 outside that matrix) and the 17-cell current P1-R2 self row. The other 116 historical external cells retain generic locators and cannot support absence claims. Final E10 release binding and a common-task comparator run remain pending. The purpose of this comparison is not to produce a league table or an overall winner, but to determine which semantic capabilities are already established, where SemRisk reuses or aligns with prior work, and which integrated distinctions require explicit treatment in the present architecture.
 
 Existing work contributes important pieces of the problem. Foundational risk ontologies such as COVER and related security/risk models provide semantics for risk-related entities and relations. Risk-register and GRC-oriented approaches contribute operational structures, register concepts, governance context, or relational implementations. Standards and frameworks including the ISO 31000 family, NIST IR 8286, COSO ERM, OCEG, Risk IT, IEC 31010, and ICH Q9 provide authoritative terminology, processes, roles, and method contexts. Domain ontologies such as CM-PharmE provide externally owned semantics for pharmaceutical entities that should not be silently duplicated by a risk ontology.
 
-Two enterprise-facing sources further constrain the comparison. The PA-009 ontological analysis and redesign of risk modeling in ArchiMate examines risk, assessment, vulnerability and enterprise links (SRC-PA-009, §3, Figs. 5–6; §4, Table 2; §5, Figs. 7–10 and Table 3). PA-006's risk-propagation model explicitly includes a business-process/model object, intended goal, capability, assessor and control context (SRC-PA-006, §3, Fig. 2, PDF pp. 3–4), and reports ProbLog rules and example queries (§§4–5.1, PDF pp. 7–10). These are prior art for selected enterprise/goal/process links and risk reasoning. The historical CELL-059 `not_in_scope` classification for PA-006 D08 was incorrect. Neither publication, by itself, establishes an exact mapping to the selected SemRisk external-owner path or a comparable SQL↔SPARQL task result; those comparisons remain to be evaluated in E10.
+Two enterprise-facing sources further constrain the comparison. The PA-009 ontological analysis and redesign of risk modeling in ArchiMate examines risk, assessment, vulnerability and enterprise links (SRC-PA-009, §3, Figs. 5–6; §4, Table 2; §5, Figs. 7–10 and Table 3). PA-006's risk-propagation model explicitly includes a business-process/model object, intended goal, capability, assessor and control context (SRC-PA-006, §3, Fig. 2, PDF pp. 3–4), and reports ProbLog rules and example queries (§§4–5.1, PDF pp. 7–10). These are prior art for selected enterprise/goal/process links and risk reasoning. The historical CELL-059 `not_in_scope` classification for PA-006 D08 was incorrect. Neither publication, by itself, establishes an exact mapping to the selected SemRisk external-owner path or a comparable SQL↔SPARQL task result; the seven-unit E10 source comparison records this as partial/NOT_ASSESSED rather than inferring an advantage.
 
 RiskHub (SRC-PA-017, 2026) is a direct operational register comparator. Its published To-Be model connects risk scenarios to business functions, risk owners and mitigation (§5.1, Figs. 7–9), maps the model to 12 relational tables and MySQL (§§5.2–5.3, Figs. 10–11), and reports dashboard queries (§7.1) and exploratory feedback from 12 academic respondents (§6.1). Thus, ontology-informed register redesign, a relational database and human model feedback are established prior art. The inspected publisher supplement is a diagram, and the cited earlier thesis repository is not the 2026 executable release; exact code/data and a shared SQL↔SPARQL parity benchmark remain unbound. SemRisk's tested projection concerns its eight predeclared task pairs, not a claim of general superiority over RiskHub.
 
@@ -46,7 +46,7 @@ MedSupplyKG, a pharmaceutical supply-chain knowledge graph by Eberhardt et al. (
 
 The bounded gap addressed by SemRisk is therefore not “the absence of a risk ontology”. Rather, it is the need for an explicitly governed semantic architecture that integrates several distinctions simultaneously: risk phenomenon versus information artifact; scenario versus realized event versus scenario description; assessment activity versus result; risk state versus workflow state; contextual inherent/residual assessment results; responsibility-derived ownership; treatment strategy versus plan/activity/control; evidence/provenance; external semantic ownership; and executable projection into operational data structures.
 
-This gap statement remains deliberately descriptive. Current evidence supports bounded differentiation hypotheses, but final comparative wording is reserved for E10 and claim calibration because missing documentation in a comparator cannot be treated as evidence of absence.
+This gap statement remains deliberately descriptive. The seven-unit source-level E10 result retains material prior-art overlap and semantic conflict, while a final release-bound claim judgment and head-to-head comparator execution remain pending. Missing documentation in a comparator is not evidence of absence.
 
 ## III. Research and Ontology-Engineering Method
 
@@ -170,7 +170,7 @@ The declared fixtures are representative rather than exhaustive. The selected mu
 
 E9 is currently supported in a bounded form. The semantic candidate, relational projection, data snapshot, scenario, parity harness, and regression tests rebuild in clean CI from exact repository-controlled artifacts and pinned tools. Public and synthetic evaluation artifacts are reproducible from governed paths. The private Jira source is represented by governed provenance and extracted schema evidence rather than redistributed bytes. Exact publication-bound release identity and a final availability statement remain work for #55/#56.
 
-E10 has a historical 12-row × 17-dimension snapshot (11 external rows plus SemRisk) and a targeted MedSupplyKG source comparison, but final comparative wording awaits current per-cell locators, remaining source/artifact work and claim calibration. No overall ranking is produced.
+E10 now has seven claim-level source-comparison units for the P1-R2 candidate, backed by 93 selected external locators and its 17 current self cells. The 116 unconverted historical external cells cannot establish negative capabilities. The result identifies prior-art overlap, semantic conflict and SemRisk weaknesses without a score or winner; no comparator was run on the same tasks/data. Final #53/#55 claim/release binding remains pending.
 
 E11 remains partial. Shared Core distinctions are exercised across an operational register schema and a Pharma case, but both are design-influencing evidence. The current evidence therefore supports bounded cross-context applicability, not independent transferability. DS-002 remains protected for possible later **cross-domain** record-level stress testing of generic Core semantics in a pharmacovigilance context; it is not a shortage-domain holdout. DS-004 is more shortage-aligned but remains file-level blocked. Consequently, no clean independent shortage-domain holdout has yet been executed.
 
@@ -182,7 +182,7 @@ The evaluation is organized as a case-specific Verification, Validation, Evaluat
 | --- | --- | --- |
 | Verification | E1–E4: 21/21 bounded records report PASS; 71/71 release-critical semantic IDs present; five negative SHACL fixtures detected. | Formal/foundational checks do not establish domain truth. |
 | Validation | E6: 27/27 selected operational fields and 18/18 DS-003 elements dispositioned; E5 review instrument frozen. | Mappings are non-independent where they shaped the design; real expert judgments remain absent. |
-| Evaluation | 40 CQs retained (26 executable, seven partial, six conceptual-only, one deferred); 8/8 frozen SQL↔SPARQL tasks directly equivalent; E9 bounded reconstruction. | E10 remains provisional and no clean independent E11 shortage holdout has been executed. |
+| Evaluation | 40 CQs retained (26 executable, seven partial, six conceptual-only, one deferred); 8/8 frozen SQL↔SPARQL tasks directly equivalent; E9 bounded reconstruction; seven-unit E10 source comparison. | E10 has no shared-task head-to-head or overall winner, and no clean independent E11 shortage holdout has been executed. |
 | Assessment | Nine headline claims crosswalked to methods, denominators, supporting and challenging evidence. | Independent transferability is unsupported; final #53 judgment is pending. |
 | Assurance | #54 release-bound argument, assumptions, blockers and decision are specified as the next gate. | Integrated assurance has not been assessed; no global quality score or certification is reported. |
 
@@ -207,7 +207,7 @@ The present results should be interpreted within their evaluated scope. Expert s
 ## References and source verification — review-stage register
 
 This author-review version intentionally carries a source-verification checklist rather than invented bibliographic entries. Before submission, material in-text claims must receive numbered, verified references from the governed source register. Required families:
-- closest risk ontologies and conceptual models from #14/#22;
+- closest risk ontologies and conceptual models from the completed #14 source handoff and #22;
 - ISO 31000 and ISO 31073;
 - IEC 31010;
 - NIST IR 8286 family;
@@ -223,7 +223,7 @@ A publishable manuscript still requires verified in-text citations, bibliography
 
 ## Author review notes for the next revision
 
-1. **Validate the narrative:** assess the descriptive difference against COVER, ROSE, risk-register, GRC and MedSupplyKG comparators; record missing or conflicting sources under #14/#13, not as absent competitor capabilities.
+1. **Validate the narrative:** assess the descriptive difference against COVER, ROSE, risk-register, GRC and MedSupplyKG comparators; record new missing or conflicting sources under #31/#13, not as absent competitor capabilities.
 2. **Review semantic commitments:** focus on Risk identity, scenario/event separation, responsibility and state semantics. The R1–R8 simulated critiques are engineering aids and do not replace independent #51 judgments.
 3. **Inspect claim ceilings:** 27/27 applies only to the selected Jira schema; 8/8 applies only to eight frozen paired tasks; constructed Pharma context and synthetic scenario are not observed treatment effects; DS-002/DS-004 have not furnished an independent shortage holdout.
 4. **Next production pass:** insert verified numbered citations, one compact source-derived core figure and one bounded E1–E11 table, then typeset to the venue contract. Record the manuscript commit and any semantic/data change impact before #54/#55.
