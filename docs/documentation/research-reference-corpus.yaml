@@ -450,6 +450,50 @@ references:
     link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://www.w3.org/TR/2013/REC-prov-o-20130430/", notes: "Version-specific W3C Recommendation. Source citation is not a claim of complete PROV-O conformance or imported entailment coverage."}
     metadata_status: partial
     notes: "PROV-O; Version-specific W3C Recommendation. Source citation is not a claim of complete PROV-O conformance or imported entailment coverage."
+  - ref_id: REF-0032
+    source_class: conference_paper
+    title: "Using Ontology as a Decision Support System for Manage Risks in Medicines Supply Chain: Case of Public Hospitals in Morocco"
+    creators: [{family: Benazzouz, given: Touria}, {family: Echchtabi, given: Abdelwahed}, {family: Charkaoui, given: Abdelkabir}]
+    container_title: "Proceedings of the International Conference on Industrial Engineering and Operations Management, Rabat, Morocco"
+    issued: {year: 2017, date: "2017-04-11/2017-04-13"}
+    pages_or_article_number: "281–292 (PDF pagination; verify proceedings citation pagination)"
+    canonical_url: "https://ieomsociety.org/proceedings/morocco2017/90.pdf"
+    evidence_roles: [pharmaceutical_prior_art, risk_register_prior_art]
+    research_uses: [{target_type: manuscript_section, target: "II", role: prior_art}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0032"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://ieomsociety.org/proceedings/morocco2017/90.pdf", notes: "Publisher proceedings index ID 090 and 12-page PDF checked; PDF printed p. 286 Table 3 is explicitly a Risk Register. Distinct from same-author PH-011 MATEC article."}
+    metadata_status: partial
+    notes: "Official proceedings index and PDF checked 2026-09-29; DOI not asserted. Source-register ID pending; exact proceedings pagination/IEEE formatting require review."
+  - ref_id: REF-0033
+    source_class: standard_specification
+    title: "The TOGAF Standard, 10th Edition"
+    creator_organizations: [The Open Group]
+    issued: {year: 2022, date: "2022-04-25"}
+    edition: "10"
+    standard_number: "C220"
+    canonical_url: "https://publications.opengroup.org/standards/togaf/c220"
+    evidence_roles: [enterprise_architecture_reference]
+    research_uses: [{target_type: manuscript_section, target: "III.C", role: reference_alignment}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0033"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://publications.opengroup.org/standards/togaf/c220", notes: "Owner publication catalog and 2022 release announcement checked; full standard license governs reuse. No clause or conformance assertion."}
+    metadata_status: partial
+    notes: "Source-register ID pending. Edition is a reference/alignment boundary, not evidence of TOGAF conformance or a canonical SemRisk owner for generic capability/objective classes."
+  - ref_id: REF-0034
+    source_class: standard_specification
+    title: "ArchiMate 3.2 Specification"
+    creator_organizations: [The Open Group]
+    issued: {year: 2022, date: "2022-10"}
+    edition: "3.2"
+    canonical_url: "https://www.opengroup.org/archimate-licensed-downloads"
+    evidence_roles: [enterprise_architecture_modeling_reference]
+    research_uses: [{target_type: manuscript_section, target: "III.C", role: reference_alignment}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0034"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://www.opengroup.org/archimate-licensed-downloads", notes: "Owner page confirms 3.2 October 2022 and license-governed full specification. Separate from PA-009 risk-modeling research paper."}
+    metadata_status: partial
+    notes: "Source-register ID pending. Reference/alignment source only; no exact ArchiMate conformance or equivalent semantics asserted."
 
 page_reference_usage: []
 manuscript_reference_maps:
@@ -484,6 +528,9 @@ manuscript_reference_maps:
   - {publication_id: PUB-0001, ref_id: REF-0029, status: candidate}
   - {publication_id: PUB-0001, ref_id: REF-0030, status: candidate}
   - {publication_id: PUB-0001, ref_id: REF-0031, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0032, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0033, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0034, status: candidate}
 rendering:
   stable_authoring_token_pattern: "[@REF-####]"
   page_numbering: first_occurrence
@@ -498,6 +545,7 @@ link_governance:
 verification:
   unique_ref_ids: true
   duplicate_persistent_ids_checked: true
+  manuscript_candidate_tokens_resolve: true
   manuscript_cited_refs_present: false
   page_tokens_resolve: false
   required_metadata_checked: false
@@ -508,7 +556,7 @@ verification:
 summary:
   result: INCOMPLETE
   blockers:
-    - "#53: manuscript v0.3 has no numbered in-text citations or final bibliography."
-    - "#121: all 30 named targets have candidate identities across 31 REF records, but claim-local in-text citation placement, source-register binding for eight targets, complete metadata/link checks and IEEE rendering remain open."
+    - "#53: manuscript v0.3 has candidate REF markers but no verified numbered IEEE citations or final bibliography."
+    - "#121: 33 named targets have candidate identities across 34 REF records and claim-local markers, but source-register binding for eleven targets, full claim/source and metadata/link checks, editorial reader review and IEEE rendering remain open."
     - "#55/#56: publication and public-surface release checks remain pending."
-  notes: "Thirty-one candidate REF records cover 30 named targets (the DS-003 dataset and linked study are distinct). PUB-0001 is a local candidate manuscript identity, not a publication/release binding. All memberships remain candidate; no rendered in-text citation/IEEE bibliography is asserted."
+  notes: "Thirty-four candidate REF records cover 33 named targets (the DS-003 dataset and linked study are distinct). PUB-0001 is a local candidate manuscript identity, not a publication/release binding. All memberships remain candidate; `manuscript_candidate_tokens_resolve` checks marker identity only, not claim support or final citation quality."
