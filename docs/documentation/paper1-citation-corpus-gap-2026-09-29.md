@@ -1,3 +1,15 @@
+# Citation corpus follow-up — 2026-09-29
+
+The initial 30-target audit below remains as the pre-binding baseline. A subsequent primary-source/owner-registry pass assigned stable *candidate* REF identities to all **14 P0 named targets**. DS-003 splits into two publication objects: dataset v4 (`REF-0021`) and linked study version 2 (`REF-0022`). Together with the seven original seeds, the corpus now has **22 candidate records** covering **21 of 30 named targets**; the remaining **nine P1 framework/foundational/specification targets** still have `REF_PENDING`. All manuscript memberships are `candidate`, with a local `PUB-0001` manuscript key; no `cited` status, IEEE number, exact released publication ID, or complete bibliography is claimed.
+
+Identity/source checks use the publisher or author institution for EDOC/PA-009, CEUR Vols. 4129 and 4176, Springer PA-016/PA-017, IOF 202603, NIST IR 8286 Rev. 1, AIRO, the author-institution/publisher paths for PA-010/PH-003, the CM-PharmE owner repository's publication and v1.0.0 release record, the official ZivaHub dataset landing, and the version-2 study DOI. Restricted or unrendered source pages, paper-to-code identity, exact unpublished DOI metadata, link resolution, and human citation placement remain explicit in each REF note. This step is identity binding, not a complete metadata/link health pass.
+
+**Correction found:** official ZivaHub v4 is dated 2025-07-02; 2025-06-02 is v1. The current landing displays “Download all (1.94 MB)” whereas prior SemRisk sources reported 18.01 MB. Dataset file-level byte totals are now unverified pending version-specific manifest/checksum reconciliation. The bounded qualitative case interpretation remains unchanged.
+
+**Next:** resolve the nine P1 targets (COSO, OCEG, Risk IT, UFO, gUFO, OntoUML, OWL, SHACL, PROV-O); then place and check each actual citation in the manuscript and Wiki, verify incomplete link/metadata fields and render IEEE references. #121 stays open.
+
+---
+
 # Paper-1 citation corpus coverage checkpoint — 2026-09-29
 
 **Owner:** #121, under #112. **Manuscript:** `publications/2026-icae/manuscript-working-draft-v0.3.md` at `6e0de461b4f045cb30de1d49ec4fefec0abe22a2`. **Corpus:** `docs/documentation/research-reference-corpus.yaml` at the same ref. This is a named-mention audit, not an approved bibliography or claim that the current manuscript has only 30 sources.

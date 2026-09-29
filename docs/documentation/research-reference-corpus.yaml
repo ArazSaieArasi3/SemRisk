@@ -5,7 +5,7 @@ corpus:
   research_id: SemRisk-Paper-1
   portfolio_resource_registry_ref: ""
   status: candidate
-  last_verified_at: "2026-09-27"
+  last_verified_at: "2026-09-29"
 
 # Bounded seed. Official publisher/institutional landing pages were read on
 # 2026-09-27; the three DOI resolver URLs were not independently resolved.
@@ -22,7 +22,7 @@ references:
     canonical_url: https://doi.org/10.1007/978-3-030-00847-5_11
     evidence_roles: [closest_work, foundational_alignment]
     research_uses: [{target_type: comparator, target: COVER, role: prior_art}]
-    manuscript_memberships: []
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate}]
     source_status: active_unverified
     link_health: {status: unverifiable, checked_at: "2026-09-27", resolved_url: "https://link.springer.com/chapter/10.1007/978-3-030-00847-5_11", notes: "Publisher landing page confirms title, DOI, authors, year and pages; DOI resolver itself not tested."}
     metadata_status: partial
@@ -39,7 +39,7 @@ references:
     canonical_url: https://doi.org/10.1007/978-3-031-17995-2_26
     evidence_roles: [closest_work, treatment_alignment]
     research_uses: [{target_type: comparator, target: ROSE, role: prior_art}]
-    manuscript_memberships: []
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate}]
     source_status: active_unverified
     link_health: {status: unverifiable, checked_at: "2026-09-27", resolved_url: "https://link.springer.com/chapter/10.1007/978-3-031-17995-2_26", notes: "Publisher landing page confirms identity and metadata; DOI resolver itself not tested."}
     metadata_status: partial
@@ -55,7 +55,7 @@ references:
     canonical_url: https://doi.org/10.3233/ssw250023
     evidence_roles: [closest_work, health_method_comparator]
     research_uses: [{target_type: comparator, target: RISKMAN, role: prior_art}]
-    manuscript_memberships: []
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate}]
     source_status: active_unverified
     link_health: {status: unverifiable, checked_at: "2026-09-27", resolved_url: "https://iccl.inf.tu-dresden.de/web/Inproceedings3424/en", notes: "Author institution confirms conference citation and DOI; DOI resolver/publisher landing page inaccessible to this check."}
     metadata_status: partial
@@ -69,7 +69,7 @@ references:
     canonical_url: https://www.iso.org/standard/65694.html
     evidence_roles: [terminology_and_framework_alignment]
     research_uses: [{target_type: manuscript_section, target: II/III, role: standard_alignment}]
-    manuscript_memberships: []
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate}]
     source_status: active_unverified
     link_health: {status: valid, checked_at: "2026-09-27", resolved_url: "https://www.iso.org/standard/65694.html"}
     metadata_status: partial
@@ -83,7 +83,7 @@ references:
     canonical_url: https://www.iso.org/standard/79637.html
     evidence_roles: [terminology_alignment]
     research_uses: [{target_type: manuscript_section, target: II/III, role: vocabulary}]
-    manuscript_memberships: []
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate}]
     source_status: active_unverified
     link_health: {status: valid, checked_at: "2026-09-27", resolved_url: "https://www.iso.org/standard/79637.html"}
     metadata_status: partial
@@ -97,7 +97,7 @@ references:
     canonical_url: https://webstore.iec.ch/en/publication/59809
     evidence_roles: [assessment_method_alignment]
     research_uses: [{target_type: manuscript_section, target: II/III, role: assessment_methods}]
-    manuscript_memberships: []
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate}]
     source_status: active_unverified
     link_health: {status: valid, checked_at: "2026-09-27", resolved_url: "https://webstore.iec.ch/en/publication/59809"}
     metadata_status: partial
@@ -109,14 +109,256 @@ references:
     canonical_url: https://www.ema.europa.eu/en/ich-q9-quality-risk-management-scientific-guideline
     evidence_roles: [pharma_standard_alignment]
     research_uses: [{target_type: manuscript_section, target: V, role: domain_alignment}]
-    manuscript_memberships: []
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate}]
     source_status: active_unverified
     link_health: {status: valid, checked_at: "2026-09-27", resolved_url: "https://www.ema.europa.eu/en/ich-q9-quality-risk-management-scientific-guideline"}
     metadata_status: partial
     notes: "EMA landing page checked 2026-09-27: current effective Q9(R1) Step 5 Revision 2, EMA/CHMP/ICH/24235/2006 Corr.2; PDF first published 2025-01-31, legal effective date 2023-07-26. Section-level support pending."
 
+
+# Claim-bearing source and case records; identity candidate until citation placement/IEEE QA.
+  - ref_id: REF-0008
+    source_class: conference_paper
+    title: "Ontological Analysis and Redesign of Risk Modeling in ArchiMate"
+    doi: "10.1109/EDOC.2018.00028"
+    container_title: "2018 IEEE 22nd International Enterprise Distributed Object Computing Conference (EDOC)"
+    pages_or_article_number: "154–163"
+    issued: {year: 2018}
+    canonical_url: "https://ieeexplore.ieee.org/document/8536159/"
+    evidence_roles: [closest_enterprise_prior_art]
+    research_uses: [{target_type: source_register, target: "SRC-PA-009", role: prior_art_or_case}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0008"}]
+    source_status: active_unverified
+    link_health: {status: unverifiable, checked_at: "2026-09-29", resolved_url: "https://nemo.inf.ufes.br/wp-content/papercite-data/pdf/ontological_analysis_and_redesign_of_risk_modeling_in_archimate_2018.pdf", notes: "Publisher metadata found; author-hosted full text source profiled. IEEE landing page not directly readable in this pass; DOI not independently resolved."}
+    metadata_status: partial
+    notes: "II candidate source; Publisher metadata found; author-hosted full text source profiled. IEEE landing page not directly readable in this pass; DOI not independently resolved."
+  - ref_id: REF-0009
+    source_class: conference_paper
+    title: "Beyond Risk Propagation: A Unified Approach — Takeaways From the Cybersecurity Domain"
+    container_title: "Proceedings of the Joint Ontology Workshops (JOWO 2025), CEUR Workshop Proceedings 4176"
+    issued: {year: 2026}
+    canonical_url: "https://ceur-ws.org/Vol-4176/shields-2.pdf"
+    evidence_roles: [closest_risk_reasoning_prior_art]
+    research_uses: [{target_type: source_register, target: "SRC-PA-006", role: prior_art_or_case}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0009"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://ceur-ws.org/Vol-4176/shields-2.pdf", notes: "Conference took place in 2025; CEUR volume/PDF published 2026-03-02. Paper-declared implementation PURL target and independent execution remain unverified."}
+    metadata_status: partial
+    notes: "II candidate source; Conference took place in 2025; CEUR volume/PDF published 2026-03-02. Paper-declared implementation PURL target and independent execution remain unverified."
+  - ref_id: REF-0010
+    source_class: peer_reviewed_article
+    title: "Data-Driven Decision Support via Semantic-Aware Risk Data Modeling: Operational Intelligence Platform for Smart Transport"
+    doi: "10.1007/s43069-026-00666-7"
+    container_title: "Operations Research Forum"
+    volume: "7"
+    pages_or_article_number: "79"
+    issued: {year: 2026}
+    canonical_url: "https://link.springer.com/article/10.1007/s43069-026-00666-7"
+    evidence_roles: [closest_operational_register_prior_art]
+    research_uses: [{target_type: source_register, target: "SRC-PA-017", role: prior_art_or_case}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0010"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://link.springer.com/article/10.1007/s43069-026-00666-7", notes: "Publisher article verified; supplemental image is not a machine-readable 2026 implementation; code/data remain unbound."}
+    metadata_status: partial
+    notes: "II candidate source; Publisher article verified; supplemental image is not a machine-readable 2026 implementation; code/data remain unbound."
+  - ref_id: REF-0011
+    source_class: ontology_model_framework
+    title: "Biopharma Risk Management Ontology"
+    issued: {year: 2026}
+    ontology_iri: "https://spec.industrialontologies.org/ontology/biopharma/BiopharmaRiskManagement/"
+    ontology_version_iri: "https://spec.industrialontologies.org/ontology/biopharma/BiopharmaRiskManagement/202602"
+    canonical_url: "https://spec.industrialontologies.org/portal/release/202603/biopharma/BiopharmaRiskManagementOntology.html"
+    evidence_roles: [formal_pharma_prior_art]
+    research_uses: [{target_type: source_register, target: "SRC-ON-006", role: prior_art_or_case}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0011"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://spec.industrialontologies.org/portal/release/202603/biopharma/BiopharmaRiskManagementOntology.html", notes: "IOF suite release 202603, module versionIRI 202602, provisional maturity; source module commit 8992960035a9d7bd5f539a198d654bbe1a7ab6b2. Formal reuse/alignment remains conditional."}
+    metadata_status: partial
+    notes: "II/V candidate source; IOF suite release 202603, module versionIRI 202602, provisional maturity; source module commit 8992960035a9d7bd5f539a198d654bbe1a7ab6b2. Formal reuse/alignment remains conditional."
+  - ref_id: REF-0012
+    source_class: conference_paper
+    title: "Toward an ontology-based modeling for risk management"
+    container_title: "Proceedings of VMBO 2025, CEUR Workshop Proceedings 4129"
+    issued: {year: 2025}
+    canonical_url: "https://ceur-ws.org/Vol-4129/short3.pdf"
+    evidence_roles: [closest_risk_ontology_network_prior_art]
+    research_uses: [{target_type: source_register, target: "SRC-PA-005", role: prior_art_or_case}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0012"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://ceur-ws.org/Vol-4129/short3.pdf", notes: "Short research proposal, CEUR volume published 2025-12-13; proposed network/services should not be described as fully implemented."}
+    metadata_status: partial
+    notes: "II candidate source; Short research proposal, CEUR volume published 2025-12-13; proposed network/services should not be described as fully implemented."
+  - ref_id: REF-0013
+    source_class: conference_paper
+    title: "An Ontology-Driven Approach for Process-Aware Risk Propagation"
+    doi: "10.1145/3555776.3577795"
+    container_title: "Proceedings of the 38th ACM/SIGAPP Symposium on Applied Computing (SAC 2023)"
+    pages_or_article_number: "1742–1745"
+    issued: {year: 2023}
+    canonical_url: "https://doi.org/10.1145/3555776.3577795"
+    evidence_roles: [process_propagation_prior_art]
+    research_uses: [{target_type: source_register, target: "SRC-PA-010", role: prior_art_or_case}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0013"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://research.utwente.nl/en/publications/an-ontology-driven-approach-for-process-aware-risk-propagation/", notes: "Author institution record and final published PDF checked; exact runnable source/release not bound."}
+    metadata_status: partial
+    notes: "II candidate source; Author institution record and final published PDF checked; exact runnable source/release not bound."
+  - ref_id: REF-0014
+    source_class: peer_reviewed_article
+    title: "Development of Knowledge Graph Based on Risk Register to Support Risk Management of Construction Projects"
+    doi: "10.1007/s12205-023-2886-7"
+    container_title: "KSCE Journal of Civil Engineering"
+    volume: "27"
+    pages_or_article_number: "2733–2744"
+    issued: {year: 2023}
+    canonical_url: "https://link.springer.com/article/10.1007/s12205-023-2886-7"
+    evidence_roles: [register_graph_prior_art]
+    research_uses: [{target_type: source_register, target: "SRC-PA-016", role: prior_art_or_case}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0014"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://link.springer.com/article/10.1007/s12205-023-2886-7", notes: "Publisher metadata checked; publisher preview is restricted, separate author/repository evidence in governed profile; no independent rerun."}
+    metadata_status: partial
+    notes: "II candidate source; Publisher metadata checked; publisher preview is restricted, separate author/repository evidence in governed profile; no independent rerun."
+  - ref_id: REF-0015
+    source_class: authoritative_institutional_regulatory
+    title: "NIST IR 8286 Rev. 1: Integrating Cybersecurity and Enterprise Risk Management (ERM)"
+    doi: "10.6028/NIST.IR.8286r1"
+    issued: {year: 2025}
+    canonical_url: "https://csrc.nist.gov/pubs/ir/8286/r1/final"
+    evidence_roles: [operational_register_guidance]
+    research_uses: [{target_type: source_register, target: "SRC-ST-007", role: prior_art_or_case}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0015"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://csrc.nist.gov/pubs/ir/8286/r1/final", notes: "Final December 2025 edition and supplemental register/detail-record schemas checked; 2020 predecessor superseded, clause-level source use remains bounded."}
+    metadata_status: partial
+    notes: "II/VII candidate source; Final December 2025 edition and supplemental register/detail-record schemas checked; 2020 predecessor superseded, clause-level source use remains bounded."
+  - ref_id: REF-0016
+    source_class: conference_paper
+    title: "AIRO: An Ontology for Representing AI Risks Based on the Proposed EU AI Act and ISO Risk Management Standards"
+    doi: "10.3233/SSW220008"
+    container_title: "Towards a Knowledge-Aware AI: SEMANTiCS 2022 proceedings"
+    issued: {year: 2022}
+    canonical_url: "https://journals.sagepub.com/doi/10.3233/SSW220008"
+    evidence_roles: [domain_ontology_prior_art]
+    research_uses: [{target_type: source_register, target: "SRC-ON-003", role: prior_art_or_case}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0016"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://journals.sagepub.com/doi/10.3233/SSW220008", notes: "Publisher-hosted record checked; formal artifact version is separately pinned to AIRO repository commit 6c67de43abd154393b09bb54da1fe1fa7501215b."}
+    metadata_status: partial
+    notes: "II candidate source; Publisher-hosted record checked; formal artifact version is separately pinned to AIRO repository commit 6c67de43abd154393b09bb54da1fe1fa7501215b."
+  - ref_id: REF-0017
+    source_class: conference_paper
+    title: "Ontology for Risks in Medicines Supply Chain: Case of Public Hospitals in Morocco"
+    doi: "10.1051/matecconf/201710500012"
+    container_title: "MATEC Web of Conferences 105"
+    pages_or_article_number: "00012"
+    issued: {year: 2017}
+    canonical_url: "https://www.matec-conferences.org/articles/matecconf/pdf/2017/19/matecconf_iwtsce2017_00012.pdf"
+    evidence_roles: [pharma_risk_prior_art]
+    research_uses: [{target_type: source_register, target: "SRC-PH-011", role: prior_art_or_case}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0017"}]
+    source_status: active_unverified
+    link_health: {status: unverifiable, checked_at: "2026-09-29", resolved_url: "https://www.matec-conferences.org/articles/matecconf/pdf/2017/19/matecconf_iwtsce2017_00012.pdf", notes: "Official publisher PDF discovered but direct rendered read failed in this pass; existing full-text source profile supports identity. Distinct IEOM 2017 same-group paper has the risk-register table."}
+    metadata_status: partial
+    notes: "II/V candidate source; Official publisher PDF discovered but direct rendered read failed in this pass; existing full-text source profile supports identity. Distinct IEOM 2017 same-group paper has the risk-register table."
+  - ref_id: REF-0018
+    source_class: conference_paper
+    title: "Operational Risk Management in the Pharmaceutical Supply Chain Using Ontologies and Fuzzy QFD"
+    doi: "10.1016/j.promfg.2020.10.233"
+    container_title: "Procedia Manufacturing 51"
+    pages_or_article_number: "1673–1679"
+    issued: {year: 2020}
+    canonical_url: "https://www.sciencedirect.com/science/article/pii/S2351978920321053"
+    evidence_roles: [pharma_operational_prior_art]
+    research_uses: [{target_type: source_register, target: "SRC-PH-008", role: prior_art_or_case}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0018"}]
+    source_status: active_unverified
+    link_health: {status: unverifiable, checked_at: "2026-09-29", resolved_url: "https://www.sciencedirect.com/science/article/pii/S2351978920321053", notes: "Publisher indexed; direct page rendering failed here. Scholarly source profile covers article and 2017/2019 lineage; exact OWL file/release remains unbound."}
+    metadata_status: partial
+    notes: "II/V candidate source; Publisher indexed; direct page rendering failed here. Scholarly source profile covers article and 2017/2019 lineage; exact OWL file/release remains unbound."
+  - ref_id: REF-0019
+    source_class: peer_reviewed_article
+    title: "Leveraging knowledge graphs in pharmaceutical supply chains: insights into key drivers of drug shortages"
+    doi: "10.1080/00207543.2025.2496671"
+    container_title: "International Journal of Production Research 63(19)"
+    pages_or_article_number: "7129–7152"
+    issued: {year: 2025}
+    canonical_url: "https://publikationen.bibliothek.kit.edu/1000181579"
+    evidence_roles: [pharma_shortage_graph_prior_art]
+    research_uses: [{target_type: source_register, target: "SRC-PH-003", role: prior_art_or_case}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0019"}]
+    source_status: active_unverified
+    link_health: {status: valid, checked_at: "2026-09-29", resolved_url: "https://publikationen.bibliothek.kit.edu/1000181579", notes: "Author-institution publisher-version record checked, separate KITopen DOI 10.5445/IR/1000181579; underlying data/code/formal ontology remain unbound."}
+    metadata_status: partial
+    notes: "II/VII candidate source; Author-institution publisher-version record checked, separate KITopen DOI 10.5445/IR/1000181579; underlying data/code/formal ontology remain unbound."
+  - ref_id: REF-0020
+    source_class: conference_paper
+    title: "CM-PharmE ver.1: Towards a Conceptual Model for Pharmaceutical Ecosystem with a Business-Architecture Perspective"
+    container_title: "Proceedings of the 9th Iranian Conference on Advances in Enterprise Architecture (ICAEA)"
+    pages_or_article_number: "1–8"
+    issued: {year: 2025}
+    canonical_url: "https://ieeexplore.ieee.org/abstract/document/11301544/"
+    evidence_roles: [external_pharma_semantic_owner]
+    research_uses: [{target_type: source_register, target: "CM-PharmE", role: prior_art_or_case}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0020"}]
+    source_status: active_unverified
+    link_health: {status: unverifiable, checked_at: "2026-09-29", resolved_url: "https://github.com/ArazSaieArasi3/CM-PharmE/blob/main/publications/ieee-2025/README.md", notes: "Owner repository binds published IEEE Xplore document 11301544 and frozen semantic v1.0.0 release 9efd0e3ac909e4065012fae7aeb6b0a94029c440; DOI unverified and deliberately blank; redistribution/import license unresolved."}
+    metadata_status: partial
+    notes: "V candidate source; Owner repository binds published IEEE Xplore document 11301544 and frozen semantic v1.0.0 release 9efd0e3ac909e4065012fae7aeb6b0a94029c440; DOI unverified and deliberately blank; redistribution/import license unresolved."
+  - ref_id: REF-0021
+    source_class: dataset_data_release
+    title: "Qualitative study with subject experts on the causes and consequences of antibiotic shortages through a PESTELI lens"
+    doi: "10.25375/uct.29178665.v4"
+    issued: {year: 2025, date: "2025-07-02"}
+    dataset_version: "v4"
+    canonical_url: "https://doi.org/10.25375/uct.29178665.v4"
+    evidence_roles: [bounded_qualitative_case_data]
+    research_uses: [{target_type: source_register, target: "DS-003", role: prior_art_or_case}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0021"}]
+    source_status: active_unverified
+    link_health: {status: unverifiable, checked_at: "2026-09-29", resolved_url: "https://zivahub.uct.ac.za/articles/dataset/Qualitative_study_with_subject_experts_on_the_causes_and_consequences_of_antibiotic_shortages_through_a_PESTELI_political_economic_sociological_technological_ecological_legal_industry_lens/29178665", notes: "Official ZivaHub landing shows v4 posted 2025-07-02; v1 was 2025-06-02. Current displayed download-all size 1.94 MB conflicts with SemRisk historical 18.01 MB; file inventory not checked. Design-influencing qualitative case, not independent validation."}
+    metadata_status: partial
+    notes: "V/VI candidate source; Official ZivaHub landing shows v4 posted 2025-07-02; v1 was 2025-06-02. Current displayed download-all size 1.94 MB conflicts with SemRisk historical 18.01 MB; file inventory not checked. Design-influencing qualitative case, not independent validation."
+  - ref_id: REF-0022
+    source_class: peer_reviewed_article
+    title: "Responding to and managing antibiotic shortages: a qualitative study with experts and opinion leaders"
+    doi: "10.12688/wellcomeopenres.24292.2"
+    container_title: "Wellcome Open Research 10"
+    pages_or_article_number: "347"
+    issued: {year: 2025}
+    canonical_url: "https://wellcomeopenresearch.org/articles/10-347/v2"
+    evidence_roles: [linked_qualitative_study]
+    research_uses: [{target_type: source_register, target: "DS-003", role: prior_art_or_case}]
+    manuscript_memberships: [{publication_id: PUB-0001, status: candidate, manuscript_ref_key: "REF-0022"}]
+    source_status: active_unverified
+    link_health: {status: unverifiable, checked_at: "2026-09-29", resolved_url: "https://wellcomeopenresearch.org/articles/10-347/v2", notes: "Distinct linked study version 2 and DOI verified through author-institution and indexed article metadata; publisher page not directly readable in this pass. The dataset is REF-0021; no independent validation from design-influencing source."}
+    metadata_status: partial
+    notes: "V/VI candidate source; Distinct linked study version 2 and DOI verified through author-institution and indexed article metadata; publisher page not directly readable in this pass. The dataset is REF-0021; no independent validation from design-influencing source."
+
 page_reference_usage: []
-manuscript_reference_maps: []
+manuscript_reference_maps:
+  - {publication_id: PUB-0001, ref_id: REF-0001, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0002, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0003, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0004, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0005, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0006, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0007, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0008, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0009, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0010, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0011, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0012, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0013, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0014, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0015, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0016, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0017, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0018, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0019, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0020, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0021, status: candidate}
+  - {publication_id: PUB-0001, ref_id: REF-0022, status: candidate}
 rendering:
   stable_authoring_token_pattern: "[@REF-####]"
   page_numbering: first_occurrence
@@ -142,6 +384,6 @@ summary:
   result: INCOMPLETE
   blockers:
     - "#53: manuscript v0.3 has no numbered in-text citations or final bibliography."
-    - "#118: seven seed landing pages checked (four official links valid; three DOI resolver URLs still unverified); remaining source families, full metadata, page tokens and IEEE render QA pending."
+    - "#121: nine foundational/framework/specification targets lack candidate REF identities; 22 candidate references have partial metadata and no rendered citation tokens. Some source pages/DOI resolvers remain unverified."
     - "#55/#56: publication and public-surface release checks remain pending."
-  notes: "Seven bounded seed references, not a complete research corpus or verified bibliography. RISKMAN source class corrected to conference paper. IDs stay stable across page-local numbering; manuscript memberships are intentionally empty until citation placement is reviewed."
+  notes: "Twenty-two candidate REF records: seven original seeds, 14 priority named targets, and a separate DS-003 linked-study version. PUB-0001 is a local candidate manuscript identity, not a publication/release binding. All memberships remain candidate; no rendered in-text citation/IEEE bibliography is asserted."

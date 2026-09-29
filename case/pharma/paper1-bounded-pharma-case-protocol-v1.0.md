@@ -20,9 +20,9 @@ Can the SemRisk Paper-1 semantic pattern represent a bounded antibiotic-shortage
 - Repository: ZivaHub / University of Cape Town.
 - DOI/PID: 10.25375/uct.29178665.v4.
 - Version: v4.
-- Posted: 2025-06-02.
+- Posted: v4 2025-07-02 (v1 2025-06-02).
 - License: CC BY 4.0.
-- Public package size recorded in qualification: 18.01 MB.
+- Public package byte size: unverified pending version-4 file manifest; current landing displays Download all (1.94 MB), conflicting with historical 18.01 MB.
 - Linked study: Responding to and managing antibiotic shortages: a qualitative study with experts and opinion leaders, Version 2.
 - Dataset contents documented by the source/study: analysed data/table of quotes plus study instruments including interview guide, participant information leaflet and sample consent form.
 
