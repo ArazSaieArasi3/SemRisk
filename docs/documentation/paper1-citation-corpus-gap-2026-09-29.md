@@ -17,14 +17,14 @@ The extra record is deliberate: `REF-0021` identifies the DS-003 dataset v4 (DOI
 ## Outstanding quality and citation work
 
 - `PUB-0001` is a **local candidate manuscript identity**. All 34 memberships are `candidate`; the mutable v0.3 working manuscript now has claim-local `[@REF-####]` authoring markers for all 34 distinct records. These are *candidate source identities* rather than numbered IEEE references; no rendered bibliography or author approval exists. No corpus record is marked `cited`.
-- Source status and metadata remain partial. Several DOI resolvers and publisher pages were unrendered or access restricted; full COSO/OCEG/ISACA/TOGAF/ArchiMate clauses cannot be asserted. Eleven foundational/framework/specification and newly discovered targets still lack binding in the 50-row legacy source register; the REF entries do not silently invent source IDs.
+- Source status and metadata remain partial. Several DOI resolvers and publisher pages were unrendered or access restricted; full COSO/OCEG/ISACA/TOGAF/ArchiMate clauses cannot be asserted. Eleven foundational/framework/specification and newly discovered targets lack IDs in the frozen 50-row G1 register. The [separate governance record](paper1-ref-source-governance-2026-09-29.md) explains each role and trigger without silently rewriting that evidence-mining baseline; IEOM substantive comparator evidence requires #14/#31 impact review.
 - The current manuscript may contain unnamed or implicit sources beyond these 33 named mentions. Claim-local citation placement must check *all* factual/source-dependent passages, not just each name once. Exact PDF section/table locators and external artifact versions remain governed by literature profiles; a publisher page alone does not show head-to-head comparator behavior.
 - The official ZivaHub page dates DS-003 v4 to 2025-07-02 and v1 to 2025-06-02. It currently displays Download all (1.94 MB), conflicting with SemRisk's historical 18.01 MB. Byte-level package size remains unverified pending exact v4 file manifest/checksum reconciliation.
 
 ## Next
 
 1. Check every claim-local candidate marker against the underlying exact source and its scholarly role; generate and proofread a draft IEEE list only after metadata verification. Resolve the candidate publication ID with #55 at release, not by inference.
-2. Verify each entry's remaining author/edition/DOI/link metadata and role; bind the eleven missing legacy source-register identities or record why a framework/spec reference is separately governed.
+2. Verify each entry's remaining author/edition/DOI/link metadata and role; apply the eleven-row REF/source-governance decisions, including IEOM #14/#31 impact review, before final claim and IEEE binding.
 3. Refresh source-controlled Wiki routes and check the live private Wiki after any page edit. Execute the research-journey and QN/QL documentation review; #121 remains open until those outputs are inspectable.
 
 **Ceiling:** reference *identity coverage* for 33 named targets only; no final citation completeness, public release or conformance pass.
