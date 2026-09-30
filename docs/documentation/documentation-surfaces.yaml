@@ -111,7 +111,7 @@ verification:
 summary:
   result: FAIL
   blockers:
-    - Pages not deployed or rendered; public access decision pending #55/#56.
-    - Cross-surface backlinks, WebVOWL readable module/reader-route QA and full privacy/licensing review pending #117/#119.
-    - RO/PT/RW provisional dispositions recorded; reader-route publication, REF coverage and QN/QL closure pending #118.
-  notes: "Private Wiki 8/8 live source hashes match; Pages is offline. A separate source-bound WebVOWL static viewer candidate under docs/ontology/generated/ passes private desktop/mobile Chromium smoke, but is not a deployed Pages output or reader usability pass. See p1-r2-documentation-rollout-2026-09-26.md. This manifest is staged, not conformance or release approval."
+    - Pages is disabled and unrendered; exact public artifact licensing/privacy and release decisions remain #117/#55/#56.
+    - Cross-surface backlinks and target-reader WebVOWL route/accessibility review remain #117/#119/#122.
+    - REF source/claim checks and editorial QN/QL review remain #121; actual reader-route exercise remains #122.
+  notes: "Repository and Wiki became public by 2026-09-30; public Wiki 8/8 live source hashes match at Wiki revision f548d865885f74b39b20bbf055280af9f08eb136. Pages remains disabled. The separate source-bound WebVOWL offline candidate under docs/ontology/generated/ passed scoped desktop/mobile Chromium smoke, not target-reader usability or deployed Pages QA. See docs/wiki/p1-r2-public-wiki-readback-2026-09-30.md. This manifest is staged, not conformance or release approval."

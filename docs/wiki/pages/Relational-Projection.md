@@ -1,6 +1,6 @@
 # Relational projection
 
-> **Status:** P1-R2 candidate / 0.1.0-rc.1. These are source-controlled Wiki drafts. Final scholarly release, public access and citation remain pending #55/#56. The ontology files and governed evidence linked below are authoritative.
+> **Status:** P1-R2 candidate / 0.1.0-rc.1. The repository and Wiki are publicly readable as of 2026-09-30. Final scholarly release, artifact availability and citation remain pending #55/#56. The ontology files and governed evidence linked below are authoritative.
 
 The PostgreSQL relational twin projects selected ontology semantics for application and testing. Ontology↔database mappings document where representation loses or changes semantics. The current 8/8 result means equivalence for eight frozen SQL↔SPARQL tasks on the specified data and queries; it does not imply global or lossless equivalence, nor that the database owns the semantic truth.
 

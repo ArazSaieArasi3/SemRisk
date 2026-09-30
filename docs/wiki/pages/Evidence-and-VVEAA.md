@@ -1,6 +1,6 @@
 # Evidence and VVEAA
 
-> **Status:** P1-R2 candidate / 0.1.0-rc.1. These are source-controlled Wiki drafts. Final scholarly release, public access and citation remain pending #55/#56. The ontology files and governed evidence linked below are authoritative.
+> **Status:** P1-R2 candidate / 0.1.0-rc.1. The repository and Wiki are publicly readable as of 2026-09-30. Final scholarly release, artifact availability and citation remain pending #55/#56. The ontology files and governed evidence linked below are authoritative.
 
 The evidence profile separates verification, validation, evaluation, assessment and assurance. Original E1–E11 identifiers remain in the claim matrix. Formal checks and task regressions are executed for bounded scopes. A simulated specialist review informs remediation; it is not independent human expert validation. #51 real expert responses and a clean independent E11 shortage holdout have not been executed. SR-CL06 is blocked for independent transfer claims.
 

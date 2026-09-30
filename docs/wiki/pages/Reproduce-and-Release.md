@@ -1,6 +1,6 @@
 # Reproduce and release
 
-> **Status:** P1-R2 candidate / 0.1.0-rc.1. These are source-controlled Wiki drafts. Final scholarly release, public access and citation remain pending #55/#56. The ontology files and governed evidence linked below are authoritative.
+> **Status:** P1-R2 candidate / 0.1.0-rc.1. The repository and Wiki are publicly readable as of 2026-09-30. Final scholarly release, artifact availability and citation remain pending #55/#56. The ontology files and governed evidence linked below are authoritative.
 
 The deterministic semantic and relational pipelines record versioned inputs and checked results. A successful CI run supports only the checks it executed on its exact commit. Private Jira evidence and licensed artifacts limit public reproduction. The release train distinguishes a build candidate, evaluated candidate and publication-bound scholarly release; the final release is pending #54/#55, with limitations and access decision in #56.
 

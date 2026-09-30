@@ -1,7 +1,7 @@
 """Check the eight source-controlled Wiki pages and publication link contract.
 
 This checks source files only. Live Wiki revisions, rendering and access need a
-separate signed-in read-back at each publication baseline.
+separate read-back at each publication baseline.
 """
 import argparse
 import hashlib
@@ -46,7 +46,7 @@ def build():
                         "sha256": hashlib.sha256(data).hexdigest(), "navigation_targets": wiki_links})
     if len(set(x["sha256"] for x in entries)) != 8:
         raise ValueError("Duplicate Wiki page bodies")
-    return {"candidate": "P1-R2/0.1.0-rc.1", "state": "PRIVATE_WIKI_PUBLISHED_PENDING_FULL_DRIFT_AUDIT",
+    return {"candidate": "P1-R2/0.1.0-rc.1", "state": "PUBLIC_WIKI_CANDIDATE_PENDING_FULL_DRIFT_AUDIT",
             "prepublication_source_commit": PREPUBLICATION_REF, "wiki_root": WIKI_ROOT,
             "pages": entries,
             "publication_rule": "Preserve existing live pages/revisions; verify content, navigation, access and rollback after sync. No scholarly release claim."}

@@ -25,6 +25,6 @@ The extra record is deliberate: `REF-0021` identifies the DS-003 dataset v4 (DOI
 
 1. Check every claim-local candidate marker against the underlying exact source and its scholarly role; generate and proofread a draft IEEE list only after metadata verification. Resolve the candidate publication ID with #55 at release, not by inference.
 2. Verify each entry's remaining author/edition/DOI/link metadata and role; apply the eleven-row REF/source-governance decisions, including IEOM #14/#31 impact review, before final claim and IEEE binding.
-3. Refresh source-controlled Wiki routes and check the live private Wiki after any page edit. Execute the research-journey and QN/QL documentation review; #121 remains open until those outputs are inspectable.
+3. After any page edit, refresh source-controlled Wiki routes and check the live Wiki. The 2026-09-30 public-access/status refresh and 8/8 source/live hash read-back are recorded separately; claim/citation validation and the QN/QL human-dependent review still keep #121 open.
 
 **Ceiling:** reference *identity coverage* for 33 named targets only; no final citation completeness, public release or conformance pass.

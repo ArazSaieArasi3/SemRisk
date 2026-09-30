@@ -1,6 +1,6 @@
 # Curated formal reference
 
-> **Status:** P1-R2 candidate / 0.1.0-rc.1. These are source-controlled Wiki drafts. Final scholarly release, public access and citation remain pending #55/#56. The ontology files and governed evidence linked below are authoritative.
+> **Status:** P1-R2 candidate / 0.1.0-rc.1. The repository and Wiki are publicly readable as of 2026-09-30. Final scholarly release, artifact availability and citation remain pending #55/#56. The ontology files and governed evidence linked below are authoritative.
 
 The FD-A–FD-J reference explains identity/imports, modules, selected declarations, axioms, SHACL constraints, implemented rule, reasoner limits, concept traceability and CQ status. It is a readable projection. Exact Turtle, SHACL and SPARQL files remain the semantic authority.
 

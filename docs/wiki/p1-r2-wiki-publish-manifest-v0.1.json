@@ -1,13 +1,13 @@
 {
   "candidate": "P1-R2/0.1.0-rc.1",
-  "state": "PRIVATE_WIKI_PUBLISHED_PENDING_FULL_DRIFT_AUDIT",
+  "state": "PUBLIC_WIKI_CANDIDATE_PENDING_FULL_DRIFT_AUDIT",
   "prepublication_source_commit": "c5f947eae0d801428e9ac3cb43382ef02bfd1326",
   "wiki_root": "https://github.com/ArazSaieArasi3/SemRisk/wiki",
   "pages": [
     {
       "page": "Home",
       "source_path": "docs/wiki/pages/Home.md",
-      "sha256": "63e921e4c950a7d95252b8aeaa4f2462265208056c118c05446265324a4adba6",
+      "sha256": "fc5b5ab48dca8b1e47568571dc1a913ac5cd5a91f4da40417c41a1d5bd3f8282",
       "navigation_targets": [
         "https://github.com/ArazSaieArasi3/SemRisk/wiki/Evidence-and-VVEAA",
         "https://github.com/ArazSaieArasi3/SemRisk/wiki/Formal-Reference",
@@ -21,7 +21,7 @@
     {
       "page": "Scope-and-Contributions",
       "source_path": "docs/wiki/pages/Scope-and-Contributions.md",
-      "sha256": "b1501356ceb0a1e6e53a94965e38079dbefcd6b3485677fdc68b840a6bce37cc",
+      "sha256": "6bd5d029a2fb08f1dc7046ec7b2dd0a19f1dd589d513355fda04670d956d3202",
       "navigation_targets": [
         "https://github.com/ArazSaieArasi3/SemRisk/wiki",
         "https://github.com/ArazSaieArasi3/SemRisk/wiki/Evidence-and-VVEAA"
@@ -30,7 +30,7 @@
     {
       "page": "Semantic-Architecture",
       "source_path": "docs/wiki/pages/Semantic-Architecture.md",
-      "sha256": "91fc4063e66fed0b6471e1db44b33423b59264a7ce9c40192d7e8309f68726b7",
+      "sha256": "a18e4690b66cb5d66b74492cd6a91a5f30789191e92113891f6b75e2e46f1fd0",
       "navigation_targets": [
         "https://github.com/ArazSaieArasi3/SemRisk/wiki"
       ]
@@ -38,7 +38,7 @@
     {
       "page": "Formal-Reference",
       "source_path": "docs/wiki/pages/Formal-Reference.md",
-      "sha256": "b29afd5a34783146859ba8b560a527078d4b712eeb8b03dcfd89815d267d3121",
+      "sha256": "3b920a622cf57f8e1fa6ad34e5a5d90726f08bb3f2b3b15cf3e0cfc6a4f66deb",
       "navigation_targets": [
         "https://github.com/ArazSaieArasi3/SemRisk/wiki"
       ]
@@ -46,7 +46,7 @@
     {
       "page": "Evidence-and-VVEAA",
       "source_path": "docs/wiki/pages/Evidence-and-VVEAA.md",
-      "sha256": "8b9c968ad7f2edafb81c738356938d0f691ed9405fa47b716d5f78697c99311e",
+      "sha256": "562ad89d5089cf3e5ee23f2ccdeb26b13b7a69de9261b981ca600bf3c1902882",
       "navigation_targets": [
         "https://github.com/ArazSaieArasi3/SemRisk/wiki"
       ]
@@ -54,7 +54,7 @@
     {
       "page": "Relational-Projection",
       "source_path": "docs/wiki/pages/Relational-Projection.md",
-      "sha256": "492ff0a53b211b7eb2e1be71e3e29d3b71586b02318c7b38694820ec03918feb",
+      "sha256": "196d1db477fedaa753e94777d0d1a1731bfcb4346852b67309964597eb47aae4",
       "navigation_targets": [
         "https://github.com/ArazSaieArasi3/SemRisk/wiki"
       ]
@@ -62,7 +62,7 @@
     {
       "page": "Pharma-Case",
       "source_path": "docs/wiki/pages/Pharma-Case.md",
-      "sha256": "55b9fa2f2dc4c52bb35cbf72e6aeed4d377f440135ba0502779603c28c0c359a",
+      "sha256": "718d46c1f2368a8b2297c1388b9393cb17d52f7cef865a2365e0ada56b402996",
       "navigation_targets": [
         "https://github.com/ArazSaieArasi3/SemRisk/wiki"
       ]
@@ -70,7 +70,7 @@
     {
       "page": "Reproduce-and-Release",
       "source_path": "docs/wiki/pages/Reproduce-and-Release.md",
-      "sha256": "16417efefff77860216c6638a1b3e984c1e4d3493d16d9aaeac8ba301132ac09",
+      "sha256": "c00c70f74d3fa8ace90889e8e6602e6481d7ebbd7a43607dde4436f6e5b56231",
       "navigation_targets": [
         "https://github.com/ArazSaieArasi3/SemRisk/wiki"
       ]

@@ -9,3 +9,7 @@ DS-003 is referenced by its exact public DOI/version and is used only within its
 External standards and ontologies remain subject to their issuing-body access and license conditions. The SemRisk release records exact versions/locators and does not imply redistribution rights for restricted third-party materials.
 
 **Final repository release identifier, immutable ref, and any DOI/archive citation are pending #55 and must replace this provisional wording before submission.**
+
+## Public-repository transition — 2026-09-30
+
+The SemRisk repository and its eight-page Wiki are publicly readable. This access change does not bind the mutable working manuscript to a scholarly release, license the repository as a whole, make the private operational spreadsheet redistributable, or establish that GitHub Pages is deployed. The repository metadata currently reports no repository-level license and Pages disabled. #56 owns the exact public artifact/license/privacy review and #55 the final release and citation identity before this availability statement can be finalized.
