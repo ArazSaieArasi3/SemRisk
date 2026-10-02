@@ -1,0 +1,252 @@
+extraction_id,label_id,native_locator,folder,native_code,lexical_review_group
+DS003-CODE-001,DS003-LABEL-011,Codebook!A2:F2,Codes\\India,Causes of shortages\demand and supply imbalance,DS003-LEX-010
+DS003-CODE-002,DS003-LABEL-014,Codebook!A3:F3,Codes\\India,Causes of shortages\lack of understanding of demand,DS003-LEX-016
+DS003-CODE-003,DS003-LABEL-019,Codebook!A4:F4,Codes\\India,Current procurement and supply chain,DS003-LEX-021
+DS003-CODE-004,DS003-LABEL-034,Codebook!A5:F5,Codes\\India,Current procurement and supply chain\Key drivers of shortages linked to manufacturing,DS003-LEX-032
+DS003-CODE-005,DS003-LABEL-035,Codebook!A6:F6,Codes\\India,Current procurement and supply chain\Maintaining stocks,DS003-LEX-033
+DS003-CODE-006,DS003-LABEL-040,Codebook!A7:F7,Codes\\India,Current procurement and supply chain\scope for improvement,DS003-LEX-035
+DS003-CODE-007,DS003-LABEL-036,Codebook!A8:F8,Codes\\India,Current procurement and supply chain\Strengths,DS003-LEX-036
+DS003-CODE-008,DS003-LABEL-037,Codebook!A9:F9,Codes\\India,Current procurement and supply chain\Weakness,DS003-LEX-037
+DS003-CODE-009,DS003-LABEL-041,Codebook!A10:F10,Codes\\India,Economic factors,DS003-LEX-038
+DS003-CODE-010,DS003-LABEL-055,Codebook!A11:F11,Codes\\India,Economic factors\impact of price capping on shortages,DS003-LEX-044
+DS003-CODE-011,DS003-LABEL-073,Codebook!A12:F12,Codes\\India,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\potential strategies,DS003-LEX-066
+DS003-CODE-012,DS003-LABEL-076,Codebook!A13:F13,Codes\\India,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\potential strategies\role of non profit entities,DS003-LEX-069
+DS003-CODE-013,DS003-LABEL-091,Codebook!A14:F14,Codes\\India,Govts in LMICs where manufacturing happens,DS003-LEX-079
+DS003-CODE-014,DS003-LABEL-092,Codebook!A15:F15,Codes\\India,Govts in LMICs where manufacturing happens\Lesser role by govt,DS003-LEX-080
+DS003-CODE-015,DS003-LABEL-093,Codebook!A16:F16,Codes\\India,Govts in LMICs where manufacturing happens\Potential role,DS003-LEX-081
+DS003-CODE-016,DS003-LABEL-094,Codebook!A17:F17,Codes\\India,Govts in LMICs where manufacturing happens\Role of Govt in other countries,DS003-LEX-082
+DS003-CODE-017,DS003-LABEL-112,Codebook!A18:F18,Codes\\India,Political or policy level factors,DS003-LEX-100
+DS003-CODE-018,DS003-LABEL-115,Codebook!A19:F19,Codes\\India,Role of pharmaceutical industry,DS003-LEX-106
+DS003-CODE-019,DS003-LABEL-124,Codebook!A20:F20,Codes\\India,Role of pharmaceutical industry\forecasting shortages,DS003-LEX-108
+DS003-CODE-020,DS003-LABEL-120,Codebook!A21:F21,Codes\\India,Role of pharmaceutical industry\Online sales of antibiotics,DS003-LEX-112
+DS003-CODE-021,DS003-LABEL-126,Codebook!A22:F22,Codes\\India,Role of regulatory authorities,DS003-LEX-116
+DS003-CODE-022,DS003-LABEL-128,Codebook!A23:F23,Codes\\India,Sociological factors,DS003-LEX-118
+DS003-CODE-023,DS003-LABEL-129,Codebook!A24:F24,Codes\\India,Sociological factors\Access to antibiotics,DS003-LEX-119
+DS003-CODE-024,DS003-LABEL-138,Codebook!A25:F25,Codes\\India,Sociological factors\Patient demand,DS003-LEX-128
+DS003-CODE-025,DS003-LABEL-010,Codebook!A26:F26,Codes\\Netherlands,Causes of shortages\artifcial stockout,DS003-LEX-009
+DS003-CODE-026,DS003-LABEL-011,Codebook!A27:F27,Codes\\Netherlands,Causes of shortages\demand and supply imbalance,DS003-LEX-010
+DS003-CODE-027,DS003-LABEL-012,Codebook!A28:F28,Codes\\Netherlands,Causes of shortages\difficulty in predicting,DS003-LEX-011
+DS003-CODE-028,DS003-LABEL-013,Codebook!A29:F29,Codes\\Netherlands,Causes of shortages\lack of global coordination and global funding,DS003-LEX-014
+DS003-CODE-029,DS003-LABEL-014,Codebook!A30:F30,Codes\\Netherlands,Causes of shortages\lack of understanding of demand,DS003-LEX-016
+DS003-CODE-030,DS003-LABEL-015,Codebook!A31:F31,Codes\\Netherlands,Causes of shortages\stock piling,DS003-LEX-017
+DS003-CODE-031,DS003-LABEL-019,Codebook!A32:F32,Codes\\Netherlands,Current procurement and supply chain,DS003-LEX-021
+DS003-CODE-032,DS003-LABEL-038,Codebook!A33:F33,Codes\\Netherlands,Current procurement and supply chain\example of supply problem faced and their impact,DS003-LEX-029
+DS003-CODE-033,DS003-LABEL-034,Codebook!A34:F34,Codes\\Netherlands,Current procurement and supply chain\Key drivers of shortages linked to manufacturing,DS003-LEX-032
+DS003-CODE-034,DS003-LABEL-041,Codebook!A35:F35,Codes\\Netherlands,Economic factors,DS003-LEX-038
+DS003-CODE-035,DS003-LABEL-045,Codebook!A36:F36,Codes\\Netherlands,Economic factors\Global funds for incentivising,DS003-LEX-043
+DS003-CODE-036,DS003-LABEL-070,Codebook!A37:F37,Codes\\Netherlands,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\for HIV drugs,DS003-LEX-060
+DS003-CODE-037,DS003-LABEL-065,Codebook!A38:F38,Codes\\Netherlands,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\Key stakeholders,DS003-LEX-061
+DS003-CODE-038,DS003-LABEL-066,Codebook!A39:F39,Codes\\Netherlands,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\Key stakeholders\Role of Govt,DS003-LEX-062
+DS003-CODE-039,DS003-LABEL-067,Codebook!A40:F40,Codes\\Netherlands,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\Key stakeholders\Role of HCWs,DS003-LEX-063
+DS003-CODE-040,DS003-LABEL-071,Codebook!A41:F41,Codes\\Netherlands,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\mitigation strategies in other countries,DS003-LEX-064
+DS003-CODE-041,DS003-LABEL-072,Codebook!A42:F42,Codes\\Netherlands,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\mitigation strategies in other countries\differences between HIC vs LMIC,DS003-LEX-065
+DS003-CODE-042,DS003-LABEL-073,Codebook!A43:F43,Codes\\Netherlands,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\potential strategies,DS003-LEX-066
+DS003-CODE-043,DS003-LABEL-074,Codebook!A44:F44,Codes\\Netherlands,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\potential strategies\pharmacies bypass wholesalers,DS003-LEX-067
+DS003-CODE-044,DS003-LABEL-075,Codebook!A45:F45,Codes\\Netherlands,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\potential strategies\pulling resources to manage shortages,DS003-LEX-068
+DS003-CODE-045,DS003-LABEL-091,Codebook!A46:F46,Codes\\Netherlands,Govts in LMICs where manufacturing happens,DS003-LEX-079
+DS003-CODE-046,DS003-LABEL-148,Codebook!A47:F47,Codes\\Netherlands,initiatives at government level,DS003-LEX-085
+DS003-CODE-047,DS003-LABEL-101,Codebook!A48:F48,Codes\\Netherlands,Managing stockouts,DS003-LEX-090
+DS003-CODE-048,DS003-LABEL-103,Codebook!A49:F49,Codes\\Netherlands,Others,DS003-LEX-092
+DS003-CODE-049,DS003-LABEL-112,Codebook!A50:F50,Codes\\Netherlands,Political or policy level factors,DS003-LEX-100
+DS003-CODE-050,DS003-LABEL-114,Codebook!A51:F51,Codes\\Netherlands,Role of international organisations in shortages management,DS003-LEX-105
+DS003-CODE-051,DS003-LABEL-125,Codebook!A52:F52,Codes\\Netherlands,Role of pharmaceutical industry\issues around generics,DS003-LEX-109
+DS003-CODE-052,DS003-LABEL-152,Codebook!A53:F53,Codes\\Netherlands,role of regulatory authorities,DS003-LEX-116
+DS003-CODE-053,DS003-LABEL-001,Codebook!A54:F54,Codes\\SA,Antibiotic prescribing drives and is impacted by shortages,DS003-LEX-003
+DS003-CODE-054,DS003-LABEL-002,Codebook!A55:F55,Codes\\SA,Causes for antibiotic shortages,DS003-LEX-004
+DS003-CODE-055,DS003-LABEL-003,Codebook!A56:F56,Codes\\SA,Causes for antibiotic shortages\Lack of communication around shortages in the system,DS003-LEX-005
+DS003-CODE-056,DS003-LABEL-004,Codebook!A57:F57,Codes\\SA,Causes for antibiotic shortages\Lack of trained staff,DS003-LEX-006
+DS003-CODE-057,DS003-LABEL-006,Codebook!A58:F58,Codes\\SA,Causes of shortages,DS003-LEX-008
+DS003-CODE-058,DS003-LABEL-007,Codebook!A59:F59,Codes\\SA,Causes of shortages\Generic antimicrobial tendering,DS003-LEX-012
+DS003-CODE-059,DS003-LABEL-008,Codebook!A60:F60,Codes\\SA,Causes of shortages\Impact of Brexit,DS003-LEX-013
+DS003-CODE-060,DS003-LABEL-009,Codebook!A61:F61,Codes\\SA,Causes of shortages\Lack of transperancy,DS003-LEX-015
+DS003-CODE-061,DS003-LABEL-016,Codebook!A62:F62,Codes\\SA,Communication around AMR and drug shortages,DS003-LEX-018
+DS003-CODE-062,DS003-LABEL-017,Codebook!A63:F63,Codes\\SA,Communication around AMR and drug shortages\Prior communication regarding upcoming shortages,DS003-LEX-019
+DS003-CODE-063,DS003-LABEL-019,Codebook!A64:F64,Codes\\SA,Current procurement and supply chain,DS003-LEX-021
+DS003-CODE-064,DS003-LABEL-038,Codebook!A65:F65,Codes\\SA,Current procurement and supply chain\example of supply problem faced and their impact,DS003-LEX-029
+DS003-CODE-065,DS003-LABEL-034,Codebook!A66:F66,Codes\\SA,Current procurement and supply chain\Key drivers of shortages linked to manufacturing,DS003-LEX-032
+DS003-CODE-066,DS003-LABEL-039,Codebook!A67:F67,Codes\\SA,Current procurement and supply chain\pull incentives,DS003-LEX-034
+DS003-CODE-067,DS003-LABEL-036,Codebook!A68:F68,Codes\\SA,Current procurement and supply chain\Strengths,DS003-LEX-036
+DS003-CODE-068,DS003-LABEL-037,Codebook!A69:F69,Codes\\SA,Current procurement and supply chain\Weakness,DS003-LEX-037
+DS003-CODE-069,DS003-LABEL-024,Codebook!A70:F70,Codes\\SA,Current procurement and supply chain landscape,DS003-LEX-022
+DS003-CODE-070,DS003-LABEL-025,Codebook!A71:F71,Codes\\SA,Current procurement and supply chain landscape\Example of supply problems faced and their impact,DS003-LEX-023
+DS003-CODE-071,DS003-LABEL-026,Codebook!A72:F72,Codes\\SA,Current procurement and supply chain landscape\Example of supply problems faced and thier impact,DS003-LEX-023
+DS003-CODE-072,DS003-LABEL-027,Codebook!A73:F73,Codes\\SA,Current procurement and supply chain landscape\Key drivers for shortages linked to manufacturing,DS003-LEX-024
+DS003-CODE-073,DS003-LABEL-028,Codebook!A74:F74,Codes\\SA,Current procurement and supply chain landscape\Key drivers for shortages linked to manufacturing\Economic drivers,DS003-LEX-025
+DS003-CODE-074,DS003-LABEL-029,Codebook!A75:F75,Codes\\SA,Current procurement and supply chain landscape\Key drivers for shortages linked to manufacturing\Regulatory drivers,DS003-LEX-026
+DS003-CODE-075,DS003-LABEL-030,Codebook!A76:F76,Codes\\SA,Current procurement and supply chain landscape\Pull incentives,DS003-LEX-027
+DS003-CODE-076,DS003-LABEL-031,Codebook!A77:F77,Codes\\SA,Current procurement and supply chain landscape\Scope of activity in relation to shortages,DS003-LEX-028
+DS003-CODE-077,DS003-LABEL-041,Codebook!A78:F78,Codes\\SA,Economic factors,DS003-LEX-038
+DS003-CODE-078,DS003-LABEL-043,Codebook!A79:F79,Codes\\SA,Economic factors\Economic models,DS003-LEX-041
+DS003-CODE-079,DS003-LABEL-044,Codebook!A80:F80,Codes\\SA,Economic factors\Economic models\Subscription models,DS003-LEX-042
+DS003-CODE-080,DS003-LABEL-046,Codebook!A81:F81,Codes\\SA,Economic factors\Impact of reduced budgets,DS003-LEX-045
+DS003-CODE-081,DS003-LABEL-048,Codebook!A82:F82,Codes\\SA,Economic factors\Need economic incentivisation at all levels,DS003-LEX-047
+DS003-CODE-082,DS003-LABEL-049,Codebook!A83:F83,Codes\\SA,Economic factors\Need economic intcentivisation at all levels,DS003-LEX-047
+DS003-CODE-083,DS003-LABEL-050,Codebook!A84:F84,Codes\\SA,Economic factors\Opportunity cost - unintended economic impact of shortage,DS003-LEX-048
+DS003-CODE-084,DS003-LABEL-052,Codebook!A85:F85,Codes\\SA,Economic factors\Pricing of antibiotics disicentivising suppliers,DS003-LEX-050
+DS003-CODE-085,DS003-LABEL-053,Codebook!A86:F86,Codes\\SA,Economic factors\Pricing of antibiotics disincentivising suppliers,DS003-LEX-050
+DS003-CODE-086,DS003-LABEL-057,Codebook!A87:F87,Codes\\SA,Exisitng processes for delaing with shortages,DS003-LEX-052
+DS003-CODE-087,DS003-LABEL-060,Codebook!A88:F88,Codes\\SA,Experience of dealing with antibiotic shortages,DS003-LEX-053
+DS003-CODE-088,DS003-LABEL-079,Codebook!A89:F89,Codes\\SA,Experience of dealing with antibiotic shortages\class of antibiotic and region(s) affected,DS003-LEX-054
+DS003-CODE-089,DS003-LABEL-061,Codebook!A90:F90,Codes\\SA,Experience of dealing with antibiotic shortages\Generic or patented antibiotics,DS003-LEX-056
+DS003-CODE-090,DS003-LABEL-081,Codebook!A91:F91,Codes\\SA,Experience of dealing with antibiotic shortages\impact of shortage,DS003-LEX-057
+DS003-CODE-091,DS003-LABEL-062,Codebook!A92:F92,Codes\\SA,Experience of dealing with antibiotic shortages\Issues during shortages,DS003-LEX-058
+DS003-CODE-092,DS003-LABEL-063,Codebook!A93:F93,Codes\\SA,Experience of dealing with antibiotic shortages\Mitigation strategies adopted,DS003-LEX-059
+DS003-CODE-093,DS003-LABEL-065,Codebook!A94:F94,Codes\\SA,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\Key stakeholders,DS003-LEX-061
+DS003-CODE-094,DS003-LABEL-066,Codebook!A95:F95,Codes\\SA,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\Key stakeholders\Role of Govt,DS003-LEX-062
+DS003-CODE-095,DS003-LABEL-067,Codebook!A96:F96,Codes\\SA,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\Key stakeholders\Role of HCWs,DS003-LEX-063
+DS003-CODE-096,DS003-LABEL-068,Codebook!A97:F97,Codes\\SA,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\Mitigation strategies in other countries,DS003-LEX-064
+DS003-CODE-097,DS003-LABEL-069,Codebook!A98:F98,Codes\\SA,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\Potential strategies,DS003-LEX-066
+DS003-CODE-098,DS003-LABEL-078,Codebook!A99:F99,Codes\\SA,Experience of dealing with antibiotic shortages\Success factors in dealing with shortages,DS003-LEX-072
+DS003-CODE-099,DS003-LABEL-083,Codebook!A100:F100,Codes\\SA,Forcasting issues from different actors,DS003-LEX-073
+DS003-CODE-100,DS003-LABEL-084,Codebook!A101:F101,Codes\\SA,Forcasting issues from different actors\forecasting demand as well as shortages important,DS003-LEX-075
+DS003-CODE-101,DS003-LABEL-085,Codebook!A102:F102,Codes\\SA,Forecasting issues from different actors,DS003-LEX-073
+DS003-CODE-102,DS003-LABEL-086,Codebook!A103:F103,Codes\\SA,Forecasting issues from different actors\Forecasting demand as well as shortages importance,DS003-LEX-074
+DS003-CODE-103,DS003-LABEL-088,Codebook!A104:F104,Codes\\SA,Forecasting issues from different actors\Resources needed for forecasting and data gathering,DS003-LEX-076
+DS003-CODE-104,DS003-LABEL-085,Codebook!A105:F105,Codes\\SA,Forecasting issues from different actors,DS003-LEX-073
+DS003-CODE-105,DS003-LABEL-087,Codebook!A106:F106,Codes\\SA,Forecasting issues from different actors\Forecasting demand as well as shortages important,DS003-LEX-075
+DS003-CODE-106,DS003-LABEL-088,Codebook!A107:F107,Codes\\SA,Forecasting issues from different actors\Resources needed for forecasting and data gathering,DS003-LEX-076
+DS003-CODE-107,DS003-LABEL-090,Codebook!A108:F108,Codes\\SA,Forecasting issues from different actors\Shortages and forecasting for them driven by infectious disease outbreaks and epidemiological profile of pathogens by country and region,DS003-LEX-078
+DS003-CODE-108,DS003-LABEL-095,Codebook!A109:F109,Codes\\SA,Impact of shortages on AMR,DS003-LEX-083
+DS003-CODE-109,DS003-LABEL-096,Codebook!A110:F110,Codes\\SA,Initiatives at goverment level,DS003-LEX-085
+DS003-CODE-110,DS003-LABEL-148,Codebook!A111:F111,Codes\\SA,initiatives at government level,DS003-LEX-085
+DS003-CODE-111,DS003-LABEL-098,Codebook!A112:F112,Codes\\SA,Lack of data on this problem,DS003-LEX-087
+DS003-CODE-112,DS003-LABEL-099,Codebook!A113:F113,Codes\\SA,Lack of data on this problem\Lack of community data and infrastructure,DS003-LEX-088
+DS003-CODE-113,DS003-LABEL-100,Codebook!A114:F114,Codes\\SA,Lack of data on this problem\The importance of technology to carry out surveillance,DS003-LEX-089
+DS003-CODE-114,DS003-LABEL-103,Codebook!A115:F115,Codes\\SA,Others,DS003-LEX-092
+DS003-CODE-115,DS003-LABEL-104,Codebook!A116:F116,Codes\\SA,Pharmacist integral to mitigation stategies - both in community and hospital,DS003-LEX-093
+DS003-CODE-116,DS003-LABEL-105,Codebook!A117:F117,Codes\\SA,Pharmacist integral to mitigation stategies-both in community and hospital,DS003-LEX-093
+DS003-CODE-117,DS003-LABEL-106,Codebook!A118:F118,Codes\\SA,Political factors,DS003-LEX-094
+DS003-CODE-118,DS003-LABEL-107,Codebook!A119:F119,Codes\\SA,Political factors\Government policy change,DS003-LEX-095
+DS003-CODE-119,DS003-LABEL-108,Codebook!A120:F120,Codes\\SA,Political factors\Government role in responding to shortages,DS003-LEX-096
+DS003-CODE-120,DS003-LABEL-109,Codebook!A121:F121,Codes\\SA,"Political factors\Investment in national, regional infrastructure to deal with shortages",DS003-LEX-097
+DS003-CODE-121,DS003-LABEL-110,Codebook!A122:F122,Codes\\SA,Political factors\Legal factors and implications,DS003-LEX-098
+DS003-CODE-122,DS003-LABEL-111,Codebook!A123:F123,Codes\\SA,Political factors\Political influence causing shortages,DS003-LEX-099
+DS003-CODE-123,DS003-LABEL-114,Codebook!A124:F124,Codes\\SA,Role of international organisations in shortages management,DS003-LEX-105
+DS003-CODE-124,DS003-LABEL-115,Codebook!A125:F125,Codes\\SA,Role of pharmaceutical industry,DS003-LEX-106
+DS003-CODE-125,DS003-LABEL-124,Codebook!A126:F126,Codes\\SA,Role of pharmaceutical industry\forecasting shortages,DS003-LEX-108
+DS003-CODE-126,DS003-LABEL-117,Codebook!A127:F127,Codes\\SA,Role of pharmaceutical industry\Monopolisation of API and raw material manufacturing and supply,DS003-LEX-110
+DS003-CODE-127,DS003-LABEL-118,Codebook!A128:F128,Codes\\SA,Role of pharmaceutical industry\Monopolisation of API and raw material manufature and supply,DS003-LEX-110
+DS003-CODE-128,DS003-LABEL-119,Codebook!A129:F129,Codes\\SA,Role of pharmaceutical industry\Need for effective communication and leverage with pharma,DS003-LEX-111
+DS003-CODE-129,DS003-LABEL-121,Codebook!A130:F130,Codes\\SA,Role of pharmaceutical industry\Relationship between hospital and companies,DS003-LEX-113
+DS003-CODE-130,DS003-LABEL-122,Codebook!A131:F131,Codes\\SA,"Role of pharmaceutical industry\Transparency of supply chain - stakeholders, steps, sites, API, VOLUMES and capacity not transparent",DS003-LEX-115
+DS003-CODE-131,DS003-LABEL-123,Codebook!A132:F132,Codes\\SA,"Role of pharmaceutical industry\Transparency of supply chain-stakeholders, steps, sites, API, volume and capacity",DS003-LEX-114
+DS003-CODE-132,DS003-LABEL-126,Codebook!A133:F133,Codes\\SA,Role of regulatory authorities,DS003-LEX-116
+DS003-CODE-133,DS003-LABEL-127,Codebook!A134:F134,Codes\\SA,Shortages a priority in the instituttion,DS003-LEX-117
+DS003-CODE-134,DS003-LABEL-128,Codebook!A135:F135,Codes\\SA,Sociological factors,DS003-LEX-118
+DS003-CODE-135,DS003-LABEL-130,Codebook!A136:F136,Codes\\SA,Sociological factors\Access to antibiotics- Public vs pvt,DS003-LEX-120
+DS003-CODE-136,DS003-LABEL-132,Codebook!A137:F137,Codes\\SA,Sociological factors\Communication around AMR and drug shortages,DS003-LEX-122
+DS003-CODE-137,DS003-LABEL-133,Codebook!A138:F138,Codes\\SA,Sociological factors\Communication around AMR and drug shortages\How is shortages communicated to prescribers,DS003-LEX-123
+DS003-CODE-138,DS003-LABEL-134,Codebook!A139:F139,Codes\\SA,Sociological factors\Communication around AMR and drug shortages\How to communicate to patients,DS003-LEX-124
+DS003-CODE-139,DS003-LABEL-137,Codebook!A140:F140,Codes\\SA,Sociological factors\Paitent level impact,DS003-LEX-129
+DS003-CODE-140,DS003-LABEL-139,Codebook!A141:F141,Codes\\SA,Sociological factors\Patient level impact,DS003-LEX-129
+DS003-CODE-141,DS003-LABEL-140,Codebook!A142:F142,Codes\\SA,Sociological factors\Relationship between pharmacies,DS003-LEX-130
+DS003-CODE-142,DS003-LABEL-142,Codebook!A143:F143,Codes\\SA,Solutions to tackling antibiotic shortages,DS003-LEX-131
+DS003-CODE-143,DS003-LABEL-145,Codebook!A144:F144,Codes\\Sweden,antibiotic prescribing drive and impacted by shortages,DS003-LEX-001
+DS003-CODE-144,DS003-LABEL-146,Codebook!A145:F145,Codes\\Sweden,antibiotic prescribing drive and impacted by shortages\Prior communication regarding upcoming shortages,DS003-LEX-002
+DS003-CODE-145,DS003-LABEL-016,Codebook!A146:F146,Codes\\Sweden,Communication around AMR and drug shortages,DS003-LEX-018
+DS003-CODE-146,DS003-LABEL-019,Codebook!A147:F147,Codes\\Sweden,Current procurement and supply chain,DS003-LEX-021
+DS003-CODE-147,DS003-LABEL-032,Codebook!A148:F148,Codes\\Sweden,Current procurement and supply chain\Example of supply problems faced and thier impact,DS003-LEX-030
+DS003-CODE-148,DS003-LABEL-033,Codebook!A149:F149,Codes\\Sweden,Current procurement and supply chain\Key drivers fro shortages link to manufacturing,DS003-LEX-031
+DS003-CODE-149,DS003-LABEL-041,Codebook!A150:F150,Codes\\Sweden,Economic factors,DS003-LEX-038
+DS003-CODE-150,DS003-LABEL-048,Codebook!A151:F151,Codes\\Sweden,Economic factors\Need economic incentivisation at all levels,DS003-LEX-047
+DS003-CODE-151,DS003-LABEL-053,Codebook!A152:F152,Codes\\Sweden,Economic factors\Pricing of antibiotics disincentivising suppliers,DS003-LEX-050
+DS003-CODE-152,DS003-LABEL-056,Codebook!A153:F153,Codes\\Sweden,Example of supply problems faced and their impact,DS003-LEX-051
+DS003-CODE-153,DS003-LABEL-058,Codebook!A154:F154,Codes\\Sweden,Existing processes for dealing with shortages,DS003-LEX-052
+DS003-CODE-154,DS003-LABEL-060,Codebook!A155:F155,Codes\\Sweden,Experience of dealing with antibiotic shortages,DS003-LEX-053
+DS003-CODE-155,DS003-LABEL-079,Codebook!A156:F156,Codes\\Sweden,Experience of dealing with antibiotic shortages\class of antibiotic and region(s) affected,DS003-LEX-054
+DS003-CODE-156,DS003-LABEL-081,Codebook!A157:F157,Codes\\Sweden,Experience of dealing with antibiotic shortages\impact of shortage,DS003-LEX-057
+DS003-CODE-157,DS003-LABEL-063,Codebook!A158:F158,Codes\\Sweden,Experience of dealing with antibiotic shortages\Mitigation strategies adopted,DS003-LEX-059
+DS003-CODE-158,DS003-LABEL-064,Codebook!A159:F159,Codes\\Sweden,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\Key stake holders,DS003-LEX-061
+DS003-CODE-159,DS003-LABEL-069,Codebook!A160:F160,Codes\\Sweden,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\Potential strategies,DS003-LEX-066
+DS003-CODE-160,DS003-LABEL-085,Codebook!A161:F161,Codes\\Sweden,Forecasting issues from different actors,DS003-LEX-073
+DS003-CODE-161,DS003-LABEL-087,Codebook!A162:F162,Codes\\Sweden,Forecasting issues from different actors\Forecasting demand as well as shortages important,DS003-LEX-075
+DS003-CODE-162,DS003-LABEL-096,Codebook!A163:F163,Codes\\Sweden,Initiatives at goverment level,DS003-LEX-085
+DS003-CODE-163,DS003-LABEL-098,Codebook!A164:F164,Codes\\Sweden,Lack of data on this problem,DS003-LEX-087
+DS003-CODE-164,DS003-LABEL-100,Codebook!A165:F165,Codes\\Sweden,Lack of data on this problem\The importance of technology to carry out surveillance,DS003-LEX-089
+DS003-CODE-165,DS003-LABEL-108,Codebook!A166:F166,Codes\\Sweden,Political factors\Government role in responding to shortages,DS003-LEX-096
+DS003-CODE-166,DS003-LABEL-113,Codebook!A167:F167,Codes\\Sweden,Pull Incentives,DS003-LEX-104
+DS003-CODE-167,DS003-LABEL-117,Codebook!A168:F168,Codes\\Sweden,Role of pharmaceutical industry\Monopolisation of API and raw material manufacturing and supply,DS003-LEX-110
+DS003-CODE-168,DS003-LABEL-119,Codebook!A169:F169,Codes\\Sweden,Role of pharmaceutical industry\Need for effective communication and leverage with pharma,DS003-LEX-111
+DS003-CODE-169,DS003-LABEL-123,Codebook!A170:F170,Codes\\Sweden,"Role of pharmaceutical industry\Transparency of supply chain-stakeholders, steps, sites, API, volume and capacity",DS003-LEX-114
+DS003-CODE-170,DS003-LABEL-126,Codebook!A171:F171,Codes\\Sweden,Role of regulatory authorities,DS003-LEX-116
+DS003-CODE-171,DS003-LABEL-139,Codebook!A172:F172,Codes\\Sweden,Sociological factors\Patient level impact,DS003-LEX-129
+DS003-CODE-172,DS003-LABEL-145,Codebook!A173:F173,Codes\\UK,antibiotic prescribing drive and impacted by shortages,DS003-LEX-001
+DS003-CODE-173,DS003-LABEL-005,Codebook!A174:F174,Codes\\UK,Causes of antibiotic shortages,DS003-LEX-007
+DS003-CODE-174,DS003-LABEL-016,Codebook!A175:F175,Codes\\UK,Communication around AMR and drug shortages,DS003-LEX-018
+DS003-CODE-175,DS003-LABEL-017,Codebook!A176:F176,Codes\\UK,Communication around AMR and drug shortages\Prior communication regarding upcoming shortages,DS003-LEX-019
+DS003-CODE-176,DS003-LABEL-018,Codebook!A177:F177,Codes\\UK,Counterfeit medications,DS003-LEX-020
+DS003-CODE-177,DS003-LABEL-019,Codebook!A178:F178,Codes\\UK,Current procurement and supply chain,DS003-LEX-021
+DS003-CODE-178,DS003-LABEL-039,Codebook!A179:F179,Codes\\UK,Current procurement and supply chain\pull incentives,DS003-LEX-034
+DS003-CODE-179,DS003-LABEL-040,Codebook!A180:F180,Codes\\UK,Current procurement and supply chain\scope for improvement,DS003-LEX-035
+DS003-CODE-180,DS003-LABEL-021,Codebook!A181:F181,Codes\\UK,Current procurement and supply chain land scape\Example of supply problems faced and their impact,DS003-LEX-023
+DS003-CODE-181,DS003-LABEL-023,Codebook!A182:F182,Codes\\UK,Current procurement and supply chain land scape\Key drivers fro shortages link to manufacturing\Economic drivers,DS003-LEX-025
+DS003-CODE-182,DS003-LABEL-041,Codebook!A183:F183,Codes\\UK,Economic factors,DS003-LEX-038
+DS003-CODE-183,DS003-LABEL-054,Codebook!A184:F184,Codes\\UK,Economic factors\consequences,DS003-LEX-039
+DS003-CODE-184,DS003-LABEL-042,Codebook!A185:F185,Codes\\UK,Economic factors\Drivers,DS003-LEX-040
+DS003-CODE-185,DS003-LABEL-047,Codebook!A186:F186,Codes\\UK,Economic factors\Low margins on generic antibiotics,DS003-LEX-046
+DS003-CODE-186,DS003-LABEL-048,Codebook!A187:F187,Codes\\UK,Economic factors\Need economic incentivisation at all levels,DS003-LEX-047
+DS003-CODE-187,DS003-LABEL-051,Codebook!A188:F188,Codes\\UK,Economic factors\Opportunity cost- unintended economic impact of shortages,DS003-LEX-049
+DS003-CODE-188,DS003-LABEL-053,Codebook!A189:F189,Codes\\UK,Economic factors\Pricing of antibiotics disincentivising suppliers,DS003-LEX-050
+DS003-CODE-189,DS003-LABEL-059,Codebook!A190:F190,Codes\\UK,Existing processes fro dealing with shortages,DS003-LEX-052
+DS003-CODE-190,DS003-LABEL-060,Codebook!A191:F191,Codes\\UK,Experience of dealing with antibiotic shortages,DS003-LEX-053
+DS003-CODE-191,DS003-LABEL-079,Codebook!A192:F192,Codes\\UK,Experience of dealing with antibiotic shortages\class of antibiotic and region(s) affected,DS003-LEX-054
+DS003-CODE-192,DS003-LABEL-080,Codebook!A193:F193,Codes\\UK,Experience of dealing with antibiotic shortages\duration of shortage,DS003-LEX-055
+DS003-CODE-193,DS003-LABEL-081,Codebook!A194:F194,Codes\\UK,Experience of dealing with antibiotic shortages\impact of shortage,DS003-LEX-057
+DS003-CODE-194,DS003-LABEL-063,Codebook!A195:F195,Codes\\UK,Experience of dealing with antibiotic shortages\Mitigation strategies adopted,DS003-LEX-059
+DS003-CODE-195,DS003-LABEL-064,Codebook!A196:F196,Codes\\UK,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\Key stake holders,DS003-LEX-061
+DS003-CODE-196,DS003-LABEL-068,Codebook!A197:F197,Codes\\UK,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\Mitigation strategies in other countries,DS003-LEX-064
+DS003-CODE-197,DS003-LABEL-069,Codebook!A198:F198,Codes\\UK,Experience of dealing with antibiotic shortages\Mitigation strategies adopted\Potential strategies,DS003-LEX-066
+DS003-CODE-198,DS003-LABEL-082,Codebook!A199:F199,Codes\\UK,Experience of dealing with antibiotic shortages\potential stakeholders to be involved,DS003-LEX-070
+DS003-CODE-199,DS003-LABEL-077,Codebook!A200:F200,Codes\\UK,Experience of dealing with antibiotic shortages\Success factor in dealing with shortages,DS003-LEX-071
+DS003-CODE-200,DS003-LABEL-085,Codebook!A201:F201,Codes\\UK,Forecasting issues from different actors,DS003-LEX-073
+DS003-CODE-201,DS003-LABEL-087,Codebook!A202:F202,Codes\\UK,Forecasting issues from different actors\Forecasting demand as well as shortages important,DS003-LEX-075
+DS003-CODE-202,DS003-LABEL-088,Codebook!A203:F203,Codes\\UK,Forecasting issues from different actors\Resources needed for forecasting and data gathering,DS003-LEX-076
+DS003-CODE-203,DS003-LABEL-089,Codebook!A204:F204,Codes\\UK,Forecasting issues from different actors\Shortages and forecasting for them driven by infectious disease outbreaks  and epidemiological,DS003-LEX-077
+DS003-CODE-204,DS003-LABEL-095,Codebook!A205:F205,Codes\\UK,Impact of shortages on AMR,DS003-LEX-083
+DS003-CODE-205,DS003-LABEL-147,Codebook!A206:F206,Codes\\UK,influence of diagnostics on shortages,DS003-LEX-084
+DS003-CODE-206,DS003-LABEL-096,Codebook!A207:F207,Codes\\UK,Initiatives at goverment level,DS003-LEX-085
+DS003-CODE-207,DS003-LABEL-097,Codebook!A208:F208,Codes\\UK,Lack of data,DS003-LEX-086
+DS003-CODE-208,DS003-LABEL-098,Codebook!A209:F209,Codes\\UK,Lack of data on this problem,DS003-LEX-087
+DS003-CODE-209,DS003-LABEL-102,Codebook!A210:F210,Codes\\UK,Neccessity of having research,DS003-LEX-091
+DS003-CODE-210,DS003-LABEL-105,Codebook!A211:F211,Codes\\UK,Pharmacist integral to mitigation stategies-both in community and hospital,DS003-LEX-093
+DS003-CODE-211,DS003-LABEL-106,Codebook!A212:F212,Codes\\UK,Political factors,DS003-LEX-094
+DS003-CODE-212,DS003-LABEL-108,Codebook!A213:F213,Codes\\UK,Political factors\Government role in responding to shortages,DS003-LEX-096
+DS003-CODE-213,DS003-LABEL-109,Codebook!A214:F214,Codes\\UK,"Political factors\Investment in national, regional infrastructure to deal with shortages",DS003-LEX-097
+DS003-CODE-214,DS003-LABEL-149,Codebook!A215:F215,Codes\\UK,priority for shortages at political or policy level,DS003-LEX-101
+DS003-CODE-215,DS003-LABEL-150,Codebook!A216:F216,Codes\\UK,priority for shortages at political or policy level\AMSP and guidelines,DS003-LEX-102
+DS003-CODE-216,DS003-LABEL-151,Codebook!A217:F217,Codes\\UK,priority for shortages at political or policy level\Govt advisory committee,DS003-LEX-103
+DS003-CODE-217,DS003-LABEL-115,Codebook!A218:F218,Codes\\UK,Role of pharmaceutical industry,DS003-LEX-106
+DS003-CODE-218,DS003-LABEL-116,Codebook!A219:F219,Codes\\UK,Role of pharmaceutical industry\Alerting,DS003-LEX-107
+DS003-CODE-219,DS003-LABEL-117,Codebook!A220:F220,Codes\\UK,Role of pharmaceutical industry\Monopolisation of API and raw material manufacturing and supply,DS003-LEX-110
+DS003-CODE-220,DS003-LABEL-119,Codebook!A221:F221,Codes\\UK,Role of pharmaceutical industry\Need for effective communication and leverage with pharma,DS003-LEX-111
+DS003-CODE-221,DS003-LABEL-123,Codebook!A222:F222,Codes\\UK,"Role of pharmaceutical industry\Transparency of supply chain-stakeholders, steps, sites, API, volume and capacity",DS003-LEX-114
+DS003-CODE-222,DS003-LABEL-126,Codebook!A223:F223,Codes\\UK,Role of regulatory authorities,DS003-LEX-116
+DS003-CODE-223,DS003-LABEL-128,Codebook!A224:F224,Codes\\UK,Sociological factors,DS003-LEX-118
+DS003-CODE-224,DS003-LABEL-129,Codebook!A225:F225,Codes\\UK,Sociological factors\Access to antibiotics,DS003-LEX-119
+DS003-CODE-225,DS003-LABEL-131,Codebook!A226:F226,Codes\\UK,Sociological factors\Access to antibiotics\demand from patients,DS003-LEX-121
+DS003-CODE-226,DS003-LABEL-135,Codebook!A227:F227,Codes\\UK,Sociological factors\Communication around AMR and shortages\communication to patients,DS003-LEX-125
+DS003-CODE-227,DS003-LABEL-136,Codebook!A228:F228,Codes\\UK,Sociological factors\Impact of shortages on prescribing patterns,DS003-LEX-126
+DS003-CODE-228,DS003-LABEL-141,Codebook!A229:F229,Codes\\UK,Sociological factors\influence of social media,DS003-LEX-127
+DS003-CODE-229,DS003-LABEL-139,Codebook!A230:F230,Codes\\UK,Sociological factors\Patient level impact,DS003-LEX-129
+DS003-CODE-230,DS003-LABEL-142,Codebook!A231:F231,Codes\\UK,Solutions to tackling antibiotic shortages,DS003-LEX-131
+DS003-CODE-231,DS003-LABEL-143,Codebook!A232:F232,Codes\\UK,Tools for rational prescribing,DS003-LEX-132
+DS003-CODE-232,DS003-LABEL-144,Codebook!A233:F233,Codes\\UK,Use of technology in managing shortages,DS003-LEX-133
+DS003-CODE-233,DS003-LABEL-016,Codebook!A234:F234,Codes\\US,Communication around AMR and drug shortages,DS003-LEX-018
+DS003-CODE-234,DS003-LABEL-017,Codebook!A235:F235,Codes\\US,Communication around AMR and drug shortages\Prior communication regarding upcoming shortages,DS003-LEX-019
+DS003-CODE-235,DS003-LABEL-019,Codebook!A236:F236,Codes\\US,Current procurement and supply chain,DS003-LEX-021
+DS003-CODE-236,DS003-LABEL-020,Codebook!A237:F237,Codes\\US,Current procurement and supply chain land scape,DS003-LEX-022
+DS003-CODE-237,DS003-LABEL-022,Codebook!A238:F238,Codes\\US,Current procurement and supply chain land scape\Key drivers fro shortages link to manufacturing,DS003-LEX-024
+DS003-CODE-238,DS003-LABEL-041,Codebook!A239:F239,Codes\\US,Economic factors,DS003-LEX-038
+DS003-CODE-239,DS003-LABEL-048,Codebook!A240:F240,Codes\\US,Economic factors\Need economic incentivisation at all levels,DS003-LEX-047
+DS003-CODE-240,DS003-LABEL-053,Codebook!A241:F241,Codes\\US,Economic factors\Pricing of antibiotics disincentivising suppliers,DS003-LEX-050
+DS003-CODE-241,DS003-LABEL-060,Codebook!A242:F242,Codes\\US,Experience of dealing with antibiotic shortages,DS003-LEX-053
+DS003-CODE-242,DS003-LABEL-079,Codebook!A243:F243,Codes\\US,Experience of dealing with antibiotic shortages\class of antibiotic and region(s) affected,DS003-LEX-054
+DS003-CODE-243,DS003-LABEL-080,Codebook!A244:F244,Codes\\US,Experience of dealing with antibiotic shortages\duration of shortage,DS003-LEX-055
+DS003-CODE-244,DS003-LABEL-087,Codebook!A245:F245,Codes\\US,Forecasting issues from different actors\Forecasting demand as well as shortages important,DS003-LEX-075
+DS003-CODE-245,DS003-LABEL-088,Codebook!A246:F246,Codes\\US,Forecasting issues from different actors\Resources needed for forecasting and data gathering,DS003-LEX-076
+DS003-CODE-246,DS003-LABEL-089,Codebook!A247:F247,Codes\\US,Forecasting issues from different actors\Shortages and forecasting for them driven by infectious disease outbreaks  and epidemiological,DS003-LEX-077
+DS003-CODE-247,DS003-LABEL-095,Codebook!A248:F248,Codes\\US,Impact of shortages on AMR,DS003-LEX-083
+DS003-CODE-248,DS003-LABEL-098,Codebook!A249:F249,Codes\\US,Lack of data on this problem,DS003-LEX-087
+DS003-CODE-249,DS003-LABEL-119,Codebook!A250:F250,Codes\\US,Role of pharmaceutical industry\Need for effective communication and leverage with pharma,DS003-LEX-111
+DS003-CODE-250,DS003-LABEL-123,Codebook!A251:F251,Codes\\US,"Role of pharmaceutical industry\Transparency of supply chain-stakeholders, steps, sites, API, volume and capacity",DS003-LEX-114
+DS003-CODE-251,DS003-LABEL-126,Codebook!A252:F252,Codes\\US,Role of regulatory authorities,DS003-LEX-116

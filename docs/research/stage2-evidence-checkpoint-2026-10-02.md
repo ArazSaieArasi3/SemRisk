@@ -24,4 +24,12 @@ No issue is closed by this wave: the broader acceptance criteria remain unsatisf
 
 ## Next execution
 
-Continue **stage 2** on `gpt-6-astra high`: reconcile DS-003 code labels and finish remaining file coverage; complete detailed PA-002/ARK extraction; advance NIST clause/schema locators and remaining Pharma sources. Route any proposed semantic change through #18 and an impact review rather than silently editing the frozen release. Stage 3 should begin only after the stage-2 readiness audit or an explicit bounded handoff.
+Continue **stage 2** on `gpt-6-astra high`: validate DS-003 conditional mappings against transcript/results/instrument context and finish remaining file coverage; complete detailed PA-002/ARK extraction; advance NIST clause/schema locators and remaining Pharma sources. Route any proposed semantic change through #18 and an impact review rather than silently editing the frozen release. Stage 3 should begin only after the stage-2 readiness audit or an explicit bounded handoff.
+
+## Follow-up: native-label review and reader access
+
+Baseline `0881a751ba59db67913c0a2baf27572ef660c249`. All 152 distinct DS-003 native paths now have explicit analyst dispositions and a lossless 251-row lineage. The reversible spelling/spacing review yields 133 lexical groups (17 multi-label groups), not 133 ontology concepts. Twenty-five labels have conditional related-review anchors to existing concept IDs; 127 have topic/ambiguity dispositions only. Full semantic reconciliation remains pending source-context evidence. See [the audit](../../datasets/ds003-v4-label-reconciliation-audit-2026-10-02.md).
+
+The new [reader catalog](../ontology/domain-concept-reader-catalog.md) exposes the 12-scope domain roadmap, 10 governed architectural modules/packages, domain-to-concept assignments and all 47 current conceptual definitions. It distinguishes 35 OWL classes, four SKOS markers and eight undeclared concepts, and links the existing atlas/relation SVGs. The catalog is reproducible using `tools/build_ontology_reader_catalog.py --check`.
+
+Public repository metadata was rechecked: Pages remains disabled and no root license is selected. Tables and SVGs can be read now on GitHub; the interactive WebVOWL site still needs the #56/#119/#117 publication work. No issue is closed by this follow-up; stage 2 stays IN_PROGRESS.

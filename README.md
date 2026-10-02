@@ -2,6 +2,8 @@
 
 **SemRisk** is a research-first programme for developing a **comprehensive, modular and domain-extensible risk ontology** with a well-founded reusable Core and explicit application/domain profiles.
 
+Read the [domain definitions, domain-to-concept tables, concept definitions and diagrams](docs/ontology/domain-concept-reader-catalog.md). The catalog distinguishes planned profiles from implemented ontology declarations and links to the available SVG diagrams and WebVOWL candidate.
+
 ## Research identity and canonical ownership
 
 - Portfolio Research ID: **R-022**.
