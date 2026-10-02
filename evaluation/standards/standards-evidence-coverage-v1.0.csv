@@ -6,7 +6,7 @@ STD-004,NIST IR 8286 series,yes,OFFICIAL_PUBLIC_FULL_PLUS_SCHEMAS,document+schem
 STD-005,COSO ERM,yes,OFFICIAL_PUBLIC_SUMMARY_PLUS_COMMERCIAL_FULL,official framework page+public overview,INCOMPLETE,"framework alignment only","principle-level extraction incomplete; #13"
 STD-006,OCEG GRC Capability Model 3.5,yes,OFFICIAL_PUBLIC_MODEL_WITH_MEMBERSHIP_OPTIONS,official model/version page,INCOMPLETE,"coverage benchmark/profile support only","element/practice-level extraction incomplete; #13"
 STD-007,Risk IT Framework 2nd Edition,yes,OFFICIAL_METADATA_PLUS_LOCAL_LICENSED_COPY,official edition+selected local sections,PARTIAL,"framework alignment/profile support only","complete selected-section locator register incomplete; #13"
-STD-008,ICH Q9(R1),yes,OFFICIAL_PUBLIC_FULL_GUIDELINE,full guideline+EMA version history,PARTIAL_STRONG,"bounded Pharma profile alignment","exact section-to-SemRisk mapping still incomplete; #13"
+STD-008,ICH Q9(R1),yes,OFFICIAL_PUBLIC_FULL_GUIDELINE,40 unit coverage dispositions; 11 selected extraction/mapping rows with printed PDF pages,PARTIAL_STRONG,bounded Pharma profile alignment,remaining definitions; detailed Annex I/II mining; Figure 1 visual extraction; full semantic reconciliation; #13
 STD-009,ISO 14971,yes,OFFICIAL_PUBLIC_METADATA,publication metadata,OUT_OF_SCOPE,"out-of-scope comparison only","none unless Health scope activated"
 STD-010,Open FAIR,no,OFFICIAL_PUBLIC_LOCUS,family locus,OUT_OF_SCOPE,"out-of-scope method-profile comparison only","exact release recheck if cited"
 STD-011,TOGAF/ArchiMate,yes,OFFICIAL_PUBLIC_REFERENCE_LOCUS,"TOGAF product family + ArchiMate 3.2 official version page",INCOMPLETE,"bounded RELATED/PROFILE_SUPPORT architecture alignment only","exact section/element-to-SemRisk mapping remains #13"

@@ -25,3 +25,7 @@ From a **full** clone, run `python tools/public_history_exposure_scan.py`, `pyth
 4. **Release in #55/#56:** after the actual expert response and assurance gates, bind the final artifact, citation and availability statement to an immutable ref. Keep #56 open until owner decisions and release read-back are complete.
 
 No root `LICENSE` was added and Pages was not enabled by this audit.
+
+## Owner follow-up, 2026-10-02
+
+After this audit, the owner authorized publication of the extracted vocabulary and requested its reference locations before directing further handling. Decision 1 above is therefore resolved for the extracted vocabulary; original workbook redistribution and the root reuse license are not included. See [the recorded decision and reference inventory](src-op-001-publication-decision-2026-10-02.md). The original audit findings remain as the pre-decision snapshot.

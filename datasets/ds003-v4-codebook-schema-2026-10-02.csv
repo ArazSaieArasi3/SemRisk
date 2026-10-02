@@ -1,0 +1,7 @@
+dataset_id,file_id,sheet,column,native_name,data_rows,populated_rows,unique_nonempty,observed_cell_type,analyst_interpretation,disposition,universal_cardinality,evidence_locator
+DS-003,55440170,Codebook,A,Folder,251,251,6,text,"Source folder grouping; contextual label, not a population variable",PROFILE_CONTEXT,NOT_INFERRED,Codebook!A1:A252
+DS-003,55440170,Codebook,B,Name,251,251,152,text,Native hierarchical code label; repeated labels retain separate source rows,PROFILE_VALUE_SET,NOT_INFERRED,Codebook!B1:B252
+DS-003,55440170,Codebook,C,Description,251,1,1,text,Optional native explanation; absence cannot be filled by label guessing,DEFINITION_EVIDENCE,NOT_INFERRED,Codebook!C1:C252
+DS-003,55440170,Codebook,D,Sources,251,251,7,number,Exported coding-source count; counting rules and independence not verified,CODING_METADATA,NOT_INFERRED,Codebook!D1:D252
+DS-003,55440170,Codebook,E,References,251,251,20,number,Exported coding-reference count; not participant prevalence,CODING_METADATA,NOT_INFERRED,Codebook!E1:E252
+DS-003,55440170,Codebook,F,Reference,251,251,245,text,Coded quotation context; only cell presence inspected; content not republished,EVIDENCE_POINTER,NOT_INFERRED,Codebook!F1:F252
