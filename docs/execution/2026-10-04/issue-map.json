@@ -1,0 +1,316 @@
+[
+  {
+    "issue": 4,
+    "title": "[W1/W2] Establish SemRisk Health evidence baseline and profile boundary",
+    "packages": [
+      "P03"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 6,
+    "title": "[Post-Paper1] Specify Newsium and Commentium bridges for Risk Intelligence",
+    "packages": [
+      "P02"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 8,
+    "title": "[MASTER] SemRisk Paper 1 canonical backlog, critical path and decision gates",
+    "packages": [
+      "P01",
+      "P02",
+      "P06",
+      "P16"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 12,
+    "title": "[W1] Exhaustively mine risk papers and conceptual models with source-complete provenance",
+    "packages": [
+      "P03"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 13,
+    "title": "[W1] Mine authoritative risk standards and management frameworks with versioned clause-level traceability",
+    "packages": [
+      "P04"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 15,
+    "title": "[W1] Build deep pharmaceutical-risk literature corpus and source-complete semantic extraction",
+    "packages": [
+      "P09"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 17,
+    "title": "[W1] Mine qualified dataset schemas and map fields/codes to semantic candidates",
+    "packages": [
+      "P04",
+      "P09"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 30,
+    "title": "[W4] Execute E5–E6 semantic, expert, standards, operational and dataset validation",
+    "packages": [
+      "P06",
+      "P09",
+      "P11",
+      "P12"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 31,
+    "title": "[W4] Execute E8–E11 application utility, reproducibility, comparison and transferability evaluation",
+    "packages": [
+      "P03",
+      "P09",
+      "P10",
+      "P11"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 32,
+    "title": "[W5] Maintain Paper 1 manuscript skeleton, page budget and claim register",
+    "packages": [
+      "P01",
+      "P02",
+      "P15"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 33,
+    "title": "[W5] Build release-bound Paper 1 figures, comparison tables and traceability tables",
+    "packages": [
+      "P08",
+      "P15",
+      "P19"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 34,
+    "title": "[W5] Draft Paper 1 manuscript from release-bound evidence",
+    "packages": [
+      "P15",
+      "P19"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 35,
+    "title": "[G5] Final novelty, citation, venue, release and submission audit for Paper 1",
+    "packages": [
+      "P01",
+      "P18",
+      "P19"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 36,
+    "title": "[Post-Paper1] Define Paper 2, Health expansion and Risk Intelligence research roadmap",
+    "packages": [
+      "P02"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 37,
+    "title": "[Post-Paper1][SEM-FED][R-021] Define Business Ontology ↔ SemRisk federation contract",
+    "packages": [
+      "P02"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 51,
+    "title": "[W4] Define and execute bounded expert semantic validation protocol",
+    "packages": [
+      "P12"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 53,
+    "title": "[W4] Calibrate Paper 1 claims against evidence, results, limitations and closest work",
+    "packages": [
+      "P02",
+      "P03",
+      "P04",
+      "P14",
+      "P15",
+      "P19"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 54,
+    "title": "[W4 Gate] Build integrated SemRisk Paper 1 assessment and assurance package",
+    "packages": [
+      "P11",
+      "P14",
+      "P18",
+      "P19"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 55,
+    "title": "[W4/W5] Freeze publication-bound SemRisk release and reproducibility bundle",
+    "packages": [
+      "P07",
+      "P10",
+      "P18"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 56,
+    "title": "[W4/W5] Maintain threats-to-validity, limitations, ethics and data/code availability package",
+    "packages": [
+      "P02",
+      "P04",
+      "P14",
+      "P18"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 57,
+    "title": "[Post-Paper1] Adopt Ontology Quality Framework as an external quality-method dependency and SemRisk pilot",
+    "packages": [
+      "P13"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 111,
+    "title": "[Meta-Review MR-04] Enforce cross-role Paper-1 claim and evidence-role consistency at manuscript gate",
+    "packages": [
+      "P02",
+      "P14"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 112,
+    "title": "[Paper1 VVEAA EPIC] Evidence-layer evaluation, formal description and versioned documentation",
+    "packages": [
+      "P01",
+      "P05",
+      "P13",
+      "P14",
+      "P16"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 113,
+    "title": "[Paper1 VVEAA-01] Freeze claim-dependent VVEAA profile and execute quick evidence checks",
+    "packages": [
+      "P05",
+      "P07",
+      "P10",
+      "P11",
+      "P13",
+      "P14"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 115,
+    "title": "[Paper1 FORMAL-01] Author curated FD-A–FD-J formal SemRisk description",
+    "packages": [
+      "P05",
+      "P06",
+      "P07",
+      "P08",
+      "P16"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 117,
+    "title": "[Paper1 DOC-02] Build versioned Pages formal reference and cross-surface quality gate",
+    "packages": [
+      "P17"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 119,
+    "title": "[Paper1 DOC-04] Build source-bound WebVOWL explorer candidate for versioned Pages",
+    "packages": [
+      "P17"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 121,
+    "title": "[Paper1 DOC-05] Complete research journey, reference corpus and documentation quality review",
+    "packages": [
+      "P03",
+      "P04",
+      "P15",
+      "P16",
+      "P19"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 122,
+    "title": "[Paper1 DOC-06] Verify dual-audience Wiki routes, tutorial and visual access",
+    "packages": [
+      "P08",
+      "P16",
+      "P17"
+    ],
+    "kind": "existing"
+  },
+  {
+    "issue": 123,
+    "title": "Conceptual core, time and extensibility",
+    "packages": [
+      "P06"
+    ],
+    "kind": "new_delta"
+  },
+  {
+    "issue": 124,
+    "title": "Formal ontology and reference synchronization",
+    "packages": [
+      "P07"
+    ],
+    "kind": "new_delta"
+  },
+  {
+    "issue": 125,
+    "title": "Relational projection and semantic task parity",
+    "packages": [
+      "P10"
+    ],
+    "kind": "new_delta"
+  },
+  {
+    "issue": 126,
+    "title": "Bounded reproducible quality metrics",
+    "packages": [
+      "P13"
+    ],
+    "kind": "new_delta"
+  }
+]
