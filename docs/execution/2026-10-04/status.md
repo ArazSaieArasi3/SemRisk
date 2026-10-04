@@ -6,16 +6,16 @@ This run establishes traceable execution over the existing candidate. It does no
 
 | Checkpoint | Required result | Status |
 |---|---|---|
-| S01 | Exact baseline and historical evidence bounds | Prepared |
-| S02 | 90 author requirements with individual tests and 19 package contracts | Prepared |
-| S03 | All 29 existing open issues routed; four genuine delta issues added | Pending issue readback |
-| S04 | Six legacy PRs inspected and dispositioned | Prepared; closure readback pending |
-| S05 | Correct venue and explicit unresolved submission conditions | Prepared |
-| S06 | Enterprise-risk scope/RQ/claim contract and Persian grounding rationale | Prepared |
-| S07 | 33-criterion rhetoric rubric and measurable gates | Prepared |
-| S08 | Shared execution prompt and 19 package-specific prompts | Prepared |
-| S09 | README/master/release-train active status synchronized without erasing history | Pending publication/readback |
-| S10 | Coverage validation and exact published-content readback | Pending |
+| S01 | Exact baseline and historical evidence bounds | PASS |
+| S02 | 90 author requirements with individual tests and 19 package contracts | PASS |
+| S03 | All 29 existing open issues routed; four genuine delta issues added | PASS — 33/33 bodies read back |
+| S04 | Six legacy PRs inspected and dispositioned | PASS — two closed, four retained with owners |
+| S05 | Correct venue and explicit unresolved submission conditions | PASS |
+| S06 | Enterprise-risk scope/RQ/claim contract and Persian grounding rationale | PASS |
+| S07 | 33-criterion rhetoric rubric and measurable gates | PASS |
+| S08 | Shared execution prompt and 19 package-specific prompts | PASS |
+| S09 | README/master/release-train active status synchronized without erasing history | PASS in PR #127; master issue updated and read back |
+| S10 | Coverage validation and exact published-content readback | PASS — coverage, 39/39 committed files and CI |
 
 ## Progress definitions and current boundaries
 
@@ -35,4 +35,4 @@ No need to restart broad searches or reproduce existing datasets/viewer infrastr
 
 Official extended deadline/portal eligibility, template asset, anonymity/supplement policy and conflicting event dates remain to be checked; scientific revision proceeds. Seven pages require the event's additional-page route. Final author AI-use declaration/signature, real experts, release licensing and actual publication decisions remain explicit downstream actions. Source restrictions remain enforced without falsifying provenance.
 
-The final readback report in this directory records the actual issue/PR/file actions and supersedes the provisional checkpoint column once the run is published.
+Run checkpoint: **10/10 control deliverables verified (100%)**, independently of the 1/19 package count. Exact evidence: [run-1-readback.json](run-1-readback.json) and [validation-result.json](validation-result.json). PR #127 carries the control changes; verify its current merge state when resuming. The readback binds the first control commit; this status/evidence addition does not change scientific artifacts.
