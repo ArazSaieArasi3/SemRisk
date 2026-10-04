@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-04",
+  "commit": "f37cf41f6987d9887d9b96e913174a718f41439d",
+  "tree": "b8744a9392fd2992d3ae56432836c6a908a0b747",
+  "ontology_candidate": "P1-R2 / 0.1.0-rc.1",
+  "manuscript": "v0.4, seven pages; not a publication release",
+  "before": {
+    "open_issues": 29,
+    "closed_issues": 82,
+    "open_prs": 6
+  },
+  "counts_are_not_quality": true,
+  "historical_evidence": {
+    "formal_records": "21/21 E1-E4 reported PASS at their recorded baseline",
+    "cq": {
+      "total": 40,
+      "executable": 26,
+      "partial": 7,
+      "conceptual": 6,
+      "deferred": 1
+    },
+    "parity": "8/8 selected SQL/SPARQL tasks; stringified tuple sets, not general losslessness",
+    "expert_responses": 0
+  },
+  "retest_status": "Historical tests were not rerun to assess a revised ontology in this control-only execution."
+}

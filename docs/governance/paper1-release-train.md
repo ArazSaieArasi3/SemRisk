@@ -1,3 +1,5 @@
+> **Current-control notice — 2026-10-04:** the historical release identities and gate rules below remain useful, but their dated execution snapshot and ICAE destination are superseded by the [revision status](../execution/2026-10-04/status.md) and [ICAEA SBU venue contract](../../publications/2026-icaea-sbu/venue-contract.md). A new revision must revalidate affected evidence; historical closure is not automatic acceptance of the revised candidate.
+
 # SemRisk Paper 1 Release Train
 
 **Research:** R-022 / SemRisk

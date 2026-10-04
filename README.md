@@ -17,7 +17,7 @@ The machine-readable external semantic ownership/dependency contract is [`semant
 
 ## Semantic source of truth
 
-During W0/W1, literature, standards, ontology baselines, operational schemas and datasets are **evidence**, not canonical SemRisk semantics. Canonical semantic authority will move only to governed SemRisk concept/relation/module registries and their formal ontology source after the applicable G1/G2 gates pass. Generated diagrams, relational schemas, catalogs, dashboards and publication figures remain projections/consumers and cannot silently become semantic source of truth.
+Literature, standards, ontology baselines, operational schemas and datasets are **design evidence**. The existing candidate is governed by SemRisk concept/relation/module registries and their formal ontology sources, with historical G1/G2 decisions retained. New semantic revisions must reopen the affected evidence and conceptual checks. Generated diagrams, relational schemas, catalogs, dashboards and publication figures remain projections/consumers and cannot silently become semantic source of truth.
 
 ## Current research intent
 
@@ -35,9 +35,9 @@ SemRisk aims to provide:
 
 ### Paper 1 — conference-first
 
-The first paper is a bounded conference contribution. The exact venue, deadline, page limit, template and publication contract are deliberately treated as **unverified until Issue #38 is completed**; stale venue assumptions must not control the research design.
+The first paper presents a bounded core for enterprise risk knowledge and a pharmaceutical application. The intended venue is the **10th Iranian Conference on Advances in Enterprise Architecture, Shahid Beheshti University**. The [corrected venue contract](publications/2026-icaea-sbu/venue-contract.md) supersedes the unrelated ICAE Applied Engineering assumptions. Target: **7 readable IEEE pages; absolute author cap 8**. Official deadline/extension and remaining submission conditions are not yet cleared.
 
-The **title is deliberately not frozen**. Paper 1 focuses on a bounded, evaluated SemRisk Core plus Enterprise/Architecture application and a pharmaceutical-ecosystem case/data evaluation. The operational Risk Register/Excel is a major source and evaluation artifact, but **not the identity of the paper or ontology**.
+Working title: **SemRisk: An Extensible Core Ontology for Enterprise Risk Knowledge**. It remains provisional until evaluation. Design-source influence, operational projection and independent validation are separately reported. The core does not claim comprehensive enterprise-risk coverage.
 
 Knowledge-graph construction, dynamic Risk Intelligence and Newsium/Commentium runtime integration are deferred from the Paper 1 contribution.
 
@@ -81,13 +81,11 @@ Formal OWL/SHACL implementation must not outrun evidence and conceptual reconcil
 
 ## Current execution state
 
-The canonical execution order is governed by **Issue #8** rather than GitHub issue number order.
+As of **2026-10-04**, the existing P1-R2 / 0.1.0-rc.1 semantic candidate, relational application evidence and v0.4 author-review manuscript are the revision baseline. They are not a final publication-bound release. Historical W0/W1 status statements no longer describe current implementation.
 
-- W0 contract refresh is current.
-- Immediate sequence: **#38 venue contract → #39 study design/evidence roles → #1 RQs/contributions/nonclaims**.
-- W1 then resumes with reproducible search and source mining.
-- The next scientific hard gate is **G1 — Source Completeness and Cross-Source Reconciliation (#18)**.
-- Canonical Core/module/foundational/formal commitments remain blocked until the applicable evidence boundary passes.
+The active [90-requirement / 19-package revision register](docs/execution/2026-10-04/README.md) is governed by [Issue #8](https://github.com/ArazSaieArasi3/SemRisk/issues/8). Start with its [current status](docs/execution/2026-10-04/status.md), acceptance criteria and exact artifact references. Planning coverage and closed issue counts do not measure scientific readiness.
+
+Next: bounded prior-art/standards deltas and early dataset/expert protocols, then semantic and OntoUML revision, evaluation, and the seven-page manuscript. Real expert responses, final release rights and submission conditions remain explicit gates.
 
 ## Start here
 

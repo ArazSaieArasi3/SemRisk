@@ -1,3 +1,5 @@
+> **SUPERSEDED FOR SEMRISK PAPER 1 — 2026-10-04.** This document describes the unrelated Applied Engineering conference in Indonesia. Its dates, EDAS route, track and review policies must not govern the current paper. Use the [ICAEA SBU contract](../2026-icaea-sbu/venue-contract.md). The original text below is historical evidence of the corrected mistake, not an active approval.
+
 # SemRisk Paper 1 — ICAE 2026 Venue Contract
 
 **Verified:** 2026-09-17  
