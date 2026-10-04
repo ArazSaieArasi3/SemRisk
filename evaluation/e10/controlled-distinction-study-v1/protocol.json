@@ -1,0 +1,99 @@
+{
+  "version": "1.0",
+  "baseline_commit": "1b0b96456845ce73e8deccc832ca9aeee81cd799",
+  "fixture": "case/pharma/e2e-scenario-v1.1.ttl",
+  "fixture_sha256": "2f891bd13042385a03dc3d2ee52078174ee15bb8cc8ee36fa3dd377054703204",
+  "design": "predeclared one-feature-at-a-time information ablation of one existing constructed fixture",
+  "unit": "exact answer set for one task on one fixture",
+  "tasks": [
+    {
+      "id": "T1",
+      "question": "Which states describe the risk, separately from its register workflow?",
+      "query": "PREFIX sr: <urn:semrisk:entity:>\nPREFIX c: <urn:semrisk:scenario:p1:e2e:>\nPREFIX b: <urn:semrisk:case:pharma:v1:>\nPREFIX dct: <http://purl.org/dc/terms/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT ?family ?state WHERE { { b:risk-context sr:SR-REL-031 ?state . ?state a sr:SR-CPT-035 . BIND(\"risk\" AS ?family) } UNION { c:entry sr:SR-REL-030 ?state . ?state a sr:SR-CPT-036 . BIND(\"workflow\" AS ?family) } }",
+      "expected": [
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-post"
+        ],
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-pre"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-open"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-treated"
+        ]
+      ],
+      "limitation": "Asserted typed retrieval only; no new OWL non-entailment test or causal treatment-effect inference."
+    },
+    {
+      "id": "T2",
+      "question": "Which newer assessment and result supersede the earlier assessment and result for the same risk?",
+      "query": "PREFIX sr: <urn:semrisk:entity:>\nPREFIX c: <urn:semrisk:scenario:p1:e2e:>\nPREFIX b: <urn:semrisk:case:pharma:v1:>\nPREFIX dct: <http://purl.org/dc/terms/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT ?new ?old ?newResult ?oldResult WHERE { ?new sr:SR-REL-034 ?old ; sr:SR-REL-013 ?risk ; sr:SR-REL-015 ?newResult . ?old sr:SR-REL-013 ?risk ; sr:SR-REL-015 ?oldResult . ?newResult sr:SR-REL-033 ?oldResult . }",
+      "expected": [
+        [
+          "urn:semrisk:scenario:p1:e2e:assessment-post",
+          "urn:semrisk:scenario:p1:e2e:assessment-pre",
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:scenario:p1:e2e:result-inherent"
+        ]
+      ],
+      "limitation": "Explicit historical links; no timestamp reasoning, score reduction or elapsed-time claim."
+    },
+    {
+      "id": "T3",
+      "question": "What qualified support role does the cited evidence have for each assessment result?",
+      "query": "PREFIX sr: <urn:semrisk:entity:>\nPREFIX c: <urn:semrisk:scenario:p1:e2e:>\nPREFIX b: <urn:semrisk:case:pharma:v1:>\nPREFIX dct: <http://purl.org/dc/terms/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT ?result ?evidence ?role WHERE { ?result sr:SR-REL-017 ?evidence . ?statement a rdf:Statement ; rdf:subject ?result ; rdf:predicate sr:SR-REL-017 ; rdf:object ?evidence ; dct:type ?role . }",
+      "expected": [
+        [
+          "urn:semrisk:scenario:p1:e2e:result-inherent",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ],
+        [
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ]
+      ],
+      "limitation": "Contextual evidence is not evidence of a measured numerical treatment effect."
+    },
+    {
+      "id": "T4",
+      "question": "Which external CM-PharmE entities are linked to the risk?",
+      "query": "PREFIX sr: <urn:semrisk:entity:>\nPREFIX c: <urn:semrisk:scenario:p1:e2e:>\nPREFIX b: <urn:semrisk:case:pharma:v1:>\nPREFIX dct: <http://purl.org/dc/terms/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nSELECT ?target WHERE { b:risk-context sr:SR-REL-037 ?target . }",
+      "expected": [
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0010"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0011"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0032"
+        ]
+      ],
+      "limitation": "Positive control of external identity retrieval, not validation of imported domain semantics."
+    }
+  ],
+  "variants": {
+    "full": [],
+    "without_state_links": [
+      "T1"
+    ],
+    "without_history_links": [
+      "T2"
+    ],
+    "without_evidence_qualification": [
+      "T3"
+    ],
+    "restored": []
+  },
+  "acceptance": "All full/restored answers match; each ablation changes exactly its declared task and preserves the other three. No runtime or peer-superiority claim.",
+  "formal_reasoner_run": false,
+  "expert_responses": 0
+}

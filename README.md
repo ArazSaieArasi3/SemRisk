@@ -1,3 +1,5 @@
+> **Author revision — Run 2 (2026-10-04):** bounded comparison and a 20-condition synthetic diagnostic are recorded; standards/data/expert protocols are prepared. [Current status](docs/execution/2026-10-04/status.md). Accepted package checklist: 2/19 (10.5%), not a scientific-quality or publication-readiness score.
+
 # SemRisk
 
 **SemRisk** is a research-first programme for developing a **comprehensive, modular and domain-extensible risk ontology** with a well-founded reusable Core and explicit application/domain profiles.

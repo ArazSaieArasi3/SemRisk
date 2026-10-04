@@ -139,9 +139,14 @@
       "conceptualization/comparison/",
       "evaluation/e10/"
     ],
-    "status": "not_started",
-    "evidence_refs": [],
-    "acceptance_result": "NOT_ASSESSED"
+    "status": "completed",
+    "evidence_refs": [
+      "literature/paper1-differentiation-synthesis-2026-10-04.md",
+      "conceptualization/comparison/paper1-claim-critical-comparison-2026-10-04.csv",
+      "evaluation/e10/controlled-distinction-study-v1/results.json"
+    ],
+    "acceptance_result": "PASS_BOUNDED_COMPARISON_AND_DIAGNOSTIC",
+    "reopen_trigger": "Reassess after core/case changes; protocol preparation does not imply completed application or expert validation."
   },
   {
     "id": "P04",
@@ -187,9 +192,14 @@
       "conceptualization/pharma/",
       "evaluation/integrity/"
     ],
-    "status": "not_started",
-    "evidence_refs": [],
-    "acceptance_result": "NOT_ASSESSED"
+    "status": "in_progress",
+    "evidence_refs": [
+      "evaluation/standards/claim-strength-register-2026-10-04.csv",
+      "evaluation/standards/nist-schema-audit-2026-10-04/field-dispositions.csv",
+      "evaluation/standards/p04-delta-and-remaining-work-2026-10-04.md"
+    ],
+    "acceptance_result": "PARTIAL_PROTOCOL_OR_SOURCE_DELTA_ONLY",
+    "reopen_trigger": "Reassess after core/case changes; protocol preparation does not imply completed application or expert validation."
   },
   {
     "id": "P05",
@@ -414,9 +424,13 @@
       "case/pharma/",
       "literature/"
     ],
-    "status": "not_started",
-    "evidence_refs": [],
-    "acceptance_result": "NOT_ASSESSED"
+    "status": "in_progress",
+    "evidence_refs": [
+      "case/pharma/literature-dataset-protocol-v1.0.md",
+      "case/pharma/literature-dataset-data-dictionary-v1.0.csv"
+    ],
+    "acceptance_result": "PARTIAL_PROTOCOL_OR_SOURCE_DELTA_ONLY",
+    "reopen_trigger": "Reassess after core/case changes; protocol preparation does not imply completed application or expert validation."
   },
   {
     "id": "P10",
@@ -543,9 +557,14 @@
     "artifact_destinations": [
       "evaluation/expert/"
     ],
-    "status": "not_started",
-    "evidence_refs": [],
-    "acceptance_result": "NOT_ASSESSED"
+    "status": "in_progress",
+    "evidence_refs": [
+      "evaluation/expert/expert-review-protocol-v1.1-light.md",
+      "evaluation/expert/expert-review-instrument-v1.1-light.csv",
+      "evaluation/expert/expert-review-v1-to-v1.1-crosswalk.csv"
+    ],
+    "acceptance_result": "PARTIAL_PROTOCOL_OR_SOURCE_DELTA_ONLY",
+    "reopen_trigger": "Reassess after core/case changes; protocol preparation does not imply completed application or expert validation."
   },
   {
     "id": "P13",

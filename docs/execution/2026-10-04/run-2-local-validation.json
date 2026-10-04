@@ -1,0 +1,19 @@
+{
+  "baseline": "1b0b96456845ce73e8deccc832ca9aeee81cd799",
+  "commands": [
+    {
+      "command": "python tools/run_distinction_study.py",
+      "exit_code": 0,
+      "expected_outcomes_met": 20,
+      "denominator": 20
+    },
+    {
+      "command": "python tools/check_revision_source_audit.py",
+      "exit_code": 0,
+      "field_dispositions": 46,
+      "retained_expert_subchecks": 20
+    }
+  ],
+  "scientific_scope": "bounded query sensitivity and source/protocol structure; no semantic or clinical validation",
+  "publication_verification": "recorded separately in PR checks and run-2-readback.json"
+}
