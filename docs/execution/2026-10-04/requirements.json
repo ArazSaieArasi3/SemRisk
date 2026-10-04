@@ -109,7 +109,7 @@
     "group": "۱. جایگاه و تمایز",
     "request": "ساخت و اثبات تمایز واقعی",
     "package_id": "P03",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 12,
     "acceptance_check": "At least one controlled shared task demonstrates the proposed distinctive combination and its limits.",
     "artifact_destinations": [
@@ -117,8 +117,12 @@
       "conceptualization/comparison/",
       "evaluation/e10/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "literature/paper1-differentiation-synthesis-2026-10-04.md",
+      "conceptualization/comparison/paper1-claim-critical-comparison-2026-10-04.csv",
+      "evaluation/e10/controlled-distinction-study-v1/results.json"
+    ],
+    "verification_result": "PASS_FOR_CURRENT_COMPARISON_AND_DIAGNOSTIC"
   },
   {
     "id": "1.9",
@@ -141,7 +145,7 @@
     "group": "۱. جایگاه و تمایز",
     "request": "جست‌وجوی دقیق ریسک مبتنی بر UFO/OntoUML",
     "package_id": "P03",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 12,
     "acceptance_check": "Primary UFO/OntoUML risk prior art, including COVER and ROSE, is searched and compared at exact versions.",
     "artifact_destinations": [
@@ -149,8 +153,12 @@
       "conceptualization/comparison/",
       "evaluation/e10/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "literature/paper1-differentiation-synthesis-2026-10-04.md",
+      "conceptualization/comparison/paper1-claim-critical-comparison-2026-10-04.csv",
+      "evaluation/e10/controlled-distinction-study-v1/results.json"
+    ],
+    "verification_result": "PASS_FOR_CURRENT_COMPARISON_AND_DIAGNOSTIC"
   },
   {
     "id": "1.11",
@@ -360,7 +368,7 @@
     "group": "۳. پیشینه و استانداردها",
     "request": "تحلیل موضوعی Related Work",
     "package_id": "P03",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 12,
     "acceptance_check": "Related work has concise risk-ontology and standards themes plus justified additional themes.",
     "artifact_destinations": [
@@ -368,15 +376,19 @@
       "conceptualization/comparison/",
       "evaluation/e10/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "literature/paper1-differentiation-synthesis-2026-10-04.md",
+      "conceptualization/comparison/paper1-claim-critical-comparison-2026-10-04.csv",
+      "evaluation/e10/controlled-distinction-study-v1/results.json"
+    ],
+    "verification_result": "PASS_FOR_CURRENT_COMPARISON_AND_DIAGNOSTIC"
   },
   {
     "id": "3.2",
     "group": "۳. پیشینه و استانداردها",
     "request": "تفاوت مستند با پژوهش‌های پیشین",
     "package_id": "P03",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 12,
     "acceptance_check": "Each differentiation statement binds to inspected primary evidence and comparable scope.",
     "artifact_destinations": [
@@ -384,15 +396,19 @@
       "conceptualization/comparison/",
       "evaluation/e10/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "literature/paper1-differentiation-synthesis-2026-10-04.md",
+      "conceptualization/comparison/paper1-claim-critical-comparison-2026-10-04.csv",
+      "evaluation/e10/controlled-distinction-study-v1/results.json"
+    ],
+    "verification_result": "PASS_FOR_CURRENT_COMPARISON_AND_DIAGNOSTIC"
   },
   {
     "id": "3.3",
     "group": "۳. پیشینه و استانداردها",
     "request": "جدول مقایسه آنتولوژی‌ها",
     "package_id": "P03",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 12,
     "acceptance_check": "A comparison table uses consistent axes and distinguishes unknown from absent capability.",
     "artifact_destinations": [
@@ -400,8 +416,12 @@
       "conceptualization/comparison/",
       "evaluation/e10/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "literature/paper1-differentiation-synthesis-2026-10-04.md",
+      "conceptualization/comparison/paper1-claim-critical-comparison-2026-10-04.csv",
+      "evaluation/e10/controlled-distinction-study-v1/results.json"
+    ],
+    "verification_result": "PASS_FOR_CURRENT_COMPARISON_AND_DIAGNOSTIC"
   },
   {
     "id": "3.4",

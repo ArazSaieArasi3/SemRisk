@@ -1,3 +1,5 @@
+> Current checkpoint: [Run 2](run-2-report.md), 2/19 revision packages accepted at stated scope. Use [status](status.md) for current progress; older run reports are historical.
+
 # SemRisk author-revision execution register
 
 Snapshot: 2026-10-04. Master: [#8](https://github.com/ArazSaieArasi3/SemRisk/issues/8).

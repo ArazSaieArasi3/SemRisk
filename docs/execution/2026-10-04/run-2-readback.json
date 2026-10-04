@@ -1,0 +1,357 @@
+{
+  "run": 2,
+  "verified_commit": "3065489c6090d558e72923fd18c640bbe48261e3",
+  "pr": 128,
+  "blob_matches": [
+    {
+      "path": ".github/workflows/paper1-revision-distinction-study.yml",
+      "expected": "55ee2d8bcc89c3834fe55b3ebb4eccc97a47d7c2",
+      "actual": "55ee2d8bcc89c3834fe55b3ebb4eccc97a47d7c2"
+    },
+    {
+      "path": "README.md",
+      "expected": "e6c73947e429776c87b64336906e5314d5068f02",
+      "actual": "e6c73947e429776c87b64336906e5314d5068f02"
+    },
+    {
+      "path": "case/pharma/literature-dataset-data-dictionary-v1.0.csv",
+      "expected": "25bdb791bad46348bbd6c6570295d6bee7eec7f2",
+      "actual": "25bdb791bad46348bbd6c6570295d6bee7eec7f2"
+    },
+    {
+      "path": "case/pharma/literature-dataset-protocol-v1.0.md",
+      "expected": "cda665647de98df38a35cf1e1728cd664b49cf60",
+      "actual": "cda665647de98df38a35cf1e1728cd664b49cf60"
+    },
+    {
+      "path": "case/pharma/literature-risk-statements-template.csv",
+      "expected": "7135314603dc87f3db5e2d293ef51a48ee6fffc4",
+      "actual": "7135314603dc87f3db5e2d293ef51a48ee6fffc4"
+    },
+    {
+      "path": "conceptualization/comparison/differentiator-claim-confidence-register.csv",
+      "expected": "42b702931f9e93e21ccb2a6e9ef1cbe592cc002c",
+      "actual": "42b702931f9e93e21ccb2a6e9ef1cbe592cc002c"
+    },
+    {
+      "path": "conceptualization/comparison/paper1-claim-critical-comparison-2026-10-04.csv",
+      "expected": "5ecc57bb85ee2f2a4183222b898aa19952c3fa8c",
+      "actual": "5ecc57bb85ee2f2a4183222b898aa19952c3fa8c"
+    },
+    {
+      "path": "conceptualization/comparison/paper1-compact-comparison-table.csv",
+      "expected": "ce7da7eb38955e17fba0513f3ffa06cbe7e1064f",
+      "actual": "ce7da7eb38955e17fba0513f3ffa06cbe7e1064f"
+    },
+    {
+      "path": "docs/execution/2026-10-04/README.md",
+      "expected": "7a53303cc2b8b0dd646d1e9146d7855a46ed8404",
+      "actual": "7a53303cc2b8b0dd646d1e9146d7855a46ed8404"
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P03.md",
+      "expected": "bac6b762ee50ce804df0bd8762a2d7befec5a4df",
+      "actual": "bac6b762ee50ce804df0bd8762a2d7befec5a4df"
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P04.md",
+      "expected": "47a88a1ee8c51bcee185600f34395b341c1e56e0",
+      "actual": "47a88a1ee8c51bcee185600f34395b341c1e56e0"
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P05.md",
+      "expected": "206249132ec474e723a4a4eca099c1a6ad2f4184",
+      "actual": "206249132ec474e723a4a4eca099c1a6ad2f4184"
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P06.md",
+      "expected": "bef635a376336f136ecbb032f6f15cb7cd33ec79",
+      "actual": "bef635a376336f136ecbb032f6f15cb7cd33ec79"
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P09.md",
+      "expected": "7418a679e370a3aa9d6e9a0ee951da1f04f2be34",
+      "actual": "7418a679e370a3aa9d6e9a0ee951da1f04f2be34"
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P12.md",
+      "expected": "b493ef9afa5ac4482bb2f5489cb448de594bf56c",
+      "actual": "b493ef9afa5ac4482bb2f5489cb448de594bf56c"
+    },
+    {
+      "path": "docs/execution/2026-10-04/requirements.csv",
+      "expected": "cfdbdb3c7a249950bbe2a4d179947d5122f7587c",
+      "actual": "cfdbdb3c7a249950bbe2a4d179947d5122f7587c"
+    },
+    {
+      "path": "docs/execution/2026-10-04/requirements.json",
+      "expected": "1edcf50a26d08207926ad46dd28995ca79404d2a",
+      "actual": "1edcf50a26d08207926ad46dd28995ca79404d2a"
+    },
+    {
+      "path": "docs/execution/2026-10-04/run-2-local-validation.json",
+      "expected": "661b3da1f0f6711361417d3f802bf744d6a4a3a0",
+      "actual": "661b3da1f0f6711361417d3f802bf744d6a4a3a0"
+    },
+    {
+      "path": "docs/execution/2026-10-04/run-2-report.md",
+      "expected": "e28614f6987a6bc49718e17bba733ec43eeb430b",
+      "actual": "e28614f6987a6bc49718e17bba733ec43eeb430b"
+    },
+    {
+      "path": "docs/execution/2026-10-04/status.md",
+      "expected": "b8cbbbacc77a2437e7c642c08d2cf0764b8867ff",
+      "actual": "b8cbbbacc77a2437e7c642c08d2cf0764b8867ff"
+    },
+    {
+      "path": "docs/execution/2026-10-04/work-packages.json",
+      "expected": "43d5cb4d53dd471ca405d91fc05451ff49b91aeb",
+      "actual": "43d5cb4d53dd471ca405d91fc05451ff49b91aeb"
+    },
+    {
+      "path": "evaluation/e10/controlled-distinction-study-v1/README.md",
+      "expected": "2ccbcd01f51236e5e292811b156fe96463d568df",
+      "actual": "2ccbcd01f51236e5e292811b156fe96463d568df"
+    },
+    {
+      "path": "evaluation/e10/controlled-distinction-study-v1/protocol.json",
+      "expected": "e1449f1356fc551c14ed2d85fc83a1506ce42927",
+      "actual": "e1449f1356fc551c14ed2d85fc83a1506ce42927"
+    },
+    {
+      "path": "evaluation/e10/controlled-distinction-study-v1/results.json",
+      "expected": "4584fd9d7962f05171c20b797b274b64e2c72f1b",
+      "actual": "4584fd9d7962f05171c20b797b274b64e2c72f1b"
+    },
+    {
+      "path": "evaluation/expert/expert-responses-v1.1-template.csv",
+      "expected": "890e7ddd9a1e31abff916dde34a905c70bac1ed1",
+      "actual": "890e7ddd9a1e31abff916dde34a905c70bac1ed1"
+    },
+    {
+      "path": "evaluation/expert/expert-review-instrument-v1.1-light.csv",
+      "expected": "d4cd13050ba9a1dfacf53acf9ff42e2c16cf2bf0",
+      "actual": "d4cd13050ba9a1dfacf53acf9ff42e2c16cf2bf0"
+    },
+    {
+      "path": "evaluation/expert/expert-review-protocol-v1.1-light.md",
+      "expected": "fedb70ac33b448c65baa59316eb2c9d843f4e65d",
+      "actual": "fedb70ac33b448c65baa59316eb2c9d843f4e65d"
+    },
+    {
+      "path": "evaluation/expert/expert-review-v1-to-v1.1-crosswalk.csv",
+      "expected": "9008b398e35a861efa584574f32359611b2970f9",
+      "actual": "9008b398e35a861efa584574f32359611b2970f9"
+    },
+    {
+      "path": "evaluation/standards/claim-strength-register-2026-10-04.csv",
+      "expected": "fa9f68b487c1d4b4ff277e3e439256a045a92577",
+      "actual": "fa9f68b487c1d4b4ff277e3e439256a045a92577"
+    },
+    {
+      "path": "evaluation/standards/nist-schema-audit-2026-10-04/RDR-normalized-retrieval.json",
+      "expected": "3cb6335729c8c45b1f71e219a9fe8a2b657d4bbb",
+      "actual": "3cb6335729c8c45b1f71e219a9fe8a2b657d4bbb"
+    },
+    {
+      "path": "evaluation/standards/nist-schema-audit-2026-10-04/README.md",
+      "expected": "c938338d9f7a4939135137d35649d03e1873299b",
+      "actual": "c938338d9f7a4939135137d35649d03e1873299b"
+    },
+    {
+      "path": "evaluation/standards/nist-schema-audit-2026-10-04/RR-normalized-retrieval.json",
+      "expected": "f469d90170415a1b6584fb88023189ae8bbd93e3",
+      "actual": "f469d90170415a1b6584fb88023189ae8bbd93e3"
+    },
+    {
+      "path": "evaluation/standards/nist-schema-audit-2026-10-04/field-dispositions.csv",
+      "expected": "acfe6e61bd21861abb281d25364b0569e5a14738",
+      "actual": "acfe6e61bd21861abb281d25364b0569e5a14738"
+    },
+    {
+      "path": "evaluation/standards/p04-delta-and-remaining-work-2026-10-04.md",
+      "expected": "62792bd7e9982ea7a5f0dedc250d84cbc5a90bd2",
+      "actual": "62792bd7e9982ea7a5f0dedc250d84cbc5a90bd2"
+    },
+    {
+      "path": "literature/paper1-differentiation-synthesis-2026-10-04.md",
+      "expected": "df5c82d99f1a0d4f3135385b62ce7be0ed237280",
+      "actual": "df5c82d99f1a0d4f3135385b62ce7be0ed237280"
+    },
+    {
+      "path": "tools/check_revision_source_audit.py",
+      "expected": "714e045499929617e9d2d87774f265f4a597ffdb",
+      "actual": "714e045499929617e9d2d87774f265f4a597ffdb"
+    },
+    {
+      "path": "tools/run_distinction_study.py",
+      "expected": "0bcc3bba1b91c122bb2fca47a8778b4f66de7e39",
+      "actual": "0bcc3bba1b91c122bb2fca47a8778b4f66de7e39"
+    }
+  ],
+  "exact_content_readbacks": [
+    {
+      "path": "evaluation/e10/controlled-distinction-study-v1/protocol.json",
+      "exact_match": true
+    },
+    {
+      "path": "evaluation/e10/controlled-distinction-study-v1/results.json",
+      "exact_match": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/run-2-report.md",
+      "exact_match": true
+    },
+    {
+      "path": "evaluation/standards/nist-schema-audit-2026-10-04/field-dispositions.csv",
+      "exact_match": true
+    },
+    {
+      "path": "evaluation/expert/expert-review-instrument-v1.1-light.csv",
+      "exact_match": true
+    }
+  ],
+  "issue_readbacks": [
+    {
+      "issue": 4,
+      "body_matches": true,
+      "state": "open"
+    },
+    {
+      "issue": 8,
+      "body_matches": true,
+      "state": "open"
+    },
+    {
+      "issue": 12,
+      "body_matches": true,
+      "state": "open"
+    },
+    {
+      "issue": 13,
+      "body_matches": true,
+      "state": "open"
+    },
+    {
+      "issue": 15,
+      "body_matches": true,
+      "state": "open"
+    },
+    {
+      "issue": 17,
+      "body_matches": true,
+      "state": "open"
+    },
+    {
+      "issue": 31,
+      "body_matches": true,
+      "state": "open"
+    },
+    {
+      "issue": 51,
+      "body_matches": true,
+      "state": "open"
+    },
+    {
+      "issue": 53,
+      "body_matches": true,
+      "state": "open"
+    },
+    {
+      "issue": 112,
+      "body_matches": true,
+      "state": "open"
+    },
+    {
+      "issue": 123,
+      "body_matches": true,
+      "state": "open"
+    },
+    {
+      "issue": 125,
+      "body_matches": true,
+      "state": "open"
+    }
+  ],
+  "ci": [
+    {
+      "id": 111516711536,
+      "name": "postgres-relational-twin",
+      "head_sha": "3065489c6090d558e72923fd18c640bbe48261e3",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37229738490/job/111516711536"
+    },
+    {
+      "id": 111516711299,
+      "name": "bounded-evidence-checks",
+      "head_sha": "3065489c6090d558e72923fd18c640bbe48261e3",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37229738498/job/111516711299"
+    },
+    {
+      "id": 111516711267,
+      "name": "locator-integrity",
+      "head_sha": "3065489c6090d558e72923fd18c640bbe48261e3",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37229738495/job/111516711267"
+    },
+    {
+      "id": 111516711093,
+      "name": "semantic-validation",
+      "head_sha": "3065489c6090d558e72923fd18c640bbe48261e3",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37229738480/job/111516711093"
+    },
+    {
+      "id": 111516707243,
+      "name": "locator-integrity",
+      "head_sha": "3065489c6090d558e72923fd18c640bbe48261e3",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37229736959/job/111516707243"
+    },
+    {
+      "id": 111516706941,
+      "name": "bounded-evidence-checks",
+      "head_sha": "3065489c6090d558e72923fd18c640bbe48261e3",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37229737014/job/111516706941"
+    },
+    {
+      "id": 111516706594,
+      "name": "postgres-relational-twin",
+      "head_sha": "3065489c6090d558e72923fd18c640bbe48261e3",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37229736914/job/111516706594"
+    },
+    {
+      "id": 111516706589,
+      "name": "semantic-validation",
+      "head_sha": "3065489c6090d558e72923fd18c640bbe48261e3",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37229736912/job/111516706589"
+    }
+  ],
+  "accepted_packages": [
+    "P02",
+    "P03"
+  ],
+  "package_denominator": 19,
+  "run_checklist": {
+    "completed": 8,
+    "total": 8,
+    "meaning": "Seven documented substantive deliverables plus verified commit/issue readback. Not overall manuscript readiness."
+  },
+  "limitations": [
+    "P04 clause/private actual-use/manuscript checks remain.",
+    "Dataset extraction and expert responses not complete.",
+    "One synthetic-fixture diagnostic; no peer superiority."
+  ]
+}

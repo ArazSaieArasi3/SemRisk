@@ -1,0 +1,12 @@
+source,edition_status,official_locator,inspection_depth,allowed_claim
+ISO 31000,2018; reviewed 2023,https://www.iso.org/standard/65694.html,Official metadata; full clause extraction not rerun,Guidance influence; no certification or full conformance
+ISO 31073,2022,https://www.iso.org/standard/79637.html,Official metadata; selected vocabulary needs clause binding,Terminology influence only at current evidence depth
+IEC 31010,2019 edition 2,https://webstore.iec.ch/en/publication/59809,Official edition record,Assessment-technique guidance; no exhaustive technique coverage
+NIST IR 8286,Rev.1 final 2025-12-18; companion RR v2/RDR v3,https://csrc.nist.gov/pubs/ir/8286/r1/final,Full 45-property inventory plus required-only gap in this run,Selected field-level alignment; no cybersecurity-compliance claim
+COSO ERM,"Integrating with Strategy and Performance, 2017",https://www.coso.org/enterprise-risk-management,Official overview; year retained from existing bibliography,Framework influence; principle-by-principle coverage not asserted
+OCEG GRC Capability Model,3.5,https://www.oceg.org/grc-standards/,Official public overview; full model access not inspected in this run,GRAC integration roadmap; practice-level alignment not asserted
+ISACA Risk IT Framework,"2nd edition, 2020",https://www.isaca.org/about-us/newsroom/press-releases/2020/isacas-risk-it-framework-offers-a-structured-methodology,Official release confirms edition; guide edition must not be conflated,Framework influence; full section-level mapping remains
+ICH Q9(R1),"Step 4, 2023-01-18; Step 4 file 2023-01-26",https://database.ich.org/sites/default/files/ICH_Q9%28R1%29_Guideline_Step4_2023_0126_0.pdf,Reuse selected extraction in literature/standards/ich-q9-r1-selected-extraction-2026-10-02.csv,Selected pharmaceutical QRM alignment; not regulatory approval
+ISO 14971,"2019, comparator context only",https://www.iso.org/standard/72704.html,Retained comparator source; edition not rechecked this run,Medical-device RISKMAN context; no SemRisk coverage claim
+Open FAIR,Exact edition unasserted; out of current claim scope,https://www.opengroup.org/openfair,Access unavailable in current source pass,Do not cite exact edition or claim conformance
+TOGAF / ArchiMate,"TOGAF 10 / ArchiMate 3.2 retained baseline, reverify exact cited edition",https://www.opengroup.org/archimate-forum/archimate-overview,Exact standard sections not inspected in current pass,EA context only; not complete formal mapping

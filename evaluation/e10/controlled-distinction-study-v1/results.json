@@ -1,0 +1,615 @@
+{
+  "study_version": "1.0",
+  "baseline_commit": "1b0b96456845ce73e8deccc832ca9aeee81cd799",
+  "fixture_sha256": "2f891bd13042385a03dc3d2ee52078174ee15bb8cc8ee36fa3dd377054703204",
+  "protocol_sha256": "b68aa80b811588829a13853fd24e9116e738c7614043da068ebc692f2904eec8",
+  "runner_sha256": "c18a429cfd67fa95644b9cd71f74b44dd6dff218dd3c1de3d3d185492e0c5764",
+  "python": "3.12.14",
+  "rdflib": "7.6.0",
+  "fixture_triples": 106,
+  "removed_triples": {
+    "without_state_links": 4,
+    "without_history_links": 2,
+    "without_evidence_qualification": 2
+  },
+  "diagnostic_expectations_met": 20,
+  "diagnostic_expectations_total": 20,
+  "outcomes": [
+    {
+      "variant": "full",
+      "task": "T1",
+      "actual_answers": [
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-post"
+        ],
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-pre"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-open"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-treated"
+        ]
+      ],
+      "expected_complete_answers": [
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-post"
+        ],
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-pre"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-open"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-treated"
+        ]
+      ],
+      "answer_preserved": true,
+      "expected_preservation": true,
+      "diagnostic_expectation_met": true
+    },
+    {
+      "variant": "full",
+      "task": "T2",
+      "actual_answers": [
+        [
+          "urn:semrisk:scenario:p1:e2e:assessment-post",
+          "urn:semrisk:scenario:p1:e2e:assessment-pre",
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:scenario:p1:e2e:result-inherent"
+        ]
+      ],
+      "expected_complete_answers": [
+        [
+          "urn:semrisk:scenario:p1:e2e:assessment-post",
+          "urn:semrisk:scenario:p1:e2e:assessment-pre",
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:scenario:p1:e2e:result-inherent"
+        ]
+      ],
+      "answer_preserved": true,
+      "expected_preservation": true,
+      "diagnostic_expectation_met": true
+    },
+    {
+      "variant": "full",
+      "task": "T3",
+      "actual_answers": [
+        [
+          "urn:semrisk:scenario:p1:e2e:result-inherent",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ],
+        [
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ]
+      ],
+      "expected_complete_answers": [
+        [
+          "urn:semrisk:scenario:p1:e2e:result-inherent",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ],
+        [
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ]
+      ],
+      "answer_preserved": true,
+      "expected_preservation": true,
+      "diagnostic_expectation_met": true
+    },
+    {
+      "variant": "full",
+      "task": "T4",
+      "actual_answers": [
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0010"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0011"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0032"
+        ]
+      ],
+      "expected_complete_answers": [
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0010"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0011"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0032"
+        ]
+      ],
+      "answer_preserved": true,
+      "expected_preservation": true,
+      "diagnostic_expectation_met": true
+    },
+    {
+      "variant": "without_state_links",
+      "task": "T1",
+      "actual_answers": [],
+      "expected_complete_answers": [
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-post"
+        ],
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-pre"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-open"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-treated"
+        ]
+      ],
+      "answer_preserved": false,
+      "expected_preservation": false,
+      "diagnostic_expectation_met": true
+    },
+    {
+      "variant": "without_state_links",
+      "task": "T2",
+      "actual_answers": [
+        [
+          "urn:semrisk:scenario:p1:e2e:assessment-post",
+          "urn:semrisk:scenario:p1:e2e:assessment-pre",
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:scenario:p1:e2e:result-inherent"
+        ]
+      ],
+      "expected_complete_answers": [
+        [
+          "urn:semrisk:scenario:p1:e2e:assessment-post",
+          "urn:semrisk:scenario:p1:e2e:assessment-pre",
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:scenario:p1:e2e:result-inherent"
+        ]
+      ],
+      "answer_preserved": true,
+      "expected_preservation": true,
+      "diagnostic_expectation_met": true
+    },
+    {
+      "variant": "without_state_links",
+      "task": "T3",
+      "actual_answers": [
+        [
+          "urn:semrisk:scenario:p1:e2e:result-inherent",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ],
+        [
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ]
+      ],
+      "expected_complete_answers": [
+        [
+          "urn:semrisk:scenario:p1:e2e:result-inherent",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ],
+        [
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ]
+      ],
+      "answer_preserved": true,
+      "expected_preservation": true,
+      "diagnostic_expectation_met": true
+    },
+    {
+      "variant": "without_state_links",
+      "task": "T4",
+      "actual_answers": [
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0010"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0011"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0032"
+        ]
+      ],
+      "expected_complete_answers": [
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0010"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0011"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0032"
+        ]
+      ],
+      "answer_preserved": true,
+      "expected_preservation": true,
+      "diagnostic_expectation_met": true
+    },
+    {
+      "variant": "without_history_links",
+      "task": "T1",
+      "actual_answers": [
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-post"
+        ],
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-pre"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-open"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-treated"
+        ]
+      ],
+      "expected_complete_answers": [
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-post"
+        ],
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-pre"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-open"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-treated"
+        ]
+      ],
+      "answer_preserved": true,
+      "expected_preservation": true,
+      "diagnostic_expectation_met": true
+    },
+    {
+      "variant": "without_history_links",
+      "task": "T2",
+      "actual_answers": [],
+      "expected_complete_answers": [
+        [
+          "urn:semrisk:scenario:p1:e2e:assessment-post",
+          "urn:semrisk:scenario:p1:e2e:assessment-pre",
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:scenario:p1:e2e:result-inherent"
+        ]
+      ],
+      "answer_preserved": false,
+      "expected_preservation": false,
+      "diagnostic_expectation_met": true
+    },
+    {
+      "variant": "without_history_links",
+      "task": "T3",
+      "actual_answers": [
+        [
+          "urn:semrisk:scenario:p1:e2e:result-inherent",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ],
+        [
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ]
+      ],
+      "expected_complete_answers": [
+        [
+          "urn:semrisk:scenario:p1:e2e:result-inherent",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ],
+        [
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ]
+      ],
+      "answer_preserved": true,
+      "expected_preservation": true,
+      "diagnostic_expectation_met": true
+    },
+    {
+      "variant": "without_history_links",
+      "task": "T4",
+      "actual_answers": [
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0010"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0011"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0032"
+        ]
+      ],
+      "expected_complete_answers": [
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0010"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0011"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0032"
+        ]
+      ],
+      "answer_preserved": true,
+      "expected_preservation": true,
+      "diagnostic_expectation_met": true
+    },
+    {
+      "variant": "without_evidence_qualification",
+      "task": "T1",
+      "actual_answers": [
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-post"
+        ],
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-pre"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-open"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-treated"
+        ]
+      ],
+      "expected_complete_answers": [
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-post"
+        ],
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-pre"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-open"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-treated"
+        ]
+      ],
+      "answer_preserved": true,
+      "expected_preservation": true,
+      "diagnostic_expectation_met": true
+    },
+    {
+      "variant": "without_evidence_qualification",
+      "task": "T2",
+      "actual_answers": [
+        [
+          "urn:semrisk:scenario:p1:e2e:assessment-post",
+          "urn:semrisk:scenario:p1:e2e:assessment-pre",
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:scenario:p1:e2e:result-inherent"
+        ]
+      ],
+      "expected_complete_answers": [
+        [
+          "urn:semrisk:scenario:p1:e2e:assessment-post",
+          "urn:semrisk:scenario:p1:e2e:assessment-pre",
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:scenario:p1:e2e:result-inherent"
+        ]
+      ],
+      "answer_preserved": true,
+      "expected_preservation": true,
+      "diagnostic_expectation_met": true
+    },
+    {
+      "variant": "without_evidence_qualification",
+      "task": "T3",
+      "actual_answers": [],
+      "expected_complete_answers": [
+        [
+          "urn:semrisk:scenario:p1:e2e:result-inherent",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ],
+        [
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ]
+      ],
+      "answer_preserved": false,
+      "expected_preservation": false,
+      "diagnostic_expectation_met": true
+    },
+    {
+      "variant": "without_evidence_qualification",
+      "task": "T4",
+      "actual_answers": [
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0010"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0011"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0032"
+        ]
+      ],
+      "expected_complete_answers": [
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0010"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0011"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0032"
+        ]
+      ],
+      "answer_preserved": true,
+      "expected_preservation": true,
+      "diagnostic_expectation_met": true
+    },
+    {
+      "variant": "restored",
+      "task": "T1",
+      "actual_answers": [
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-post"
+        ],
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-pre"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-open"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-treated"
+        ]
+      ],
+      "expected_complete_answers": [
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-post"
+        ],
+        [
+          "risk",
+          "urn:semrisk:scenario:p1:e2e:risk-state-pre"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-open"
+        ],
+        [
+          "workflow",
+          "urn:semrisk:scenario:p1:e2e:workflow-treated"
+        ]
+      ],
+      "answer_preserved": true,
+      "expected_preservation": true,
+      "diagnostic_expectation_met": true
+    },
+    {
+      "variant": "restored",
+      "task": "T2",
+      "actual_answers": [
+        [
+          "urn:semrisk:scenario:p1:e2e:assessment-post",
+          "urn:semrisk:scenario:p1:e2e:assessment-pre",
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:scenario:p1:e2e:result-inherent"
+        ]
+      ],
+      "expected_complete_answers": [
+        [
+          "urn:semrisk:scenario:p1:e2e:assessment-post",
+          "urn:semrisk:scenario:p1:e2e:assessment-pre",
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:scenario:p1:e2e:result-inherent"
+        ]
+      ],
+      "answer_preserved": true,
+      "expected_preservation": true,
+      "diagnostic_expectation_met": true
+    },
+    {
+      "variant": "restored",
+      "task": "T3",
+      "actual_answers": [
+        [
+          "urn:semrisk:scenario:p1:e2e:result-inherent",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ],
+        [
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ]
+      ],
+      "expected_complete_answers": [
+        [
+          "urn:semrisk:scenario:p1:e2e:result-inherent",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ],
+        [
+          "urn:semrisk:scenario:p1:e2e:result-residual",
+          "urn:semrisk:case:pharma:v1:evidence-ds003",
+          "urn:semrisk:scenario:p1:e2e:evidence-support-role-context"
+        ]
+      ],
+      "answer_preserved": true,
+      "expected_preservation": true,
+      "diagnostic_expectation_met": true
+    },
+    {
+      "variant": "restored",
+      "task": "T4",
+      "actual_answers": [
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0010"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0011"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0032"
+        ]
+      ],
+      "expected_complete_answers": [
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0010"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0011"
+        ],
+        [
+          "urn:cm-pharme:v1.0.0:CMPE-C0032"
+        ]
+      ],
+      "answer_preserved": true,
+      "expected_preservation": true,
+      "diagnostic_expectation_met": true
+    }
+  ],
+  "claim_boundary": "Single synthetic fixture, query sensitivity only. No peer benchmark, OWL necessity, causal effect or expert validation."
+}
