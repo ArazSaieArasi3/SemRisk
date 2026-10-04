@@ -1,5 +1,7 @@
 # Current revision status — Run 2, 2026-10-04
 
+Publication checkpoint: **8/8 Run 2 deliverables verified**, with 37/37 changed-file blob hashes, five exact content readbacks, 12/12 issue-body readbacks and all four CI job types passing on commit `3065489c6090d558e72923fd18c640bbe48261e3` in PR #128. [Readback evidence](run-2-readback.json). The evidence file binds that commit; this checkpoint addition does not change scientific artifacts.
+
 Current stage: **scientific differentiation/source audit completed at bounded scope; core revision next**. See [Run 2 evidence and limits](run-2-report.md).
 
 - Accepted revision packages: **2/19 = 10.5%** — P02 scope contract and P03 comparison/diagnostic. This is not a scientific-quality score.
