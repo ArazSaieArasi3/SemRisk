@@ -1,0 +1,146 @@
+[
+  {
+    "statement_id": "PRS-0001",
+    "topic_group": "foreign-exchange",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0002",
+    "topic_group": "payments",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0003",
+    "topic_group": "pricing-policy",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0004",
+    "topic_group": "material-quality",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0005",
+    "topic_group": "information-flow",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0006",
+    "topic_group": "contamination",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0007",
+    "topic_group": "merger-acquisition",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0008",
+    "topic_group": "management-attention",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0009",
+    "topic_group": "transport-quality",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0010",
+    "topic_group": "gmp",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0011",
+    "topic_group": "waste",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0012",
+    "topic_group": "information-flow",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0013",
+    "topic_group": "foreign-exchange",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0014",
+    "topic_group": "payments",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0015",
+    "topic_group": "interest-rate",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0016",
+    "topic_group": "payments",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0017",
+    "topic_group": "availability",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0018",
+    "topic_group": "pricing-policy",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0019",
+    "topic_group": "notification",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0020",
+    "topic_group": "information-flow",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0021",
+    "topic_group": "backorders",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0022",
+    "topic_group": "research-development",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0023",
+    "topic_group": "leverage",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  },
+  {
+    "statement_id": "PRS-0024",
+    "topic_group": "leverage",
+    "decision": "retain_source_local",
+    "rationale": "Unique source-locator and proposition. Topic similarity is not duplicate observation or same risk identity; no cross-source pooled frequency."
+  }
+]

@@ -1,0 +1,386 @@
+{
+  "run": 9,
+  "date": "2026-10-05",
+  "baseline": "231a82cde3a43ccbafc06afa744ea9df35af7c26",
+  "tested_implementation": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+  "pull_request": 138,
+  "implementation_file_hashes": [
+    {
+      "path": "README.md",
+      "expected_git_blob": "aca7b7c19eb490955de98938fd6e7e64cea5c8ca",
+      "matched": true
+    },
+    {
+      "path": "tools/check_literature_postgres.py",
+      "expected_git_blob": "8c199a16545913f4a61d0bcdd11fea17d952ed19",
+      "matched": true
+    },
+    {
+      "path": "tools/build_pharma_literature_pilot.py",
+      "expected_git_blob": "fc99faa4b8bdac52336058a6190a73fb84c47f50",
+      "matched": true
+    },
+    {
+      "path": "tools/build_literature_review.mjs",
+      "expected_git_blob": "9c90b34afd3b2de50a4d32877a63214b378e5fef",
+      "matched": true
+    },
+    {
+      "path": "tools/check_pharma_literature_pilot.py",
+      "expected_git_blob": "ae79ca87fa4d4724c048240ab4d870cbd5b985f2",
+      "matched": true
+    },
+    {
+      "path": "relational/scripts/literature_io.py",
+      "expected_git_blob": "afca73aa62626be3e59ecd1298be70193f3290c2",
+      "matched": true
+    },
+    {
+      "path": ".github/workflows/paper1-literature-pilot.yml",
+      "expected_git_blob": "566d79f731d5259f0d813d57c05d715fc9e3b4bd",
+      "matched": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/bibliography.md",
+      "expected_git_blob": "1687e8cfb68ab2fab1a22c4405a4e0a4b44ee8a9",
+      "matched": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/statements.ttl",
+      "expected_git_blob": "ed87bdb3591d205d6f2327ca1b120050090c9a55",
+      "matched": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/statements.json",
+      "expected_git_blob": "eae04924f44e1f580aef9a4665d663cf48202665",
+      "matched": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/source-freeze.json",
+      "expected_git_blob": "fac5246d56423407954656c12def3bfa2d8d4845",
+      "matched": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/search-screening.json",
+      "expected_git_blob": "a04301c881d8f96513ec8716d170c75579e2e8bc",
+      "matched": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/manifest.json",
+      "expected_git_blob": "c0423f427a40313772fd091853624bba0ddb8391",
+      "matched": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/metrics.json",
+      "expected_git_blob": "8e3f112d6835b943a41794e4639739a126fc0c9d",
+      "matched": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/dataset-dispositions.json",
+      "expected_git_blob": "82e672dd3b474bcb1aa78533a8cb2a3497586481",
+      "matched": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/mappings.json",
+      "expected_git_blob": "2d6057fd74efbd84c4d061b83437a8c058d99eaa",
+      "matched": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/statements.csv",
+      "expected_git_blob": "3b7628c6b8913f484174656f0c2ea04ee5b688d8",
+      "matched": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/acceptance-contract.md",
+      "expected_git_blob": "e7d267f9b286ecb556fd65fd78822006d3f6374b",
+      "matched": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/dedup-decisions.json",
+      "expected_git_blob": "2cc2ae5a72ab48424d742c5bbc8dcf2bb7d3b938",
+      "matched": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/README.md",
+      "expected_git_blob": "31da38c773ee349a03c4b9d20a45b13a1f9a8855",
+      "matched": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/sources.csv",
+      "expected_git_blob": "058a33627e2aa56485b4459490dcc3701860d8f0",
+      "matched": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/mappings.csv",
+      "expected_git_blob": "52e9bb0121d46bbbfc9ea56539c087f60ee8ff55",
+      "matched": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/codebook.md",
+      "expected_git_blob": "644445b2e2d405faee2c38df8e1b5d995705ddb9",
+      "matched": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/sources.json",
+      "expected_git_blob": "9808ad3c1246c0d8708896849276e7e123ed6f9d",
+      "matched": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/validation-results.json",
+      "expected_git_blob": "17a67ccc676621aa431405bda1d0ee53fb8dd5c0",
+      "matched": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/status.md",
+      "expected_git_blob": "1dd107c6231e47c0cd597589ba233fb5eefb9d2e",
+      "matched": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/work-packages.json",
+      "expected_git_blob": "900505530fdcc0f2e3ab8380a30739a25c6a02bf",
+      "matched": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/requirements.csv",
+      "expected_git_blob": "c811ca4c8e1ced191be2899d502a7b875d8fa323",
+      "matched": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/run-9-report.md",
+      "expected_git_blob": "13add7c1cb41b7ad8b2bf74e5d53243335db638b",
+      "matched": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/requirements.json",
+      "expected_git_blob": "7a5e312848da2fceac5d6ec1ea09755309fd4782",
+      "matched": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/README.md",
+      "expected_git_blob": "84f29c465a6bd6b47413cd372cf61e4605da4235",
+      "matched": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P14.md",
+      "expected_git_blob": "e892a062b2970f94c27433ea4ce1b327c0409b9d",
+      "matched": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P09.md",
+      "expected_git_blob": "c0865094376ebb39e9af74d6ef8567d4a8c3a4ac",
+      "matched": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P18.md",
+      "expected_git_blob": "2b5752af03551234d6982fdb85d3bc87b160ae13",
+      "matched": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P15.md",
+      "expected_git_blob": "fec189a3999251c7c71ff780a9bb50cd8189d7f6",
+      "matched": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P10.md",
+      "expected_git_blob": "e373f32eb312e364311111b2179bbfaccb503a0f",
+      "matched": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P13.md",
+      "expected_git_blob": "1ca332027175fb128fcc016f30344fa9f2873095",
+      "matched": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P12.md",
+      "expected_git_blob": "3b4bf1c7309cfc00759dc7d7a403f5036a166cea",
+      "matched": true
+    },
+    {
+      "path": "outputs/semrisk-run9/pharma-literature-pilot-v0.1.0.xlsx",
+      "expected_git_blob": "9213f0442b24371d610d6457765be6526e2433a5",
+      "matched": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/workbook-review.json",
+      "expected_git_blob": "6ea2ef5a37263cf4c5f8de546f1c3b10de9be970",
+      "matched": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/run-9-control-validation.json",
+      "expected_git_blob": "759e06213e11f620b39b003de7f81a6f4c679588",
+      "matched": true
+    }
+  ],
+  "exact_content_readbacks": [
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/statements.json",
+      "exact": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/mappings.json",
+      "exact": true
+    },
+    {
+      "path": "case/pharma/literature-pilot-v0.1.0/source-freeze.json",
+      "exact": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/requirements.json",
+      "exact": true
+    },
+    {
+      "path": "relational/scripts/literature_io.py",
+      "exact": true
+    }
+  ],
+  "issue_body_readbacks": [
+    {
+      "issue": 8,
+      "exact_body_match": true,
+      "state": "open"
+    },
+    {
+      "issue": 15,
+      "exact_body_match": true,
+      "state": "open"
+    },
+    {
+      "issue": 33,
+      "exact_body_match": true,
+      "state": "open"
+    },
+    {
+      "issue": 34,
+      "exact_body_match": true,
+      "state": "open"
+    },
+    {
+      "issue": 51,
+      "exact_body_match": true,
+      "state": "open"
+    },
+    {
+      "issue": 56,
+      "exact_body_match": true,
+      "state": "open"
+    },
+    {
+      "issue": 112,
+      "exact_body_match": true,
+      "state": "open"
+    },
+    {
+      "issue": 113,
+      "exact_body_match": true,
+      "state": "open"
+    },
+    {
+      "issue": 125,
+      "exact_body_match": true,
+      "state": "open"
+    }
+  ],
+  "historical_scientific_artifacts": {
+    "files": 241,
+    "all_unchanged": true
+  },
+  "checks": [
+    {
+      "id": 111829562909,
+      "name": "core-contract",
+      "head_sha": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37329752491/job/111829562909"
+    },
+    {
+      "id": 111829562729,
+      "name": "literature-dataset-and-staging",
+      "head_sha": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37329752443/job/111829562729"
+    },
+    {
+      "id": 111829562317,
+      "name": "postgres-relational-twin",
+      "head_sha": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37329752499/job/111829562317"
+    },
+    {
+      "id": 111829562297,
+      "name": "qualified-context",
+      "head_sha": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37329752452/job/111829562297"
+    },
+    {
+      "id": 111829562198,
+      "name": "bounded-evidence-checks",
+      "head_sha": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37329752380/job/111829562198"
+    },
+    {
+      "id": 111829562068,
+      "name": "semantic-validation",
+      "head_sha": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37329752425/job/111829562068"
+    },
+    {
+      "id": 111829497134,
+      "name": "literature-dataset-and-staging",
+      "head_sha": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37329732246/job/111829497134"
+    },
+    {
+      "id": 111829492161,
+      "name": "semantic-validation",
+      "head_sha": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37329731956/job/111829492161"
+    },
+    {
+      "id": 111829491345,
+      "name": "postgres-relational-twin",
+      "head_sha": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37329731898/job/111829491345"
+    }
+  ],
+  "unique_job_types": [
+    "core-contract",
+    "literature-dataset-and-staging",
+    "postgres-relational-twin",
+    "qualified-context",
+    "bounded-evidence-checks",
+    "semantic-validation"
+  ],
+  "counts": {
+    "accepted_packages": 3,
+    "total_packages": 19,
+    "bounded_requirements": 28,
+    "total_requirements": 90,
+    "p09_verified_requirements": 6,
+    "p09_total_requirements": 10,
+    "newly_evidenced_requirements": 6,
+    "historical_register_reconciliations": 4,
+    "open_issues": 33
+  },
+  "publication_status": "Implementation readback and CI verified; this checkpoint adds observed evidence. Final head/merge verified separately through PR #138.",
+  "scientific_limits": [
+    "No independent expert or field validation.",
+    "No final Word/PDF manuscript.",
+    "Information staging fidelity is not full normalized domain/temporal SQL parity."
+  ]
+}

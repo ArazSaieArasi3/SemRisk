@@ -523,7 +523,7 @@
     "group": "۳. پیشینه و استانداردها",
     "request": "ردیابی منابع و پیوند مجموعه‌داده‌ها",
     "package_id": "P09",
-    "status": "not_reverified",
+    "status": "partial",
     "primary_issue": 15,
     "acceptance_check": "Each cited dataset has a resolvable source, exact version and role.",
     "artifact_destinations": [
@@ -531,8 +531,11 @@
       "case/pharma/",
       "literature/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "case/pharma/literature-pilot-v0.1.0/README.md",
+      "case/pharma/literature-pilot-v0.1.0/bibliography.md"
+    ],
+    "verification_result": "PARTIAL: Selected six sources have DOI/version/locator/role; DS-002/DS-004 remain unavailable."
   },
   {
     "id": "3.10",
@@ -761,7 +764,7 @@
     "group": "۴. روش و طراحی",
     "request": "تفکیک شواهد طراحی از ارزیابی",
     "package_id": "P09",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 15,
     "acceptance_check": "Design, regression, applicability and independent-validation evidence roles are recorded before claims.",
     "artifact_destinations": [
@@ -769,8 +772,11 @@
       "case/pharma/",
       "literature/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "case/pharma/literature-pilot-v0.1.0/source-freeze.json",
+      "case/pharma/literature-pilot-v0.1.0/sources.json"
+    ],
+    "verification_result": "PASS_BOUNDED_LITERATURE_PILOT; source-local paraphrases and applicability only; no independent or field validation"
   },
   {
     "id": "5.1",
@@ -792,15 +798,21 @@
     "group": "۵. شکل و نمایش",
     "request": "نمای جامع و خوانای آنتولوژی",
     "package_id": "P08",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 33,
     "acceptance_check": "All in-scope conceptual elements are covered in a readable complete diagram/model.",
     "artifact_destinations": [
       "docs/ontology/diagrams/",
       "conceptualization/ontouml/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "diagrams/ontouml/0.2.0-rc.4/concept-coverage.csv",
+      "diagrams/ontouml/0.2.0-rc.4/relation-coverage.csv",
+      "diagrams/ontouml/0.2.0-rc.4/validation-results.json",
+      "diagrams/ontouml/0.2.0-rc.4/visual-review.md",
+      "docs/execution/2026-10-04/run-7-report.md"
+    ],
+    "verification_result": "PASS_COMPANION_SCOPE_RECONCILED_RUN9; Run 7 report recorded acceptance but registry status had not been synchronized; rechecked against unchanged rc.4 companion evidence. Final article figure and native/editor/antipattern gates remain open."
   },
   {
     "id": "5.3",
@@ -822,45 +834,57 @@
     "group": "۵. شکل و نمایش",
     "request": "کاردینالیتی مستدل و درست",
     "package_id": "P08",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 33,
     "acceptance_check": "Every multiplicity is justified and distinguished from database/closed-world constraints.",
     "artifact_destinations": [
       "docs/ontology/diagrams/",
       "conceptualization/ontouml/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "diagrams/ontouml/0.2.0-rc.4/multiplicity-evidence.csv",
+      "diagrams/ontouml/0.2.0-rc.4/validation-results.json",
+      "docs/execution/2026-10-04/run-7-report.md"
+    ],
+    "verification_result": "PASS_COMPANION_SCOPE_RECONCILED_RUN9; Run 7 report recorded acceptance but registry status had not been synchronized; rechecked against unchanged rc.4 companion evidence. Final article figure and native/editor/antipattern gates remain open."
   },
   {
     "id": "5.5",
     "group": "۵. شکل و نمایش",
     "request": "تمایز بصری مفاهیم تکمیل‌نشده",
     "package_id": "P08",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 33,
     "acceptance_check": "Unimplemented/proposed elements have an explicit visual distinction and legend.",
     "artifact_destinations": [
       "docs/ontology/diagrams/",
       "conceptualization/ontouml/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "diagrams/ontouml/0.2.0-rc.4/README.md",
+      "diagrams/ontouml/0.2.0-rc.4/visual-review.md",
+      "docs/execution/2026-10-04/run-7-report.md"
+    ],
+    "verification_result": "PASS_COMPANION_SCOPE_RECONCILED_RUN9; Run 7 report recorded acceptance but registry status had not been synchronized; rechecked against unchanged rc.4 companion evidence. Final article figure and native/editor/antipattern gates remain open."
   },
   {
     "id": "5.6",
     "group": "۵. شکل و نمایش",
     "request": "زیرنویس و راهنمای دقیق شکل",
     "package_id": "P08",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 33,
     "acceptance_check": "Caption identifies scope, version, notation and excluded/future status without overclaiming completeness.",
     "artifact_destinations": [
       "docs/ontology/diagrams/",
       "conceptualization/ontouml/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "diagrams/ontouml/0.2.0-rc.4/captions.md",
+      "diagrams/ontouml/0.2.0-rc.4/README.md",
+      "docs/execution/2026-10-04/run-7-report.md"
+    ],
+    "verification_result": "PASS_COMPANION_SCOPE_RECONCILED_RUN9; Run 7 report recorded acceptance but registry status had not been synchronized; rechecked against unchanged rc.4 companion evidence. Final article figure and native/editor/antipattern gates remain open."
   },
   {
     "id": "5.7",
@@ -927,7 +951,7 @@
     "group": "۶. مطالعه دارویی و داده",
     "request": "ساخت مجموعه‌داده کوچک ریسک سازمان دارویی",
     "package_id": "P09",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 15,
     "acceptance_check": "A small source-derived pharmaceutical enterprise-risk dataset is created with lineage.",
     "artifact_destinations": [
@@ -935,15 +959,19 @@
       "case/pharma/",
       "literature/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "case/pharma/literature-pilot-v0.1.0/statements.json",
+      "case/pharma/literature-pilot-v0.1.0/mappings.json",
+      "case/pharma/literature-pilot-v0.1.0/validation-results.json"
+    ],
+    "verification_result": "PASS_BOUNDED_LITERATURE_PILOT; source-local paraphrases and applicability only; no independent or field validation"
   },
   {
     "id": "6.2",
     "group": "۶. مطالعه دارویی و داده",
     "request": "شروع مرور منابع از CM-PharmE نسخه ۱",
     "package_id": "P09",
-    "status": "not_reverified",
+    "status": "partial",
     "primary_issue": 15,
     "acceptance_check": "Corpus discovery starts from CM-PharmE ver.1 and records selection/snowballing decisions.",
     "artifact_destinations": [
@@ -951,15 +979,18 @@
       "case/pharma/",
       "literature/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "case/pharma/literature-pilot-v0.1.0/README.md",
+      "case/pharma/literature-pilot-v0.1.0/bibliography.md"
+    ],
+    "verification_result": "PARTIAL: CM-PharmE v1 scope/bridge retained, but its exact conference reference list was not recovered; no direct seed-citation claim."
   },
   {
     "id": "6.3",
     "group": "۶. مطالعه دارویی و داده",
     "request": "مدیریت اندازه و عمق مطالعه موردی",
     "package_id": "P09",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 15,
     "acceptance_check": "Case boundaries and stopping criteria control time without manufacturing record targets.",
     "artifact_destinations": [
@@ -967,15 +998,18 @@
       "case/pharma/",
       "literature/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "case/pharma/literature-pilot-v0.1.0/acceptance-contract.md",
+      "case/pharma/literature-pilot-v0.1.0/search-screening.json"
+    ],
+    "verification_result": "PASS_BOUNDED_LITERATURE_PILOT; source-local paraphrases and applicability only; no independent or field validation"
   },
   {
     "id": "6.4",
     "group": "۶. مطالعه دارویی و داده",
     "request": "بررسی مجموعه‌داده به‌عنوان contribution",
     "package_id": "P09",
-    "status": "not_reverified",
+    "status": "partial",
     "primary_issue": 15,
     "acceptance_check": "Dataset contribution is retained only if its provenance, utility and release rights justify it.",
     "artifact_destinations": [
@@ -983,15 +1017,18 @@
       "case/pharma/",
       "literature/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "case/pharma/literature-pilot-v0.1.0/README.md",
+      "case/pharma/literature-pilot-v0.1.0/bibliography.md"
+    ],
+    "verification_result": "PARTIAL: Traceable candidate and useful information mapping exist; one source license, independent mapping review and scholarly release remain unresolved."
   },
   {
     "id": "6.5",
     "group": "۶. مطالعه دارویی و داده",
     "request": "جداسازی منابع طراحی و آزمون",
     "package_id": "P09",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 15,
     "acceptance_check": "Previously used design material is never reported as independent holdout.",
     "artifact_destinations": [
@@ -999,15 +1036,18 @@
       "case/pharma/",
       "literature/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "case/pharma/literature-pilot-v0.1.0/source-freeze.json",
+      "case/pharma/literature-pilot-v0.1.0/validation-results.json"
+    ],
+    "verification_result": "PASS_BOUNDED_LITERATURE_PILOT; source-local paraphrases and applicability only; no independent or field validation"
   },
   {
     "id": "6.6",
     "group": "۶. مطالعه دارویی و داده",
     "request": "سیاست استفاده از وبلاگ و اجتماع تخصصی",
     "package_id": "P09",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 15,
     "acceptance_check": "Grey literature has separate source-quality and usage rules from peer-reviewed evidence.",
     "artifact_destinations": [
@@ -1015,15 +1055,18 @@
       "case/pharma/",
       "literature/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "case/pharma/literature-pilot-v0.1.0/README.md",
+      "case/pharma/literature-pilot-v0.1.0/search-screening.json"
+    ],
+    "verification_result": "PASS_BOUNDED_LITERATURE_PILOT; source-local paraphrases and applicability only; no independent or field validation"
   },
   {
     "id": "6.7",
     "group": "۶. مطالعه دارویی و داده",
     "request": "تقسیم منابع میان مقاله و مکمل",
     "package_id": "P09",
-    "status": "not_reverified",
+    "status": "partial",
     "primary_issue": 15,
     "acceptance_check": "Claim-critical sources stay in the article; the complete extraction bibliography remains in the supplement.",
     "artifact_destinations": [
@@ -1031,23 +1074,30 @@
       "case/pharma/",
       "literature/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "case/pharma/literature-pilot-v0.1.0/README.md",
+      "case/pharma/literature-pilot-v0.1.0/bibliography.md"
+    ],
+    "verification_result": "PARTIAL: Full extraction bibliography and placement plan exist; final manuscript citations are not yet integrated."
   },
   {
     "id": "6.8",
     "group": "۶. مطالعه دارویی و داده",
     "request": "سازمان‌دهی داده در پایگاه رابطه‌ای",
     "package_id": "P10",
-    "status": "not_reverified",
+    "status": "partial",
     "primary_issue": 125,
     "acceptance_check": "Dataset loads into the relational schema with semantic IDs and source/synthetic distinction preserved.",
     "artifact_destinations": [
       "relational/",
       "evaluation/parity/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "relational/scripts/literature_io.py",
+      "case/pharma/literature-pilot-v0.1.0/postgres-results.json",
+      "case/pharma/literature-pilot-v0.1.0/ci-evidence.json"
+    ],
+    "verification_result": "PARTIAL_NATIVE_INFORMATION_STAGING_PASS; full normalized domain/temporal projection remains open. 24 source-local artifact payloads preserve source role and semantic ID, with no fabricated events."
   },
   {
     "id": "6.9",
@@ -1097,7 +1147,7 @@
     "group": "۶. مطالعه دارویی و داده",
     "request": "ثبت نقش همه مجموعه‌داده‌های قبلی",
     "package_id": "P09",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 15,
     "acceptance_check": "DS-001 through DS-004 each have actual access, design-use and evaluation-role dispositions.",
     "artifact_destinations": [
@@ -1105,8 +1155,10 @@
       "case/pharma/",
       "literature/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "case/pharma/literature-pilot-v0.1.0/dataset-dispositions.json"
+    ],
+    "verification_result": "PASS_BOUNDED_LITERATURE_PILOT; source-local paraphrases and applicability only; no independent or field validation"
   },
   {
     "id": "7.1",

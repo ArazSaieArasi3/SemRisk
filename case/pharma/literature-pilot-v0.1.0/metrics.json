@@ -1,0 +1,45 @@
+{
+  "statement_count": 24,
+  "source_count": 6,
+  "mapping_status": {
+    "ambiguous": 11,
+    "partial": 12,
+    "unmapped": 1
+  },
+  "categories": {
+    "availability": 1,
+    "environmental": 1,
+    "financial": 8,
+    "governance": 2,
+    "information": 3,
+    "logistics": 1,
+    "market": 1,
+    "operational": 2,
+    "quality": 1,
+    "regulatory": 2,
+    "strategic": 2
+  },
+  "source_reuse_statements": {
+    "design_reused": 15,
+    "evaluation_new": 9
+  },
+  "source_reuse_sources": {
+    "design_reused": 3,
+    "evaluation_new": 3
+  },
+  "scenario_type_count": 12,
+  "rdf_triples": 978,
+  "missingness": {
+    "potential_event": 12,
+    "consequence": 12,
+    "likelihood_reported": 22,
+    "impact_reported": 22,
+    "control_reported": 23,
+    "temporal_qualifier": 22
+  },
+  "independently_reviewed_statements": 0,
+  "independent_validation_sources": 0,
+  "occurred_events_asserted": 0,
+  "unique_global_risks": "NOT_ESTIMATED",
+  "note": "All rates use 24 source-local statements or 6 selected sources, never incidents, companies or all pharmaceutical risks."
+}

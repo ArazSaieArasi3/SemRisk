@@ -1,0 +1,160 @@
+{
+  "date": "2026-10-05",
+  "scope": "Bounded purposive primary-source pilot, not systematic/exhaustive search",
+  "queries": [
+    {
+      "service": "system2",
+      "query": "\"CM-PharmE\" \"references\"",
+      "returned_result_count": null,
+      "count_note": "Search responses were inspected, but a stable complete result denominator was not captured; no PRISMA or recall claim."
+    },
+    {
+      "service": "system2",
+      "query": "pharmaceutical supply chain risk assessment Iranian pharmaceutical companies Jaberidoost 2015",
+      "returned_result_count": null,
+      "count_note": "Search responses were inspected, but a stable complete result denominator was not captured; no PRISMA or recall claim."
+    },
+    {
+      "service": "system2",
+      "query": "pharmaceutical enterprise risk financial strategic risks empirical study open access",
+      "returned_result_count": null,
+      "count_note": "Search responses were inspected, but a stable complete result denominator was not captured; no PRISMA or recall claim."
+    },
+    {
+      "service": "system1",
+      "query": "\"pharmaceutical\" \"financial\" \"risk\" \"PMC\" Iran companies financing",
+      "returned_result_count": null,
+      "count_note": "Search responses were inspected, but a stable complete result denominator was not captured; no PRISMA or recall claim."
+    },
+    {
+      "service": "system1",
+      "query": "\"Developing a suitable model for supplier selection\" pharmaceutical",
+      "returned_result_count": null,
+      "count_note": "Search responses were inspected, but a stable complete result denominator was not captured; no PRISMA or recall claim."
+    },
+    {
+      "service": "system1",
+      "query": "\"CM-PharmE ver.1\" references",
+      "returned_result_count": null,
+      "count_note": "Search responses were inspected, but a stable complete result denominator was not captured; no PRISMA or recall claim."
+    },
+    {
+      "service": "system2",
+      "query": "\"Economic and non-economic determinants\" \"doi\"",
+      "returned_result_count": null,
+      "count_note": "Search responses were inspected, but a stable complete result denominator was not captured; no PRISMA or recall claim."
+    },
+    {
+      "service": "system2",
+      "query": "\"Responding to and managing antibiotic shortages\" wellcome 24292",
+      "returned_result_count": null,
+      "count_note": "Search responses were inspected, but a stable complete result denominator was not captured; no PRISMA or recall claim."
+    },
+    {
+      "service": "system2",
+      "query": "\"The French reporting system for drug shortages\" full text",
+      "returned_result_count": null,
+      "count_note": "Search responses were inspected, but a stable complete result denominator was not captured; no PRISMA or recall claim."
+    },
+    {
+      "service": "system2",
+      "query": "\"The Effect of Capital Structure on the Profitability\" site:brieflands.com",
+      "returned_result_count": null,
+      "count_note": "Search responses were inspected, but a stable complete result denominator was not captured; no PRISMA or recall claim."
+    }
+  ],
+  "candidate_decisions": [
+    {
+      "candidate": "PLS-001",
+      "url": "https://link.springer.com/article/10.1186/s40545-015-0029-3",
+      "decision": "include",
+      "reason": "Targeted continuation of SRC-PH-001 Jaberidoost review lineage; article reference 2 cites that seed."
+    },
+    {
+      "candidate": "PLS-002",
+      "url": "https://brieflands.com/journals/ijpr/articles/125800",
+      "decision": "include",
+      "reason": "PLS-001 reference 6; overlapping SRC-PH-001 review lineage, conservatively reused."
+    },
+    {
+      "candidate": "PLS-003",
+      "url": "https://link.springer.com/article/10.1186/s12913-019-4735-4",
+      "decision": "include",
+      "reason": "Targeted financial-risk search beyond operational supply risk; not listed in frozen source register."
+    },
+    {
+      "candidate": "PLS-004",
+      "url": "https://link.springer.com/article/10.1186/s12913-022-08309-3",
+      "decision": "include",
+      "reason": "Existing pharmaceutical baseline and DS-001 linked study; original study records not obtained."
+    },
+    {
+      "candidate": "PLS-005",
+      "url": "https://brieflands.com/journals/ijpr/articles/126224",
+      "decision": "include",
+      "reason": "Publisher-related-article discovery from PLS-002, not a direct citation edge; not listed in frozen source register."
+    },
+    {
+      "candidate": "PLS-006",
+      "url": "https://brieflands.com/journals/ijpr/articles/125682",
+      "decision": "include",
+      "reason": "PLS-003 reference 22; primary-paper title lookup; not listed in frozen source register."
+    },
+    {
+      "candidate": "CM-PharmE ver.1",
+      "url": "https://ieeexplore.ieee.org/document/11301544",
+      "decision": "context_seed_references_pending",
+      "reason": "Publication and frozen bridge inspected in owner repository; publisher retrieval error. Exact conference reference list not recovered. Title-targeted Library queries yielded no exact conference manuscript; later journal drafts not substituted."
+    },
+    {
+      "candidate": "Jaberidoost 2013 / SRC-PH-001",
+      "url": "https://doi.org/10.1186/2008-2231-21-69",
+      "decision": "review_seed_only",
+      "reason": "Existing mined review guides source lineage; no review-derived rows counted as primary research."
+    },
+    {
+      "candidate": "Yousefi and Alibabaei 2015",
+      "url": "https://brieflands.com/journals/ijpr/articles/125367",
+      "decision": "exclude_primary_pilot",
+      "reason": "Full-text Methods explicitly describes a review despite short-communication article label."
+    },
+    {
+      "candidate": "Nampoothiri et al. 2025 v2 / SRC-PH-004",
+      "url": "https://doi.org/10.12688/wellcomeopenres.24292.2",
+      "decision": "defer_this_batch",
+      "reason": "Known design-reused study. Publisher route inaccessible and PMC browser challenge; search-index snippets not treated as inspected full passages. Prior DS-003 work remains separate."
+    },
+    {
+      "candidate": "Chirac et al. 2026 / SRC-PH-005",
+      "url": "https://doi.org/10.3390/antibiotics15060571",
+      "decision": "defer_this_batch",
+      "reason": "Publisher retrieval failed; exact DS-004 artifact remains blocked. No new extraction from metadata alone."
+    },
+    {
+      "candidate": "Benhabib et al. 2020",
+      "url": "https://bmjopen.bmj.com/content/10/3/e034033",
+      "decision": "defer_this_batch",
+      "reason": "Ravela reference 15; publisher 403 and PMC browser challenge; not counted as included."
+    },
+    {
+      "candidate": "Miljkovic et al. 2020 EAHP survey",
+      "url": "https://ejhp.bmj.com/content/27/4/202",
+      "decision": "defer_this_batch",
+      "reason": "Ravela reference 18; publisher 403; no full-text extraction."
+    },
+    {
+      "candidate": "IISE 2024 / SRC-PH-002",
+      "url": "https://doi.org/10.21872/2024iise_7761",
+      "decision": "context_pending",
+      "reason": "Existing registry identifies review; full-text gap not resolved in this batch; no extracted primary records."
+    }
+  ],
+  "included_sources": 6,
+  "screened_candidate_list_count": 14,
+  "stopping_reason": "Six accessible primary papers plus source-local mapping and validation; 24 rows retained without filling a quota.",
+  "deviations": [
+    "Direct CM-PharmE conference-paper reference snowballing remains unexecuted.",
+    "Search-result counts cannot be reconstructed as a systematic-review denominator.",
+    "Age and geographic imbalance remain explicit limitations."
+  ]
+}

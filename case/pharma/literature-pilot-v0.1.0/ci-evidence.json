@@ -1,0 +1,158 @@
+{
+  "tested_head": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+  "native_job_id": 111829562729,
+  "native_job_url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37329752443/job/111829562729",
+  "result_scope": "Information-level literature payload staging and deterministic RDF reconstruction, not normalized domain/temporal parity.",
+  "postgres": {
+    "result": "PASS_NATIVE_INFORMATION_STAGING",
+    "total": 13,
+    "passed": 13,
+    "postgres": "PostgreSQL 16.15 (Debian 16.15-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit",
+    "records": 24,
+    "sources": 6,
+    "reconstructed_rdf_triples": 978,
+    "tests": [
+      {
+        "id": "NATIVE-LOAD",
+        "passed": true
+      },
+      {
+        "id": "IDEMPOTENT-LOAD",
+        "passed": true
+      },
+      {
+        "id": "PAYLOAD-ROUNDTRIP",
+        "passed": true
+      },
+      {
+        "id": "RDF-RECONSTRUCTION",
+        "passed": true
+      },
+      {
+        "id": "PROVENANCE-ROWS",
+        "passed": true
+      },
+      {
+        "id": "NO-DOMAIN-INCIDENTS",
+        "passed": true
+      },
+      {
+        "id": "SQL-GROUP-source_id",
+        "passed": true
+      },
+      {
+        "id": "SQL-GROUP-source_role",
+        "passed": true
+      },
+      {
+        "id": "SQL-MAPPING-GROUP",
+        "passed": true
+      },
+      {
+        "id": "NEGATIVE-REWRITE",
+        "passed": true
+      },
+      {
+        "id": "NEGATIVE-MISSING-PROVENANCE",
+        "passed": true
+      },
+      {
+        "id": "NEGATIVE-FALSE-HOLDOUT",
+        "passed": true
+      },
+      {
+        "id": "AFTER-REJECTION-UNCHANGED",
+        "passed": true
+      }
+    ],
+    "boundary": "RDF reconstruction uses complete JSON source/statement/mapping payloads retained in staging, not native columns for every domain relation. No temporal assessment/scale/workflow SQL parity or clinical validation claim."
+  },
+  "check_runs": [
+    {
+      "id": 111829562909,
+      "name": "core-contract",
+      "head_sha": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37329752491/job/111829562909"
+    },
+    {
+      "id": 111829562729,
+      "name": "literature-dataset-and-staging",
+      "head_sha": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37329752443/job/111829562729"
+    },
+    {
+      "id": 111829562317,
+      "name": "postgres-relational-twin",
+      "head_sha": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37329752499/job/111829562317"
+    },
+    {
+      "id": 111829562297,
+      "name": "qualified-context",
+      "head_sha": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37329752452/job/111829562297"
+    },
+    {
+      "id": 111829562198,
+      "name": "bounded-evidence-checks",
+      "head_sha": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37329752380/job/111829562198"
+    },
+    {
+      "id": 111829562068,
+      "name": "semantic-validation",
+      "head_sha": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37329752425/job/111829562068"
+    },
+    {
+      "id": 111829497134,
+      "name": "literature-dataset-and-staging",
+      "head_sha": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37329732246/job/111829497134"
+    },
+    {
+      "id": 111829492161,
+      "name": "semantic-validation",
+      "head_sha": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37329731956/job/111829492161"
+    },
+    {
+      "id": 111829491345,
+      "name": "postgres-relational-twin",
+      "head_sha": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37329731898/job/111829491345"
+    }
+  ],
+  "unique_job_types": [
+    "core-contract",
+    "literature-dataset-and-staging",
+    "postgres-relational-twin",
+    "qualified-context",
+    "bounded-evidence-checks",
+    "semantic-validation"
+  ],
+  "local_validation": {
+    "passed": 27,
+    "total": 27,
+    "negative_controls": 12
+  },
+  "no_new_ontology_release": true
+}
