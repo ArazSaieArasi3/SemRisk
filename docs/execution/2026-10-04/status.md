@@ -1,3 +1,19 @@
+Publication checkpoint: **8/8 Run 8 deliverables verified**. All 128 implementation file hashes, five exact content readbacks and 8/8 issue bodies matched; all 16 triggered CI job types passed on `418b8e3a8ebe14e73fbc8e1d820e452f3afa1ec7`. Native PostgreSQL: 11/11 checks and 11 represented triples. HermiT: four actual type entailments, two consistent countermodels, two rejected contradictions. [Readback](run-8-readback.json), [CI evidence](../../../evaluation/exposure-scale/v0.2.0-rc.4/ci-evidence.json), [PR #137](https://github.com/ArazSaieArasi3/SemRisk/pull/137). Full package acceptance remains separate.
+
+# Current revision status — Run 8, 2026-10-05
+
+Current stage: **two identified semantic gaps corrected in rc.4; native and formal CI verified**. [Run 8 report](run-8-report.md), [decisions](../../../foundational/exposure-scale-v0.2.0-rc.4/decisions.md), [updated diagram](../../../diagrams/ontouml/0.2.0-rc.4/README.md).
+
+- Exposure now has two registered endpoints; NumericScale inherits governed artifact-version identity.
+- 31/31 local behavioral checks with 17 negative cases; previous 31 rc.3 checks retained; 16/16 diagram checks. Native reasoning/database outcome belongs to the actual CI checkpoint.
+- 47 concepts / 40 registered relation decisions; unchanged helper inventory; all 15 review pages inspected.
+- **3/19 = 15.8%** bounded packages complete; **22/90 = 24.4%** requirements evidenced, unchanged; **90/90 routed**. This is not manuscript-readiness percentage.
+- Next: execute the prepared literature-case extraction, then complete remaining helper SQL/formal synchronization and article figure gates. Seven-page target / eight-page cap remains active.
+
+Older checkpoints below are retained as historical evidence, not the current candidate.
+
+---
+
 Publication checkpoint: **8/8 Run 7 deliverables verified**, with 101/101 implementation file hashes, five exact content readbacks, 7/7 issue updates and all five triggered CI job types passing on `e5bc58740c642c456164154c2d4f87ddcc310524`. [Readback](run-7-readback.json); [PR #136](https://github.com/ArazSaieArasi3/SemRisk/pull/136). This checkpoint records observed results; no scientific gate is closed by coverage alone.
 
 # Current revision status — Run 7, 2026-10-05

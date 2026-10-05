@@ -1,0 +1,30 @@
+digraph G {
+graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.42", ranksep="0.65", splines=polyline, outputorder=edgesfirst];
+node [shape=plain, fontname="Helvetica", fontsize=14];
+edge [fontname="Helvetica", fontsize=11, color="#526477", arrowsize=0.65];
+"SR-CPT-021" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#f0e9fb"><TR><TD><FONT POINT-SIZE="11">EXTERNAL REFERENCE</FONT></TD></TR><TR><TD><B>Provenance</B></TD></TR></TABLE>>];
+"SR-CPT-037" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#f0e9fb"><TR><TD><FONT POINT-SIZE="11">EXTERNAL REFERENCE</FONT></TD></TR><TR><TD><B>Objective</B></TD></TR></TABLE>>];
+"SR-CPT-038" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#f0e9fb"><TR><TD><FONT POINT-SIZE="11">EXTERNAL REFERENCE</FONT></TD></TR><TR><TD><B>Capability</B></TD></TR></TABLE>>];
+"SR-CPT-039" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#f0e9fb"><TR><TD><FONT POINT-SIZE="11">EXTERNAL REFERENCE</FONT></TD></TR><TR><TD><B>Business Process</B></TD></TR></TABLE>>];
+"SR-CPT-040" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#f0e9fb"><TR><TD><FONT POINT-SIZE="11">PLANNED / EXTERNAL</FONT></TD></TR><TR><TD><B>Active Pharmaceutical Ingredient</B></TD></TR></TABLE>>];
+"SR-CPT-041" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#f0e9fb"><TR><TD><FONT POINT-SIZE="11">PLANNED / EXTERNAL</FONT></TD></TR><TR><TD><B>Hazard</B></TD></TR></TABLE>>];
+"SR-CPT-042" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#f0e9fb"><TR><TD><FONT POINT-SIZE="11">PLANNED / EXTERNAL</FONT></TD></TR><TR><TD><B>Harm</B></TD></TR></TABLE>>];
+"SR-CPT-043" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#f0e9fb"><TR><TD><FONT POINT-SIZE="11">PLANNED / EXTERNAL</FONT></TD></TR><TR><TD><B>Signal</B></TD></TR></TABLE>>];
+"SR-CPT-044" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#f0e9fb"><TR><TD><FONT POINT-SIZE="11">PLANNED / EXTERNAL</FONT></TD></TR><TR><TD><B>Risk Criteria</B></TD></TR></TABLE>>];
+"SR-CPT-045" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#f0e9fb"><TR><TD><FONT POINT-SIZE="11">PLANNED / EXTERNAL</FONT></TD></TR><TR><TD><B>Risk Appetite</B></TD></TR></TABLE>>];
+"SR-CPT-046" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#f0e9fb"><TR><TD><FONT POINT-SIZE="11">PLANNED / EXTERNAL</FONT></TD></TR><TR><TD><B>Risk Tolerance</B></TD></TR></TABLE>>];
+"SR-CPT-047" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#f0e9fb"><TR><TD><FONT POINT-SIZE="11">PLANNED / EXTERNAL</FONT></TD></TR><TR><TD><B>Risk Nature</B></TD></TR></TABLE>>];
+{rank=same; "SR-CPT-021"; "SR-CPT-037"; "SR-CPT-038";}
+{rank=same; "SR-CPT-039"; "SR-CPT-040"; "SR-CPT-041";}
+{rank=same; "SR-CPT-042"; "SR-CPT-043"; "SR-CPT-044";}
+{rank=same; "SR-CPT-045"; "SR-CPT-046"; "SR-CPT-047";}
+"SR-CPT-021" -> "SR-CPT-039" [style=invis, weight=100];
+"SR-CPT-037" -> "SR-CPT-040" [style=invis, weight=100];
+"SR-CPT-038" -> "SR-CPT-041" [style=invis, weight=100];
+"SR-CPT-039" -> "SR-CPT-042" [style=invis, weight=100];
+"SR-CPT-040" -> "SR-CPT-043" [style=invis, weight=100];
+"SR-CPT-041" -> "SR-CPT-044" [style=invis, weight=100];
+"SR-CPT-042" -> "SR-CPT-045" [style=invis, weight=100];
+"SR-CPT-043" -> "SR-CPT-046" [style=invis, weight=100];
+"SR-CPT-044" -> "SR-CPT-047" [style=invis, weight=100];
+}

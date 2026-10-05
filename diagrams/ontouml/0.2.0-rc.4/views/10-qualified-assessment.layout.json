@@ -1,0 +1,1526 @@
+{
+  "name": "G",
+  "directed": true,
+  "strict": false,
+  "_draw_": 
+  [
+    {
+      "op": "c",
+      "grad": "none",
+      "color": "#fffffe00"
+    },
+    {
+      "op": "C",
+      "grad": "none",
+      "color": "#ffffff"
+    },
+    {
+      "op": "P",
+      "points": [[-21.600,-21.600],[-21.600,485.200],[777.200,485.200],[777.200,-21.600]]
+    }
+  ],
+  "bb": "0,0,755.6,463.6",
+  "bgcolor": "white",
+  "nodesep": "0.42",
+  "outputorder": "edgesfirst",
+  "pad": "0.3",
+  "rankdir": "TB",
+  "ranksep": "0.65",
+  "splines": "polyline",
+  "xdotversion": "1.7",
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "H-ArtifactVersion",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e8f5f0"
+        },
+        {
+          "op": "P",
+          "points": [[539.500,25.000],[539.500,85.000],[659.740,85.000],[659.740,25.000]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [574.550,66.000],
+          "align": "l",
+          "width": 50.140,
+          "text": "«subkind»"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [547.500,38.200],
+          "align": "l",
+          "width": 104.250,
+          "text": "Artifact Version"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[539.500,25.000],[539.500,85.000],[659.740,85.000],[659.740,25.000]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#e8f5f0\"><TR><TD><FONT POINT-SIZE=\"11\">«subkind»<\/FONT><\/TD><\/TR><TR><TD><B>Artifact Version<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "599.62,55",
+      "shape": "plain",
+      "width": "1.6701"
+    },
+    {
+      "_gvid": 1,
+      "name": "H-ControlBaseline",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e8f5f0"
+        },
+        {
+          "op": "P",
+          "points": [[0.000,171.200],[0.000,269.200],[127.240,269.200],[127.240,171.200]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [26.930,250.200],
+          "align": "l",
+          "width": 73.370,
+          "text": "«enumeration»"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [8.000,222.400],
+          "align": "l",
+          "width": 111.240,
+          "text": "Control Baseline"
+        },
+        {
+          "op": "F",
+          "size": 10.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [8.000,193.200],
+          "align": "l",
+          "width": 61.700,
+          "text": "BeforeControl"
+        },
+        {
+          "op": "F",
+          "size": 10.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [12.170,181.200],
+          "align": "l",
+          "width": 53.350,
+          "text": "AfterControl"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[0.000,171.200],[0.000,269.200],[127.240,269.200],[127.240,171.200]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "1.3611",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#e8f5f0\"><TR><TD><FONT POINT-SIZE=\"11\">«enumeration»<\/FONT><\/TD><\/TR><TR><TD><B>Control Baseline<\/B><\/TD><\/TR><TR><TD ALIGN=\"LEFT\"><FONT POINT-SIZE=\"10\">BeforeControl<BR ALIGN=\"LEFT\"\/>AfterControl<\/FONT><\/TD><\/TR><\/TABLE>",
+      "pos": "63.621,220.2",
+      "shape": "plain",
+      "width": "1.7672"
+    },
+    {
+      "_gvid": 2,
+      "name": "H-Dimension",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e8f5f0"
+        },
+        {
+          "op": "P",
+          "points": [[244.650,0.000],[244.650,110.000],[418.590,110.000],[418.590,0.000]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [294.930,91.000],
+          "align": "l",
+          "width": 73.370,
+          "text": "«enumeration»"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [252.650,63.200],
+          "align": "l",
+          "width": 157.940,
+          "text": "Assessment Dimension"
+        },
+        {
+          "op": "F",
+          "size": 10.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [252.650,34.000],
+          "align": "l",
+          "width": 45.030,
+          "text": "Likelihood"
+        },
+        {
+          "op": "F",
+          "size": 10.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [252.650,22.000],
+          "align": "l",
+          "width": 30.010,
+          "text": "Impact"
+        },
+        {
+          "op": "F",
+          "size": 10.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [253.490,10.000],
+          "align": "l",
+          "width": 43.350,
+          "text": "RiskLevel"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[244.650,0.000],[244.650,110.000],[418.590,110.000],[418.590,0.000]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "1.5278",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#e8f5f0\"><TR><TD><FONT POINT-SIZE=\"11\">«enumeration»<\/FONT><\/TD><\/TR><TR><TD><B>Assessment Dimension<\/B><\/TD><\/TR><TR><TD ALIGN=\"LEFT\"><FONT POINT-SIZE=\"10\">Likelihood<BR ALIGN=\"LEFT\"\/>Impact<BR ALIGN=\"LEFT\"\/>RiskLevel<\/FONT><\/TD><\/TR><\/TABLE>",
+      "pos": "331.62,55",
+      "shape": "plain",
+      "width": "2.4159"
+    },
+    {
+      "_gvid": 3,
+      "name": "H-EvaluationBasis",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e8f5f0"
+        },
+        {
+          "op": "P",
+          "points": [[267.600,171.200],[267.600,269.200],[395.640,269.200],[395.640,171.200]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [294.930,250.200],
+          "align": "l",
+          "width": 73.370,
+          "text": "«enumeration»"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [275.600,222.400],
+          "align": "l",
+          "width": 112.040,
+          "text": "Evaluation Basis"
+        },
+        {
+          "op": "F",
+          "size": 10.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [275.600,193.200],
+          "align": "l",
+          "width": 43.350,
+          "text": "Observed"
+        },
+        {
+          "op": "F",
+          "size": 10.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [276.150,181.200],
+          "align": "l",
+          "width": 42.250,
+          "text": "Projected"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[267.600,171.200],[267.600,269.200],[395.640,269.200],[395.640,171.200]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "1.3611",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#e8f5f0\"><TR><TD><FONT POINT-SIZE=\"11\">«enumeration»<\/FONT><\/TD><\/TR><TR><TD><B>Evaluation Basis<\/B><\/TD><\/TR><TR><TD ALIGN=\"LEFT\"><FONT POINT-SIZE=\"10\">Observed<BR ALIGN=\"LEFT\"\/>Projected<\/FONT><\/TD><\/TR><\/TABLE>",
+      "pos": "331.62,220.2",
+      "shape": "plain",
+      "width": "1.7783"
+    },
+    {
+      "_gvid": 4,
+      "name": "H-NumericScale",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e8f5f0"
+        },
+        {
+          "op": "P",
+          "points": [[425.750,171.200],[425.750,269.200],[593.490,269.200],[593.490,171.200]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [484.550,250.200],
+          "align": "l",
+          "width": 50.140,
+          "text": "«subkind»"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [433.750,222.400],
+          "align": "l",
+          "width": 151.740,
+          "text": "Numeric Scale Version"
+        },
+        {
+          "op": "F",
+          "size": 10.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [433.750,193.200],
+          "align": "l",
+          "width": 94.470,
+          "text": "minimum: decimal [1]"
+        },
+        {
+          "op": "F",
+          "size": 10.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [433.750,181.200],
+          "align": "l",
+          "width": 97.250,
+          "text": "maximum: decimal [1]"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[425.750,171.200],[425.750,269.200],[593.490,269.200],[593.490,171.200]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "1.3611",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#e8f5f0\"><TR><TD><FONT POINT-SIZE=\"11\">«subkind»<\/FONT><\/TD><\/TR><TR><TD><B>Numeric Scale Version<\/B><\/TD><\/TR><TR><TD ALIGN=\"LEFT\"><FONT POINT-SIZE=\"10\">minimum: decimal [1]<BR ALIGN=\"LEFT\"\/>maximum: decimal [1]<\/FONT><\/TD><\/TR><\/TABLE>",
+      "pos": "509.62,220.2",
+      "shape": "plain",
+      "width": "2.3297"
+    },
+    {
+      "_gvid": 5,
+      "name": "H-QualifiedAssessmentResult",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e8f5f0"
+        },
+        {
+          "op": "P",
+          "points": [[250.480,330.400],[250.480,463.600],[412.760,463.600],[412.760,330.400]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [306.550,444.600],
+          "align": "l",
+          "width": 50.140,
+          "text": "«subkind»"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [258.480,416.800],
+          "align": "l",
+          "width": 146.280,
+          "text": "Qualified Assessment"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [310.230,402.800],
+          "align": "l",
+          "width": 42.790,
+          "text": "Result"
+        },
+        {
+          "op": "F",
+          "size": 10.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [258.480,376.400],
+          "align": "l",
+          "width": 115.050,
+          "text": "numericValue: decimal [1]"
+        },
+        {
+          "op": "F",
+          "size": 10.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [258.480,364.400],
+          "align": "l",
+          "width": 111.170,
+          "text": "methodVersion: string [1]"
+        },
+        {
+          "op": "F",
+          "size": 10.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [258.480,352.400],
+          "align": "l",
+          "width": 112.830,
+          "text": "assessedAt: dateTime [1]"
+        },
+        {
+          "op": "F",
+          "size": 10.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [258.480,340.400],
+          "align": "l",
+          "width": 125.610,
+          "text": "referenceTime: dateTime [1]"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[250.480,330.400],[250.480,463.600],[412.760,463.600],[412.760,330.400]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "1.85",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#e8f5f0\"><TR><TD><FONT POINT-SIZE=\"11\">«subkind»<\/FONT><\/TD><\/TR><TR><TD><B>Qualified Assessment<BR\/>Result<\/B><\/TD><\/TR><TR><TD ALIGN=\"LEFT\"><FONT POINT-SIZE=\"10\">numericValue: decimal [1]<BR ALIGN=\"LEFT\"\/>methodVersion: string [1]<BR ALIGN=\"LEFT\"\/>assessedAt: dateTime [1]<BR ALIGN=\"LEFT\"\/>referenceTime: dateTime [1]<\/FONT><\/TD><\/TR><\/TABLE>",
+      "pos": "331.62,397",
+      "shape": "plain",
+      "width": "2.2538"
+    },
+    {
+      "_gvid": 6,
+      "name": "SR-CPT-012",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7f2fc"
+        },
+        {
+          "op": "P",
+          "points": [[623.650,184.600],[623.650,255.800],[755.600,255.800],[755.600,184.600]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [664.550,236.800],
+          "align": "l",
+          "width": 50.140,
+          "text": "«subkind»"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [631.650,209.000],
+          "align": "l",
+          "width": 115.950,
+          "text": "Risk Assessment"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [664.740,195.000],
+          "align": "l",
+          "width": 49.770,
+          "text": "Method"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[623.650,184.600],[623.650,255.800],[755.600,255.800],[755.600,184.600]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.98889",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#e7f2fc\"><TR><TD><FONT POINT-SIZE=\"11\">«subkind»<\/FONT><\/TD><\/TR><TR><TD><B>Risk Assessment<BR\/>Method<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "689.62,220.2",
+      "shape": "plain",
+      "width": "1.8327"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 7,
+      "tail": 6,
+      "head": 0,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#34465d"
+        },
+        {
+          "op": "b",
+          "points": [[670.750,184.990],[655.690,157.670],[634.650,119.520],[619.360,91.800]]
+        }
+      ],
+      "_hdraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#34465d"
+        },
+        {
+          "op": "p",
+          "points": [[621.470,90.900],[616.340,86.310],[617.480,93.100]]
+        }
+      ],
+      "arrowhead": "empty",
+      "arrowsize": "0.65",
+      "color": "#34465d",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "id": "GEN-SR-CPT-012-H-ArtifactVersion",
+      "label": "",
+      "pos": "e,615.61,84.985 670.75,184.99 655.69,157.67 634.65,119.52 619.36,91.796"
+    },
+    {
+      "_gvid": 0,
+      "tail": 4,
+      "head": 0,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#34465d"
+        },
+        {
+          "op": "b",
+          "points": [[535.890,171.560],[549.910,146.150],[566.870,115.390],[579.770,92.000]]
+        }
+      ],
+      "_hdraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#34465d"
+        },
+        {
+          "op": "p",
+          "points": [[581.750,93.110],[582.900,86.320],[577.770,90.910]]
+        }
+      ],
+      "arrowhead": "empty",
+      "arrowsize": "0.65",
+      "color": "#34465d",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "id": "GEN-H-NumericScale-H-ArtifactVersion",
+      "label": "",
+      "pos": "e,583.63,84.993 535.89,171.56 549.91,146.15 566.87,115.39 579.77,92.002"
+    },
+    {
+      "_gvid": 3,
+      "tail": 5,
+      "head": 2,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "b",
+          "points": [[265.160,330.740],[233.520,299.670],[202.480,269.200],[202.480,269.200],[202.480,269.200],[202.480,171.200],[202.480,171.200],[202.480,171.200],[237.600,139.870],[271.210,109.890]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [264.100,123.130],
+          "align": "c",
+          "width": 6.120,
+          "text": "1"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [227.550,216.900],
+          "align": "c",
+          "width": 50.140,
+          "text": "dimension"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [248.190,321.440],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#147e74",
+      "fontcolor": "#147e74",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "264.1,126.43",
+      "headlabel": "1",
+      "id": "HP-dimension",
+      "label": "dimension",
+      "labeldistance": "1.8",
+      "lp": "227.55,220.2",
+      "pos": "265.16,330.74 233.52,299.67 202.48,269.2 202.48,269.2 202.48,269.2 202.48,171.2 202.48,171.2 202.48,171.2 237.6,139.87 271.21,109.89",
+      "tail_lp": "248.19,324.74",
+      "taillabel": "0..*"
+    },
+    {
+      "_gvid": 2,
+      "tail": 5,
+      "head": 1,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "b",
+          "points": [[250.630,366.040],[180.220,339.990],[89.410,306.400],[89.410,306.400],[89.410,306.400],[83.930,288.300],[78.020,268.780]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [90.030,278.890],
+          "align": "c",
+          "width": 6.120,
+          "text": "1"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [127.010,296.500],
+          "align": "c",
+          "width": 75.210,
+          "text": "controlBaseline"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [232.690,364.210],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#147e74",
+      "fontcolor": "#147e74",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "90.03,282.19",
+      "headlabel": "1",
+      "id": "HP-controlBaseline",
+      "label": "controlBaseline",
+      "labeldistance": "1.8",
+      "lp": "127.01,299.8",
+      "pos": "250.63,366.04 180.22,339.99 89.409,306.4 89.409,306.4 89.409,306.4 83.93,288.3 78.023,268.78",
+      "tail_lp": "232.69,367.51",
+      "taillabel": "0..*"
+    },
+    {
+      "_gvid": 4,
+      "tail": 5,
+      "head": 3,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "b",
+          "points": [[331.620,330.410],[331.620,310.070],[331.620,288.040],[331.620,269.130]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [339.230,282.150],
+          "align": "c",
+          "width": 6.120,
+          "text": "1"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [370.140,296.500],
+          "align": "c",
+          "width": 77.050,
+          "text": "evaluationBasis"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [324.010,310.800],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#147e74",
+      "fontcolor": "#147e74",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "339.23,285.45",
+      "headlabel": "1",
+      "id": "HP-evaluationBasis",
+      "label": "evaluationBasis",
+      "labeldistance": "1.8",
+      "lp": "370.14,299.8",
+      "pos": "331.62,330.41 331.62,310.07 331.62,288.04 331.62,269.13",
+      "tail_lp": "324.01,314.1",
+      "taillabel": "0..*"
+    },
+    {
+      "_gvid": 6,
+      "tail": 5,
+      "head": 6,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "b",
+          "points": [[412.490,358.980],[494.250,321.560],[608.620,269.200],[608.620,269.200],[608.620,269.200],[618.630,263.270],[631.620,255.570]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [621.460,267.130],
+          "align": "c",
+          "width": 6.120,
+          "text": "1"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [573.980,296.500],
+          "align": "c",
+          "width": 36.690,
+          "text": "method"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [424.150,341.980],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#147e74",
+      "fontcolor": "#147e74",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "621.46,270.43",
+      "headlabel": "1",
+      "id": "HP-method",
+      "label": "method",
+      "labeldistance": "1.8",
+      "lp": "573.98,299.8",
+      "pos": "412.49,358.98 494.25,321.56 608.62,269.2 608.62,269.2 608.62,269.2 618.63,263.27 631.62,255.57",
+      "tail_lp": "424.15,345.28",
+      "taillabel": "0..*"
+    },
+    {
+      "_gvid": 5,
+      "tail": 5,
+      "head": 4,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "b",
+          "points": [[398.410,330.410],[419.120,310.070],[441.560,288.040],[460.810,269.130]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [454.500,282.690],
+          "align": "c",
+          "width": 6.120,
+          "text": "1"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [444.120,296.500],
+          "align": "c",
+          "width": 25.680,
+          "text": "scale"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [404.720,310.260],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#147e74",
+      "fontcolor": "#147e74",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "454.5,285.99",
+      "headlabel": "1",
+      "id": "HP-scale",
+      "label": "scale",
+      "labeldistance": "1.8",
+      "lp": "444.12,299.8",
+      "pos": "398.41,330.41 419.12,310.07 441.56,288.04 460.81,269.13",
+      "tail_lp": "404.72,313.56",
+      "taillabel": "0..*"
+    },
+    {
+      "_gvid": 1,
+      "tail": 4,
+      "head": 2,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "b",
+          "points": [[457.660,171.560],[436.520,152.180],[411.990,129.680],[390.210,109.720]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [407.380,111.840],
+          "align": "c",
+          "width": 6.120,
+          "text": "1"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [451.030,137.300],
+          "align": "c",
+          "width": 50.140,
+          "text": "dimension"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [440.490,162.840],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#147e74",
+      "fontcolor": "#147e74",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "407.38,115.14",
+      "headlabel": "1",
+      "id": "HP-scale-dimension",
+      "label": "dimension",
+      "labeldistance": "1.8",
+      "lp": "451.03,140.6",
+      "pos": "457.66,171.56 436.52,152.18 411.99,129.68 390.21,109.72",
+      "tail_lp": "440.49,166.14",
+      "taillabel": "0..*"
+    }
+  ]
+}

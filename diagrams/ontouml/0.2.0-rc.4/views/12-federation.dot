@@ -1,0 +1,18 @@
+digraph G {
+graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.42", ranksep="0.65", splines=polyline, outputorder=edgesfirst];
+node [shape=plain, fontname="Helvetica", fontsize=14];
+edge [fontname="Helvetica", fontsize=11, color="#526477", arrowsize=0.65];
+"B-Affected" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#f0e9fb"><TR><TD><FONT POINT-SIZE="11">ENDPOINT BOUNDARY</FONT></TD></TR><TR><TD><B>Affected external entity</B></TD></TR></TABLE>>];
+"B-Pharma" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#f0e9fb"><TR><TD><FONT POINT-SIZE="11">ENDPOINT BOUNDARY</FONT></TD></TR><TR><TD><B>External pharma entity</B></TD></TR></TABLE>>];
+"SR-CPT-001" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#fff0cf"><TR><TD><FONT POINT-SIZE="11">PATTERN BOUNDARY</FONT></TD></TR><TR><TD><B>Risk</B></TD></TR></TABLE>>];
+"SR-CPT-006" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«type»</FONT></TD></TR><TR><TD><B>Risk Scenario</B></TD></TR></TABLE>>];
+"SR-CPT-007" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«event»</FONT></TD></TR><TR><TD><B>Risk Event</B></TD></TR></TABLE>>];
+"SR-CPT-008" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«situation»</FONT></TD></TR><TR><TD><B>Consequence</B></TD></TR></TABLE>>];
+"SR-CPT-001" -> "B-Affected" [arrowhead=none, label="affects", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-010-view-1-1"];
+"SR-CPT-007" -> "B-Affected" [arrowhead=none, label="affects", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-010-view-2-1"];
+"SR-CPT-008" -> "B-Affected" [arrowhead=none, label="affects", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-010-view-3-1"];
+"SR-CPT-001" -> "B-Pharma" [arrowhead=none, label="pharmaEntityInRiskContext", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-037-view-1-1"];
+"SR-CPT-006" -> "B-Pharma" [arrowhead=none, label="pharmaEntityInRiskContext", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-037-view-2-1"];
+"SR-CPT-007" -> "B-Pharma" [arrowhead=none, label="pharmaEntityInRiskContext", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-037-view-3-1"];
+"SR-CPT-008" -> "B-Pharma" [arrowhead=none, label="pharmaEntityInRiskContext", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-037-view-4-1"];
+}

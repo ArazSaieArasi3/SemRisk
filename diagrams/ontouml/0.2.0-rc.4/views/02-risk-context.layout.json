@@ -1,0 +1,1345 @@
+{
+  "name": "G",
+  "directed": true,
+  "strict": false,
+  "_draw_": 
+  [
+    {
+      "op": "c",
+      "grad": "none",
+      "color": "#fffffe00"
+    },
+    {
+      "op": "C",
+      "grad": "none",
+      "color": "#ffffff"
+    },
+    {
+      "op": "P",
+      "points": [[-21.600,-21.600],[-21.600,445.200],[690.450,445.200],[690.450,-21.600]]
+    }
+  ],
+  "bb": "0,0,668.85,423.6",
+  "bgcolor": "white",
+  "nodesep": "0.42",
+  "outputorder": "edgesfirst",
+  "pad": "0.3",
+  "rankdir": "TB",
+  "ranksep": "0.65",
+  "splines": "polyline",
+  "xdotversion": "1.7",
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "SR-CPT-001",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#fff0cf"
+        },
+        {
+          "op": "P",
+          "points": [[253.480,363.600],[253.480,423.600],[386.220,423.600],[386.220,363.600]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [261.480,404.600],
+          "align": "l",
+          "width": 116.740,
+          "text": "PATTERN BOUNDARY"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [305.060,376.800],
+          "align": "l",
+          "width": 29.570,
+          "text": "Risk"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[253.480,363.600],[253.480,423.600],[386.220,423.600],[386.220,363.600]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#fff0cf\"><TR><TD><FONT POINT-SIZE=\"11\">PATTERN BOUNDARY<\/FONT><\/TD><\/TR><TR><TD><B>Risk<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "319.85,393.6",
+      "shape": "plain",
+      "width": "1.8435"
+    },
+    {
+      "_gvid": 1,
+      "name": "SR-CPT-002",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7f2fc"
+        },
+        {
+          "op": "P",
+          "points": [[422.830,121.200],[422.830,181.200],[522.860,181.200],[522.860,121.200]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [444.730,162.200],
+          "align": "l",
+          "width": 56.240,
+          "text": "«roleMixin»"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [430.830,134.400],
+          "align": "l",
+          "width": 84.030,
+          "text": "Risk Subject"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[422.830,121.200],[422.830,181.200],[522.860,181.200],[522.860,121.200]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#e7f2fc\"><TR><TD><FONT POINT-SIZE=\"11\">«roleMixin»<\/FONT><\/TD><\/TR><TR><TD><B>Risk Subject<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "472.85,151.2",
+      "shape": "plain",
+      "width": "1.3893"
+    },
+    {
+      "_gvid": 2,
+      "name": "SR-CPT-003",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#fff0cf"
+        },
+        {
+          "op": "P",
+          "points": [[406.480,242.400],[406.480,302.400],[539.220,302.400],[539.220,242.400]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [414.480,283.400],
+          "align": "l",
+          "width": 116.740,
+          "text": "PATTERN BOUNDARY"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [432.390,255.600],
+          "align": "l",
+          "width": 80.920,
+          "text": "Risk Source"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[406.480,242.400],[406.480,302.400],[539.220,302.400],[539.220,242.400]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#fff0cf\"><TR><TD><FONT POINT-SIZE=\"11\">PATTERN BOUNDARY<\/FONT><\/TD><\/TR><TR><TD><B>Risk Source<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "472.85,272.4",
+      "shape": "plain",
+      "width": "1.8435"
+    },
+    {
+      "_gvid": 3,
+      "name": "SR-CPT-004",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7f2fc"
+        },
+        {
+          "op": "P",
+          "points": [[202.910,242.400],[202.910,302.400],[376.790,302.400],[376.790,242.400]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [263.250,283.400],
+          "align": "l",
+          "width": 53.200,
+          "text": "«situation»"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [210.910,255.600],
+          "align": "l",
+          "width": 157.880,
+          "text": "Predisposing Condition"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[202.910,242.400],[202.910,302.400],[376.790,302.400],[376.790,242.400]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#e7f2fc\"><TR><TD><FONT POINT-SIZE=\"11\">«situation»<\/FONT><\/TD><\/TR><TR><TD><B>Predisposing Condition<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "289.85,272.4",
+      "shape": "plain",
+      "width": "2.415"
+    },
+    {
+      "_gvid": 4,
+      "name": "SR-CPT-009",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7f2fc"
+        },
+        {
+          "op": "P",
+          "points": [[422.840,0.000],[422.840,60.000],[522.860,60.000],[522.860,0.000]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [452.980,41.000],
+          "align": "l",
+          "width": 39.740,
+          "text": "«mode»"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [430.840,13.200],
+          "align": "l",
+          "width": 84.020,
+          "text": "Vulnerability"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[422.840,0.000],[422.840,60.000],[522.860,60.000],[522.860,0.000]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#e7f2fc\"><TR><TD><FONT POINT-SIZE=\"11\">«mode»<\/FONT><\/TD><\/TR><TR><TD><B>Vulnerability<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "472.85,30",
+      "shape": "plain",
+      "width": "1.3892"
+    },
+    {
+      "_gvid": 5,
+      "name": "SR-CPT-010",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7f2fc"
+        },
+        {
+          "op": "P",
+          "points": [[451.950,363.600],[451.950,423.600],[531.750,423.600],[531.750,363.600]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [465.250,404.600],
+          "align": "l",
+          "width": 53.200,
+          "text": "«situation»"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [459.950,376.800],
+          "align": "l",
+          "width": 63.800,
+          "text": "Exposure"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[451.950,363.600],[451.950,423.600],[531.750,423.600],[531.750,363.600]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#e7f2fc\"><TR><TD><FONT POINT-SIZE=\"11\">«situation»<\/FONT><\/TD><\/TR><TR><TD><B>Exposure<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "491.85,393.6",
+      "shape": "plain",
+      "width": "1.1083"
+    },
+    {
+      "_gvid": 6,
+      "name": "SR-CPT-035",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7f2fc"
+        },
+        {
+          "op": "P",
+          "points": [[0.000,242.400],[0.000,302.400],[83.700,302.400],[83.700,242.400]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [15.250,283.400],
+          "align": "l",
+          "width": 53.200,
+          "text": "«situation»"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [8.000,255.600],
+          "align": "l",
+          "width": 67.700,
+          "text": "Risk State"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[0.000,242.400],[0.000,302.400],[83.700,302.400],[83.700,242.400]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#e7f2fc\"><TR><TD><FONT POINT-SIZE=\"11\">«situation»<\/FONT><\/TD><\/TR><TR><TD><B>Risk State<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "41.848,272.4",
+      "shape": "plain",
+      "width": "1.1624"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 2,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526477"
+        },
+        {
+          "op": "b",
+          "points": [[352.540,363.760],[372.750,345.920],[394.870,326.400],[394.870,326.400],[394.870,326.400],[412.010,314.750],[430.210,302.380]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [420.990,314.540],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [431.860,329.700],
+          "align": "c",
+          "width": 73.980,
+          "text": "hasRiskSource"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [359.740,343.960],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "420.99,317.84",
+      "headlabel": "0..*",
+      "id": "SR-REL-005-view-1-1",
+      "label": "hasRiskSource",
+      "labeldistance": "1.8",
+      "lp": "431.86,333",
+      "pos": "352.54,363.76 372.75,345.92 394.87,326.4 394.87,326.4 394.87,326.4 412.01,314.75 430.21,302.38",
+      "tail_lp": "359.74,347.26",
+      "taillabel": "0..*"
+    },
+    {
+      "_gvid": 3,
+      "tail": 2,
+      "head": 1,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526477"
+        },
+        {
+          "op": "b",
+          "points": [[472.850,242.550],[472.850,223.800],[472.850,199.480],[472.850,180.790]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [480.460,193.800],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [493.330,208.500],
+          "align": "c",
+          "width": 40.970,
+          "text": "exposes"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [465.240,222.930],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "480.46,197.1",
+      "headlabel": "0..*",
+      "id": "SR-REL-011-view-1-1",
+      "label": "exposes",
+      "labeldistance": "1.8",
+      "lp": "493.33,211.8",
+      "pos": "472.85,242.55 472.85,223.8 472.85,199.48 472.85,180.79",
+      "tail_lp": "465.24,226.23",
+      "taillabel": "0..*"
+    },
+    {
+      "_gvid": 4,
+      "tail": 3,
+      "head": 1,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526477"
+        },
+        {
+          "op": "b",
+          "points": [[334.150,242.550],[362.810,223.870],[399.990,199.660],[428.640,181.000]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [419.120,192.970],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [407.320,208.500],
+          "align": "c",
+          "width": 40.970,
+          "text": "exposes"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [343.660,223.970],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "419.12,196.27",
+      "headlabel": "0..*",
+      "id": "SR-REL-011-view-2-1",
+      "label": "exposes",
+      "labeldistance": "1.8",
+      "lp": "407.32,211.8",
+      "pos": "334.15,242.55 362.81,223.87 399.99,199.66 428.64,181",
+      "tail_lp": "343.66,227.27",
+      "taillabel": "0..*"
+    },
+    {
+      "_gvid": 2,
+      "tail": 1,
+      "head": 4,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526477"
+        },
+        {
+          "op": "b",
+          "points": [[472.850,121.350],[472.850,102.600],[472.850,78.280],[472.850,59.590]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [480.460,72.600],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [511.680,87.300],
+          "align": "c",
+          "width": 77.660,
+          "text": "hasVulnerability"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [465.240,101.730],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "480.46,75.903",
+      "headlabel": "0..*",
+      "id": "SR-REL-012",
+      "label": "hasVulnerability",
+      "labeldistance": "1.8",
+      "lp": "511.68,90.6",
+      "pos": "472.85,121.35 472.85,102.6 472.85,78.277 472.85,59.589",
+      "tail_lp": "465.24,105.03",
+      "taillabel": "0..*"
+    },
+    {
+      "_gvid": 1,
+      "tail": 0,
+      "head": 6,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526477"
+        },
+        {
+          "op": "b",
+          "points": [[253.610,364.200],[200.780,341.540],[128.400,310.510],[83.420,291.220]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [101.410,287.360],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [221.590,329.700],
+          "align": "c",
+          "width": 64.810,
+          "text": "hasRiskState"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [235.620,361.460],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "101.41,290.66",
+      "headlabel": "0..*",
+      "id": "SR-REL-031",
+      "label": "hasRiskState",
+      "labeldistance": "1.8",
+      "lp": "221.59,333",
+      "pos": "253.61,364.2 200.78,341.54 128.4,310.51 83.419,291.22",
+      "tail_lp": "235.62,364.76",
+      "taillabel": "0..*"
+    },
+    {
+      "_gvid": 7,
+      "tail": 6,
+      "head": 6,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526477"
+        },
+        {
+          "op": "b",
+          "points": [[83.550,283.710],[99.980,284.280],[113.700,280.510],[113.700,272.400],[113.700,264.290],[99.980,260.520],[83.550,261.090]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [99.800,250.050],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [149.160,269.100],
+          "align": "c",
+          "width": 70.940,
+          "text": "precedesState"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [99.930,272.940],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "99.803,253.35",
+      "headlabel": "0..*",
+      "id": "SR-REL-032",
+      "label": "precedesState",
+      "labeldistance": "1.8",
+      "lp": "149.16,272.4",
+      "pos": "83.555,283.71 99.978,284.28 113.7,280.51 113.7,272.4 113.7,264.29 99.978,260.52 83.555,261.09",
+      "tail_lp": "99.932,276.24",
+      "taillabel": "0..*"
+    },
+    {
+      "_gvid": 5,
+      "tail": 5,
+      "head": 1,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526477"
+        },
+        {
+          "op": "b",
+          "points": [[531.530,368.430],[554.470,354.450],[578.850,339.600],[578.850,339.600],[578.850,339.600],[578.850,326.400],[578.850,326.400],[578.850,326.400],[553.850,242.400],[553.850,242.400],[553.850,242.400],[520.850,205.200],[520.850,205.200],[520.850,205.200],[510.300,193.550],[499.100,181.180]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [515.680,184.870],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [620.230,269.100],
+          "align": "c",
+          "width": 97.230,
+          "text": "hasExposedSubject"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [541.500,350.140],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "515.68,188.17",
+      "headlabel": "0..*",
+      "id": "SR-REL-039",
+      "label": "hasExposedSubject",
+      "labeldistance": "1.8",
+      "lp": "620.23,272.4",
+      "pos": "531.53,368.43 554.47,354.45 578.85,339.6 578.85,339.6 578.85,339.6 578.85,326.4 578.85,326.4 578.85,326.4 553.85,242.4 553.85,242.4 553.85,242.4 520.85,205.2 520.85,205.2 520.85,205.2 510.3,193.55 499.1,181.18",
+      "tail_lp": "541.5,353.44",
+      "taillabel": "0..*"
+    },
+    {
+      "_gvid": 6,
+      "tail": 5,
+      "head": 2,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526477"
+        },
+        {
+          "op": "b",
+          "points": [[483.610,363.620],[480.100,351.250],[476.790,339.600],[476.790,339.600],[476.790,339.600],[475.630,320.080],[474.570,302.240]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [483.130,314.780],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [526.320,329.700],
+          "align": "c",
+          "width": 99.060,
+          "text": "hasExposureSource"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [471.840,346.710],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "483.13,318.08",
+      "headlabel": "0..*",
+      "id": "SR-REL-040",
+      "label": "hasExposureSource",
+      "labeldistance": "1.8",
+      "lp": "526.32,333",
+      "pos": "483.61,363.62 480.1,351.25 476.79,339.6 476.79,339.6 476.79,339.6 475.63,320.08 474.57,302.24",
+      "tail_lp": "471.84,350.01",
+      "taillabel": "0..*"
+    }
+  ]
+}

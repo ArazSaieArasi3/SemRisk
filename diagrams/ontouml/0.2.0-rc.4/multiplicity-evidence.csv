@@ -1,0 +1,74 @@
+edge_id,source,target,source_cardinality,target_cardinality,basis
+SR-REL-001-view-1-1,SR-CPT-033,SR-CPT-001,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-001. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-001-view-2-1,SR-CPT-034,SR-CPT-001,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-001. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-002,SR-CPT-034,SR-CPT-006,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-002. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-003,SR-CPT-006,SR-CPT-007,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-003. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-004-view-1-1,SR-CPT-006,SR-CPT-008,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-004. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-004-view-2-1,SR-CPT-007,SR-CPT-008,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-004. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-005-view-1-1,SR-CPT-001,SR-CPT-003,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-005. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-005-view-2-1,SR-CPT-006,SR-CPT-003,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-005. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-006-view-1-1,SR-CPT-006,SR-CPT-004,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-006. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-006-view-2-1,SR-CPT-007,SR-CPT-004,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-006. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-007,SR-CPT-007,SR-CPT-005,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-007. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-008,B-Context,B-Context,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-008. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-009,B-Context,B-Context,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-009. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-010-view-1-1,SR-CPT-001,B-Affected,0..*,0..*,"Scoped conceptual endpoint projection of SR-REL-010. 0..* imposes no global bound; closed-world profile constraints are drawn separately. Affected entity covers Risk Subject, Objective, Capability and Business Process references without supplying their identity."
+SR-REL-010-view-2-1,SR-CPT-007,B-Affected,0..*,0..*,"Scoped conceptual endpoint projection of SR-REL-010. 0..* imposes no global bound; closed-world profile constraints are drawn separately. Affected entity covers Risk Subject, Objective, Capability and Business Process references without supplying their identity."
+SR-REL-010-view-3-1,SR-CPT-008,B-Affected,0..*,0..*,"Scoped conceptual endpoint projection of SR-REL-010. 0..* imposes no global bound; closed-world profile constraints are drawn separately. Affected entity covers Risk Subject, Objective, Capability and Business Process references without supplying their identity."
+SR-REL-011-view-1-1,SR-CPT-003,SR-CPT-002,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-011. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-011-view-2-1,SR-CPT-004,SR-CPT-002,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-011. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-012,SR-CPT-002,SR-CPT-009,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-012. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-013,SR-CPT-011,SR-CPT-001,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-013. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-014,SR-CPT-011,SR-CPT-012,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-014. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-015,SR-CPT-011,SR-CPT-013,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-015. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-016,SR-CPT-013,SR-CPT-001,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-016. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-017-view-1-1,SR-CPT-011,SR-CPT-020,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-017. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-017-view-2-1,SR-CPT-013,SR-CPT-020,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-017. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-017-view-3-1,SR-CPT-020,SR-CPT-020,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-017. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-018,SR-CPT-023,SR-CPT-022,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-018. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-019,H-ManagedInformationArtifact,SR-CPT-021,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-019. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-020,SR-CPT-013,SR-CPT-019,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-020. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-021-view-1-1,SR-CPT-001,SR-CPT-026,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-021. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-021-view-2-1,SR-CPT-033,SR-CPT-026,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-021. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-022,SR-CPT-027,SR-CPT-026,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-022. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-023,SR-CPT-028,SR-CPT-027,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-023. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-024,SR-CPT-028,SR-CPT-029,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-024. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-025,SR-CPT-029,B-Affected,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-025. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-026-view-1-1,SR-CPT-001,B-Actor,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-026. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-026-view-2-1,SR-CPT-033,B-Actor,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-026. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-027-view-1-1,SR-CPT-031,SR-CPT-001,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-027. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-027-view-1-2,SR-CPT-031,SR-CPT-033,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-027. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-027-view-1-3,SR-CPT-031,SR-CPT-027,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-027. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-028-view-1-1,SR-CPT-031,SR-CPT-030,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-028. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-028-view-1-2,SR-CPT-031,B-Actor,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-028. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-029,SR-CPT-032,SR-CPT-033,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-029. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-030,SR-CPT-033,SR-CPT-036,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-030. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-031,SR-CPT-001,SR-CPT-035,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-031. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-032,SR-CPT-035,SR-CPT-035,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-032. 0..* imposes no global bound; closed-world profile constraints are drawn separately. Only Risk State ordering is drawn; workflow-value ordering is not temporal assignment ordering.
+SR-REL-033,SR-CPT-013,SR-CPT-013,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-033. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-034-view-1-1,SR-CPT-011,SR-CPT-011,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-034. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-034-view-1-2,SR-CPT-011,SR-CPT-013,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-034. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-035-view-1-1,SR-CPT-001,SR-CPT-024,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-035. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-035-view-2-1,SR-CPT-039,SR-CPT-024,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-035. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-036-view-1-1,SR-CPT-024,SR-CPT-025,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-036. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-036-view-2-1,SR-CPT-012,SR-CPT-025,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-036. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-036-view-3-1,SR-CPT-044,SR-CPT-025,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-036. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-037-view-1-1,SR-CPT-001,B-Pharma,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-037. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-037-view-2-1,SR-CPT-006,B-Pharma,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-037. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-037-view-3-1,SR-CPT-007,B-Pharma,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-037. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-037-view-4-1,SR-CPT-008,B-Pharma,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-037. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-039,SR-CPT-010,SR-CPT-002,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-039. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+SR-REL-040,SR-CPT-010,SR-CPT-003,0..*,0..*,Scoped conceptual endpoint projection of SR-REL-040. 0..* imposes no global bound; closed-world profile constraints are drawn separately.
+HP-dimension,H-QualifiedAssessmentResult,H-Dimension,0..*,1,Explicit opt-in SHACL profile only; not an unconditional OWL cardinality.
+HP-controlBaseline,H-QualifiedAssessmentResult,H-ControlBaseline,0..*,1,Explicit opt-in SHACL profile only; not an unconditional OWL cardinality.
+HP-evaluationBasis,H-QualifiedAssessmentResult,H-EvaluationBasis,0..*,1,Explicit opt-in SHACL profile only; not an unconditional OWL cardinality.
+HP-method,H-QualifiedAssessmentResult,SR-CPT-012,0..*,1,Explicit opt-in SHACL profile only; not an unconditional OWL cardinality.
+HP-scale,H-QualifiedAssessmentResult,H-NumericScale,0..*,1,Explicit opt-in SHACL profile only; not an unconditional OWL cardinality.
+HP-expressesContent,H-ArtifactVersion,H-InformationContent,0..*,1..*,Explicit opt-in SHACL profile only; not an unconditional OWL cardinality.
+HP-versionOf,H-ArtifactVersion,H-ManagedInformationArtifact,0..*,1,Explicit opt-in SHACL profile only; not an unconditional OWL cardinality.
+HP-inScheme,SR-CPT-036,H-WorkflowSchemeVersion,0..*,1,Explicit opt-in SHACL profile only; not an unconditional OWL cardinality.
+HP-record,H-WorkflowAssignment,SR-CPT-033,0..*,1,Explicit opt-in SHACL profile only; not an unconditional OWL cardinality.
+HP-value,H-WorkflowAssignment,SR-CPT-036,0..*,1,Explicit opt-in SHACL profile only; not an unconditional OWL cardinality.
+HP-scheme,H-WorkflowAssignment,H-WorkflowSchemeVersion,0..*,1,Explicit opt-in SHACL profile only; not an unconditional OWL cardinality.
+HP-scale-dimension,H-NumericScale,H-Dimension,0..*,1,Numeric Scale SHACL ScaleShape requires exactly one dimension; opt-in profile only.
+HP-mediates,H-GroundedRiskResponsibility,B-Endurant,0..*,2..*,"Grounded responsibility SHACL: at least two named, explicitly distinct Endurants; Risk is an aboutness target."

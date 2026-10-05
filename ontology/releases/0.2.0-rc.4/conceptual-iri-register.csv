@@ -1,0 +1,88 @@
+id,iri,label,kind,formal_status,version
+SR-CPT-001,urn:semrisk:entity:SR-CPT-001,Risk,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-002,urn:semrisk:entity:SR-CPT-002,Risk Subject,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-003,urn:semrisk:entity:SR-CPT-003,Risk Source,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-004,urn:semrisk:entity:SR-CPT-004,Predisposing Condition,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-005,urn:semrisk:entity:SR-CPT-005,Trigger,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-006,urn:semrisk:entity:SR-CPT-006,Risk Scenario,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-007,urn:semrisk:entity:SR-CPT-007,Risk Event,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-008,urn:semrisk:entity:SR-CPT-008,Consequence,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-009,urn:semrisk:entity:SR-CPT-009,Vulnerability,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-010,urn:semrisk:entity:SR-CPT-010,Exposure,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-011,urn:semrisk:entity:SR-CPT-011,Risk Assessment Activity,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-012,urn:semrisk:entity:SR-CPT-012,Risk Assessment Method,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-013,urn:semrisk:entity:SR-CPT-013,Risk Assessment Result,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-014,urn:semrisk:entity:SR-CPT-014,Likelihood Assessment Result,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-015,urn:semrisk:entity:SR-CPT-015,Impact Assessment Result,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-016,urn:semrisk:entity:SR-CPT-016,Risk Level Assessment Result,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-017,urn:semrisk:entity:SR-CPT-017,Inherent Risk Assessment Result,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-018,urn:semrisk:entity:SR-CPT-018,Residual Risk Assessment Result,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-019,urn:semrisk:entity:SR-CPT-019,Assessment Confidence,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-020,urn:semrisk:entity:SR-CPT-020,Evidence Item,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-021,urn:semrisk:entity:SR-CPT-021,Provenance,concept,EXTERNAL_OR_PATTERN_MARKER,0.2.0-rc.4
+SR-CPT-022,urn:semrisk:entity:SR-CPT-022,Observation Activity,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-023,urn:semrisk:entity:SR-CPT-023,Observation Result,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-024,urn:semrisk:entity:SR-CPT-024,Indicator,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-025,urn:semrisk:entity:SR-CPT-025,Threshold,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-026,urn:semrisk:entity:SR-CPT-026,Risk Treatment Strategy,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-027,urn:semrisk:entity:SR-CPT-027,Risk Treatment Plan,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-028,urn:semrisk:entity:SR-CPT-028,Risk Treatment Activity,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-029,urn:semrisk:entity:SR-CPT-029,Control Mechanism,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-030,urn:semrisk:entity:SR-CPT-030,Risk Owner,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-031,urn:semrisk:entity:SR-CPT-031,Risk Responsibility,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-032,urn:semrisk:entity:SR-CPT-032,Risk Register,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-033,urn:semrisk:entity:SR-CPT-033,Risk Register Entry,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-034,urn:semrisk:entity:SR-CPT-034,Scenario Description,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-035,urn:semrisk:entity:SR-CPT-035,Risk State,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-036,urn:semrisk:entity:SR-CPT-036,Workflow State,concept,LOCAL_CLASS,0.2.0-rc.4
+SR-CPT-037,urn:semrisk:entity:SR-CPT-037,Objective,concept,EXTERNAL_OR_PATTERN_MARKER,0.2.0-rc.4
+SR-CPT-038,urn:semrisk:entity:SR-CPT-038,Capability,concept,EXTERNAL_OR_PATTERN_MARKER,0.2.0-rc.4
+SR-CPT-039,urn:semrisk:entity:SR-CPT-039,Business Process,concept,EXTERNAL_OR_PATTERN_MARKER,0.2.0-rc.4
+SR-CPT-040,urn:semrisk:entity:SR-CPT-040,Active Pharmaceutical Ingredient,concept,NOT_LOCALLY_DECLARED,0.2.0-rc.4
+SR-CPT-041,urn:semrisk:entity:SR-CPT-041,Hazard,concept,NOT_LOCALLY_DECLARED,0.2.0-rc.4
+SR-CPT-042,urn:semrisk:entity:SR-CPT-042,Harm,concept,NOT_LOCALLY_DECLARED,0.2.0-rc.4
+SR-CPT-043,urn:semrisk:entity:SR-CPT-043,Signal,concept,NOT_LOCALLY_DECLARED,0.2.0-rc.4
+SR-CPT-044,urn:semrisk:entity:SR-CPT-044,Risk Criteria,concept,NOT_LOCALLY_DECLARED,0.2.0-rc.4
+SR-CPT-045,urn:semrisk:entity:SR-CPT-045,Risk Appetite,concept,NOT_LOCALLY_DECLARED,0.2.0-rc.4
+SR-CPT-046,urn:semrisk:entity:SR-CPT-046,Risk Tolerance,concept,NOT_LOCALLY_DECLARED,0.2.0-rc.4
+SR-CPT-047,urn:semrisk:entity:SR-CPT-047,Risk Nature,concept,NOT_LOCALLY_DECLARED,0.2.0-rc.4
+SR-REL-001,urn:semrisk:entity:SR-REL-001,concernsRisk,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-002,urn:semrisk:entity:SR-REL-002,describesScenario,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-003,urn:semrisk:entity:SR-REL-003,realizedAs,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-004,urn:semrisk:entity:SR-REL-004,hasConsequence,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-005,urn:semrisk:entity:SR-REL-005,hasRiskSource,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-006,urn:semrisk:entity:SR-REL-006,predisposedBy,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-007,urn:semrisk:entity:SR-REL-007,triggeredBy,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-008,urn:semrisk:entity:SR-REL-008,causes,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-009,urn:semrisk:entity:SR-REL-009,associatedWith,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-010,urn:semrisk:entity:SR-REL-010,affects,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-011,urn:semrisk:entity:SR-REL-011,exposes,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-012,urn:semrisk:entity:SR-REL-012,hasVulnerability,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-013,urn:semrisk:entity:SR-REL-013,performedAssessmentOf,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-014,urn:semrisk:entity:SR-REL-014,usesAssessmentMethod,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-015,urn:semrisk:entity:SR-REL-015,producesAssessmentResult,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-016,urn:semrisk:entity:SR-REL-016,assessmentResultConcerns,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-017,urn:semrisk:entity:SR-REL-017,supportedByEvidence,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-018,urn:semrisk:entity:SR-REL-018,generatedByObservation,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-019,urn:semrisk:entity:SR-REL-019,hasProvenance,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-020,urn:semrisk:entity:SR-REL-020,qualifiedByConfidence,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-021,urn:semrisk:entity:SR-REL-021,selectsTreatmentStrategy,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-022,urn:semrisk:entity:SR-REL-022,planImplementsStrategy,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-023,urn:semrisk:entity:SR-REL-023,activityExecutesPlan,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-024,urn:semrisk:entity:SR-REL-024,activityUsesControl,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-025,urn:semrisk:entity:SR-REL-025,controlProtects,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-026,urn:semrisk:entity:SR-REL-026,hasRiskOwner,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-027,urn:semrisk:entity:SR-REL-027,assignsResponsibilityFor,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-028,urn:semrisk:entity:SR-REL-028,responsibilityAssignedTo,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-029,urn:semrisk:entity:SR-REL-029,registerContainsEntry,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-030,urn:semrisk:entity:SR-REL-030,hasWorkflowState,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-031,urn:semrisk:entity:SR-REL-031,hasRiskState,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-032,urn:semrisk:entity:SR-REL-032,precedesState,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-033,urn:semrisk:entity:SR-REL-033,supersedesAssessmentResult,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-034,urn:semrisk:entity:SR-REL-034,basedOnPriorAssessment,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-035,urn:semrisk:entity:SR-REL-035,hasIndicator,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-036,urn:semrisk:entity:SR-REL-036,hasThreshold,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-037,urn:semrisk:entity:SR-REL-037,pharmaEntityInRiskContext,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-038,urn:semrisk:entity:SR-REL-038,profileExtendsCoreConcept,relation,PATTERN_OR_METADATA,0.2.0-rc.4
+SR-REL-039,urn:semrisk:entity:SR-REL-039,hasExposedSubject,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4
+SR-REL-040,urn:semrisk:entity:SR-REL-040,hasExposureSource,relation,OWL_OBJECT_PROPERTY,0.2.0-rc.4

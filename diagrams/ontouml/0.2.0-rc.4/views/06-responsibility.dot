@@ -1,0 +1,22 @@
+digraph G {
+graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.42", ranksep="0.65", splines=polyline, outputorder=edgesfirst];
+node [shape=plain, fontname="Helvetica", fontsize=14];
+edge [fontname="Helvetica", fontsize=11, color="#526477", arrowsize=0.65];
+"B-Actor" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#f0e9fb"><TR><TD><FONT POINT-SIZE="11">ENDPOINT BOUNDARY</FONT></TD></TR><TR><TD><B>External Actor</B></TD></TR></TABLE>>];
+"B-Endurant" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«category»</FONT></TD></TR><TR><TD><B>Endurant (external)</B></TD></TR></TABLE>>];
+"H-GroundedRiskResponsibility" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e8f5f0"><TR><TD><FONT POINT-SIZE="11">«relator»</FONT></TD></TR><TR><TD><B>Grounded Responsibility</B></TD></TR><TR><TD ALIGN="LEFT"><FONT POINT-SIZE="10">validFrom: dateTime [0..1]<BR ALIGN="LEFT"/>validTo: dateTime [0..1]</FONT></TD></TR></TABLE>>];
+"SR-CPT-001" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#fff0cf"><TR><TD><FONT POINT-SIZE="11">PATTERN BOUNDARY</FONT></TD></TR><TR><TD><B>Risk</B></TD></TR></TABLE>>];
+"SR-CPT-027" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Risk Treatment Plan</B></TD></TR></TABLE>>];
+"SR-CPT-030" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«roleMixin»</FONT></TD></TR><TR><TD><B>Risk Owner</B></TD></TR></TABLE>>];
+"SR-CPT-031" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«relator»</FONT></TD></TR><TR><TD><B>Risk Responsibility</B></TD></TR></TABLE>>];
+"SR-CPT-033" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Risk Register Entry</B></TD></TR></TABLE>>];
+"SR-CPT-001" -> "B-Actor" [arrowhead=none, label="/hasRiskOwner", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-026-view-1-1"];
+"SR-CPT-033" -> "B-Actor" [arrowhead=none, label="/hasRiskOwner", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-026-view-2-1"];
+"SR-CPT-031" -> "SR-CPT-001" [arrowhead=none, label="assignsResponsibilityFor", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-027-view-1-1"];
+"SR-CPT-031" -> "SR-CPT-033" [arrowhead=none, label="assignsResponsibilityFor", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-027-view-1-2"];
+"SR-CPT-031" -> "SR-CPT-027" [arrowhead=none, label="assignsResponsibilityFor", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-027-view-1-3"];
+"SR-CPT-031" -> "SR-CPT-030" [arrowhead=none, label="responsibilityAssignedTo", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-028-view-1-1"];
+"SR-CPT-031" -> "B-Actor" [arrowhead=none, label="responsibilityAssignedTo", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-028-view-1-2"];
+"H-GroundedRiskResponsibility" -> "SR-CPT-031" [arrowhead=empty, color="#34465d", id="GEN-H-GroundedRiskResponsibility-SR-CPT-031"];
+"H-GroundedRiskResponsibility" -> "B-Endurant" [arrowhead=none, label="«mediation»\nmediates", taillabel="0..*", headlabel="2..*", labeldistance=1.8, color="#147e74", fontcolor="#147e74", id="HP-mediates"];
+}

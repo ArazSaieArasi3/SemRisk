@@ -1,0 +1,537 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix gufo: <http://purl.org/nemo/gufo#> .
+@prefix ist: <urn:semrisk:profile:information-state:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sr: <urn:semrisk:entity:> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sr:SR-CPT-002 a gufo:RoleMixin,
+        owl:Class ;
+    rdfs:label "Risk Subject"@en ;
+    dcterms:conformsTo "SR-REQ-010" ;
+    dcterms:identifier "SR-CPT-002" ;
+    dcterms:relation "CQ-013; CQ-017" ;
+    rdfs:comment "An entity, value-bearing object or externally owned item about which risk relevance is asserted."@en .
+
+sr:SR-CPT-010 a owl:Class ;
+    rdfs:label "Exposure"@en ;
+    dcterms:conformsTo "SR-REQ-009; SR-REQ-013" ;
+    dcterms:identifier "SR-CPT-010" ;
+    dcterms:relation "CQ-012; CQ-019" ;
+    rdfs:comment "A context-dependent condition or relation indicating how a subject/value is exposed to a risk-relevant source/event; assessment scores remain separate."@en ;
+    rdfs:subClassOf gufo:Situation .
+
+sr:SR-CPT-014 a gufo:SubKind,
+        owl:Class ;
+    rdfs:label "Likelihood Assessment Result"@en ;
+    dcterms:conformsTo "SR-REQ-013" ;
+    dcterms:identifier "SR-CPT-014" ;
+    dcterms:relation "CQ-019; CQ-032" ;
+    rdfs:comment "An assessment result concerning estimated likelihood/probability/frequency under a specified method and context."@en ;
+    rdfs:subClassOf sr:SR-CPT-013,
+        ist:ArtifactVersion .
+
+sr:SR-CPT-017 a gufo:SubKind,
+        owl:Class ;
+    rdfs:label "Inherent Risk Assessment Result"@en ;
+    dcterms:conformsTo "SR-REQ-004" ;
+    dcterms:identifier "SR-CPT-017" ;
+    dcterms:relation "CQ-007; CQ-023" ;
+    rdfs:comment "A risk assessment result representing a pre-treatment/pre-control assessment context."@en ;
+    rdfs:subClassOf sr:SR-CPT-013,
+        ist:ArtifactVersion ;
+    skos:scopeNote "Framework labels such as gross risk require explicit method/profile mapping and are not universal synonyms of inherent risk."@en .
+
+sr:SR-CPT-018 a gufo:SubKind,
+        owl:Class ;
+    rdfs:label "Residual Risk Assessment Result"@en ;
+    dcterms:conformsTo "SR-REQ-004" ;
+    dcterms:identifier "SR-CPT-018" ;
+    dcterms:relation "CQ-007; CQ-023" ;
+    rdfs:comment "A risk assessment result representing a post-treatment/control assessment context."@en ;
+    rdfs:subClassOf sr:SR-CPT-013,
+        ist:ArtifactVersion ;
+    skos:scopeNote "Current, net, target or desired risk labels require explicit method/profile mapping; none is universally equivalent to residual risk."@en .
+
+sr:SR-CPT-021 a skos:Concept ;
+    rdfs:label "Provenance"@en ;
+    dcterms:conformsTo "SR-REQ-008; SR-REQ-017" ;
+    dcterms:identifier "SR-CPT-021" ;
+    dcterms:relation "CQ-011; CQ-027; CQ-037; CQ-038" ;
+    rdfs:comment "Information about origin, derivation, version, agent, time and transformation history of an artifact/assertion/result."@en ;
+    skos:scopeNote "Formal realization uses qualified PROV-O patterns; this node is a conceptual registry marker, not a domain class."@en .
+
+sr:SR-CPT-030 a gufo:RoleMixin,
+        owl:Class ;
+    rdfs:label "Risk Owner"@en ;
+    dcterms:conformsTo "SR-REQ-006" ;
+    dcterms:identifier "SR-CPT-030" ;
+    dcterms:relation "CQ-009; CQ-025" ;
+    rdfs:comment "A context-dependent role classification of persons, organizations or other eligible external actors bearing specified risk-management responsibilities; bearer identity is supplied by the external actor kinds, not by ownership."@en ;
+    skos:scopeNote "Paper 1 permits multiple valid responsibility assignments/co-owners and does not impose a unique-owner cardinality; delegation/RACI/committee authority remain profile-level future refinements."@en .
+
+sr:SR-REL-001 a owl:ObjectProperty ;
+    rdfs:label "concernsRisk"@en ;
+    dcterms:conformsTo "SR-REQ-001; SR-REQ-019" ;
+    dcterms:identifier "SR-REL-001" ;
+    dcterms:relation "CQ-001; CQ-002; CQ-016; CQ-038" ;
+    rdfs:comment "Links a Risk Register Entry or Scenario Description to the Risk it concerns."@en ;
+    skos:scopeNote "No global OWL domain is asserted: using concernsRisk must not infer that every subject is a Risk Register Entry. Register-entry completeness is a SHACL/profile constraint."@en .
+
+sr:SR-REL-002 a owl:ObjectProperty ;
+    rdfs:label "describesScenario"@en ;
+    dcterms:conformsTo "SR-REQ-002; SR-REQ-019" ;
+    dcterms:identifier "SR-REL-002" ;
+    dcterms:relation "CQ-003; CQ-004; CQ-021" ;
+    rdfs:comment "Links a Scenario Description to the Risk Scenario it describes."@en .
+
+sr:SR-REL-003 a owl:ObjectProperty ;
+    rdfs:label "realizedAs"@en ;
+    dcterms:conformsTo "SR-REQ-002" ;
+    dcterms:identifier "SR-REL-003" ;
+    dcterms:relation "CQ-003; CQ-021" ;
+    rdfs:comment "Links a Risk Scenario to a realized Risk Event when realization evidence exists."@en ;
+    rdfs:domain sr:SR-CPT-006 ;
+    rdfs:range sr:SR-CPT-007 .
+
+sr:SR-REL-004 a owl:ObjectProperty ;
+    rdfs:label "hasConsequence"@en ;
+    dcterms:conformsTo "SR-REQ-009" ;
+    dcterms:identifier "SR-REL-004" ;
+    dcterms:relation "CQ-012; CQ-028" ;
+    rdfs:comment "Links a Risk Event or Risk Scenario to a Consequence."@en ;
+    rdfs:range sr:SR-CPT-008 .
+
+sr:SR-REL-005 a owl:ObjectProperty ;
+    rdfs:label "hasRiskSource"@en ;
+    dcterms:conformsTo "SR-REQ-009" ;
+    dcterms:identifier "SR-REL-005" ;
+    dcterms:relation "CQ-012" ;
+    rdfs:comment "Links a Risk or Risk Scenario to a Risk Source considered relevant."@en ;
+    rdfs:range sr:SR-CPT-003 .
+
+sr:SR-REL-006 a owl:ObjectProperty ;
+    rdfs:label "predisposedBy"@en ;
+    dcterms:conformsTo "SR-REQ-009" ;
+    dcterms:identifier "SR-REL-006" ;
+    dcterms:relation "CQ-012; CQ-028" ;
+    rdfs:comment "Links a Risk Scenario/Event context to a Predisposing Condition."@en ;
+    rdfs:range sr:SR-CPT-004 .
+
+sr:SR-REL-007 a owl:ObjectProperty ;
+    rdfs:label "triggeredBy"@en ;
+    dcterms:conformsTo "SR-REQ-009" ;
+    dcterms:identifier "SR-REL-007" ;
+    dcterms:relation "CQ-012" ;
+    rdfs:comment "Links a Risk Event or process transition to a Trigger."@en ;
+    rdfs:domain sr:SR-CPT-007 ;
+    rdfs:range sr:SR-CPT-005 .
+
+sr:SR-REL-008 a owl:ObjectProperty ;
+    rdfs:label "causes"@en ;
+    dcterms:conformsTo "SR-REQ-009" ;
+    dcterms:identifier "SR-REL-008" ;
+    dcterms:relation "CQ-012; CQ-028" ;
+    rdfs:comment "Asserts causal dependence supported by explicit evidence/model assumptions."@en .
+
+sr:SR-REL-009 a owl:ObjectProperty ;
+    rdfs:label "associatedWith"@en ;
+    dcterms:conformsTo "SR-REQ-009" ;
+    dcterms:identifier "SR-REL-009" ;
+    dcterms:relation "CQ-012; CQ-028" ;
+    rdfs:comment "Represents non-causal association/dependency between risk-relevant entities."@en .
+
+sr:SR-REL-010 a owl:ObjectProperty ;
+    rdfs:label "affects"@en ;
+    dcterms:conformsTo "SR-REQ-010" ;
+    dcterms:identifier "SR-REL-010" ;
+    dcterms:relation "CQ-013; CQ-017" ;
+    rdfs:comment "Links Risk/Event/Consequence to an externally owned Objective, Capability, Process or Risk Subject."@en .
+
+sr:SR-REL-011 a owl:ObjectProperty ;
+    rdfs:label "exposes"@en ;
+    dcterms:conformsTo "SR-REQ-009; SR-REQ-010" ;
+    dcterms:identifier "SR-REL-011" ;
+    dcterms:relation "CQ-012; CQ-013" ;
+    rdfs:comment "Links a Risk Source/Condition to a Risk Subject under a relevant context."@en .
+
+sr:SR-REL-012 a owl:ObjectProperty ;
+    rdfs:label "hasVulnerability"@en ;
+    dcterms:conformsTo "SR-REQ-009" ;
+    dcterms:identifier "SR-REL-012" ;
+    dcterms:relation "CQ-012" ;
+    rdfs:comment "Links a Risk Subject/context to a Vulnerability."@en ;
+    rdfs:range sr:SR-CPT-009 .
+
+sr:SR-REL-013 a owl:ObjectProperty ;
+    rdfs:label "performedAssessmentOf"@en ;
+    dcterms:conformsTo "SR-REQ-003; SR-REQ-012" ;
+    dcterms:identifier "SR-REL-013" ;
+    dcterms:relation "CQ-005; CQ-006; CQ-015" ;
+    rdfs:comment "Links a Risk Assessment Activity to the Risk/context assessed."@en ;
+    rdfs:domain sr:SR-CPT-011 ;
+    rdfs:range sr:SR-CPT-001 .
+
+sr:SR-REL-015 a owl:ObjectProperty ;
+    rdfs:label "producesAssessmentResult"@en ;
+    dcterms:conformsTo "SR-REQ-003; SR-REQ-012" ;
+    dcterms:identifier "SR-REL-015" ;
+    dcterms:relation "CQ-005; CQ-006; CQ-022" ;
+    rdfs:comment "Links an assessment activity to a produced assessment result."@en ;
+    rdfs:domain sr:SR-CPT-011 ;
+    rdfs:range sr:SR-CPT-013 .
+
+sr:SR-REL-016 a owl:ObjectProperty ;
+    rdfs:label "assessmentResultConcerns"@en ;
+    dcterms:conformsTo "SR-REQ-003; SR-REQ-004; SR-REQ-019" ;
+    dcterms:identifier "SR-REL-016" ;
+    dcterms:relation "CQ-007; CQ-015; CQ-031" ;
+    rdfs:comment "Links an assessment result to the Risk/context it evaluates."@en ;
+    rdfs:domain sr:SR-CPT-013 ;
+    rdfs:range sr:SR-CPT-001 .
+
+sr:SR-REL-017 a owl:ObjectProperty ;
+    rdfs:label "supportedByEvidence"@en ;
+    dcterms:conformsTo "SR-REQ-008; SR-REQ-012; SR-REQ-017" ;
+    dcterms:identifier "SR-REL-017" ;
+    dcterms:relation "CQ-006; CQ-011; CQ-027; CQ-037" ;
+    rdfs:comment "Links an assessment/result/assertion to Evidence Item(s)."@en ;
+    rdfs:range sr:SR-CPT-020 .
+
+sr:SR-REL-018 a owl:ObjectProperty ;
+    rdfs:label "generatedByObservation"@en ;
+    dcterms:conformsTo "SR-REQ-008" ;
+    dcterms:identifier "SR-REL-018" ;
+    dcterms:relation "CQ-011" ;
+    rdfs:comment "Links an Observation Result to its Observation Activity."@en ;
+    rdfs:domain sr:SR-CPT-023 ;
+    rdfs:range sr:SR-CPT-022 .
+
+sr:SR-REL-019 a owl:ObjectProperty ;
+    rdfs:label "hasProvenance"@en ;
+    dcterms:conformsTo "SR-REQ-008; SR-REQ-017" ;
+    dcterms:identifier "SR-REL-019" ;
+    dcterms:relation "CQ-011; CQ-027; CQ-037; CQ-038" ;
+    rdfs:comment "Links an artifact/result/assertion to provenance information."@en ;
+    skos:scopeNote "Compatibility umbrella only; qualified PROV-O generation/derivation/attribution is normative."@en .
+
+sr:SR-REL-021 a owl:ObjectProperty ;
+    rdfs:label "selectsTreatmentStrategy"@en ;
+    dcterms:conformsTo "SR-REQ-007" ;
+    dcterms:identifier "SR-REL-021" ;
+    dcterms:relation "CQ-010; CQ-026" ;
+    rdfs:comment "Links a risk-management decision/context to a Risk Treatment Strategy."@en ;
+    rdfs:range sr:SR-CPT-026 .
+
+sr:SR-REL-022 a owl:ObjectProperty ;
+    rdfs:label "planImplementsStrategy"@en ;
+    dcterms:conformsTo "SR-REQ-007" ;
+    dcterms:identifier "SR-REL-022" ;
+    dcterms:relation "CQ-010; CQ-026" ;
+    rdfs:comment "Links a Risk Treatment Plan to a Treatment Strategy."@en ;
+    rdfs:domain sr:SR-CPT-027 ;
+    rdfs:range sr:SR-CPT-026 .
+
+sr:SR-REL-023 a owl:ObjectProperty ;
+    rdfs:label "activityExecutesPlan"@en ;
+    dcterms:conformsTo "SR-REQ-007" ;
+    dcterms:identifier "SR-REL-023" ;
+    dcterms:relation "CQ-010; CQ-026" ;
+    rdfs:comment "Links a Risk Treatment Activity to the Plan it executes."@en ;
+    rdfs:domain sr:SR-CPT-028 ;
+    rdfs:range sr:SR-CPT-027 .
+
+sr:SR-REL-024 a owl:ObjectProperty ;
+    rdfs:label "activityUsesControl"@en ;
+    dcterms:conformsTo "SR-REQ-007" ;
+    dcterms:identifier "SR-REL-024" ;
+    dcterms:relation "CQ-010; CQ-026" ;
+    rdfs:comment "Links a Risk Treatment Activity to a Control Mechanism it deploys/uses."@en ;
+    rdfs:domain sr:SR-CPT-028 ;
+    rdfs:range sr:SR-CPT-029 .
+
+sr:SR-REL-025 a owl:ObjectProperty ;
+    rdfs:label "controlProtects"@en ;
+    dcterms:conformsTo "SR-REQ-007; SR-REQ-010" ;
+    dcterms:identifier "SR-REL-025" ;
+    dcterms:relation "CQ-010; CQ-013" ;
+    rdfs:comment "Links a Control Mechanism to a Risk Subject/Objective/Process it protects or modifies."@en ;
+    rdfs:domain sr:SR-CPT-029 .
+
+sr:SR-REL-027 a owl:ObjectProperty ;
+    rdfs:label "assignsResponsibilityFor"@en ;
+    dcterms:conformsTo "SR-REQ-006; SR-REQ-019" ;
+    dcterms:identifier "SR-REL-027" ;
+    dcterms:relation "CQ-009; CQ-038" ;
+    rdfs:comment "Links Risk Responsibility/assignment to the relevant Risk/artifact/obligation."@en ;
+    rdfs:domain sr:SR-CPT-031 .
+
+sr:SR-REL-028 a owl:ObjectProperty ;
+    rdfs:label "responsibilityAssignedTo"@en ;
+    dcterms:conformsTo "SR-REQ-006; SR-REQ-019" ;
+    dcterms:identifier "SR-REL-028" ;
+    dcterms:relation "CQ-009; CQ-038" ;
+    rdfs:comment "Links a Risk Responsibility assignment to the Actor/Role bearer."@en ;
+    rdfs:domain sr:SR-CPT-031 .
+
+sr:SR-REL-031 a owl:ObjectProperty ;
+    rdfs:label "hasRiskState"@en ;
+    dcterms:conformsTo "SR-REQ-005; SR-REQ-019" ;
+    dcterms:identifier "SR-REL-031" ;
+    dcterms:relation "CQ-008; CQ-024; CQ-038" ;
+    rdfs:comment "Links a Risk/context to Risk State."@en ;
+    rdfs:domain sr:SR-CPT-001 ;
+    rdfs:range sr:SR-CPT-035 .
+
+sr:SR-REL-032 a owl:ObjectProperty ;
+    rdfs:label "precedesState"@en ;
+    dcterms:conformsTo "SR-REQ-005; SR-REQ-019" ;
+    dcterms:identifier "SR-REL-032" ;
+    dcterms:relation "CQ-015; CQ-031; CQ-038" ;
+    rdfs:comment "Links a historical state to a later state within the same state dimension."@en .
+
+sr:SR-REL-033 a owl:ObjectProperty ;
+    rdfs:label "supersedesAssessmentResult"@en ;
+    dcterms:conformsTo "SR-REQ-012; SR-REQ-019" ;
+    dcterms:identifier "SR-REL-033" ;
+    dcterms:relation "CQ-015; CQ-031; CQ-038" ;
+    rdfs:comment "Links a newer assessment result to an older result it supersedes for a stated context."@en ;
+    rdfs:domain sr:SR-CPT-013 ;
+    rdfs:range sr:SR-CPT-013 .
+
+sr:SR-REL-034 a owl:ObjectProperty ;
+    rdfs:label "basedOnPriorAssessment"@en ;
+    dcterms:conformsTo "SR-REQ-012; SR-REQ-019" ;
+    dcterms:identifier "SR-REL-034" ;
+    dcterms:relation "CQ-015; CQ-031" ;
+    rdfs:comment "Links a reassessment activity to prior assessment/result context used as input."@en .
+
+<urn:semrisk:ontology:core> a owl:Ontology ;
+    dcterms:created "2026-10-05"^^xsd:date ;
+    dcterms:source "SemRisk issues #24 #25 #26 #43 #27" ;
+    dcterms:title "SemRisk Core Ontology"@en ;
+    owl:imports <http://purl.org/nemo/gufo#/1.0.0> ;
+    owl:versionIRI <urn:semrisk:ontology:core:0.2.0-rc.4> ;
+    owl:versionInfo "0.2.0-rc.4" .
+
+ist:expressesContent a owl:ObjectProperty ;
+    rdfs:label "expressesContent"@en ;
+    rdfs:domain ist:ArtifactVersion ;
+    rdfs:range ist:InformationContent .
+
+ist:versionOf a owl:ObjectProperty ;
+    rdfs:label "versionOf"@en ;
+    rdfs:domain ist:ArtifactVersion ;
+    rdfs:range ist:ManagedInformationArtifact .
+
+sr:SR-CPT-003 a owl:Class ;
+    rdfs:label "Risk Source"@en ;
+    dcterms:conformsTo "SR-REQ-009" ;
+    dcterms:identifier "SR-CPT-003" ;
+    dcterms:relation "CQ-012; CQ-028" ;
+    rdfs:comment "A risk-relevant origin, source or contextual contributor that may participate in a scenario or event; causal status is not implied by the label alone."@en ;
+    skos:scopeNote "Cross-category contextual/source role pattern. Do not force Risk Source under one gUFO primitive; use typed refinements when the underlying category is known."@en .
+
+sr:SR-CPT-004 a owl:Class ;
+    rdfs:label "Predisposing Condition"@en ;
+    dcterms:conformsTo "SR-REQ-009" ;
+    dcterms:identifier "SR-CPT-004" ;
+    dcterms:relation "CQ-012; CQ-028" ;
+    rdfs:comment "A contextual state-of-affairs or situational condition that increases susceptibility to a risk-relevant event/effect without necessarily directly causing it."@en ;
+    rdfs:subClassOf gufo:Situation ;
+    owl:disjointWith sr:SR-CPT-009 ;
+    skos:scopeNote "Intrinsic disposition-like susceptibility belongs under Vulnerability or an explicit profile refinement; Predisposing Condition remains situational in the Paper-1 Core."@en .
+
+sr:SR-CPT-005 a owl:Class ;
+    rdfs:label "Trigger"@en ;
+    dcterms:conformsTo "SR-REQ-009" ;
+    dcterms:identifier "SR-CPT-005" ;
+    dcterms:relation "CQ-012" ;
+    rdfs:comment "An occurrence acting as the initiating event for a risk-relevant event or process transition; an enabling condition is represented separately as a Predisposing Condition."@en ;
+    rdfs:subClassOf gufo:Event .
+
+sr:SR-CPT-006 a owl:Class ;
+    rdfs:label "Risk Scenario"@en ;
+    dcterms:conformsTo "SR-REQ-002" ;
+    dcterms:identifier "SR-CPT-006" ;
+    dcterms:relation "CQ-003; CQ-004; CQ-021" ;
+    rdfs:comment "A risk-relevant situation type specifying a possible configuration, whether or not instantiated; separate from the managed descriptions that express it and from realized events."@en ;
+    rdfs:subClassOf gufo:SituationType ;
+    owl:disjointWith gufo:Individual,
+        sr:SR-CPT-007 .
+
+sr:SR-CPT-008 a owl:Class ;
+    rdfs:label "Consequence"@en ;
+    dcterms:conformsTo "SR-REQ-009; SR-REQ-013" ;
+    dcterms:identifier "SR-CPT-008" ;
+    dcterms:relation "CQ-012; CQ-019" ;
+    rdfs:comment "A risk-relevant outcome or effect of an event/scenario; its magnitude/severity may be assessed separately."@en ;
+    rdfs:subClassOf gufo:Situation ;
+    owl:disjointWith sr:SR-CPT-015 .
+
+sr:SR-CPT-015 a gufo:SubKind,
+        owl:Class ;
+    rdfs:label "Impact Assessment Result"@en ;
+    dcterms:conformsTo "SR-REQ-013" ;
+    dcterms:identifier "SR-CPT-015" ;
+    dcterms:relation "CQ-019" ;
+    rdfs:comment "An assessment result concerning magnitude/severity of effects under a specified assessment method/context."@en ;
+    rdfs:subClassOf sr:SR-CPT-013,
+        ist:ArtifactVersion .
+
+sr:SR-CPT-020 a gufo:Role,
+        owl:Class ;
+    rdfs:label "Evidence Item"@en ;
+    dcterms:conformsTo "SR-REQ-008; SR-REQ-017" ;
+    dcterms:identifier "SR-CPT-020" ;
+    dcterms:relation "CQ-011; CQ-027; CQ-037" ;
+    rdfs:comment "An information artifact used in context to support, challenge or contextualize a risk-related assertion, assessment or decision."@en ;
+    rdfs:subClassOf ist:ManagedInformationArtifact .
+
+sr:SR-CPT-022 a owl:Class ;
+    rdfs:label "Observation Activity"@en ;
+    dcterms:conformsTo "SR-REQ-008" ;
+    dcterms:identifier "SR-CPT-022" ;
+    dcterms:relation "CQ-011; CQ-030" ;
+    rdfs:comment "An activity that observes/measures risk-relevant phenomena and may produce observation results."@en ;
+    rdfs:subClassOf gufo:Event .
+
+sr:SR-CPT-023 a gufo:SubKind,
+        owl:Class ;
+    rdfs:label "Observation Result"@en ;
+    dcterms:conformsTo "SR-REQ-008" ;
+    dcterms:identifier "SR-CPT-023" ;
+    dcterms:relation "CQ-011; CQ-030" ;
+    rdfs:comment "An information/measurement result produced by an observation/monitoring activity and potentially used as evidence."@en ;
+    rdfs:subClassOf ist:ArtifactVersion .
+
+sr:SR-CPT-035 a owl:Class ;
+    rdfs:label "Risk State"@en ;
+    dcterms:conformsTo "SR-REQ-005; SR-REQ-019" ;
+    dcterms:identifier "SR-CPT-035" ;
+    dcterms:relation "CQ-008; CQ-024; CQ-038" ;
+    rdfs:comment "A time- and context-bound state-of-affairs concerning the governed Risk context, distinct from assessment results, record/workflow progression and management/monitoring classifications."@en ;
+    rdfs:subClassOf gufo:Situation ;
+    skos:scopeNote "Core Risk State is situational. Workflow, management-attention, escalation and monitoring classifications stay outside this class unless a later profile explicitly introduces them."@en .
+
+ist:InformationContent a gufo:AbstractIndividualType,
+        owl:Class ;
+    rdfs:label "InformationContent"@en ;
+    rdfs:comment "Abstract informational content, distinct from its managed artifacts and concrete carriers. Content equality is not decided by lexical, hash or numeric equality in this profile."@en ;
+    rdfs:subClassOf gufo:AbstractIndividual .
+
+sr:SR-CPT-009 a owl:Class ;
+    rdfs:label "Vulnerability"@en ;
+    dcterms:conformsTo "SR-REQ-009" ;
+    dcterms:identifier "SR-CPT-009" ;
+    dcterms:relation "CQ-012" ;
+    rdfs:comment "A disposition or condition that increases susceptibility to a risk-relevant event/effect."@en ;
+    rdfs:subClassOf gufo:IntrinsicMode .
+
+sr:SR-CPT-011 a owl:Class ;
+    rdfs:label "Risk Assessment Activity"@en ;
+    dcterms:conformsTo "SR-REQ-003; SR-REQ-012" ;
+    dcterms:identifier "SR-CPT-011" ;
+    dcterms:relation "CQ-005; CQ-006; CQ-015; CQ-022" ;
+    rdfs:comment "An activity applying a method, context and evidence to produce one or more risk assessment results."@en ;
+    rdfs:subClassOf gufo:Event ;
+    owl:disjointWith sr:SR-CPT-013 .
+
+sr:SR-CPT-031 a owl:Class ;
+    rdfs:label "Risk Responsibility"@en ;
+    dcterms:conformsTo "SR-REQ-006" ;
+    dcterms:identifier "SR-CPT-031" ;
+    dcterms:relation "CQ-009; CQ-025" ;
+    rdfs:comment "A concrete responsibility/accountability assignment context that depends on an Actor/role bearer and any modeled governance participants, and is about the Risk, artifact, plan or obligation it concerns."@en ;
+    rdfs:subClassOf gufo:Relator ;
+    skos:scopeNote "Under the #71 grounding contract, mediation applies to endurant participants; the derived Risk pattern is an aboutness/assignment target rather than a mediated endurant."@en .
+
+sr:SR-CPT-001 a owl:Class ;
+    rdfs:label "Risk"@en ;
+    dcterms:conformsTo "SR-REQ-001; SR-REQ-019" ;
+    dcterms:identifier "SR-CPT-001" ;
+    dcterms:relation "CQ-001; CQ-002; CQ-016" ;
+    rdfs:comment "A context-dependent risk phenomenon or pattern concerning possible effects on value/objectives; distinct from records, descriptions, scores and workflow artifacts."@en ;
+    owl:disjointWith sr:SR-CPT-013 ;
+    skos:scopeNote "Paper-1 identity continuity is governed by a stable semantic identity and the #69 identity/continuity contract. Mutable record, assessment, state, ownership and treatment fields do not automatically define or replace Risk identity."@en .
+
+sr:SR-CPT-007 a owl:Class ;
+    rdfs:label "Risk Event"@en ;
+    dcterms:conformsTo "SR-REQ-002; SR-REQ-009" ;
+    dcterms:identifier "SR-CPT-007" ;
+    dcterms:relation "CQ-003; CQ-012; CQ-021" ;
+    rdfs:comment "A realized occurrence relevant to a risk context, distinct from a possible scenario and information artifacts describing it."@en ;
+    rdfs:subClassOf gufo:Event .
+
+sr:SR-CPT-026 a gufo:SubKind,
+        owl:Class ;
+    rdfs:label "Risk Treatment Strategy"@en ;
+    dcterms:conformsTo "SR-REQ-007" ;
+    dcterms:identifier "SR-CPT-026" ;
+    dcterms:relation "CQ-010; CQ-026" ;
+    rdfs:comment "A decision/information artifact specifying a high-level selected approach for addressing a risk."@en ;
+    rdfs:subClassOf ist:ArtifactVersion .
+
+sr:SR-CPT-027 a gufo:SubKind,
+        owl:Class ;
+    rdfs:label "Risk Treatment Plan"@en ;
+    dcterms:conformsTo "SR-REQ-007" ;
+    dcterms:identifier "SR-CPT-027" ;
+    dcterms:relation "CQ-010; CQ-026" ;
+    rdfs:comment "An information artifact specifying planned treatment activities, responsibilities, timing or resources."@en ;
+    rdfs:subClassOf ist:ArtifactVersion .
+
+sr:SR-CPT-028 a owl:Class ;
+    rdfs:label "Risk Treatment Activity"@en ;
+    dcterms:conformsTo "SR-REQ-007" ;
+    dcterms:identifier "SR-CPT-028" ;
+    dcterms:relation "CQ-010; CQ-026" ;
+    rdfs:comment "An activity performed to modify risk-relevant conditions, likelihood, consequences or preparedness."@en ;
+    rdfs:subClassOf gufo:Event .
+
+sr:SR-CPT-029 a gufo:RoleMixin,
+        owl:Class ;
+    rdfs:label "Control Mechanism"@en ;
+    dcterms:conformsTo "SR-REQ-007; SR-REQ-010" ;
+    dcterms:identifier "SR-CPT-029" ;
+    dcterms:relation "CQ-010; CQ-013; CQ-026" ;
+    rdfs:comment "A persistent mechanism, capability or implemented measure used in prevention, detection, protection or risk treatment."@en ;
+    skos:scopeNote "Existence or use of a Control Mechanism does not entail design adequacy, operating effectiveness, assurance success, or risk reduction."@en .
+
+ist:ManagedInformationArtifact a gufo:Kind,
+        owl:Class ;
+    rdfs:label "ManagedInformationArtifact"@en ;
+    rdfs:comment "A socially maintained information artifact, individuated by an issuing or managing context and governed identifier; not its abstract meaning or physical/digital carrier. Persistent artifacts can acquire successive versions."@en ;
+    rdfs:subClassOf gufo:FunctionalComplex .
+
+sr:SR-CPT-013 a gufo:SubKind,
+        owl:Class ;
+    rdfs:label "Risk Assessment Result"@en ;
+    dcterms:conformsTo "SR-REQ-003; SR-REQ-004; SR-REQ-012" ;
+    dcterms:identifier "SR-CPT-013" ;
+    dcterms:relation "CQ-005; CQ-006; CQ-007; CQ-015; CQ-022; CQ-031" ;
+    rdfs:comment "A contextual, time-bound information/measurement result produced by a Risk Assessment Activity concerning a risk subject/context."@en ;
+    rdfs:subClassOf ist:ArtifactVersion .
+
+ist:ArtifactVersion a gufo:SubKind,
+        owl:Class ;
+    rdfs:label "ArtifactVersion"@en ;
+    rdfs:comment "An immutable issued information artifact version; a new content-bearing revision receives a new version IRI. Equal content does not identify two issuing acts or versions."@en ;
+    rdfs:subClassOf ist:ManagedInformationArtifact .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( sr:SR-CPT-026 sr:SR-CPT-027 sr:SR-CPT-028 sr:SR-CPT-029 ) .
+
+
+# Run 8: reified exposure endpoints, separate from an exposure rating.
+sr:SR-REL-039 a owl:ObjectProperty ;
+ rdfs:label "hasExposedSubject"@en ; dcterms:identifier "SR-REL-039" ;
+ rdfs:domain sr:SR-CPT-010 ; rdfs:range sr:SR-CPT-002 ;
+ rdfs:comment "Links an Exposure situation to its exposed Risk Subject. The qualified pair profile requires one explicit subject; no global functionality or outcome is asserted."@en .
+sr:SR-REL-040 a owl:ObjectProperty ;
+ rdfs:label "hasExposureSource"@en ; dcterms:identifier "SR-REL-040" ;
+ rdfs:domain sr:SR-CPT-010 ; rdfs:range sr:SR-CPT-003 ;
+ rdfs:comment "Links an Exposure situation to its risk-relevant Risk Source. This supplies contextual grounding, not a causal claim or occurrence assertion."@en .

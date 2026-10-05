@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1190.55pt" height="841.89pt" viewBox="0 0 1190.55 841.89"><rect width="100%" height="100%" fill="white" /><text font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#14283e" x="45" y="45">08   Managed artifacts, versions and content</text><text font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#14283e" x="45" y="75">SemRisk 0.2.0-rc.4 | OntoUML-based view with explicit scope boundaries</text><g transform="translate(45.0 110) scale(0.8158265381764269)"><svg width="1349.0" height="356.0" viewBox="0.00 0.00 1349.00 356.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 334.2)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-21.6,21.6 -21.6,-334.2 1327.6,-334.2 1327.6,21.6 -21.6,21.6" />
+
+<g id="HP-expressesContent" class="edge">
+<title>H-ArtifactVersion-&gt;H-InformationContent</title>
+<path fill="none" stroke="#147e74" d="M641.38,-132.45C644.45,-112.29 648.53,-85.52 651.59,-65.39" />
+<text xml:space="preserve" text-anchor="middle" x="691.38" y="-98.5" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">expressesContent</text>
+<text xml:space="preserve" text-anchor="middle" x="656.66" y="-79.36" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">1..*</text>
+<text xml:space="preserve" text-anchor="middle" x="636.32" y="-111.88" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">0..*</text>
+</g>
+
+<g id="GEN-H-ArtifactVersion-H-ManagedInformationArtifact" class="edge">
+<title>H-ArtifactVersion-&gt;H-ManagedInformationArtifact</title>
+<path fill="none" stroke="#34465d" d="M582.84,-132.42C559.73,-120.05 537.98,-108.4 537.98,-108.4 537.98,-108.4 523.81,-92.99 508.61,-76.45" />
+<polygon fill="none" stroke="#34465d" points="510.53,-75.18 504.45,-71.93 507.18,-78.26 510.53,-75.18" />
+</g>
+
+<g id="HP-versionOf" class="edge">
+<title>H-ArtifactVersion-&gt;H-ManagedInformationArtifact</title>
+<path fill="none" stroke="#147e74" d="M598.71,-132.45C574.53,-114.17 543.15,-90.43 517.66,-71.16" />
+<text xml:space="preserve" text-anchor="middle" x="587.89" y="-98.5" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">versionOf</text>
+<text xml:space="preserve" text-anchor="middle" x="535.26" y="-71.63" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">1</text>
+<text xml:space="preserve" text-anchor="middle" x="581.11" y="-125.38" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">0..*</text>
+</g>
+
+<g id="GEN-SR-CPT-012-H-ArtifactVersion" class="edge">
+<title>SR-CPT-012-&gt;H-ArtifactVersion</title>
+<path fill="none" stroke="#34465d" d="M131.74,-247.91C140.75,-244.06 146.98,-241.4 146.98,-241.4 146.98,-241.4 561.98,-192.4 561.98,-192.4 561.98,-192.4 564.94,-191.25 569.68,-189.42" />
+<polygon fill="none" stroke="#34465d" points="570.5,-191.54 575.74,-187.08 568.86,-187.3 570.5,-191.54" />
+</g>
+
+<g id="GEN-SR-CPT-019-H-ArtifactVersion" class="edge">
+<title>SR-CPT-019-&gt;H-ArtifactVersion</title>
+<path fill="none" stroke="#34465d" d="M337.8,-247.11C348.06,-243.7 354.98,-241.4 354.98,-241.4 354.98,-241.4 561.98,-192.4 561.98,-192.4 561.98,-192.4 564.94,-191.25 569.68,-189.42" />
+<polygon fill="none" stroke="#34465d" points="570.5,-191.54 575.74,-187.08 568.86,-187.3 570.5,-191.54" />
+</g>
+
+<g id="GEN-SR-CPT-020-H-ManagedInformationArtifact" class="edge">
+<title>SR-CPT-020-&gt;H-ManagedInformationArtifact</title>
+<path fill="none" stroke="#34465d" d="M235.71,-137.93C278.08,-119.76 337.55,-94.25 386.22,-73.38" />
+<polygon fill="none" stroke="#34465d" points="386.85,-75.58 391.93,-70.93 385.06,-71.4 386.85,-75.58" />
+</g>
+
+<g id="GEN-SR-CPT-023-H-ArtifactVersion" class="edge">
+<title>SR-CPT-023-&gt;H-ArtifactVersion</title>
+<path fill="none" stroke="#34465d" d="M492.19,-247C519.15,-231.44 552.46,-212.2 580.34,-196.11" />
+<polygon fill="none" stroke="#34465d" points="581.13,-198.28 585.62,-193.06 578.85,-194.34 581.13,-198.28" />
+</g>
+
+<g id="GEN-SR-CPT-024-H-ArtifactVersion" class="edge">
+<title>SR-CPT-024-&gt;H-ArtifactVersion</title>
+<path fill="none" stroke="#34465d" d="M596.14,-247C603.26,-232.42 611.96,-214.62 619.49,-199.2" />
+<polygon fill="none" stroke="#34465d" points="621.39,-200.5 622.2,-193.66 617.3,-198.5 621.39,-200.5" />
+</g>
+
+<g id="GEN-SR-CPT-025-H-ArtifactVersion" class="edge">
+<title>SR-CPT-025-&gt;H-ArtifactVersion</title>
+<path fill="none" stroke="#34465d" d="M677.07,-247C670.08,-232.42 661.54,-214.62 654.14,-199.2" />
+<polygon fill="none" stroke="#34465d" points="656.35,-198.54 651.49,-193.66 652.25,-200.51 656.35,-198.54" />
+</g>
+
+<g id="GEN-SR-CPT-026-H-ArtifactVersion" class="edge">
+<title>SR-CPT-026-&gt;H-ArtifactVersion</title>
+<path fill="none" stroke="#34465d" d="M795.87,-247C766.16,-231.37 729.42,-212.04 698.75,-195.9" />
+<polygon fill="none" stroke="#34465d" points="700.05,-194.02 693.24,-193 697.93,-198.04 700.05,-194.02" />
+</g>
+
+<g id="GEN-SR-CPT-027-H-ArtifactVersion" class="edge">
+<title>SR-CPT-027-&gt;H-ArtifactVersion</title>
+<path fill="none" stroke="#34465d" d="M969.84,-247.11C960.96,-243.7 954.98,-241.4 954.98,-241.4 954.98,-241.4 797.86,-202.86 704.51,-179.96" />
+<polygon fill="none" stroke="#34465d" points="705.11,-177.77 698.26,-178.43 704.03,-182.19 705.11,-177.77" />
+</g>
+
+<g id="GEN-SR-CPT-032-H-ManagedInformationArtifact" class="edge">
+<title>SR-CPT-032-&gt;H-ManagedInformationArtifact</title>
+<path fill="none" stroke="#34465d" d="M354.46,-132.45C374.96,-115.74 401.03,-94.47 423.4,-76.22" />
+<polygon fill="none" stroke="#34465d" points="424.84,-77.98 428.44,-72.11 421.96,-74.46 424.84,-77.98" />
+</g>
+
+<g id="GEN-SR-CPT-033-H-ManagedInformationArtifact" class="edge">
+<title>SR-CPT-033-&gt;H-ManagedInformationArtifact</title>
+<path fill="none" stroke="#34465d" d="M473.51,-132.45C473.26,-116.59 472.94,-96.64 472.66,-79.05" />
+<polygon fill="none" stroke="#34465d" points="474.93,-79.13 472.55,-72.67 470.38,-79.21 474.93,-79.13" />
+</g>
+
+<g id="GEN-SR-CPT-034-H-ArtifactVersion" class="edge">
+<title>SR-CPT-034-&gt;H-ArtifactVersion</title>
+<path fill="none" stroke="#34465d" d="M1150.33,-247.11C1141.16,-243.7 1134.98,-241.4 1134.98,-241.4 1134.98,-241.4 840.73,-195.31 704.59,-173.99" />
+<polygon fill="none" stroke="#34465d" points="705.32,-171.8 698.54,-173.04 704.61,-176.3 705.32,-171.8" />
+</g>
+
+<g id="node1" class="node">
+<title>H-ArtifactVersion</title>
+<polygon fill="#e8f5f0" stroke="none" points="576.85,-132.4 576.85,-192.4 697.1,-192.4 697.1,-132.4 576.85,-132.4" />
+<text xml:space="preserve" text-anchor="start" x="611.91" y="-173.4" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;subkind&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="584.85" y="-145.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Artifact Version</text>
+<polygon fill="none" stroke="#40546c" points="576.85,-132.4 576.85,-192.4 697.1,-192.4 697.1,-132.4 576.85,-132.4" />
+</g>
+
+<g id="node2" class="node">
+<title>H-InformationContent</title>
+<polygon fill="#e8f5f0" stroke="none" points="581.1,-5.6 581.1,-65.6 730.85,-65.6 730.85,-5.6 581.1,-5.6" />
+<text xml:space="preserve" text-anchor="start" x="630.3" y="-46.6" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;abstract&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="589.1" y="-18.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Information Content</text>
+<polygon fill="none" stroke="#40546c" points="581.1,-5.6 581.1,-65.6 730.85,-65.6 730.85,-5.6 581.1,-5.6" />
+</g>
+
+<g id="node3" class="node">
+<title>H-ManagedInformationArtifact</title>
+<polygon fill="#e8f5f0" stroke="none" points="393.2,0 393.2,-71.2 550.75,-71.2 550.75,0 393.2,0" />
+<text xml:space="preserve" text-anchor="start" x="455.77" y="-52.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;kind&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="401.2" y="-24.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Managed Information</text>
+<text xml:space="preserve" text-anchor="start" x="447.47" y="-10.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Artifact</text>
+<polygon fill="none" stroke="#40546c" points="393.2,0 393.2,-71.2 550.75,-71.2 550.75,0 393.2,0" />
+</g>
+
+<g id="node4" class="node">
+<title>SR-CPT-012</title>
+<polygon fill="#e7f2fc" stroke="none" points="0,-241.4 0,-312.6 131.95,-312.6 131.95,-241.4 0,-241.4" />
+<text xml:space="preserve" text-anchor="start" x="40.91" y="-293.6" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;subkind&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-265.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk Assessment</text>
+<text xml:space="preserve" text-anchor="start" x="41.09" y="-251.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Method</text>
+<polygon fill="none" stroke="#40546c" points="0,-241.4 0,-312.6 131.95,-312.6 131.95,-241.4 0,-241.4" />
+</g>
+
+<g id="node5" class="node">
+<title>SR-CPT-019</title>
+<polygon fill="#e7f2fc" stroke="none" points="161.67,-247 161.67,-307 340.28,-307 340.28,-247 161.67,-247" />
+<text xml:space="preserve" text-anchor="start" x="225.91" y="-288" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;subkind&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="169.67" y="-260.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Assessment Confidence</text>
+<polygon fill="none" stroke="#40546c" points="161.67,-247 161.67,-307 340.28,-307 340.28,-247 161.67,-247" />
+</g>
+
+<g id="node6" class="node">
+<title>SR-CPT-020</title>
+<polygon fill="#e7f2fc" stroke="none" points="125.9,-132.4 125.9,-192.4 236.05,-192.4 236.05,-132.4 125.9,-132.4" />
+<text xml:space="preserve" text-anchor="start" x="165.69" y="-173.4" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;role&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="133.9" y="-145.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Evidence Item</text>
+<polygon fill="none" stroke="#40546c" points="125.9,-132.4 125.9,-192.4 236.05,-192.4 236.05,-132.4 125.9,-132.4" />
+</g>
+
+<g id="node7" class="node">
+<title>SR-CPT-023</title>
+<polygon fill="#e7f2fc" stroke="none" points="369.79,-247 369.79,-307 514.16,-307 514.16,-247 369.79,-247" />
+<text xml:space="preserve" text-anchor="start" x="416.91" y="-288" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;subkind&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="377.79" y="-260.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Observation Result</text>
+<polygon fill="none" stroke="#40546c" points="369.79,-247 369.79,-307 514.16,-307 514.16,-247 369.79,-247" />
+</g>
+
+<g id="node8" class="node">
+<title>SR-CPT-024</title>
+<polygon fill="#e7f2fc" stroke="none" points="544.42,-247 544.42,-307 619.53,-307 619.53,-247 544.42,-247" />
+<text xml:space="preserve" text-anchor="start" x="556.91" y="-288" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;subkind&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="552.42" y="-260.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Indicator</text>
+<polygon fill="none" stroke="#40546c" points="544.42,-247 544.42,-307 619.53,-307 619.53,-247 544.42,-247" />
+</g>
+
+<g id="node9" class="node">
+<title>SR-CPT-025</title>
+<polygon fill="#e7f2fc" stroke="none" points="649.14,-247 649.14,-307 732.81,-307 732.81,-247 649.14,-247" />
+<text xml:space="preserve" text-anchor="start" x="665.91" y="-288" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;subkind&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="657.14" y="-260.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Threshold</text>
+<polygon fill="none" stroke="#40546c" points="649.14,-247 649.14,-307 732.81,-307 732.81,-247 649.14,-247" />
+</g>
+
+<g id="node10" class="node">
+<title>SR-CPT-026</title>
+<polygon fill="#e7f2fc" stroke="none" points="762.45,-247 762.45,-307 939.5,-307 939.5,-247 762.45,-247" />
+<text xml:space="preserve" text-anchor="start" x="825.91" y="-288" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;subkind&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="770.45" y="-260.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk Treatment Strategy</text>
+<polygon fill="none" stroke="#40546c" points="762.45,-247 762.45,-307 939.5,-307 939.5,-247 762.45,-247" />
+</g>
+
+<g id="node11" class="node">
+<title>SR-CPT-027</title>
+<polygon fill="#e7f2fc" stroke="none" points="969.68,-247 969.68,-307 1120.28,-307 1120.28,-247 969.68,-247" />
+<text xml:space="preserve" text-anchor="start" x="1019.91" y="-288" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;subkind&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="977.68" y="-260.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk Treatment Plan</text>
+<polygon fill="none" stroke="#40546c" points="969.68,-247 969.68,-307 1120.28,-307 1120.28,-247 969.68,-247" />
+</g>
+
+<g id="node12" class="node">
+<title>SR-CPT-032</title>
+<polygon fill="#e7f2fc" stroke="none" points="266.23,-132.4 266.23,-192.4 371.72,-192.4 371.72,-132.4 266.23,-132.4" />
+<text xml:space="preserve" text-anchor="start" x="293.91" y="-173.4" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;subkind&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="274.23" y="-145.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk Register</text>
+<polygon fill="none" stroke="#40546c" points="266.23,-132.4 266.23,-192.4 371.72,-192.4 371.72,-132.4 266.23,-132.4" />
+</g>
+
+<g id="node13" class="node">
+<title>SR-CPT-033</title>
+<polygon fill="#e7f2fc" stroke="none" points="401.4,-132.4 401.4,-192.4 546.55,-192.4 546.55,-132.4 401.4,-132.4" />
+<text xml:space="preserve" text-anchor="start" x="448.91" y="-173.4" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;subkind&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="409.4" y="-145.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk Register Entry</text>
+<polygon fill="none" stroke="#40546c" points="401.4,-132.4 401.4,-192.4 546.55,-192.4 546.55,-132.4 401.4,-132.4" />
+</g>
+
+<g id="node14" class="node">
+<title>SR-CPT-034</title>
+<polygon fill="#e7f2fc" stroke="none" points="1149.96,-247 1149.96,-307 1306,-307 1306,-247 1149.96,-247" />
+<text xml:space="preserve" text-anchor="start" x="1202.91" y="-288" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;subkind&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="1157.96" y="-260.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Scenario Description</text>
+<polygon fill="none" stroke="#40546c" points="1149.96,-247 1149.96,-307 1306,-307 1306,-247 1149.96,-247" />
+</g>
+</g>
+</svg></g><text font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#14283e" x="45" y="779.89">Version/content multiplicities are strict data-profile requirements. Shared content does not merge artifact identity.</text><text font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#14283e" x="45" y="821.89">Blue: implemented | Green: profile helper | Amber: pattern/unclassified | Violet: external/planned</text></svg>

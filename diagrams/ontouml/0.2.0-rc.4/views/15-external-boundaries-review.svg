@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1190.55pt" height="841.89pt" viewBox="0 0 1190.55 841.89"><rect width="100%" height="100%" fill="white" /><text font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#14283e" x="45" y="45">15   External references and planned concepts</text><text font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#14283e" x="45" y="75">SemRisk 0.2.0-rc.4 | OntoUML-based view with explicit scope boundaries</text><g transform="translate(122.1839033018868 110) scale(1.5138915094339622)"><svg width="625.0" height="424.0" viewBox="0.00 0.00 625.00 424.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 402.6)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-21.6,21.6 -21.6,-402.6 603.57,-402.6 603.57,21.6 -21.6,21.6" />
+
+
+
+
+
+
+
+
+
+
+<g id="node1" class="node">
+<title>SR-CPT-021</title>
+<polygon fill="#f0e9fb" stroke="none" points="0,-321 0,-381 144.97,-381 144.97,-321 0,-321" />
+<text xml:space="preserve" text-anchor="start" x="8" y="-362" font-family="Helvetica,sans-Serif" font-size="11.00">EXTERNAL REFERENCE</text>
+<text xml:space="preserve" text-anchor="start" x="32.8" y="-334.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Provenance</text>
+<polygon fill="none" stroke="#40546c" points="0,-321 0,-381 144.97,-381 144.97,-321 0,-321" />
+</g>
+
+<g id="node2" class="node">
+<title>SR-CPT-037</title>
+<polygon fill="#f0e9fb" stroke="none" points="221,-321 221,-381 365.97,-381 365.97,-321 221,-321" />
+<text xml:space="preserve" text-anchor="start" x="229" y="-362" font-family="Helvetica,sans-Serif" font-size="11.00">EXTERNAL REFERENCE</text>
+<text xml:space="preserve" text-anchor="start" x="261.97" y="-334.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Objective</text>
+<polygon fill="none" stroke="#40546c" points="221,-321 221,-381 365.97,-381 365.97,-321 221,-321" />
+</g>
+
+<g id="node3" class="node">
+<title>SR-CPT-038</title>
+<polygon fill="#f0e9fb" stroke="none" points="437,-321 437,-381 581.97,-381 581.97,-321 437,-321" />
+<text xml:space="preserve" text-anchor="start" x="445" y="-362" font-family="Helvetica,sans-Serif" font-size="11.00">EXTERNAL REFERENCE</text>
+<text xml:space="preserve" text-anchor="start" x="476.03" y="-334.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Capability</text>
+<polygon fill="none" stroke="#40546c" points="437,-321 437,-381 581.97,-381 581.97,-321 437,-321" />
+</g>
+
+<g id="node4" class="node">
+<title>SR-CPT-039</title>
+<polygon fill="#f0e9fb" stroke="none" points="0,-214 0,-274 144.97,-274 144.97,-214 0,-214" />
+<text xml:space="preserve" text-anchor="start" x="8" y="-255" font-family="Helvetica,sans-Serif" font-size="11.00">EXTERNAL REFERENCE</text>
+<text xml:space="preserve" text-anchor="start" x="12.18" y="-227.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Business Process</text>
+<polygon fill="none" stroke="#40546c" points="0,-214 0,-274 144.97,-274 144.97,-214 0,-214" />
+</g>
+
+<g id="node5" class="node">
+<title>SR-CPT-040</title>
+<polygon fill="#f0e9fb" stroke="none" points="175,-214 175,-274 411.97,-274 411.97,-214 175,-214" />
+<text xml:space="preserve" text-anchor="start" x="233.89" y="-255" font-family="Helvetica,sans-Serif" font-size="11.00">PLANNED / EXTERNAL</text>
+<text xml:space="preserve" text-anchor="start" x="183" y="-227.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Active Pharmaceutical Ingredient</text>
+<polygon fill="none" stroke="#40546c" points="175,-214 175,-274 411.97,-274 411.97,-214 175,-214" />
+</g>
+
+<g id="node6" class="node">
+<title>SR-CPT-041</title>
+<polygon fill="#f0e9fb" stroke="none" points="441.89,-214 441.89,-274 577.09,-274 577.09,-214 441.89,-214" />
+<text xml:space="preserve" text-anchor="start" x="449.89" y="-255" font-family="Helvetica,sans-Serif" font-size="11.00">PLANNED / EXTERNAL</text>
+<text xml:space="preserve" text-anchor="start" x="486.14" y="-227.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Hazard</text>
+<polygon fill="none" stroke="#40546c" points="441.89,-214 441.89,-274 577.09,-274 577.09,-214 441.89,-214" />
+</g>
+
+<g id="node7" class="node">
+<title>SR-CPT-042</title>
+<polygon fill="#f0e9fb" stroke="none" points="4.89,-107 4.89,-167 140.09,-167 140.09,-107 4.89,-107" />
+<text xml:space="preserve" text-anchor="start" x="12.89" y="-148" font-family="Helvetica,sans-Serif" font-size="11.00">PLANNED / EXTERNAL</text>
+<text xml:space="preserve" text-anchor="start" x="54.59" y="-120.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Harm</text>
+<polygon fill="none" stroke="#40546c" points="4.89,-107 4.89,-167 140.09,-167 140.09,-107 4.89,-107" />
+</g>
+
+<g id="node8" class="node">
+<title>SR-CPT-043</title>
+<polygon fill="#f0e9fb" stroke="none" points="225.89,-107 225.89,-167 361.09,-167 361.09,-107 225.89,-107" />
+<text xml:space="preserve" text-anchor="start" x="233.89" y="-148" font-family="Helvetica,sans-Serif" font-size="11.00">PLANNED / EXTERNAL</text>
+<text xml:space="preserve" text-anchor="start" x="272.48" y="-120.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Signal</text>
+<polygon fill="none" stroke="#40546c" points="225.89,-107 225.89,-167 361.09,-167 361.09,-107 225.89,-107" />
+</g>
+
+<g id="node9" class="node">
+<title>SR-CPT-044</title>
+<polygon fill="#f0e9fb" stroke="none" points="441.89,-107 441.89,-167 577.09,-167 577.09,-107 441.89,-107" />
+<text xml:space="preserve" text-anchor="start" x="449.89" y="-148" font-family="Helvetica,sans-Serif" font-size="11.00">PLANNED / EXTERNAL</text>
+<text xml:space="preserve" text-anchor="start" x="468.24" y="-120.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk Criteria</text>
+<polygon fill="none" stroke="#40546c" points="441.89,-107 441.89,-167 577.09,-167 577.09,-107 441.89,-107" />
+</g>
+
+<g id="node10" class="node">
+<title>SR-CPT-045</title>
+<polygon fill="#f0e9fb" stroke="none" points="4.89,0 4.89,-60 140.09,-60 140.09,0 4.89,0" />
+<text xml:space="preserve" text-anchor="start" x="12.89" y="-41" font-family="Helvetica,sans-Serif" font-size="11.00">PLANNED / EXTERNAL</text>
+<text xml:space="preserve" text-anchor="start" x="27.75" y="-13.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk Appetite</text>
+<polygon fill="none" stroke="#40546c" points="4.89,0 4.89,-60 140.09,-60 140.09,0 4.89,0" />
+</g>
+
+<g id="node11" class="node">
+<title>SR-CPT-046</title>
+<polygon fill="#f0e9fb" stroke="none" points="225.89,0 225.89,-60 361.09,-60 361.09,0 225.89,0" />
+<text xml:space="preserve" text-anchor="start" x="233.89" y="-41" font-family="Helvetica,sans-Serif" font-size="11.00">PLANNED / EXTERNAL</text>
+<text xml:space="preserve" text-anchor="start" x="243.69" y="-13.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk Tolerance</text>
+<polygon fill="none" stroke="#40546c" points="225.89,0 225.89,-60 361.09,-60 361.09,0 225.89,0" />
+</g>
+
+<g id="node12" class="node">
+<title>SR-CPT-047</title>
+<polygon fill="#f0e9fb" stroke="none" points="441.89,0 441.89,-60 577.09,-60 577.09,0 441.89,0" />
+<text xml:space="preserve" text-anchor="start" x="449.89" y="-41" font-family="Helvetica,sans-Serif" font-size="11.00">PLANNED / EXTERNAL</text>
+<text xml:space="preserve" text-anchor="start" x="470.58" y="-13.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk Nature</text>
+<polygon fill="none" stroke="#40546c" points="441.89,0 441.89,-60 577.09,-60 577.09,0 441.89,0" />
+</g>
+</g>
+</svg></g><text font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#14283e" x="45" y="779.89">Twelve reference slots: four registry markers and eight undeclared candidates. No implied implementation or equivalence.</text><text font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#14283e" x="45" y="821.89">Blue: implemented | Green: profile helper | Amber: pattern/unclassified | Violet: external/planned</text></svg>
