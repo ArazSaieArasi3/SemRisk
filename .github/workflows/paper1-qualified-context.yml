@@ -68,7 +68,10 @@ jobs:
         run: python tools/build_qualified_context_manifest.py --assemble
       - name: OWL 2 DL and HermiT on successor with positive fixture
         run: |
-          java -jar .tools/robot.jar validate-profile --profile DL --input build/qualified-context/closure.owl --output build/qualified-context/owl-profile.txt
+          if ! java -jar .tools/robot.jar validate-profile --profile DL --input build/qualified-context/closure.owl --output build/qualified-context/owl-profile.txt; then
+            cat build/qualified-context/owl-profile.txt
+            exit 1
+          fi
           java -jar .tools/robot.jar reason --reasoner HermiT --input build/qualified-context/closure.owl --output build/qualified-context/reasoned.owl
       - uses: actions/upload-artifact@v4
         if: always()
