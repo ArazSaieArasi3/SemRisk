@@ -1,0 +1,90 @@
+{
+  "baseline_commit": "b8a321baaff2534d6594d80d23402c6e8046e94a",
+  "design": "synthetic supplementary regression; expected outcomes fixed before first run",
+  "tests": [
+    {
+      "id": "R1",
+      "expected": "Workflow advances while world state remains unchanged"
+    },
+    {
+      "id": "R2",
+      "expected": "Reassessment changes result history without changing world/workflow state"
+    },
+    {
+      "id": "R3",
+      "expected": "World state changes while workflow remains unchanged"
+    },
+    {
+      "id": "R4",
+      "expected": "Inherent/residual results concern one risk; no second risk identity"
+    },
+    {
+      "id": "R5",
+      "expected": "Every existing hasRiskState link targets the situational family"
+    },
+    {
+      "id": "T1",
+      "expected": "Projected and observed residual estimates remain distinct"
+    },
+    {
+      "id": "T2",
+      "expected": "Qualified at-time owner query returns only active co-owners"
+    },
+    {
+      "id": "T3",
+      "expected": "Result time, scale and method context is structurally valid"
+    },
+    {
+      "id": "E1",
+      "expected": "Pharma extension preserves all four baseline task answers"
+    },
+    {
+      "id": "E2",
+      "expected": "Added specialization answers the new profile query"
+    },
+    {
+      "id": "E3",
+      "expected": "Extension leaves core bytes unchanged and passes selected vocabulary policy"
+    },
+    {
+      "id": "N1",
+      "expected": "Cross-family state link is rejected"
+    },
+    {
+      "id": "N2",
+      "expected": "Timezone-less timestamp is rejected"
+    },
+    {
+      "id": "N3",
+      "expected": "Reversed ownership validity is rejected"
+    },
+    {
+      "id": "N4",
+      "expected": "Cross-risk supersession is rejected"
+    },
+    {
+      "id": "N5",
+      "expected": "Numeric value outside declared scale is rejected"
+    },
+    {
+      "id": "N6",
+      "expected": "Core-term redefinition by extension is rejected"
+    },
+    {
+      "id": "N7",
+      "expected": "Core equivalence shortcut by extension is rejected"
+    }
+  ],
+  "source_hashes": {
+    "ontology/method/semrisk-method-v0.1.0-rc.1.ttl": "6861d9d4d2364514cd78e30e2cf44a9af365ae81feb1f760fd9dec5279c4da9d",
+    "ontology/core/semrisk-core-v0.1.0-rc.1.ttl": "839b936c3775743f50362b3178c0d293e686c3b276d862ef7981a5ef369d9fa3",
+    "ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl": "dda338d11bbbf7da16ae597dc6029f7e77cb68cea97282d9683611675fd97122",
+    "ontology/governance/semrisk-governance-v0.1.0-rc.1.ttl": "23c083af8538bc04044aee0408d517774ce4db26e02a3d221908bf9106784fdb",
+    "ontology/mappings/semrisk-mappings-v0.1.0-rc.1.ttl": "ba424d371c033fcb5211afba1a22cfc43459c4f909b967d2fd2223182715b892",
+    "ontology/pharma/semrisk-pharma-v0.1.0-rc.1.ttl": "8329073a353d751662c8a79a620ae2ceeb35d28228f31f76c2fe1422428dff89"
+  },
+  "original_cq_total_unchanged": 40,
+  "peer_benchmark": false,
+  "expert_validation": false,
+  "formal_conservative_extension_proof": false
+}

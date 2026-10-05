@@ -1,0 +1,10 @@
+PREFIX sr: <urn:semrisk:entity:>
+PREFIX tp: <urn:semrisk:profile:temporal:v0.1:>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+# Fixed test time. Application callers must supply an explicit reference instant.
+SELECT ?actor WHERE {
+ VALUES ?asOf { "2026-10-05T08:00:00Z"^^xsd:dateTime }
+ ?assignment a sr:SR-CPT-031 ; sr:SR-REL-027 <urn:semrisk:run3:risk> ; sr:SR-REL-028 ?actor ; tp:validFrom ?start .
+ OPTIONAL { ?assignment tp:validTo ?end }
+ FILTER(?start <= ?asOf && (!BOUND(?end) || ?asOf < ?end))
+} ORDER BY ?actor

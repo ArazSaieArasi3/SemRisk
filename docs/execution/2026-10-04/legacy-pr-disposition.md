@@ -1,3 +1,5 @@
+> Run 3 update: all four retained foundational PRs have an individual 71-row semantic disposition and five executed regression probes. See `foundational/legacy-pr-58-61-resolution-2026-10-05.md`. Close by supersession only after the new evidence is merged; exact states belong in `run-3-readback.json`. The old review below is retained as history.
+
 # Legacy PR dispositions — 2026-10-04
 
 Compared against `f37cf41f6987d9887d9b96e913174a718f41439d` using commit comparisons and source readback. A branch ahead count does not imply missing scientific value. No stale branch is merged wholesale.

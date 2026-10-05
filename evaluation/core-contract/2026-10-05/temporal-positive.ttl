@@ -1,0 +1,20 @@
+@prefix sr: <urn:semrisk:entity:> .
+@prefix tp: <urn:semrisk:profile:temporal:v0.1:> .
+@prefix ex: <urn:semrisk:run3:> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+ex:risk a sr:SR-CPT-001 .
+ex:method a sr:SR-CPT-012 ; dct:hasVersion "synthetic-method-1" .
+ex:scale a tp:Scale ; tp:minimum 0.0 ; tp:maximum 1.0 .
+ex:assessment a sr:SR-CPT-011 ; sr:SR-REL-013 ex:risk ; sr:SR-REL-014 ex:method ; sr:SR-REL-015 ex:observed, ex:projected .
+ex:observed a sr:SR-CPT-013, sr:SR-CPT-014, sr:SR-CPT-018 ; sr:SR-REL-016 ex:risk ;
+ tp:assessedAt "2026-10-05T08:00:00Z"^^xsd:dateTime ; tp:referenceTime "2026-10-04T08:00:00Z"^^xsd:dateTime ;
+ tp:dimension tp:Likelihood ; tp:controlBaseline tp:AfterControl ; tp:evaluationBasis tp:Observed ; tp:scale ex:scale ; tp:numericValue 0.3 .
+ex:projected a sr:SR-CPT-013, sr:SR-CPT-014, sr:SR-CPT-018 ; sr:SR-REL-016 ex:risk ;
+ tp:assessedAt "2026-10-05T08:00:00Z"^^xsd:dateTime ; tp:referenceTime "2026-11-01T08:00:00Z"^^xsd:dateTime ;
+ tp:dimension tp:Likelihood ; tp:controlBaseline tp:AfterControl ; tp:evaluationBasis tp:Projected ; tp:scale ex:scale ; tp:numericValue 0.1 .
+ex:owner-active a sr:SR-CPT-031 ; sr:SR-REL-027 ex:risk ; sr:SR-REL-028 ex:actor-a ; tp:validFrom "2026-10-01T00:00:00Z"^^xsd:dateTime .
+ex:owner-co a sr:SR-CPT-031 ; sr:SR-REL-027 ex:risk ; sr:SR-REL-028 ex:actor-b ; tp:validFrom "2026-10-05T08:00:00Z"^^xsd:dateTime .
+ex:owner-future a sr:SR-CPT-031 ; sr:SR-REL-027 ex:risk ; sr:SR-REL-028 ex:actor-c ; tp:validFrom "2026-10-06T00:00:00Z"^^xsd:dateTime .
+ex:owner-expired a sr:SR-CPT-031 ; sr:SR-REL-027 ex:risk ; sr:SR-REL-028 ex:actor-d ; tp:validFrom "2026-09-01T00:00:00Z"^^xsd:dateTime ; tp:validTo "2026-10-05T08:00:00Z"^^xsd:dateTime .
+ex:owner-unknown-start a sr:SR-CPT-031 ; sr:SR-REL-027 ex:risk ; sr:SR-REL-028 ex:actor-e .
