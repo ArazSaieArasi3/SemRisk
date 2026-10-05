@@ -1,0 +1,5 @@
+# Candidate captions
+
+**Complete companion atlas.** SemRisk 0.2.0-rc.3 conceptual inventory and qualified operational views. The atlas covers all 47 registered concepts and 38 registered relation decisions, with 11 helper classes and explicit external endpoint boundaries. Standard stereotypes indicate supported commitments; amber pattern/unclassified nodes and violet external/planned nodes are not asserted to be fully classified local OntoUML entities. Hollow triangles denote specialization. Cardinalities on qualified helper links are opt-in data-profile constraints; other associations impose no global bound. View-level notes and the coverage registers delimit each projection. This atlas is supplementary and does not establish complete UFO conformance.
+
+**Scoped paper-panel candidate.** Scenario, description and occurrence in SemRisk 0.2.0-rc.3. A scenario is a second-order type; its description does not imply an occurrence. The panel is a selected view of the complete companion atlas, not the complete ontology. Acceptance as a manuscript figure remains pending the article's final page/layout review.

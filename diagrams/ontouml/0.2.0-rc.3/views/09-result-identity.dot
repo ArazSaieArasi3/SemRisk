@@ -1,0 +1,25 @@
+digraph G {
+graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.42", ranksep="0.65", splines=polyline, outputorder=edgesfirst];
+node [shape=plain, fontname="Helvetica", fontsize=14];
+edge [fontname="Helvetica", fontsize=11, color="#526477", arrowsize=0.65];
+"H-ArtifactVersion" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e8f5f0"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Artifact Version</B></TD></TR></TABLE>>];
+"H-QualifiedAssessmentResult" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e8f5f0"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Qualified Assessment<BR/>Result</B></TD></TR><TR><TD ALIGN="LEFT"><FONT POINT-SIZE="10">numericValue: decimal [1]<BR ALIGN="LEFT"/>methodVersion: string [1]<BR ALIGN="LEFT"/>assessedAt: dateTime [1]<BR ALIGN="LEFT"/>referenceTime: dateTime [1]</FONT></TD></TR></TABLE>>];
+"SR-CPT-013" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Risk Assessment<BR/>Result</B></TD></TR></TABLE>>];
+"SR-CPT-014" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Likelihood Assessment<BR/>Result</B></TD></TR></TABLE>>];
+"SR-CPT-015" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Impact Assessment<BR/>Result</B></TD></TR></TABLE>>];
+"SR-CPT-016" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Risk Level Assessment<BR/>Result</B></TD></TR></TABLE>>];
+"SR-CPT-017" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Inherent Risk Assessment<BR/>Result</B></TD></TR></TABLE>>];
+"SR-CPT-018" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Residual Risk Assessment<BR/>Result</B></TD></TR></TABLE>>];
+"SR-CPT-013" -> "H-ArtifactVersion" [arrowhead=empty, color="#34465d", id="GEN-SR-CPT-013-H-ArtifactVersion"];
+"SR-CPT-014" -> "SR-CPT-013" [arrowhead=empty, color="#34465d", id="GEN-SR-CPT-014-SR-CPT-013"];
+"SR-CPT-014" -> "H-ArtifactVersion" [arrowhead=empty, color="#34465d", id="GEN-SR-CPT-014-H-ArtifactVersion"];
+"SR-CPT-015" -> "SR-CPT-013" [arrowhead=empty, color="#34465d", id="GEN-SR-CPT-015-SR-CPT-013"];
+"SR-CPT-015" -> "H-ArtifactVersion" [arrowhead=empty, color="#34465d", id="GEN-SR-CPT-015-H-ArtifactVersion"];
+"SR-CPT-016" -> "SR-CPT-013" [arrowhead=empty, color="#34465d", id="GEN-SR-CPT-016-SR-CPT-013"];
+"SR-CPT-016" -> "H-ArtifactVersion" [arrowhead=empty, color="#34465d", id="GEN-SR-CPT-016-H-ArtifactVersion"];
+"SR-CPT-017" -> "SR-CPT-013" [arrowhead=empty, color="#34465d", id="GEN-SR-CPT-017-SR-CPT-013"];
+"SR-CPT-017" -> "H-ArtifactVersion" [arrowhead=empty, color="#34465d", id="GEN-SR-CPT-017-H-ArtifactVersion"];
+"SR-CPT-018" -> "SR-CPT-013" [arrowhead=empty, color="#34465d", id="GEN-SR-CPT-018-SR-CPT-013"];
+"SR-CPT-018" -> "H-ArtifactVersion" [arrowhead=empty, color="#34465d", id="GEN-SR-CPT-018-H-ArtifactVersion"];
+"H-QualifiedAssessmentResult" -> "SR-CPT-013" [arrowhead=empty, color="#34465d", id="GEN-H-QualifiedAssessmentResult-SR-CPT-013"];
+}

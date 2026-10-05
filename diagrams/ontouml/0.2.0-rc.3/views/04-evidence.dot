@@ -1,0 +1,21 @@
+digraph G {
+graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.42", ranksep="0.65", splines=polyline, outputorder=edgesfirst];
+node [shape=plain, fontname="Helvetica", fontsize=14];
+edge [fontname="Helvetica", fontsize=11, color="#526477", arrowsize=0.65];
+"H-ManagedInformationArtifact" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e8f5f0"><TR><TD><FONT POINT-SIZE="11">«kind»</FONT></TD></TR><TR><TD><B>Managed Information<BR/>Artifact</B></TD></TR></TABLE>>];
+"SR-CPT-011" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«event»</FONT></TD></TR><TR><TD><B>Risk Assessment<BR/>Activity</B></TD></TR></TABLE>>];
+"SR-CPT-013" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Risk Assessment<BR/>Result</B></TD></TR></TABLE>>];
+"SR-CPT-020" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«role»</FONT></TD></TR><TR><TD><B>Evidence Item</B></TD></TR></TABLE>>];
+"SR-CPT-021" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#f0e9fb"><TR><TD><FONT POINT-SIZE="11">EXTERNAL REFERENCE</FONT></TD></TR><TR><TD><B>Provenance</B></TD></TR></TABLE>>];
+"SR-CPT-022" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«event»</FONT></TD></TR><TR><TD><B>Observation Activity</B></TD></TR></TABLE>>];
+"SR-CPT-023" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Observation Result</B></TD></TR></TABLE>>];
+"SR-CPT-024" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Indicator</B></TD></TR></TABLE>>];
+"SR-CPT-025" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Threshold</B></TD></TR></TABLE>>];
+"SR-CPT-011" -> "SR-CPT-020" [arrowhead=none, label="supportedByEvidence", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-017-view-1-1"];
+"SR-CPT-013" -> "SR-CPT-020" [arrowhead=none, label="supportedByEvidence", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-017-view-2-1"];
+"SR-CPT-020" -> "SR-CPT-020" [arrowhead=none, label="supportedByEvidence", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-017-view-3-1"];
+"SR-CPT-023" -> "SR-CPT-022" [arrowhead=none, label="generatedByObservation", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-018"];
+"H-ManagedInformationArtifact" -> "SR-CPT-021" [arrowhead=none, label="hasProvenance", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-019"];
+"SR-CPT-024" -> "SR-CPT-025" [arrowhead=none, label="hasThreshold", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-036-view-1-1"];
+"SR-CPT-020" -> "H-ManagedInformationArtifact" [arrowhead=empty, color="#34465d", id="GEN-SR-CPT-020-H-ManagedInformationArtifact"];
+}

@@ -1,0 +1,22 @@
+{
+  "baseline_commit": "0417f1d7f0237904f8b57a65ddc5385aeab85fb0",
+  "schema_commit": "7a0fe7ef7d4caea8d62f2782fb3681261a75f452",
+  "sha256": {
+    "ontology/releases/0.2.0-rc.3/method.ttl": "a2f3e535ac8698ded3d3e999d3eac3d5deae8e9efddeff8562a1470f56cba216",
+    "ontology/releases/0.2.0-rc.3/enterprise.ttl": "477f05cdfdd3f9cc89dfa447b72b8264a29d25e56e1667a5dbcd9c1b177a8ffe",
+    "ontology/releases/0.2.0-rc.3/core.ttl": "7d14f3e4d76500f8719771bc581f90f3242bc4aa566fea902fe73383ef19ef7d",
+    "ontology/releases/0.2.0-rc.3/assessment-context.ttl": "038d74d20ae627f081d5f09386bdd69a1be5bdb6b82bd05531b66b9baf605c72",
+    "ontology/releases/0.2.0-rc.3/mappings.ttl": "6addb29a838a56a8f05f1496453f294406a316d7f3455bf4788cf7465c8534d0",
+    "ontology/releases/0.2.0-rc.3/governance.ttl": "d61c9d81ab67266993c9bdcc56825f23697017fdf96178d4201e5d6e2b132a13",
+    "ontology/releases/0.2.0-rc.3/pharma.ttl": "4fed4f7dc8b7c81126f1fb9b972354c468780226dbab8513888a05b70929cb79",
+    "foundational/semantic-identity-v0.2.0-rc.3/relation-formal-audit.csv": "4d521b93d7d7c16709e9f09a442e188c7559c613b98d9183a15f6b14c1f6cbb1",
+    "foundational/semantic-identity-v0.2.0-rc.3/concept-category-audit.csv": "449ee5bd108a217aa8a6da98f0ad1f6aab115c89fa965c373e24013eda079d51",
+    "tools/build_ontouml_atlas.py": "57216d487f07440a05058bd42b585b24b818e51a82064d528e40fc53dc317df4",
+    "tools/render_ontouml_views.cjs": "8e1e5a8424e67fecd5a5cc8963237c2a97f2ce3c16af92b0573754db3b27b932",
+    "tools/package_ontouml_atlas.py": "faa7f8b0e0dc471686c309185718636a55df190bf29870ce89dc89f59fbef4a4",
+    "diagrams/ontouml/0.2.0-rc.3/vendor/ontouml-schema.json": "094324d8e6ac4505ef5ae983a45bb9b56a8b3b6960151c57736756a037344d38",
+    "shapes/semantic-identity-v0.2.0-rc.3.ttl": "3a8f73330d139c0a7184b27aa2d1965b740e02481f8f2f07b562055ed06b5152",
+    "shapes/assessment-context-v0.2.0-rc.1.ttl": "799e15764822d6aa955a3ee95564e11b600d312f0e0e2e7e136bebeb2d234e15",
+    "shapes/foundational-evidence-v0.2.0-rc.2.ttl": "53cd32b2b7fb59447293de07e8b6b2b8abff932d7237718f60b9bccf88aa0f31"
+  }
+}

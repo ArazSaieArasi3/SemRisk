@@ -1,0 +1,84 @@
+{
+  "scope": "Bounded source/serialization/render integrity; not full UFO validation or native-editor round-trip",
+  "checks": [
+    {
+      "check": "schema, reference integrity and source/view semantics",
+      "result": "PASS"
+    },
+    {
+      "check": "47 concepts, exact source registry IDs, all rendered",
+      "result": "PASS"
+    },
+    {
+      "check": "38 relations, exact source registry IDs, all rendered",
+      "result": "PASS"
+    },
+    {
+      "check": "all diagram nodes and model edges appear",
+      "result": "PASS"
+    },
+    {
+      "check": "helper cardinalities independently match actual SHACL shapes",
+      "result": "PASS"
+    },
+    {
+      "check": "helper inventory: 11 classes, 11 local object properties, 8 datatype properties, 7 literals",
+      "result": "PASS"
+    },
+    {
+      "check": "review atlas 15 A3 landscape pages",
+      "result": "PASS"
+    },
+    {
+      "check": "minimum review font 7 pt; honest IEEE fit status",
+      "result": "PASS"
+    },
+    {
+      "check": "draw.io has all 15 diagrams",
+      "result": "PASS"
+    },
+    {
+      "check": "exact bound source hashes",
+      "result": "PASS"
+    },
+    {
+      "check": "negative: missing concept",
+      "result": "EXPECTED_REJECTION"
+    },
+    {
+      "check": "negative: missing relation",
+      "result": "EXPECTED_REJECTION"
+    },
+    {
+      "check": "negative: invented stereotype",
+      "result": "EXPECTED_REJECTION"
+    },
+    {
+      "check": "negative: guessed cardinality",
+      "result": "EXPECTED_REJECTION"
+    },
+    {
+      "check": "negative: broken view reference",
+      "result": "EXPECTED_REJECTION"
+    },
+    {
+      "check": "negative: reversed generalization",
+      "result": "EXPECTED_REJECTION"
+    }
+  ],
+  "passed": 16,
+  "total": 16,
+  "negative_controls": 6,
+  "concept_coverage": "47/47",
+  "registered_relation_coverage": "38/38",
+  "model_elements": 786,
+  "review_pages": 15,
+  "open_gates": [
+    "Exposure lacks a dedicated relation",
+    "NumericScale foundational category",
+    "external RoleMixin sortal realization",
+    "complete figure at IEEE width",
+    "native editor import round-trip",
+    "full pattern/antipattern analysis"
+  ]
+}
