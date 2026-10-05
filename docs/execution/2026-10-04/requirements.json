@@ -687,7 +687,10 @@
       "formalization/qualified-context-contract-v0.2.0-rc.1.md",
       "evaluation/temporal/v0.2.0-rc.1/semantic-results.json",
       "evaluation/temporal/v0.2.0-rc.1/postgres-results.json",
-      "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json"
+      "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json",
+      "foundational/semantic-identity-v0.2.0-rc.3/decisions.md",
+      "evaluation/semantic-identity/v0.2.0-rc.3/results.json",
+      "evaluation/semantic-identity/v0.2.0-rc.3/ci-evidence.json"
     ],
     "verification_result": "PASS_QUALIFIED_CANDIDATE_SCOPE; final manuscript integration and independent validation remain separate"
   },
@@ -708,7 +711,10 @@
       "formalization/qualified-context-contract-v0.2.0-rc.1.md",
       "evaluation/temporal/v0.2.0-rc.1/semantic-results.json",
       "evaluation/temporal/v0.2.0-rc.1/postgres-results.json",
-      "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json"
+      "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json",
+      "foundational/semantic-identity-v0.2.0-rc.3/decisions.md",
+      "evaluation/semantic-identity/v0.2.0-rc.3/results.json",
+      "evaluation/semantic-identity/v0.2.0-rc.3/ci-evidence.json"
     ],
     "verification_result": "PASS_QUALIFIED_CANDIDATE_SCOPE; final manuscript integration and independent validation remain separate"
   },
@@ -728,7 +734,10 @@
     "evidence_refs": [
       "evaluation/foundational/2026-10-05/formal-protocol.md",
       "evaluation/foundational/2026-10-05/results.json",
-      "evaluation/foundational/2026-10-05/ci-evidence.json"
+      "evaluation/foundational/2026-10-05/ci-evidence.json",
+      "foundational/semantic-identity-v0.2.0-rc.3/decisions.md",
+      "evaluation/semantic-identity/v0.2.0-rc.3/results.json",
+      "evaluation/semantic-identity/v0.2.0-rc.3/ci-evidence.json"
     ],
     "verification_result": "PASS_BOUND_DECLARED_FORMAL_PROBES_AND_SYNTHETIC_TASKS; final manuscript and empirical validation remain separate"
   },
@@ -1190,7 +1199,10 @@
     "evidence_refs": [
       "evaluation/foundational/2026-10-05/formal-protocol.md",
       "evaluation/foundational/2026-10-05/results.json",
-      "evaluation/foundational/2026-10-05/ci-evidence.json"
+      "evaluation/foundational/2026-10-05/ci-evidence.json",
+      "foundational/semantic-identity-v0.2.0-rc.3/decisions.md",
+      "evaluation/semantic-identity/v0.2.0-rc.3/results.json",
+      "evaluation/semantic-identity/v0.2.0-rc.3/ci-evidence.json"
     ],
     "verification_result": "PASS_BOUND_DECLARED_FORMAL_PROBES_AND_SYNTHETIC_TASKS; final manuscript and empirical validation remain separate"
   },
@@ -1246,7 +1258,10 @@
     "evidence_refs": [
       "evaluation/foundational/2026-10-05/formal-protocol.md",
       "evaluation/foundational/2026-10-05/results.json",
-      "evaluation/foundational/2026-10-05/ci-evidence.json"
+      "evaluation/foundational/2026-10-05/ci-evidence.json",
+      "foundational/semantic-identity-v0.2.0-rc.3/decisions.md",
+      "evaluation/semantic-identity/v0.2.0-rc.3/results.json",
+      "evaluation/semantic-identity/v0.2.0-rc.3/ci-evidence.json"
     ],
     "verification_result": "PASS_BOUND_DECLARED_FORMAL_PROBES_AND_SYNTHETIC_TASKS; final manuscript and empirical validation remain separate"
   },

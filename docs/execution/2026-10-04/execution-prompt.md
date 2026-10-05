@@ -1,6 +1,4 @@
-> **Run 5 handoff:** complete 47-concept/38-relation audit and candidate rc.2 correction are available. Next is a fixed three-decision semantic batch (scenario level, information identity, workflow value/quality), then actual editable OntoUML. Reuse the current primary-source anchors and executable probes. Do not repeat temporal implementation or confuse complete inventory accounting with complete semantic conformance.
-
-> **Run 4 handoff:** temporal promotion is implemented and tested; do not rebuild it. Follow current status and the P06/P07/P08/P09/P10 prompt deltas. Next dependency-ready batch is foundational completion and the editable OntoUML, while the existing literature protocol can be executed independently. Count completion only against recorded gates.
+> **Run 6 current handoff:** The fixed three-decision semantic batch is implemented and tested in rc.3. Next: full editable OntoUML and publication-scale figure, using the 47-concept/38-relation inventories and separate helper registries. Do not repeat broad research or temporal implementation. New identity/workflow helpers still need SQL projection in P10. Keep 3/19 package contracts and 18/90 bounded requirements distinct from this completed sub-batch.
 
 # SemRisk execution prompt
 

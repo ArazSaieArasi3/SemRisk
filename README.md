@@ -1,3 +1,5 @@
+> **Current Paper-1 revision — Run 6:** candidate [0.2.0-rc.3](ontology/releases/0.2.0-rc.3/README.md) implements the pending scenario, information-identity and workflow decisions. See [current status](docs/execution/2026-10-04/status.md), [Run 6 report](docs/execution/2026-10-04/run-6-report.md) and [PR #135](https://github.com/ArazSaieArasi3/SemRisk/pull/135). Next: full editable OntoUML and publication-scale rendering. This status supersedes historical progress notes below; the manuscript is not final.
+
 > **Author revision — Run 5 (2026-10-05):** complete 47-concept/38-relation audit; bounded foundational correction in candidate 0.2.0-rc.2; 29/29 new checks and actual formal probes. [Current status](docs/execution/2026-10-04/status.md). Accepted package checklist: 3/19 (15.8%); 18/90 individual requirements evidenced. Three shared semantic decisions precede full editable OntoUML and the final paper.
 
 # SemRisk
