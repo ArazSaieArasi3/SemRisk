@@ -1,3 +1,5 @@
+Publication checkpoint: **8/8 Run 7 deliverables verified**, with 101/101 implementation file hashes, five exact content readbacks, 7/7 issue updates and all five triggered CI job types passing on `e5bc58740c642c456164154c2d4f87ddcc310524`. [Readback](run-7-readback.json); [PR #136](https://github.com/ArazSaieArasi3/SemRisk/pull/136). This checkpoint records observed results; no scientific gate is closed by coverage alone.
+
 # Current revision status — Run 7, 2026-10-05
 
 **Current stage:** actual editable OntoUML candidate and complete companion atlas delivered; semantic and article-scale gates remain explicit. [Run 7 report](run-7-report.md); [diagram package](../../../diagrams/ontouml/0.2.0-rc.3/README.md).
