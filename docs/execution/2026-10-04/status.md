@@ -1,5 +1,7 @@
 # Current revision status — Run 5, 2026-10-05
 
+Publication checkpoint: **8/8 Run 5 deliverables verified**. PR #133 merged at `d439499dad12097daf55d8eecca0e3dddc1cd660`. Exact readback: 45/45 file hashes, five file contents, 8/8 issue bodies and all 13 CI job types. [Run 5 readback](run-5-readback.json). HermiT **1.4.5.456** was identified from the actual checksum-pinned JAR; original 0.2.0-rc.1 temporal artifacts remain unchanged.
+
 Current stage: **47-concept/38-relation audit and bounded foundational correction implemented; three shared semantic decisions remain before full editable OntoUML**. [Run 5 report](run-5-report.md); implementation/current CI in [PR #133](https://github.com/ArazSaieArasi3/SemRisk/pull/133).
 
 - Candidate **0.2.0-rc.2**: four definition clarifications, RiskOwner RoleMixin correction and opt-in explicit participant evidence.
