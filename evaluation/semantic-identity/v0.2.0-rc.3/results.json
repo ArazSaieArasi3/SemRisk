@@ -1,7 +1,7 @@
 {
   "candidate_version": "0.2.0-rc.3",
-  "total": 30,
-  "passed": 30,
+  "total": 31,
+  "passed": 31,
   "negative_cases": 17,
   "tests": [
     {
@@ -128,6 +128,11 @@
       "id": "47-CONCEPT-COVERAGE",
       "passed": true,
       "detail": "47 unique domain concept dispositions."
+    },
+    {
+      "id": "REGISTRY-DEFINITIONS",
+      "passed": true,
+      "detail": "All audit definitions match canonical registry; all 35 declared class definitions also match OWL."
     },
     {
       "id": "3-DECISIONS-RESOLVED",

@@ -34,7 +34,7 @@
     "shapes/semantic-identity-v0.2.0-rc.3.ttl": "3a8f73330d139c0a7184b27aa2d1965b740e02481f8f2f07b562055ed06b5152",
     "testdata/foundational/semantic-identity-v0.2.0-rc.3.ttl": "7b950cafc74f2f7a76729f66ae314aa8aeea162155cebe4f15663ed82631b55e",
     "rules/enterprise/workflow-at-v0.2.0-rc.3.rq": "783de3e4f686ac867762aad989985de58102f40005942c2820ecab7038632b4e",
-    "tools/check_semantic_identity.py": "a87f5069c58a6a1934d26b9d2dfc304dab380c364515db2b3afa6c8a2b20cffb",
+    "tools/check_semantic_identity.py": "b8c6c550b5c312a4726053190f3907f322285451454cf31c5c438fd1b46f3b2c",
     "tools/build_semantic_identity_candidate.py": "2a6af893eda49597159f1d55b4df2855f21b9b40170fcb185ba52c042559f57f",
     "tools/adapt_scenario_declarations.py": "12f76b388e9376a833f95dcbc79a132107b718d4be6830ff5e239621077b0ec5",
     "foundational/semantic-identity-v0.2.0-rc.3/decisions.md": "a24641f8a1652f0fe7155ec3c2cf063824b2e9a45ef859703b1f3935db2dc750",

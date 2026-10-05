@@ -52,6 +52,8 @@ def run():
  test('SCENARIO-LEVEL',(SR['SR-CPT-006'],RDFS.subClassOf,G.SituationType) in g and (SR['SR-CPT-006'],RDF.type,G.SituationType) not in g,'Instance level corrected; not a metadata relabel.')
  rows=list(csv.DictReader((ROOT/f'foundational/semantic-identity-v{V}/concept-category-audit.csv').open()))
  test('47-CONCEPT-COVERAGE',len(rows)==47 and len({r['semantic_id'] for r in rows})==47,'47 unique domain concept dispositions.')
+ canonical={r['semantic_id']:r for r in csv.DictReader((ROOT/'conceptualization/core/core-concept-registry-v0.1.csv').open())}
+ test('REGISTRY-DEFINITIONS',all(r['definition']==canonical[r['semantic_id']]['definition'] and (r['formal_status']!='LOCAL_CLASS' or str(g.value(SR[r['semantic_id']],RDFS.comment))==r['definition']) for r in rows),'All audit definitions match canonical registry; all 35 declared class definitions also match OWL.')
  pending={'NEEDS_INFORMATION_IDENTITY_PATTERN','BLOCKED_TYPE_INSTANCE_LEVEL','NEEDS_VALUE_VS_QUALITY_VIEW'}
  test('3-DECISIONS-RESOLVED',not any(r['diagram_gate'] in pending for r in rows),'Editable-model gate remains explicit.')
  rel=list(csv.DictReader((ROOT/f'foundational/semantic-identity-v{V}/relation-formal-audit.csv').open()));test('38-RELATION-COVERAGE',len(rel)==38,'All original registered relation decisions retained.')
