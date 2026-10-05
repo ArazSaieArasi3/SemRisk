@@ -1,5 +1,7 @@
 # Current revision status — Run 4, 2026-10-05
 
+Publication checkpoint: **8/8 Run 4 deliverables verified**. PR #131 merged at `90ed15b98c241646df65e17b4cedaed857dfd382`. Verified 54/54 changed-file hashes, five exact file contents, 8/8 issue bodies and all 13 CI job types on the tested implementation candidate. [Exact readback evidence](run-4-readback.json). This checkpoint records observed results and adds no scientific claims.
+
 Current stage: **qualified temporal assessment/ownership profile implemented and scientifically tested; foundational completion and editable OntoUML next**. [Run 4 report](run-4-report.md); implementation and final publication checks in [PR #131](https://github.com/ArazSaieArasi3/SemRisk/pull/131).
 
 - Candidate **0.2.0-rc.1**: seven modules, actual SHACL, V007/guarded rollback, 15 new SQL columns, synthetic RDF round-trip and explicit-time ownership parity.
