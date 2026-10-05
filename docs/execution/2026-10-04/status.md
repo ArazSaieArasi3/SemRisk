@@ -1,3 +1,21 @@
+# Current revision status — Run 4, 2026-10-05
+
+Current stage: **qualified temporal assessment/ownership profile implemented and scientifically tested; foundational completion and editable OntoUML next**. [Run 4 report](run-4-report.md); implementation and final publication checks in [PR #131](https://github.com/ArazSaieArasi3/SemRisk/pull/131).
+
+- Candidate **0.2.0-rc.1**: seven modules, actual SHACL, V007/guarded rollback, 15 new SQL columns, synthetic RDF round-trip and explicit-time ownership parity.
+- **30/30 semantic tests; 32/32 native database tests; 121/121 represented triples; OWL 2 DL and HermiT PASS**, bound to the exact recorded scientific commit. These are supplementary synthetic evidence.
+- **3/19 = 15.8%** bounded package contracts accepted; P06/P07/P10 advanced but remain partial. This is neither manuscript readiness nor scientific-quality percentage.
+- **90/90 requirements routed; 15/90 individually verified at bounded scope** (previous checkpoint: 9/90). Final manuscript integration remains separate.
+- **Zero new empirical records, zero expert responses; no final revised Word/PDF** this run.
+
+Next: resolve remaining foundational categories and declarations, synchronize the formal reference and build the full editable OntoUML. Execute the prepared literature-case protocol without redoing the completed temporal implementation. The seven updated continuation prompts identify the exact boundaries.
+
+The pre-merge scientific evidence is recorded in `evaluation/temporal/v0.2.0-rc.1/ci-evidence.json`. Use the PR for latest-head CI/merge and issue verification; do not infer merge from candidate creation.
+
+---
+
+## Preserved Run 3 checkpoint
+
 # Current revision status — Run 3, 2026-10-05
 
 Publication checkpoint: **8/8 Run 3 deliverables verified**. PR #129 merged at `8a0559ff921062b49970420c7384de59474fb192`; 35/35 changed-file hashes, five exact file readbacks, 11/11 issue-body readbacks, all five CI job types and four closed-as-superseded PRs are recorded in [run-3-readback.json](run-3-readback.json). The historical scientific evidence is bound to the exact tested candidate; this checkpoint adds no scientific claims.

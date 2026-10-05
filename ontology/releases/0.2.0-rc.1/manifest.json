@@ -1,0 +1,86 @@
+{
+  "candidate_version": "0.2.0-rc.1",
+  "state": "OPERATIONAL_PROFILE_CANDIDATE_NOT_PUBLICATION_RELEASE",
+  "baseline_commit": "6598291896e900efc92b6d6a9cf583a3f4a41e44",
+  "change_classes": {
+    "six_base_modules": "NON_SEMANTIC_VERSION_AND_TRIGGER_ANNOTATION",
+    "assessment_context": "ADDITIVE_COMPATIBLE",
+    "qualified_shapes": "CONSTRAINT_CHANGE_OPT_IN",
+    "projection": "PROJECTION_ONLY_ADDITIVE"
+  },
+  "modules": [
+    {
+      "name": "core",
+      "path": "ontology/releases/0.2.0-rc.1/core.ttl",
+      "ontology_iri": "urn:semrisk:ontology:core",
+      "version_iri": "urn:semrisk:ontology:core:0.2.0-rc.1"
+    },
+    {
+      "name": "enterprise",
+      "path": "ontology/releases/0.2.0-rc.1/enterprise.ttl",
+      "ontology_iri": "urn:semrisk:ontology:enterprise",
+      "version_iri": "urn:semrisk:ontology:enterprise:0.2.0-rc.1"
+    },
+    {
+      "name": "method",
+      "path": "ontology/releases/0.2.0-rc.1/method.ttl",
+      "ontology_iri": "urn:semrisk:ontology:method",
+      "version_iri": "urn:semrisk:ontology:method:0.2.0-rc.1"
+    },
+    {
+      "name": "governance",
+      "path": "ontology/releases/0.2.0-rc.1/governance.ttl",
+      "ontology_iri": "urn:semrisk:ontology:governance",
+      "version_iri": "urn:semrisk:ontology:governance:0.2.0-rc.1"
+    },
+    {
+      "name": "pharma",
+      "path": "ontology/releases/0.2.0-rc.1/pharma.ttl",
+      "ontology_iri": "urn:semrisk:ontology:pharma",
+      "version_iri": "urn:semrisk:ontology:pharma:0.2.0-rc.1"
+    },
+    {
+      "name": "mappings",
+      "path": "ontology/releases/0.2.0-rc.1/mappings.ttl",
+      "ontology_iri": "urn:semrisk:ontology:mappings",
+      "version_iri": "urn:semrisk:ontology:mappings:0.2.0-rc.1"
+    },
+    {
+      "name": "assessment-context",
+      "path": "ontology/releases/0.2.0-rc.1/assessment-context.ttl",
+      "ontology_iri": "urn:semrisk:ontology:assessment-context",
+      "version_iri": "urn:semrisk:ontology:assessment-context:0.2.0-rc.1"
+    }
+  ],
+  "legacy_candidate": "ontology/p1-r2-candidate-manifest.yaml",
+  "legacy_evidence_preserved": true,
+  "source_sha256": {
+    "ontology/releases/0.2.0-rc.1/core.ttl": "e018207d0f11b7388ff76def21d9046821cc7337eead8e21ba4ebe509fd5fc49",
+    "ontology/releases/0.2.0-rc.1/enterprise.ttl": "90d2f8965375cd0c250f0bffbfb0425446b22d21ac117446304c7f37138465ad",
+    "ontology/releases/0.2.0-rc.1/method.ttl": "5d6ddb6c94a41fac7d8cca2a4c366dbd353f6b1819d5acde32986a7b071db99a",
+    "ontology/releases/0.2.0-rc.1/governance.ttl": "8fcab364345a9a094cd18cddc644b61051be021f0f553c14166df14d8811422d",
+    "ontology/releases/0.2.0-rc.1/pharma.ttl": "d214088e075ec3d5255b277c864f31a11952e75add4435b8de2bd21aa847f243",
+    "ontology/releases/0.2.0-rc.1/mappings.ttl": "8493e364e6cb5e0579202ccc7ec8c6499bf5a94126a4540d08fc9e4fb5b7fca5",
+    "ontology/releases/0.2.0-rc.1/assessment-context.ttl": "1b86b2c7c4f997ce4db26bc05ca2b4eaab4064e6ea085701d6f54d3458cce6e3",
+    "ontology/releases/0.2.0-rc.1/catalog.xml": "1be4565387bd407925560ab5d298080a6212deffa6475af05bbddc291c8f9201",
+    "ontology/vendor/gufo-v1.0.0.ttl": "b234c7a22d738b66dc8fcf735146fdbe828122e2a04bec43c8c9b08f34fd9027",
+    "shapes/assessment-context-v0.2.0-rc.1.ttl": "799e15764822d6aa955a3ee95564e11b600d312f0e0e2e7e136bebeb2d234e15",
+    "rules/enterprise/risk-owners-at-v0.2.0-rc.1.rq": "4a4ca63caec6d48ecd7dbe65fb148dd896351f20c59f5fbc0080f40bfd749753",
+    "relational/sql/V007__qualified_assessment_context.sql": "8b37ebc37a867265b88cd3576b5d27be0b22dc1d6ac06724db5352f4245d29ea",
+    "relational/sql/rollback/U007__qualified_assessment_context.sql": "af27abc2b5a5cf0855d245d01b503b0a39541d475ea96d6ea9c23778a3c24114",
+    "relational/scripts/qualified_context_io.py": "f4c85dc2d9bc27235f121bef9acb322e4047d10559882f32cbe93c37368ce967",
+    "tools/check_qualified_context.py": "0c18bdc92afeb629a606af63f3c552aebda61364697174112ba303c27effdf9e",
+    "tools/check_qualified_context_postgres.py": "455ea4fceacc53f16fc38bff1dee1b8b88d0b7d34095e9931cc436b0acf7de53",
+    "tools/requirements-qualified-context.txt": "0d3f9d2b1676c8cf20e841010e8a1b6244de929881b4ec47932cf59fc236dc90",
+    "testdata/temporal/qualified-context-v0.2.0-rc.1.ttl": "0cdea365470f9dd50e1769c448aa3ece41b6c7d3bcb56046d220a3add33cc58d"
+  },
+  "evidence_directory": "evaluation/temporal/v0.2.0-rc.1/",
+  "publication_ready": false,
+  "original_cq_count": 40,
+  "limits": [
+    "Synthetic numeric-profile execution only",
+    "No new empirical risk records or expert responses",
+    "No general conservative-extension/concurrency theorem",
+    "Full OntoUML and final manuscript remain open"
+  ]
+}

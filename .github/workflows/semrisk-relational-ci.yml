@@ -134,6 +134,9 @@ jobs:
       - name: Load end-to-end scenario
         run: psql -v ON_ERROR_STOP=1 -f relational/sql/load/P1_E2E_SCENARIO_v1.sql
 
+      - name: Upgrade populated scenario to qualified context
+        run: psql -v ON_ERROR_STOP=1 -f relational/sql/V007__qualified_assessment_context.sql
+
       - name: End-to-end relational scenario tests
         run: psql -v ON_ERROR_STOP=1 -f relational/sql/tests/V003__e2e_scenario_tests.sql
 

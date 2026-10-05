@@ -93,7 +93,7 @@
     "group": "۱. جایگاه و تمایز",
     "request": "بررسی minimum viable ontology",
     "package_id": "P06",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 123,
     "acceptance_check": "Minimum viable ontology wording is accepted or rejected against executable minimum-use criteria.",
     "artifact_destinations": [
@@ -101,8 +101,14 @@
       "foundational/",
       "architecture/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "formalization/qualified-context-contract-v0.2.0-rc.1.md",
+      "evaluation/temporal/v0.2.0-rc.1/semantic-results.json",
+      "evaluation/temporal/v0.2.0-rc.1/postgres-results.json",
+      "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json",
+      "conceptualization/revision-2026-10-05/core-decision-contract.md"
+    ],
+    "verification_result": "PASS_QUALIFIED_CANDIDATE_SCOPE; final manuscript integration and independent validation remain separate"
   },
   {
     "id": "1.8",
@@ -165,22 +171,27 @@
     "group": "۱. جایگاه و تمایز",
     "request": "تعیین نقش پایگاه داده رابطه‌ای",
     "package_id": "P10",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 125,
     "acceptance_check": "A concise manuscript paragraph states projection purpose, preserved semantics and limits.",
     "artifact_destinations": [
       "relational/",
       "evaluation/parity/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "formalization/qualified-context-contract-v0.2.0-rc.1.md",
+      "evaluation/temporal/v0.2.0-rc.1/semantic-results.json",
+      "evaluation/temporal/v0.2.0-rc.1/postgres-results.json",
+      "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json"
+    ],
+    "verification_result": "PASS_QUALIFIED_CANDIDATE_SCOPE; final manuscript integration and independent validation remain separate"
   },
   {
     "id": "1.12",
     "group": "۱. جایگاه و تمایز",
     "request": "روشن‌کردن معنای risk knowledge",
     "package_id": "P06",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 123,
     "acceptance_check": "Risk knowledge is defined across phenomenon, representation, assessment, evidence and responsibility layers.",
     "artifact_destinations": [
@@ -188,8 +199,13 @@
       "foundational/",
       "architecture/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "formalization/qualified-context-contract-v0.2.0-rc.1.md",
+      "evaluation/temporal/v0.2.0-rc.1/semantic-results.json",
+      "evaluation/temporal/v0.2.0-rc.1/postgres-results.json",
+      "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json"
+    ],
+    "verification_result": "PASS_QUALIFIED_CANDIDATE_SCOPE; final manuscript integration and independent validation remain separate"
   },
   {
     "id": "2.1",
@@ -657,7 +673,7 @@
     "group": "۴. روش و طراحی",
     "request": "توصیف رسمی و نمونه در مقاله",
     "package_id": "P07",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 124,
     "acceptance_check": "Formal specification includes justified axioms/constraints and a readable paper example.",
     "artifact_destinations": [
@@ -667,15 +683,20 @@
       "formalization/",
       "docs/formal/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "formalization/qualified-context-contract-v0.2.0-rc.1.md",
+      "evaluation/temporal/v0.2.0-rc.1/semantic-results.json",
+      "evaluation/temporal/v0.2.0-rc.1/postgres-results.json",
+      "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json"
+    ],
+    "verification_result": "PASS_QUALIFIED_CANDIDATE_SCOPE; final manuscript integration and independent validation remain separate"
   },
   {
     "id": "4.9",
     "group": "۴. روش و طراحی",
     "request": "زمان، وضعیت، احتمال و شدت اثر",
     "package_id": "P06",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 123,
     "acceptance_check": "Assessment time, method, likelihood/impact scale, supersession and responsibility validity have explicit semantics and tests.",
     "artifact_destinations": [
@@ -683,8 +704,13 @@
       "foundational/",
       "architecture/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "formalization/qualified-context-contract-v0.2.0-rc.1.md",
+      "evaluation/temporal/v0.2.0-rc.1/semantic-results.json",
+      "evaluation/temporal/v0.2.0-rc.1/postgres-results.json",
+      "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json"
+    ],
+    "verification_result": "PASS_QUALIFIED_CANDIDATE_SCOPE; final manuscript integration and independent validation remain separate"
   },
   {
     "id": "4.10",
@@ -1181,15 +1207,20 @@
     "group": "۷. VVEAA",
     "request": "نقش SQL/SPARQL و هم‌ارزی وظیفه‌ای",
     "package_id": "P10",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 125,
     "acceptance_check": "SQL/SPARQL parity declares set/bag, types, nulls, time and ordering scope with expected semantic outputs.",
     "artifact_destinations": [
       "relational/",
       "evaluation/parity/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "formalization/qualified-context-contract-v0.2.0-rc.1.md",
+      "evaluation/temporal/v0.2.0-rc.1/semantic-results.json",
+      "evaluation/temporal/v0.2.0-rc.1/postgres-results.json",
+      "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json"
+    ],
+    "verification_result": "PASS_QUALIFIED_CANDIDATE_SCOPE; final manuscript integration and independent validation remain separate"
   },
   {
     "id": "7.9",

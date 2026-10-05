@@ -25,18 +25,18 @@ for r in rows:
         fail(f"immutable artifact drift: {r['path']} expected={r['git_blob_sha']} actual={actual}")
 
 schema_versions=[int(r["version"]) for r in rows if r["role"]=="schema_migration"]
-if schema_versions != sorted(schema_versions) or schema_versions != [1,2,5,6]:
+if schema_versions != sorted(schema_versions) or schema_versions != [1,2,5,6,7]:
     fail(f"unexpected schema migration order: {schema_versions}")
 
 wf=(ROOT/".github/workflows/semrisk-relational-ci.yml").read_text(encoding="utf-8")
 positions={}
-for v in ("V001__paper1_projection.sql","V002__data_load_support.sql","V005__r5_architecture_federation.sql","V006__r6_projection_integrity.sql"):
+for v in ("V001__paper1_projection.sql","V002__data_load_support.sql","V005__r5_architecture_federation.sql","V006__r6_projection_integrity.sql","V007__qualified_assessment_context.sql"):
     positions[v]=wf.find(v)
     if positions[v] < 0:
         fail(f"workflow does not execute {v}")
-if not (positions["V001__paper1_projection.sql"] < positions["V002__data_load_support.sql"] < positions["V005__r5_architecture_federation.sql"] < positions["V006__r6_projection_integrity.sql"]):
+if not (positions["V001__paper1_projection.sql"] < positions["V002__data_load_support.sql"] < positions["V005__r5_architecture_federation.sql"] < positions["V006__r6_projection_integrity.sql"] < positions["V007__qualified_assessment_context.sql"]):
     fail(f"workflow migration order drifted: {positions}")
 
 print("PASS: relational migration manifest paths and immutable Git blob hashes match")
-print("PASS: schema migration order is V001 -> V002 -> V005 -> V006")
+print("PASS: schema migration order is V001 -> V002 -> V005 -> V006 -> V007")
 print("SEM_RISK_R6_MIGRATION_GOVERNANCE_PASS")

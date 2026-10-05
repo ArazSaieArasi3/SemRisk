@@ -1,0 +1,38 @@
+{
+  "tested_commit": "987978e47b510ec5e1685c5c697655f431fd91bd",
+  "job_id": 111699837405,
+  "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37290605347/job/111699837405",
+  "conclusion": "success",
+  "semantic": {
+    "passed": 30,
+    "total": 30,
+    "negative_cases": 16
+  },
+  "postgres": {
+    "passed": 32,
+    "total": 32,
+    "negative_cases": 17,
+    "represented_triples": 121
+  },
+  "formal": {
+    "owl2_dl": "PASS",
+    "reasoner": "HermiT",
+    "robot": "1.9.10",
+    "scope": "seven modules plus local gUFO import closure and synthetic positive fixture; consistency does not establish domain validity"
+  },
+  "limits": [
+    "No independent expert responses",
+    "No empirical pharmaceutical risk records in this run",
+    "No concurrency or arbitrary RDF losslessness proof"
+  ],
+  "superseded_attempts": [
+    {
+      "commit": "5d1093ad8bfdefd969563797b3b02906f75bb02b",
+      "finding": "DL gate failed: undeclared external vocabulary terms in materialized union"
+    },
+    {
+      "commit": "987978e47b510ec5e1685c5c697655f431fd91bd",
+      "fix": "14 explicit minimal external vocabulary declarations; no full-vocabulary import claim"
+    }
+  ]
+}

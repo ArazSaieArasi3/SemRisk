@@ -1,4 +1,4 @@
-> Current checkpoint: [Run 3](run-3-report.md), 3/19 bounded revision package contracts accepted. Use [status](status.md) for current progress; earlier reports are historical.
+> Current checkpoint: [Run 4](run-4-report.md), 3/19 bounded package contracts accepted and 15/90 requirements individually verified. Use [status](status.md) and PR #131 for final publication/readback state.
 
 # SemRisk author-revision execution register
 

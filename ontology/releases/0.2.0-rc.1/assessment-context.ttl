@@ -1,0 +1,57 @@
+@prefix ac: <urn:semrisk:profile:assessment-context:> .
+@prefix sr: <urn:semrisk:entity:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+<urn:semrisk:ontology:assessment-context> a owl:Ontology ;
+ owl:versionIRI <urn:semrisk:ontology:assessment-context:0.2.0-rc.1> ; owl:versionInfo "0.2.0-rc.1" ;
+ dct:title "SemRisk qualified numeric assessment context"@en ;
+ owl:imports <urn:semrisk:ontology:core:0.2.0-rc.1>, <urn:semrisk:ontology:method:0.2.0-rc.1> .
+ac:QualifiedAssessmentResult a owl:Class ; rdfs:subClassOf sr:SR-CPT-013 ;
+ rdfs:comment "Opt-in operational profile for numeric results with explicit method, scale and temporal context; not a new risk identity."@en .
+ac:NumericScale a owl:Class ; rdfs:comment "Versioned numeric interval and dimension used by this operational profile; not a universal risk scoring scale."@en .
+ac:Dimension a owl:Class ; owl:oneOf (ac:Likelihood ac:Impact ac:RiskLevel) .
+ac:ControlBaseline a owl:Class ; owl:oneOf (ac:BeforeControl ac:AfterControl) .
+ac:EvaluationBasis a owl:Class ; owl:oneOf (ac:Observed ac:Projected) .
+ac:Likelihood a owl:NamedIndividual, ac:Dimension .
+ac:Impact a owl:NamedIndividual, ac:Dimension .
+ac:RiskLevel a owl:NamedIndividual, ac:Dimension .
+ac:BeforeControl a owl:NamedIndividual, ac:ControlBaseline .
+ac:AfterControl a owl:NamedIndividual, ac:ControlBaseline .
+ac:Observed a owl:NamedIndividual, ac:EvaluationBasis ; rdfs:comment "Observation-informed assessment basis; this label alone does not establish empirical validity."@en .
+ac:Projected a owl:NamedIndividual, ac:EvaluationBasis ; rdfs:comment "Modelled or hypothetical assessment basis; a lower value is not an observed treatment effect."@en .
+[] a owl:AllDifferent ; owl:distinctMembers (ac:Likelihood ac:Impact ac:RiskLevel) .
+[] a owl:AllDifferent ; owl:distinctMembers (ac:BeforeControl ac:AfterControl) .
+[] a owl:AllDifferent ; owl:distinctMembers (ac:Observed ac:Projected) .
+ac:dimension a owl:ObjectProperty ; rdfs:range ac:Dimension .
+ac:controlBaseline a owl:ObjectProperty ; rdfs:range ac:ControlBaseline .
+ac:evaluationBasis a owl:ObjectProperty ; rdfs:range ac:EvaluationBasis .
+ac:scale a owl:ObjectProperty ; rdfs:range ac:NumericScale .
+ac:method a owl:ObjectProperty ; rdfs:range sr:SR-CPT-012 .
+ac:methodVersion a owl:DatatypeProperty ; rdfs:range xsd:string .
+ac:assessedAt a owl:DatatypeProperty ; rdfs:range xsd:dateTime .
+ac:referenceTime a owl:DatatypeProperty ; rdfs:range xsd:dateTime .
+ac:validFrom a owl:DatatypeProperty ; rdfs:range xsd:dateTime .
+ac:validTo a owl:DatatypeProperty ; rdfs:range xsd:dateTime .
+ac:numericValue a owl:DatatypeProperty ; rdfs:range xsd:decimal .
+ac:minimum a owl:DatatypeProperty ; rdfs:range xsd:decimal .
+ac:maximum a owl:DatatypeProperty ; rdfs:range xsd:decimal .
+
+# Minimal external vocabulary typing for this offline OWL 2 DL closure.
+# This is not a full import of DCT/SKOS/PROV semantics and asserts no equivalence.
+<http://www.w3.org/2004/02/skos/core#Concept> a owl:Class .
+<http://www.w3.org/2004/02/skos/core#closeMatch> a owl:ObjectProperty .
+<http://www.w3.org/2004/02/skos/core#relatedMatch> a owl:ObjectProperty .
+<http://www.w3.org/2004/02/skos/core#scopeNote> a owl:AnnotationProperty .
+<http://www.w3.org/2004/02/skos/core#prefLabel> a owl:AnnotationProperty .
+<http://purl.org/dc/terms/source> a owl:AnnotationProperty .
+<http://purl.org/dc/terms/title> a owl:AnnotationProperty .
+<http://purl.org/dc/terms/conformsTo> a owl:AnnotationProperty .
+<http://purl.org/dc/terms/identifier> a owl:AnnotationProperty .
+<http://purl.org/dc/terms/relation> a owl:AnnotationProperty .
+<http://purl.org/dc/terms/hasVersion> a owl:AnnotationProperty .
+<http://purl.org/dc/terms/description> a owl:AnnotationProperty .
+<http://purl.org/dc/terms/type> a owl:AnnotationProperty .
+<http://www.w3.org/ns/prov#invalidatedAtTime> a owl:DatatypeProperty ; rdfs:range xsd:dateTime .
