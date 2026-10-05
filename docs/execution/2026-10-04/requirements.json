@@ -539,15 +539,20 @@
     "group": "۴. روش و طراحی",
     "request": "روش تحقیق منظم و فشرده",
     "package_id": "P05",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 112,
     "acceptance_check": "Research method separates design, implementation and evaluation with actual outputs.",
     "artifact_destinations": [
       "method/",
       "formalization/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "method/paper1-engineering-method-v1.1.md",
+      "method/sabio-executed-process-crosswalk-v1.1.csv",
+      "method/author-paper-method-crosswalk-v1.1.csv",
+      "evaluation/core-contract/2026-10-05/traceability-results.json"
+    ],
+    "verification_result": "PASS_METHOD_CONTRACT_NOT_FINAL_MANUSCRIPT"
   },
   {
     "id": "4.2",
@@ -568,30 +573,40 @@
     "group": "۴. روش و طراحی",
     "request": "تعیین روش مهندسی واقعی و تطبیق با SABiO",
     "package_id": "P05",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 112,
     "acceptance_check": "Actual OGCM-RF workflow is compared with SABiO; any new adaptation is performed and dated.",
     "artifact_destinations": [
       "method/",
       "formalization/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "method/paper1-engineering-method-v1.1.md",
+      "method/sabio-executed-process-crosswalk-v1.1.csv",
+      "method/author-paper-method-crosswalk-v1.1.csv",
+      "evaluation/core-contract/2026-10-05/traceability-results.json"
+    ],
+    "verification_result": "PASS_METHOD_CONTRACT_NOT_FINAL_MANUSCRIPT"
   },
   {
     "id": "4.4",
     "group": "۴. روش و طراحی",
     "request": "تعیین جایگاه رویکرد دامنه‌محور",
     "package_id": "P05",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 112,
     "acceptance_check": "Domain orientation is justified without automatically claiming full DDD adoption.",
     "artifact_destinations": [
       "method/",
       "formalization/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "method/paper1-engineering-method-v1.1.md",
+      "method/sabio-executed-process-crosswalk-v1.1.csv",
+      "method/author-paper-method-crosswalk-v1.1.csv",
+      "evaluation/core-contract/2026-10-05/traceability-results.json"
+    ],
+    "verification_result": "PASS_METHOD_CONTRACT_NOT_FINAL_MANUSCRIPT"
   },
   {
     "id": "4.5",
@@ -1270,7 +1285,7 @@
     "group": "۸. انتشار و نگارش",
     "request": "ممیزی داخلی میزان بهره‌برداری از فایل خصوصی",
     "package_id": "P04",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 13,
     "acceptance_check": "Restricted-source fields have internal use/partial-use/exclusion dispositions with reasons; no raw private values released.",
     "artifact_destinations": [
@@ -1278,8 +1293,11 @@
       "conceptualization/pharma/",
       "evaluation/integrity/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "evaluation/integrity/derived-field-use-audit-2026-10-05.csv",
+      "evaluation/integrity/derived-field-use-audit-2026-10-05.md"
+    ],
+    "verification_result": "PASS_27_AUTHORIZED_DERIVED_FIELDS_ONLY"
   },
   {
     "id": "8.3",

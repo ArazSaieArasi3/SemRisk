@@ -1,3 +1,24 @@
+# Current revision status — Run 3, 2026-10-05
+
+Current stage: **method contract accepted; conceptual/time/extension prototype tested; canonical promotion next**. [Run 3 evidence and limits](run-3-report.md).
+
+- Accepted bounded package contracts: **3/19 = 15.8%** (P02, P03, P05). This is an equal-unit revision checklist, not manuscript readiness, scientific quality, elapsed effort or acceptance probability.
+- **90/90 requirements routed; 9/90 individually reverified** at their recorded scope. P05 acceptance is method/reporting only; requirement 3.7's complete final reference audit is still open.
+- **18/18 supplementary synthetic regression probes passed**, including seven negative controls. Four pre-existing task answer sets remain unchanged by the tested extension. These are not 18 additional original CQs, peer benchmarks or expert results.
+- **47/47 concept dispositions**: 35 OWL classes, four SKOS markers, eight not locally declared. Twelve non-classes are not twelve undeclared resources.
+- **27/27 derived-field dispositions**: six direct projection fields, thirteen partial mappings, seven design-only inputs, one deferred. No claim of original private-record import or complete utilization.
+- **71 legacy rows** mapped from the four stacked PRs; closure is by supersession after this candidate is merged, not by merging old semantic decisions.
+- Core prototype is supplementary. The six canonical OWL modules and native SQL are unchanged. P06/P07/P08/P10 still own promotion, full foundational analysis, real OntoUML and database parity.
+- Zero expert responses; no new empirical risk records or final Word/PDF in this run.
+
+Next: synchronize the selected Trigger/category definitions and temporal assessment/ownership axes across the canonical ontology, SHACL, native SQL and migration/parity tests; then complete the editable OntoUML. Use the updated P06/P07/P08/P10 prompts. Continue P09 extraction from its prepared protocol. No new broad replanning is required.
+
+Repository publication, CI and issue readback are recorded in `run-3-readback.json` when executed. Local scientific checks are in the linked result files. Do not interpret this text alone as proof of a merge.
+
+---
+
+## Preserved Run 2 and Run 1 checkpoints
+
 # Current revision status — Run 2, 2026-10-04
 
 Publication checkpoint: **8/8 Run 2 deliverables verified**, with 37/37 changed-file blob hashes, five exact content readbacks, 12/12 issue-body readbacks and all four CI job types passing on commit `3065489c6090d558e72923fd18c640bbe48261e3` in PR #128. [Readback evidence](run-2-readback.json). The evidence file binds that commit; this checkpoint addition does not change scientific artifacts.

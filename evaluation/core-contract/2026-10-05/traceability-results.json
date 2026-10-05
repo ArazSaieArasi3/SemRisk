@@ -1,0 +1,26 @@
+{
+  "result": "PASS_REFERENCE_INTEGRITY_ONLY",
+  "concepts": 47,
+  "declarations": {
+    "OWL_CLASS": 35,
+    "SKOS_MARKER": 4,
+    "NOT_LOCALLY_DECLARED": 8
+  },
+  "legacy_dispositions": 71,
+  "derived_fields": 27,
+  "field_dispositions": {
+    "IMPLEMENTED_PROJECTION": 6,
+    "PARTIAL": 13,
+    "DESIGN_ONLY": 7,
+    "DEFERRED_PROFILE": 1
+  },
+  "semantic_requirements": 20,
+  "conceptual_cqs": 40,
+  "trace_links": 66,
+  "method_crosswalk_rows": 10,
+  "domain_rows": 13,
+  "portfolio_scopes": 12,
+  "all_trace_endpoints_exist": true,
+  "semantic_adequacy_proven": false,
+  "private_source_record_import_verified": false
+}

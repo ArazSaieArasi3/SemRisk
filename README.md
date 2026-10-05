@@ -1,4 +1,4 @@
-> **Author revision — Run 2 (2026-10-04):** bounded comparison and a 20-condition synthetic diagnostic are recorded; standards/data/expert protocols are prepared. [Current status](docs/execution/2026-10-04/status.md). Accepted package checklist: 2/19 (10.5%), not a scientific-quality or publication-readiness score.
+> **Author revision — Run 3 (2026-10-05):** method contract, 47 concept dispositions, 27-field use audit and 18/18 bounded temporal/extension regressions. [Current status](docs/execution/2026-10-04/status.md). Accepted bounded package checklist: 3/19 (15.8%); canonical temporal promotion and final paper remain open.
 
 # SemRisk
 

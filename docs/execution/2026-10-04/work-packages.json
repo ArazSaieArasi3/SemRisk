@@ -196,7 +196,9 @@
     "evidence_refs": [
       "evaluation/standards/claim-strength-register-2026-10-04.csv",
       "evaluation/standards/nist-schema-audit-2026-10-04/field-dispositions.csv",
-      "evaluation/standards/p04-delta-and-remaining-work-2026-10-04.md"
+      "evaluation/standards/p04-delta-and-remaining-work-2026-10-04.md",
+      "evaluation/integrity/derived-field-use-audit-2026-10-05.csv",
+      "evaluation/integrity/derived-field-use-audit-2026-10-05.md"
     ],
     "acceptance_result": "PARTIAL_PROTOCOL_OR_SOURCE_DELTA_ONLY",
     "reopen_trigger": "Reassess after core/case changes; protocol preparation does not imply completed application or expert validation."
@@ -240,9 +242,16 @@
       "method/",
       "formalization/"
     ],
-    "status": "not_started",
-    "evidence_refs": [],
-    "acceptance_result": "NOT_ASSESSED"
+    "status": "completed",
+    "evidence_refs": [
+      "method/paper1-engineering-method-v1.1.md",
+      "method/sabio-executed-process-crosswalk-v1.1.csv",
+      "method/author-paper-method-crosswalk-v1.1.csv",
+      "evaluation/core-contract/2026-10-05/traceability-results.json"
+    ],
+    "acceptance_result": "PASS_METHOD_CONTRACT_ONLY",
+    "acceptance_boundary": "Actual process selection, artifact crosswalk and reporting contract accepted. Requirement 3.7 final UFO/OntoUML/tool bibliographic verification remains open; final manuscript not accepted.",
+    "reopen_trigger": "Reopen method crosswalk if executed stages or canonical artifacts change; pending P04 publication checks remain required."
   },
   {
     "id": "P06",
@@ -286,9 +295,18 @@
       "foundational/",
       "architecture/"
     ],
-    "status": "not_started",
-    "evidence_refs": [],
-    "acceptance_result": "NOT_ASSESSED"
+    "status": "in_progress",
+    "evidence_refs": [
+      "conceptualization/revision-2026-10-05/core-decision-contract.md",
+      "evaluation/core-contract/2026-10-05/results.json",
+      "foundational/legacy-pr-58-61-semantic-disposition-2026-10-05.csv"
+    ],
+    "acceptance_result": "PARTIAL_CONCEPT_DISPOSITIONS_AND_PROTOTYPE",
+    "remaining": [
+      "Resolve Trigger/category definition synchronization",
+      "Promote temporal/result context contract into canonical OWL/SHACL and native SQL with migration/parity",
+      "Finish foundational category and complete OntoUML review"
+    ]
   },
   {
     "id": "P07",
