@@ -1,0 +1,54 @@
+{
+  "version": "0.2.0-rc.4",
+  "tested_candidate_commit": "418b8e3a8ebe14e73fbc8e1d820e452f3afa1ec7",
+  "pr": 137,
+  "job_id": 111750177638,
+  "job_url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306146252/job/111750177638",
+  "actual_results": {
+    "behavioral": {
+      "passed": 31,
+      "total": 31,
+      "negative_cases": 17
+    },
+    "prior_rc3_regression": {
+      "passed": 31,
+      "total": 31
+    },
+    "diagram": {
+      "passed": 16,
+      "total": 16,
+      "negative_cases": 6
+    },
+    "native_postgres": {
+      "passed": 11,
+      "total": 11,
+      "represented_triples": 11,
+      "exposure_rows": 2,
+      "version": "PostgreSQL 16.15 (Debian 16.15-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"
+    },
+    "owl_2_dl": "PASS",
+    "hermit": "1.4.5.456",
+    "new_type_entailments": 4,
+    "consistent_countermodels": 2,
+    "rejected_inconsistencies": 2
+  },
+  "source_scope": "Synthetic candidate verification; no real case, expert, full antipattern or native-editor validation",
+  "check_run_types": [
+    "editable-model-integrity",
+    "bounded-evidence-checks",
+    "check",
+    "exposure-scale-successor",
+    "local-source-reference-check",
+    "core-contract",
+    "qualified-context",
+    "source-generated-draft-parity",
+    "generated-reference",
+    "bounded-claim-check",
+    "semantic-validation",
+    "postgres-relational-twin",
+    "versioned-offline-bundle",
+    "integrity",
+    "foundational-successor",
+    "source-derived-svg"
+  ]
+}

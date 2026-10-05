@@ -1,3 +1,5 @@
+Verified CI checkpoint: **all 16 triggered job types passed**. Native Exposure projection: **11/11 tests**, **11 represented triples**, **2 synthetic episodes**. Actual HermiT results: **4 new type entailments**, **2 consistent countermodels**, **2 correctly rejected contradictions**; OWL 2 DL passed. [Exact CI evidence](../../../evaluation/exposure-scale/v0.2.0-rc.4/ci-evidence.json), [readback](run-8-readback.json), [PR #137](https://github.com/ArazSaieArasi3/SemRisk/pull/137). The two targeted decisions are **2/2 implemented and verified**. No broader manuscript/package acceptance is inferred.
+
 # Run 8 — Exposure endpoints and NumericScale identity
 
 Baseline `6d619c5bbcb3532d68e250e2c27a9a3232fd06f9`. New candidate **0.2.0-rc.4**, with seven modules and unchanged historical releases.

@@ -1,0 +1,890 @@
+{
+  "run": 8,
+  "date": "2026-10-05",
+  "baseline_commit": "6d619c5bbcb3532d68e250e2c27a9a3232fd06f9",
+  "tested_candidate_commit": "418b8e3a8ebe14e73fbc8e1d820e452f3afa1ec7",
+  "implementation_pr": 137,
+  "phase": "All implementation checks passed; consult PR for final merge SHA",
+  "batch": {
+    "semantic_decisions_done": 2,
+    "semantic_decisions_total": 2,
+    "deliverables_done": 8,
+    "deliverables_total": 8
+  },
+  "file_hash_readback": [
+    {
+      "path": "README.md",
+      "sha": "8e97a2daa10d4e6e7e5a7a250bcb0ad90f42a914",
+      "exact": true
+    },
+    {
+      "path": "shapes/exposure-scale-v0.2.0-rc.4.ttl",
+      "sha": "d5238e5a947986c8b04a6e43f47498db591031d7",
+      "exact": true
+    },
+    {
+      "path": "tools/build_exposure_scale_manifest.py",
+      "sha": "1cac7bbf884e0533e3576420e4f081651577e283",
+      "exact": true
+    },
+    {
+      "path": "tools/build_ontouml_atlas_rc4.py",
+      "sha": "8db78cb06861d2b90f3810c9fabe37ffd409857a",
+      "exact": true
+    },
+    {
+      "path": "tools/package_ontouml_atlas_rc4.py",
+      "sha": "fc8d127ce124ee74727eae33f78d5f9c6d9281ac",
+      "exact": true
+    },
+    {
+      "path": "tools/check_exposure_postgres.py",
+      "sha": "2089446899cede1b386ce3500574ae4f0f6ac2f4",
+      "exact": true
+    },
+    {
+      "path": "tools/check_exposure_scale.py",
+      "sha": "d962975f11db9311e469c839e337eb7ad8bf5a80",
+      "exact": true
+    },
+    {
+      "path": "tools/check_ontouml_atlas_rc4.py",
+      "sha": "aa3f42968fea985aa1b76ed1db5a1e5ae82808c2",
+      "exact": true
+    },
+    {
+      "path": "tools/render_ontouml_views_rc4.cjs",
+      "sha": "bccf56b85a0dfad45dd1ed20d4c498105550a629",
+      "exact": true
+    },
+    {
+      "path": "ontology/current-candidate.json",
+      "sha": "c1a0c6a14e43705f04af2fc607918cda8d3e100a",
+      "exact": true
+    },
+    {
+      "path": "conceptualization/ontouml/README.md",
+      "sha": "c15119ed3e05f5d1e07ac48bce14a1b378e99a71",
+      "exact": true
+    },
+    {
+      "path": "relational/design/exposure-rc4-mapping.md",
+      "sha": "3c68149209044aa334b43b243cda41ea32b428e7",
+      "exact": true
+    },
+    {
+      "path": "relational/scripts/exposure_io.py",
+      "sha": "09c6b89c3e82e962fa338016bc6bdc1e5561b38b",
+      "exact": true
+    },
+    {
+      "path": "rules/core/exposure-at-v0.2.0-rc.4.rq",
+      "sha": "c80dac8411da1f89ad0d07b568e0e07d5df82745",
+      "exact": true
+    },
+    {
+      "path": "testdata/foundational/exposure-scale-v0.2.0-rc.4.ttl",
+      "sha": "995099f59a34c46c58508005be6f3e07ce7bc8da",
+      "exact": true
+    },
+    {
+      "path": "foundational/exposure-scale-v0.2.0-rc.4/relation-formal-audit.csv",
+      "sha": "136baf993c0d80e8d7caa89739c2c7c7f4635511",
+      "exact": true
+    },
+    {
+      "path": "foundational/exposure-scale-v0.2.0-rc.4/concept-category-audit.csv",
+      "sha": "79647dec7fd2a8c8e74b65d15e977f707f4d46a7",
+      "exact": true
+    },
+    {
+      "path": "foundational/exposure-scale-v0.2.0-rc.4/decisions.md",
+      "sha": "6bc7cf21be318bc5db3122e669240e11baec5e3e",
+      "exact": true
+    },
+    {
+      "path": ".github/workflows/paper1-exposure-scale.yml",
+      "sha": "b74dd11636b27d26a233e203780ee0917c70ffb4",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/captions.md",
+      "sha": "cd37bbea3e7ef40ecc3558af8f0e5848a99356a4",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/relation-coverage.csv",
+      "sha": "b7f918d6d3e149b6a669df60a132353d303ba8e1",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/SemRisk-rc4.ontouml.json",
+      "sha": "783238371c40f6aac294a0cbdb58c99bbeb2df4a",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/multiplicity-evidence.csv",
+      "sha": "cb55e6b1ac45935beb40dc3a6b5df220eff8a2b9",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/source-manifest.json",
+      "sha": "03bd6752cffeeab19b5157763258c90cbe5a70fb",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/view-spec.json",
+      "sha": "0cb16aec3b3752c1f89315927dc82f5a2042e23c",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/visual-review.md",
+      "sha": "bd29330baafb0e79789cc24cdaa4b25a9b69405f",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/SemRisk-rc4-complete.svg",
+      "sha": "702442e5a1327d1e095047dc3865d6db190c2ddf",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/SemRisk-rc4-paper-panel.svg",
+      "sha": "8eed7e47974e920d74b74f3ed3f83dcee50d042b",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/SemRisk-rc4-review-atlas.pdf",
+      "sha": "6f1e813a8302669a9b7514a5b17e031b1d2acaf5",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/acceptance.md",
+      "sha": "53ced5d05eefa26cde3b15ac68ff5fb139342bb1",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/concept-coverage.csv",
+      "sha": "f79c79e2d5454d462b64d0cd2286592053e43937",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/render-metrics.json",
+      "sha": "323542483b11815fc0c887aeae3a40e63aa7814f",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/model-base.json",
+      "sha": "9e33587fa0dd400925d6bcc4faa341cbcc85e0a5",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/SemRisk-rc4.drawio",
+      "sha": "b52530bdc4eb10a4312e6685eeb44df17562909a",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/SemRisk-rc4-paper-panel.pdf",
+      "sha": "4687bfc513e3101c43b9d16beb6cbc663e0228fd",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/README.md",
+      "sha": "aadbc1be955ae05fec31c99266e8eaef3b708935",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/requirements.txt",
+      "sha": "e0e73225459d7a3d9f5e78a6d92e9e203e6da5b4",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/validation-results.json",
+      "sha": "78df1c19d290297d4d59e7850f3f3f740117ab53",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/vendor/LICENSE",
+      "sha": "8dada3edaf50dbc082c9a125058f25def75e625a",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/vendor/PROVENANCE.md",
+      "sha": "ef03d46f23fbc0ea8a2bf40f5c977b4e25bbe145",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/vendor/ontouml-schema.json",
+      "sha": "7608e50f9e020fbadc782fd86d6b0c66e3b85b65",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/15-external-boundaries.dot",
+      "sha": "007b9a8a4689ac8182713382b1f1d635e1b1ae8c",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/01-scenario-review.svg",
+      "sha": "a505cd0930795ce68b10b7f9d222548d67f09947",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/10-qualified-assessment-review.svg",
+      "sha": "00f745dd0e2c35bd100071909ddfa32351128845",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/14-assessment-context.layout.json",
+      "sha": "14e2e05888cfe39b118ef337166c3dee3c795580",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/09-result-identity.layout.json",
+      "sha": "d4b40fb0d5dbab7cbbe9f3ea7ec34b64e39a37a6",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/07-register-review.svg",
+      "sha": "9dfc4d1f31676cef62638e919f69bf5b663d2cf4",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/13-generic-review.svg",
+      "sha": "46b9bb56ea79a392c98d6fa921a8fe9d536185c8",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/03-assessment.layout.json",
+      "sha": "6f1ac70be4fd32a3a107f26842db24b76aa9747e",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/11-workflow.dot",
+      "sha": "5768954a85bf76fc2362e90f08f44010a2a42784",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/13-generic.dot",
+      "sha": "75541e12f41cd50f07742b73ae182b6c8f036258",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/12-federation-review.svg",
+      "sha": "7fea0d52aeaba6c806d1fc0c5f58ad8e86db759c",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/12-federation.layout.json",
+      "sha": "54e6190859af468c1d8997327f1166291e0978e9",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/01-scenario.layout.json",
+      "sha": "d38bc1dbf4a870ef037d15951359aaee67858d6c",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/13-generic.svg",
+      "sha": "25eeda2e1490098a6526d5913dcb49ab63417229",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/05-treatment.layout.json",
+      "sha": "f461f3b9bd17c797ac8b1c55f372f77661231522",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/11-workflow-review.svg",
+      "sha": "249c51e17c5e41799a5fd41c58b8645c000192d0",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/07-register.layout.json",
+      "sha": "8e602a3ca54d3bf24a00e93eedc2c660129ddb05",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/05-treatment.dot",
+      "sha": "393219a5a24d35a444e93653dcd4fff34ddcfada",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/06-responsibility-review.svg",
+      "sha": "2a045f93f46e1a7032b45c15356d68341611c91f",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/11-workflow.svg",
+      "sha": "fb23f622286670793edb03702395c1623cb9b37d",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/13-generic.layout.json",
+      "sha": "b5b1dabf70d40a6ba4057c0d66a69e5740b40b63",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/02-risk-context.layout.json",
+      "sha": "4f38357baad7c93ecad6d7ade2bc439628179e46",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/10-qualified-assessment.layout.json",
+      "sha": "e68ccdff8e052c69286ce236387f9979156c7e87",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/01-scenario.dot",
+      "sha": "cd11d89322283ba8b6671b92c162ce0462a49f34",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/11-workflow.layout.json",
+      "sha": "1456c6e266b980a861de5e5142733387337f09fd",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/12-federation.svg",
+      "sha": "3fd981f3da8b1fd2d285e64105a75779809f6a8e",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/05-treatment-review.svg",
+      "sha": "2325c2c8545ec646f4ac0ccb032d8266a1fef9d2",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/09-result-identity.svg",
+      "sha": "43f4021324a7723a361b48547542d5d568e23699",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/05-treatment.svg",
+      "sha": "277cc9cb1c9910a5a3905f9ed2e101a5f0227eb2",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/03-assessment.svg",
+      "sha": "62b9226b4e11bec8d6fbd5c1458f3add782ea1ee",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/02-risk-context.svg",
+      "sha": "a9c5fc5277e6d84b18a6cfea4fddaaabcdc51660",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/14-assessment-context-review.svg",
+      "sha": "49fb6c1fcf846de375bc1ef7302e4d79ab7491d1",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/10-qualified-assessment.svg",
+      "sha": "57c92b9909dca1bbf103f148b515c95b762900ed",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/09-result-identity.dot",
+      "sha": "7392c6097e3f6a9f35978538b982558252975b32",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/08-information-review.svg",
+      "sha": "436b8fbbd1a7b75efb413f92cd90541a8b378626",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/02-risk-context-review.svg",
+      "sha": "341136cb305108442acd496c934ef59ebbbf13dd",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/14-assessment-context.svg",
+      "sha": "7411c86ef850defa4ea9ac449a64e6c6e9bade1f",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/04-evidence.svg",
+      "sha": "e7c05686f6757c9bdf10ff1016c6678dc9aa3fba",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/04-evidence.dot",
+      "sha": "ffb4bae2341191e128d2308f832a092a27cb9296",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/06-responsibility.dot",
+      "sha": "f2cd70ff6c45e33ab0ea33a7f539f9bffca44f89",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/08-information.svg",
+      "sha": "d8c731d92c8019c36b39ad5f450b025448ed40ab",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/07-register.svg",
+      "sha": "5e4782f3c21f3c8309277fc511727bf27ecfc8e3",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/09-result-identity-review.svg",
+      "sha": "bf9beadc606f44af2c130f47fb66513ef933f6e1",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/15-external-boundaries.layout.json",
+      "sha": "79e0fa4b39a5c8394e9c0bdec2719c5f13cd2415",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/03-assessment-review.svg",
+      "sha": "bf1d10b267bed4e22de17d8e67fcfbf97225f46f",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/07-register.dot",
+      "sha": "ea3575c50748d188f802bf7ffaeafc595ffd602e",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/10-qualified-assessment.dot",
+      "sha": "48de359f332a1d8443602eb66ec43a1e08f22d6d",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/02-risk-context.dot",
+      "sha": "d553a17e7c7258c1d34b301e83a85691e941a549",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/15-external-boundaries.svg",
+      "sha": "45d5d4269e9999215d14287e1145ae7fd7034773",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/06-responsibility.svg",
+      "sha": "58d77aee53a25df06e07163602d17ebe0f7d6917",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/08-information.layout.json",
+      "sha": "b1ceb768778dc30b9d7eace5b57d4e6fc9790ee4",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/01-scenario.svg",
+      "sha": "83f9b8b6ffeca552e9b62bba4716a427418b3631",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/15-external-boundaries-review.svg",
+      "sha": "fdae5d540a666574ef18e6f62c58704c7fb290d2",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/03-assessment.dot",
+      "sha": "6a62439feb3b06a7aec7612d0182a2bd9ee0fe88",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/14-assessment-context.dot",
+      "sha": "d28c7a642696da3928b80fd91044581ce950bcc8",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/04-evidence-review.svg",
+      "sha": "4a4216d604a597b46333a1ed57dcaa31c7b24267",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/08-information.dot",
+      "sha": "68f95cb1dabe78bd1380085d3ea33fa8b157f2d2",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/12-federation.dot",
+      "sha": "1f78cf690c9b2b6d1917b60f46880e3d827e9971",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/06-responsibility.layout.json",
+      "sha": "d41b95d0c8fd9b1f5fbb223ef32172a7bd00e2eb",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/views/04-evidence.layout.json",
+      "sha": "e5b75b1dc521036253bede41ae42d37c2b3a9c42",
+      "exact": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/status.md",
+      "sha": "458685614e0540599865982c685102aab04d73e5",
+      "exact": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/work-packages.json",
+      "sha": "bc9ab638137a3e583d5e5fbfc6c4b1f549b017ad",
+      "exact": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/requirements.csv",
+      "sha": "5dfb960f07ad1644f03b320c1b9bed363288977f",
+      "exact": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/run-8-report.md",
+      "sha": "33dff9829ca65ba53ee22319180f341a277f37e8",
+      "exact": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P08.md",
+      "sha": "333ade1c22ecbf890a53a48542dca31425695329",
+      "exact": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P09.md",
+      "sha": "aa96edb07529469ce2feaebef4a26a78c3b3857d",
+      "exact": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P15.md",
+      "sha": "331c26e0040ec33afbf568212d7fa3d3902a555e",
+      "exact": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P07.md",
+      "sha": "67cb87553667d89751b65e3410397dd66214a47d",
+      "exact": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P10.md",
+      "sha": "a143a949b8770f1eed9868a91e6c6d641c899b49",
+      "exact": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P13.md",
+      "sha": "3d045dcdcfbd72e9aaffb3c42b043fa6c108864a",
+      "exact": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/prompts/P06.md",
+      "sha": "bc3d49ddcdad98294785505abf6f2e4eba3b3c81",
+      "exact": true
+    },
+    {
+      "path": "docs/ontology/diagrams/ontouml-rc4.md",
+      "sha": "77c3327bb24805ae4ef0537ea26fd1bde661daf6",
+      "exact": true
+    },
+    {
+      "path": "evaluation/exposure-scale/v0.2.0-rc.4/results.json",
+      "sha": "11b43784daf8cf1255779e08d0a2d733d338bb8c",
+      "exact": true
+    },
+    {
+      "path": "evaluation/exposure-scale/v0.2.0-rc.4/acceptance-contract.md",
+      "sha": "1977b791a1f6ba3503509ae558a322014e1f0acc",
+      "exact": true
+    },
+    {
+      "path": "ontology/releases/0.2.0-rc.4/method.ttl",
+      "sha": "5927ba386c9f5853ca962f50f5f540d4c4211dd4",
+      "exact": true
+    },
+    {
+      "path": "ontology/releases/0.2.0-rc.4/profile-iri-registry.csv",
+      "sha": "408f8bba2c99b38b578089c671eb9c7f8173b21f",
+      "exact": true
+    },
+    {
+      "path": "ontology/releases/0.2.0-rc.4/manifest.json",
+      "sha": "78c13946429e2d0fd670fd054f2469be5bd2cd78",
+      "exact": true
+    },
+    {
+      "path": "ontology/releases/0.2.0-rc.4/information-state-iri-registry.csv",
+      "sha": "2c755a0f59d131c8fae3a5786fdfcb9d69fda25c",
+      "exact": true
+    },
+    {
+      "path": "ontology/releases/0.2.0-rc.4/enterprise.ttl",
+      "sha": "6fc1c8afd00bdbe6e1a695cdde36617ab2737173",
+      "exact": true
+    },
+    {
+      "path": "ontology/releases/0.2.0-rc.4/core.ttl",
+      "sha": "352af8b2a55fc4e3b99542a0cc3d006f6994ab59",
+      "exact": true
+    },
+    {
+      "path": "ontology/releases/0.2.0-rc.4/assessment-context.ttl",
+      "sha": "4f2087a8e31fe49573082b01a58d28e20901d2cc",
+      "exact": true
+    },
+    {
+      "path": "ontology/releases/0.2.0-rc.4/mappings.ttl",
+      "sha": "b83ad043c09f75befaa452f4fcbe28754427244d",
+      "exact": true
+    },
+    {
+      "path": "ontology/releases/0.2.0-rc.4/catalog.xml",
+      "sha": "9c425e787d29603a7cfc783ed9e5aeee339f3a49",
+      "exact": true
+    },
+    {
+      "path": "ontology/releases/0.2.0-rc.4/governance.ttl",
+      "sha": "fc6da3e0850fcf1de8ded0412a3ddb228728a916",
+      "exact": true
+    },
+    {
+      "path": "ontology/releases/0.2.0-rc.4/README.md",
+      "sha": "87f147fa04df63daed60fc49b370043c6790d3ee",
+      "exact": true
+    },
+    {
+      "path": "ontology/releases/0.2.0-rc.4/pharma.ttl",
+      "sha": "fda0034d43f48a7dc7da2d907db9cb8c11c0fde0",
+      "exact": true
+    },
+    {
+      "path": "ontology/releases/0.2.0-rc.4/conceptual-iri-register.csv",
+      "sha": "3bba99b2d60c32375c3c6129b320e45e99bc838f",
+      "exact": true
+    }
+  ],
+  "content_readback": [
+    {
+      "path": "ontology/releases/0.2.0-rc.4/core.ttl",
+      "exact": true
+    },
+    {
+      "path": "ontology/releases/0.2.0-rc.4/assessment-context.ttl",
+      "exact": true
+    },
+    {
+      "path": "diagrams/ontouml/0.2.0-rc.4/SemRisk-rc4.ontouml.json",
+      "exact": true
+    },
+    {
+      "path": "relational/scripts/exposure_io.py",
+      "exact": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/requirements.csv",
+      "exact": true
+    }
+  ],
+  "issues": [
+    {
+      "number": 8,
+      "exact": true
+    },
+    {
+      "number": 33,
+      "exact": true
+    },
+    {
+      "number": 112,
+      "exact": true
+    },
+    {
+      "number": 113,
+      "exact": true
+    },
+    {
+      "number": 115,
+      "exact": true
+    },
+    {
+      "number": 123,
+      "exact": true
+    },
+    {
+      "number": 124,
+      "exact": true
+    },
+    {
+      "number": 125,
+      "exact": true
+    }
+  ],
+  "ci_checks": [
+    {
+      "name": "editable-model-integrity",
+      "id": 111750181805,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306145992/job/111750181805"
+    },
+    {
+      "name": "bounded-evidence-checks",
+      "id": 111750180152,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306146199/job/111750180152"
+    },
+    {
+      "name": "check",
+      "id": 111750177742,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306146144/job/111750177742"
+    },
+    {
+      "name": "exposure-scale-successor",
+      "id": 111750177638,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306146252/job/111750177638"
+    },
+    {
+      "name": "local-source-reference-check",
+      "id": 111750177600,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306146145/job/111750177600"
+    },
+    {
+      "name": "core-contract",
+      "id": 111750177569,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306146093/job/111750177569"
+    },
+    {
+      "name": "qualified-context",
+      "id": 111750177484,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306146190/job/111750177484"
+    },
+    {
+      "name": "source-generated-draft-parity",
+      "id": 111750177411,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306146191/job/111750177411"
+    },
+    {
+      "name": "generated-reference",
+      "id": 111750177291,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306146018/job/111750177291"
+    },
+    {
+      "name": "bounded-claim-check",
+      "id": 111750177276,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306146098/job/111750177276"
+    },
+    {
+      "name": "semantic-validation",
+      "id": 111750177219,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306146054/job/111750177219"
+    },
+    {
+      "name": "postgres-relational-twin",
+      "id": 111750177177,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306146080/job/111750177177"
+    },
+    {
+      "name": "versioned-offline-bundle",
+      "id": 111750177138,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306146157/job/111750177138"
+    },
+    {
+      "name": "integrity",
+      "id": 111750177085,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306146106/job/111750177085"
+    },
+    {
+      "name": "foundational-successor",
+      "id": 111750176758,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306145994/job/111750176758"
+    },
+    {
+      "name": "source-derived-svg",
+      "id": 111750176707,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306145993/job/111750176707"
+    },
+    {
+      "name": "integrity",
+      "id": 111750162357,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306141473/job/111750162357"
+    },
+    {
+      "name": "editable-model-integrity",
+      "id": 111750162326,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306141619/job/111750162326"
+    },
+    {
+      "name": "source-derived-svg",
+      "id": 111750162321,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306141553/job/111750162321"
+    },
+    {
+      "name": "bounded-claim-check",
+      "id": 111750162257,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306141465/job/111750162257"
+    },
+    {
+      "name": "semantic-validation",
+      "id": 111750162199,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306141389/job/111750162199"
+    },
+    {
+      "name": "local-source-reference-check",
+      "id": 111750162103,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306141457/job/111750162103"
+    },
+    {
+      "name": "postgres-relational-twin",
+      "id": 111750161777,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306141428/job/111750161777"
+    },
+    {
+      "name": "source-generated-draft-parity",
+      "id": 111750161773,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306141441/job/111750161773"
+    },
+    {
+      "name": "bounded-evidence-checks",
+      "id": 111750161703,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306141386/job/111750161703"
+    },
+    {
+      "name": "check",
+      "id": 111750161698,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306141380/job/111750161698"
+    },
+    {
+      "name": "versioned-offline-bundle",
+      "id": 111750161581,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306141413/job/111750161581"
+    },
+    {
+      "name": "generated-reference",
+      "id": 111750161553,
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37306141372/job/111750161553"
+    }
+  ],
+  "progress": {
+    "complete_packages": 3,
+    "packages": 19,
+    "verified_bounded_requirements": 22,
+    "requirements": 90,
+    "routed": 90
+  },
+  "next": "P09 bounded literature-case extraction, with remaining helper SQL/formal synchronization; no broad redesign"
+}
