@@ -1085,15 +1085,19 @@
     "group": "۶. مطالعه دارویی و داده",
     "request": "سازمان‌دهی داده در پایگاه رابطه‌ای",
     "package_id": "P10",
-    "status": "not_reverified",
+    "status": "partial",
     "primary_issue": 125,
     "acceptance_check": "Dataset loads into the relational schema with semantic IDs and source/synthetic distinction preserved.",
     "artifact_destinations": [
       "relational/",
       "evaluation/parity/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "relational/scripts/literature_io.py",
+      "case/pharma/literature-pilot-v0.1.0/postgres-results.json",
+      "case/pharma/literature-pilot-v0.1.0/ci-evidence.json"
+    ],
+    "verification_result": "PARTIAL_NATIVE_INFORMATION_STAGING_PASS; full normalized domain/temporal projection remains open. 24 source-local artifact payloads preserve source role and semantic ID, with no fabricated events."
   },
   {
     "id": "6.9",

@@ -10,7 +10,7 @@ Twelve mappings support a possible situation type; eleven retain ambiguous facto
 
 ## Verification and boundaries
 
-Local checks: 27/27, including 12 negative controls; exact CSV round-trip, deterministic RDF, source/mapping query counts and artifact/version/content SHACL constraints. The workbook has zero spreadsheet error cells and is visually reviewed. Native PostgreSQL results and publication readback are separate observed checkpoints; consult `ci-evidence.json` and `run-9-readback.json` once published.
+Local checks: 27/27, including 12 negative controls; exact CSV round-trip, deterministic RDF, source/mapping query counts and artifact/version/content SHACL constraints. The workbook has zero spreadsheet error cells and is visually reviewed. Native PostgreSQL 16.15 passed 13/13 actual checks, including exact 24-payload export and 978-triple reconstruction. All nine triggered checks across six job types passed at `ec0580321c3c2206429bfedaa4fd0b902743ebe5`. See [CI evidence](../../../case/pharma/literature-pilot-v0.1.0/ci-evidence.json) and [readback](run-9-readback.json).
 
 The new adapter loads full source/statement/mapping payloads into existing governed information staging. It preserves actual research-artifact provenance and differentiates these from synthetic domain fixtures. It does not claim normalized rc.4 domain-helper or temporal parity. Existing ontology/diagram/formal releases remain byte-identical.
 
@@ -20,7 +20,7 @@ Five of six selected studies concern Iran; publications span 2012–2022. Counts
 
 All 90 requirements remain routed. A bookkeeping inconsistency was corrected: Run 7/8 reports counted 22 accepted requirement rows, but the machine register still contained 18. Companion-only rows 5.2/5.4/5.5/5.6 were rechecked against unchanged rc.4 evidence and synchronized. These are four historical reconciliations, not four new scientific results. Six P09 requirements now pass at bounded scope: 4.12, 6.1, 6.3, 6.5, 6.6, 6.12. Four remain partial: 3.9, 6.2, 6.4, 6.7. Overall: 28/90 = 31.1% requirements evidenced; 3/19 = 15.8% package contracts accepted (P02/P03/P05), unchanged. P09 is 6/10 = 60% by its requirement checklist; this is not 60% scientific quality or final-paper readiness.
 
-Next: P10 remaining normalized artifact/content/scale/workflow SQL synchronization and bounded parity. Carry the actual pilot into P12 review and P14/P15 evaluation/manuscript; do not repeat broad planning/search. Seven continuation prompts were updated: P09/P10/P12/P13/P14/P15/P18.
+Next: P10 remaining normalized artifact/content/scale/workflow SQL synchronization and bounded parity. Carry the actual pilot into P12 review and P14/P15 evaluation/manuscript; do not repeat broad planning/search. The shared execution prompt and seven continuation prompts were updated: P09/P10/P12/P13/P14/P15/P18.
 
 ## Batch acceptance checklist
 
@@ -34,3 +34,7 @@ Next: P10 remaining normalized artifact/content/scale/workflow SQL synchronizati
 8. Exact repository readback, successful CI and verified PR merge.
 
 Items 5, 7 and 8 require observed remote evidence; artifact creation alone does not satisfy them. Final state is recorded in the publication checkpoint.
+
+## Observed publication evidence
+
+41/41 implementation file hashes, five exact content readbacks and 9/9 updated issue bodies matched. All 241 existing ontology/release/diagram/foundational/shape artifacts retain their Git blob identities. Updated issues: #8, #15, #33, #34, #51, #56, #112, #113, #125; none closed. Latest-head checks and actual merge are verified through [PR #138](https://github.com/ArazSaieArasi3/SemRisk/pull/138), separately from the bound scientific commit. The workbook’s 180 data cells also match canonical values.

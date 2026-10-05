@@ -1,0 +1,64 @@
+{
+  "result": "PASS_NATIVE_INFORMATION_STAGING",
+  "total": 13,
+  "passed": 13,
+  "postgres": "PostgreSQL 16.15 (Debian 16.15-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit",
+  "records": 24,
+  "sources": 6,
+  "reconstructed_rdf_triples": 978,
+  "tests": [
+    {
+      "id": "NATIVE-LOAD",
+      "passed": true
+    },
+    {
+      "id": "IDEMPOTENT-LOAD",
+      "passed": true
+    },
+    {
+      "id": "PAYLOAD-ROUNDTRIP",
+      "passed": true
+    },
+    {
+      "id": "RDF-RECONSTRUCTION",
+      "passed": true
+    },
+    {
+      "id": "PROVENANCE-ROWS",
+      "passed": true
+    },
+    {
+      "id": "NO-DOMAIN-INCIDENTS",
+      "passed": true
+    },
+    {
+      "id": "SQL-GROUP-source_id",
+      "passed": true
+    },
+    {
+      "id": "SQL-GROUP-source_role",
+      "passed": true
+    },
+    {
+      "id": "SQL-MAPPING-GROUP",
+      "passed": true
+    },
+    {
+      "id": "NEGATIVE-REWRITE",
+      "passed": true
+    },
+    {
+      "id": "NEGATIVE-MISSING-PROVENANCE",
+      "passed": true
+    },
+    {
+      "id": "NEGATIVE-FALSE-HOLDOUT",
+      "passed": true
+    },
+    {
+      "id": "AFTER-REJECTION-UNCHANGED",
+      "passed": true
+    }
+  ],
+  "boundary": "RDF reconstruction uses complete JSON source/statement/mapping payloads retained in staging, not native columns for every domain relation. No temporal assessment/scale/workflow SQL parity or clinical validation claim."
+}
