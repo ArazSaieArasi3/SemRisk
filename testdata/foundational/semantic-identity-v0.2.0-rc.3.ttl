@@ -1,0 +1,24 @@
+@prefix ex: <urn:semrisk:run6:> .
+@prefix sr: <urn:semrisk:entity:> .
+@prefix ist: <urn:semrisk:profile:information-state:> .
+@prefix ac: <urn:semrisk:profile:assessment-context:> .
+@prefix gufo: <http://purl.org/nemo/gufo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+ex:fixture dct:description "Entirely synthetic semantic probes; not a pharmaceutical case or expert evaluation." .
+ex:scenario a sr:SR-CPT-006, owl:Class ; rdfs:subClassOf gufo:Situation .
+ex:realizedScenario a sr:SR-CPT-006, owl:Class ; rdfs:subClassOf gufo:Situation ; sr:SR-REL-003 ex:event .
+ex:entryA a sr:SR-CPT-033, ist:ManagedInformationArtifact ; sr:SR-REL-001 ex:risk .
+ex:entryB a sr:SR-CPT-033, ist:ManagedInformationArtifact ; owl:differentFrom ex:entryA .
+ex:risk a sr:SR-CPT-001 .
+ex:content a ist:InformationContent .
+ex:versionA a ist:ArtifactVersion ; ist:versionOf ex:entryA ; ist:expressesContent ex:content ; owl:differentFrom ex:entryA, ex:versionB .
+ex:versionB a ist:ArtifactVersion ; ist:versionOf ex:entryB ; ist:expressesContent ex:content ; owl:differentFrom ex:entryB .
+ex:scheme a ist:WorkflowSchemeVersion .
+ex:open a sr:SR-CPT-036 ; ist:inScheme ex:scheme ; owl:differentFrom ex:closed .
+ex:closed a sr:SR-CPT-036 ; ist:inScheme ex:scheme .
+ex:assignmentA a ist:WorkflowAssignment ; ist:record ex:entryA ; ist:value ex:open ; ist:scheme ex:scheme ; ac:validFrom "2026-10-01T00:00:00Z"^^xsd:dateTime ; ac:validTo "2026-10-05T00:00:00Z"^^xsd:dateTime .
+ex:assignmentB a ist:WorkflowAssignment ; ist:record ex:entryB ; ist:value ex:open ; ist:scheme ex:scheme ; ac:validFrom "2026-10-01T00:00:00Z"^^xsd:dateTime .
+ex:assignmentC a ist:WorkflowAssignment ; ist:record ex:entryA ; ist:value ex:closed ; ist:scheme ex:scheme ; ac:validFrom "2026-10-05T00:00:00Z"^^xsd:dateTime .

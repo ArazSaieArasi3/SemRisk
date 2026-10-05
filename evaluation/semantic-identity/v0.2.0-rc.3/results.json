@@ -1,0 +1,164 @@
+{
+  "candidate_version": "0.2.0-rc.3",
+  "total": 30,
+  "passed": 30,
+  "negative_cases": 17,
+  "tests": [
+    {
+      "id": "POSITIVE",
+      "passed": true,
+      "detail": "Validation Report\nConforms: True\n"
+    },
+    {
+      "id": "S01",
+      "passed": true,
+      "detail": "scenario lacks class declaration rejected by HasValueConstraintComponent"
+    },
+    {
+      "id": "S02",
+      "passed": true,
+      "detail": "scenario lacks Situation superclass rejected by HasValueConstraintComponent"
+    },
+    {
+      "id": "S03",
+      "passed": true,
+      "detail": "scenario confused with individual rejected by NotConstraintComponent"
+    },
+    {
+      "id": "I01",
+      "passed": true,
+      "detail": "version missing parent rejected by MinCountConstraintComponent"
+    },
+    {
+      "id": "I02",
+      "passed": true,
+      "detail": "version missing content rejected by MinCountConstraintComponent"
+    },
+    {
+      "id": "I03",
+      "passed": true,
+      "detail": "version is its parent rejected by VERSION_SELF"
+    },
+    {
+      "id": "I04",
+      "passed": true,
+      "detail": "version aliases its parent rejected by VERSION_SELF"
+    },
+    {
+      "id": "I05",
+      "passed": true,
+      "detail": "content is only a concrete artifact rejected by ClassConstraintComponent"
+    },
+    {
+      "id": "W01",
+      "passed": true,
+      "detail": "missing scheme rejected by MinCountConstraintComponent"
+    },
+    {
+      "id": "W02",
+      "passed": true,
+      "detail": "value is a bearer quality rejected by NotConstraintComponent"
+    },
+    {
+      "id": "W03",
+      "passed": true,
+      "detail": "value is RiskState rejected by NotConstraintComponent"
+    },
+    {
+      "id": "W04",
+      "passed": true,
+      "detail": "scheme mismatch rejected by WORKFLOW_SCHEME"
+    },
+    {
+      "id": "W05",
+      "passed": true,
+      "detail": "missing interval start rejected by MinCountConstraintComponent"
+    },
+    {
+      "id": "W06",
+      "passed": true,
+      "detail": "timezone missing rejected by PatternConstraintComponent"
+    },
+    {
+      "id": "W07",
+      "passed": true,
+      "detail": "zero interval rejected by LessThanConstraintComponent"
+    },
+    {
+      "id": "W08",
+      "passed": true,
+      "detail": "overlapping assignments rejected by WORKFLOW_OVERLAP"
+    },
+    {
+      "id": "W09",
+      "passed": true,
+      "detail": "multiple record bearers rejected by MaxCountConstraintComponent"
+    },
+    {
+      "id": "HALF-OPEN-BEFORE",
+      "passed": true,
+      "detail": "One reusable Open value applies to two different records."
+    },
+    {
+      "id": "HALF-OPEN-BOUNDARY",
+      "passed": true,
+      "detail": "Exact boundary excludes expired assignment."
+    },
+    {
+      "id": "SNAPSHOT-NOT-HISTORY",
+      "passed": true,
+      "detail": "Unqualified snapshot does not overwrite historical answers."
+    },
+    {
+      "id": "ADAPTER-EXACT",
+      "passed": true,
+      "detail": "Exactly two declaration triples; no occurrence invented."
+    },
+    {
+      "id": "ADAPTER-IDEMPOTENT",
+      "passed": true,
+      "detail": "Rerunning adapter does not mutate identity."
+    },
+    {
+      "id": "SCENARIO-LEVEL",
+      "passed": true,
+      "detail": "Instance level corrected; not a metadata relabel."
+    },
+    {
+      "id": "47-CONCEPT-COVERAGE",
+      "passed": true,
+      "detail": "47 unique domain concept dispositions."
+    },
+    {
+      "id": "3-DECISIONS-RESOLVED",
+      "passed": true,
+      "detail": "Editable-model gate remains explicit."
+    },
+    {
+      "id": "38-RELATION-COVERAGE",
+      "passed": true,
+      "detail": "All original registered relation decisions retained."
+    },
+    {
+      "id": "NO-IDENTITY-KEY",
+      "passed": true,
+      "detail": "No equality from content or mutable fields."
+    },
+    {
+      "id": "TEMPORAL-PROFILE",
+      "passed": true,
+      "detail": "Existing temporal SHACL data remains valid."
+    },
+    {
+      "id": "OWNER-ANSWERS",
+      "passed": true,
+      "detail": "New workflow/type/content fixture does not change assignee-derived owners."
+    }
+  ],
+  "limits": [
+    "Synthetic fixtures only",
+    "No complete OntoUML validation",
+    "New helpers not included in SQL round-trip contract",
+    "Immutability across storage revisions is a governance contract, not enforced by OWL or a single SHACL snapshot"
+  ]
+}

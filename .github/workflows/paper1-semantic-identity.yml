@@ -1,0 +1,101 @@
+name: Paper 1 semantic identity successor
+on:
+  pull_request:
+    paths:
+      - 'ontology/releases/0.2.0-rc.3/**'
+      - 'foundational/semantic-identity-*/**'
+      - 'tools/*semantic_identity*'
+      - 'tools/adapt_scenario_declarations.py'
+      - 'shapes/semantic-identity-*'
+      - 'testdata/foundational/semantic-identity-*'
+      - 'rules/enterprise/workflow-at-*'
+      - '.github/workflows/paper1-semantic-identity.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  semantic-identity-successor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - run: python -m pip install -r tools/requirements-qualified-context.txt
+      - name: Source binding and behavioral checks
+        run: |
+          python tools/build_semantic_identity_candidate.py --check --assemble
+          python tools/check_semantic_identity.py --write
+          python tools/build_foundational_candidate.py --check
+          python tools/check_foundational_revision.py
+          python tools/build_qualified_context_manifest.py --check
+          python tools/check_qualified_context.py
+      - uses: actions/cache@v4
+        with:
+          path: .tools/robot.jar
+          key: robot-1.9.10-sha256-16a73c074f3df359
+      - name: Verify formal toolchain
+        run: |
+          mkdir -p .tools
+          if [ ! -f .tools/robot.jar ]; then
+            curl -L --fail --retry 3 https://github.com/ontodev/robot/releases/download/v1.9.10/robot.jar -o .tools/robot.jar
+          fi
+          echo "16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105  .tools/robot.jar" | sha256sum -c -
+          java -jar .tools/robot.jar --version
+          python - <<'PYCODE'
+          import zipfile,json
+          with zipfile.ZipFile('.tools/robot.jar') as z:
+              matches={n:z.read(n).decode() for n in z.namelist() if 'hermit' in n.lower() and n.endswith('pom.properties')}
+          assert matches, 'Bundled HermiT metadata not found; inspect rather than invent version'
+          print('EMBEDDED_HERMIT_METADATA='+json.dumps(matches))
+          PYCODE
+      - name: OWL 2 DL and actual HermiT entailments
+        run: |
+          if ! java -jar .tools/robot.jar validate-profile --profile DL --input build/semantic-identity/positive.owl --output build/semantic-identity/dl.txt; then
+            cat build/semantic-identity/dl.txt
+            exit 1
+          fi
+          java -jar .tools/robot.jar reason --reasoner HermiT --axiom-generators "SubClass ClassAssertion" --include-indirect true --input build/semantic-identity/positive.owl --output build/semantic-identity/reasoned.owl
+          python - <<'PYCODE'
+          import json
+          from pathlib import Path
+          from rdflib import Graph,RDF,URIRef
+          p=Path('build/semantic-identity');a=Graph().parse(p/'positive.owl');g=Graph().parse(p/'reasoned.owl')
+          expected=json.loads((p/'expected-entailments.json').read_text())
+          for subject,typ in expected:
+              t=(URIRef(subject),RDF.type,URIRef(typ))
+              assert t not in a, 'Not an inference probe: '+str(t)
+              assert t in g, 'Missing entailment: '+str(t)
+          print('IDENTITY_ENTAILMENTS_PASS='+str(len(expected)))
+          PYCODE
+      - name: Scenario existence does not force realization
+        run: |
+          java -jar .tools/robot.jar reason --reasoner HermiT --input build/semantic-identity/no-realization.owl --output build/semantic-identity/no-realization-reasoned.owl
+          echo NO_REALIZATION_COUNTERMODEL_PASS
+      - name: Three deliberate category contradictions
+        run: |
+          for probe in content-as-artifact value-as-quality scenario-as-individual; do
+            if java -jar .tools/robot.jar reason --reasoner HermiT --input "build/semantic-identity/$probe.owl" --output "build/semantic-identity/$probe-reasoned.owl" > "build/semantic-identity/$probe.log" 2>&1; then
+              echo "FAIL: contradiction accepted: $probe"
+              exit 1
+            fi
+          done
+          python - <<'PYCODE'
+          from pathlib import Path
+          for probe in ['content-as-artifact','value-as-quality','scenario-as-individual']:
+              log=Path('build/semantic-identity/'+probe+'.log').read_text().lower()
+              assert 'inconsistent' in log or 'inconsistency' in log, 'Not an established inconsistency: '+probe
+              print('EXPECTED_IDENTITY_INCONSISTENCY='+probe)
+          PYCODE
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: semantic-identity-evidence
+          path: |
+            build/semantic-identity/
+            evaluation/semantic-identity/v0.2.0-rc.3/results.json
