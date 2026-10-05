@@ -1,0 +1,13 @@
+@prefix ex: <urn:semrisk:run5:> .
+@prefix sr: <urn:semrisk:entity:> .
+@prefix ac: <urn:semrisk:profile:assessment-context:> .
+@prefix gufo: <http://purl.org/nemo/gufo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+ex:fixture dct:description "Synthetic named-participant test; no real person, organization or expert response." .
+ex:risk a sr:SR-CPT-001 .
+ex:person a gufo:Endurant ; owl:differentFrom ex:organization .
+ex:organization a gufo:Endurant .
+ex:responsibility a ac:GroundedRiskResponsibility ;
+ sr:SR-REL-027 ex:risk ; sr:SR-REL-028 ex:person ;
+ gufo:mediates ex:person, ex:organization .

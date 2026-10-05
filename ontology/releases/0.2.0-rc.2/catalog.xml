@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+ <uri name="http://purl.org/nemo/gufo#/1.0.0" uri="../../vendor/gufo-v1.0.0.ttl"/>
+ <uri name="http://purl.org/nemo/gufo#" uri="../../vendor/gufo-v1.0.0.ttl"/>
+ <uri name="urn:semrisk:ontology:core" uri="core.ttl"/>
+ <uri name="urn:semrisk:ontology:core:0.2.0-rc.2" uri="core.ttl"/>
+ <uri name="urn:semrisk:ontology:enterprise" uri="enterprise.ttl"/>
+ <uri name="urn:semrisk:ontology:enterprise:0.2.0-rc.2" uri="enterprise.ttl"/>
+ <uri name="urn:semrisk:ontology:method" uri="method.ttl"/>
+ <uri name="urn:semrisk:ontology:method:0.2.0-rc.2" uri="method.ttl"/>
+ <uri name="urn:semrisk:ontology:governance" uri="governance.ttl"/>
+ <uri name="urn:semrisk:ontology:governance:0.2.0-rc.2" uri="governance.ttl"/>
+ <uri name="urn:semrisk:ontology:pharma" uri="pharma.ttl"/>
+ <uri name="urn:semrisk:ontology:pharma:0.2.0-rc.2" uri="pharma.ttl"/>
+ <uri name="urn:semrisk:ontology:mappings" uri="mappings.ttl"/>
+ <uri name="urn:semrisk:ontology:mappings:0.2.0-rc.2" uri="mappings.ttl"/>
+ <uri name="urn:semrisk:ontology:assessment-context" uri="assessment-context.ttl"/>
+ <uri name="urn:semrisk:ontology:assessment-context:0.2.0-rc.2" uri="assessment-context.ttl"/>
+</catalog>

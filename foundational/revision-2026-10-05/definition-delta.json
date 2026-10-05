@@ -1,0 +1,25 @@
+{
+  "baseline": "0.2.0-rc.1",
+  "candidate": "0.2.0-rc.2",
+  "definitions": {
+    "SR-CPT-019": "An information qualification stating confidence or uncertainty in a specified assessment result under a stated basis; it is distinct from estimated likelihood and from an intrinsic quality of the risk.",
+    "SR-CPT-024": "A versioned specification of what is observed or computed to monitor a risk-relevant condition; each observation value or result is distinct from this specification.",
+    "SR-CPT-025": "A versioned decision-boundary specification used with an indicator or assessment method; its comparison operator, scale, unit and applicability belong to the selected application profile, not to a universal risk formula.",
+    "SR-CPT-030": "A context-dependent role classification of persons, organizations or other eligible external actors bearing specified risk-management responsibilities; bearer identity is supplied by the external actor kinds, not by ownership."
+  },
+  "axiom_delta": {
+    "remove": [
+      "SR-CPT-030 rdf:type gufo:Role"
+    ],
+    "add": [
+      "SR-CPT-030 rdf:type gufo:RoleMixin",
+      "ac:GroundedRiskResponsibility rdf:type owl:Class",
+      "ac:GroundedRiskResponsibility rdfs:subClassOf SR-CPT-031"
+    ]
+  },
+  "compatibility": "Named class/instance IRIs preserved; RiskOwner metatype correction is semantic and not claimed backward-equivalent",
+  "conceptual_count": 47,
+  "local_domain_classes": 35,
+  "skos_markers": 4,
+  "undeclared": 8
+}

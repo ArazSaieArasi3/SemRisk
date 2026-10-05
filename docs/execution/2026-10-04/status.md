@@ -1,3 +1,19 @@
+# Current revision status — Run 5, 2026-10-05
+
+Current stage: **47-concept/38-relation audit and bounded foundational correction implemented; three shared semantic decisions remain before full editable OntoUML**. [Run 5 report](run-5-report.md); implementation/current CI in [PR #133](https://github.com/ArazSaieArasi3/SemRisk/pull/133).
+
+- Candidate **0.2.0-rc.2**: four definition clarifications, RiskOwner RoleMixin correction and opt-in explicit participant evidence.
+- **29/29 new checks, 7 negative controls, OWL 2 DL/HermiT PASS, 2 actual class entailments, one non-entailment countermodel and one correctly rejected contradiction.** Missing named-participant OWA probe remains consistent, demonstrating the data-completeness boundary.
+- **3/19 = 15.8%** bounded package contracts accepted; **18/90** author requirements individually evidenced (previously 15), with **90/90 routed**. These counts are not a scientific-quality score or manuscript-ready percentage.
+- Next fixed batch: scenario type/instance semantics; information identity/helper pattern; workflow value/quality distinction. Then build the complete editable OntoUML using the current inventories and justified relation ends.
+- Old temporal SHACL/SQL remain frozen and reexecuted. New participant evidence is not claimed to round-trip through V007. Zero new empirical records and expert responses; no final Word/PDF this run.
+
+Publication, latest-head CI, issue verification and merge must be read from PR #133 and the final readback checkpoint. The scientific result binds the exact commit in `evaluation/foundational/2026-10-05/ci-evidence.json`.
+
+---
+
+## Preserved Run 4 checkpoint
+
 # Current revision status — Run 4, 2026-10-05
 
 Publication checkpoint: **8/8 Run 4 deliverables verified**. PR #131 merged at `90ed15b98c241646df65e17b4cedaed857dfd382`. Verified 54/54 changed-file hashes, five exact file contents, 8/8 issue bodies and all 13 CI job types on the tested implementation candidate. [Exact readback evidence](run-4-readback.json). This checkpoint records observed results and adds no scientific claims.

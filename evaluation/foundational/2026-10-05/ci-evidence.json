@@ -1,0 +1,27 @@
+{
+  "tested_commit": "18c75501c68524487efc064d50133b1a86513c94",
+  "job_id": 111714191524,
+  "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37295055220/job/111714191524",
+  "conclusion": "success",
+  "tests": {
+    "local_checks": 29,
+    "local_passed": 29,
+    "negative_shape_cases": 7,
+    "owl2_dl": "PASS",
+    "positive_hermit": "PASS",
+    "declared_class_entailments": 2,
+    "missing_named_witness_owa": "CONSISTENT",
+    "risk_endurant_countermodel": "CONSISTENT",
+    "expected_category_contradiction": "REJECTED_FOR_INCONSISTENCY"
+  },
+  "toolchain": {
+    "robot": "1.9.10",
+    "jar_sha256": "16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+    "hermit": "bundled component, exact JAR binding; component metadata collected in subsequent candidate-head CI"
+  },
+  "limits": [
+    "Bounded custom probes; not complete OntoUML antipattern detection",
+    "No new empirical records or expert responses",
+    "No named-counterpart SQL round-trip claim"
+  ]
+}

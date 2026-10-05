@@ -1,4 +1,4 @@
-> **Author revision — Run 4 (2026-10-05):** qualified temporal context promoted to candidate 0.2.0-rc.1; 30/30 semantic and 32/32 native SQL tests, OWL 2 DL/HermiT PASS. [Current status](docs/execution/2026-10-04/status.md). Accepted bounded package checklist: 3/19 (15.8%); 15/90 individual requirements reverified. Full foundational/OntoUML work and final paper remain open.
+> **Author revision — Run 5 (2026-10-05):** complete 47-concept/38-relation audit; bounded foundational correction in candidate 0.2.0-rc.2; 29/29 new checks and actual formal probes. [Current status](docs/execution/2026-10-04/status.md). Accepted package checklist: 3/19 (15.8%); 18/90 individual requirements evidenced. Three shared semantic decisions precede full editable OntoUML and the final paper.
 
 # SemRisk
 

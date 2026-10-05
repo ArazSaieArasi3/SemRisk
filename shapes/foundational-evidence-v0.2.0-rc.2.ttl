@@ -1,0 +1,31 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix sr: <urn:semrisk:entity:> .
+@prefix ac: <urn:semrisk:profile:assessment-context:> .
+@prefix gufo: <http://purl.org/nemo/gufo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix fs: <urn:semrisk:shape:foundational-evidence:> .
+fs:GroundedResponsibilityShape a sh:NodeShape ;
+ sh:targetClass ac:GroundedRiskResponsibility ;
+ sh:property [ sh:path sr:SR-REL-028 ; sh:minCount 1 ; sh:nodeKind sh:IRI ; sh:class gufo:Endurant ] ;
+ sh:property [ sh:path gufo:mediates ; sh:minCount 2 ; sh:nodeKind sh:IRI ; sh:class gufo:Endurant ] ;
+ sh:sparql [ sh:message "GROUND_DISTINCT: each assignee needs an explicitly distinct mediated endurant; sameAs cannot be used as a second witness." ;
+ sh:select """
+ PREFIX sr: <urn:semrisk:entity:>
+ PREFIX gufo: <http://purl.org/nemo/gufo#>
+ PREFIX owl: <http://www.w3.org/2002/07/owl#>
+ SELECT $this WHERE {
+  $this sr:SR-REL-028 ?assignee .
+  FILTER NOT EXISTS {
+   $this gufo:mediates ?other .
+   ?assignee (owl:differentFrom|^owl:differentFrom) ?other .
+   FILTER (?assignee != ?other)
+   FILTER NOT EXISTS { ?assignee (owl:sameAs|^owl:sameAs)+ ?other }
+  }
+ }
+ """ ] ;
+ sh:sparql [ sh:message "GROUND_ABOUTNESS: a risk-pattern target cannot be used as a mediated participant in this profile." ;
+ sh:select """
+ PREFIX sr: <urn:semrisk:entity:>
+ PREFIX gufo: <http://purl.org/nemo/gufo#>
+ SELECT $this WHERE { $this gufo:mediates ?risk . ?risk a sr:SR-CPT-001 . }
+ """ ] .
