@@ -1,0 +1,229 @@
+{
+  "date": "2026-10-05",
+  "baseline": "b8a321baaff2534d6594d80d23402c6e8046e94a",
+  "verified_candidate_commit": "fdf19d294bd828d2222acbaf4735c1562f2a1a92",
+  "implementation_pr": 129,
+  "merged": true,
+  "merge_commit": "8a0559ff921062b49970420c7384de59474fb192",
+  "changed_artifact_blob_hashes": {
+    ".github/workflows/paper1-core-contract.yml": "50dea47d4a175a62e1b1f97fd8355d83e5e013eb",
+    "README.md": "2b98a2c2004e7be5a85230f766dbbfed9fad75db",
+    "conceptualization/core/state-lifecycle-registry-v0.1.csv": "03b2b829adb64621bd92cf0299efcff533b94d12",
+    "conceptualization/revision-2026-10-05/concept-dispositions.csv": "051ecaec4daef6d70025f24b258b694727d1b427",
+    "conceptualization/revision-2026-10-05/core-decision-contract.md": "52d4e49c6848d98123f74832596ac61a39f18c97",
+    "conceptualization/revision-2026-10-05/domain-membership.csv": "b996c7ffb22ffdeb1edd3523517f8a0ad6bce077",
+    "docs/execution/2026-10-04/README.md": "4c7a5250edc2144857e21a7a7540786a4dd6e8bf",
+    "docs/execution/2026-10-04/legacy-pr-disposition.md": "5ac66dcaf9eb399157309df9112b5d9c956460d8",
+    "docs/execution/2026-10-04/prompts/P05.md": "906e4d2c08f260c637694a05f9209a7eeeaa33c8",
+    "docs/execution/2026-10-04/prompts/P06.md": "a61abcb0c4c0e82b96b716444fe81b71563c0779",
+    "docs/execution/2026-10-04/prompts/P07.md": "220b74a41f14d7ff81d15bc3c18aa74763275b85",
+    "docs/execution/2026-10-04/prompts/P08.md": "d6170333dddd2a00c094fc76200b4c2ed178310b",
+    "docs/execution/2026-10-04/prompts/P10.md": "9def298dc34b293232000d0b1ca44a7f43e0e785",
+    "docs/execution/2026-10-04/requirements.csv": "fcb100d25b5d8f7943b70c612ce231d2a4e5e74a",
+    "docs/execution/2026-10-04/requirements.json": "49b0335042677761eac66364116bb994d47fa33d",
+    "docs/execution/2026-10-04/run-3-report.md": "243a89a41e750e7d923337369f5acbbf4840d2e5",
+    "docs/execution/2026-10-04/status.md": "d9747bc5bb8fda33d60c411c939613b22cd91751",
+    "docs/execution/2026-10-04/work-packages.json": "347c8002363ffc8cff224305cf3f2774cb78f9a5",
+    "evaluation/core-contract/2026-10-05/README.md": "1e7071a833f07925f013cc8bed88c28876df0650",
+    "evaluation/core-contract/2026-10-05/owner-at-time.rq": "df50b91e6200aea24858ac08c616786159d27977",
+    "evaluation/core-contract/2026-10-05/pharma-extension.ttl": "da5ca95d0ac3a84f5450fa7c040c92b14e01eecb",
+    "evaluation/core-contract/2026-10-05/protocol.json": "91e4bf20530d79ecaf5c65fb1018db7f7692e83f",
+    "evaluation/core-contract/2026-10-05/results.json": "fe86a3759b74ed8fc9609776b1ad29cc6446e610",
+    "evaluation/core-contract/2026-10-05/temporal-positive.ttl": "9fb3e95419ef3e55b05cf166d76ae6d3f7f8a1cc",
+    "evaluation/core-contract/2026-10-05/temporal-profile.ttl": "6780b6051c951c7b9962155c407ce3aabf03bdd8",
+    "evaluation/core-contract/2026-10-05/traceability-results.json": "1dc28f4a26223c1663ec8e9d3e0a375fef6417ee",
+    "evaluation/integrity/derived-field-use-audit-2026-10-05.csv": "def33e6cec4f893be077078b87d4f708c86673d9",
+    "evaluation/integrity/derived-field-use-audit-2026-10-05.md": "712859da4449f59a6f05f6a3992e5d106ed1ffb7",
+    "foundational/legacy-pr-58-61-resolution-2026-10-05.md": "79cca292db4d85205aae875c3ef1a4e4654fb1ed",
+    "foundational/legacy-pr-58-61-semantic-disposition-2026-10-05.csv": "ea4469e3fae9390e504267ffbdb16bf8f5a7b950",
+    "method/author-paper-method-crosswalk-v1.1.csv": "b09ff0969a95dd84fee853467f5a088db99e3ae0",
+    "method/paper1-engineering-method-v1.1.md": "15a0fb0bb609f7e3cafd0b5432a068be43f8c3f0",
+    "method/sabio-executed-process-crosswalk-v1.1.csv": "d663f48bd91437567ac59c308bc78e2a492ba0f6",
+    "tools/check_run3_core_contract.py": "6209bdd28c940c2e517532cc7af77aaa6f8b46cd",
+    "tools/check_run3_traceability.py": "4a354e82dfde5baf9ebe4ed7f92f161cffc9d7ad"
+  },
+  "file_hash_matches": 35,
+  "exact_readbacks": [
+    {
+      "issue": 8,
+      "exact_body_match": true,
+      "state": "open"
+    },
+    {
+      "issue": 13,
+      "exact_body_match": true,
+      "state": "open"
+    },
+    {
+      "issue": 17,
+      "exact_body_match": true,
+      "state": "open"
+    },
+    {
+      "issue": 33,
+      "exact_body_match": true,
+      "state": "open"
+    },
+    {
+      "issue": 53,
+      "exact_body_match": true,
+      "state": "open"
+    },
+    {
+      "issue": 112,
+      "exact_body_match": true,
+      "state": "open"
+    },
+    {
+      "issue": 113,
+      "exact_body_match": true,
+      "state": "open"
+    },
+    {
+      "issue": 115,
+      "exact_body_match": true,
+      "state": "open"
+    },
+    {
+      "issue": 123,
+      "exact_body_match": true,
+      "state": "open"
+    },
+    {
+      "issue": 124,
+      "exact_body_match": true,
+      "state": "open"
+    },
+    {
+      "issue": 125,
+      "exact_body_match": true,
+      "state": "open"
+    },
+    {
+      "path": "method/paper1-engineering-method-v1.1.md",
+      "exact_content_match": true
+    },
+    {
+      "path": "conceptualization/revision-2026-10-05/core-decision-contract.md",
+      "exact_content_match": true
+    },
+    {
+      "path": "evaluation/core-contract/2026-10-05/results.json",
+      "exact_content_match": true
+    },
+    {
+      "path": "evaluation/integrity/derived-field-use-audit-2026-10-05.csv",
+      "exact_content_match": true
+    },
+    {
+      "path": "docs/execution/2026-10-04/requirements.json",
+      "exact_content_match": true
+    }
+  ],
+  "ci": [
+    {
+      "name": "bounded-claim-check",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37266225386/job/111623537204",
+      "head_sha": "fdf19d294bd828d2222acbaf4735c1562f2a1a92"
+    },
+    {
+      "name": "core-contract",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37266224413/job/111623533600",
+      "head_sha": "fdf19d294bd828d2222acbaf4735c1562f2a1a92"
+    },
+    {
+      "name": "bounded-evidence-checks",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37266224400/job/111623533223",
+      "head_sha": "fdf19d294bd828d2222acbaf4735c1562f2a1a92"
+    },
+    {
+      "name": "postgres-relational-twin",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37266224405/job/111623533121",
+      "head_sha": "fdf19d294bd828d2222acbaf4735c1562f2a1a92"
+    },
+    {
+      "name": "semantic-validation",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37266224379/job/111623533077",
+      "head_sha": "fdf19d294bd828d2222acbaf4735c1562f2a1a92"
+    }
+  ],
+  "superseded_pull_requests": [
+    {
+      "pr": 58,
+      "state": "closed",
+      "merged": false,
+      "head_sha": "2a4b8ec3e54b6d02006fe56508d2689ff7d4dd36",
+      "exact_body_match": true
+    },
+    {
+      "pr": 59,
+      "state": "closed",
+      "merged": false,
+      "head_sha": "9d49481681e6254cf575af6f4265ca768232a1ea",
+      "exact_body_match": true
+    },
+    {
+      "pr": 60,
+      "state": "closed",
+      "merged": false,
+      "head_sha": "0340072518519af1582633705d9f7063da2aacd2",
+      "exact_body_match": true
+    },
+    {
+      "pr": 61,
+      "state": "closed",
+      "merged": false,
+      "head_sha": "a1766df96e79485f1f69c6118fce3356347df177",
+      "exact_body_match": true
+    }
+  ],
+  "run_deliverables": {
+    "completed": 8,
+    "total": 8
+  },
+  "accepted_bounded_packages": {
+    "ids": [
+      "P02",
+      "P03",
+      "P05"
+    ],
+    "completed": 3,
+    "total": 19,
+    "percent": 15.8
+  },
+  "requirements": {
+    "routed": 90,
+    "total": 90,
+    "individually_reverified": 9
+  },
+  "local_regression": {
+    "passed": 18,
+    "total": 18,
+    "negative_controls": 7,
+    "scope": "supplementary synthetic asserted-graph tests; not original CQ completion or formal proof"
+  },
+  "source_use": {
+    "total": 27,
+    "direct_projection": 6,
+    "partial": 13,
+    "design_only": 7,
+    "deferred": 1,
+    "private_record_import": false
+  },
+  "limits": [
+    "Canonical OWL/native SQL temporal promotion remains open.",
+    "P05 accepted only as method/reporting contract; requirement 3.7 final bibliography remains open.",
+    "No new empirical dataset, real expert responses, complete OntoUML or final Word/PDF.",
+    "This checkpoint binds the preceding scientific commit; the readback record does not hash itself."
+  ]
+}

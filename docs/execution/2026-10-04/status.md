@@ -1,5 +1,7 @@
 # Current revision status — Run 3, 2026-10-05
 
+Publication checkpoint: **8/8 Run 3 deliverables verified**. PR #129 merged at `8a0559ff921062b49970420c7384de59474fb192`; 35/35 changed-file hashes, five exact file readbacks, 11/11 issue-body readbacks, all five CI job types and four closed-as-superseded PRs are recorded in [run-3-readback.json](run-3-readback.json). The historical scientific evidence is bound to the exact tested candidate; this checkpoint adds no scientific claims.
+
 Current stage: **method contract accepted; conceptual/time/extension prototype tested; canonical promotion next**. [Run 3 evidence and limits](run-3-report.md).
 
 - Accepted bounded package contracts: **3/19 = 15.8%** (P02, P03, P05). This is an equal-unit revision checklist, not manuscript readiness, scientific quality, elapsed effort or acceptance probability.
@@ -13,7 +15,7 @@ Current stage: **method contract accepted; conceptual/time/extension prototype t
 
 Next: synchronize the selected Trigger/category definitions and temporal assessment/ownership axes across the canonical ontology, SHACL, native SQL and migration/parity tests; then complete the editable OntoUML. Use the updated P06/P07/P08/P10 prompts. Continue P09 extraction from its prepared protocol. No new broad replanning is required.
 
-Repository publication, CI and issue readback are recorded in `run-3-readback.json` when executed. Local scientific checks are in the linked result files. Do not interpret this text alone as proof of a merge.
+Repository publication, CI, issue readback and the four actual supersession closures are recorded in `run-3-readback.json`. Local scientific checks are in the linked result files.
 
 ---
 
