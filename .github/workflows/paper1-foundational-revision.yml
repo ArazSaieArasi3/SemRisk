@@ -50,6 +50,13 @@ jobs:
           fi
           echo "16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105  .tools/robot.jar" | sha256sum -c -
           java -jar .tools/robot.jar --version
+          python - <<'PYCODE'
+          import zipfile,json
+          with zipfile.ZipFile('.tools/robot.jar') as z:
+              matches={n:z.read(n).decode() for n in z.namelist() if 'hermit' in n.lower() and n.endswith('pom.properties')}
+          assert matches, 'Bundled HermiT metadata not found; inspect rather than invent version'
+          print('EMBEDDED_HERMIT_METADATA='+json.dumps(matches))
+          PYCODE
       - name: Actual OWL 2 DL and positive HermiT
         run: |
           if ! java -jar .tools/robot.jar validate-profile --profile DL --input build/foundational-candidate/positive.owl --output build/foundational-candidate/dl.txt; then

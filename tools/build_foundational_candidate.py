@@ -11,7 +11,8 @@ def sources():
  'ontology/vendor/gufo-v1.0.0.ttl','foundational/revision-2026-10-05/definition-delta.json','foundational/revision-2026-10-05/concept-category-audit.csv','foundational/revision-2026-10-05/relation-formal-audit.csv',
  f'shapes/foundational-evidence-v{V}.ttl',f'testdata/foundational/grounded-responsibility-v{V}.ttl',
  'shapes/assessment-context-v0.2.0-rc.1.ttl','testdata/temporal/qualified-context-v0.2.0-rc.1.ttl','rules/enterprise/risk-owners-at-v0.2.0-rc.1.rq','relational/sql/V007__qualified_assessment_context.sql',
- 'tools/check_foundational_revision.py','tools/build_foundational_candidate.py','tools/requirements-qualified-context.txt']
+ 'tools/check_foundational_revision.py','tools/build_foundational_candidate.py','tools/requirements-qualified-context.txt',
+ '.github/workflows/paper1-foundational-revision.yml','foundational/revision-2026-10-05/decisions.md','evaluation/foundational/2026-10-05/formal-protocol.md']
 def manifest():
  return dict(candidate_version=V,baseline_commit='9fb392b2b592caf1e9fbf0f108daab9a73461320',previous_candidate='0.2.0-rc.1',publication_ready=False,module_count=7,
   semantic_changes=['RiskOwner metatype Role to RoleMixin','Four scope definition clarifications','Opt-in GroundedRiskResponsibility helper; no stricter constraints on legacy records'],

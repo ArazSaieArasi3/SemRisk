@@ -1,3 +1,5 @@
+> **Run 5 successor notice:** historical policy/view below is retained. Candidate 0.2.0-rc.2 corrects broad Risk Owner to RoleMixin, adds an opt-in named-participant evidence profile, and records full inventory/diagram gaps in [current decisions](revision-2026-10-05/decisions.md). The historical Mermaid figure is not a complete validated OntoUML diagram. No automatic conversion of diagram labels into standard stereotypes is authorized by this notice.
+
 # SemRisk Paper-1 Foundational Conceptual Model v0.1
 
 **Source of truth:** `foundational-category-registry-v0.1.csv` and `foundational-relation-rationale-v0.1.csv`.  

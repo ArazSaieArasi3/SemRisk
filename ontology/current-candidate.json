@@ -1,6 +1,6 @@
 {
   "version": "0.2.0-rc.2",
-  "status": "tested_candidate_pending_CI_not_publication_release",
+  "status": "tested_candidate_not_publication_release",
   "manifest": "ontology/releases/0.2.0-rc.2/manifest.json",
   "module_count": 7,
   "scope": "six inherited modules plus qualified context and opt-in named-participant evidence",

@@ -717,7 +717,7 @@
     "group": "۴. روش و طراحی",
     "request": "آزمون توانایی استنتاج و کاربرد واقعی",
     "package_id": "P11",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 113,
     "acceptance_check": "Reasoning capability is demonstrated by declared entailment/non-entailment and application tasks.",
     "artifact_destinations": [
@@ -725,8 +725,12 @@
       "testdata/",
       "tools/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "evaluation/foundational/2026-10-05/formal-protocol.md",
+      "evaluation/foundational/2026-10-05/results.json",
+      "evaluation/foundational/2026-10-05/ci-evidence.json"
+    ],
+    "verification_result": "PASS_BOUND_DECLARED_FORMAL_PROBES_AND_SYNTHETIC_TASKS; final manuscript and empirical validation remain separate"
   },
   {
     "id": "4.11",
@@ -1175,7 +1179,7 @@
     "group": "۷. VVEAA",
     "request": "روش، مرجع و نتیجه آزمون‌های رسمی و HermiT",
     "package_id": "P11",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 113,
     "acceptance_check": "Formal tools including HermiT have versions, commands, original citations, exact inputs and real logs.",
     "artifact_destinations": [
@@ -1183,8 +1187,12 @@
       "testdata/",
       "tools/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "evaluation/foundational/2026-10-05/formal-protocol.md",
+      "evaluation/foundational/2026-10-05/results.json",
+      "evaluation/foundational/2026-10-05/ci-evidence.json"
+    ],
+    "verification_result": "PASS_BOUND_DECLARED_FORMAL_PROBES_AND_SYNTHETIC_TASKS; final manuscript and empirical validation remain separate"
   },
   {
     "id": "7.7",
@@ -1227,7 +1235,7 @@
     "group": "۷. VVEAA",
     "request": "کنترل منفی و بازتولیدپذیری روشن",
     "package_id": "P11",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 113,
     "acceptance_check": "Negative controls test named failures; reproducibility is evidenced separately from semantic validation.",
     "artifact_destinations": [
@@ -1235,8 +1243,12 @@
       "testdata/",
       "tools/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "evaluation/foundational/2026-10-05/formal-protocol.md",
+      "evaluation/foundational/2026-10-05/results.json",
+      "evaluation/foundational/2026-10-05/ci-evidence.json"
+    ],
+    "verification_result": "PASS_BOUND_DECLARED_FORMAL_PROBES_AND_SYNTHETIC_TASKS; final manuscript and empirical validation remain separate"
   },
   {
     "id": "7.10",

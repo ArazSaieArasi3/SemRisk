@@ -35,8 +35,11 @@
     "rules/enterprise/risk-owners-at-v0.2.0-rc.1.rq": "4a4ca63caec6d48ecd7dbe65fb148dd896351f20c59f5fbc0080f40bfd749753",
     "relational/sql/V007__qualified_assessment_context.sql": "8b37ebc37a867265b88cd3576b5d27be0b22dc1d6ac06724db5352f4245d29ea",
     "tools/check_foundational_revision.py": "3879028a0b88fa5fbba12437a6e9863872a7998bd048c83dfaf366846f4a9606",
-    "tools/build_foundational_candidate.py": "74956272d9a59c86a27bc2009c2c12fcf9b4a7f3d76a6c792a43db2cae5d99e8",
-    "tools/requirements-qualified-context.txt": "0d3f9d2b1676c8cf20e841010e8a1b6244de929881b4ec47932cf59fc236dc90"
+    "tools/build_foundational_candidate.py": "1550db2c208988ece8409e4ddb8329eecdc7561a6af69bd14fc092c0e78e474b",
+    "tools/requirements-qualified-context.txt": "0d3f9d2b1676c8cf20e841010e8a1b6244de929881b4ec47932cf59fc236dc90",
+    ".github/workflows/paper1-foundational-revision.yml": "d4e79d87529b49643893ffd23cea8d252afef98bea20777640922a37c9fd3bd7",
+    "foundational/revision-2026-10-05/decisions.md": "96a968d1ecd3a64e54ae1095a1ba2a741a0afc6554ac1b8c33cc3f92383032d4",
+    "evaluation/foundational/2026-10-05/formal-protocol.md": "2754166f8e875a94d8a98f4fe706c904fbcfe9fe1ffde87b859b4d3dd975158c"
   },
   "remaining": [
     "Scenario type/instance resolution",

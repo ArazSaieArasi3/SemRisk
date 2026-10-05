@@ -304,12 +304,17 @@
       "evaluation/temporal/v0.2.0-rc.1/semantic-results.json",
       "evaluation/temporal/v0.2.0-rc.1/postgres-results.json",
       "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json",
-      "ontology/releases/0.2.0-rc.1/manifest.json"
+      "ontology/releases/0.2.0-rc.1/manifest.json",
+      "evaluation/foundational/2026-10-05/formal-protocol.md",
+      "evaluation/foundational/2026-10-05/results.json",
+      "evaluation/foundational/2026-10-05/ci-evidence.json",
+      "foundational/revision-2026-10-05/decisions.md"
     ],
-    "acceptance_result": "PARTIAL_PASS_QUALIFIED_CONTEXT_PROMOTION",
+    "acceptance_result": "PARTIAL_PASS_FOUNDATIONAL_CORRECTION_AND_DECLARED_REASONING",
     "remaining": [
-      "Complete foundational category analysis, especially Confidence/Indicator/Threshold and outstanding local declarations",
-      "Complete editable OntoUML through P08; preserve tested temporal behavior"
+      "Resolve scenario type/instance contract, information identity helper pattern and workflow value/quality representation",
+      "Build complete editable OntoUML with justified relation ends and source-linked multiplicities",
+      "Run complete conceptual/diagram conformance review; do not equate bounded source probes with full antipattern detection"
     ]
   },
   {
@@ -355,12 +360,17 @@
       "evaluation/temporal/v0.2.0-rc.1/semantic-results.json",
       "evaluation/temporal/v0.2.0-rc.1/postgres-results.json",
       "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json",
-      "ontology/releases/0.2.0-rc.1/manifest.json"
+      "ontology/releases/0.2.0-rc.1/manifest.json",
+      "evaluation/foundational/2026-10-05/formal-protocol.md",
+      "evaluation/foundational/2026-10-05/results.json",
+      "evaluation/foundational/2026-10-05/ci-evidence.json",
+      "foundational/revision-2026-10-05/decisions.md"
     ],
-    "acceptance_result": "PARTIAL_PASS_QUALIFIED_CONTEXT_PROMOTION",
+    "acceptance_result": "PARTIAL_PASS_FOUNDATIONAL_CORRECTION_AND_DECLARED_REASONING",
     "remaining": [
-      "Synchronize full formal entity reference and foundational commitments after P06",
-      "Retain exact candidate import closure and distinguish asserted/inferred evidence"
+      "Resolve scenario type/instance contract, information identity helper pattern and workflow value/quality representation",
+      "Build complete editable OntoUML with justified relation ends and source-linked multiplicities",
+      "Run complete conceptual/diagram conformance review; do not equate bounded source probes with full antipattern detection"
     ]
   },
   {
@@ -402,9 +412,19 @@
       "docs/ontology/diagrams/",
       "conceptualization/ontouml/"
     ],
-    "status": "not_started",
-    "evidence_refs": [],
-    "acceptance_result": "NOT_ASSESSED"
+    "status": "in_progress",
+    "evidence_refs": [
+      "evaluation/foundational/2026-10-05/formal-protocol.md",
+      "evaluation/foundational/2026-10-05/results.json",
+      "evaluation/foundational/2026-10-05/ci-evidence.json",
+      "foundational/revision-2026-10-05/decisions.md"
+    ],
+    "acceptance_result": "PARTIAL_PASS_FOUNDATIONAL_CORRECTION_AND_DECLARED_REASONING",
+    "remaining": [
+      "Resolve scenario type/instance contract, information identity helper pattern and workflow value/quality representation",
+      "Build complete editable OntoUML with justified relation ends and source-linked multiplicities",
+      "Run complete conceptual/diagram conformance review; do not equate bounded source probes with full antipattern detection"
+    ]
   },
   {
     "id": "P09",
@@ -561,9 +581,18 @@
       "testdata/",
       "tools/"
     ],
-    "status": "not_started",
-    "evidence_refs": [],
-    "acceptance_result": "NOT_ASSESSED"
+    "status": "in_progress",
+    "evidence_refs": [
+      "evaluation/foundational/2026-10-05/formal-protocol.md",
+      "evaluation/foundational/2026-10-05/results.json",
+      "evaluation/foundational/2026-10-05/ci-evidence.json",
+      "foundational/revision-2026-10-05/decisions.md"
+    ],
+    "acceptance_result": "PARTIAL_PASS_FOUNDATIONAL_CORRECTION_AND_DECLARED_REASONING",
+    "remaining": [
+      "Integrate bounded formal evidence with the complete VVEAA profile and actual case/independent validation evidence",
+      "Keep original 40-CQ denominator; no empirical or expert claim from synthetic probes"
+    ]
   },
   {
     "id": "P12",
