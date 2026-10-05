@@ -37,4 +37,4 @@ The private source audit is an audit of 27 already-authorized extracted fields a
 4. Complete requirement 3.7's original-reference audit for all final UFO/OntoUML/tool claims and P04's publication clause/privacy scan.
 5. Execute P09 literature extraction and obtain real P12 review only through authorized contact. Final manuscript, Wiki/Pages/viewer synchronization, Word/PDF and release gates remain downstream.
 
-Run checklist has eight rows above; rows seven/eight require remote readback before reporting 8/8. Equal-package progress is 3/19 (15.8%), not a claim that this revision took 15.8% of its final effort. Seven readable IEEE pages and an absolute eight-page cap remain unchanged.
+Run checklist: **8/8 completed**, with exact remote evidence in `run-3-readback.json`. PR #129 is merged and the four old PRs are closed as superseded. Equal-package progress is 3/19 (15.8%), not a claim that this revision took 15.8% of its final effort. Seven readable IEEE pages and an absolute eight-page cap remain unchanged.
