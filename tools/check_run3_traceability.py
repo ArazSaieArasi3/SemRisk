@@ -41,7 +41,7 @@ def main():
     columns = {'.'.join(x[k] for k in ['schema','table','column']) for x in catalog}
     for x in fields:
         assert not x['implemented_column'] or x['implemented_column'] in columns, x['source_field_id']
-     assert x['reason_and_limit'] and x['private_record_load'] == 'NOT_EXECUTED_IN_THIS_AUDIT'
+        assert x['reason_and_limit'] and x['private_record_load'] == 'NOT_EXECUTED_IN_THIS_AUDIT'
     uses = dict(Counter(x['disposition'] for x in fields))
     assert uses == {'IMPLEMENTED_PROJECTION': 6, 'PARTIAL': 13, 'DESIGN_ONLY': 7, 'DEFERRED_PROFILE': 1}
 
