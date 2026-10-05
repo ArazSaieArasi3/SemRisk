@@ -1,0 +1,34 @@
+[
+  {
+    "id": "DS-001",
+    "access": "SUPPLEMENT_INSPECTED_NOT_PRIMARY_DATA",
+    "role": "supplementary provenance only",
+    "version": "v1",
+    "raw_records_used_here": false,
+    "evidence": "datasets/ds001-v1-supplement-manifest-2026-10-02.json"
+  },
+  {
+    "id": "DS-002",
+    "access": "RECORD_FILES_NOT_ACCESSED",
+    "role": "not a schema-blind holdout; optional record-level protocol only",
+    "version": "UNRESOLVED",
+    "raw_records_used_here": false,
+    "evidence": "datasets/dataset-registry.csv"
+  },
+  {
+    "id": "DS-003",
+    "access": "V4_MANIFEST_AND_CODEBOOK_INSPECTED_PREVIOUSLY",
+    "role": "design/reconciliation; no independent validation",
+    "version": "v4",
+    "raw_records_used_here": false,
+    "evidence": "datasets/ds003-v4-file-manifest-2026-10-02.json"
+  },
+  {
+    "id": "DS-004",
+    "access": "EXACT_FILES_BLOCKED",
+    "role": "not activated for case testing",
+    "version": "UNRESOLVED",
+    "raw_records_used_here": false,
+    "evidence": "datasets/ds001-ds004-access-disposition-2026-10-02.md"
+  }
+]

@@ -1,3 +1,17 @@
+# Current revision status — Run 9, 2026-10-05
+
+Current stage: **literature-case extraction executed; native database and publication checks underway**. [Run 9 report](run-9-report.md), [dataset](../../../case/pharma/literature-pilot-v0.1.0/README.md).
+
+- Six inspected primary publications, 24 source-local statements; 12 partial / 11 ambiguous / one unmapped; 978 information triples.
+- 27/27 local checks, including 12 negative controls. Native PostgreSQL must be read from its actual CI evidence.
+- **28/90 = 31.1%** requirements evidenced; **3/19 = 15.8%** bounded packages accepted; **90/90 routed**. P09 6/10 requirements = 60%, still conditional. None is a final-paper readiness score.
+- Next: complete remaining normalized SQL/helper parity; integrate case into evaluation and the seven-page article. Exact CM-PharmE ver.1 references, one source license and real independent review remain explicit.
+- Zero expert responses; no final Word/PDF this run. Source-derived analysis is not an observed incident dataset.
+
+Previous checkpoints below are historical.
+
+---
+
 Publication checkpoint: **8/8 Run 8 deliverables verified**. All 128 implementation file hashes, five exact content readbacks and 8/8 issue bodies matched; all 16 triggered CI job types passed on `418b8e3a8ebe14e73fbc8e1d820e452f3afa1ec7`. Native PostgreSQL: 11/11 checks and 11 represented triples. HermiT: four actual type entailments, two consistent countermodels, two rejected contradictions. [Readback](run-8-readback.json), [CI evidence](../../../evaluation/exposure-scale/v0.2.0-rc.4/ci-evidence.json), [PR #137](https://github.com/ArazSaieArasi3/SemRisk/pull/137). Full package acceptance remains separate.
 
 # Current revision status — Run 8, 2026-10-05
