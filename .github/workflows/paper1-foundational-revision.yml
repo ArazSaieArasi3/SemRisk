@@ -56,12 +56,26 @@ jobs:
             cat build/foundational-candidate/dl.txt
             exit 1
           fi
-          java -jar .tools/robot.jar reason --reasoner HermiT --input build/foundational-candidate/positive.owl --output build/foundational-candidate/reasoned.owl
+          java -jar .tools/robot.jar reason --reasoner HermiT --axiom-generators "SubClass ClassAssertion" --include-indirect true --input build/foundational-candidate/positive.owl --output build/foundational-candidate/reasoned.owl
+          python - <<'PYCODE'
+          from rdflib import Graph,RDF,Namespace
+          ex=Namespace('urn:semrisk:run5:');sr=Namespace('urn:semrisk:entity:');gufo=Namespace('http://purl.org/nemo/gufo#')
+          asserted=Graph().parse('build/foundational-candidate/positive.owl')
+          inferred=Graph().parse('build/foundational-candidate/reasoned.owl')
+          for typ in [sr['SR-CPT-031'],gufo.Relator]:
+              assert (ex.responsibility,RDF.type,typ) not in asserted, 'Probe was already asserted'
+              assert (ex.responsibility,RDF.type,typ) in inferred, 'Required class assertion not inferred'
+          print('TWO_DECLARED_CLASS_ENTAILMENTS_PASS')
+          PYCODE
           echo FORMAL_POSITIVE_PASS
       - name: Open-world missing witness is consistent but not data completeness
         run: |
           java -jar .tools/robot.jar reason --reasoner HermiT --input build/foundational-candidate/incomplete.owl --output build/foundational-candidate/incomplete-reasoned.owl
           echo OWA_MISSING_NAMED_WITNESS_CONSISTENT
+      - name: Countermodel for non-entailment of Risk as mediated Endurant
+        run: |
+          java -jar .tools/robot.jar reason --reasoner HermiT --input build/foundational-candidate/countermodel.owl --output build/foundational-candidate/countermodel-reasoned.owl
+          echo RISK_ENDURANT_NON_ENTAILMENT_COUNTERMODEL_PASS
       - name: Intentional contradictory individual must fail for inconsistency
         run: |
           if java -jar .tools/robot.jar reason --reasoner HermiT --input build/foundational-candidate/contradiction.owl --output build/foundational-candidate/contradiction-reasoned.owl > build/foundational-candidate/negative.log 2>&1; then

@@ -3,7 +3,7 @@
 import argparse,hashlib,json
 from pathlib import Path
 from xml.etree import ElementTree
-from rdflib import Graph,OWL,RDF,Namespace
+from rdflib import Graph,OWL,RDF,Namespace,BNode
 from check_foundational_revision import ROOT,V,D,MODULES,data,GUFO,EX,AC
 
 def sources():
@@ -37,9 +37,10 @@ def assemble():
  # Independent worlds. No attempted claim that the incomplete fixture passes the stricter SHACL profile.
  positive=Graph();positive+=g;positive+=data();positive.serialize(out/'positive.owl',format='xml')
  incomplete=Graph();incomplete+=positive;incomplete.remove((EX.responsibility,GUFO.mediates,EX.organization));incomplete.remove((EX.person,OWL.differentFrom,EX.organization));incomplete.serialize(out/'incomplete.owl',format='xml')
+ countermodel=Graph();countermodel+=positive;neg=BNode();countermodel.add((neg,RDF.type,OWL.Class));countermodel.add((neg,OWL.complementOf,GUFO.Endurant));countermodel.add((EX.risk,RDF.type,neg));countermodel.serialize(out/'countermodel.owl',format='xml')
  contradiction=Graph();contradiction+=positive;contradiction.add((EX.person,RDF.type,GUFO.Event));contradiction.serialize(out/'contradiction.owl',format='xml')
  (out/'assembly.json').write_text(json.dumps(dict(version=V,source_files=sorted(str(p.relative_to(ROOT)) for p in seen),imports_resolved_offline=True,positive_triples=len(positive),contradiction='Same synthetic individual is Endurant and Event; gUFO disjointness must reject',incomplete='Second named witness absent; OWA permits an unnamed witness, while opt-in SHACL must reject'),indent=2)+'\n')
- print('Assembled three isolated formal probes from',len(seen),'source files.')
+ print('Assembled four isolated formal probes from',len(seen),'source files.')
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--check',action='store_true');p.add_argument('--assemble',action='store_true');a=p.parse_args();s=json.dumps(manifest(),indent=2)+'\n';target=D/'manifest.json'
  if a.check:assert target.read_text()==s,'Candidate hash binding changed'

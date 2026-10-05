@@ -29,13 +29,13 @@
     "foundational/revision-2026-10-05/concept-category-audit.csv": "ea5498afb8946b49471a486fe3a6236c21fb6ebcbafb79894c6b5171a78fa12b",
     "foundational/revision-2026-10-05/relation-formal-audit.csv": "4d521b93d7d7c16709e9f09a442e188c7559c613b98d9183a15f6b14c1f6cbb1",
     "shapes/foundational-evidence-v0.2.0-rc.2.ttl": "53cd32b2b7fb59447293de07e8b6b2b8abff932d7237718f60b9bccf88aa0f31",
-    "testdata/foundational/grounded-responsibility-v0.2.0-rc.2.ttl": "91c8ea949e9f19fa4b2ca3bcfd60feed5fa17dfd7e9b2c8c11d45d75ec523fcb",
+    "testdata/foundational/grounded-responsibility-v0.2.0-rc.2.ttl": "3b62ad74ff6849c5e1a9fe446fe5c68dcd75836e6cf0ffd64d52f8a2fab044f4",
     "shapes/assessment-context-v0.2.0-rc.1.ttl": "799e15764822d6aa955a3ee95564e11b600d312f0e0e2e7e136bebeb2d234e15",
     "testdata/temporal/qualified-context-v0.2.0-rc.1.ttl": "0cdea365470f9dd50e1769c448aa3ece41b6c7d3bcb56046d220a3add33cc58d",
     "rules/enterprise/risk-owners-at-v0.2.0-rc.1.rq": "4a4ca63caec6d48ecd7dbe65fb148dd896351f20c59f5fbc0080f40bfd749753",
     "relational/sql/V007__qualified_assessment_context.sql": "8b37ebc37a867265b88cd3576b5d27be0b22dc1d6ac06724db5352f4245d29ea",
     "tools/check_foundational_revision.py": "3879028a0b88fa5fbba12437a6e9863872a7998bd048c83dfaf366846f4a9606",
-    "tools/build_foundational_candidate.py": "f82dab5493a1587a58cce91a2fbee3198f306291f88c007b9ebfe60100832157",
+    "tools/build_foundational_candidate.py": "74956272d9a59c86a27bc2009c2c12fcf9b4a7f3d76a6c792a43db2cae5d99e8",
     "tools/requirements-qualified-context.txt": "0d3f9d2b1676c8cf20e841010e8a1b6244de929881b4ec47932cf59fc236dc90"
   },
   "remaining": [

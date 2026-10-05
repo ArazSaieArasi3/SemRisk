@@ -8,6 +8,6 @@ ex:fixture dct:description "Synthetic named-participant test; no real person, or
 ex:risk a sr:SR-CPT-001 .
 ex:person a gufo:Endurant ; owl:differentFrom ex:organization .
 ex:organization a gufo:Endurant .
-ex:responsibility a ac:GroundedRiskResponsibility, sr:SR-CPT-031 ;
+ex:responsibility a ac:GroundedRiskResponsibility ;
  sr:SR-REL-027 ex:risk ; sr:SR-REL-028 ex:person ;
  gufo:mediates ex:person, ex:organization .
