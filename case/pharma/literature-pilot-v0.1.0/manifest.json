@@ -8,8 +8,8 @@
   "files": [
     {
       "path": ".github/workflows/paper1-literature-pilot.yml",
-      "bytes": 2067,
-      "sha256": "2d0a27c7cce384417c40c2b54756dc1cb3ae37a3884d5ae5df59bc507db5265d"
+      "bytes": 2320,
+      "sha256": "261e4d5661ce8ba8adebf6cafcc7aac966865c2c960baf82e326636e43978e85"
     },
     {
       "path": "case/pharma/literature-pilot-v0.1.0/README.md",
