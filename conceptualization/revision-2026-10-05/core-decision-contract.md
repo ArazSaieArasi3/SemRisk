@@ -1,3 +1,5 @@
+> **Run 4 update:** the selected Trigger definition and numeric temporal/ownership contract are implemented in candidate 0.2.0-rc.1 with native V007, SHACL and SQL/SPARQL tests. The Run 3 prototype/history below remains unchanged. Minimum viable ontology remains rejected as an unqualified organization-ready claim: real case validation, foundational completion and independent review are still pending. See [current formal contract](../../formalization/qualified-context-contract-v0.2.0-rc.1.md).
+
 # Run 3 core decisions and remaining acceptance boundary
 
 Baseline: `b8a321baaff2534d6594d80d23402c6e8046e94a`. This decision/audit layer does not rename the evaluated `0.1.0-rc.1` release or silently replace its Turtle.

@@ -1,3 +1,5 @@
+> **Current candidate (Run 4):** apply `V007__qualified_assessment_context.sql` after V006. Existing migration/companion scripts retain their order and hashes. See [migration and rollback boundaries](../design/qualified-context-migration-v0.2.0-rc.1.md) and [15 new column mappings](../design/qualified-context-field-map-v0.2.0-rc.1.csv). Historical catalog/mapping counts below describe the earlier projection; the new profile is a separately versioned supplement. V007 in the schema root is distinct from the historical `tests/V007__r7_pharma_case_tests.sql` test filename.
+
 # SemRisk PostgreSQL relational twin
 
 Issue: #46  

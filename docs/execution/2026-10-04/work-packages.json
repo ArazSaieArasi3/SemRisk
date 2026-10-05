@@ -299,13 +299,17 @@
     "evidence_refs": [
       "conceptualization/revision-2026-10-05/core-decision-contract.md",
       "evaluation/core-contract/2026-10-05/results.json",
-      "foundational/legacy-pr-58-61-semantic-disposition-2026-10-05.csv"
+      "foundational/legacy-pr-58-61-semantic-disposition-2026-10-05.csv",
+      "formalization/qualified-context-contract-v0.2.0-rc.1.md",
+      "evaluation/temporal/v0.2.0-rc.1/semantic-results.json",
+      "evaluation/temporal/v0.2.0-rc.1/postgres-results.json",
+      "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json",
+      "ontology/releases/0.2.0-rc.1/manifest.json"
     ],
-    "acceptance_result": "PARTIAL_CONCEPT_DISPOSITIONS_AND_PROTOTYPE",
+    "acceptance_result": "PARTIAL_PASS_QUALIFIED_CONTEXT_PROMOTION",
     "remaining": [
-      "Resolve Trigger/category definition synchronization",
-      "Promote temporal/result context contract into canonical OWL/SHACL and native SQL with migration/parity",
-      "Finish foundational category and complete OntoUML review"
+      "Complete foundational category analysis, especially Confidence/Indicator/Threshold and outstanding local declarations",
+      "Complete editable OntoUML through P08; preserve tested temporal behavior"
     ]
   },
   {
@@ -345,9 +349,19 @@
       "formalization/",
       "docs/formal/"
     ],
-    "status": "not_started",
-    "evidence_refs": [],
-    "acceptance_result": "NOT_ASSESSED"
+    "status": "in_progress",
+    "evidence_refs": [
+      "formalization/qualified-context-contract-v0.2.0-rc.1.md",
+      "evaluation/temporal/v0.2.0-rc.1/semantic-results.json",
+      "evaluation/temporal/v0.2.0-rc.1/postgres-results.json",
+      "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json",
+      "ontology/releases/0.2.0-rc.1/manifest.json"
+    ],
+    "acceptance_result": "PARTIAL_PASS_QUALIFIED_CONTEXT_PROMOTION",
+    "remaining": [
+      "Synchronize full formal entity reference and foundational commitments after P06",
+      "Retain exact candidate import closure and distinguish asserted/inferred evidence"
+    ]
   },
   {
     "id": "P08",
@@ -489,9 +503,19 @@
       "relational/",
       "evaluation/parity/"
     ],
-    "status": "not_started",
-    "evidence_refs": [],
-    "acceptance_result": "NOT_ASSESSED"
+    "status": "in_progress",
+    "evidence_refs": [
+      "formalization/qualified-context-contract-v0.2.0-rc.1.md",
+      "evaluation/temporal/v0.2.0-rc.1/semantic-results.json",
+      "evaluation/temporal/v0.2.0-rc.1/postgres-results.json",
+      "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json",
+      "ontology/releases/0.2.0-rc.1/manifest.json"
+    ],
+    "acceptance_result": "PARTIAL_PASS_QUALIFIED_CONTEXT_PROMOTION",
+    "remaining": [
+      "Load actual P09 source-derived case with provenance",
+      "Update full ERD and recheck case query outcomes; current importer is synthetic-only"
+    ]
   },
   {
     "id": "P11",

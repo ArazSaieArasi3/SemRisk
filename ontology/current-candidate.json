@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0-rc.1",
+  "status": "tested_candidate_not_publication_release",
+  "manifest": "ontology/releases/0.2.0-rc.1/manifest.json",
+  "module_count": 7,
+  "scope": "six inherited modules plus one optional qualified numeric assessment context profile",
+  "historical_version": "0.1.0-rc.1",
+  "limits": [
+    "Full conceptual/OntoUML review remains open",
+    "Synthetic fixture evidence is not empirical validation"
+  ]
+}

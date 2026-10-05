@@ -1,4 +1,4 @@
-> **Author revision — Run 3 (2026-10-05):** method contract, 47 concept dispositions, 27-field use audit and 18/18 bounded temporal/extension regressions. [Current status](docs/execution/2026-10-04/status.md). Accepted bounded package checklist: 3/19 (15.8%); canonical temporal promotion and final paper remain open.
+> **Author revision — Run 4 (2026-10-05):** qualified temporal context promoted to candidate 0.2.0-rc.1; 30/30 semantic and 32/32 native SQL tests, OWL 2 DL/HermiT PASS. [Current status](docs/execution/2026-10-04/status.md). Accepted bounded package checklist: 3/19 (15.8%); 15/90 individual requirements reverified. Full foundational/OntoUML work and final paper remain open.
 
 # SemRisk
 

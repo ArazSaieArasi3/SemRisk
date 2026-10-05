@@ -1,0 +1,550 @@
+{
+  "profile_version": "0.2.0-rc.1",
+  "postgres_version": "16.15 (Debian 16.15-1.pgdg13+2)",
+  "driver_version": "3.2.12",
+  "total": 32,
+  "passed": 32,
+  "tests": [
+    {
+      "id": "MIGRATION-POPULATED",
+      "passed": true,
+      "details": "Regression database contains the governed legacy fixture before V007."
+    },
+    {
+      "id": "MIGRATION-PRESERVES-ROWS",
+      "passed": true,
+      "details": {
+        "legacy_tables": 49,
+        "legacy_rows": 138
+      }
+    },
+    {
+      "id": "MIGRATION-NO-INVENTED-CONTEXT",
+      "passed": true,
+      "details": "No automatic context or score backfill."
+    },
+    {
+      "id": "ROLLBACK-EMPTY",
+      "passed": true,
+      "details": "Empty-profile rollback preserves all original columns and rows."
+    },
+    {
+      "id": "LOAD-QUALIFIED",
+      "passed": true,
+      "details": {
+        "synthetic_results": 5
+      }
+    },
+    {
+      "id": "ROUNDTRIP-ALL-FIELDS",
+      "passed": true,
+      "details": {
+        "expected_triples": 121,
+        "actual_triples": 121,
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "id": "ROUNDTRIP-SHACL",
+      "passed": true,
+      "details": "Validation Report\nConforms: True"
+    },
+    {
+      "id": "OWNER-PARITY-1",
+      "passed": true,
+      "details": {
+        "at": "2026-09-30T23:59:59Z",
+        "rows": [
+          [
+            "urn:semrisk:run4:risk",
+            "urn:semrisk:run4:actor-d"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "OWNER-PARITY-2",
+      "passed": true,
+      "details": {
+        "at": "2026-10-01T00:00:00Z",
+        "rows": [
+          [
+            "urn:semrisk:run4:risk",
+            "urn:semrisk:run4:actor-a"
+          ],
+          [
+            "urn:semrisk:run4:risk",
+            "urn:semrisk:run4:actor-d"
+          ],
+          [
+            "urn:semrisk:run4:risk",
+            "urn:semrisk:run4:actor-f"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "OWNER-PARITY-3",
+      "passed": true,
+      "details": {
+        "at": "2026-10-04T00:00:00Z",
+        "rows": [
+          [
+            "urn:semrisk:run4:risk",
+            "urn:semrisk:run4:actor-a"
+          ],
+          [
+            "urn:semrisk:run4:risk",
+            "urn:semrisk:run4:actor-d"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "OWNER-PARITY-4",
+      "passed": true,
+      "details": {
+        "at": "2026-10-05T08:00:00Z",
+        "rows": [
+          [
+            "urn:semrisk:run4:risk",
+            "urn:semrisk:run4:actor-a"
+          ],
+          [
+            "urn:semrisk:run4:risk",
+            "urn:semrisk:run4:actor-b"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "OWNER-PARITY-5",
+      "passed": true,
+      "details": {
+        "at": "2026-10-06T00:00:00Z",
+        "rows": [
+          [
+            "urn:semrisk:run4:risk",
+            "urn:semrisk:run4:actor-a"
+          ],
+          [
+            "urn:semrisk:run4:risk",
+            "urn:semrisk:run4:actor-b"
+          ],
+          [
+            "urn:semrisk:run4:risk",
+            "urn:semrisk:run4:actor-c"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "OWNER-PARITY-6",
+      "passed": true,
+      "details": {
+        "at": "2026-10-05T11:30:00+03:30",
+        "rows": [
+          [
+            "urn:semrisk:run4:risk",
+            "urn:semrisk:run4:actor-a"
+          ],
+          [
+            "urn:semrisk:run4:risk",
+            "urn:semrisk:run4:actor-b"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ORTHOGONAL-AXES",
+      "passed": true,
+      "details": [
+        [
+          "Impact",
+          "AfterControl",
+          "Observed",
+          1
+        ],
+        [
+          "Likelihood",
+          "AfterControl",
+          "Observed",
+          2
+        ],
+        [
+          "Likelihood",
+          "AfterControl",
+          "Projected",
+          1
+        ],
+        [
+          "Likelihood",
+          "BeforeControl",
+          "Projected",
+          1
+        ]
+      ]
+    },
+    {
+      "id": "SQL-N01",
+      "passed": true,
+      "details": {
+        "sqlstate": "23514",
+        "expected_marker": "explicit timestamp timezone",
+        "observed": "explicit timestamp timezone required"
+      }
+    },
+    {
+      "id": "SQL-N02",
+      "passed": true,
+      "details": {
+        "sqlstate": "23514",
+        "expected_marker": "ck_risk_responsibility_period",
+        "observed": "new row for relation \"risk_responsibility\" violates check constraint \"ck_risk_responsibility_period\""
+      }
+    },
+    {
+      "id": "SQL-N03",
+      "passed": true,
+      "details": {
+        "sqlstate": "23502",
+        "expected_marker": "dimension",
+        "observed": "null value in column \"dimension\" of relation \"result_context\" violates not-null constraint"
+      }
+    },
+    {
+      "id": "SQL-N04",
+      "passed": true,
+      "details": {
+        "sqlstate": "23514",
+        "expected_marker": "evaluation_basis_check",
+        "observed": "new row for relation \"result_context\" violates check constraint \"result_context_evaluation_basis_check\""
+      }
+    },
+    {
+      "id": "SQL-N05",
+      "passed": true,
+      "details": {
+        "sqlstate": "23514",
+        "expected_marker": "incompatible with scale",
+        "observed": "context numeric value/dimension incompatible with scale"
+      }
+    },
+    {
+      "id": "SQL-N06",
+      "passed": true,
+      "details": {
+        "sqlstate": "23514",
+        "expected_marker": "incompatible with scale",
+        "observed": "context numeric value/dimension incompatible with scale"
+      }
+    },
+    {
+      "id": "SQL-N07",
+      "passed": true,
+      "details": {
+        "sqlstate": "23514",
+        "expected_marker": "method/version mismatch",
+        "observed": "context activity/risk/method/version mismatch"
+      }
+    },
+    {
+      "id": "SQL-N08",
+      "passed": true,
+      "details": {
+        "sqlstate": "23514",
+        "expected_marker": "activity/risk/method/version mismatch",
+        "observed": "context activity/risk/method/version mismatch"
+      }
+    },
+    {
+      "id": "SQL-N09",
+      "passed": true,
+      "details": {
+        "sqlstate": "23514",
+        "expected_marker": "same Risk",
+        "observed": "superseded result must concern the same Risk"
+      }
+    },
+    {
+      "id": "SQL-N10",
+      "passed": true,
+      "details": {
+        "sqlstate": "23514",
+        "expected_marker": "precedes predecessor",
+        "observed": "successor assessment time precedes predecessor"
+      }
+    },
+    {
+      "id": "SQL-N11",
+      "passed": true,
+      "details": {
+        "sqlstate": "23514",
+        "expected_marker": "contradicts legacy result kind",
+        "observed": "qualified context contradicts legacy result kind"
+      }
+    },
+    {
+      "id": "SQL-N12",
+      "passed": true,
+      "details": {
+        "sqlstate": "23514",
+        "expected_marker": "history is immutable",
+        "observed": "referenced qualified history is immutable; create a new version/result"
+      }
+    },
+    {
+      "id": "SQL-N13",
+      "passed": true,
+      "details": {
+        "sqlstate": "23514",
+        "expected_marker": "history is immutable",
+        "observed": "referenced qualified history is immutable; create a new version/result"
+      }
+    },
+    {
+      "id": "SQL-N14",
+      "passed": true,
+      "details": {
+        "sqlstate": "23514",
+        "expected_marker": "history is immutable",
+        "observed": "referenced qualified history is immutable; create a new version/result"
+      }
+    },
+    {
+      "id": "SQL-N15",
+      "passed": true,
+      "details": {
+        "sqlstate": "23514",
+        "expected_marker": "history is immutable",
+        "observed": "referenced qualified history is immutable; create a new version/result"
+      }
+    },
+    {
+      "id": "SQL-N16",
+      "passed": true,
+      "details": {
+        "sqlstate": "23514",
+        "expected_marker": "append-only",
+        "observed": "qualified context is append-only; create a successor result"
+      }
+    },
+    {
+      "id": "SQL-N17",
+      "passed": true,
+      "details": {
+        "sqlstate": "23514",
+        "expected_marker": "rollback refused",
+        "observed": "rollback refused: qualified profile data would be lost"
+      }
+    },
+    {
+      "id": "NEGATIVES-ROLLED-BACK",
+      "passed": true,
+      "details": "All rejected mutations leave qualified source records unchanged."
+    }
+  ],
+  "negative_controls": 17,
+  "legacy_snapshot": {
+    "assessment.assessment_activity": [
+      3,
+      "a705e09df4dd24353aead10786e11679"
+    ],
+    "assessment.assessment_confidence": [
+      0,
+      "d41d8cd98f00b204e9800998ecf8427e"
+    ],
+    "assessment.assessment_evidence": [
+      3,
+      "54eee6c04737c64bd6faf3b68e7b6c26"
+    ],
+    "assessment.assessment_method": [
+      0,
+      "d41d8cd98f00b204e9800998ecf8427e"
+    ],
+    "assessment.assessment_result": [
+      3,
+      "c1bc996d37603f3855a14aab9b0922a9"
+    ],
+    "assessment.evidence_item": [
+      1,
+      "f3a0ff0b0b326e5e937eea9b13c94be0"
+    ],
+    "assessment.observation_activity": [
+      0,
+      "d41d8cd98f00b204e9800998ecf8427e"
+    ],
+    "assessment.observation_result": [
+      0,
+      "d41d8cd98f00b204e9800998ecf8427e"
+    ],
+    "core.consequence": [
+      1,
+      "616998a3a004cc996d2ab2eb60860811"
+    ],
+    "core.event_consequence": [
+      1,
+      "10c8d8df2405220426817dd3ba38dfb8"
+    ],
+    "core.event_trigger": [
+      1,
+      "bf9a310911340f12f448cca0737bc614"
+    ],
+    "core.exposure": [
+      0,
+      "d41d8cd98f00b204e9800998ecf8427e"
+    ],
+    "core.predisposing_condition": [
+      2,
+      "7a6330ade2ecfe66700bf284a281fa8b"
+    ],
+    "core.risk": [
+      2,
+      "6d198e7389dc274d4b71aee022ef629f"
+    ],
+    "core.risk_event": [
+      1,
+      "92158a8bac8aff99b927e56332110651"
+    ],
+    "core.risk_scenario": [
+      1,
+      "07657277164daa8d9732e01f529ffe2c"
+    ],
+    "core.risk_source_link": [
+      0,
+      "d41d8cd98f00b204e9800998ecf8427e"
+    ],
+    "core.scenario_condition": [
+      2,
+      "cee284efa7743b1ef9d3b1495d94f850"
+    ],
+    "core.semantic_relation_assertion": [
+      0,
+      "d41d8cd98f00b204e9800998ecf8427e"
+    ],
+    "core.trigger_event": [
+      1,
+      "11cf029a38dfc656aa76c44c65e8ee19"
+    ],
+    "core.vulnerability": [
+      0,
+      "d41d8cd98f00b204e9800998ecf8427e"
+    ],
+    "enterprise.actor_ref": [
+      2,
+      "8068c0ceca1eadb403952ce37801b846"
+    ],
+    "enterprise.architecture_context_link": [
+      0,
+      "d41d8cd98f00b204e9800998ecf8427e"
+    ],
+    "enterprise.risk_register": [
+      2,
+      "83893eae2fc36677811d4155cfd0f231"
+    ],
+    "enterprise.risk_register_entry": [
+      2,
+      "43b76ad314d9ae043eb600dba8a2054c"
+    ],
+    "enterprise.risk_responsibility": [
+      2,
+      "5a741af894d90430af883cf762b53e9e"
+    ],
+    "enterprise.risk_state_history": [
+      3,
+      "975251b3be39d4aadcc3dc8d03034946"
+    ],
+    "enterprise.scenario_description": [
+      1,
+      "e29067b3a1303b9cef4e5d91e64eebf3"
+    ],
+    "enterprise.workflow_state_history": [
+      3,
+      "63c30cdc1d6582749b912b19043e80a7"
+    ],
+    "governance.indicator": [
+      0,
+      "d41d8cd98f00b204e9800998ecf8427e"
+    ],
+    "governance.risk_indicator": [
+      0,
+      "d41d8cd98f00b204e9800998ecf8427e"
+    ],
+    "governance.threshold": [
+      0,
+      "d41d8cd98f00b204e9800998ecf8427e"
+    ],
+    "meta.instance_provenance": [
+      33,
+      "0be1065f390745077a6390544f460bcf"
+    ],
+    "meta.semantic_instance": [
+      36,
+      "13e7f27b1900eaa2a78efce0b32b0f22"
+    ],
+    "meta.source_artifact": [
+      6,
+      "beda853df96c4913eac375f642be68a8"
+    ],
+    "meta.state_transition": [
+      2,
+      "31f5576779c07d7f0b62ebd3b58f2d2f"
+    ],
+    "pharma.context_link": [
+      5,
+      "69f4c28c48428dd395fd7bc7f4eec98e"
+    ],
+    "ref.external_entity": [
+      3,
+      "d84dbb7dd9ac9d00cb5e4b16741db52d"
+    ],
+    "ref.external_entity_mapping": [
+      0,
+      "d41d8cd98f00b204e9800998ecf8427e"
+    ],
+    "staging.load_batch": [
+      1,
+      "96138984e7a76c2e36b4b78e214497c7"
+    ],
+    "staging.reject_record": [
+      0,
+      "d41d8cd98f00b204e9800998ecf8427e"
+    ],
+    "staging.source_record": [
+      8,
+      "bf12129cc4daec7ee3c9979e001a1fcf"
+    ],
+    "treatment.activity": [
+      1,
+      "ea482ad42165207bfd324aea5e92ebc5"
+    ],
+    "treatment.activity_control": [
+      1,
+      "578489fae4d66cbb3e238f86b39b766d"
+    ],
+    "treatment.control_mechanism": [
+      1,
+      "9561ad230a5f1c4a905de86a7a9bb583"
+    ],
+    "treatment.control_protection": [
+      1,
+      "5e82ef73455699a80cc4993e19adb46e"
+    ],
+    "treatment.plan": [
+      1,
+      "2b1888a3b2e7818b4f5446a91dd35b4a"
+    ],
+    "treatment.risk_strategy_selection": [
+      1,
+      "16ebbf7ffb293ea0e24995b5337c0629"
+    ],
+    "treatment.strategy": [
+      1,
+      "6cb6f163b24e286a0123d04aa3d9ee55"
+    ]
+  },
+  "synthetic_only": true,
+  "production_migration_performed": false,
+  "general_concurrency_proof": false
+}
