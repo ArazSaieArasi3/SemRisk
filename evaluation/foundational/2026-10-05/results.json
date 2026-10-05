@@ -1,0 +1,161 @@
+{
+  "candidate_version": "0.2.0-rc.2",
+  "total": 29,
+  "passed": 29,
+  "negative_cases": 7,
+  "concept_rows": 47,
+  "relation_rows": 38,
+  "tests": [
+    {
+      "id": "DELTA-core",
+      "passed": true,
+      "details": "Only declared definitions, owner metatype and opt-in helper differ, modulo version metadata."
+    },
+    {
+      "id": "DELTA-enterprise",
+      "passed": true,
+      "details": "Only declared definitions, owner metatype and opt-in helper differ, modulo version metadata."
+    },
+    {
+      "id": "DELTA-method",
+      "passed": true,
+      "details": "Only declared definitions, owner metatype and opt-in helper differ, modulo version metadata."
+    },
+    {
+      "id": "DELTA-governance",
+      "passed": true,
+      "details": "Only declared definitions, owner metatype and opt-in helper differ, modulo version metadata."
+    },
+    {
+      "id": "DELTA-pharma",
+      "passed": true,
+      "details": "Only declared definitions, owner metatype and opt-in helper differ, modulo version metadata."
+    },
+    {
+      "id": "DELTA-mappings",
+      "passed": true,
+      "details": "Only declared definitions, owner metatype and opt-in helper differ, modulo version metadata."
+    },
+    {
+      "id": "DELTA-assessment-context",
+      "passed": true,
+      "details": "Only declared definitions, owner metatype and opt-in helper differ, modulo version metadata."
+    },
+    {
+      "id": "DEF-SR-CPT-019",
+      "passed": true,
+      "details": "Exact registry/OWL definition match."
+    },
+    {
+      "id": "DEF-SR-CPT-024",
+      "passed": true,
+      "details": "Exact registry/OWL definition match."
+    },
+    {
+      "id": "DEF-SR-CPT-025",
+      "passed": true,
+      "details": "Exact registry/OWL definition match."
+    },
+    {
+      "id": "DEF-SR-CPT-030",
+      "passed": true,
+      "details": "Exact registry/OWL definition match."
+    },
+    {
+      "id": "OWNER-METATYPE",
+      "passed": true,
+      "details": "Heterogeneous owner role classification has no fabricated common kind."
+    },
+    {
+      "id": "CONCEPT-COVERAGE",
+      "passed": true,
+      "details": "All conceptual rows, including markers/deferred rows."
+    },
+    {
+      "id": "CONCEPT-COUNTS",
+      "passed": true,
+      "details": "35 local classes; 4 markers; 8 undeclared, excluding operational helpers."
+    },
+    {
+      "id": "RELATION-COVERAGE",
+      "passed": true,
+      "details": "38 decisions; 37 OWL properties and 1 architecture relation, not missing SR-REL-010/011 inventions."
+    },
+    {
+      "id": "DIAGRAM-BOUNDARIES",
+      "passed": true,
+      "details": "Do not claim placeholder words are OntoUML stereotypes or suppress type-level ambiguity."
+    },
+    {
+      "id": "GROUND-POSITIVE",
+      "passed": true,
+      "details": "Validation Report\nConforms: True\n"
+    },
+    {
+      "id": "G01",
+      "passed": true,
+      "details": "missing counterpart rejected by MinCountConstraintComponent"
+    },
+    {
+      "id": "G02",
+      "passed": true,
+      "details": "missing distinctness evidence rejected by GROUND_DISTINCT"
+    },
+    {
+      "id": "G03",
+      "passed": true,
+      "details": "sameAs alias rejected by GROUND_DISTINCT"
+    },
+    {
+      "id": "G04",
+      "passed": true,
+      "details": "event participant rejected by ClassConstraintComponent"
+    },
+    {
+      "id": "G05",
+      "passed": true,
+      "details": "risk as mediated target rejected by GROUND_ABOUTNESS"
+    },
+    {
+      "id": "G06",
+      "passed": true,
+      "details": "missing assignee rejected by MinCountConstraintComponent"
+    },
+    {
+      "id": "G07",
+      "passed": true,
+      "details": "literal participant rejected by NodeKindConstraintComponent"
+    },
+    {
+      "id": "OPT-IN-BOUNDARY",
+      "passed": true,
+      "details": "Old unqualified records are outside the stricter evidence profile, not declared fully grounded."
+    },
+    {
+      "id": "TEMPORAL-SHAPE-UNCHANGED",
+      "passed": true,
+      "details": "Existing qualified numeric data profile still conforms."
+    },
+    {
+      "id": "OWNER-PRESERVATION-2026-09-30T00:00:00Z",
+      "passed": true,
+      "details": "Counterpart is not automatically an owner; exact owner pairs preserved."
+    },
+    {
+      "id": "OWNER-PRESERVATION-2026-10-05T08:00:00Z",
+      "passed": true,
+      "details": "Counterpart is not automatically an owner; exact owner pairs preserved."
+    },
+    {
+      "id": "OWNER-PRESERVATION-2026-10-06T00:00:00Z",
+      "passed": true,
+      "details": "Counterpart is not automatically an owner; exact owner pairs preserved."
+    }
+  ],
+  "limits": [
+    "No complete OntoUML model/checker",
+    "No expert validation",
+    "Named-witness profile not yet projected into SQL",
+    "Synthetic fixtures only"
+  ]
+}

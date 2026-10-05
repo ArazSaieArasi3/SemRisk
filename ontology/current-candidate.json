@@ -1,12 +1,13 @@
 {
-  "version": "0.2.0-rc.1",
-  "status": "tested_candidate_not_publication_release",
-  "manifest": "ontology/releases/0.2.0-rc.1/manifest.json",
+  "version": "0.2.0-rc.2",
+  "status": "tested_candidate_pending_CI_not_publication_release",
+  "manifest": "ontology/releases/0.2.0-rc.2/manifest.json",
   "module_count": 7,
-  "scope": "six inherited modules plus one optional qualified numeric assessment context profile",
-  "historical_version": "0.1.0-rc.1",
+  "scope": "six inherited modules plus qualified context and opt-in named-participant evidence",
+  "historical_version": "0.2.0-rc.1",
   "limits": [
-    "Full conceptual/OntoUML review remains open",
-    "Synthetic fixture evidence is not empirical validation"
+    "Full OntoUML, scenario type-level resolution and foundational helper identity decisions remain open",
+    "No new real case or expert responses",
+    "Native SQL currently covers temporal context only, not named counterpart evidence"
   ]
 }

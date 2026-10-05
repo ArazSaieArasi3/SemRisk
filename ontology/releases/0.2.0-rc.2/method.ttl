@@ -1,0 +1,72 @@
+@prefix sr: <urn:semrisk:entity:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix gufo: <http://purl.org/nemo/gufo#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+<urn:semrisk:ontology:method> a owl:Ontology ;
+  owl:versionIRI <urn:semrisk:ontology:method:0.2.0-rc.2> ;
+  owl:versionInfo "0.2.0-rc.2" ;
+  dcterms:title "SemRisk Method Profile"@en ;
+  dcterms:created "2026-10-05"^^xsd:date ;
+  dcterms:source "SemRisk issues #24 #25 #26 #43 #27" ;
+  owl:imports <urn:semrisk:ontology:core:0.2.0-rc.2> .
+
+sr:SR-CPT-012 a owl:Class ;
+  dcterms:identifier "SR-CPT-012" ;
+  rdfs:label "Risk Assessment Method"@en ;
+  rdfs:comment "A method or technique governing how assessment evidence/context is transformed into one or more assessment results."@en ;
+  dcterms:conformsTo "SR-REQ-003; SR-REQ-012; SR-REQ-013" ;
+  dcterms:relation "CQ-006; CQ-019; CQ-032" .
+
+sr:SR-CPT-016 a owl:Class ;
+  dcterms:identifier "SR-CPT-016" ;
+  rdfs:label "Risk Level Assessment Result"@en ;
+  rdfs:comment "A method-dependent overall risk rating/level produced from assessment evidence/results."@en ;
+  dcterms:conformsTo "SR-REQ-013" ;
+  dcterms:relation "CQ-019; CQ-032" ;
+  rdfs:subClassOf sr:SR-CPT-013 .
+
+sr:SR-CPT-019 a owl:Class ;
+  dcterms:identifier "SR-CPT-019" ;
+  rdfs:label "Assessment Confidence"@en ;
+  rdfs:comment "An information qualification stating confidence or uncertainty in a specified assessment result under a stated basis; it is distinct from estimated likelihood and from an intrinsic quality of the risk."@en ;
+  dcterms:conformsTo "SR-REQ-012" ;
+  dcterms:relation "CQ-006; CQ-031" .
+
+sr:SR-CPT-024 a owl:Class ;
+  dcterms:identifier "SR-CPT-024" ;
+  rdfs:label "Indicator"@en ;
+  rdfs:comment "A versioned specification of what is observed or computed to monitor a risk-relevant condition; each observation value or result is distinct from this specification."@en ;
+  dcterms:conformsTo "SR-REQ-008; SR-REQ-012" ;
+  dcterms:relation "CQ-006" .
+
+sr:SR-CPT-025 a owl:Class ;
+  dcterms:identifier "SR-CPT-025" ;
+  rdfs:label "Threshold"@en ;
+  rdfs:comment "A versioned decision-boundary specification used with an indicator or assessment method; its comparison operator, scale, unit and applicability belong to the selected application profile, not to a universal risk formula."@en ;
+  dcterms:conformsTo "SR-REQ-013" ;
+  dcterms:relation "CQ-019; CQ-032" .
+
+sr:SR-REL-014 a owl:ObjectProperty ;
+  dcterms:identifier "SR-REL-014" ;
+  rdfs:label "usesAssessmentMethod"@en ;
+  rdfs:comment "Links an assessment activity to its method."@en ;
+  dcterms:conformsTo "SR-REQ-003; SR-REQ-012; SR-REQ-013" ;
+  dcterms:relation "CQ-006; CQ-019; CQ-032" ;
+  rdfs:domain sr:SR-CPT-011 ;
+  rdfs:range sr:SR-CPT-012 .
+
+sr:SR-REL-020 a owl:ObjectProperty ;
+  dcterms:identifier "SR-REL-020" ;
+  rdfs:label "qualifiedByConfidence"@en ;
+  rdfs:comment "Links assessment/evidence result to Assessment Confidence/uncertainty information."@en ;
+  dcterms:conformsTo "SR-REQ-012" ;
+  dcterms:relation "CQ-006; CQ-031" ;
+  rdfs:domain sr:SR-CPT-013 ;
+  rdfs:range sr:SR-CPT-019 .
+
