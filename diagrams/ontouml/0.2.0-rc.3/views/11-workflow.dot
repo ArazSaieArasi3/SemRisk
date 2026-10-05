@@ -1,0 +1,15 @@
+digraph G {
+graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.42", ranksep="0.65", splines=polyline, outputorder=edgesfirst];
+node [shape=plain, fontname="Helvetica", fontsize=14];
+edge [fontname="Helvetica", fontsize=11, color="#526477", arrowsize=0.65];
+"H-ArtifactVersion" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e8f5f0"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Artifact Version</B></TD></TR></TABLE>>];
+"H-WorkflowAssignment" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e8f5f0"><TR><TD><FONT POINT-SIZE="11">«situation»</FONT></TD></TR><TR><TD><B>Workflow Assignment</B></TD></TR><TR><TD ALIGN="LEFT"><FONT POINT-SIZE="10">validFrom: dateTime [1]<BR ALIGN="LEFT"/>validTo: dateTime [0..1]</FONT></TD></TR></TABLE>>];
+"H-WorkflowSchemeVersion" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e8f5f0"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Workflow Scheme Version</B></TD></TR></TABLE>>];
+"SR-CPT-033" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Risk Register Entry</B></TD></TR></TABLE>>];
+"SR-CPT-036" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«abstract»</FONT></TD></TR><TR><TD><B>Workflow State</B></TD></TR></TABLE>>];
+"H-WorkflowSchemeVersion" -> "H-ArtifactVersion" [arrowhead=empty, color="#34465d", id="GEN-H-WorkflowSchemeVersion-H-ArtifactVersion"];
+"SR-CPT-036" -> "H-WorkflowSchemeVersion" [arrowhead=none, label="inScheme", taillabel="0..*", headlabel="1", labeldistance=1.8, color="#147e74", fontcolor="#147e74", id="HP-inScheme"];
+"H-WorkflowAssignment" -> "SR-CPT-033" [arrowhead=none, label="record", taillabel="0..*", headlabel="1", labeldistance=1.8, color="#147e74", fontcolor="#147e74", id="HP-record"];
+"H-WorkflowAssignment" -> "SR-CPT-036" [arrowhead=none, label="value", taillabel="0..*", headlabel="1", labeldistance=1.8, color="#147e74", fontcolor="#147e74", id="HP-value"];
+"H-WorkflowAssignment" -> "H-WorkflowSchemeVersion" [arrowhead=none, label="scheme", taillabel="0..*", headlabel="1", labeldistance=1.8, color="#147e74", fontcolor="#147e74", id="HP-scheme"];
+}

@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1190.55pt" height="841.89pt" viewBox="0 0 1190.55 841.89"><rect width="100%" height="100%" fill="white" /><text font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#14283e" x="45" y="45">06   Responsibility and explicit grounding</text><text font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#14283e" x="45" y="75">SemRisk 0.2.0-rc.3 | OntoUML-based view with explicit scope boundaries</text><g transform="translate(98.36787644787643 110) scale(1.2391698841698842)"><svg width="802.0" height="518.0" viewBox="0.00 0.00 802.00 518.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 496.4)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-21.6,21.6 -21.6,-496.4 780.88,-496.4 780.88,21.6 -21.6,21.6" />
+
+<g id="HP-mediates" class="edge">
+<title>H-GroundedRiskResponsibility-&gt;B-Endurant</title>
+<path fill="none" stroke="#147e74" d="M222.02,-376.9C215.51,-352.29 207.81,-323.14 202.24,-302.06" />
+<text xml:space="preserve" text-anchor="middle" x="244.63" y="-342.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">&#171;mediation&#187;</text>
+<text xml:space="preserve" text-anchor="middle" x="244.63" y="-329.7" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">mediates</text>
+<text xml:space="preserve" text-anchor="middle" x="213.76" y="-312.58" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">2..*</text>
+<text xml:space="preserve" text-anchor="middle" x="210.49" y="-359.77" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">0..*</text>
+</g>
+
+<g id="GEN-H-GroundedRiskResponsibility-SR-CPT-031" class="edge">
+<title>H-GroundedRiskResponsibility-&gt;SR-CPT-031</title>
+<path fill="none" stroke="#34465d" d="M277.39,-376.9C297.35,-354.5 320.68,-328.34 338.89,-307.92" />
+<polygon fill="none" stroke="#34465d" points="340.48,-309.55 343.11,-303.18 337.09,-306.52 340.48,-309.55" />
+</g>
+
+<g id="SR-REL-026-view-1-1" class="edge">
+<title>SR-CPT-001-&gt;B-Actor</title>
+<path fill="none" stroke="#526477" d="M202.67,-121.35C202.67,-102.6 202.67,-78.28 202.67,-59.59" />
+<text xml:space="preserve" text-anchor="middle" x="239.96" y="-87.3" font-family="Helvetica,sans-Serif" font-size="11.00">/hasRiskOwner</text>
+<text xml:space="preserve" text-anchor="middle" x="210.28" y="-72.6" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="195.06" y="-101.73" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="SR-REL-028-view-1-2" class="edge">
+<title>SR-CPT-031-&gt;B-Actor</title>
+<path fill="none" stroke="#526477" d="M297.4,-247.58C288.06,-244.51 281.67,-242.4 281.67,-242.4 281.67,-242.4 0,-181.2 0,-181.2 0,-181.2 0,-121.2 0,-121.2 0,-121.2 78.43,-86.3 137.71,-59.91" />
+<text xml:space="preserve" text-anchor="middle" x="60.84" y="-147.9" font-family="Helvetica,sans-Serif" font-size="11.00">responsibilityAssignedTo</text>
+<text xml:space="preserve" text-anchor="middle" x="125.9" y="-70.2" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="279.53" y="-246.4" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="SR-REL-027-view-1-1" class="edge">
+<title>SR-CPT-031-&gt;SR-CPT-001</title>
+<path fill="none" stroke="#526477" d="M298.22,-242.42C267.72,-230.05 239.01,-218.4 239.01,-218.4 239.01,-218.4 228.3,-198.88 218.5,-181.04" />
+<text xml:space="preserve" text-anchor="middle" x="299.84" y="-208.5" font-family="Helvetica,sans-Serif" font-size="11.00">assignsResponsibilityFor</text>
+<text xml:space="preserve" text-anchor="middle" x="233.02" y="-188.38" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="280.25" y="-240.04" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="SR-REL-027-view-1-3" class="edge">
+<title>SR-CPT-031-&gt;SR-CPT-027</title>
+<path fill="none" stroke="#526477" d="M368.76,-242.42C368.38,-230.05 368.01,-218.4 368.01,-218.4 368.01,-218.4 368.01,-205.2 368.01,-205.2 368.01,-205.2 369.47,-193.55 371.03,-181.18" />
+<text xml:space="preserve" text-anchor="middle" x="428.84" y="-208.5" font-family="Helvetica,sans-Serif" font-size="11.00">assignsResponsibilityFor</text>
+<text xml:space="preserve" text-anchor="middle" x="376.54" y="-195.02" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="360.65" y="-223.05" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="SR-REL-028-view-1-1" class="edge">
+<title>SR-CPT-031-&gt;SR-CPT-030</title>
+<path fill="none" stroke="#526477" d="M436.93,-242.42C465.65,-230.05 492.67,-218.4 492.67,-218.4 492.67,-218.4 502.7,-198.88 511.86,-181.04" />
+<text xml:space="preserve" text-anchor="middle" x="560.01" y="-208.5" font-family="Helvetica,sans-Serif" font-size="11.00">responsibilityAssignedTo</text>
+<text xml:space="preserve" text-anchor="middle" x="511.17" y="-195.73" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="448.9" y="-225.68" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="SR-REL-027-view-1-2" class="edge">
+<title>SR-CPT-031-&gt;SR-CPT-033</title>
+<path fill="none" stroke="#526477" d="M442.23,-256.5C518.54,-240.82 627.67,-218.4 627.67,-218.4 627.67,-218.4 643,-198.88 657.01,-181.04" />
+<text xml:space="preserve" text-anchor="middle" x="698.45" y="-208.5" font-family="Helvetica,sans-Serif" font-size="11.00">assignsResponsibilityFor</text>
+<text xml:space="preserve" text-anchor="middle" x="652.92" y="-195.27" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="456.67" y="-242.46" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="SR-REL-026-view-2-1" class="edge">
+<title>SR-CPT-033-&gt;B-Actor</title>
+<path fill="none" stroke="#526477" d="M607.53,-127.21C596.48,-123.69 588.67,-121.2 588.67,-121.2 588.67,-121.2 382.71,-73.07 271.68,-47.13" />
+<text xml:space="preserve" text-anchor="middle" x="522.44" y="-87.3" font-family="Helvetica,sans-Serif" font-size="11.00">/hasRiskOwner</text>
+<text xml:space="preserve" text-anchor="middle" x="289.3" y="-40.13" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="589.67" y="-126.2" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="node1" class="node">
+<title>B-Actor</title>
+<polygon fill="#f0e9fb" stroke="none" points="133.55,0 133.55,-60 271.79,-60 271.79,0 133.55,0" />
+<text xml:space="preserve" text-anchor="start" x="141.55" y="-41" font-family="Helvetica,sans-Serif" font-size="11.00">ENDPOINT BOUNDARY</text>
+<text xml:space="preserve" text-anchor="start" x="154.82" y="-13.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">External Actor</text>
+<polygon fill="none" stroke="#40546c" points="133.55,0 133.55,-60 271.79,-60 271.79,0 133.55,0" />
+</g>
+
+<g id="node2" class="node">
+<title>B-Endurant</title>
+<polygon fill="#e7f2fc" stroke="none" points="122.5,-242.4 122.5,-302.4 266.85,-302.4 266.85,-242.4 122.5,-242.4" />
+<text xml:space="preserve" text-anchor="start" x="167.46" y="-283.4" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;category&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="130.5" y="-255.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Endurant (external)</text>
+<polygon fill="none" stroke="#40546c" points="122.5,-242.4 122.5,-302.4 266.85,-302.4 266.85,-242.4 122.5,-242.4" />
+</g>
+
+<g id="node3" class="node">
+<title>H-GroundedRiskResponsibility</title>
+<polygon fill="#e8f5f0" stroke="none" points="143.44,-376.8 143.44,-474.8 325.9,-474.8 325.9,-376.8 143.44,-376.8" />
+<text xml:space="preserve" text-anchor="start" x="212.97" y="-455.8" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;relator&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="151.44" y="-428" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Grounded Responsibility</text>
+<text xml:space="preserve" text-anchor="start" x="151.44" y="-398.8" font-family="Helvetica,sans-Serif" font-size="10.00">validFrom: dateTime [0..1]</text>
+<text xml:space="preserve" text-anchor="start" x="157.27" y="-386.8" font-family="Helvetica,sans-Serif" font-size="10.00">validTo: dateTime [0..1]</text>
+<polygon fill="none" stroke="#40546c" points="143.44,-376.8 143.44,-474.8 325.9,-474.8 325.9,-376.8 143.44,-376.8" />
+</g>
+
+<g id="node4" class="node">
+<title>SR-CPT-001</title>
+<polygon fill="#fff0cf" stroke="none" points="136.3,-121.2 136.3,-181.2 269.04,-181.2 269.04,-121.2 136.3,-121.2" />
+<text xml:space="preserve" text-anchor="start" x="144.3" y="-162.2" font-family="Helvetica,sans-Serif" font-size="11.00">PATTERN BOUNDARY</text>
+<text xml:space="preserve" text-anchor="start" x="187.89" y="-134.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk</text>
+<polygon fill="none" stroke="#40546c" points="136.3,-121.2 136.3,-181.2 269.04,-181.2 269.04,-121.2 136.3,-121.2" />
+</g>
+
+<g id="node5" class="node">
+<title>SR-CPT-027</title>
+<polygon fill="#e7f2fc" stroke="none" points="299.37,-121.2 299.37,-181.2 449.97,-181.2 449.97,-121.2 299.37,-121.2" />
+<text xml:space="preserve" text-anchor="start" x="349.6" y="-162.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;subkind&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="307.37" y="-134.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk Treatment Plan</text>
+<polygon fill="none" stroke="#40546c" points="299.37,-121.2 299.37,-181.2 449.97,-181.2 449.97,-121.2 299.37,-121.2" />
+</g>
+
+<g id="node6" class="node">
+<title>SR-CPT-030</title>
+<polygon fill="#e7f2fc" stroke="none" points="480.16,-121.2 480.16,-181.2 573.19,-181.2 573.19,-121.2 480.16,-121.2" />
+<text xml:space="preserve" text-anchor="start" x="498.55" y="-162.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;roleMixin&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="488.16" y="-134.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk Owner</text>
+<polygon fill="none" stroke="#40546c" points="480.16,-121.2 480.16,-181.2 573.19,-181.2 573.19,-121.2 480.16,-121.2" />
+</g>
+
+<g id="node7" class="node">
+<title>SR-CPT-031</title>
+<polygon fill="#e7f2fc" stroke="none" points="297.1,-242.4 297.1,-302.4 442.24,-302.4 442.24,-242.4 297.1,-242.4" />
+<text xml:space="preserve" text-anchor="start" x="347.97" y="-283.4" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;relator&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="305.1" y="-255.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk Responsibility</text>
+<polygon fill="none" stroke="#40546c" points="297.1,-242.4 297.1,-302.4 442.24,-302.4 442.24,-242.4 297.1,-242.4" />
+</g>
+
+<g id="node8" class="node">
+<title>SR-CPT-033</title>
+<polygon fill="#e7f2fc" stroke="none" points="607.09,-121.2 607.09,-181.2 752.25,-181.2 752.25,-121.2 607.09,-121.2" />
+<text xml:space="preserve" text-anchor="start" x="654.6" y="-162.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;subkind&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="615.09" y="-134.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk Register Entry</text>
+<polygon fill="none" stroke="#40546c" points="607.09,-121.2 607.09,-181.2 752.25,-181.2 752.25,-121.2 607.09,-121.2" />
+</g>
+</g>
+</svg></g><text font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#14283e" x="45" y="779.89">Green profile mediation needs distinct Endurants. External Actor identity is not supplied locally; Risk Owner has no new sortal identity.</text><text font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#14283e" x="45" y="821.89">Blue: implemented | Green: profile helper | Amber: pattern/unclassified | Violet: external/planned</text></svg>

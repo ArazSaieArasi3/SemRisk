@@ -1,0 +1,1200 @@
+{
+  "name": "G",
+  "directed": true,
+  "strict": false,
+  "_draw_": 
+  [
+    {
+      "op": "c",
+      "grad": "none",
+      "color": "#fffffe00"
+    },
+    {
+      "op": "C",
+      "grad": "none",
+      "color": "#ffffff"
+    },
+    {
+      "op": "P",
+      "points": [[-21.600,-21.600],[-21.600,402.600],[603.570,402.600],[603.570,-21.600]]
+    }
+  ],
+  "bb": "0,0,581.97,381",
+  "bgcolor": "white",
+  "nodesep": "0.42",
+  "outputorder": "edgesfirst",
+  "pad": "0.3",
+  "rankdir": "TB",
+  "ranksep": "0.65",
+  "splines": "polyline",
+  "xdotversion": "1.7",
+  "_subgraph_cnt": 4,
+  "objects": [
+    {
+      "name": "%1",
+      "bgcolor": "white",
+      "nodesep": "0.42",
+      "outputorder": "edgesfirst",
+      "pad": "0.3",
+      "rank": "same",
+      "rankdir": "TB",
+      "ranksep": "0.65",
+      "splines": "polyline",
+      "_gvid": 0,
+      "nodes": [
+        4,5,6
+      ]
+    },
+    {
+      "name": "%3",
+      "bgcolor": "white",
+      "nodesep": "0.42",
+      "outputorder": "edgesfirst",
+      "pad": "0.3",
+      "rank": "same",
+      "rankdir": "TB",
+      "ranksep": "0.65",
+      "splines": "polyline",
+      "_gvid": 1,
+      "nodes": [
+        7,8,9
+      ]
+    },
+    {
+      "name": "%5",
+      "bgcolor": "white",
+      "nodesep": "0.42",
+      "outputorder": "edgesfirst",
+      "pad": "0.3",
+      "rank": "same",
+      "rankdir": "TB",
+      "ranksep": "0.65",
+      "splines": "polyline",
+      "_gvid": 2,
+      "nodes": [
+        10,11,12
+      ]
+    },
+    {
+      "name": "%7",
+      "bgcolor": "white",
+      "nodesep": "0.42",
+      "outputorder": "edgesfirst",
+      "pad": "0.3",
+      "rank": "same",
+      "rankdir": "TB",
+      "ranksep": "0.65",
+      "splines": "polyline",
+      "_gvid": 3,
+      "nodes": [
+        13,14,15
+      ]
+    },
+    {
+      "_gvid": 4,
+      "name": "SR-CPT-021",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0e9fb"
+        },
+        {
+          "op": "P",
+          "points": [[0.000,321.000],[0.000,381.000],[144.970,381.000],[144.970,321.000]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [8.000,362.000],
+          "align": "l",
+          "width": 128.970,
+          "text": "EXTERNAL REFERENCE"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [32.800,334.200],
+          "align": "l",
+          "width": 79.370,
+          "text": "Provenance"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[0.000,321.000],[0.000,381.000],[144.970,381.000],[144.970,321.000]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#f0e9fb\"><TR><TD><FONT POINT-SIZE=\"11\">EXTERNAL REFERENCE<\/FONT><\/TD><\/TR><TR><TD><B>Provenance<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "72.485,351",
+      "shape": "plain",
+      "width": "2.0135"
+    },
+    {
+      "_gvid": 5,
+      "name": "SR-CPT-037",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0e9fb"
+        },
+        {
+          "op": "P",
+          "points": [[221.000,321.000],[221.000,381.000],[365.970,381.000],[365.970,321.000]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [229.000,362.000],
+          "align": "l",
+          "width": 128.970,
+          "text": "EXTERNAL REFERENCE"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [261.970,334.200],
+          "align": "l",
+          "width": 63.030,
+          "text": "Objective"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[221.000,321.000],[221.000,381.000],[365.970,381.000],[365.970,321.000]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#f0e9fb\"><TR><TD><FONT POINT-SIZE=\"11\">EXTERNAL REFERENCE<\/FONT><\/TD><\/TR><TR><TD><B>Objective<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "293.49,351",
+      "shape": "plain",
+      "width": "2.0135"
+    },
+    {
+      "_gvid": 6,
+      "name": "SR-CPT-038",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0e9fb"
+        },
+        {
+          "op": "P",
+          "points": [[437.000,321.000],[437.000,381.000],[581.970,381.000],[581.970,321.000]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [445.000,362.000],
+          "align": "l",
+          "width": 128.970,
+          "text": "EXTERNAL REFERENCE"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [476.030,334.200],
+          "align": "l",
+          "width": 66.900,
+          "text": "Capability"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[437.000,321.000],[437.000,381.000],[581.970,381.000],[581.970,321.000]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#f0e9fb\"><TR><TD><FONT POINT-SIZE=\"11\">EXTERNAL REFERENCE<\/FONT><\/TD><\/TR><TR><TD><B>Capability<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "509.49,351",
+      "shape": "plain",
+      "width": "2.0135"
+    },
+    {
+      "_gvid": 7,
+      "name": "SR-CPT-039",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0e9fb"
+        },
+        {
+          "op": "P",
+          "points": [[0.000,214.000],[0.000,274.000],[144.970,274.000],[144.970,214.000]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [8.000,255.000],
+          "align": "l",
+          "width": 128.970,
+          "text": "EXTERNAL REFERENCE"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [12.180,227.200],
+          "align": "l",
+          "width": 120.620,
+          "text": "Business Process"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[0.000,214.000],[0.000,274.000],[144.970,274.000],[144.970,214.000]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#f0e9fb\"><TR><TD><FONT POINT-SIZE=\"11\">EXTERNAL REFERENCE<\/FONT><\/TD><\/TR><TR><TD><B>Business Process<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "72.485,244",
+      "shape": "plain",
+      "width": "2.0135"
+    },
+    {
+      "_gvid": 8,
+      "name": "SR-CPT-040",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0e9fb"
+        },
+        {
+          "op": "P",
+          "points": [[175.000,214.000],[175.000,274.000],[411.970,274.000],[411.970,214.000]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [233.890,255.000],
+          "align": "l",
+          "width": 119.200,
+          "text": "PLANNED \/ EXTERNAL"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [183.000,227.200],
+          "align": "l",
+          "width": 220.960,
+          "text": "Active Pharmaceutical Ingredient"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[175.000,214.000],[175.000,274.000],[411.970,274.000],[411.970,214.000]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#f0e9fb\"><TR><TD><FONT POINT-SIZE=\"11\">PLANNED \/ EXTERNAL<\/FONT><\/TD><\/TR><TR><TD><B>Active Pharmaceutical Ingredient<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "293.49,244",
+      "shape": "plain",
+      "width": "3.2912"
+    },
+    {
+      "_gvid": 9,
+      "name": "SR-CPT-041",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0e9fb"
+        },
+        {
+          "op": "P",
+          "points": [[441.890,214.000],[441.890,274.000],[577.090,274.000],[577.090,214.000]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [449.890,255.000],
+          "align": "l",
+          "width": 119.200,
+          "text": "PLANNED \/ EXTERNAL"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [486.140,227.200],
+          "align": "l",
+          "width": 46.680,
+          "text": "Hazard"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[441.890,214.000],[441.890,274.000],[577.090,274.000],[577.090,214.000]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#f0e9fb\"><TR><TD><FONT POINT-SIZE=\"11\">PLANNED \/ EXTERNAL<\/FONT><\/TD><\/TR><TR><TD><B>Hazard<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "509.49,244",
+      "shape": "plain",
+      "width": "1.8778"
+    },
+    {
+      "_gvid": 10,
+      "name": "SR-CPT-042",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0e9fb"
+        },
+        {
+          "op": "P",
+          "points": [[4.890,107.000],[4.890,167.000],[140.090,167.000],[140.090,107.000]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [12.890,148.000],
+          "align": "l",
+          "width": 119.200,
+          "text": "PLANNED \/ EXTERNAL"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [54.590,120.200],
+          "align": "l",
+          "width": 35.790,
+          "text": "Harm"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[4.890,107.000],[4.890,167.000],[140.090,167.000],[140.090,107.000]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#f0e9fb\"><TR><TD><FONT POINT-SIZE=\"11\">PLANNED \/ EXTERNAL<\/FONT><\/TD><\/TR><TR><TD><B>Harm<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "72.485,137",
+      "shape": "plain",
+      "width": "1.8778"
+    },
+    {
+      "_gvid": 11,
+      "name": "SR-CPT-043",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0e9fb"
+        },
+        {
+          "op": "P",
+          "points": [[225.890,107.000],[225.890,167.000],[361.090,167.000],[361.090,107.000]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [233.890,148.000],
+          "align": "l",
+          "width": 119.200,
+          "text": "PLANNED \/ EXTERNAL"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [272.480,120.200],
+          "align": "l",
+          "width": 42.010,
+          "text": "Signal"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[225.890,107.000],[225.890,167.000],[361.090,167.000],[361.090,107.000]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#f0e9fb\"><TR><TD><FONT POINT-SIZE=\"11\">PLANNED \/ EXTERNAL<\/FONT><\/TD><\/TR><TR><TD><B>Signal<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "293.49,137",
+      "shape": "plain",
+      "width": "1.8778"
+    },
+    {
+      "_gvid": 12,
+      "name": "SR-CPT-044",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0e9fb"
+        },
+        {
+          "op": "P",
+          "points": [[441.890,107.000],[441.890,167.000],[577.090,167.000],[577.090,107.000]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [449.890,148.000],
+          "align": "l",
+          "width": 119.200,
+          "text": "PLANNED \/ EXTERNAL"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [468.240,120.200],
+          "align": "l",
+          "width": 82.480,
+          "text": "Risk Criteria"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[441.890,107.000],[441.890,167.000],[577.090,167.000],[577.090,107.000]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#f0e9fb\"><TR><TD><FONT POINT-SIZE=\"11\">PLANNED \/ EXTERNAL<\/FONT><\/TD><\/TR><TR><TD><B>Risk Criteria<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "509.49,137",
+      "shape": "plain",
+      "width": "1.8778"
+    },
+    {
+      "_gvid": 13,
+      "name": "SR-CPT-045",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0e9fb"
+        },
+        {
+          "op": "P",
+          "points": [[4.890,0.000],[4.890,60.000],[140.090,60.000],[140.090,0.000]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [12.890,41.000],
+          "align": "l",
+          "width": 119.200,
+          "text": "PLANNED \/ EXTERNAL"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [27.750,13.200],
+          "align": "l",
+          "width": 89.460,
+          "text": "Risk Appetite"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[4.890,0.000],[4.890,60.000],[140.090,60.000],[140.090,0.000]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#f0e9fb\"><TR><TD><FONT POINT-SIZE=\"11\">PLANNED \/ EXTERNAL<\/FONT><\/TD><\/TR><TR><TD><B>Risk Appetite<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "72.485,30",
+      "shape": "plain",
+      "width": "1.8778"
+    },
+    {
+      "_gvid": 14,
+      "name": "SR-CPT-046",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0e9fb"
+        },
+        {
+          "op": "P",
+          "points": [[225.890,0.000],[225.890,60.000],[361.090,60.000],[361.090,0.000]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [233.890,41.000],
+          "align": "l",
+          "width": 119.200,
+          "text": "PLANNED \/ EXTERNAL"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [243.690,13.200],
+          "align": "l",
+          "width": 99.600,
+          "text": "Risk Tolerance"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[225.890,0.000],[225.890,60.000],[361.090,60.000],[361.090,0.000]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#f0e9fb\"><TR><TD><FONT POINT-SIZE=\"11\">PLANNED \/ EXTERNAL<\/FONT><\/TD><\/TR><TR><TD><B>Risk Tolerance<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "293.49,30",
+      "shape": "plain",
+      "width": "1.8778"
+    },
+    {
+      "_gvid": 15,
+      "name": "SR-CPT-047",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0e9fb"
+        },
+        {
+          "op": "P",
+          "points": [[441.890,0.000],[441.890,60.000],[577.090,60.000],[577.090,0.000]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [449.890,41.000],
+          "align": "l",
+          "width": 119.200,
+          "text": "PLANNED \/ EXTERNAL"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [470.580,13.200],
+          "align": "l",
+          "width": 77.810,
+          "text": "Risk Nature"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[441.890,0.000],[441.890,60.000],[577.090,60.000],[577.090,0.000]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#f0e9fb\"><TR><TD><FONT POINT-SIZE=\"11\">PLANNED \/ EXTERNAL<\/FONT><\/TD><\/TR><TR><TD><B>Risk Nature<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "509.49,30",
+      "shape": "plain",
+      "width": "1.8778"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 0,
+      "tail": 4,
+      "head": 7,
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "pos": "e,72.485,273.88 72.485,321.03 72.485,308.87 72.485,294.58 72.485,281.69",
+      "style": "invis",
+      "weight": "100"
+    },
+    {
+      "_gvid": 1,
+      "tail": 5,
+      "head": 8,
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "pos": "e,293.49,273.88 293.49,321.03 293.49,308.87 293.49,294.58 293.49,281.69",
+      "style": "invis",
+      "weight": "100"
+    },
+    {
+      "_gvid": 2,
+      "tail": 6,
+      "head": 9,
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "pos": "e,509.49,273.88 509.49,321.03 509.49,308.87 509.49,294.58 509.49,281.69",
+      "style": "invis",
+      "weight": "100"
+    },
+    {
+      "_gvid": 3,
+      "tail": 7,
+      "head": 10,
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "pos": "e,72.485,166.88 72.485,214.03 72.485,201.87 72.485,187.58 72.485,174.69",
+      "style": "invis",
+      "weight": "100"
+    },
+    {
+      "_gvid": 4,
+      "tail": 8,
+      "head": 11,
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "pos": "e,293.49,166.88 293.49,214.03 293.49,201.87 293.49,187.58 293.49,174.69",
+      "style": "invis",
+      "weight": "100"
+    },
+    {
+      "_gvid": 5,
+      "tail": 9,
+      "head": 12,
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "pos": "e,509.49,166.88 509.49,214.03 509.49,201.87 509.49,187.58 509.49,174.69",
+      "style": "invis",
+      "weight": "100"
+    },
+    {
+      "_gvid": 6,
+      "tail": 10,
+      "head": 13,
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "pos": "e,72.485,59.875 72.485,107.03 72.485,94.865 72.485,80.575 72.485,67.687",
+      "style": "invis",
+      "weight": "100"
+    },
+    {
+      "_gvid": 7,
+      "tail": 11,
+      "head": 14,
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "pos": "e,293.49,59.875 293.49,107.03 293.49,94.865 293.49,80.575 293.49,67.687",
+      "style": "invis",
+      "weight": "100"
+    },
+    {
+      "_gvid": 8,
+      "tail": 12,
+      "head": 15,
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "pos": "e,509.49,59.875 509.49,107.03 509.49,94.865 509.49,80.575 509.49,67.687",
+      "style": "invis",
+      "weight": "100"
+    }
+  ]
+}

@@ -1,3 +1,17 @@
+# Current revision status — Run 7, 2026-10-05
+
+**Current stage:** actual editable OntoUML candidate and complete companion atlas delivered; semantic and article-scale gates remain explicit. [Run 7 report](run-7-report.md); [diagram package](../../../diagrams/ontouml/0.2.0-rc.3/README.md).
+
+- 47/47 concepts and 38/38 registered relation decisions covered; 15 vector views and review pages; 16/16 bounded tests including six negative controls.
+- All ontology release bytes remain unchanged. This is a diagram/QA batch, not new empirical or expert evidence.
+- **3/19 = 15.8%** bounded packages accepted; **22/90 = 24.4%** requirements evidenced; **90/90 routed**. These percentages are not final-paper readiness.
+- Full diagram at 170 mm fails readability; the complete companion and a clearly scoped panel are supplied. Figure 1 is not declared final. Target seven IEEE pages, hard maximum eight.
+- Next: resolve the Exposure/NumericScale and diagram semantic gates, synchronize formal/SQL helpers, and execute prepared literature-case extraction. No request for the author to repeat the requirements is needed.
+
+Remote CI, issue synchronization and publication state must be read from the Run 7 readback checkpoint/PR once recorded. Previous evidence is retained below.
+
+---
+
 # Current revision status — Run 6, 2026-10-05
 
 **Current stage:** the three remaining shared semantic decisions are implemented in candidate **0.2.0-rc.3**. Next is the full editable OntoUML model and publication-scale figure. [Run 6 report](run-6-report.md); [PR #135](https://github.com/ArazSaieArasi3/SemRisk/pull/135); [source-bound evidence](../../../evaluation/semantic-identity/v0.2.0-rc.3/ci-evidence.json).
