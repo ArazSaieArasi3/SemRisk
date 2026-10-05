@@ -70,7 +70,7 @@ All 47 definitions below are copied exactly from the concept registry. Formal st
 | SR-CPT-002 | Risk Subject | An entity, value-bearing object or externally owned item about which risk relevance is asserted. | CORE_V0_1 | owl:Class / Core |
 | SR-CPT-003 | Risk Source | A risk-relevant origin, source or contextual contributor that may participate in a scenario or event; causal status is not implied by the label alone. | CORE_V0_1 | owl:Class / Core |
 | SR-CPT-004 | Predisposing Condition | A contextual state-of-affairs or situational condition that increases susceptibility to a risk-relevant event/effect without necessarily directly causing it. | CORE_V0_1 | owl:Class / Core |
-| SR-CPT-005 | Trigger | A condition or occurrence that initiates or activates a transition in a risk-relevant scenario, event, monitoring or response process. | CORE_V0_1 | owl:Class / Core |
+| SR-CPT-005 | Trigger | An occurrence acting as the initiating event for a risk-relevant event or process transition; an enabling condition is represented separately as a Predisposing Condition. | CORE_V0_1 | owl:Class / Core |
 | SR-CPT-006 | Risk Scenario | A possible or hypothesized risk-relevant configuration or event pattern used for analysis, distinct from descriptions and realized events. | CORE_V0_1 | owl:Class / Core |
 | SR-CPT-007 | Risk Event | A realized occurrence relevant to a risk context, distinct from a possible scenario and information artifacts describing it. | CORE_V0_1 | owl:Class / Core |
 | SR-CPT-008 | Consequence | A risk-relevant outcome or effect of an event/scenario; its magnitude/severity may be assessed separately. | CORE_V0_1 | owl:Class / Core |
