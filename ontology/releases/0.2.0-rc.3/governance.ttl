@@ -1,0 +1,33 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sr: <urn:semrisk:entity:> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sr:SR-REL-035 a owl:ObjectProperty ;
+    rdfs:label "hasIndicator"@en ;
+    dcterms:conformsTo "SR-REQ-008; SR-REQ-012" ;
+    dcterms:identifier "SR-REL-035" ;
+    dcterms:relation "CQ-006" ;
+    rdfs:comment "Links a Risk/context/process to an Indicator used for monitoring."@en ;
+    rdfs:range sr:SR-CPT-024 .
+
+sr:SR-REL-036 a owl:ObjectProperty ;
+    rdfs:label "hasThreshold"@en ;
+    dcterms:conformsTo "SR-REQ-013" ;
+    dcterms:identifier "SR-REL-036" ;
+    dcterms:relation "CQ-019; CQ-032" ;
+    rdfs:comment "Links an Indicator/Assessment Method/Risk Criteria to a Threshold."@en ;
+    rdfs:range sr:SR-CPT-025 ;
+    skos:scopeNote "Threshold comparison/classification is rule/profile semantics, not an OWL truth."@en .
+
+<urn:semrisk:ontology:governance> a owl:Ontology ;
+    dcterms:created "2026-10-05"^^xsd:date ;
+    dcterms:source "SemRisk issues #24 #25 #26 #43 #27" ;
+    dcterms:title "SemRisk Governance Profile"@en ;
+    owl:imports <urn:semrisk:ontology:core:0.2.0-rc.3>,
+        <urn:semrisk:ontology:method:0.2.0-rc.3> ;
+    owl:versionIRI <urn:semrisk:ontology:governance:0.2.0-rc.3> ;
+    owl:versionInfo "0.2.0-rc.3" .
+

@@ -1,0 +1,137 @@
+@prefix ac: <urn:semrisk:profile:assessment-context:> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sr: <urn:semrisk:entity:> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dct:conformsTo a owl:AnnotationProperty .
+
+dct:description a owl:AnnotationProperty .
+
+dct:hasVersion a owl:AnnotationProperty .
+
+dct:identifier a owl:AnnotationProperty .
+
+dct:relation a owl:AnnotationProperty .
+
+dct:source a owl:AnnotationProperty .
+
+dct:title a owl:AnnotationProperty .
+
+dct:type a owl:AnnotationProperty .
+
+skos:Concept a owl:Class .
+
+skos:closeMatch a owl:ObjectProperty .
+
+skos:prefLabel a owl:AnnotationProperty .
+
+skos:relatedMatch a owl:ObjectProperty .
+
+skos:scopeNote a owl:AnnotationProperty .
+
+prov:invalidatedAtTime a owl:DatatypeProperty ;
+    rdfs:range xsd:dateTime .
+
+<urn:semrisk:ontology:assessment-context> a owl:Ontology ;
+    dct:title "SemRisk qualified numeric assessment context"@en ;
+    owl:imports <urn:semrisk:ontology:core:0.2.0-rc.3>,
+        <urn:semrisk:ontology:method:0.2.0-rc.3> ;
+    owl:versionIRI <urn:semrisk:ontology:assessment-context:0.2.0-rc.3> ;
+    owl:versionInfo "0.2.0-rc.3" .
+
+ac:GroundedRiskResponsibility a owl:Class ;
+    rdfs:comment "Responsibility asserted with explicit evidence of at least two distinct endurant participants; additional closed-world requirements are in the separate shape graph."@en ;
+    rdfs:subClassOf sr:SR-CPT-031 .
+
+ac:QualifiedAssessmentResult a owl:Class ;
+    rdfs:comment "Opt-in operational profile for numeric results with explicit method, scale and temporal context; not a new risk identity."@en ;
+    rdfs:subClassOf sr:SR-CPT-013 .
+
+ac:assessedAt a owl:DatatypeProperty ;
+    rdfs:range xsd:dateTime .
+
+ac:controlBaseline a owl:ObjectProperty ;
+    rdfs:range ac:ControlBaseline .
+
+ac:dimension a owl:ObjectProperty ;
+    rdfs:range ac:Dimension .
+
+ac:evaluationBasis a owl:ObjectProperty ;
+    rdfs:range ac:EvaluationBasis .
+
+ac:maximum a owl:DatatypeProperty ;
+    rdfs:range xsd:decimal .
+
+ac:method a owl:ObjectProperty ;
+    rdfs:range sr:SR-CPT-012 .
+
+ac:methodVersion a owl:DatatypeProperty ;
+    rdfs:range xsd:string .
+
+ac:minimum a owl:DatatypeProperty ;
+    rdfs:range xsd:decimal .
+
+ac:numericValue a owl:DatatypeProperty ;
+    rdfs:range xsd:decimal .
+
+ac:referenceTime a owl:DatatypeProperty ;
+    rdfs:range xsd:dateTime .
+
+ac:scale a owl:ObjectProperty ;
+    rdfs:range ac:NumericScale .
+
+ac:validFrom a owl:DatatypeProperty ;
+    rdfs:range xsd:dateTime .
+
+ac:validTo a owl:DatatypeProperty ;
+    rdfs:range xsd:dateTime .
+
+ac:NumericScale a owl:Class ;
+    rdfs:comment "Versioned numeric interval and dimension used by this operational profile; not a universal risk scoring scale."@en .
+
+ac:AfterControl a owl:NamedIndividual,
+        ac:ControlBaseline .
+
+ac:BeforeControl a owl:NamedIndividual,
+        ac:ControlBaseline .
+
+ac:Impact a owl:NamedIndividual,
+        ac:Dimension .
+
+ac:Likelihood a owl:NamedIndividual,
+        ac:Dimension .
+
+ac:Observed a owl:NamedIndividual,
+        ac:EvaluationBasis ;
+    rdfs:comment "Observation-informed assessment basis; this label alone does not establish empirical validity."@en .
+
+ac:Projected a owl:NamedIndividual,
+        ac:EvaluationBasis ;
+    rdfs:comment "Modelled or hypothetical assessment basis; a lower value is not an observed treatment effect."@en .
+
+ac:RiskLevel a owl:NamedIndividual,
+        ac:Dimension .
+
+ac:ControlBaseline a owl:Class ;
+    owl:oneOf ( ac:BeforeControl ac:AfterControl ) .
+
+ac:EvaluationBasis a owl:Class ;
+    owl:oneOf ( ac:Observed ac:Projected ) .
+
+ac:Dimension a owl:Class ;
+    owl:oneOf ( ac:Likelihood ac:Impact ac:RiskLevel ) .
+
+[] a owl:AllDifferent ;
+    owl:distinctMembers ( ac:BeforeControl ac:AfterControl ) .
+
+[] a owl:AllDifferent ;
+    owl:distinctMembers ( ac:Observed ac:Projected ) .
+
+[] a owl:AllDifferent ;
+    owl:distinctMembers ( ac:Likelihood ac:Impact ac:RiskLevel ) .
+

@@ -1,13 +1,12 @@
 {
-  "version": "0.2.0-rc.2",
+  "version": "0.2.0-rc.3",
   "status": "tested_candidate_not_publication_release",
-  "manifest": "ontology/releases/0.2.0-rc.2/manifest.json",
+  "manifest": "ontology/releases/0.2.0-rc.3/manifest.json",
   "module_count": 7,
-  "scope": "six inherited modules plus qualified context and opt-in named-participant evidence",
-  "historical_version": "0.2.0-rc.1",
+  "historical_version": "0.2.0-rc.2",
   "limits": [
-    "Full OntoUML, scenario type-level resolution and foundational helper identity decisions remain open",
-    "No new real case or expert responses",
-    "Native SQL currently covers temporal context only, not named counterpart evidence"
+    "Complete editable OntoUML and print rendering pending",
+    "New identity/workflow helpers are not yet part of the SQL round-trip contract",
+    "Synthetic evidence only; no new expert responses or final paper"
   ]
 }

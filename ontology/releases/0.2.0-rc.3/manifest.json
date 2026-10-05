@@ -1,0 +1,75 @@
+{
+  "candidate_version": "0.2.0-rc.3",
+  "previous_candidate": "0.2.0-rc.2",
+  "baseline_commit": "7d95a05f1b5ef7c67f9750e09e2da9f8d4e5d78c",
+  "publication_ready": false,
+  "module_count": 7,
+  "domain_concepts": {
+    "local_classes": 35,
+    "markers": 4,
+    "undeclared": 8
+  },
+  "operational_helpers": {
+    "existing_terms": 26,
+    "new_classes": 5,
+    "new_object_properties": 6
+  },
+  "semantic_changes": [
+    "Scenario is now a subclass of SituationType; explicit punned declarations for scenario types",
+    "Managed information artifact, immutable version and abstract content are distinct",
+    "Workflow values are QualityValues; temporal attribution situations are separate"
+  ],
+  "source_sha256": {
+    "ontology/releases/0.2.0-rc.3/core.ttl": "7d14f3e4d76500f8719771bc581f90f3242bc4aa566fea902fe73383ef19ef7d",
+    "ontology/releases/0.2.0-rc.3/enterprise.ttl": "477f05cdfdd3f9cc89dfa447b72b8264a29d25e56e1667a5dbcd9c1b177a8ffe",
+    "ontology/releases/0.2.0-rc.3/method.ttl": "a2f3e535ac8698ded3d3e999d3eac3d5deae8e9efddeff8562a1470f56cba216",
+    "ontology/releases/0.2.0-rc.3/governance.ttl": "d61c9d81ab67266993c9bdcc56825f23697017fdf96178d4201e5d6e2b132a13",
+    "ontology/releases/0.2.0-rc.3/pharma.ttl": "4fed4f7dc8b7c81126f1fb9b972354c468780226dbab8513888a05b70929cb79",
+    "ontology/releases/0.2.0-rc.3/mappings.ttl": "6addb29a838a56a8f05f1496453f294406a316d7f3455bf4788cf7465c8534d0",
+    "ontology/releases/0.2.0-rc.3/assessment-context.ttl": "038d74d20ae627f081d5f09386bdd69a1be5bdb6b82bd05531b66b9baf605c72",
+    "ontology/releases/0.2.0-rc.3/catalog.xml": "d38b29f8dd9afdfa6d811ed48eacea4c40645d95e07017a2262248ade324d9f8",
+    "ontology/releases/0.2.0-rc.3/profile-iri-registry.csv": "53e9a2b7f781ba08c85bd8f367c5505fa37f4c543c2ee9488b698de822150e25",
+    "ontology/releases/0.2.0-rc.3/information-state-iri-registry.csv": "26173d47919c17e0de0d3ce57612482c55067c9a396a5ed53c49b34f5b4b9751",
+    "ontology/vendor/gufo-v1.0.0.ttl": "b234c7a22d738b66dc8fcf735146fdbe828122e2a04bec43c8c9b08f34fd9027",
+    "shapes/semantic-identity-v0.2.0-rc.3.ttl": "3a8f73330d139c0a7184b27aa2d1965b740e02481f8f2f07b562055ed06b5152",
+    "testdata/foundational/semantic-identity-v0.2.0-rc.3.ttl": "7b950cafc74f2f7a76729f66ae314aa8aeea162155cebe4f15663ed82631b55e",
+    "rules/enterprise/workflow-at-v0.2.0-rc.3.rq": "783de3e4f686ac867762aad989985de58102f40005942c2820ecab7038632b4e",
+    "tools/check_semantic_identity.py": "b8c6c550b5c312a4726053190f3907f322285451454cf31c5c438fd1b46f3b2c",
+    "tools/build_semantic_identity_candidate.py": "2a6af893eda49597159f1d55b4df2855f21b9b40170fcb185ba52c042559f57f",
+    "tools/adapt_scenario_declarations.py": "12f76b388e9376a833f95dcbc79a132107b718d4be6830ff5e239621077b0ec5",
+    "foundational/semantic-identity-v0.2.0-rc.3/decisions.md": "a24641f8a1652f0fe7155ec3c2cf063824b2e9a45ef859703b1f3935db2dc750",
+    "foundational/semantic-identity-v0.2.0-rc.3/concept-category-audit.csv": "449ee5bd108a217aa8a6da98f0ad1f6aab115c89fa965c373e24013eda079d51",
+    "foundational/semantic-identity-v0.2.0-rc.3/relation-formal-audit.csv": "4d521b93d7d7c16709e9f09a442e188c7559c613b98d9183a15f6b14c1f6cbb1",
+    "evaluation/semantic-identity/v0.2.0-rc.3/acceptance-contract.md": "d241d4b5bccfa773f60e3f4e7f736fcb95ff47b5cc69fb3283366e48a767fb65",
+    ".github/workflows/paper1-semantic-identity.yml": "d3f1a9b79b8e7ae634662ae8023be626b4a19fc4565848e1d8148b4d5a0fa635"
+  },
+  "historical_release_sha256": {
+    "ontology/releases/0.2.0-rc.1/README.md": "40736aeacfadc3660dcaba824257da35603b58a68b19d794028a303c984ff753",
+    "ontology/releases/0.2.0-rc.1/assessment-context.ttl": "1b86b2c7c4f997ce4db26bc05ca2b4eaab4064e6ea085701d6f54d3458cce6e3",
+    "ontology/releases/0.2.0-rc.1/catalog.xml": "1be4565387bd407925560ab5d298080a6212deffa6475af05bbddc291c8f9201",
+    "ontology/releases/0.2.0-rc.1/core.ttl": "e018207d0f11b7388ff76def21d9046821cc7337eead8e21ba4ebe509fd5fc49",
+    "ontology/releases/0.2.0-rc.1/enterprise.ttl": "90d2f8965375cd0c250f0bffbfb0425446b22d21ac117446304c7f37138465ad",
+    "ontology/releases/0.2.0-rc.1/governance.ttl": "8fcab364345a9a094cd18cddc644b61051be021f0f553c14166df14d8811422d",
+    "ontology/releases/0.2.0-rc.1/manifest.json": "ffcf8b0f25e9d60305db7236c3a194bf25cb81420b52179214e90ba7d87c6925",
+    "ontology/releases/0.2.0-rc.1/mappings.ttl": "8493e364e6cb5e0579202ccc7ec8c6499bf5a94126a4540d08fc9e4fb5b7fca5",
+    "ontology/releases/0.2.0-rc.1/method.ttl": "5d6ddb6c94a41fac7d8cca2a4c366dbd353f6b1819d5acde32986a7b071db99a",
+    "ontology/releases/0.2.0-rc.1/pharma.ttl": "d214088e075ec3d5255b277c864f31a11952e75add4435b8de2bd21aa847f243",
+    "ontology/releases/0.2.0-rc.1/profile-iri-registry.csv": "6207f13a94363dd8a6ba45203de568f3596626814185f609cfb8bb414c49f14c",
+    "ontology/releases/0.2.0-rc.2/README.md": "6134ea75f7d3a75ae479260c5f7f78b5dd18fbd8c6de806df5b99305cd890ef6",
+    "ontology/releases/0.2.0-rc.2/assessment-context.ttl": "075a0cde80fe2695f6d970a77988618e8bfa8a3c57254c3bbde87fb945e6a922",
+    "ontology/releases/0.2.0-rc.2/catalog.xml": "1cecaf05c7895d068fe43608258f868d1364ccde5350ac4ef1ca479fb4ba479c",
+    "ontology/releases/0.2.0-rc.2/core.ttl": "f2558be29ff32c6fcd62137d2ab949262159ad1ca81ee9891c8140a35f50303e",
+    "ontology/releases/0.2.0-rc.2/enterprise.ttl": "9c6cbaeee0e087e3b39621086d5ef19f4992e5c05d65c66102fe9c043b50364a",
+    "ontology/releases/0.2.0-rc.2/governance.ttl": "35de31ff9b3c064b3573a69c3a266eb2d4a8185a037450748d3f74a4525a5e00",
+    "ontology/releases/0.2.0-rc.2/manifest.json": "0f2534780abeb703f72a49d5cde47aef2d143cf62beecedef969da6107c7e08d",
+    "ontology/releases/0.2.0-rc.2/mappings.ttl": "e37dcebd04d06e94094f57246ee0e094463924c273ff50bea68b539104aa22de",
+    "ontology/releases/0.2.0-rc.2/method.ttl": "99a0c109f3c454fdbbd1ea8f927030342a8a86a85bc701fc2936e7227a5bdb24",
+    "ontology/releases/0.2.0-rc.2/pharma.ttl": "4ff99cfb204b5a33aa8c25ad5253efa4c0727b92d71f515e05193031da128bfc",
+    "ontology/releases/0.2.0-rc.2/profile-iri-registry.csv": "53e9a2b7f781ba08c85bd8f367c5505fa37f4c543c2ee9488b698de822150e25"
+  },
+  "limits": [
+    "Full editable OntoUML pending",
+    "New helpers not yet in SQL round-trip",
+    "No new real case or expert evidence"
+  ]
+}

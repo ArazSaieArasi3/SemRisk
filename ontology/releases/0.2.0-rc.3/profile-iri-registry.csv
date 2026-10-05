@@ -1,0 +1,27 @@
+iri,kind,version,scope
+urn:semrisk:profile:assessment-context:ControlBaseline,Class,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:Dimension,Class,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:EvaluationBasis,Class,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:GroundedRiskResponsibility,Class,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:NumericScale,Class,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:QualifiedAssessmentResult,Class,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:AfterControl,NamedIndividual,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:BeforeControl,NamedIndividual,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:Impact,NamedIndividual,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:Likelihood,NamedIndividual,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:Observed,NamedIndividual,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:Projected,NamedIndividual,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:RiskLevel,NamedIndividual,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:controlBaseline,ObjectProperty,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:dimension,ObjectProperty,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:evaluationBasis,ObjectProperty,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:method,ObjectProperty,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:scale,ObjectProperty,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:assessedAt,DatatypeProperty,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:maximum,DatatypeProperty,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:methodVersion,DatatypeProperty,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:minimum,DatatypeProperty,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:numericValue,DatatypeProperty,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:referenceTime,DatatypeProperty,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:validFrom,DatatypeProperty,0.2.0-rc.2,operational helper; not additional core concept
+urn:semrisk:profile:assessment-context:validTo,DatatypeProperty,0.2.0-rc.2,operational helper; not additional core concept

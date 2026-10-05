@@ -1,3 +1,16 @@
+# Current revision status — Run 6, 2026-10-05
+
+**Current stage:** the three remaining shared semantic decisions are implemented in candidate **0.2.0-rc.3**. Next is the full editable OntoUML model and publication-scale figure. [Run 6 report](run-6-report.md); [PR #135](https://github.com/ArazSaieArasi3/SemRisk/pull/135); [source-bound evidence](../../../evaluation/semantic-identity/v0.2.0-rc.3/ci-evidence.json).
+
+- Semantic batch: **3/3** decisions implemented/tested; **31/31** bounded checks including **17** negative cases; **21** real type entailments, **1** non-entailment countermodel and **3** rejected contradictions.
+- Package contracts: **3/19 = 15.8%**, unchanged. Requirement evidence: **18/90 = 20%**, with all **90/90 routed**. These are scope-specific counts, not paper readiness or a scientific-quality score.
+- Old temporal/database checks preserved. New workflow/content helpers are not yet part of the SQL round-trip contract.
+- No new real-case records, expert responses or final Word/PDF. The 7-page IEEE target and absolute 8-page cap remain active.
+
+Previous evidence is retained below; current handoff supersedes its pending-decision statements.
+
+---
+
 # Current revision status — Run 5, 2026-10-05
 
 Publication checkpoint: **8/8 Run 5 deliverables verified**. PR #133 merged at `d439499dad12097daf55d8eecca0e3dddc1cd660`. Exact readback: 45/45 file hashes, five file contents, 8/8 issue bodies and all 13 CI job types. [Run 5 readback](run-5-readback.json). HermiT **1.4.5.456** was identified from the actual checksum-pinned JAR; original 0.2.0-rc.1 temporal artifacts remain unchanged.
