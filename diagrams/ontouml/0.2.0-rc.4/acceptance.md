@@ -1,0 +1,3 @@
+# Run 8 diagram contract
+
+Reuse the Run 7 full inventory; account for all 47 concepts and 40 registered relation decisions. Use standard supported stereotypes, preserve external/pattern distinctions and the separate 11-class helper inventory. Add Exposure links and NumericScale-to-ArtifactVersion inheritance from rc.4, with source-bound cardinalities. Maintain a minimum 7 pt review font, inspect all rendered pages, and keep the complete companion distinct from the scoped paper panel. Reject missing concepts, silently invented semantic bounds, fake stereotypes or a claimed native-editor/full-UFO PASS without actual execution. The parent scientific contract was fixed before implementation in `evaluation/exposure-scale/v0.2.0-rc.4/acceptance-contract.md`.

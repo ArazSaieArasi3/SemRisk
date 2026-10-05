@@ -1,0 +1,16 @@
+digraph G {
+graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.42", ranksep="0.65", splines=polyline, outputorder=edgesfirst];
+node [shape=plain, fontname="Helvetica", fontsize=14];
+edge [fontname="Helvetica", fontsize=11, color="#526477", arrowsize=0.65];
+"SR-CPT-001" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#fff0cf"><TR><TD><FONT POINT-SIZE="11">PATTERN BOUNDARY</FONT></TD></TR><TR><TD><B>Risk</B></TD></TR></TABLE>>];
+"SR-CPT-006" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«type»</FONT></TD></TR><TR><TD><B>Risk Scenario</B></TD></TR></TABLE>>];
+"SR-CPT-032" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Risk Register</B></TD></TR></TABLE>>];
+"SR-CPT-033" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Risk Register Entry</B></TD></TR></TABLE>>];
+"SR-CPT-034" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«subkind»</FONT></TD></TR><TR><TD><B>Scenario Description</B></TD></TR></TABLE>>];
+"SR-CPT-036" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#40546c" BGCOLOR="#e7f2fc"><TR><TD><FONT POINT-SIZE="11">«abstract»</FONT></TD></TR><TR><TD><B>Workflow State</B></TD></TR></TABLE>>];
+"SR-CPT-033" -> "SR-CPT-001" [arrowhead=none, label="concernsRisk", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-001-view-1-1"];
+"SR-CPT-034" -> "SR-CPT-001" [arrowhead=none, label="concernsRisk", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-001-view-2-1"];
+"SR-CPT-034" -> "SR-CPT-006" [arrowhead=none, label="describesScenario", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-002"];
+"SR-CPT-032" -> "SR-CPT-033" [arrowhead=none, label="registerContainsEntry", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-029"];
+"SR-CPT-033" -> "SR-CPT-036" [arrowhead=none, label="hasWorkflowState", taillabel="0..*", headlabel="0..*", labeldistance=1.8, id="SR-REL-030"];
+}

@@ -1,12 +1,13 @@
 {
-  "version": "0.2.0-rc.3",
+  "version": "0.2.0-rc.4",
   "status": "tested_candidate_not_publication_release",
-  "manifest": "ontology/releases/0.2.0-rc.3/manifest.json",
+  "manifest": "ontology/releases/0.2.0-rc.4/manifest.json",
   "module_count": 7,
-  "historical_version": "0.2.0-rc.2",
+  "historical_version": "0.2.0-rc.3",
+  "diagram": "diagrams/ontouml/0.2.0-rc.4/README.md",
   "limits": [
-    "Complete editable OntoUML and print rendering pending",
-    "New identity/workflow helpers are not yet part of the SQL round-trip contract",
-    "Synthetic evidence only; no new expert responses or final paper"
+    "Full native-editor/antipattern and IEEE figure integration remain open",
+    "SQL parity is bounded to the existing temporal profile and the new Exposure adapter; scale/content/workflow coverage incomplete",
+    "Synthetic evidence only; no new expert responses or final manuscript"
   ]
 }

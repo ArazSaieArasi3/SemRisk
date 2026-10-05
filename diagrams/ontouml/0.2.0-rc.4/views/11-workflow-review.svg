@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1190.55pt" height="841.89pt" viewBox="0 0 1190.55 841.89"><rect width="100%" height="100%" fill="white" /><text font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#14283e" x="45" y="45">11   Scheme-qualified temporal workflow</text><text font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#14283e" x="45" y="75">SemRisk 0.2.0-rc.4 | OntoUML-based view with explicit scope boundaries</text><g transform="translate(286.04807302231234 110) scale(1.3020081135902637)"><svg width="475.0" height="493.0" viewBox="0.00 0.00 475.00 493.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 471)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-21.6,21.6 -21.6,-471 453.07,-471 453.07,21.6 -21.6,21.6" />
+
+<g id="HP-scheme" class="edge">
+<title>H-WorkflowAssignment-&gt;H-WorkflowSchemeVersion</title>
+<path fill="none" stroke="#147e74" d="M156.42,-351.5C122.43,-322.16 85.39,-290.2 85.39,-290.2 85.39,-290.2 85.39,-230.2 85.39,-230.2 85.39,-230.2 89.5,-194.97 92.58,-168.54" />
+<text xml:space="preserve" text-anchor="middle" x="104.65" y="-256.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">scheme</text>
+<text xml:space="preserve" text-anchor="middle" x="98.25" y="-182.32" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">1</text>
+<text xml:space="preserve" text-anchor="middle" x="139.1" y="-343.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">0..*</text>
+</g>
+
+<g id="HP-record" class="edge">
+<title>H-WorkflowAssignment-&gt;SR-CPT-033</title>
+<path fill="none" stroke="#147e74" d="M211.91,-351.45C211.91,-331.03 211.91,-307.87 211.91,-290.13" />
+<text xml:space="preserve" text-anchor="middle" x="227.5" y="-317.5" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">record</text>
+<text xml:space="preserve" text-anchor="middle" x="219.52" y="-303.14" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">1</text>
+<text xml:space="preserve" text-anchor="middle" x="204.3" y="-331.84" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">0..*</text>
+</g>
+
+<g id="HP-value" class="edge">
+<title>H-WorkflowAssignment-&gt;SR-CPT-036</title>
+<path fill="none" stroke="#147e74" d="M267.77,-351.45C291.56,-331.03 318.54,-307.87 339.21,-290.13" />
+<text xml:space="preserve" text-anchor="middle" x="319.98" y="-317.5" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">value</text>
+<text xml:space="preserve" text-anchor="middle" x="331.78" y="-303.23" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">1</text>
+<text xml:space="preserve" text-anchor="middle" x="275.19" y="-331.75" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">0..*</text>
+</g>
+
+<g id="GEN-H-WorkflowSchemeVersion-H-ArtifactVersion" class="edge">
+<title>H-WorkflowSchemeVersion-&gt;H-ArtifactVersion</title>
+<path fill="none" stroke="#34465d" d="M95.91,-109.04C95.91,-96.32 95.91,-81.22 95.91,-67.72" />
+<polygon fill="none" stroke="#34465d" points="98.19,-67.99 95.91,-61.49 93.64,-67.99 98.19,-67.99" />
+</g>
+
+<g id="HP-inScheme" class="edge">
+<title>SR-CPT-036-&gt;H-WorkflowSchemeVersion</title>
+<path fill="none" stroke="#147e74" d="M314.5,-234.07C270.22,-215.01 209.29,-188.79 163,-168.87" />
+<text xml:space="preserve" text-anchor="middle" x="267.17" y="-196.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">inScheme</text>
+<text xml:space="preserve" text-anchor="middle" x="181" y="-165.03" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">1</text>
+<text xml:space="preserve" text-anchor="middle" x="296.51" y="-231.31" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#147e74">0..*</text>
+</g>
+
+<g id="node1" class="node">
+<title>H-ArtifactVersion</title>
+<polygon fill="#e8f5f0" stroke="none" points="35.79,0 35.79,-60 156.03,-60 156.03,0 35.79,0" />
+<text xml:space="preserve" text-anchor="start" x="70.84" y="-41" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;subkind&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="43.79" y="-13.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Artifact Version</text>
+<polygon fill="none" stroke="#40546c" points="35.79,0 35.79,-60 156.03,-60 156.03,0 35.79,0" />
+</g>
+
+<g id="node2" class="node">
+<title>H-WorkflowAssignment</title>
+<polygon fill="#e8f5f0" stroke="none" points="130.41,-351.4 130.41,-449.4 293.41,-449.4 293.41,-351.4 130.41,-351.4" />
+<text xml:space="preserve" text-anchor="start" x="185.31" y="-430.4" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;situation&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="138.41" y="-402.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Workflow Assignment</text>
+<text xml:space="preserve" text-anchor="start" x="138.41" y="-373.4" font-family="Helvetica,sans-Serif" font-size="10.00">validFrom: dateTime [1]</text>
+<text xml:space="preserve" text-anchor="start" x="138.68" y="-361.4" font-family="Helvetica,sans-Serif" font-size="10.00">validTo: dateTime [0..1]</text>
+<polygon fill="none" stroke="#40546c" points="130.41,-351.4 130.41,-449.4 293.41,-449.4 293.41,-351.4 130.41,-351.4" />
+</g>
+
+<g id="node3" class="node">
+<title>H-WorkflowSchemeVersion</title>
+<polygon fill="#e8f5f0" stroke="none" points="0,-109 0,-169 191.82,-169 191.82,-109 0,-109" />
+<text xml:space="preserve" text-anchor="start" x="70.84" y="-150" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;subkind&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-122.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Workflow Scheme Version</text>
+<polygon fill="none" stroke="#40546c" points="0,-109 0,-169 191.82,-169 191.82,-109 0,-109" />
+</g>
+
+<g id="node4" class="node">
+<title>SR-CPT-033</title>
+<polygon fill="#e7f2fc" stroke="none" points="139.33,-230.2 139.33,-290.2 284.49,-290.2 284.49,-230.2 139.33,-230.2" />
+<text xml:space="preserve" text-anchor="start" x="186.84" y="-271.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;subkind&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="147.33" y="-243.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk Register Entry</text>
+<polygon fill="none" stroke="#40546c" points="139.33,-230.2 139.33,-290.2 284.49,-290.2 284.49,-230.2 139.33,-230.2" />
+</g>
+
+<g id="node5" class="node">
+<title>SR-CPT-036</title>
+<polygon fill="#e7f2fc" stroke="none" points="314.35,-230.2 314.35,-290.2 431.47,-290.2 431.47,-230.2 314.35,-230.2" />
+<text xml:space="preserve" text-anchor="start" x="347.23" y="-271.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;abstract&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="322.35" y="-243.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Workflow State</text>
+<polygon fill="none" stroke="#40546c" points="314.35,-230.2 314.35,-290.2 431.47,-290.2 431.47,-230.2 314.35,-230.2" />
+</g>
+</g>
+</svg></g><text font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#14283e" x="45" y="779.89">Exactly one record/value/scheme per assignment. Half-open intervals; no overlap for the same record and scheme.</text><text font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#14283e" x="45" y="821.89">Blue: implemented | Green: profile helper | Amber: pattern/unclassified | Violet: external/planned</text></svg>

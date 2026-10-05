@@ -1,0 +1,1525 @@
+{
+  "name": "G",
+  "directed": true,
+  "strict": false,
+  "_draw_": 
+  [
+    {
+      "op": "c",
+      "grad": "none",
+      "color": "#fffffe00"
+    },
+    {
+      "op": "C",
+      "grad": "none",
+      "color": "#ffffff"
+    },
+    {
+      "op": "P",
+      "points": [[-21.600,-21.600],[-21.600,496.400],[780.880,496.400],[780.880,-21.600]]
+    }
+  ],
+  "bb": "0,0,759.28,474.8",
+  "bgcolor": "white",
+  "nodesep": "0.42",
+  "outputorder": "edgesfirst",
+  "pad": "0.3",
+  "rankdir": "TB",
+  "ranksep": "0.65",
+  "splines": "polyline",
+  "xdotversion": "1.7",
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "B-Actor",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f0e9fb"
+        },
+        {
+          "op": "P",
+          "points": [[133.550,0.000],[133.550,60.000],[271.790,60.000],[271.790,0.000]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [141.550,41.000],
+          "align": "l",
+          "width": 122.240,
+          "text": "ENDPOINT BOUNDARY"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [154.820,13.200],
+          "align": "l",
+          "width": 95.700,
+          "text": "External Actor"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[133.550,0.000],[133.550,60.000],[271.790,60.000],[271.790,0.000]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#f0e9fb\"><TR><TD><FONT POINT-SIZE=\"11\">ENDPOINT BOUNDARY<\/FONT><\/TD><\/TR><TR><TD><B>External Actor<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "202.67,30",
+      "shape": "plain",
+      "width": "1.9199"
+    },
+    {
+      "_gvid": 1,
+      "name": "B-Endurant",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7f2fc"
+        },
+        {
+          "op": "P",
+          "points": [[122.500,242.400],[122.500,302.400],[266.850,302.400],[266.850,242.400]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [167.460,283.400],
+          "align": "l",
+          "width": 54.410,
+          "text": "«category»"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [130.500,255.600],
+          "align": "l",
+          "width": 128.350,
+          "text": "Endurant (external)"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[122.500,242.400],[122.500,302.400],[266.850,302.400],[266.850,242.400]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#e7f2fc\"><TR><TD><FONT POINT-SIZE=\"11\">«category»<\/FONT><\/TD><\/TR><TR><TD><B>Endurant (external)<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "194.67,272.4",
+      "shape": "plain",
+      "width": "2.0049"
+    },
+    {
+      "_gvid": 2,
+      "name": "H-GroundedRiskResponsibility",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e8f5f0"
+        },
+        {
+          "op": "P",
+          "points": [[143.440,376.800],[143.440,474.800],[325.900,474.800],[325.900,376.800]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [212.970,455.800],
+          "align": "l",
+          "width": 43.400,
+          "text": "«relator»"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [151.440,428.000],
+          "align": "l",
+          "width": 166.460,
+          "text": "Grounded Responsibility"
+        },
+        {
+          "op": "F",
+          "size": 10.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 0
+        },
+        {
+          "op": "T",
+          "pt": [151.440,398.800],
+          "align": "l",
+          "width": 116.150,
+          "text": "validFrom: dateTime [0..1]"
+        },
+        {
+          "op": "F",
+          "size": 10.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [157.270,386.800],
+          "align": "l",
+          "width": 104.490,
+          "text": "validTo: dateTime [0..1]"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[143.440,376.800],[143.440,474.800],[325.900,474.800],[325.900,376.800]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "1.3611",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#e8f5f0\"><TR><TD><FONT POINT-SIZE=\"11\">«relator»<\/FONT><\/TD><\/TR><TR><TD><B>Grounded Responsibility<\/B><\/TD><\/TR><TR><TD ALIGN=\"LEFT\"><FONT POINT-SIZE=\"10\">validFrom: dateTime [0..1]<BR ALIGN=\"LEFT\"\/>validTo: dateTime [0..1]<\/FONT><\/TD><\/TR><\/TABLE>",
+      "pos": "234.67,425.8",
+      "shape": "plain",
+      "width": "2.5341"
+    },
+    {
+      "_gvid": 3,
+      "name": "SR-CPT-001",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#fff0cf"
+        },
+        {
+          "op": "P",
+          "points": [[136.300,121.200],[136.300,181.200],[269.040,181.200],[269.040,121.200]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [144.300,162.200],
+          "align": "l",
+          "width": 116.740,
+          "text": "PATTERN BOUNDARY"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [187.890,134.400],
+          "align": "l",
+          "width": 29.570,
+          "text": "Risk"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[136.300,121.200],[136.300,181.200],[269.040,181.200],[269.040,121.200]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#fff0cf\"><TR><TD><FONT POINT-SIZE=\"11\">PATTERN BOUNDARY<\/FONT><\/TD><\/TR><TR><TD><B>Risk<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "202.67,151.2",
+      "shape": "plain",
+      "width": "1.8435"
+    },
+    {
+      "_gvid": 4,
+      "name": "SR-CPT-027",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7f2fc"
+        },
+        {
+          "op": "P",
+          "points": [[299.370,121.200],[299.370,181.200],[449.970,181.200],[449.970,121.200]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [349.600,162.200],
+          "align": "l",
+          "width": 50.140,
+          "text": "«subkind»"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [307.370,134.400],
+          "align": "l",
+          "width": 134.600,
+          "text": "Risk Treatment Plan"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[299.370,121.200],[299.370,181.200],[449.970,181.200],[449.970,121.200]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#e7f2fc\"><TR><TD><FONT POINT-SIZE=\"11\">«subkind»<\/FONT><\/TD><\/TR><TR><TD><B>Risk Treatment Plan<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "374.67,151.2",
+      "shape": "plain",
+      "width": "2.0917"
+    },
+    {
+      "_gvid": 5,
+      "name": "SR-CPT-030",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7f2fc"
+        },
+        {
+          "op": "P",
+          "points": [[480.160,121.200],[480.160,181.200],[573.190,181.200],[573.190,121.200]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [498.550,162.200],
+          "align": "l",
+          "width": 56.240,
+          "text": "«roleMixin»"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [488.160,134.400],
+          "align": "l",
+          "width": 77.030,
+          "text": "Risk Owner"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[480.160,121.200],[480.160,181.200],[573.190,181.200],[573.190,121.200]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#e7f2fc\"><TR><TD><FONT POINT-SIZE=\"11\">«roleMixin»<\/FONT><\/TD><\/TR><TR><TD><B>Risk Owner<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "526.67,151.2",
+      "shape": "plain",
+      "width": "1.292"
+    },
+    {
+      "_gvid": 6,
+      "name": "SR-CPT-031",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7f2fc"
+        },
+        {
+          "op": "P",
+          "points": [[297.100,242.400],[297.100,302.400],[442.240,302.400],[442.240,242.400]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [347.970,283.400],
+          "align": "l",
+          "width": 43.400,
+          "text": "«relator»"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [305.100,255.600],
+          "align": "l",
+          "width": 129.140,
+          "text": "Risk Responsibility"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[297.100,242.400],[297.100,302.400],[442.240,302.400],[442.240,242.400]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#e7f2fc\"><TR><TD><FONT POINT-SIZE=\"11\">«relator»<\/FONT><\/TD><\/TR><TR><TD><B>Risk Responsibility<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "369.67,272.4",
+      "shape": "plain",
+      "width": "2.0159"
+    },
+    {
+      "_gvid": 7,
+      "name": "SR-CPT-033",
+      "_ldraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#fffffe00"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#e7f2fc"
+        },
+        {
+          "op": "P",
+          "points": [[607.090,121.200],[607.090,181.200],[752.250,181.200],[752.250,121.200]]
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [654.600,162.200],
+          "align": "l",
+          "width": 50.140,
+          "text": "«subkind»"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "t",
+          "fontchar": 1
+        },
+        {
+          "op": "T",
+          "pt": [615.090,134.400],
+          "align": "l",
+          "width": 129.160,
+          "text": "Risk Register Entry"
+        },
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#40546c"
+        },
+        {
+          "op": "p",
+          "points": [[607.090,121.200],[607.090,181.200],[752.250,181.200],[752.250,121.200]]
+        }
+      ],
+      "fontname": "Helvetica",
+      "fontsize": "14",
+      "height": "0.83333",
+      "label": "<TABLE BORDER=\"1\" CELLBORDER=\"0\" CELLSPACING=\"0\" CELLPADDING=\"7\" COLOR=\"#40546c\" BGCOLOR=\"#e7f2fc\"><TR><TD><FONT POINT-SIZE=\"11\">«subkind»<\/FONT><\/TD><\/TR><TR><TD><B>Risk Register Entry<\/B><\/TD><\/TR><\/TABLE>",
+      "pos": "679.67,151.2",
+      "shape": "plain",
+      "width": "2.0161"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 2,
+      "tail": 3,
+      "head": 0,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526477"
+        },
+        {
+          "op": "b",
+          "points": [[202.670,121.350],[202.670,102.600],[202.670,78.280],[202.670,59.590]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [210.280,72.600],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [239.960,87.300],
+          "align": "c",
+          "width": 74.580,
+          "text": "\/hasRiskOwner"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [195.060,101.730],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "210.28,75.903",
+      "headlabel": "0..*",
+      "id": "SR-REL-026-view-1-1",
+      "label": "\/hasRiskOwner",
+      "labeldistance": "1.8",
+      "lp": "239.96,90.6",
+      "pos": "202.67,121.35 202.67,102.6 202.67,78.277 202.67,59.589",
+      "tail_lp": "195.06,105.03",
+      "taillabel": "0..*"
+    },
+    {
+      "_gvid": 8,
+      "tail": 7,
+      "head": 0,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526477"
+        },
+        {
+          "op": "b",
+          "points": [[607.530,127.210],[596.480,123.690],[588.670,121.200],[588.670,121.200],[588.670,121.200],[382.710,73.070],[271.680,47.130]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [289.300,40.130],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [522.440,87.300],
+          "align": "c",
+          "width": 74.580,
+          "text": "\/hasRiskOwner"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [589.670,126.200],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "289.3,43.431",
+      "headlabel": "0..*",
+      "id": "SR-REL-026-view-2-1",
+      "label": "\/hasRiskOwner",
+      "labeldistance": "1.8",
+      "lp": "522.44,90.6",
+      "pos": "607.53,127.21 596.48,123.69 588.67,121.2 588.67,121.2 588.67,121.2 382.71,73.071 271.68,47.126",
+      "tail_lp": "589.67,129.5",
+      "taillabel": "0..*"
+    },
+    {
+      "_gvid": 4,
+      "tail": 6,
+      "head": 3,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526477"
+        },
+        {
+          "op": "b",
+          "points": [[298.220,242.420],[267.720,230.050],[239.010,218.400],[239.010,218.400],[239.010,218.400],[228.300,198.880],[218.500,181.040]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [233.020,188.380],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [299.840,208.500],
+          "align": "c",
+          "width": 121.660,
+          "text": "assignsResponsibilityFor"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [280.250,240.040],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "233.02,191.68",
+      "headlabel": "0..*",
+      "id": "SR-REL-027-view-1-1",
+      "label": "assignsResponsibilityFor",
+      "labeldistance": "1.8",
+      "lp": "299.84,211.8",
+      "pos": "298.22,242.42 267.72,230.05 239.01,218.4 239.01,218.4 239.01,218.4 228.3,198.88 218.5,181.04",
+      "tail_lp": "280.25,243.34",
+      "taillabel": "0..*"
+    },
+    {
+      "_gvid": 7,
+      "tail": 6,
+      "head": 7,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526477"
+        },
+        {
+          "op": "b",
+          "points": [[442.230,256.500],[518.540,240.820],[627.670,218.400],[627.670,218.400],[627.670,218.400],[643.000,198.880],[657.010,181.040]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [652.920,195.270],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [698.450,208.500],
+          "align": "c",
+          "width": 121.660,
+          "text": "assignsResponsibilityFor"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [456.670,242.460],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "652.92,198.57",
+      "headlabel": "0..*",
+      "id": "SR-REL-027-view-1-2",
+      "label": "assignsResponsibilityFor",
+      "labeldistance": "1.8",
+      "lp": "698.45,211.8",
+      "pos": "442.23,256.5 518.54,240.82 627.67,218.4 627.67,218.4 627.67,218.4 643,198.88 657.01,181.04",
+      "tail_lp": "456.67,245.76",
+      "taillabel": "0..*"
+    },
+    {
+      "_gvid": 5,
+      "tail": 6,
+      "head": 4,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526477"
+        },
+        {
+          "op": "b",
+          "points": [[368.760,242.420],[368.380,230.050],[368.010,218.400],[368.010,218.400],[368.010,218.400],[368.010,205.200],[368.010,205.200],[368.010,205.200],[369.470,193.550],[371.030,181.180]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [376.540,195.020],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [428.840,208.500],
+          "align": "c",
+          "width": 121.660,
+          "text": "assignsResponsibilityFor"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [360.650,223.050],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "376.54,198.32",
+      "headlabel": "0..*",
+      "id": "SR-REL-027-view-1-3",
+      "label": "assignsResponsibilityFor",
+      "labeldistance": "1.8",
+      "lp": "428.84,211.8",
+      "pos": "368.76,242.42 368.38,230.05 368.01,218.4 368.01,218.4 368.01,218.4 368.01,205.2 368.01,205.2 368.01,205.2 369.47,193.55 371.03,181.18",
+      "tail_lp": "360.65,226.35",
+      "taillabel": "0..*"
+    },
+    {
+      "_gvid": 6,
+      "tail": 6,
+      "head": 5,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526477"
+        },
+        {
+          "op": "b",
+          "points": [[436.930,242.420],[465.650,230.050],[492.670,218.400],[492.670,218.400],[492.670,218.400],[502.700,198.880],[511.860,181.040]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [511.170,195.730],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [560.010,208.500],
+          "align": "c",
+          "width": 121.670,
+          "text": "responsibilityAssignedTo"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [448.900,225.680],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "511.17,199.03",
+      "headlabel": "0..*",
+      "id": "SR-REL-028-view-1-1",
+      "label": "responsibilityAssignedTo",
+      "labeldistance": "1.8",
+      "lp": "560.01,211.8",
+      "pos": "436.93,242.42 465.65,230.05 492.67,218.4 492.67,218.4 492.67,218.4 502.7,198.88 511.86,181.04",
+      "tail_lp": "448.9,228.98",
+      "taillabel": "0..*"
+    },
+    {
+      "_gvid": 3,
+      "tail": 6,
+      "head": 0,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#526477"
+        },
+        {
+          "op": "b",
+          "points": [[297.400,247.580],[288.060,244.510],[281.670,242.400],[281.670,242.400],[281.670,242.400],[0.000,181.200],[0.000,181.200],[0.000,181.200],[0.000,121.200],[0.000,121.200],[0.000,121.200],[78.430,86.300],[137.710,59.910]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [125.900,70.200],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [60.840,147.900],
+          "align": "c",
+          "width": 121.670,
+          "text": "responsibilityAssignedTo"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [279.530,246.400],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#526477",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "125.9,73.495",
+      "headlabel": "0..*",
+      "id": "SR-REL-028-view-1-2",
+      "label": "responsibilityAssignedTo",
+      "labeldistance": "1.8",
+      "lp": "60.836,151.2",
+      "pos": "297.4,247.58 288.06,244.51 281.67,242.4 281.67,242.4 281.67,242.4 0,181.2 0,181.2 0,181.2 0,121.2 0,121.2 0,121.2 78.428,86.295 137.71,59.912",
+      "tail_lp": "279.53,249.7",
+      "taillabel": "0..*"
+    },
+    {
+      "_gvid": 1,
+      "tail": 2,
+      "head": 6,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#34465d"
+        },
+        {
+          "op": "b",
+          "points": [[277.390,376.900],[297.350,354.500],[320.680,328.340],[338.890,307.920]]
+        }
+      ],
+      "_hdraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#34465d"
+        },
+        {
+          "op": "p",
+          "points": [[340.480,309.550],[343.110,303.180],[337.090,306.520]]
+        }
+      ],
+      "arrowhead": "empty",
+      "arrowsize": "0.65",
+      "color": "#34465d",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "id": "GEN-H-GroundedRiskResponsibility-SR-CPT-031",
+      "label": "",
+      "pos": "e,344.12,302.06 277.39,376.9 297.35,354.5 320.68,328.34 338.89,307.92"
+    },
+    {
+      "_gvid": 0,
+      "tail": 2,
+      "head": 1,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "b",
+          "points": [[222.020,376.900],[215.510,352.290],[207.810,323.140],[202.240,302.060]]
+        }
+      ],
+      "_hldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [213.760,312.580],
+          "align": "c",
+          "width": 16.510,
+          "text": "2..*"
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [244.630,342.900],
+          "align": "c",
+          "width": 59.920,
+          "text": "«mediation»"
+        },
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [244.630,329.700],
+          "align": "c",
+          "width": 44.630,
+          "text": "mediates"
+        }
+      ],
+      "_tldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 11.000,
+          "face": "Helvetica"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#147e74"
+        },
+        {
+          "op": "T",
+          "pt": [210.490,359.770],
+          "align": "c",
+          "width": 16.510,
+          "text": "0..*"
+        }
+      ],
+      "arrowhead": "none",
+      "arrowsize": "0.65",
+      "color": "#147e74",
+      "fontcolor": "#147e74",
+      "fontname": "Helvetica",
+      "fontsize": "11",
+      "head_lp": "213.76,315.88",
+      "headlabel": "2..*",
+      "id": "HP-mediates",
+      "label": "«mediation»\\nmediates",
+      "labeldistance": "1.8",
+      "lp": "244.63,339.6",
+      "pos": "222.02,376.9 215.51,352.29 207.81,323.14 202.24,302.06",
+      "tail_lp": "210.49,363.07",
+      "taillabel": "0..*"
+    }
+  ]
+}

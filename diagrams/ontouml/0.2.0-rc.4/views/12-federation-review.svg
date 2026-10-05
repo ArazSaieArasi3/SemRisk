@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1190.55pt" height="841.89pt" viewBox="0 0 1190.55 841.89"><rect width="100%" height="100%" fill="white" /><text font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#14283e" x="45" y="45">12   Enterprise and pharmaceutical references</text><text font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#14283e" x="45" y="75">SemRisk 0.2.0-rc.4 | OntoUML-based view with explicit scope boundaries</text><g transform="translate(45.0 110) scale(1.2947647058823528)"><svg width="850.0" height="224.0" viewBox="0.00 0.00 850.00 224.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 202.8)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-21.6,21.6 -21.6,-202.8 828.15,-202.8 828.15,21.6 -21.6,21.6" />
+
+<g id="SR-REL-010-view-1-1" class="edge">
+<title>SR-CPT-001-&gt;B-Affected</title>
+<path fill="none" stroke="#526477" d="M47.46,-121.22C31.26,-108.85 16.01,-97.2 16.01,-97.2 16.01,-97.2 16.01,-84 16.01,-84 16.01,-84 31.26,-72.35 47.46,-59.98" />
+<text xml:space="preserve" text-anchor="middle" x="32.21" y="-87.3" font-family="Helvetica,sans-Serif" font-size="11.00">affects</text>
+<text xml:space="preserve" text-anchor="middle" x="39.11" y="-72.63" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="29.88" y="-114.06" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="SR-REL-037-view-1-1" class="edge">
+<title>SR-CPT-001-&gt;B-Pharma</title>
+<path fill="none" stroke="#526477" d="M121.89,-121.36C144.45,-103.52 169.13,-84 169.13,-84 169.13,-84 275.24,-63.04 354,-47.48" />
+<text xml:space="preserve" text-anchor="middle" x="235.77" y="-87.3" font-family="Helvetica,sans-Serif" font-size="11.00">pharmaEntityInRiskContext</text>
+<text xml:space="preserve" text-anchor="middle" x="339.47" y="-54.8" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="129.97" y="-101.97" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="SR-REL-037-view-2-1" class="edge">
+<title>SR-CPT-006-&gt;B-Pharma</title>
+<path fill="none" stroke="#526477" d="M696.4,-121.36C679.69,-103.52 661.41,-84 661.41,-84 661.41,-84 584.51,-65.8 520.82,-50.74" />
+<text xml:space="preserve" text-anchor="middle" x="739.91" y="-87.3" font-family="Helvetica,sans-Serif" font-size="11.00">pharmaEntityInRiskContext</text>
+<text xml:space="preserve" text-anchor="middle" x="538.45" y="-43.79" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="679.69" y="-111.35" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="SR-REL-010-view-2-1" class="edge">
+<title>SR-CPT-007-&gt;B-Affected</title>
+<path fill="none" stroke="#526477" d="M229.73,-138.04C173.51,-122.39 83.01,-97.2 83.01,-97.2 83.01,-97.2 83.01,-84 83.01,-84 83.01,-84 83.53,-72.35 84.1,-59.98" />
+<text xml:space="preserve" text-anchor="middle" x="99.21" y="-87.3" font-family="Helvetica,sans-Serif" font-size="11.00">affects</text>
+<text xml:space="preserve" text-anchor="middle" x="90.96" y="-73.32" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="211.97" y="-137.69" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="SR-REL-037-view-3-1" class="edge">
+<title>SR-CPT-007-&gt;B-Pharma</title>
+<path fill="none" stroke="#526477" d="M292.9,-121.36C304.95,-103.52 318.13,-84 318.13,-84 318.13,-84 344.34,-72.35 372.19,-59.98" />
+<text xml:space="preserve" text-anchor="middle" x="384.77" y="-87.3" font-family="Helvetica,sans-Serif" font-size="11.00">pharmaEntityInRiskContext</text>
+<text xml:space="preserve" text-anchor="middle" x="360.37" y="-70.26" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="295.72" y="-100.28" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="SR-REL-010-view-3-1" class="edge">
+<title>SR-CPT-008-&gt;B-Affected</title>
+<path fill="none" stroke="#526477" d="M492.22,-121.36C474.16,-103.52 454.41,-84 454.41,-84 454.41,-84 279.5,-58.88 170.53,-43.23" />
+<text xml:space="preserve" text-anchor="middle" x="483.43" y="-87.3" font-family="Helvetica,sans-Serif" font-size="11.00">affects</text>
+<text xml:space="preserve" text-anchor="middle" x="187.76" y="-34.72" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="475.27" y="-112" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="SR-REL-037-view-4-1" class="edge">
+<title>SR-CPT-008-&gt;B-Pharma</title>
+<path fill="none" stroke="#526477" d="M521.41,-121.36C521.41,-103.52 521.41,-84 521.41,-84 521.41,-84 502.95,-72.35 483.34,-59.98" />
+<text xml:space="preserve" text-anchor="middle" x="588.05" y="-87.3" font-family="Helvetica,sans-Serif" font-size="11.00">pharmaEntityInRiskContext</text>
+<text xml:space="preserve" text-anchor="middle" x="501.2" y="-58.95" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="513.8" y="-101.74" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="node1" class="node">
+<title>B-Affected</title>
+<polygon fill="#f0e9fb" stroke="none" points="0,0 0,-60 170.82,-60 170.82,0 0,0" />
+<text xml:space="preserve" text-anchor="start" x="24.29" y="-41" font-family="Helvetica,sans-Serif" font-size="11.00">ENDPOINT BOUNDARY</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-13.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Affected external entity</text>
+<polygon fill="none" stroke="#40546c" points="0,0 0,-60 170.82,-60 170.82,0 0,0" />
+</g>
+
+<g id="node2" class="node">
+<title>B-Pharma</title>
+<polygon fill="#f0e9fb" stroke="none" points="353.94,0 353.94,-60 520.88,-60 520.88,0 353.94,0" />
+<text xml:space="preserve" text-anchor="start" x="376.29" y="-41" font-family="Helvetica,sans-Serif" font-size="11.00">ENDPOINT BOUNDARY</text>
+<text xml:space="preserve" text-anchor="start" x="361.94" y="-13.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">External pharma entity</text>
+<polygon fill="none" stroke="#40546c" points="353.94,0 353.94,-60 520.88,-60 520.88,0 353.94,0" />
+</g>
+
+<g id="node3" class="node">
+<title>SR-CPT-001</title>
+<polygon fill="#fff0cf" stroke="none" points="19.04,-121.2 19.04,-181.2 151.78,-181.2 151.78,-121.2 19.04,-121.2" />
+<text xml:space="preserve" text-anchor="start" x="27.04" y="-162.2" font-family="Helvetica,sans-Serif" font-size="11.00">PATTERN BOUNDARY</text>
+<text xml:space="preserve" text-anchor="start" x="70.62" y="-134.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk</text>
+<polygon fill="none" stroke="#40546c" points="19.04,-121.2 19.04,-181.2 151.78,-181.2 151.78,-121.2 19.04,-121.2" />
+</g>
+
+<g id="node4" class="node">
+<title>SR-CPT-006</title>
+<polygon fill="#e7f2fc" stroke="none" points="669.11,-121.2 669.11,-181.2 777.71,-181.2 777.71,-121.2 669.11,-121.2" />
+<text xml:space="preserve" text-anchor="start" x="706.9" y="-162.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;type&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="677.11" y="-134.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk Scenario</text>
+<polygon fill="none" stroke="#40546c" points="669.11,-121.2 669.11,-181.2 777.71,-181.2 777.71,-121.2 669.11,-121.2" />
+</g>
+
+<g id="node5" class="node">
+<title>SR-CPT-007</title>
+<polygon fill="#e7f2fc" stroke="none" points="229.62,-121.2 229.62,-181.2 317.2,-181.2 317.2,-121.2 229.62,-121.2" />
+<text xml:space="preserve" text-anchor="start" x="253.84" y="-162.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;event&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="237.62" y="-134.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk Event</text>
+<polygon fill="none" stroke="#40546c" points="229.62,-121.2 229.62,-181.2 317.2,-181.2 317.2,-121.2 229.62,-121.2" />
+</g>
+
+<g id="node6" class="node">
+<title>SR-CPT-008</title>
+<polygon fill="#e7f2fc" stroke="none" points="467.51,-121.2 467.51,-181.2 575.31,-181.2 575.31,-121.2 467.51,-121.2" />
+<text xml:space="preserve" text-anchor="start" x="494.81" y="-162.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;situation&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="475.51" y="-134.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Consequence</text>
+<polygon fill="none" stroke="#40546c" points="467.51,-121.2 467.51,-181.2 575.31,-181.2 575.31,-121.2 467.51,-121.2" />
+</g>
+</g>
+</svg></g><text font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#14283e" x="45" y="779.89">External endpoint references preserve their own identity. No invented CM-PharmE equivalence or asserted global domain.</text><text font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#14283e" x="45" y="821.89">Blue: implemented | Green: profile helper | Amber: pattern/unclassified | Violet: external/planned</text></svg>

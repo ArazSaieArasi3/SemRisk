@@ -312,9 +312,10 @@
       "foundational/semantic-identity-v0.2.0-rc.3/decisions.md",
       "evaluation/semantic-identity/v0.2.0-rc.3/results.json",
       "evaluation/semantic-identity/v0.2.0-rc.3/ci-evidence.json",
-      "ontology/releases/0.2.0-rc.3/manifest.json"
+      "ontology/releases/0.2.0-rc.3/manifest.json",
+      "run-8-report.md"
     ],
-    "acceptance_result": "PARTIAL_PASS_THREE_IDENTITY_DECISIONS_IMPLEMENTED_AND_TESTED",
+    "acceptance_result": "PARTIAL: rc.4 Exposure/scale decisions implemented and locally tested; whole-package gates remain explicit.",
     "remaining": [
       "Resolve scenario type/instance contract, information identity helper pattern and workflow value/quality representation",
       "Build complete editable OntoUML with justified relation ends and source-linked multiplicities",
@@ -372,9 +373,10 @@
       "foundational/semantic-identity-v0.2.0-rc.3/decisions.md",
       "evaluation/semantic-identity/v0.2.0-rc.3/results.json",
       "evaluation/semantic-identity/v0.2.0-rc.3/ci-evidence.json",
-      "ontology/releases/0.2.0-rc.3/manifest.json"
+      "ontology/releases/0.2.0-rc.3/manifest.json",
+      "run-8-report.md"
     ],
-    "acceptance_result": "PARTIAL_PASS_THREE_IDENTITY_DECISIONS_IMPLEMENTED_AND_TESTED",
+    "acceptance_result": "PARTIAL: rc.4 Exposure/scale decisions implemented and locally tested; whole-package gates remain explicit.",
     "remaining": [
       "Resolve scenario type/instance contract, information identity helper pattern and workflow value/quality representation",
       "Build complete editable OntoUML with justified relation ends and source-linked multiplicities",
@@ -432,9 +434,10 @@
       "ontology/releases/0.2.0-rc.3/manifest.json",
       "diagrams/ontouml/0.2.0-rc.3/README.md",
       "diagrams/ontouml/0.2.0-rc.3/validation-results.json",
-      "run-7-report.md"
+      "run-7-report.md",
+      "run-8-report.md"
     ],
-    "acceptance_result": "PARTIAL_PASS_THREE_IDENTITY_DECISIONS_IMPLEMENTED_AND_TESTED",
+    "acceptance_result": "PARTIAL: rc.4 Exposure/scale decisions implemented and locally tested; whole-package gates remain explicit.",
     "remaining": [
       "Resolve scenario type/instance contract, information identity helper pattern and workflow value/quality representation",
       "Build complete editable OntoUML with justified relation ends and source-linked multiplicities",
@@ -545,9 +548,10 @@
       "evaluation/temporal/v0.2.0-rc.1/semantic-results.json",
       "evaluation/temporal/v0.2.0-rc.1/postgres-results.json",
       "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json",
-      "ontology/releases/0.2.0-rc.1/manifest.json"
+      "ontology/releases/0.2.0-rc.1/manifest.json",
+      "run-8-report.md"
     ],
-    "acceptance_result": "PARTIAL_PASS_QUALIFIED_CONTEXT_PROMOTION",
+    "acceptance_result": "PARTIAL: rc.4 Exposure/scale decisions implemented and locally tested; whole-package gates remain explicit.",
     "remaining": [
       "Load actual P09 source-derived case with provenance",
       "Update full ERD and recheck case query outcomes; current importer is synthetic-only"

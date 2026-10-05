@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1190.55pt" height="841.89pt" viewBox="0 0 1190.55 841.89"><rect width="100%" height="100%" fill="white" /><text font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#14283e" x="45" y="45">02   Risk patterns and situational context</text><text font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#14283e" x="45" y="75">SemRisk 0.2.0-rc.4 | OntoUML-based view with explicit scope boundaries</text><g transform="translate(105.95414346895075 110) scale(1.3744967880085652)"><svg width="712.0" height="467.0" viewBox="0.00 0.00 712.00 467.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 445.2)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-21.6,21.6 -21.6,-445.2 690.45,-445.2 690.45,21.6 -21.6,21.6" />
+
+<g id="SR-REL-005-view-1-1" class="edge">
+<title>SR-CPT-001-&gt;SR-CPT-003</title>
+<path fill="none" stroke="#526477" d="M352.54,-363.76C372.75,-345.92 394.87,-326.4 394.87,-326.4 394.87,-326.4 412.01,-314.75 430.21,-302.38" />
+<text xml:space="preserve" text-anchor="middle" x="431.86" y="-329.7" font-family="Helvetica,sans-Serif" font-size="11.00">hasRiskSource</text>
+<text xml:space="preserve" text-anchor="middle" x="420.99" y="-314.54" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="359.74" y="-343.96" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="SR-REL-031" class="edge">
+<title>SR-CPT-001-&gt;SR-CPT-035</title>
+<path fill="none" stroke="#526477" d="M253.61,-364.2C200.78,-341.54 128.4,-310.51 83.42,-291.22" />
+<text xml:space="preserve" text-anchor="middle" x="221.59" y="-329.7" font-family="Helvetica,sans-Serif" font-size="11.00">hasRiskState</text>
+<text xml:space="preserve" text-anchor="middle" x="101.41" y="-287.36" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="235.62" y="-361.46" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="SR-REL-012" class="edge">
+<title>SR-CPT-002-&gt;SR-CPT-009</title>
+<path fill="none" stroke="#526477" d="M472.85,-121.35C472.85,-102.6 472.85,-78.28 472.85,-59.59" />
+<text xml:space="preserve" text-anchor="middle" x="511.68" y="-87.3" font-family="Helvetica,sans-Serif" font-size="11.00">hasVulnerability</text>
+<text xml:space="preserve" text-anchor="middle" x="480.46" y="-72.6" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="465.24" y="-101.73" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="SR-REL-011-view-1-1" class="edge">
+<title>SR-CPT-003-&gt;SR-CPT-002</title>
+<path fill="none" stroke="#526477" d="M472.85,-242.55C472.85,-223.8 472.85,-199.48 472.85,-180.79" />
+<text xml:space="preserve" text-anchor="middle" x="493.33" y="-208.5" font-family="Helvetica,sans-Serif" font-size="11.00">exposes</text>
+<text xml:space="preserve" text-anchor="middle" x="480.46" y="-193.8" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="465.24" y="-222.93" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="SR-REL-011-view-2-1" class="edge">
+<title>SR-CPT-004-&gt;SR-CPT-002</title>
+<path fill="none" stroke="#526477" d="M334.15,-242.55C362.81,-223.87 399.99,-199.66 428.64,-181" />
+<text xml:space="preserve" text-anchor="middle" x="407.32" y="-208.5" font-family="Helvetica,sans-Serif" font-size="11.00">exposes</text>
+<text xml:space="preserve" text-anchor="middle" x="419.12" y="-192.97" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="343.66" y="-223.97" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="SR-REL-039" class="edge">
+<title>SR-CPT-010-&gt;SR-CPT-002</title>
+<path fill="none" stroke="#526477" d="M531.53,-368.43C554.47,-354.45 578.85,-339.6 578.85,-339.6 578.85,-339.6 578.85,-326.4 578.85,-326.4 578.85,-326.4 553.85,-242.4 553.85,-242.4 553.85,-242.4 520.85,-205.2 520.85,-205.2 520.85,-205.2 510.3,-193.55 499.1,-181.18" />
+<text xml:space="preserve" text-anchor="middle" x="620.23" y="-269.1" font-family="Helvetica,sans-Serif" font-size="11.00">hasExposedSubject</text>
+<text xml:space="preserve" text-anchor="middle" x="515.68" y="-184.87" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="541.5" y="-350.14" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="SR-REL-040" class="edge">
+<title>SR-CPT-010-&gt;SR-CPT-003</title>
+<path fill="none" stroke="#526477" d="M483.61,-363.62C480.1,-351.25 476.79,-339.6 476.79,-339.6 476.79,-339.6 475.63,-320.08 474.57,-302.24" />
+<text xml:space="preserve" text-anchor="middle" x="526.32" y="-329.7" font-family="Helvetica,sans-Serif" font-size="11.00">hasExposureSource</text>
+<text xml:space="preserve" text-anchor="middle" x="483.13" y="-314.78" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="471.84" y="-346.71" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="SR-REL-032" class="edge">
+<title>SR-CPT-035-&gt;SR-CPT-035</title>
+<path fill="none" stroke="#526477" d="M83.55,-283.71C99.98,-284.28 113.7,-280.51 113.7,-272.4 113.7,-264.29 99.98,-260.52 83.55,-261.09" />
+<text xml:space="preserve" text-anchor="middle" x="149.16" y="-269.1" font-family="Helvetica,sans-Serif" font-size="11.00">precedesState</text>
+<text xml:space="preserve" text-anchor="middle" x="99.8" y="-250.05" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+<text xml:space="preserve" text-anchor="middle" x="99.93" y="-272.94" font-family="Helvetica,sans-Serif" font-size="11.00">0..*</text>
+</g>
+
+<g id="node1" class="node">
+<title>SR-CPT-001</title>
+<polygon fill="#fff0cf" stroke="none" points="253.48,-363.6 253.48,-423.6 386.22,-423.6 386.22,-363.6 253.48,-363.6" />
+<text xml:space="preserve" text-anchor="start" x="261.48" y="-404.6" font-family="Helvetica,sans-Serif" font-size="11.00">PATTERN BOUNDARY</text>
+<text xml:space="preserve" text-anchor="start" x="305.06" y="-376.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk</text>
+<polygon fill="none" stroke="#40546c" points="253.48,-363.6 253.48,-423.6 386.22,-423.6 386.22,-363.6 253.48,-363.6" />
+</g>
+
+<g id="node2" class="node">
+<title>SR-CPT-002</title>
+<polygon fill="#e7f2fc" stroke="none" points="422.83,-121.2 422.83,-181.2 522.86,-181.2 522.86,-121.2 422.83,-121.2" />
+<text xml:space="preserve" text-anchor="start" x="444.73" y="-162.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;roleMixin&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="430.83" y="-134.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk Subject</text>
+<polygon fill="none" stroke="#40546c" points="422.83,-121.2 422.83,-181.2 522.86,-181.2 522.86,-121.2 422.83,-121.2" />
+</g>
+
+<g id="node3" class="node">
+<title>SR-CPT-003</title>
+<polygon fill="#fff0cf" stroke="none" points="406.48,-242.4 406.48,-302.4 539.22,-302.4 539.22,-242.4 406.48,-242.4" />
+<text xml:space="preserve" text-anchor="start" x="414.48" y="-283.4" font-family="Helvetica,sans-Serif" font-size="11.00">PATTERN BOUNDARY</text>
+<text xml:space="preserve" text-anchor="start" x="432.39" y="-255.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk Source</text>
+<polygon fill="none" stroke="#40546c" points="406.48,-242.4 406.48,-302.4 539.22,-302.4 539.22,-242.4 406.48,-242.4" />
+</g>
+
+<g id="node4" class="node">
+<title>SR-CPT-004</title>
+<polygon fill="#e7f2fc" stroke="none" points="202.91,-242.4 202.91,-302.4 376.79,-302.4 376.79,-242.4 202.91,-242.4" />
+<text xml:space="preserve" text-anchor="start" x="263.25" y="-283.4" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;situation&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="210.91" y="-255.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Predisposing Condition</text>
+<polygon fill="none" stroke="#40546c" points="202.91,-242.4 202.91,-302.4 376.79,-302.4 376.79,-242.4 202.91,-242.4" />
+</g>
+
+<g id="node5" class="node">
+<title>SR-CPT-009</title>
+<polygon fill="#e7f2fc" stroke="none" points="422.84,0 422.84,-60 522.86,-60 522.86,0 422.84,0" />
+<text xml:space="preserve" text-anchor="start" x="452.98" y="-41" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;mode&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="430.84" y="-13.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Vulnerability</text>
+<polygon fill="none" stroke="#40546c" points="422.84,0 422.84,-60 522.86,-60 522.86,0 422.84,0" />
+</g>
+
+<g id="node6" class="node">
+<title>SR-CPT-010</title>
+<polygon fill="#e7f2fc" stroke="none" points="451.95,-363.6 451.95,-423.6 531.75,-423.6 531.75,-363.6 451.95,-363.6" />
+<text xml:space="preserve" text-anchor="start" x="465.25" y="-404.6" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;situation&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="459.95" y="-376.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Exposure</text>
+<polygon fill="none" stroke="#40546c" points="451.95,-363.6 451.95,-423.6 531.75,-423.6 531.75,-363.6 451.95,-363.6" />
+</g>
+
+<g id="node7" class="node">
+<title>SR-CPT-035</title>
+<polygon fill="#e7f2fc" stroke="none" points="0,-242.4 0,-302.4 83.7,-302.4 83.7,-242.4 0,-242.4" />
+<text xml:space="preserve" text-anchor="start" x="15.25" y="-283.4" font-family="Helvetica,sans-Serif" font-size="11.00">&#171;situation&#187;</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-255.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Risk State</text>
+<polygon fill="none" stroke="#40546c" points="0,-242.4 0,-302.4 83.7,-302.4 83.7,-242.4 0,-242.4" />
+</g>
+</g>
+</svg></g><text font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#14283e" x="45" y="779.89">Orange nodes are broad patterns. Exposure now has registered subject/source links; endpoint existence does not entail a risk score or outcome.</text><text font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#14283e" x="45" y="821.89">Blue: implemented | Green: profile helper | Amber: pattern/unclassified | Violet: external/planned</text></svg>

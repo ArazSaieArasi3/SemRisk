@@ -1,3 +1,3 @@
 # Current editable candidate
 
-The canonical [rc.3 OntoUML package](../../diagrams/ontouml/0.2.0-rc.3/README.md) contains the actual editable JSON/draw.io files, vector views, coverage, cardinality evidence and limitations. Reuse that source instead of maintaining a second diagram here. P08 remains conditional on the explicitly recorded scientific and publication gates.
+The canonical [rc.4 diagram package](../../diagrams/ontouml/0.2.0-rc.4/README.md) contains current editable JSON/draw.io, complete vector views, coverage and limitations. The rc.3 package remains an unchanged historical checkpoint. P08 remains conditional on full semantic/editor and publication-size gates.
