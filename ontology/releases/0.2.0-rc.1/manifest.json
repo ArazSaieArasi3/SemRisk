@@ -61,7 +61,7 @@
     "ontology/releases/0.2.0-rc.1/governance.ttl": "8fcab364345a9a094cd18cddc644b61051be021f0f553c14166df14d8811422d",
     "ontology/releases/0.2.0-rc.1/pharma.ttl": "d214088e075ec3d5255b277c864f31a11952e75add4435b8de2bd21aa847f243",
     "ontology/releases/0.2.0-rc.1/mappings.ttl": "8493e364e6cb5e0579202ccc7ec8c6499bf5a94126a4540d08fc9e4fb5b7fca5",
-    "ontology/releases/0.2.0-rc.1/assessment-context.ttl": "0e91be121192c89c563ae4cb93886604b6eeb6f5e508c58a9d970c41b58efdc6",
+    "ontology/releases/0.2.0-rc.1/assessment-context.ttl": "1b86b2c7c4f997ce4db26bc05ca2b4eaab4064e6ea085701d6f54d3458cce6e3",
     "ontology/releases/0.2.0-rc.1/catalog.xml": "1be4565387bd407925560ab5d298080a6212deffa6475af05bbddc291c8f9201",
     "ontology/vendor/gufo-v1.0.0.ttl": "b234c7a22d738b66dc8fcf735146fdbe828122e2a04bec43c8c9b08f34fd9027",
     "shapes/assessment-context-v0.2.0-rc.1.ttl": "799e15764822d6aa955a3ee95564e11b600d312f0e0e2e7e136bebeb2d234e15",

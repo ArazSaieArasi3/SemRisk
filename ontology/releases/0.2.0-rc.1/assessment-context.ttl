@@ -38,3 +38,20 @@ ac:validTo a owl:DatatypeProperty ; rdfs:range xsd:dateTime .
 ac:numericValue a owl:DatatypeProperty ; rdfs:range xsd:decimal .
 ac:minimum a owl:DatatypeProperty ; rdfs:range xsd:decimal .
 ac:maximum a owl:DatatypeProperty ; rdfs:range xsd:decimal .
+
+# Minimal external vocabulary typing for this offline OWL 2 DL closure.
+# This is not a full import of DCT/SKOS/PROV semantics and asserts no equivalence.
+<http://www.w3.org/2004/02/skos/core#Concept> a owl:Class .
+<http://www.w3.org/2004/02/skos/core#closeMatch> a owl:ObjectProperty .
+<http://www.w3.org/2004/02/skos/core#relatedMatch> a owl:ObjectProperty .
+<http://www.w3.org/2004/02/skos/core#scopeNote> a owl:AnnotationProperty .
+<http://www.w3.org/2004/02/skos/core#prefLabel> a owl:AnnotationProperty .
+<http://purl.org/dc/terms/source> a owl:AnnotationProperty .
+<http://purl.org/dc/terms/title> a owl:AnnotationProperty .
+<http://purl.org/dc/terms/conformsTo> a owl:AnnotationProperty .
+<http://purl.org/dc/terms/identifier> a owl:AnnotationProperty .
+<http://purl.org/dc/terms/relation> a owl:AnnotationProperty .
+<http://purl.org/dc/terms/hasVersion> a owl:AnnotationProperty .
+<http://purl.org/dc/terms/description> a owl:AnnotationProperty .
+<http://purl.org/dc/terms/type> a owl:AnnotationProperty .
+<http://www.w3.org/ns/prov#invalidatedAtTime> a owl:DatatypeProperty ; rdfs:range xsd:dateTime .
