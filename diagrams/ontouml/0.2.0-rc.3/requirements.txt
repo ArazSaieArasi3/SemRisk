@@ -1,4 +1,0 @@
-rdflib==7.6.0
-jsonschema==4.25.1
-CairoSVG==2.8.2
-pypdf==6.10.0

@@ -1,8 +1,0 @@
-@prefix sr: <urn:semrisk:entity:> .
-@prefix test: <urn:semrisk:test:negative:> .
-test:entry-two-status a sr:SR-CPT-033 ;
-  sr:SR-REL-001 test:risk ;
-  sr:SR-REL-030 test:open, test:closed .
-test:risk a sr:SR-CPT-001 .
-test:open a sr:SR-CPT-036 .
-test:closed a sr:SR-CPT-036 .

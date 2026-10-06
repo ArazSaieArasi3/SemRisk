@@ -1,7 +1,0 @@
-finding_id,topic,severity,current_position,why_nonblocking,downstream_owner,status
-FU-001,Risk formal OWL definition,MEDIUM,"Derived pattern, no single gUFO stereotype.",Foundational category error is avoided; #26 can formalize minimally without equivalence.,#26,OPEN_NONBLOCKING
-FU-002,Generic association vs directed dependency split,MEDIUM,SR-REL-009 remains one conceptual umbrella.,No Critical claim depends on symmetry/transitivity; #26 may split formal properties.,#26,OPEN_NONBLOCKING
-FU-003,ControlCapability helper,MEDIUM,Needed only if #26 formalizes ControlMechanism capability explicitly.,"Core category is resolved as roleMixin; helper is formalization support, not new domain claim.",#26,OPEN_NONBLOCKING
-FU-004,Workflow State representation detail,LOW,Quality/value selected; exact value scheme is profile/application specific.,Risk/Workflow distinction is resolved and CQs preserved.,#26/#45,OPEN_NONBLOCKING
-FU-005,External Objective foundational owner,LOW,SemRisk references it but does not own its identity.,No local foundational commitment required.,#37,OPEN_NONBLOCKING
-FU-006,Exposure profile refinements,MEDIUM,Core Exposure is Situation; finance/physical/rating meanings need profile mapping.,Core does not equate these variants.,#24/future profiles,OPEN_NONBLOCKING

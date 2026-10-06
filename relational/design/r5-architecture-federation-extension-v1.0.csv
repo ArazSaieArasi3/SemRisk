@@ -1,3 +1,0 @@
-object_id,schema,object,purpose,semantic_basis,paper1_role,notes
-R5-RDB-001,ref,external_entity_mapping,"Explicit correspondence between two externally owned references without identity merge","R5 #94; SKOS-style mapping governance",support,"Mapping relation is metadata; never owl:sameAs by default."
-R5-RDB-002,enterprise,architecture_context_link,"Qualified SR-REL-010 architecture-facing assertion","SR-REL-010; R5 #92",support,"Target family/effect mode/provenance qualify generic affects without changing Core."

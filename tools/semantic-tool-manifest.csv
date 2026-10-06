@@ -1,6 +1,0 @@
-tool_id,tool,version,role,exact_binding,notes
-TOOL-001,Python,3.13,Pipeline runtime,actions/setup-python Python 3.13,"Runtime version is captured in evidence output."
-TOOL-002,RDFLib,7.6.0,RDF/Turtle parser and SPARQL execution,PyPI rdflib==7.6.0,"Pinned dependency."
-TOOL-003,PySHACL,0.40.1,SHACL Core validation,PyPI pyshacl==0.40.1,"Pinned dependency; #27 shapes use SHACL Core."
-TOOL-004,ROBOT,1.9.10,OWL profile validation + HermiT orchestration,"GitHub release v1.9.10 robot.jar; sha256 16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105","Pinned jar digest."
-TOOL-005,HermiT,ROBOT-bundled,OWL DL consistency/satisfiability reasoner,"Bundled and invoked by ROBOT 1.9.10 --reasoner HermiT","Exact effective reasoner metadata is captured from ROBOT execution/log."

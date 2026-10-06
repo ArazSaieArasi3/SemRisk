@@ -1,5 +1,0 @@
-rule_id,module,artifact,status,inputs,outputs,assumptions,requirement_cq,notes
-SR-RULE-001,Enterprise,rules/enterprise/derive-has-risk-owner-v0.1.0-rc.1.rq,IMPLEMENTED,SR-CPT-031; SR-REL-027; SR-REL-028,SR-REL-026,Responsibility graph is complete for the evaluated target scope.,SR-REQ-006; CQ-009; CQ-025,Derived convenience relation only.
-SR-RULE-002,Method,,DEFERRED_NO_METHOD_SELECTED,Likelihood/Impact/method inputs,Risk Level,A named assessment method/formula must be selected and versioned first.,SR-REQ-013; CQ-019; CQ-032,No universal score formula is implemented.
-SR-RULE-003,Enterprise,,DEFERRED_TO_APPLICATION_PROFILE,Workflow state history,Workflow transition validity,A named workflow scheme/state machine is required.,SR-REQ-005; CQ-024,No universal transition order is asserted.
-SR-RULE-004,Enterprise,rules/enterprise/risk-owners-at-v0.2.0-rc.1.rq,IMPLEMENTED_QUALIFIED_PROFILE,risk-scoped responsibility; explicit asOf; start/end/invalidation,distinct risk/actor pairs,Known start; half-open bounds; missing end open; no ambient clock,Author 4.9; Author 7.8; supplementary temporal tasks,Six native SQL/SPARQL parity instants; not an additional original CQ.

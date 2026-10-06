@@ -1,7 +1,0 @@
-id,target,unit,result,limit,claim,source
-T01,rc.4 source inventory,locally declared terms,116 terms; 47 concept rows; 40 relation rows,Counts are not semantic quality or validation,SR-CL01;SR-CL08,docs/formal/0.2.0-rc.4/source-manifest.json
-T02,rc.4 diagram candidate,concept / relation coverage,47/47 concepts; 40/40 relation decisions,Complete atlas fails 170 mm readability; no native-editor/full antipattern pass,SR-CL01,diagrams/ontouml/0.2.0-rc.4/validation-results.json
-T03,rc.4 synthetic tests at 418b8e3,behavioral checks / formal probes,31/31 checks (17 negatives); 4 entailments; 2 countermodels; 2 contradictions rejected,"Bounded verification, not domain-expert validation or complete conformance",SR-CL08,evaluation/exposure-scale/v0.2.0-rc.4/ci-evidence.json
-T04,literature pilot v0.1.0 / rc.4,source-local statements / studies,"24 statements / 6 studies: 12 partial, 11 ambiguous, 1 unmapped",Applicability only; not observed incidents; zero independent validation sources,SR-CL05;SR-CL06,case/pharma/literature-pilot-v0.1.0/metrics.json
-T05,historical P1-R2 / 0.1.0-rc.1,original competency questions,"40 CQs: 26 executable, 7 partial, 6 conceptual, 1 deferred",Preserved classification; not a fresh full rc.4 rerun,SR-CL08,evaluation/cq/issue52-cq-results-v1.0.csv
-T06,historical frozen P49 tasks,predeclared task answer sets,8/8 equivalent for task,No new SQL execution or complete rc.4 helper parity; #125 deferred,SR-CL04,evaluation/parity/p49-parity-results-v1.0.csv

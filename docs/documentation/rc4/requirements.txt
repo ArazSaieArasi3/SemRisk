@@ -1,2 +1,0 @@
-rdflib==7.6.0
-Markdown==3.9

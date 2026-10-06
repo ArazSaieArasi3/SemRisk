@@ -1,6 +1,0 @@
-profile_id,source_term,source_locator,target_semantic_id,mapping_relation,method_or_governance_context,status,notes
-TEMPLATE,gross,,SR-CPT-017,UNRESOLVED,,TEMPLATE,"may align to inherent in some frameworks; evidence required"
-TEMPLATE,current,,SR-CPT-013,UNRESOLVED,,TEMPLATE,"do not equate to residual by default"
-TEMPLATE,target,,SR-CPT-013,UNRESOLVED,,TEMPLATE,"target is often a desired assessment/governance context; framework evidence required"
-TEMPLATE,desired,,SR-CPT-013,UNRESOLVED,,TEMPLATE,"profile term only"
-TEMPLATE,net,,SR-CPT-013,UNRESOLVED,,TEMPLATE,"do not equate to residual by default"

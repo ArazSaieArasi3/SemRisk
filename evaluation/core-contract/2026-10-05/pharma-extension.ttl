@@ -1,9 +1,0 @@
-@prefix phx: <urn:semrisk:profile:pharma-test:v0.1:> .
-@prefix sr: <urn:semrisk:entity:> .
-@prefix c: <urn:semrisk:scenario:p1:e2e:> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-phx: a owl:Ontology .
-phx:SupplyDisruptionAssessment a owl:Class ; rdfs:subClassOf sr:SR-CPT-013 ;
- rdfs:label "Supply disruption assessment result"@en .
-c:result-residual a phx:SupplyDisruptionAssessment .

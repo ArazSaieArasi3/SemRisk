@@ -1,7 +1,0 @@
-artifact_id,type,priority,content,evidence_source,final_dependency,current_status
-FT-01,Figure,1,"Core/module/profile architecture with external-owner boundary","#24/#25 canonical models","#53/#55","draftable_now"
-FT-02,Figure,2,"Foundational semantic pattern: Risk–Scenario/Event–Record–Assessment/Result–States–Responsibility–Treatment","#25/#27","#53/#55","draftable_now"
-FT-03,Figure,3,"Bounded E2E Enterprise/Pharma scenario and projection path","#48/#49","#53/#55","draftable_now"
-FT-04,Table,1,"Closest-work comparison on selected common dimensions","#22; later #31 E10","#31/#53/#55","pending_e10"
-FT-05,Table,2,"Compact E1–E11 evaluation summary","#29/#30/#31/#49–#52","#30/#31/#53/#55","partial"
-FT-06,Table,3,"Selected source/field/dataset→SemRisk trace sample","#68/#28","#53/#55","draftable_now"

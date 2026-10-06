@@ -1,2 +1,0 @@
-cairosvg==2.8.2
-pypdf==6.1.3

@@ -1,8 +1,0 @@
-PREFIX sr: <urn:semrisk:entity:>
-PREFIX ac: <urn:semrisk:profile:assessment-context:>
-SELECT DISTINCT ?exposure ?subject ?source WHERE {
- FILTER(BOUND(?asOf))
- ?exposure a sr:SR-CPT-010 ; sr:SR-REL-039 ?subject ; sr:SR-REL-040 ?source ; ac:validFrom ?start .
- OPTIONAL { ?exposure ac:validTo ?end }
- FILTER(?start <= ?asOf && (!BOUND(?end) || ?asOf < ?end))
-} ORDER BY ?exposure

@@ -1,9 +1,0 @@
-# P04 evidence delta and remaining acceptance work
-
-**Influence** means a source informed a design decision. **Alignment** means an explicitly qualified mapping of a source term/field to a target. **Coverage** requires a declared denominator and dispositions for its members. **Conformance** requires all applicable normative requirements and a suitable assessment; none is asserted from metadata or selected mappings.
-
-This run adds complete dispositions for the two selected public NIST schema field-name sets and calibrates claims across 11 source families. Other standards retain explicitly limited inspection depth. The prior standard/framework crosswalk and ICH extraction remain useful inputs, not proof of full compliance. Do not cite an inaccessible standard as if its clauses were read.
-
-CM-PharmE is the correct name throughout the current control set. The paper is **CM-PharmE ver.1**, IEEE document 11301544; the semantic bridge uses frozen **v1.0.0**, commit `9efd0e3ac909e4065012fae7aeb6b0a94029c440`. The existing citation binding remains authoritative for the author-provided bibliography. No DOI was independently resolved in this pass; do not invent one or imply v2 is complete.
-
-P04 remains **in progress**. Before acceptance: (1) complete exact clause binding for every standard actually cited in the revised manuscript, or narrow/remove the claim; (2) reconcile the governed 27-field restricted-source extraction with actual conceptual/formal/data-layer use and record partial/excluded cases; (3) scan the rewritten manuscript for restricted identifiers and informal workbook labels; (4) verify final bibliography. Extraction coverage of 27/27 alone is not proof of full downstream use. Authorization for derived vocabulary does not authorize publication of original source files or private values.

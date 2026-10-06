@@ -1,3 +1,0 @@
-@prefix sr: <urn:semrisk:entity:> .
-@prefix test: <urn:semrisk:test:negative:> .
-test:collapsed-record-risk a sr:SR-CPT-001, sr:SR-CPT-033 .

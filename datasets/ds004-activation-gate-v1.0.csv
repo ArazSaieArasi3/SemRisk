@@ -1,9 +1,0 @@
-gate_id,requirement,current_state,activation_required_for,claim_if_unmet
-DS4-G01,Exact released artifact PID/version,BLOCKED,file-level mapping/load/parity,"No executed structured-shortage robustness claim"
-DS4-G02,Dataset-specific license/reuse status,BLOCKED,file-level use/distribution,"No assumption that article/preprint license covers data artifact"
-DS4-G03,File manifest and checksums,BLOCKED,reproducible evaluated load,"No exact-file reproducibility claim"
-DS4-G04,Exact column/schema dictionary,BLOCKED,field-level semantic mapping,"Study-documented families only; no exact-schema coverage claim"
-DS4-G05,Missingness/duplicate/code-quality metrics,BLOCKED,file-quality evaluation,"No file-level quality percentage"
-DS4-G06,Raw→harmonized→master transformation freeze,BLOCKED,record/master reconciliation,"No reconstruction of study transformations"
-DS4-G07,Predeclared DS-004 evaluation tasks,BLOCKED,robustness evaluation,"Do not adapt expected answers after data inspection"
-DS4-G08,All gates G01-G07 PASS,BLOCKED,DS-004 activation,"DS-004 remains design/reconciliation evidence only"

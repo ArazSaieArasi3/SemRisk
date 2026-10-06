@@ -1,5 +1,0 @@
-record_id,source_id,status,reason,downstream_effect
-MDB-001,DS-004,BLOCKED_FILE_SCHEMA,"Exact dataset version/license/file manifest/checksums/columns unresolved","No evaluated file-level mapping or load in #47"
-MDB-002,DS-002,PROTECTED_HOLDOUT,"Record-level holdout protocol and exact release not frozen","No record inspection/load in #47"
-MDB-005,SRC-OP-001,CONTEXT_ONLY,"Only governed schema/attributes supplied; no empirical record corpus","No fabricated operational rows; synthetic fixture used for regression"
-PCI-002,DS-003,PARTIAL,"Political engagement/government investment theme overlaps condition/treatment semantics but does not justify a single direct instance mapping","Retained as partial staging disposition; no forced Core mapping"
