@@ -1,0 +1,163 @@
+{
+  "protocol_version": "1.0",
+  "checkpoint_status": "PREDECLARED_NOT_EXECUTED",
+  "baseline_commit": "5e3e1651794c4fc40b1a4cd36733c9f4a92148c1",
+  "scope": "Four selected behavioral/category-preservation probes supplement the asserted subset; all 15 full-antipattern verdicts remain NOT_ESTABLISHED",
+  "finding_ids": [
+    "FAP-006",
+    "FAP-012",
+    "FAP-013",
+    "FAP-014"
+  ],
+  "FAP-006": {
+    "fixture": "Ownership-only subgraph of pinned temporal fixture: all six SR-CPT-031 assignment subject triples plus the Risk type; exclude old assessment/scale data",
+    "expected_actor_pairs": {
+      "2026-10-05T07:59:59Z": [
+        "actor-a",
+        "actor-d"
+      ],
+      "2026-10-05T08:00:00Z": [
+        "actor-a",
+        "actor-b"
+      ],
+      "2026-10-06T00:00:00Z": [
+        "actor-a",
+        "actor-b",
+        "actor-c"
+      ],
+      "2026-10-05T11:30:00+03:30": [
+        "actor-a",
+        "actor-b"
+      ]
+    },
+    "risk_iri": "urn:semrisk:run4:risk",
+    "actor_namespace": "urn:semrisk:run4:",
+    "query_contract": "Caller-bound asOf; DISTINCT complete risk/actor tuples; unbound returns[]",
+    "positive_variants": [
+      "Duplicate assignment path does not duplicate tuple",
+      "Additional mediation counterpart is not returned as owner"
+    ],
+    "negatives": [
+      "Remove active assignment type,target,assignee or validFrom; exact actor-a pair disappears at boundary",
+      "Primitive hasRiskOwner without qualifying assignment adds no answer",
+      "Actual SELECT projection mutant returns RiskOwner class IRI; exact-answer detector rejects it"
+    ],
+    "adverse_probe": "Replace active assignee by SR-CPT-030 class IRI. Record actual query and shape outcome. Current IRI-only assignee shape is expected to accept it; this is an observed limitation, never universal role-target safety."
+  },
+  "FAP-012": {
+    "selected_boundary": "Exposure subject/source global OWL versus current strict profile",
+    "positive_worlds": [
+      "Exposure constrained to maxCardinality 0 endpoints remains OWL-consistent, but its data fails SHACL MinCount",
+      "Exposure with two explicitly different subjects remains OWL-consistent, but its data fails SHACL MaxCount"
+    ],
+    "negative_worlds": [
+      "Add Exposure minCardinality 1 for subject to the maxCardinality 0 world: genuine inconsistency",
+      "Add subject FunctionalProperty to two-distinct-subject world: genuine inconsistency"
+    ],
+    "limits": "Selected endpoint boundary only; legitimate imported gUFO restrictions are not prohibited.",
+    "shape_oracle": {
+      "zero_endpoint": {
+        "focus": "urn:semrisk:test:fap:zeroExposure",
+        "component": "http://www.w3.org/ns/shacl#MinCountConstraintComponent",
+        "paths": [
+          "urn:semrisk:entity:SR-REL-039",
+          "urn:semrisk:entity:SR-REL-040"
+        ],
+        "expected_violation_count": 2
+      },
+      "two_subjects": {
+        "focus": "urn:semrisk:test:fap:multiExposure",
+        "component": "http://www.w3.org/ns/shacl#MaxCountConstraintComponent",
+        "paths": [
+          "urn:semrisk:entity:SR-REL-039"
+        ],
+        "expected_violation_count": 1
+      },
+      "data_contract": "Every present subject is explicitly SR-CPT-002 and source SR-CPT-003; the tested focus is SR-CPT-010. No unrelated profile failure is accepted."
+    }
+  },
+  "FAP-013": {
+    "positive_worlds": [
+      "Two Risk individuals associatedWith, with explicit OWL NegativePropertyAssertion denying causes for that pair",
+      "Two RiskState individuals on the same Risk linked by precedesState, with explicit NegativePropertyAssertion denying causes for that pair"
+    ],
+    "negative_worlds": [
+      "associatedWith subPropertyOf causes makes its world inconsistent",
+      "precedesState subPropertyOf causes makes its world inconsistent",
+      "Direct causes assertion contradicts the association-world negative assertion"
+    ],
+    "limits": "Actual consistent countermodels for these selected premises/pairs; no generic temporal-causality ontology or general empirical independence.",
+    "identity_control": "Assert the two tested pair individuals owl:differentFrom in both worlds; sequence states are both SR-CPT-035 and linked from the same SR-CPT-001 Risk via SR-REL-031."
+  },
+  "FAP-014": {
+    "catalog_commit": "5099888668d35f798e4759e3534e707ed906db24",
+    "repository": "ArazSaieArasi3/CM-PharmE",
+    "source_files": {
+      "concepts.yaml": {
+        "path": "releases/v1.0.0/catalogs/concepts.yaml",
+        "git_blob": "17545bd9ba0fcde4c944fc5f9b4eea9301f66383",
+        "sha256": "8ea58247c7ad23e1a04368383882fa7626d094609c23b1eb1c3ad4e54bcd1840"
+      },
+      "manifest.yaml": {
+        "path": "releases/v1.0.0/manifest.yaml",
+        "git_blob": "187a22959c309da51b327d18705067d135fc5e82",
+        "sha256": "4eb59f01462f7ac27e2c93809c029ee39ea0af45f51b3902e192a8255becb1cf"
+      }
+    },
+    "checks": [
+      "All 12 category audit rows match39-concept frozen catalog and exact labels/stereotypes",
+      "C0025 source relator/mode conflict and local PASS_WITH_FLAG remain explicit",
+      "All 16 bridge rows retain source-specific mapping types and unresolved API/product/Objective rows",
+      "Exactly five current CM-PharmE references are versioned SKOS markers, not local OWL classes; no new equivalence/import"
+    ],
+    "negatives": [
+      "Mode-to-kind mutation",
+      "Unknown CMPE ID",
+      "Wrong version namespace",
+      "Dropped C0025 conflict flag",
+      "Invented local equivalence/import",
+      "Fabricated API/product/Objective mapping"
+    ],
+    "rights_boundary": "Reference-only. Fetch pinned public source into temporary input storage; do not vendor or upload the external catalog/manifest as output. Results contain hashes/counts and existing local identifiers only."
+  },
+  "formal_protocol": {
+    "toolchain": "ROBOT 1.9.10 / HermiT 1.4.5.456; RDFLib 7.6.0; PySHACL 0.40.1; PyYAML 6.0.2",
+    "robot_sha256": "16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+    "worlds": 9,
+    "expected_consistent": 4,
+    "expected_inconsistent": 5,
+    "profile_requirement": "Every positive/negative world must first pass OWL 2 DL validation; inconsistency is accepted only from actual reasoner log/exit, not parse/profile failure",
+    "shape_inference": "none",
+    "meta_shacl": true
+  },
+  "acceptance_limits": [
+    "No whole finding or issue closes from selected probes",
+    "All 15 full-antipattern verdicts stay NOT_ESTABLISHED",
+    "No native-editor roundtrip",
+    "No full 170 mm readability acceptance",
+    "No ontology/query/shape/SQL/private-manuscript/runtime changes",
+    "No domain or independent expert validation"
+  ],
+  "source_sha256": {
+    "ontology/releases/0.2.0-rc.4/core.ttl": "3a18524a597dba048622e1bf617729cd614e83a3c8c505ef8a72ec1861882ba7",
+    "ontology/releases/0.2.0-rc.4/enterprise.ttl": "7a10aba1ed04e67ceb9b8bc641f71dc627ca5e04d73deb7fa1c1a73b4e956aa2",
+    "ontology/releases/0.2.0-rc.4/method.ttl": "3789456bf4cc3421126b1bb989aad526769e1154b65bd660235c280516eb4ff9",
+    "ontology/releases/0.2.0-rc.4/governance.ttl": "a47e94537a0c6df243a13bf326f7b5235c17b10991701f35eb888e2b948102ac",
+    "ontology/releases/0.2.0-rc.4/pharma.ttl": "0930d814bf299dda409a4ea00111ba369e4955c57b24c4e2012733c073bf0a11",
+    "ontology/releases/0.2.0-rc.4/mappings.ttl": "9c2642ca4ed45b54b9643898517e11579fc056e4a525b7a36673bef0b33c713d",
+    "ontology/releases/0.2.0-rc.4/assessment-context.ttl": "ab6678acd63f408758721d9f224bcd91c838d4684a47dcefd8801b1b6be737d9",
+    "ontology/vendor/gufo-v1.0.0.ttl": "b234c7a22d738b66dc8fcf735146fdbe828122e2a04bec43c8c9b08f34fd9027",
+    "ontology/releases/0.2.0-rc.4/catalog.xml": "59c03c5f03268589794dea087c7b8704731819cfe7c3a724416dab0580e2c5d7",
+    "tools/check_rc4_extension.py": "3618ec71ce5657d637e1414c340b23b81f75c880b8cbe17c926b2db8a73f9410",
+    "rules/enterprise/risk-owners-at-v0.2.0-rc.1.rq": "4a4ca63caec6d48ecd7dbe65fb148dd896351f20c59f5fbc0080f40bfd749753",
+    "testdata/temporal/qualified-context-v0.2.0-rc.1.ttl": "0cdea365470f9dd50e1769c448aa3ece41b6c7d3bcb56046d220a3add33cc58d",
+    "shapes/assessment-context-v0.2.0-rc.1.ttl": "799e15764822d6aa955a3ee95564e11b600d312f0e0e2e7e136bebeb2d234e15",
+    "shapes/semantic-identity-v0.2.0-rc.3.ttl": "3a8f73330d139c0a7184b27aa2d1965b740e02481f8f2f07b562055ed06b5152",
+    "shapes/exposure-scale-v0.2.0-rc.4.ttl": "094d820dc73f33ea0e5d4796178ff0b14c1b407cf840dfab684940c9399c0979",
+    "conceptualization/pharma/cm-pharme-category-preservation-audit.csv": "27e5b0635c543845f3219cb7ec2ba3e75be87ec8aea421939c843eae0afb7bd2",
+    "conceptualization/pharma/cm-pharme-concept-bridge-v0.1.csv": "50bbf75b2a67feeba024fb0d5f51307a727662388bed15c5e87f12dcefa9307d",
+    "conceptualization/pharma/unresolved-pharma-bridge-register.csv": "f413b12cd8e75a8e661d56dc6af838856cebe91999280a280dbdd9fabc0ff90f",
+    "foundational/foundational-antipattern-register.csv": "822f153ea32d3da6ce5b12365e7686add91b5bec1bfa011994df4024ea0b2c91",
+    "evaluation/antipatterns/0.2.0-rc.4/results.json": "508470e007def7383a03d0187d05eb7330a6e1b948752603a611dc3cc9454039"
+  }
+}

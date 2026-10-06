@@ -16,3 +16,7 @@ The predicates in `checks()` are the exact acceptance surface, not the full pros
 Negative controls remove a required category assertion, add an impermissible direct identity/category assertion, or introduce an ungoverned diagram helper. These are developer-selected regressions. Their rejection neither estimates detector sensitivity nor implements the complete OntoUML antipattern catalog. Absence of a local equivalence assertion is not proof of general logical non-equivalence.
 
 #33 remains open for the declared full pattern/antipattern scope, native-editor import/save/reopen/export evidence, and readable complete representation. The full atlas still fails 170 mm readability. No ontology, source profile, SQL adapter, historical result, manuscript or release decision is changed.
+
+## Separately executed behavioral companion
+
+The [predeclared behavioral/category companion](behavioral/README.md) now supplies selected execution evidence for the four findings excluded by this asserted-only subset. It records an actual class-as-assignee limitation. The two suites keep separate scopes; all 15 full-antipattern verdicts remain NOT_ESTABLISHED.

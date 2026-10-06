@@ -1,3 +1,16 @@
+# Current revision status — Run 21 selected behavior and limits, 2026-10-06
+
+Current stage: **four previously unassessed portions now have selected behavioral/category evidence and an explicit adverse observation**. [Report](run-21-report.md), [remaining issue acceptance](remaining-advanced-issues-20261006.md).
+
+- 50 checks include 25 rejection controls; nine actual DL/reasoner worlds. All 15 full-antipattern verdicts remain NOT_ESTABLISHED.
+- The IRI-only assignee profile accepts a known class IRI; this limitation is retained separately, not counted as rejection success.
+- A tagged-source native-editor audit identifies annotation/ID preservation and installation/licensing gates; no import or binary test is claimed.
+- Bounded requirements remain **40/90**; whole packages **3/19**. No issue is closed by this checkpoint.
+
+Prior checkpoints below are historical.
+
+---
+
 # Current revision status — Run 20 finite rc.4 extension, 2026-10-06
 
 Current stage: **predeclared synthetic extension preserves finite current-candidate invariants**. [Report](run-20-report.md), [experiment](../../../evaluation/extension/0.2.0-rc.4/README.md).
