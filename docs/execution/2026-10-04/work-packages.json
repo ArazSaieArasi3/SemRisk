@@ -92,7 +92,12 @@
     "status": "completed",
     "evidence_refs": [
       "scientific-contract.md",
-      "evidence-grounded-fa.md"
+      "evidence-grounded-fa.md",
+      "publications/2026-icaea-sbu/claims-rc4/claim-register.json",
+      "publications/2026-icaea-sbu/claims-rc4/authoring-ceilings.md",
+      "publications/2026-icaea-sbu/claims-rc4/threats-and-nonclaims.md",
+      "evaluation/integrity/rc4-pre-assurance-threat-refresh.md",
+      "docs/execution/2026-10-04/run-13-report.md"
     ],
     "acceptance_result": "PASS_CONTRACT_ONLY"
   },
@@ -770,7 +775,13 @@
       "evaluation/assurance/"
     ],
     "status": "not_started",
-    "evidence_refs": [],
+    "evidence_refs": [
+      "publications/2026-icaea-sbu/claims-rc4/claim-register.json",
+      "publications/2026-icaea-sbu/claims-rc4/authoring-ceilings.md",
+      "publications/2026-icaea-sbu/claims-rc4/threats-and-nonclaims.md",
+      "evaluation/integrity/rc4-pre-assurance-threat-refresh.md",
+      "docs/execution/2026-10-04/run-13-report.md"
+    ],
     "acceptance_result": "NOT_ASSESSED"
   },
   {

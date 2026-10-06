@@ -70,8 +70,14 @@
       "docs/execution/2026-10-04/scientific-contract.md",
       "docs/execution/2026-10-04/evidence-grounded-fa.md"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "publications/2026-icaea-sbu/claims-rc4/claim-register.json",
+      "publications/2026-icaea-sbu/claims-rc4/authoring-ceilings.md",
+      "publications/2026-icaea-sbu/claims-rc4/threats-and-nonclaims.md",
+      "evaluation/integrity/rc4-pre-assurance-threat-refresh.md",
+      "docs/execution/2026-10-04/run-13-report.md"
+    ],
+    "verification_result": "NOT_ASSESSED; RUN13_CURRENT_AUTHORING_CEILINGS_SOURCE_BOUND; final manuscript anchors/citations and retained validation/release gates remain open"
   },
   {
     "id": "1.6",
@@ -1208,8 +1214,14 @@
       "evaluation/vveaa/",
       "evaluation/assurance/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "publications/2026-icaea-sbu/claims-rc4/claim-register.json",
+      "publications/2026-icaea-sbu/claims-rc4/authoring-ceilings.md",
+      "publications/2026-icaea-sbu/claims-rc4/threats-and-nonclaims.md",
+      "evaluation/integrity/rc4-pre-assurance-threat-refresh.md",
+      "docs/execution/2026-10-04/run-13-report.md"
+    ],
+    "verification_result": "NOT_ASSESSED; RUN13_CURRENT_AUTHORING_CEILINGS_SOURCE_BOUND; final manuscript anchors/citations and retained validation/release gates remain open"
   },
   {
     "id": "7.2",
@@ -1238,8 +1250,14 @@
       "evaluation/vveaa/",
       "evaluation/assurance/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "publications/2026-icaea-sbu/claims-rc4/claim-register.json",
+      "publications/2026-icaea-sbu/claims-rc4/authoring-ceilings.md",
+      "publications/2026-icaea-sbu/claims-rc4/threats-and-nonclaims.md",
+      "evaluation/integrity/rc4-pre-assurance-threat-refresh.md",
+      "docs/execution/2026-10-04/run-13-report.md"
+    ],
+    "verification_result": "NOT_ASSESSED; RUN13_CURRENT_AUTHORING_CEILINGS_SOURCE_BOUND; final manuscript anchors/citations and retained validation/release gates remain open"
   },
   {
     "id": "7.4",
@@ -1379,8 +1397,14 @@
       "evaluation/vveaa/",
       "evaluation/assurance/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "publications/2026-icaea-sbu/claims-rc4/claim-register.json",
+      "publications/2026-icaea-sbu/claims-rc4/authoring-ceilings.md",
+      "publications/2026-icaea-sbu/claims-rc4/threats-and-nonclaims.md",
+      "evaluation/integrity/rc4-pre-assurance-threat-refresh.md",
+      "docs/execution/2026-10-04/run-13-report.md"
+    ],
+    "verification_result": "NOT_ASSESSED; RUN13_CURRENT_AUTHORING_CEILINGS_SOURCE_BOUND; final manuscript anchors/citations and retained validation/release gates remain open"
   },
   {
     "id": "7.12",

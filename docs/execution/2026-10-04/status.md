@@ -1,3 +1,17 @@
+# Current revision status — Run 13, 2026-10-06
+
+Current stage: **nine current claim ceilings and pre-assurance limitations source-bound; final manuscript placement remains next**. [Report](run-13-report.md), [current ceilings](../../../publications/2026-icaea-sbu/claims-rc4/authoring-ceilings.md).
+
+- Nine claims preserve evidence roles, exact refs/denominators, counterevidence and threat links.
+- Twelve unsafe/direct-nonclaim pairs, two negation traps and twelve ledger-corruption checks pass locally; exact-head review/CI/main integration are tracked on the batch PR.
+- #53/#111/#56 remain open for exact final manuscript and retained validation/release gates. #125 deferred; no SQL or expert outreach.
+- Bounded requirements **29/90**; accepted packages **3/19**, unchanged.
+- Next: reconcile the latest author-review manuscript into a distinct #32/#34 candidate and inspect every rendered page.
+
+Prior checkpoints below are historical.
+
+---
+
 # Current revision status — Run 12, 2026-10-06
 
 Current stage: **preselected SQL-independent raw metrics implemented; exact-head review/CI/main readback tracked on batch PR**. [Report](run-12-report.md), [metric results](../../../evaluation/oquare/rc4-bounded/results.md).
