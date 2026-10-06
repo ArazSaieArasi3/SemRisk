@@ -439,13 +439,17 @@
       "diagrams/ontouml/0.2.0-rc.3/README.md",
       "diagrams/ontouml/0.2.0-rc.3/validation-results.json",
       "run-7-report.md",
-      "run-8-report.md"
+      "run-8-report.md",
+      "publications/2026-icaea-sbu/visuals-rc4/README.md",
+      "publications/2026-icaea-sbu/visuals-rc4/manifest.json",
+      "publications/2026-icaea-sbu/visuals-rc4/validation-results.json",
+      "docs/execution/2026-10-04/run-11-report.md"
     ],
-    "acceptance_result": "PARTIAL: rc.4 Exposure/scale decisions implemented and locally tested; whole-package gates remain explicit.",
+    "acceptance_result": "PARTIAL: selected source-derived figure passes local print/source QA; no full-atlas, native-editor, antipattern or final-paper gate waived",
     "remaining": [
-      "Resolve scenario type/instance contract, information identity helper pattern and workflow value/quality representation",
-      "Build complete editable OntoUML with justified relation ends and source-linked multiplicities",
-      "Run complete conceptual/diagram conformance review; do not equate bounded source probes with full antipattern detection"
+      "Complete article representation and final manuscript/author review; selected panel is not complete atlas",
+      "Actual native-editor import/export and scoped full pattern/antipattern evidence",
+      "Final #53 caption calibration and #55 scholarly release binding"
     ],
     "verification_result": "PARTIAL: full editable candidate and companion atlas; remaining scientific/publication gates explicit."
   },

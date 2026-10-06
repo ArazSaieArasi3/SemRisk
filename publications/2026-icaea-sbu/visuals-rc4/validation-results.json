@@ -1,0 +1,23 @@
+{
+  "result": "PASS_SELECTED_PUBLICATION_ASSETS",
+  "concepts": "9/47",
+  "relations": "8/40",
+  "source_files": 11,
+  "table_rows": 6,
+  "negative_controls_rejected": [
+    "missing_node",
+    "changed_stereotype",
+    "changed_cardinality",
+    "invented_arrow",
+    "stale_source",
+    "shrunk_print",
+    "miswired_endpoint"
+  ],
+  "svg_min_print_font_pt": 8.0,
+  "pdf_min_effective_font_pt": 8.0,
+  "pdf_width_mm": 170.0,
+  "pdf_height_mm": 141.111,
+  "full_atlas_readability": "FAIL_RETAINED",
+  "native_editor": "NOT_EXECUTED",
+  "final_manuscript": "NOT_INTEGRATED"
+}
