@@ -1,3 +1,17 @@
+# Current revision status — Run 15 independent checkpoint, 2026-10-06
+
+Current stage: **current asserted-source antipattern companion and five scope-contract rows independently reviewed**. [Report](run-15-report.md), [bounded companion](../../../evaluation/antipatterns/0.2.0-rc.4/README.md).
+
+- Eleven asserted-source subsets and eighteen deliberate mutations; all fifteen full-antipattern verdicts remain NOT_ESTABLISHED.
+- Five existing wording-contract requirements now have exact source/anchor acceptance. No new scientific capability or manuscript acceptance follows.
+- Bounded requirements **34/90**; completed whole packages **3/19**. Separate manuscript-candidate work is not included in this checkpoint.
+- #33 native-editor/full-antipattern/complete-readability gates remain open. #111 engineering guards already exist; current-manuscript integration is separate.
+- Exact-head CI, published-content review and main integration are tracked on the batch PR. No whole-issue closure is inferred.
+
+Prior checkpoints below are historical.
+
+---
+
 # Current revision status — Run 13, 2026-10-06
 
 Current stage: **nine current claim ceilings and pre-assurance limitations source-bound; final manuscript placement remains next**. [Report](run-13-report.md), [current ceilings](../../../publications/2026-icaea-sbu/claims-rc4/authoring-ceilings.md).
