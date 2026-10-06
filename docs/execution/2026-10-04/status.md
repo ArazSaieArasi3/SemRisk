@@ -1,12 +1,14 @@
 # Current revision status — Run 10, 2026-10-06
 
-Current stage: **rc.4 formal-reference synchronization implemented locally; independent review and exact-head CI pending**. [Report](run-10-report.md), [current FD-A–FD-J reference](../../../docs/formal/formal-ontology-description-rc4.md).
+Current stage: **rc.4 formal-reference synchronization independently reviewed; all five implementation workflows passed**. [Report](run-10-report.md), [current FD-A–FD-J reference](../../../docs/formal/formal-ontology-description-rc4.md).
 
 - Eight-file asserted closure, 1,618 triples and 116 local declarations with separate conceptual/helper denominators.
 - Nine deliberately corrupted inputs rejected; old P1-R2 reference retained; rc.4 bounded behavioral checks 31/31 (17 negatives).
 - #125 deferred; no SQL changes. #115 live Wiki/Pages and #55 release identity gates remain open.
-- Accepted packages remain **3/19**, requirement evidence **28/90** pending verified acceptance. Documentation dimensions **10/10** are not paper readiness.
+- Accepted packages remain **3/19**, requirement evidence **28/90**; P06, Wiki/Pages and release dependencies remain open. Documentation dimensions **10/10** are not paper readiness.
 - Next eligible batch: #33 publication diagrams/tables after this batch's verified integration.
+
+Implementation `74f6e7f0383a67d0b3b243c3f668586f7f8f0de1`: 15/15 published file hashes match; actual OWL 2 DL, four entailments, two consistent countermodels and two rejected contradictions. [Readback](run-10-readback.json); [PR #139](https://github.com/ArazSaieArasi3/SemRisk/pull/139) records latest-head CI and merge state.
 
 Prior checkpoints are historical below.
 

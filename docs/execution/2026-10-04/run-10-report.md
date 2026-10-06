@@ -17,13 +17,13 @@ Local pinned RDFLib 7.6.0 / PySHACL 0.40.1:
 - **9/9 deliberate corruptions rejected**: inventory, missing FD section, unbound/escaping imports, missing module, changed axiom, removed metadata declaration, shape drift and CQ drift.
 - Original P1-R2 local-reference and generated-closure checks pass unchanged (76 declarations / 1,409 asserted triples), separately from rc.4.
 - rc.4 exposure-scale source manifest passes; bounded rc.4 behavioral suite **31/31**, including **17 negative cases**. Its embedded old-suite call executes the frozen rc.3 tests against rc.3; it is not 31 additional current-candidate guarantees.
-- Exact-head reasoner and CI outcome must be read from the PR and subsequent readback evidence, not inferred from this report. The workflow executes four actual type entailments, two satisfiable countermodels and two expected category inconsistencies using the pinned ROBOT/HermiT toolchain.
+- All five implementation workflows passed on `74f6e7f0383a67d0b3b243c3f668586f7f8f0de1`; see `run-10-readback.json` for exact job and artifact identity. Latest-head checkpoint CI and merge state remain in PR #139. The workflow executes four actual type entailments, two satisfiable countermodels and two expected category inconsistencies using the pinned ROBOT/HermiT toolchain.
 
 The tests are synthetic verification. They are not independent domain validation, a full CQ/SQL equivalence rerun or full OntoUML conformance.
 
 ## Acceptance and downstream gates
 
-#124/P07's formal-source/reference/migration work is implemented for review. Final acceptance requires the checked exact head, independent review and merged-main readback. Its stale residual list is replaced with precise current acceptance conditions; the already implemented rc.3 semantic choices are not reopened.
+#124/P07's formal-source/reference/migration work passed independent review and exact implementation-head CI. The issue remains open for the declared broader P06 conceptual/diagram-conformance dependency; the formal bundle is accepted at its bounded internal scope. Durable merged-main readback is recorded in PR #139. Its stale residual list is replaced with precise current acceptance conditions; the already implemented rc.3 semantic choices are not reopened.
 
 #115 remains open even after this internal bundle because its issue retains source→generated→Wiki/Pages parity (#117) and final scholarly-release binding (#55). No license, semantic, review, manuscript or submission gate is waived. P06's broader diagram conformance acceptance is separate and has not been silently marked complete.
 

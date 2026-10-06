@@ -3,6 +3,9 @@ on:
   pull_request:
     paths:
       - 'docs/formal/**'
+      - 'docs/execution/2026-10-04/run-10*'
+      - 'docs/execution/2026-10-04/work-packages.json'
+      - 'docs/execution/2026-10-04/status.md'
       - 'tools/*rc4_formal_reference.py'
       - 'ontology/releases/0.2.0-rc.4/**'
       - 'ontology/vendor/**'

@@ -378,13 +378,13 @@
       "docs/formal/formal-ontology-description-rc4.md",
       "docs/formal/0.2.0-rc.4/source-manifest.json",
       "docs/formal/migration-to-rc4.md",
-      "docs/execution/2026-10-04/run-10-report.md"
+      "docs/execution/2026-10-04/run-10-report.md",
+      "docs/execution/2026-10-04/run-10-readback.json"
     ],
-    "acceptance_result": "CURRENT_RC4_REFERENCE_IMPLEMENTED: independent review, exact-head formal CI and durable main readback pending; no live publication/release acceptance implied",
+    "acceptance_result": "PASS_BOUNDED_RC4_REFERENCE: all five exact implementation workflows passed and independent review accepted; broader P06 dependency remains open",
     "remaining": [
-      "Independent review of the current rc.4 FD-A–FD-J projection and cumulative migration matrix",
-      "Exact-head source/reasoner checks and durable merged-main readback",
-      "Record dependency disposition for broader P06 conformance without claiming those separate gates passed"
+      "Broader P06 conceptual/diagram conformance dependency remains open; no semantic gate waived",
+      "Durable merged-main readback for current checkpoint is tracked in PR139"
     ]
   },
   {
