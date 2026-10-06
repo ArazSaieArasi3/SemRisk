@@ -1,3 +1,16 @@
+# Current revision status — Run 19 bounded evidence crosswalk, 2026-10-06
+
+Current stage: **objective/use-case and governed domain-ownership evidence explicitly joined**. [Report](run-19-report.md), [crosswalk](objective-domain-crosswalk.md).
+
+- Five evidence rows preserve original test versions and adverse EA capability gaps; 30 source hashes and 25 documentary corruption controls.
+- Requirements 1.4, 2.7 and 4.5 accepted only at bounded documentation/evidence-contract scope. No new scientific experiment or manuscript payload.
+- Bounded requirements **39/90**; whole packages **3/19**. Current rc.4 extension criterion 1.9 remains open.
+- Live Wiki/Pages remain exactly as verified in Run 18. No whole issue or scientific/release gate is closed by this checkpoint.
+
+Prior checkpoints below are historical.
+
+---
+
 # Current revision status — Run 18 live ontology documentation, 2026-10-06
 
 Current stage: **ontology-only Wiki and Pages published and independently verified**. [Report](run-18-report.md), [publication receipt](../../pages/2026-10-06/publication-receipt.json).

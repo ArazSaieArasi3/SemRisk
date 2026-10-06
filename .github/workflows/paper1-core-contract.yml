@@ -21,3 +21,5 @@ jobs:
         run: python tools/check_run3_traceability.py
       - name: Validate author-revision controls
         run: python docs/execution/2026-10-04/validate_register.py
+      - name: Check bounded objective and domain evidence crosswalk
+        run: python tools/check_objective_domain_crosswalk.py
