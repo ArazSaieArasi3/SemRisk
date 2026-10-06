@@ -1,0 +1,182 @@
+{
+  "asserted_triples": 1618,
+  "canonical_nt_sha256": "149179d6337eba60211719fb1b663031ef329caedd1f7dcb5d5b1b3aed3085ce",
+  "closure_file_count": 8,
+  "conceptual_rows": 47,
+  "declaration_counts": {
+    "annotation_property": 1,
+    "class": 46,
+    "datatype_property": 8,
+    "marker": 4,
+    "named_individual": 7,
+    "object_property": 50
+  },
+  "declared_entity_count": 116,
+  "historical_cq_classification": {
+    "conceptual_only": 6,
+    "deferred": 1,
+    "executable": 26,
+    "partially_executable": 7
+  },
+  "limits": [
+    "No new OWL reasoning result is produced by this generator",
+    "Shape files retain their original versions; composition is explicitly bound",
+    "Historical CQ counts are not an rc.4 full SQL parity rerun",
+    "No live Wiki/Pages parity, scholarly release or independent expert validation"
+  ],
+  "module_count": 7,
+  "named_shapes": [
+    "urn:semrisk:profile:assessment-context:ActivityShape",
+    "urn:semrisk:profile:assessment-context:MethodShape",
+    "urn:semrisk:profile:assessment-context:ResponsibilityShape",
+    "urn:semrisk:profile:assessment-context:ResultShape",
+    "urn:semrisk:profile:assessment-context:ResultTypeShape",
+    "urn:semrisk:profile:assessment-context:ScaleShape",
+    "urn:semrisk:profile:information-state:AssignmentShape",
+    "urn:semrisk:profile:information-state:ScenarioShape",
+    "urn:semrisk:profile:information-state:ValueShape",
+    "urn:semrisk:profile:information-state:VersionShape",
+    "urn:semrisk:shape:exposure-scale:ExposureShape",
+    "urn:semrisk:shape:exposure-scale:ScaleVersionShape"
+  ],
+  "projection": "asserted import closure, not entailment closure",
+  "publication_ready": false,
+  "query_paths": [
+    "rules/enterprise/risk-owners-at-v0.2.0-rc.1.rq",
+    "rules/enterprise/workflow-at-v0.2.0-rc.3.rq",
+    "rules/core/exposure-at-v0.2.0-rc.4.rq"
+  ],
+  "registered_relation_rows": 40,
+  "separately_bound_profiles": {
+    "historical_legacy": "shapes/semrisk-paper1-shapes-v0.1.0-rc.1.ttl",
+    "optional_grounding": "shapes/foundational-evidence-v0.2.0-rc.2.ttl"
+  },
+  "sources": [
+    {
+      "git_blob_sha": "7304224b745a8eee5d562ddab0dc3a8110261470",
+      "path": "evaluation/cq/issue52-cq-results-v1.0.csv",
+      "sha256": "2338fadf6b894e251bd1c2cbedc3b284214661ef298dd1c978a525abd1924f37"
+    },
+    {
+      "git_blob_sha": "79647dec7fd2a8c8e74b65d15e977f707f4d46a7",
+      "path": "foundational/exposure-scale-v0.2.0-rc.4/concept-category-audit.csv",
+      "sha256": "449ee5bd108a217aa8a6da98f0ad1f6aab115c89fa965c373e24013eda079d51"
+    },
+    {
+      "git_blob_sha": "136baf993c0d80e8d7caa89739c2c7c7f4635511",
+      "path": "foundational/exposure-scale-v0.2.0-rc.4/relation-formal-audit.csv",
+      "sha256": "e5c829e8cf9a4ca2b4e9c92e8b3798fc7dc1b3b6c18b34bf8df0370ae3bbc71c"
+    },
+    {
+      "git_blob_sha": "4f2087a8e31fe49573082b01a58d28e20901d2cc",
+      "path": "ontology/releases/0.2.0-rc.4/assessment-context.ttl",
+      "sha256": "ab6678acd63f408758721d9f224bcd91c838d4684a47dcefd8801b1b6be737d9"
+    },
+    {
+      "git_blob_sha": "9c425e787d29603a7cfc783ed9e5aeee339f3a49",
+      "path": "ontology/releases/0.2.0-rc.4/catalog.xml",
+      "sha256": "59c03c5f03268589794dea087c7b8704731819cfe7c3a724416dab0580e2c5d7"
+    },
+    {
+      "git_blob_sha": "3bba99b2d60c32375c3c6129b320e45e99bc838f",
+      "path": "ontology/releases/0.2.0-rc.4/conceptual-iri-register.csv",
+      "sha256": "f152bbb106cafd14c879ef1d33e1bcd0d9d4bc9e07f892b95ba469d314e9549d"
+    },
+    {
+      "git_blob_sha": "352af8b2a55fc4e3b99542a0cc3d006f6994ab59",
+      "path": "ontology/releases/0.2.0-rc.4/core.ttl",
+      "sha256": "3a18524a597dba048622e1bf617729cd614e83a3c8c505ef8a72ec1861882ba7"
+    },
+    {
+      "git_blob_sha": "6fc1c8afd00bdbe6e1a695cdde36617ab2737173",
+      "path": "ontology/releases/0.2.0-rc.4/enterprise.ttl",
+      "sha256": "7a10aba1ed04e67ceb9b8bc641f71dc627ca5e04d73deb7fa1c1a73b4e956aa2"
+    },
+    {
+      "git_blob_sha": "fc6da3e0850fcf1de8ded0412a3ddb228728a916",
+      "path": "ontology/releases/0.2.0-rc.4/governance.ttl",
+      "sha256": "a47e94537a0c6df243a13bf326f7b5235c17b10991701f35eb888e2b948102ac"
+    },
+    {
+      "git_blob_sha": "2c755a0f59d131c8fae3a5786fdfcb9d69fda25c",
+      "path": "ontology/releases/0.2.0-rc.4/information-state-iri-registry.csv",
+      "sha256": "26173d47919c17e0de0d3ce57612482c55067c9a396a5ed53c49b34f5b4b9751"
+    },
+    {
+      "git_blob_sha": "78c13946429e2d0fd670fd054f2469be5bd2cd78",
+      "path": "ontology/releases/0.2.0-rc.4/manifest.json",
+      "sha256": "977fb62f495b3f79736ae7b3573807a58b7f29e08d050d2b41ab6741214a776d"
+    },
+    {
+      "git_blob_sha": "b83ad043c09f75befaa452f4fcbe28754427244d",
+      "path": "ontology/releases/0.2.0-rc.4/mappings.ttl",
+      "sha256": "9c2642ca4ed45b54b9643898517e11579fc056e4a525b7a36673bef0b33c713d"
+    },
+    {
+      "git_blob_sha": "5927ba386c9f5853ca962f50f5f540d4c4211dd4",
+      "path": "ontology/releases/0.2.0-rc.4/method.ttl",
+      "sha256": "3789456bf4cc3421126b1bb989aad526769e1154b65bd660235c280516eb4ff9"
+    },
+    {
+      "git_blob_sha": "fda0034d43f48a7dc7da2d907db9cb8c11c0fde0",
+      "path": "ontology/releases/0.2.0-rc.4/pharma.ttl",
+      "sha256": "0930d814bf299dda409a4ea00111ba369e4955c57b24c4e2012733c073bf0a11"
+    },
+    {
+      "git_blob_sha": "408f8bba2c99b38b578089c671eb9c7f8173b21f",
+      "path": "ontology/releases/0.2.0-rc.4/profile-iri-registry.csv",
+      "sha256": "53e9a2b7f781ba08c85bd8f367c5505fa37f4c543c2ee9488b698de822150e25"
+    },
+    {
+      "git_blob_sha": "db1dc7feb6eba2de628e3274671e0e3cfd99f09e",
+      "path": "ontology/vendor/gufo-v1.0.0.ttl",
+      "sha256": "b234c7a22d738b66dc8fcf735146fdbe828122e2a04bec43c8c9b08f34fd9027"
+    },
+    {
+      "git_blob_sha": "c80dac8411da1f89ad0d07b568e0e07d5df82745",
+      "path": "rules/core/exposure-at-v0.2.0-rc.4.rq",
+      "sha256": "eaa68935ad27cfc1327ff10029f66fa344940f24df57d70ce449b956e1438d21"
+    },
+    {
+      "git_blob_sha": "6cb0350206874fbd23682223a9327790fe7ef77a",
+      "path": "rules/enterprise/derive-has-risk-owner-v0.1.0-rc.1.rq",
+      "sha256": "0b06da9b9936b615d880acc541ac34e61d7590484dfcb280a0ba97a043d59731"
+    },
+    {
+      "git_blob_sha": "0f13f4541c9f4e695e42403e03a4739e56354562",
+      "path": "rules/enterprise/risk-owners-at-v0.2.0-rc.1.rq",
+      "sha256": "4a4ca63caec6d48ecd7dbe65fb148dd896351f20c59f5fbc0080f40bfd749753"
+    },
+    {
+      "git_blob_sha": "8f9c79e7f20f64759177d503cc0b1a1d4fc1a6a7",
+      "path": "rules/enterprise/workflow-at-v0.2.0-rc.3.rq",
+      "sha256": "783de3e4f686ac867762aad989985de58102f40005942c2820ecab7038632b4e"
+    },
+    {
+      "git_blob_sha": "bbcc3729ccd8334fe3aa0f59a327ef67df629b57",
+      "path": "shapes/assessment-context-v0.2.0-rc.1.ttl",
+      "sha256": "799e15764822d6aa955a3ee95564e11b600d312f0e0e2e7e136bebeb2d234e15"
+    },
+    {
+      "git_blob_sha": "d5238e5a947986c8b04a6e43f47498db591031d7",
+      "path": "shapes/exposure-scale-v0.2.0-rc.4.ttl",
+      "sha256": "094d820dc73f33ea0e5d4796178ff0b14c1b407cf840dfab684940c9399c0979"
+    },
+    {
+      "git_blob_sha": "323d75f0ac24964752cb06463f905ca23bec29b5",
+      "path": "shapes/foundational-evidence-v0.2.0-rc.2.ttl",
+      "sha256": "53cd32b2b7fb59447293de07e8b6b2b8abff932d7237718f60b9bccf88aa0f31"
+    },
+    {
+      "git_blob_sha": "b37e972bdb8186ea0ad071b89e934ec8859bd35b",
+      "path": "shapes/semantic-identity-v0.2.0-rc.3.ttl",
+      "sha256": "3a8f73330d139c0a7184b27aa2d1965b740e02481f8f2f07b562055ed06b5152"
+    },
+    {
+      "git_blob_sha": "f9228985e84c62065f9b9da32f5fecab337c2c0e",
+      "path": "shapes/semrisk-paper1-shapes-v0.1.0-rc.1.ttl",
+      "sha256": "efc9d39b510a69d29ed3c645d594ed43b3d671836d531ed90e08f2e422e7ce26"
+    }
+  ],
+  "version": "0.2.0-rc.4"
+}

@@ -1,3 +1,17 @@
+# Current revision status — Run 10, 2026-10-06
+
+Current stage: **rc.4 formal-reference synchronization implemented locally; independent review and exact-head CI pending**. [Report](run-10-report.md), [current FD-A–FD-J reference](../../../docs/formal/formal-ontology-description-rc4.md).
+
+- Eight-file asserted closure, 1,618 triples and 116 local declarations with separate conceptual/helper denominators.
+- Nine deliberately corrupted inputs rejected; old P1-R2 reference retained; rc.4 bounded behavioral checks 31/31 (17 negatives).
+- #125 deferred; no SQL changes. #115 live Wiki/Pages and #55 release identity gates remain open.
+- Accepted packages remain **3/19**, requirement evidence **28/90** pending verified acceptance. Documentation dimensions **10/10** are not paper readiness.
+- Next eligible batch: #33 publication diagrams/tables after this batch's verified integration.
+
+Prior checkpoints are historical below.
+
+---
+
 Implementation checkpoint: **41/41 file hashes, five exact content readbacks and 9/9 issue bodies matched**. All nine triggered checks across six job types passed on `ec0580321c3c2206429bfedaa4fd0b902743ebe5`. [Run 9 readback](run-9-readback.json); [PR #138](https://github.com/ArazSaieArasi3/SemRisk/pull/138) carries the latest-head CI and merge state. These are observed implementation results; full package acceptance remains separate.
 
 # Current revision status — Run 9, 2026-10-05
