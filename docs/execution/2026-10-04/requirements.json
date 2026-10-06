@@ -54,15 +54,19 @@
     "group": "۱. جایگاه و تمایز",
     "request": "تناسب با معماری سازمانی",
     "package_id": "P02",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 53,
     "acceptance_check": "EA use cases connect risk knowledge to objectives, capabilities, responsibilities or governance with current/future boundaries.",
     "artifact_destinations": [
       "docs/execution/2026-10-04/scientific-contract.md",
       "docs/execution/2026-10-04/evidence-grounded-fa.md"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "docs/execution/2026-10-04/objective-domain-crosswalk.md",
+      "docs/execution/2026-10-04/objective-domain-crosswalk-2026-10-06.json",
+      "docs/execution/2026-10-04/objective-domain-crosswalk-results.json"
+    ],
+    "verification_result": "PASS_BOUNDED_DOCUMENTARY_CROSSWALK: exact historical test/source bindings and governed ownership/membership joins; absent EA capabilities explicit; no new experiment, final manuscript, domain adequacy or whole-package acceptance"
   },
   {
     "id": "1.5",
@@ -308,15 +312,19 @@
     "group": "۲. چکیده و مقدمه",
     "request": "هدف و ویژگی‌های بالفعل آنتولوژی برای ERM/EA",
     "package_id": "P02",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 53,
     "acceptance_check": "Research objective identifies delivered ontology properties and their bounded ERM/EA use.",
     "artifact_destinations": [
       "docs/execution/2026-10-04/scientific-contract.md",
       "docs/execution/2026-10-04/evidence-grounded-fa.md"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "docs/execution/2026-10-04/objective-domain-crosswalk.md",
+      "docs/execution/2026-10-04/objective-domain-crosswalk-2026-10-06.json",
+      "docs/execution/2026-10-04/objective-domain-crosswalk-results.json"
+    ],
+    "verification_result": "PASS_BOUNDED_DOCUMENTARY_CROSSWALK: exact historical test/source bindings and governed ownership/membership joins; absent EA capabilities explicit; no new experiment, final manuscript, domain adequacy or whole-package acceptance"
   },
   {
     "id": "2.8",
@@ -653,7 +661,7 @@
     "group": "۴. روش و طراحی",
     "request": "تعریف دامنه‌ها و مفهوم‌هایشان",
     "package_id": "P06",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 123,
     "acceptance_check": "Domains/modules have definitions, ownership and mapped concepts; planned and implemented counts remain distinct.",
     "artifact_destinations": [
@@ -661,8 +669,12 @@
       "foundational/",
       "architecture/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "docs/execution/2026-10-04/objective-domain-crosswalk.md",
+      "docs/execution/2026-10-04/objective-domain-crosswalk-2026-10-06.json",
+      "docs/execution/2026-10-04/objective-domain-crosswalk-results.json"
+    ],
+    "verification_result": "PASS_BOUNDED_DOCUMENTARY_CROSSWALK: exact historical test/source bindings and governed ownership/membership joins; absent EA capabilities explicit; no new experiment, final manuscript, domain adequacy or whole-package acceptance"
   },
   {
     "id": "4.6",

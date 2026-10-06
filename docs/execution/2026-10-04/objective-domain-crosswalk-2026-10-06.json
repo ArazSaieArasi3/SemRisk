@@ -1,0 +1,307 @@
+{
+  "baseline_commit": "d3bdb437844880d7c3686959b2d3dc59dbec5f1a",
+  "scope": "Requirement-specific technical documentation/evidence crosswalk; no new semantic experiment or manuscript projection",
+  "requirements": [
+    "1.4",
+    "2.7",
+    "4.5"
+  ],
+  "rows": [
+    {
+      "id": "EA-OWNERSHIP",
+      "requirements": [
+        "1.4",
+        "2.7"
+      ],
+      "use_case": "Retrieve assigned responsibility at an explicit instant",
+      "delivered_properties": [
+        "Assignment-derived actor pairs",
+        "Co-owner and half-open temporal boundaries"
+      ],
+      "result_path": "evaluation/temporal/v0.2.0-rc.1/semantic-results.json",
+      "test_ids": [
+        "OWNER-1",
+        "OWNER-2",
+        "OWNER-3",
+        "OWNER-4",
+        "OWNER-5",
+        "OWNER-6",
+        "OWNER-UNBOUND",
+        "N16"
+      ],
+      "receipt_path": "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json",
+      "commit_field": "tested_commit",
+      "tested_commit": "987978e47b510ec5e1685c5c697655f431fd91bd",
+      "test_scope": "Historical rc.1 synthetic fixture; available query remains bound in current source composition",
+      "permitted_ceiling": [
+        "No organization-wide accountability determination",
+        "Unknown starts excluded by declared query contract",
+        "No universal assignee-category validation inferred"
+      ],
+      "artifact_paths": [
+        "rules/enterprise/risk-owners-at-v0.2.0-rc.1.rq",
+        "formalization/qualified-context-contract-v0.2.0-rc.1.md"
+      ],
+      "negative_test_ids": [
+        "OWNER-UNBOUND",
+        "N16"
+      ]
+    },
+    {
+      "id": "EA-WORKFLOW",
+      "requirements": [
+        "1.4",
+        "2.7"
+      ],
+      "use_case": "Retrieve scheme-qualified administrative record status without conflating risk state",
+      "delivered_properties": [
+        "Versioned workflow assignment",
+        "Half-open status history"
+      ],
+      "result_path": "evaluation/semantic-identity/v0.2.0-rc.3/results.json",
+      "test_ids": [
+        "HALF-OPEN-BEFORE",
+        "HALF-OPEN-BOUNDARY",
+        "W03",
+        "W04",
+        "W05",
+        "W06",
+        "W07",
+        "W08",
+        "SNAPSHOT-NOT-HISTORY"
+      ],
+      "receipt_path": "evaluation/semantic-identity/v0.2.0-rc.3/ci-evidence.json",
+      "commit_field": "tested_commit",
+      "tested_commit": "001dbf12db19f273c9ee67e04f70fa7b2f129cef",
+      "test_scope": "Historical rc.3 synthetic checks; rc.4 RC3-REGRESSION calls the frozen suite",
+      "permitted_ceiling": [
+        "Administrative closure is not risk elimination or treatment success",
+        "Complete workflow SQL helper parity is deferred"
+      ],
+      "artifact_paths": [
+        "foundational/semantic-identity-v0.2.0-rc.3/decisions.md",
+        "rules/enterprise/workflow-at-v0.2.0-rc.3.rq",
+        "shapes/semantic-identity-v0.2.0-rc.3.ttl"
+      ],
+      "negative_test_ids": [
+        "W03",
+        "W04",
+        "W05",
+        "W06",
+        "W07",
+        "W08",
+        "SNAPSHOT-NOT-HISTORY"
+      ]
+    },
+    {
+      "id": "EA-REASSESSMENT",
+      "requirements": [
+        "1.4",
+        "2.7"
+      ],
+      "use_case": "Retain qualified assessment/result history for the same risk",
+      "delivered_properties": [
+        "Method/time/scale context",
+        "Supersession and baseline constraints"
+      ],
+      "result_path": "evaluation/temporal/v0.2.0-rc.1/semantic-results.json",
+      "test_ids": [
+        "SHACL-POS",
+        "N07",
+        "N08",
+        "N09",
+        "N10",
+        "N11",
+        "N12"
+      ],
+      "receipt_path": "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json",
+      "commit_field": "tested_commit",
+      "tested_commit": "987978e47b510ec5e1685c5c697655f431fd91bd",
+      "test_scope": "Historical rc.1 synthetic profile checks",
+      "permitted_ceiling": [
+        "Evidence links do not establish truth",
+        "No numerical comparability or measured treatment effectiveness claim",
+        "Not a fresh behavioral proof for every inherited rc.4 feature"
+      ],
+      "artifact_paths": [
+        "formalization/qualified-context-contract-v0.2.0-rc.1.md",
+        "shapes/assessment-context-v0.2.0-rc.1.ttl"
+      ],
+      "negative_test_ids": [
+        "N07",
+        "N08",
+        "N09",
+        "N10",
+        "N11",
+        "N12"
+      ]
+    },
+    {
+      "id": "CORE-EXPOSURE-SCALE",
+      "requirements": [
+        "2.7"
+      ],
+      "use_case": "Represent explicit Exposure endpoints and issued scale identity",
+      "delivered_properties": [
+        "Exposure subject/source",
+        "NumericScale as ArtifactVersion"
+      ],
+      "result_path": "evaluation/exposure-scale/v0.2.0-rc.4/results.json",
+      "test_ids": [
+        "EXPOSURE-ENDPOINTS",
+        "SCALE-IDENTITY",
+        "INTERVAL-BEFORE",
+        "INTERVAL-BOUNDARY",
+        "INTERVAL-ZONE",
+        "UNKNOWN-START",
+        "UNBOUND-TIME",
+        "E01",
+        "E02",
+        "E03",
+        "S01",
+        "S02"
+      ],
+      "receipt_path": "evaluation/exposure-scale/v0.2.0-rc.4/ci-evidence.json",
+      "commit_field": "tested_candidate_commit",
+      "tested_commit": "418b8e3a8ebe14e73fbc8e1d820e452f3afa1ec7",
+      "test_scope": "Current rc.4 synthetic candidate verification",
+      "permitted_ceiling": [
+        "Endpoint assertions do not entail realized consequences",
+        "Local profile maxima are not global OWL cardinalities",
+        "No enterprise-impact propagation or complete scale/content SQL projection"
+      ],
+      "artifact_paths": [
+        "foundational/exposure-scale-v0.2.0-rc.4/decisions.md",
+        "shapes/exposure-scale-v0.2.0-rc.4.ttl",
+        "docs/formal/formal-ontology-description-rc4.md"
+      ],
+      "negative_test_ids": [
+        "UNKNOWN-START",
+        "UNBOUND-TIME",
+        "E01",
+        "E02",
+        "E03",
+        "S01",
+        "S02"
+      ]
+    },
+    {
+      "id": "PHARMA-PROVENANCE",
+      "requirements": [
+        "2.7"
+      ],
+      "use_case": "Preserve source statement and mapping provenance in bounded literature applicability",
+      "delivered_properties": [
+        "Source/locator lineage",
+        "Information-artifact identity",
+        "Explicit mapping uncertainty"
+      ],
+      "result_path": "case/pharma/literature-pilot-v0.1.0/validation-results.json",
+      "test_ids": [
+        "RDF-EQUALITY",
+        "SHACL-ARTIFACT-IDENTITY",
+        "SOURCE-COUNT-CQ",
+        "MAPPING-COUNT-CQ",
+        "N01-MISSING-LOCATOR",
+        "N04-FALSE-OBSERVATION",
+        "N05-FALSE-HOLDOUT",
+        "N08-ROLE-DRIFT",
+        "N09-FALSE-REVIEW"
+      ],
+      "receipt_path": "case/pharma/literature-pilot-v0.1.0/ci-evidence.json",
+      "commit_field": "tested_head",
+      "tested_commit": "ec0580321c3c2206429bfedaa4fd0b902743ebe5",
+      "test_scope": "Frozen literature pilot, 24 statements from six studies: 12 partial, 11 ambiguous, one unmapped",
+      "permitted_ceiling": [
+        "Applicability and information staging only",
+        "No independent transfer, observed real-world occurrence or full domain SQL parity"
+      ],
+      "artifact_paths": [
+        "case/pharma/literature-pilot-v0.1.0/README.md",
+        "case/pharma/literature-pilot-v0.1.0/validation-results.json"
+      ],
+      "negative_test_ids": [
+        "N01-MISSING-LOCATOR",
+        "N04-FALSE-OBSERVATION",
+        "N05-FALSE-HOLDOUT",
+        "N08-ROLE-DRIFT",
+        "N09-FALSE-REVIEW"
+      ]
+    }
+  ],
+  "explicit_gaps": {
+    "CQ-013": "partially_executable",
+    "CQ-017": "conceptual_only",
+    "objective_capability_process_implementation": false,
+    "enterprise_impact_propagation_demonstrated": false,
+    "organizational_resilience_demonstrated": false,
+    "independent_validation_demonstrated": false,
+    "full_rc4_sql_parity_demonstrated": false
+  },
+  "domain_module_acceptance": {
+    "planned_scopes": 12,
+    "architecture_responsibilities": 10,
+    "governed_concepts": 47,
+    "membership_rows": 13,
+    "current_modules": 7,
+    "historical_modules": 6,
+    "domain_classes": 35,
+    "markers": 4,
+    "undeclared_conceptual_slots": 8,
+    "ownership_distribution": {
+      "SemRisk": 34,
+      "SemRisk Profile": 9,
+      "External": 4
+    },
+    "membership_additive": false,
+    "planned_profiles_are_implemented": false,
+    "semantic_adequacy_established": false
+  },
+  "source_sha256": {
+    "architecture/g2/concept-relation-ownership-matrix-v0.1.csv": "f831820c004d1fcf1ad4e6d2b921504b826368c973864b7416c9d1702aaa7c86",
+    "architecture/g2/module-profile-registry-v0.1.csv": "3c3547f6dc77e2c09183c458db91386ee191ed6bc919924812babc47c09fc854",
+    "case/pharma/literature-pilot-v0.1.0/README.md": "9418b46fbf674285680d9bde24e8bf5191fdc25a0a5cf2c19e18489e8c860da8",
+    "case/pharma/literature-pilot-v0.1.0/ci-evidence.json": "31296a700c277d60ba014f37dc2bb2c4e9ade0909404f22edc85610bc1f0173b",
+    "case/pharma/literature-pilot-v0.1.0/validation-results.json": "7c8f77a5d7bc7c462dc4bb44313835577ba15d3ca3e7c1bbfcdcd7575d765e93",
+    "conceptualization/core/core-concept-registry-v0.1.csv": "cd29ef0a38b4225efe8e8c431528f99db133e4cdd4d7b12d2c0a76384e91bdff",
+    "conceptualization/revision-2026-10-05/domain-membership.csv": "4e385811ad608ce173f7ffdbdc90b9a02b6dbf2986c6624ef5c552640b7ef63e",
+    "docs/formal/0.2.0-rc.4/entity-inventory.csv": "5bb0263f351343a1bb28bea50051e33b77c8551deed89e637cdf49a8d1e4734e",
+    "docs/formal/0.2.0-rc.4/source-manifest.json": "28b69b7933a5406ddd89de776bbb0fc00c78c56c56b1625f9f1b7356eb50c5ba",
+    "docs/formal/formal-ontology-description-rc4.md": "6102ac328480a5ce2b39b98c80148e549022c746391ea6dd17006953d4caf054",
+    "docs/research/domain-profile-roadmap.md": "bc55c6f6b044bc772a5afa50564b10edcdd976db29643a827c6873c582d03fb1",
+    "evaluation/cq/issue52-cq-results-v1.0.csv": "2338fadf6b894e251bd1c2cbedc3b284214661ef298dd1c978a525abd1924f37",
+    "evaluation/exposure-scale/v0.2.0-rc.4/ci-evidence.json": "8e9a1d90edab0ea2b0537ed7ac6c03caefbd786c0d990155b52e585f0b672b56",
+    "evaluation/exposure-scale/v0.2.0-rc.4/results.json": "8c02ce41d079103e160793aa20fda5e4eb9865a50d84993b9775547a8a515422",
+    "evaluation/semantic-identity/v0.2.0-rc.3/ci-evidence.json": "1d94b9861dc1a593e2998046f1c050a32884bdeb07d1e9d3d23890f86c95a077",
+    "evaluation/semantic-identity/v0.2.0-rc.3/results.json": "2ef8b7c3d7928896990b8111d60c320c79a37ccacdd1849aec7a21817544e353",
+    "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json": "574fb1f124aa6368042b92099fff184b76085e7afa6e6067f3a8879666205afc",
+    "evaluation/temporal/v0.2.0-rc.1/semantic-results.json": "75d889f504bb62dbf3220333f8de397935ad3a50feb41e83a683e98cba7b5e63",
+    "formalization/qualified-context-contract-v0.2.0-rc.1.md": "95ba4a9dd88cdbd7547d02270e33a0d8b41684b250e412040545196b1f36950d",
+    "foundational/exposure-scale-v0.2.0-rc.4/decisions.md": "1a18c6e00740f596624b9ac24a6cfc390a3a5d787440069c72bba3f992bf3056",
+    "foundational/semantic-identity-v0.2.0-rc.3/decisions.md": "a24641f8a1652f0fe7155ec3c2cf063824b2e9a45ef859703b1f3935db2dc750",
+    "ontology/releases/0.2.0-rc.4/manifest.json": "977fb62f495b3f79736ae7b3573807a58b7f29e08d050d2b41ab6741214a776d",
+    "rules/enterprise/risk-owners-at-v0.2.0-rc.1.rq": "4a4ca63caec6d48ecd7dbe65fb148dd896351f20c59f5fbc0080f40bfd749753",
+    "rules/enterprise/workflow-at-v0.2.0-rc.3.rq": "783de3e4f686ac867762aad989985de58102f40005942c2820ecab7038632b4e",
+    "shapes/assessment-context-v0.2.0-rc.1.ttl": "799e15764822d6aa955a3ee95564e11b600d312f0e0e2e7e136bebeb2d234e15",
+    "shapes/exposure-scale-v0.2.0-rc.4.ttl": "094d820dc73f33ea0e5d4796178ff0b14c1b407cf840dfab684940c9399c0979",
+    "shapes/semantic-identity-v0.2.0-rc.3.ttl": "3a8f73330d139c0a7184b27aa2d1965b740e02481f8f2f07b562055ed06b5152",
+    "site/ontology/0.2.0-rc.4/docs-20261006/catalog.html": "28911fec1a67b05385ed08ef61386a05f02e519a9605e903941d41d0d7f98cc5",
+    "ontology/p1-r2-candidate-manifest.yaml": "534563d6e3c1cab8ab1f842bc27ec2ac4b7de1e46c24f82a12fd01847d73c00d",
+    "docs/execution/2026-10-04/scientific-contract.md": "e59e2a6bc83f9928cb44b2a251620428f209a7d21e64361aed49953fd6a8ce08"
+  },
+  "retained_gates": [
+    "Current rc.4 extension requirement1.9 remains unverified",
+    "P02 remains PASS_CONTRACT_ONLY; whole packages unchanged",
+    "No final manuscript acceptance or public manuscript payload",
+    "Native-editor/full conformance and scholarly release remain open",
+    "#125 SQL and #51 external review deferred"
+  ],
+  "objective_source": {
+    "path": "docs/execution/2026-10-04/scientific-contract.md",
+    "anchors": [
+      "Position and intended outcome",
+      "Questions, proposed contributions and acceptance evidence"
+    ],
+    "acceptance_scope": "Existing P02 PASS_CONTRACT_ONLY; delivered properties remain bounded by exact row evidence"
+  }
+}
