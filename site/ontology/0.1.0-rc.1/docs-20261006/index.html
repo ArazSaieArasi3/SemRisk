@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>SemRisk P1-R2 candidate formal reference</title>
+<style>
+:root{color-scheme:light dark;font:16px/1.55 system-ui,sans-serif;max-width:76rem;margin:auto;padding:1.2rem}
+body{background:#fff;color:#17212b}a{color:#0b538a}a:focus-visible{outline:3px solid #cc7a00;outline-offset:3px}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #7b8794;padding:.55rem;text-align:left;vertical-align:top}
+th{background:#dce9f2}code{overflow-wrap:anywhere}section{border-top:2px solid #7b8794;padding:1rem 0}
+@media(max-width:52rem){table,thead,tbody,tr,th,td{display:block}thead{position:absolute;clip:rect(0 0 0 0)}td:before{content:attr(data-label) ": ";font-weight:700}}
+@media(prefers-color-scheme:dark){body{background:#14202b;color:#eef3f7}a{color:#91caff}th{background:#233e52}th,td,section{border-color:#8094a5}}
+</style>
+</head>
+<body><p><a href="../../0.2.0-rc.4/docs-20261006/index.html">Current rc.4 documentation</a> · <a href="../../../index.html">Version index</a></p>
+<main><h1>SemRisk P1-R2 formal reference</h1>
+<p><strong>Candidate 0.1.0-rc.1 — historical source projection, not a scholarly release.</strong> This is a generated projection of the asserted graph. Canonical Turtle sources and governed evidence remain authoritative. No OWL entailment, human validation or publication decision is implied.</p>
+<p>Source commit: <code>dfdd7ca68c7fae460f5764afc8d9965aa00c20ae</code>. Asserted graph SHA-256: <code>7f190ca4729b3b66aeb8146d89b71bfbacc9483ef57580cb05be8cd702215a8a</code>. Seven catalog-resolved files, 1409 unique asserted triples, 76 local declarations.</p>
+<nav aria-label="Page sections"><a href="#sources">Sources</a> · <a href="#formal">FD-A–FD-J</a> · <a href="#entities">Entities</a> · <a href="#limits">Limits</a></nav>
+<section id="sources"><h2>Exact sources and imports</h2><ul>
+<li><a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl"><code>ontology/core/semrisk-core-v0.1.0-rc.1.ttl</code></a> — Git blob <code>cf20fe78687a4db4dcffc21e75297f6801cc5cb4</code>; imports: http://purl.org/nemo/gufo#/1.0.0</li>
+<li><a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl"><code>ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl</code></a> — Git blob <code>b3c559b520442423a175db72e32f8fd7384d02cb</code>; imports: urn:semrisk:ontology:core:0.1.0-rc.1</li>
+<li><a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/governance/semrisk-governance-v0.1.0-rc.1.ttl"><code>ontology/governance/semrisk-governance-v0.1.0-rc.1.ttl</code></a> — Git blob <code>3e6e1ec0824f266052e7c8dbcfc402b2ecdcac93</code>; imports: urn:semrisk:ontology:core:0.1.0-rc.1, urn:semrisk:ontology:method:0.1.0-rc.1</li>
+<li><a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/mappings/semrisk-mappings-v0.1.0-rc.1.ttl"><code>ontology/mappings/semrisk-mappings-v0.1.0-rc.1.ttl</code></a> — Git blob <code>459145e4a1d7d1f20377b4eb2ed89b3d43e3420e</code>; imports: urn:semrisk:ontology:core:0.1.0-rc.1, urn:semrisk:ontology:enterprise:0.1.0-rc.1, urn:semrisk:ontology:pharma:0.1.0-rc.1</li>
+<li><a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/method/semrisk-method-v0.1.0-rc.1.ttl"><code>ontology/method/semrisk-method-v0.1.0-rc.1.ttl</code></a> — Git blob <code>a265e500ee210ec3bb4bbb065524a875a8402c9b</code>; imports: urn:semrisk:ontology:core:0.1.0-rc.1</li>
+<li><a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/pharma/semrisk-pharma-v0.1.0-rc.1.ttl"><code>ontology/pharma/semrisk-pharma-v0.1.0-rc.1.ttl</code></a> — Git blob <code>0fddc6e7be7db52ab75f18389a8ce7ad937cf410</code>; imports: urn:semrisk:ontology:core:0.1.0-rc.1, urn:semrisk:ontology:enterprise:0.1.0-rc.1</li>
+<li><a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/vendor/gufo-v1.0.0.ttl"><code>ontology/vendor/gufo-v1.0.0.ttl</code></a> — Git blob <code>db1dc7feb6eba2de628e3274671e0e3cfd99f09e</code>; imports: none</li>
+</ul></section>
+<section id="formal"><h2>Curated interpretation</h2>
+<p><a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/docs/ontology/formal-ontology-description-p1-r2-v0.2.md">FD-A–FD-J formal description</a> explains identity, modules, selected axioms, SHACL, rules, reasoning limits, conceptual trace and CQs. This generated index is a separate read-only view.</p></section>
+<section id="entities"><h2>Local declarations</h2>
+<p>Jump to critical distinctions: <a href="#SR-CPT-001">SR-CPT-001</a> · <a href="#SR-CPT-006">SR-CPT-006</a> · <a href="#SR-CPT-007">SR-CPT-007</a> · <a href="#SR-CPT-033">SR-CPT-033</a> · <a href="#SR-CPT-035">SR-CPT-035</a> · <a href="#SR-CPT-036">SR-CPT-036</a></p>
+<article id="SR-CPT-001"><h3><code>SR-CPT-001</code> — Risk</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>disjointWith</code>: <code>urn:semrisk:entity:SR-CPT-013</code></li></ul></article>
+<article id="SR-CPT-002"><h3><code>SR-CPT-002</code> — Risk Subject</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-CPT-003"><h3><code>SR-CPT-003</code> — Risk Source</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-CPT-004"><h3><code>SR-CPT-004</code> — Predisposing Condition</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>disjointWith</code>: <code>urn:semrisk:entity:SR-CPT-009</code></li><li><code>subClassOf</code>: <code>http://purl.org/nemo/gufo#Situation</code></li></ul></article>
+<article id="SR-CPT-005"><h3><code>SR-CPT-005</code> — Trigger</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>subClassOf</code>: <code>http://purl.org/nemo/gufo#Event</code></li></ul></article>
+<article id="SR-CPT-006"><h3><code>SR-CPT-006</code> — Risk Scenario</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>disjointWith</code>: <code>urn:semrisk:entity:SR-CPT-007</code></li></ul></article>
+<article id="SR-CPT-007"><h3><code>SR-CPT-007</code> — Risk Event</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>subClassOf</code>: <code>http://purl.org/nemo/gufo#Event</code></li></ul></article>
+<article id="SR-CPT-008"><h3><code>SR-CPT-008</code> — Consequence</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>disjointWith</code>: <code>urn:semrisk:entity:SR-CPT-015</code></li><li><code>subClassOf</code>: <code>http://purl.org/nemo/gufo#Situation</code></li></ul></article>
+<article id="SR-CPT-009"><h3><code>SR-CPT-009</code> — Vulnerability</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>subClassOf</code>: <code>http://purl.org/nemo/gufo#IntrinsicMode</code></li></ul></article>
+<article id="SR-CPT-010"><h3><code>SR-CPT-010</code> — Exposure</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>subClassOf</code>: <code>http://purl.org/nemo/gufo#Situation</code></li></ul></article>
+<article id="SR-CPT-011"><h3><code>SR-CPT-011</code> — Risk Assessment Activity</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>disjointWith</code>: <code>urn:semrisk:entity:SR-CPT-013</code></li><li><code>subClassOf</code>: <code>http://purl.org/nemo/gufo#Event</code></li></ul></article>
+<article id="SR-CPT-012"><h3><code>SR-CPT-012</code> — Risk Assessment Method</h3>
+<p>owl:Class · Method · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/method/semrisk-method-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-CPT-013"><h3><code>SR-CPT-013</code> — Risk Assessment Result</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-CPT-014"><h3><code>SR-CPT-014</code> — Likelihood Assessment Result</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>subClassOf</code>: <code>urn:semrisk:entity:SR-CPT-013</code></li></ul></article>
+<article id="SR-CPT-015"><h3><code>SR-CPT-015</code> — Impact Assessment Result</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>subClassOf</code>: <code>urn:semrisk:entity:SR-CPT-013</code></li></ul></article>
+<article id="SR-CPT-016"><h3><code>SR-CPT-016</code> — Risk Level Assessment Result</h3>
+<p>owl:Class · Method · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/method/semrisk-method-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>subClassOf</code>: <code>urn:semrisk:entity:SR-CPT-013</code></li></ul></article>
+<article id="SR-CPT-017"><h3><code>SR-CPT-017</code> — Inherent Risk Assessment Result</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>subClassOf</code>: <code>urn:semrisk:entity:SR-CPT-013</code></li></ul></article>
+<article id="SR-CPT-018"><h3><code>SR-CPT-018</code> — Residual Risk Assessment Result</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>subClassOf</code>: <code>urn:semrisk:entity:SR-CPT-013</code></li></ul></article>
+<article id="SR-CPT-019"><h3><code>SR-CPT-019</code> — Assessment Confidence</h3>
+<p>owl:Class · Method · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/method/semrisk-method-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-CPT-020"><h3><code>SR-CPT-020</code> — Evidence Item</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-CPT-021"><h3><code>SR-CPT-021</code> — Provenance</h3>
+<p>skos:Concept · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-CPT-022"><h3><code>SR-CPT-022</code> — Observation Activity</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>subClassOf</code>: <code>http://purl.org/nemo/gufo#Event</code></li></ul></article>
+<article id="SR-CPT-023"><h3><code>SR-CPT-023</code> — Observation Result</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-CPT-024"><h3><code>SR-CPT-024</code> — Indicator</h3>
+<p>owl:Class · Method · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/method/semrisk-method-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-CPT-025"><h3><code>SR-CPT-025</code> — Threshold</h3>
+<p>owl:Class · Method · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/method/semrisk-method-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-CPT-026"><h3><code>SR-CPT-026</code> — Risk Treatment Strategy</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-CPT-027"><h3><code>SR-CPT-027</code> — Risk Treatment Plan</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-CPT-028"><h3><code>SR-CPT-028</code> — Risk Treatment Activity</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>subClassOf</code>: <code>http://purl.org/nemo/gufo#Event</code></li></ul></article>
+<article id="SR-CPT-029"><h3><code>SR-CPT-029</code> — Control Mechanism</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-CPT-030"><h3><code>SR-CPT-030</code> — Risk Owner</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-CPT-031"><h3><code>SR-CPT-031</code> — Risk Responsibility</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>subClassOf</code>: <code>http://purl.org/nemo/gufo#Relator</code></li></ul></article>
+<article id="SR-CPT-032"><h3><code>SR-CPT-032</code> — Risk Register</h3>
+<p>owl:Class · Enterprise · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-CPT-033"><h3><code>SR-CPT-033</code> — Risk Register Entry</h3>
+<p>owl:Class · Enterprise · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>disjointWith</code>: <code>urn:semrisk:entity:SR-CPT-001</code></li></ul></article>
+<article id="SR-CPT-034"><h3><code>SR-CPT-034</code> — Scenario Description</h3>
+<p>owl:Class · Enterprise · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>disjointWith</code>: <code>urn:semrisk:entity:SR-CPT-006</code></li><li><code>disjointWith</code>: <code>urn:semrisk:entity:SR-CPT-007</code></li></ul></article>
+<article id="SR-CPT-035"><h3><code>SR-CPT-035</code> — Risk State</h3>
+<p>owl:Class · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>subClassOf</code>: <code>http://purl.org/nemo/gufo#Situation</code></li></ul></article>
+<article id="SR-CPT-036"><h3><code>SR-CPT-036</code> — Workflow State</h3>
+<p>owl:Class · Enterprise · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>disjointWith</code>: <code>urn:semrisk:entity:SR-CPT-035</code></li></ul></article>
+<article id="SR-CPT-037"><h3><code>SR-CPT-037</code> — Objective</h3>
+<p>skos:Concept · Mappings · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/mappings/semrisk-mappings-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-CPT-038"><h3><code>SR-CPT-038</code> — Capability</h3>
+<p>skos:Concept · Mappings · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/mappings/semrisk-mappings-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-CPT-039"><h3><code>SR-CPT-039</code> — Business Process</h3>
+<p>skos:Concept · Mappings · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/mappings/semrisk-mappings-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-REL-001"><h3><code>SR-REL-001</code> — concernsRisk</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-001</code></li></ul></article>
+<article id="SR-REL-002"><h3><code>SR-REL-002</code> — describesScenario</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>domain</code>: <code>urn:semrisk:entity:SR-CPT-034</code></li><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-006</code></li></ul></article>
+<article id="SR-REL-003"><h3><code>SR-REL-003</code> — realizedAs</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>domain</code>: <code>urn:semrisk:entity:SR-CPT-006</code></li><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-007</code></li></ul></article>
+<article id="SR-REL-004"><h3><code>SR-REL-004</code> — hasConsequence</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-008</code></li></ul></article>
+<article id="SR-REL-005"><h3><code>SR-REL-005</code> — hasRiskSource</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-003</code></li></ul></article>
+<article id="SR-REL-006"><h3><code>SR-REL-006</code> — predisposedBy</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-004</code></li></ul></article>
+<article id="SR-REL-007"><h3><code>SR-REL-007</code> — triggeredBy</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>domain</code>: <code>urn:semrisk:entity:SR-CPT-007</code></li><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-005</code></li></ul></article>
+<article id="SR-REL-008"><h3><code>SR-REL-008</code> — causes</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-REL-009"><h3><code>SR-REL-009</code> — associatedWith</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-REL-010"><h3><code>SR-REL-010</code> — affects</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-REL-011"><h3><code>SR-REL-011</code> — exposes</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-REL-012"><h3><code>SR-REL-012</code> — hasVulnerability</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-009</code></li></ul></article>
+<article id="SR-REL-013"><h3><code>SR-REL-013</code> — performedAssessmentOf</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>domain</code>: <code>urn:semrisk:entity:SR-CPT-011</code></li><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-001</code></li></ul></article>
+<article id="SR-REL-014"><h3><code>SR-REL-014</code> — usesAssessmentMethod</h3>
+<p>owl:ObjectProperty · Method · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/method/semrisk-method-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>domain</code>: <code>urn:semrisk:entity:SR-CPT-011</code></li><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-012</code></li></ul></article>
+<article id="SR-REL-015"><h3><code>SR-REL-015</code> — producesAssessmentResult</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>domain</code>: <code>urn:semrisk:entity:SR-CPT-011</code></li><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-013</code></li></ul></article>
+<article id="SR-REL-016"><h3><code>SR-REL-016</code> — assessmentResultConcerns</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>domain</code>: <code>urn:semrisk:entity:SR-CPT-013</code></li><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-001</code></li></ul></article>
+<article id="SR-REL-017"><h3><code>SR-REL-017</code> — supportedByEvidence</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-020</code></li></ul></article>
+<article id="SR-REL-018"><h3><code>SR-REL-018</code> — generatedByObservation</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>domain</code>: <code>urn:semrisk:entity:SR-CPT-023</code></li><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-022</code></li></ul></article>
+<article id="SR-REL-019"><h3><code>SR-REL-019</code> — hasProvenance</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-REL-020"><h3><code>SR-REL-020</code> — qualifiedByConfidence</h3>
+<p>owl:ObjectProperty · Method · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/method/semrisk-method-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>domain</code>: <code>urn:semrisk:entity:SR-CPT-013</code></li><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-019</code></li></ul></article>
+<article id="SR-REL-021"><h3><code>SR-REL-021</code> — selectsTreatmentStrategy</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-026</code></li></ul></article>
+<article id="SR-REL-022"><h3><code>SR-REL-022</code> — planImplementsStrategy</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>domain</code>: <code>urn:semrisk:entity:SR-CPT-027</code></li><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-026</code></li></ul></article>
+<article id="SR-REL-023"><h3><code>SR-REL-023</code> — activityExecutesPlan</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>domain</code>: <code>urn:semrisk:entity:SR-CPT-028</code></li><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-027</code></li></ul></article>
+<article id="SR-REL-024"><h3><code>SR-REL-024</code> — activityUsesControl</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>domain</code>: <code>urn:semrisk:entity:SR-CPT-028</code></li><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-029</code></li></ul></article>
+<article id="SR-REL-025"><h3><code>SR-REL-025</code> — controlProtects</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>domain</code>: <code>urn:semrisk:entity:SR-CPT-029</code></li></ul></article>
+<article id="SR-REL-026"><h3><code>SR-REL-026</code> — hasRiskOwner</h3>
+<p>owl:ObjectProperty · Enterprise · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-REL-027"><h3><code>SR-REL-027</code> — assignsResponsibilityFor</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>domain</code>: <code>urn:semrisk:entity:SR-CPT-031</code></li></ul></article>
+<article id="SR-REL-028"><h3><code>SR-REL-028</code> — responsibilityAssignedTo</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>domain</code>: <code>urn:semrisk:entity:SR-CPT-031</code></li></ul></article>
+<article id="SR-REL-029"><h3><code>SR-REL-029</code> — registerContainsEntry</h3>
+<p>owl:ObjectProperty · Enterprise · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>domain</code>: <code>urn:semrisk:entity:SR-CPT-032</code></li><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-033</code></li></ul></article>
+<article id="SR-REL-030"><h3><code>SR-REL-030</code> — hasWorkflowState</h3>
+<p>owl:ObjectProperty · Enterprise · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/enterprise/semrisk-enterprise-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>domain</code>: <code>urn:semrisk:entity:SR-CPT-033</code></li><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-036</code></li></ul></article>
+<article id="SR-REL-031"><h3><code>SR-REL-031</code> — hasRiskState</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>domain</code>: <code>urn:semrisk:entity:SR-CPT-001</code></li><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-035</code></li></ul></article>
+<article id="SR-REL-032"><h3><code>SR-REL-032</code> — precedesState</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-REL-033"><h3><code>SR-REL-033</code> — supersedesAssessmentResult</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>domain</code>: <code>urn:semrisk:entity:SR-CPT-013</code></li><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-013</code></li></ul></article>
+<article id="SR-REL-034"><h3><code>SR-REL-034</code> — basedOnPriorAssessment</h3>
+<p>owl:ObjectProperty · Core · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/core/semrisk-core-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+<article id="SR-REL-035"><h3><code>SR-REL-035</code> — hasIndicator</h3>
+<p>owl:ObjectProperty · Governance · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/governance/semrisk-governance-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-024</code></li></ul></article>
+<article id="SR-REL-036"><h3><code>SR-REL-036</code> — hasThreshold</h3>
+<p>owl:ObjectProperty · Governance · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/governance/semrisk-governance-v0.1.0-rc.1.ttl">source</a></p>
+<ul><li><code>range</code>: <code>urn:semrisk:entity:SR-CPT-025</code></li></ul></article>
+<article id="SR-REL-037"><h3><code>SR-REL-037</code> — pharmaEntityInRiskContext</h3>
+<p>owl:ObjectProperty · Pharma · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/ontology/pharma/semrisk-pharma-v0.1.0-rc.1.ttl">source</a></p>
+<ul></ul></article>
+</section><section id="limits"><h2>Scope and nonclaims</h2>
+<p>The displayed statements are asserted across the catalog-resolved graph. External gUFO terms and anonymous expressions are preserved in the repository graph, not expanded into this local-ID index. SHACL validation and SQL constraints are separate. This candidate is not a live Wiki, deployed Pages site, independent domain validation or scholarly release.</p>
+<p><a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/docs/ontology/generated/p1-r2-generated-reference.md">Complete repository index and canonical graph</a> · <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/dfdd7ca68c7fae460f5764afc8d9965aa00c20ae/docs/ontology/generated/p1-r2-closure-manifest.json">source manifest</a></p>
+</section></main></body></html>

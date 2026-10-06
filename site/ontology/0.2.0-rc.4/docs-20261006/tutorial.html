@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Reproduce a bounded source check | SemRisk rc.4</title><style>body{margin:0;background:#f8fafb;color:#182b3a;font:17px/1.55 system-ui,sans-serif}header,main,footer{max-width:76rem;margin:auto;padding:1.2rem}header{background:#e7f0f4}h1{line-height:1.15}a{color:#075b9a}nav{display:flex;gap:1rem;flex-wrap:wrap}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #a45b00;outline-offset:3px}article{border:1px solid #bbccd6;border-radius:.4rem;padding:1rem;margin:1rem 0;background:white;overflow-wrap:anywhere}code,pre{white-space:pre-wrap;overflow-wrap:anywhere}table{width:100%;border-collapse:collapse;table-layout:fixed}th,td{padding:.55rem;border:1px solid #bbccd6;text-align:left;vertical-align:top;overflow-wrap:anywhere}img{max-width:100%;height:auto}.notice{border-left:5px solid #a96600;background:#fff6e6;padding:.8rem}.controls{display:flex;gap:1rem;flex-wrap:wrap}.controls>label{display:flex;flex-direction:column;min-width:0;max-width:100%;flex:1 1 15rem}input,select,button{font:inherit;padding:.45rem;max-width:100%;box-sizing:border-box}input{width:28rem}.skip{position:absolute;left:-9999px}.skip:focus{position:static}.diagram{overflow:auto;max-height:75vh;background:white}.diagram img{max-width:none;width:1100px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:600px){body{font-size:16px}header,main,footer{padding:.8rem}table{font-size:.9rem}th,td{padding:.35rem}}@media(prefers-color-scheme:dark){body{background:#13212a;color:#edf4f7}header,article{background:#20343f}a{color:#8fceff}.notice{background:#3d3020}input,select,button{background:#20343f;color:#edf4f7}.diagram{background:white}}</style></head><body><a class="skip" href="#main">Skip to content</a><header><h1>Reproduce a bounded source check</h1><p>SemRisk ontology documentation · 0.2.0-rc.4 · documentation revision 2026-10-06</p><nav aria-label="Documentation"><a href="index.html">Overview</a><a href="catalog.html">Domains and concepts</a><a href="relations.html">Relations</a><a href="formal.html">Formal terms</a><a href="guide.html">Formal interpretation</a><a href="diagrams.html">Diagrams</a><a href="explorer/index.html">Explorer</a><a href="tutorial.html">Tutorial</a><a href="sources.html">Sources and limits</a></nav><p><a href="../../0.1.0-rc.1/docs-20261006/index.html">Historical rc.1</a> · <a href="../../../index.html">Version index</a> · <a href="https://github.com/ArazSaieArasi3/SemRisk/wiki/Home">Wiki</a></p></header><main id="main"><p class="notice">Documentation candidate, not a scholarly release or independent validation. OWL sources and governed registries remain authoritative. No manuscript is included.</p><h1 id="bounded-rc4-tutorial">Bounded rc.4 tutorial</h1>
+<p>This engineering exercise reads committed synthetic ontology artifacts. It does not use private source workbooks, demonstrate treatment effects or test SQL parity.</p>
+<h2 id="1-obtain-the-exact-source-snapshot">1. Obtain the exact source snapshot</h2>
+<pre><code class="language-sh">git clone https://github.com/ArazSaieArasi3/SemRisk.git
+cd SemRisk
+git checkout 67247f13ba5d0c7d32163f2b3e848af15067d92e
+python -m venv .venv
+. .venv/bin/activate
+python -m pip install rdflib==7.6.0
+</code></pre>
+<h2 id="2-inspect-an-explicit-asserted-distinction">2. Inspect an explicit asserted distinction</h2>
+<pre><code class="language-python">from pathlib import Path
+from rdflib import Graph, URIRef
+from rdflib.namespace import OWL, RDFS
+root = Path('.')
+g = Graph().parse(root / 'docs/formal/0.2.0-rc.4/asserted-closure.nt', format='nt')
+scenario = URIRef('urn:semrisk:entity:SR-CPT-006')
+event = URIRef('urn:semrisk:entity:SR-CPT-007')
+assert len(g) == 1618
+assert (scenario, OWL.disjointWith, event) in g or (event, OWL.disjointWith, scenario) in g
+assert (scenario, RDFS.subClassOf, URIRef('http://purl.org/nemo/gufo#SituationType')) in g
+print('1618 asserted triples; scenario/event distinction found')
+</code></pre>
+<p>Expected output is the one printed line. This reads explicit triples; it does not run an OWL reasoner. Removing the checked disjointness triple makes the corresponding assertion fail. A record's workflow status does not by itself establish a change in the managed Risk.</p>
+<h2 id="3-trace-the-interpretation">3. Trace the interpretation</h2>
+<p>Locate SR-CPT-006 and SR-CPT-007 in the formal term index, read their exact source modules and compare the scenario/occurrence conceptual view. Use the Explorer only as a locator. Anonymous axioms and omitted constructs must be checked in the formal source, not inferred from graph position.</p>
+<h2 id="4-keep-versions-separate">4. Keep versions separate</h2>
+<p>The historical rc.1 route and its tests retain their old inputs and denominators. Do not transfer its eight-task SQL result to the complete rc.4 candidate. External reader tasks and final release identity remain open.</p></main><footer>Source snapshot <code>67247f13ba5d0c7d32163f2b3e848af15067d92e</code>. <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/67247f13ba5d0c7d32163f2b3e848af15067d92e/ontology/vendor/GUFO-LICENSE">gUFO CC BY 4.0 notice</a>; <a href="https://github.com/ArazSaieArasi3/SemRisk/blob/67247f13ba5d0c7d32163f2b3e848af15067d92e/ontology/vendor/gufo-v1.0.0.ttl">vendored gUFO source</a>. No repository-wide reuse license is inferred. <a href="sources.html#rights">Attribution and rights</a></footer></body></html>

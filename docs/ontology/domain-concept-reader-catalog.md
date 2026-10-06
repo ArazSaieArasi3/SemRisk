@@ -2,7 +2,7 @@
 
 This reader view is generated from the governed registries. It distinguishes the planned domain portfolio, conceptual assignments and the frozen formal candidate `0.1.0-rc.1`. It does not adopt new concepts or change an ontology definition.
 
-The current tested successor is [0.2.0-rc.3](../../ontology/releases/0.2.0-rc.3/README.md), selected by [current-candidate.json](../../ontology/current-candidate.json). Its additional context terms are listed separately in the [profile IRI registry](../../ontology/releases/0.2.0-rc.3/profile-iri-registry.csv); the formal-count join below remains explicitly historical. The current concept registry includes the successor Trigger, confidence, indicator, threshold, heterogeneous-owner, scenario, register and workflow definitions. The [complete foundational audit](../../foundational/semantic-identity-v0.2.0-rc.3/decisions.md) records the remaining diagram gates.
+The current tested successor is [0.2.0-rc.4](../../ontology/releases/0.2.0-rc.4/README.md), selected by [current-candidate.json](../../ontology/current-candidate.json). Its additional context terms are listed separately in the [profile IRI registry](../../ontology/releases/0.2.0-rc.4/profile-iri-registry.csv); the formal-count join below remains explicitly historical. The current concept registry includes the successor Trigger, confidence, indicator, threshold, heterogeneous-owner, scenario, register and workflow definitions. The [complete foundational audit](../../foundational/semantic-identity-v0.2.0-rc.3/decisions.md) records the remaining diagram gates.
 
 Start with [domain definitions](#domain-definitions), [domains and their concepts](#domains-and-their-concepts), [concept definitions](#concept-definitions), or [diagrams](#diagrams).
 

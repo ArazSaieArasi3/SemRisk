@@ -1,0 +1,16 @@
+{
+  "scope": "Ontology-only technical completion; no issue closure inferred from a source bundle",
+  "source_commit": "67247f13ba5d0c7d32163f2b3e848af15067d92e",
+  "issues": [
+    {"issue":115,"implemented_evidence":["FD-A through FD-J","116-term asserted source reference","47 concept and 40 relation source identities","historical routes preserved"],"pending_technical":["Exact source-to-live-Wiki-to-Pages parity and byte receipt"],"retained_gates":["Final #55 release binding and broader model acceptance"],"closure":"OPEN"},
+    {"issue":117,"implemented_evidence":["Versioned ontology-only documentation candidate","41-file allowlist and 100 source locks","Safe reused WebVOWL runtime","15 corruption controls"],"pending_technical":["Exact-head browser CI and visual review","Actual Pages deployment","41-file live byte readback","Published Explorer keyboard/mobile/network checks"],"potential_requirement_after_live_evidence":"5.10","retained_gates":["P08/P16 dependencies","#55/#56 scholarly release and rights contract"],"closure":"OPEN"},
+    {"issue":119,"implemented_evidence":["46 local graph classes; 24 explicit object-property signatures","All 116 declarations in searchable formal index","26 object properties and 8 datatype properties explicitly index-only","Preset-only loading and disabled converter/upload implementation"],"pending_technical":["Actual browser/network/accessibility observations and public route verification"],"retained_gates":["Two independent reader roles must execute adopted T1-T4 protocol; NOT_EXECUTED","No screen-reader result claimed","Final scholarly release/license conditions"],"closure":"OPEN"},
+    {"issue":122,"implemented_evidence":["Eight ontology-only Wiki page inputs","Current researcher/engineer reading paths","Exact bounded tutorial passes locally; removed-disjointness negative rejects"],"pending_technical":["Clean CI tutorial execution","Actual Wiki publication and body readback","Live navigation and scoped keyboard/visual observations"],"potential_requirement_after_live_evidence":"5.9","retained_gates":["3.10 manuscript integration","5.8 manuscript links/anonymity integration","Declared package dependencies"],"closure":"OPEN"}
+  ],
+  "constraints": ["No manuscript text, files or projections on repository/Wiki/Pages before publication","#125 SQL work deferred","#51 external review deferred; no recruitment or invented responses","No root license selection or final scholarly release","Runtime/orchestrator work stopped"],
+  "publication_status": "NOT_YET_DEPLOYED",
+  "durable_accepted_requirements": 34,
+  "total_requirements": 90,
+  "completed_packages": 3,
+  "total_packages": 19
+}

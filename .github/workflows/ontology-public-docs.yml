@@ -1,0 +1,69 @@
+name: Ontology-only documentation publication preflight
+on:
+  pull_request:
+    paths:
+      - 'site/**'
+      - 'docs/pages/2026-10-06/**'
+      - 'docs/wiki/public-20261006/**'
+      - 'tools/build_public_ontology_docs.py'
+      - 'tools/build_rc4_safe_explorer.py'
+      - 'tools/build_public_wiki_docs.py'
+      - 'tools/check_public_ontology_docs.py'
+      - 'tools/browser_qa_public_docs.cjs'
+      - '.github/workflows/ontology-public-docs.yml'
+  workflow_dispatch:
+    inputs:
+      live_base:
+        description: 'Optional exact deployed URL for read-only published-byte checks'
+        required: false
+        default: ''
+permissions:
+  contents: read
+jobs:
+  ontology-only-source-and-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install rdflib==7.6.0 Markdown==3.9
+      - name: Rebuild bounded docs and safe explorer
+        run: |
+          python tools/build_public_ontology_docs.py
+          python tools/build_rc4_safe_explorer.py
+          python tools/build_public_wiki_docs.py
+          python tools/check_public_ontology_docs.py --stage public-docs-stage
+          python tools/build_ontology_reader_catalog.py --check
+          python tools/check_rc4_surface_history.py
+          python tools/check_pages_route_history.py
+          git diff --exit-code
+          node --check site/ontology/0.2.0-rc.4/docs-20261006/explorer/js/webvowl.app.js
+          node --check site/ontology/0.2.0-rc.4/docs-20261006/explorer/js/webvowl.js
+      - name: Run exact bounded tutorial
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          text=Path('docs/pages/2026-10-06/tutorial.md').read_text()
+          code=re.search(r'```python\n(.*?)\n```',text,re.S).group(1)
+          exec(compile(code,'documented-tutorial','exec'))
+          PY
+      - run: npm install --prefix "$RUNNER_TEMP/ontology-docs-qa" --no-save --no-audit --no-fund playwright@1.55.1
+      - run: '"$RUNNER_TEMP/ontology-docs-qa/node_modules/.bin/playwright" install --with-deps chromium'
+      - name: Desktop mobile keyboard and network checks
+        env:
+          LIVE_BASE: ${{ inputs.live_base }}
+        run: NODE_PATH="$RUNNER_TEMP/ontology-docs-qa/node_modules" node tools/browser_qa_public_docs.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ontology-docs-browser-review
+          path: public-docs-browser-artifacts/
+          if-no-files-found: ignore
