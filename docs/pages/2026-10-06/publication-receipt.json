@@ -1,0 +1,169 @@
+{
+  "observed_at_utc": "2026-10-06T19:16:00Z",
+  "scope": "Ontology-only publication; bounded engineering acceptance, not scholarly release",
+  "source_commit": "67247f13ba5d0c7d32163f2b3e848af15067d92e",
+  "implementation_main_commit": "78efbc1304d3204178fe3192e043b06b52d3eb9d",
+  "implementation_tree": "b3ca76c0637e33caa24c71631140da63ed3a5a90",
+  "implementation_pr": 146,
+  "pages": {
+    "url": "https://arazsaiearasi3.github.io/SemRisk/",
+    "branch": "gh-pages",
+    "commit": "36f3cffbe968a06b3dad9b9d392fb0372392105e",
+    "tree": "bbea7e7fe3a8c6c04f24566a6525979701d98de8",
+    "exact_files": 41,
+    "additional_file": ".nojekyll (empty)",
+    "manifest": "deployment-manifest.json",
+    "readback": "41/41 HTTP 200 and SHA256 match, independently repeated",
+    "deployment_run": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37514423204",
+    "https_required": true
+  },
+  "wiki": {
+    "wiki_commit": "a6cf9f9df2225d60a3895c0ad4496e601532f756",
+    "pages": [
+      {
+        "page": "Home",
+        "source_sha256": "f424fc69e8bed7d304824a2e911c2bcec241bcc1f6e21ce93660793735cb0fc0",
+        "wiki_sha256": "f424fc69e8bed7d304824a2e911c2bcec241bcc1f6e21ce93660793735cb0fc0",
+        "byte_equal": true,
+        "normalized_lf_equal": true
+      },
+      {
+        "page": "rc4-Diagrams-and-Explorer",
+        "source_sha256": "bf5da11176b502723415d2e3337bed95c4a3aeb6a38c99606fb4bd67bee7a281",
+        "wiki_sha256": "bf5da11176b502723415d2e3337bed95c4a3aeb6a38c99606fb4bd67bee7a281",
+        "byte_equal": true,
+        "normalized_lf_equal": true
+      },
+      {
+        "page": "rc4-Domains-and-Concepts",
+        "source_sha256": "545f90ff13de6bf7d369b25b84ed12b1b9be71c762441526d947c98f60fea87e",
+        "wiki_sha256": "545f90ff13de6bf7d369b25b84ed12b1b9be71c762441526d947c98f60fea87e",
+        "byte_equal": true,
+        "normalized_lf_equal": true
+      },
+      {
+        "page": "rc4-Formal-Reference",
+        "source_sha256": "a1bd1244f47a83fda77cb78f174aa1eda5ffec05b3f6a61c16a89b0d5414f3a6",
+        "wiki_sha256": "a1bd1244f47a83fda77cb78f174aa1eda5ffec05b3f6a61c16a89b0d5414f3a6",
+        "byte_equal": true,
+        "normalized_lf_equal": true
+      },
+      {
+        "page": "rc4-Overview",
+        "source_sha256": "501ac1e7ee57408a72ee1280b2fcd24975d8a84436d40701bb7d4e314f79354d",
+        "wiki_sha256": "501ac1e7ee57408a72ee1280b2fcd24975d8a84436d40701bb7d4e314f79354d",
+        "byte_equal": true,
+        "normalized_lf_equal": true
+      },
+      {
+        "page": "rc4-Relations",
+        "source_sha256": "15056f012afcae062f715810bac41de408234cf1e06d42a34ec24a2b1b322194",
+        "wiki_sha256": "15056f012afcae062f715810bac41de408234cf1e06d42a34ec24a2b1b322194",
+        "byte_equal": true,
+        "normalized_lf_equal": true
+      },
+      {
+        "page": "rc4-Sources-and-Limits",
+        "source_sha256": "2c314adeafb2f5de5f2fdf8ee44cffd62ce9d77ce886a36836f83ab58ba8ee4a",
+        "wiki_sha256": "2c314adeafb2f5de5f2fdf8ee44cffd62ce9d77ce886a36836f83ab58ba8ee4a",
+        "byte_equal": true,
+        "normalized_lf_equal": true
+      },
+      {
+        "page": "rc4-Tutorial",
+        "source_sha256": "bfce077109b54fce24eee850d029fcb683d5eb05df9a50a986ec26992e31d3a2",
+        "wiki_sha256": "bfce077109b54fce24eee850d029fcb683d5eb05df9a50a986ec26992e31d3a2",
+        "byte_equal": true,
+        "normalized_lf_equal": true
+      }
+    ],
+    "legacy_pages_unchanged_from_prepublication": {
+      "Formal-Reference.md": true,
+      "Scope-and-Contributions.md": true,
+      "Reproduce-and-Release.md": true,
+      "Pharma-Case.md": true,
+      "Evidence-and-VVEAA.md": true,
+      "Semantic-Architecture.md": true,
+      "Relational-Projection.md": true
+    }
+  },
+  "live_browser": {
+    "workflow": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37514804981",
+    "job": 112444879921,
+    "head": "78efbc1304d3204178fe3192e043b06b52d3eb9d",
+    "conclusion": "success",
+    "artifact_id": 11435943147,
+    "artifact_zip_sha256": "fc8fcde986af7abb99bbe36aebee1b5049112d51acda4bbc324d1b122a69a477",
+    "screenshots": 30,
+    "report": {
+      "surface": "LIVE_PUBLISHED_BYTES",
+      "base": "https://arazsaiearasi3.github.io/SemRisk/",
+      "exact_files": 41,
+      "viewports": [
+        {
+          "name": "desktop",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "documentation_pages": 8,
+          "graph_presets": 5,
+          "all_term_search_count": 116,
+          "keyboard_zoom_assertions": 2,
+          "keyboard_details_toggle": true,
+          "filtered_anchor_regressions": 2,
+          "center_key_exercised": true,
+          "dark_mode_pages": 2,
+          "negative_hash_routes": 6,
+          "page_errors": 0,
+          "forbidden_requests": 0,
+          "failed_responses": 0
+        },
+        {
+          "name": "mobile",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "documentation_pages": 8,
+          "graph_presets": 5,
+          "all_term_search_count": 116,
+          "keyboard_zoom_assertions": 2,
+          "keyboard_details_toggle": true,
+          "filtered_anchor_regressions": 2,
+          "center_key_exercised": true,
+          "dark_mode_pages": 2,
+          "negative_hash_routes": 6,
+          "page_errors": 0,
+          "forbidden_requests": 0,
+          "failed_responses": 0
+        }
+      ],
+      "reader_participant_results": "NOT_EXECUTED"
+    }
+  },
+  "wiki_reader_navigation": {
+    "browser": "cloud Chrome",
+    "observed_routes": [
+      "rc4-Overview -> rc4-Domains-and-Concepts (click)",
+      "rc4-Domains-and-Concepts -> rc4-Relations (Enter)",
+      "rc4-Relations -> rc4-Formal-Reference (click)",
+      "rc4-Formal-Reference -> rc4-Tutorial (Enter)"
+    ],
+    "method": "Real rendered-link activation and exact destination URL observation; scoped engineering test, not independent participant study",
+    "screen_reader": "NOT_EXECUTED"
+  },
+  "acceptance": {
+    "5.9": "VERIFIED_BOUNDED",
+    "5.10": "VERIFIED_BOUNDED"
+  },
+  "retained_limits": [
+    "Graph readability PARTIAL; all 116 declarations remain available in textual index",
+    "Two independent reader roles NOT_EXECUTED",
+    "No full accessibility, scientific validity or whole-issue acceptance inferred",
+    "Manuscript-dependent 3.10 and 5.8 remain open",
+    "Final release and root license gates remain open",
+    "SQL #125 and external review #51 deferred",
+    "No manuscript or 18-page print companion in deployment"
+  ]
+}

@@ -978,7 +978,7 @@
     "group": "۵. شکل و نمایش",
     "request": "تخصیص شرح رسمی و نمودارها به رسانه مناسب",
     "package_id": "P16",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 122,
     "acceptance_check": "Formal details, diagrams and tutorials have explicit canonical and reader-facing destinations.",
     "artifact_destinations": [
@@ -986,22 +986,30 @@
       "docs/",
       "README.md"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "docs/pages/2026-10-06/publication-receipt.json",
+      "docs/pages/2026-10-06/deployment-manifest.json",
+      "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37514804981"
+    ],
+    "verification_result": "PASS_LIVE_ONTOLOGY_DOCUMENTATION_ONLY: exact published bytes, canonical/reader destinations and bounded desktop/mobile/keyboard tests; graph readability PARTIAL, independent readers NOT_EXECUTED; no manuscript, whole-package or release acceptance"
   },
   {
     "id": "5.10",
     "group": "۵. شکل و نمایش",
     "request": "Explorer با ادعای منطبق با وضعیت واقعی",
     "package_id": "P17",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 117,
     "acceptance_check": "Explorer is tested on published bytes; its actual notation and implementation status are stated.",
     "artifact_destinations": [
       "docs/pages/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "docs/pages/2026-10-06/publication-receipt.json",
+      "docs/pages/2026-10-06/deployment-manifest.json",
+      "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37514804981"
+    ],
+    "verification_result": "PASS_LIVE_ONTOLOGY_DOCUMENTATION_ONLY: exact published bytes, canonical/reader destinations and bounded desktop/mobile/keyboard tests; graph readability PARTIAL, independent readers NOT_EXECUTED; no manuscript, whole-package or release acceptance"
   },
   {
     "id": "6.1",
