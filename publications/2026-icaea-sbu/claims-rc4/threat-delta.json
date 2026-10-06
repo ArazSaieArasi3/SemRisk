@@ -1,0 +1,79 @@
+{
+  "inherited_registry": "evaluation/integrity/threat-limitation-registry-v1.0.csv",
+  "inherited_snapshot": "evaluation/integrity/pre-assurance-threat-snapshot-v1.0.md",
+  "historical_correction": "The old snapshots describing 5+2+1 or 6+2 parity are historical; latest frozen P49 evidence is 8/8 equivalent_for_task, still not current full helper parity.",
+  "delta": [
+    {
+      "id": "THR-RC4-SQL",
+      "claims": [
+        "SR-CL04"
+      ],
+      "finding": "Current scale/version/content and workflow helpers are not fully projected in SQL; #125 deferred",
+      "source": "foundational/semantic-identity-v0.2.0-rc.3/decisions.md",
+      "ceiling": "Historical task-specific parity only",
+      "source_sha256": "a24641f8a1652f0fe7155ec3c2cf063824b2e9a45ef859703b1f3935db2dc750",
+      "source_commit": "c02f7d2213191a71618f80cf702dbd6959a81d39",
+      "additional_sources": [
+        {
+          "path": "docs/formal/formal-ontology-description-rc4.md",
+          "sha256": "6102ac328480a5ce2b39b98c80148e549022c746391ea6dd17006953d4caf054",
+          "source_commit": "c02f7d2213191a71618f80cf702dbd6959a81d39"
+        }
+      ]
+    },
+    {
+      "id": "THR-RC4-PRINT",
+      "claims": [
+        "SR-CL01",
+        "SR-CL09"
+      ],
+      "finding": "Complete atlas fails 170 mm readability; selected panel is not complete model; native-editor/full antipattern evidence absent",
+      "source": "publications/2026-icaea-sbu/visuals-rc4/manifest.json",
+      "ceiling": "Selected source-derived figure with explicit omitted denominator",
+      "source_sha256": "1abdc41d102d47f3dbc73267372d40a79c6d7e4638552d3a796ae7452c0211d3",
+      "source_commit": "c02f7d2213191a71618f80cf702dbd6959a81d39"
+    },
+    {
+      "id": "THR-PILOT-ROLE",
+      "claims": [
+        "SR-CL05",
+        "SR-CL06"
+      ],
+      "finding": "Five of six studies concern Iran, years 2012–2022; 15 statements use three reused lineages and nine use three evaluation_new sources; all applicability-only; no design changes from this corpus",
+      "source": "case/pharma/literature-pilot-v0.1.0/README.md",
+      "ceiling": "Bounded source-local applicability, no incidents/prevalence/independent validation",
+      "source_sha256": "9418b46fbf674285680d9bde24e8bf5191fdc25a0a5cf2c19e18489e8c860da8",
+      "source_commit": "c02f7d2213191a71618f80cf702dbd6959a81d39"
+    },
+    {
+      "id": "THR-METRIC-PRESENCE",
+      "claims": [
+        "SR-CL08"
+      ],
+      "finding": "Helper nonempty label/comment coverage is 5/11 and 6/11; raw metrics can miss nonsense or a third parent",
+      "source": "evaluation/oquare/rc4-bounded/results.json",
+      "ceiling": "Descriptive diagnostics, no aggregate or semantic quality score",
+      "source_sha256": "59ada40602221376bf7ce863fb090c60e40771e8dbd806893c019143af2dd9fc",
+      "source_commit": "c02f7d2213191a71618f80cf702dbd6959a81d39"
+    },
+    {
+      "id": "THR-RELEASE",
+      "claims": [
+        "SR-CL09"
+      ],
+      "finding": "PLS-001 reuse terms, final scholarly license/identity and official template/submission conditions remain open",
+      "source": "case/pharma/literature-pilot-v0.1.0/README.md",
+      "ceiling": "Reviewable candidate, not final release/submission-ready manuscript",
+      "source_sha256": "9418b46fbf674285680d9bde24e8bf5191fdc25a0a5cf2c19e18489e8c860da8",
+      "source_commit": "c02f7d2213191a71618f80cf702dbd6959a81d39",
+      "additional_sources": [
+        {
+          "path": "publications/2026-icaea-sbu/venue-contract.md",
+          "sha256": "16ac15ceb01b98eddc514cd6ed669787dfaadef901de130690bcf40edc313870",
+          "source_commit": "c02f7d2213191a71618f80cf702dbd6959a81d39"
+        }
+      ]
+    }
+  ],
+  "inherited_registry_sha256": "7d9d3fd1f7abb972155bbcc72029f8b57a0fb8835dd053c2e82a64f84b987813"
+}
