@@ -1,3 +1,17 @@
+# Current revision status — Run 11, 2026-10-06
+
+Current stage: **selected rc.4 publication assets implemented; exact-head review/CI and main integration tracked on the batch PR**. [Report](run-11-report.md), [figure and evidence table](../../../publications/2026-icaea-sbu/visuals-rc4/README.md).
+
+- Source-derived selected figure: 9/47 concepts, 8/40 relation decisions; 170 × 141.111 mm, eight-point minimum text; seven rejection controls.
+- Six version-explicit table rows preserve current versus historical evidence and 12 partial / 11 ambiguous / one unmapped pilot outcomes.
+- Full atlas 170 mm readability, native-editor/full antipattern and final article/release gates remain open. #33 is not closed.
+- Accepted packages **3/19**; bounded requirements **28/90**, unchanged. No SQL parity work; #125 deferred.
+- Next: SQL-independent #126 metrics after verified integration.
+
+Prior checkpoints below are historical.
+
+---
+
 # Current revision status — Run 10, 2026-10-06
 
 Current stage: **rc.4 formal-reference synchronization independently reviewed; all five implementation workflows passed**. [Report](run-10-report.md), [current FD-A–FD-J reference](../../../docs/formal/formal-ontology-description-rc4.md).
