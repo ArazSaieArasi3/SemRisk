@@ -711,9 +711,19 @@
       "evaluation/oquare/",
       "evaluation/vveaa/"
     ],
-    "status": "not_started",
-    "evidence_refs": [],
-    "acceptance_result": "NOT_ASSESSED"
+    "status": "in_progress",
+    "evidence_refs": [
+      "evaluation/oquare/rc4-bounded/protocol.md",
+      "evaluation/oquare/rc4-bounded/results.json",
+      "evaluation/oquare/rc4-bounded/class-evidence.csv",
+      "evaluation/vveaa/rc4-bounded-metric-interpretation.md",
+      "docs/execution/2026-10-04/run-12-report.md"
+    ],
+    "acceptance_result": "PASS_BOUNDED_RAW_METRIC_IMPLEMENTATION; broader P07/P09 dependencies remain open; no overall quality score",
+    "remaining": [
+      "Broader declared P07/P09 dependency acceptance; no semantic/release gate waived",
+      "Exact-head independent review, CI and durable main readback tracked on batch PR"
+    ]
   },
   {
     "id": "P14",
