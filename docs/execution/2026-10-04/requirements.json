@@ -753,15 +753,21 @@
     "group": "۴. روش و طراحی",
     "request": "انتخاب شاخص‌های مناسب OQF",
     "package_id": "P13",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 126,
     "acceptance_check": "Selected metrics have appropriate scale, formula, denominator, version and reproducible values.",
     "artifact_destinations": [
       "evaluation/oquare/",
       "evaluation/vveaa/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "evaluation/oquare/rc4-bounded/protocol.md",
+      "evaluation/oquare/rc4-bounded/results.json",
+      "evaluation/oquare/rc4-bounded/class-evidence.csv",
+      "evaluation/vveaa/rc4-bounded-metric-interpretation.md",
+      "docs/execution/2026-10-04/run-12-report.md"
+    ],
+    "verification_result": "PASS_LOCAL_PROTOCOL_BOUND_DIAGNOSTICS: four metrics/two populations, exact raw numerator-denominator and adverse gaps; independent exact-head CI/readback tracked in PR; broader P07/P09 and scientific assurance remain open"
   },
   {
     "id": "4.12",

@@ -1,3 +1,17 @@
+# Current revision status — Run 12, 2026-10-06
+
+Current stage: **preselected SQL-independent raw metrics implemented; exact-head review/CI/main readback tracked on batch PR**. [Report](run-12-report.md), [metric results](../../../evaluation/oquare/rc4-bounded/results.md).
+
+- Four diagnostics × two separate populations; protocol committed before new calculation. No aggregate quality score.
+- Domain label/comment presence: 35/35 each. Helpers: 5/11 labels, 6/11 comments; adverse gaps preserved.
+- Twenty synthetic/sensitivity checks plus generated drift rejection. No ontology or SQL change; #125 remains deferred.
+- Bounded requirement evidence **29/90**; accepted whole packages **3/19**. #126's broader P07/P09 dependencies remain open.
+- Next: current claims/evidence/limits (#53/#111/#56), then manuscript integration.
+
+Prior checkpoints below are historical.
+
+---
+
 # Current revision status — Run 11, 2026-10-06
 
 Current stage: **selected rc.4 publication assets implemented; exact-head review/CI and main integration tracked on the batch PR**. [Report](run-11-report.md), [figure and evidence table](../../../publications/2026-icaea-sbu/visuals-rc4/README.md).
