@@ -693,9 +693,13 @@
       "evaluation/temporal/v0.2.0-rc.1/ci-evidence.json",
       "foundational/semantic-identity-v0.2.0-rc.3/decisions.md",
       "evaluation/semantic-identity/v0.2.0-rc.3/results.json",
-      "evaluation/semantic-identity/v0.2.0-rc.3/ci-evidence.json"
+      "evaluation/semantic-identity/v0.2.0-rc.3/ci-evidence.json",
+      "docs/formal/formal-ontology-description-rc4.md",
+      "docs/formal/0.2.0-rc.4/source-manifest.json",
+      "docs/formal/migration-to-rc4.md",
+      "docs/execution/2026-10-04/run-10-report.md"
     ],
-    "verification_result": "PASS_QUALIFIED_CANDIDATE_SCOPE; final manuscript integration and independent validation remain separate"
+    "verification_result": "PASS_BOUNDED_RC4_LOCAL_REFERENCE; nine corruption controls and frozen-reference regression passed; exact-head formal CI and final manuscript integration remain separate"
   },
   {
     "id": "4.9",

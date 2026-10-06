@@ -1,0 +1,60 @@
+{
+  "implementation_commit": "74f6e7f0383a67d0b3b243c3f668586f7f8f0de1",
+  "pr_url": "https://github.com/ArazSaieArasi3/SemRisk/pull/139",
+  "checked_files": 15,
+  "matching_published_files": 15,
+  "independent_review": "PASS_BOUNDED_REFERENCE_MIGRATION_SCOPE; all 15 published hashes independently checked",
+  "workflow_runs": [
+    {
+      "id": 37420920635,
+      "name": "SemRisk revision distinction and source checks",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37420920635"
+    },
+    {
+      "id": 37420920646,
+      "name": "Paper 1 core contract regressions",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37420920646"
+    },
+    {
+      "id": 37420920708,
+      "name": "Paper 1 qualified assessment context",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37420920708"
+    },
+    {
+      "id": 37420920701,
+      "name": "Paper 1 rc4 formal reference synchronization",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37420920701"
+    },
+    {
+      "id": 37420920585,
+      "name": "Paper 1 exposure and scale successor",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37420920585"
+    }
+  ],
+  "formal_job": {
+    "id": 112129855487,
+    "url": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37420920701/job/112129855487",
+    "owl2_dl": "PASS",
+    "type_entailments": 4,
+    "consistent_countermodels": 2,
+    "expected_inconsistencies": 2,
+    "artifact_id": 11392881809,
+    "artifact_sha256": "139b52d3a5837546c1740d34220556b8294a69ca3e88218640a953540ef51599"
+  },
+  "limits": [
+    "#124/P07 broader P06 dependency not waived",
+    "#115 live Wiki/Pages parity and #55 release remain open",
+    "#125 deferred; no new full SQL parity",
+    "Latest checkpoint head CI and merged-main readback are tracked in PR139"
+  ]
+}
