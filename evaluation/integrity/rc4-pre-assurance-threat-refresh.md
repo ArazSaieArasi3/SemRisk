@@ -7,3 +7,7 @@ Read the [current threat/nonclaim projection](../../publications/2026-icaea-sbu/
 The five explicit additions concern unfinished current SQL helpers; complete-atlas/native-editor/antipattern limits; literature-pilot source-role/regional/age/ambiguity limits; metric and helper-annotation limitations; and release/license/venue conditions. Mitigations do not remove residual uncertainty. No expert judgments, independent holdout, license decision, permanent release or submission result was manufactured.
 
 Final #56 closure still requires incorporation of real #51 evidence when available and final #55 release/availability identity. Because those are deferred/unresolved, this is a reviewable pre-assurance snapshot only. Exact manuscript wording must be checked against it during #32/#34 integration.
+
+## Dated source-rights amendment — 2026-10-06
+
+For current wording, apply the [PLS-001 publisher-notice amendment](pls001-rights-amendment-2026-10-06.md) alongside the frozen Run 13 THR-RELEASE delta. The exact notice was located in the publisher PDF; final SemRisk licensing and availability gates remain unresolved. Historical source bytes and scientific ceilings are unchanged.
