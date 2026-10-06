@@ -23,7 +23,7 @@ The tests are synthetic verification. They are not independent domain validation
 
 ## Acceptance and downstream gates
 
-#124/P07's formal-source/reference/migration work passed independent review and exact implementation-head CI. The issue remains open for the declared broader P06 conceptual/diagram-conformance dependency; the formal bundle is accepted at its bounded internal scope. Durable merged-main readback is recorded in PR #139. Its stale residual list is replaced with precise current acceptance conditions; the already implemented rc.3 semantic choices are not reopened.
+#124/P07's formal-source/reference/migration work passed independent review and exact implementation-head CI. The issue remains open for the declared broader P06 conceptual/diagram-conformance dependency; the formal bundle is accepted at its bounded internal scope. Consult PR #139 for durable merged-main readback; this checkpoint alone does not establish merge. Its stale residual list is replaced with precise current acceptance conditions; the already implemented rc.3 semantic choices are not reopened.
 
 #115 remains open even after this internal bundle because its issue retains source→generated→Wiki/Pages parity (#117) and final scholarly-release binding (#55). No license, semantic, review, manuscript or submission gate is waived. P06's broader diagram conformance acceptance is separate and has not been silently marked complete.
 
