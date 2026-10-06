@@ -1,3 +1,15 @@
+# Current revision status — Run 20 finite rc.4 extension, 2026-10-06
+
+Current stage: **predeclared synthetic extension preserves finite current-candidate invariants**. [Report](run-20-report.md), [experiment](../../../evaluation/extension/0.2.0-rc.4/README.md).
+
+- Actual SHACL/HermiT result: 44 checks, 16 negatives, unchanged 35-pair finite inferred-type projection and exact core as-of tuples.
+- Requirement1.9 accepted only for this synthetic scenario and declared invariants. Canonical ontology and 47/40/116 inventory unchanged; two test-only classes are separate.
+- Bounded requirements **40/90**; whole packages **3/19**. Full conformance, empirical usability, manuscript and release gates remain open.
+
+Prior checkpoints below are historical.
+
+---
+
 # Current revision status — Run 19 bounded evidence crosswalk, 2026-10-06
 
 Current stage: **objective/use-case and governed domain-ownership evidence explicitly joined**. [Report](run-19-report.md), [crosswalk](objective-domain-crosswalk.md).

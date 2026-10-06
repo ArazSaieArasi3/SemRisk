@@ -1,0 +1,257 @@
+{
+  "runtime_versions": {
+    "python_major_minor": "3.12",
+    "rdflib": "7.6.0",
+    "pyshacl": "0.40.1"
+  },
+  "finite_projection_sha256": "350223955e3c869109d85d51f08c8078409915cab148d38789dff98634729a16",
+  "result": "PASS_FINITE_SYNTHETIC_RC4_EXTENSION",
+  "requirement": "1.9",
+  "protocol_sha256": "c56e87d36673b80581f94ea11c0aafe170fd37d0ad7a5a4540cf7433ecab885d",
+  "source_files": 18,
+  "ontology_closure_files": 8,
+  "tests": [
+    {
+      "id": "BASELINE_TRIPLES",
+      "passed": true,
+      "detail": "All baseline triples preserved; exactly three test-domain type assertions added."
+    },
+    {
+      "id": "SHACL_BASELINE",
+      "passed": true,
+      "detail": "Current strict composition conforms with inference=none."
+    },
+    {
+      "id": "SHACL_EXTENDED",
+      "passed": true,
+      "detail": "Current strict composition conforms with inference=none."
+    },
+    {
+      "id": "CORE_ANSWERS_1",
+      "passed": true,
+      "detail": "Exact predeclared full tuples preserved at 2026-10-04T23:59:59Z"
+    },
+    {
+      "id": "DOMAIN_ANSWERS_1",
+      "passed": true,
+      "detail": "Domain question uses both test-only specialization types at 2026-10-04T23:59:59Z"
+    },
+    {
+      "id": "CORE_ANSWERS_2",
+      "passed": true,
+      "detail": "Exact predeclared full tuples preserved at 2026-10-05T00:00:00Z"
+    },
+    {
+      "id": "DOMAIN_ANSWERS_2",
+      "passed": true,
+      "detail": "Domain question uses both test-only specialization types at 2026-10-05T00:00:00Z"
+    },
+    {
+      "id": "CORE_ANSWERS_3",
+      "passed": true,
+      "detail": "Exact predeclared full tuples preserved at 2026-10-06T00:00:00Z"
+    },
+    {
+      "id": "DOMAIN_ANSWERS_3",
+      "passed": true,
+      "detail": "Domain question uses both test-only specialization types at 2026-10-06T00:00:00Z"
+    },
+    {
+      "id": "CORE_ANSWERS_4",
+      "passed": true,
+      "detail": "Exact predeclared full tuples preserved at 2026-10-05T03:30:00+03:30"
+    },
+    {
+      "id": "DOMAIN_ANSWERS_4",
+      "passed": true,
+      "detail": "Domain question uses both test-only specialization types at 2026-10-05T03:30:00+03:30"
+    },
+    {
+      "id": "UNBOUND_TIME",
+      "passed": true,
+      "detail": "No implicit wall-clock time."
+    },
+    {
+      "id": "IDENTITY_ASSERTIONS",
+      "passed": true,
+      "detail": "Episode and equal-content issued-scale distinctions preserved."
+    },
+    {
+      "id": "N_CHANGED_ANSWER",
+      "passed": true,
+      "detail": "Shape-valid earlier episode end changes the exact finite answer set."
+    },
+    {
+      "id": "N_MISSING_DOMAIN_TYPE",
+      "passed": true,
+      "detail": "Removing the domain source type loses the domain-specific answer."
+    },
+    {
+      "id": "N_CORE_REDEFINITION",
+      "passed": true,
+      "detail": "EXTENSION_AXIOM_ALLOWLIST"
+    },
+    {
+      "id": "N_REVERSE_SUBCLASS",
+      "passed": true,
+      "detail": "EXTENSION_AXIOM_ALLOWLIST"
+    },
+    {
+      "id": "N_EQUIVALENCE_FORWARD",
+      "passed": true,
+      "detail": "EXTENSION_AXIOM_ALLOWLIST"
+    },
+    {
+      "id": "N_EQUIVALENCE_REVERSE",
+      "passed": true,
+      "detail": "EXTENSION_AXIOM_ALLOWLIST"
+    },
+    {
+      "id": "N_NEW_KEY",
+      "passed": true,
+      "detail": "EXTENSION_AXIOM_ALLOWLIST"
+    },
+    {
+      "id": "N_FUNCTIONALITY",
+      "passed": true,
+      "detail": "EXTENSION_AXIOM_ALLOWLIST"
+    },
+    {
+      "id": "N_PROPERTY_CHAIN",
+      "passed": true,
+      "detail": "EXTENSION_AXIOM_ALLOWLIST"
+    },
+    {
+      "id": "N_ALLOWLIST_MISSING_PharmaceuticalExposure",
+      "passed": true,
+      "detail": "EXTENSION_AXIOM_ALLOWLIST"
+    },
+    {
+      "id": "N_ALLOWLIST_MISSING_PharmaceuticalRiskSource",
+      "passed": true,
+      "detail": "EXTENSION_AXIOM_ALLOWLIST"
+    },
+    {
+      "id": "CANONICAL_INVENTORIES",
+      "passed": true,
+      "detail": "47/40/116 unchanged; two test-only classes separate."
+    },
+    {
+      "id": "N_INVENTORY_DRIFT",
+      "passed": true,
+      "detail": "CONCEPT_INVENTORY"
+    },
+    {
+      "id": "N_SOURCE_DRIFT",
+      "passed": true,
+      "detail": "SOURCE_DRIFT: ontology/releases/0.2.0-rc.4/core.ttl"
+    },
+    {
+      "id": "DL_baseline",
+      "passed": true,
+      "detail": "Actual ROBOT OWL 2 DL profile check."
+    },
+    {
+      "id": "CONSISTENT_baseline",
+      "passed": true,
+      "detail": "Actual HermiT consistency and materialized class assertions."
+    },
+    {
+      "id": "DL_extended",
+      "passed": true,
+      "detail": "Actual ROBOT OWL 2 DL profile check."
+    },
+    {
+      "id": "CONSISTENT_extended",
+      "passed": true,
+      "detail": "Actual HermiT consistency and materialized class assertions."
+    },
+    {
+      "id": "DL_inheritance",
+      "passed": true,
+      "detail": "Actual ROBOT OWL 2 DL profile check."
+    },
+    {
+      "id": "CONSISTENT_inheritance",
+      "passed": true,
+      "detail": "Actual HermiT consistency and materialized class assertions."
+    },
+    {
+      "id": "DL_missing-exposure",
+      "passed": true,
+      "detail": "Actual ROBOT OWL 2 DL profile check."
+    },
+    {
+      "id": "CONSISTENT_missing-exposure",
+      "passed": true,
+      "detail": "Actual HermiT consistency and materialized class assertions."
+    },
+    {
+      "id": "DL_missing-source",
+      "passed": true,
+      "detail": "Actual ROBOT OWL 2 DL profile check."
+    },
+    {
+      "id": "CONSISTENT_missing-source",
+      "passed": true,
+      "detail": "Actual HermiT consistency and materialized class assertions."
+    },
+    {
+      "id": "DL_contradictory",
+      "passed": true,
+      "detail": "Actual ROBOT OWL 2 DL profile check."
+    },
+    {
+      "id": "N_ACTUAL_INCONSISTENCY",
+      "passed": true,
+      "detail": "Instantiated Exposure/QualityValue specialization produces genuine reasoner inconsistency."
+    },
+    {
+      "id": "CORE_ENTAILMENTS",
+      "passed": true,
+      "detail": "Four selected inherited core types remain actually entailed."
+    },
+    {
+      "id": "ISOLATED_INHERITANCE",
+      "passed": true,
+      "detail": "Fresh relation-free subtype witnesses inherit required parent types."
+    },
+    {
+      "id": "N_MISSING_EXPOSURE_INHERITANCE",
+      "passed": true,
+      "detail": "Removed subclass loses isolated required Exposure inference."
+    },
+    {
+      "id": "N_MISSING_SOURCE_INHERITANCE",
+      "passed": true,
+      "detail": "Removed subclass loses isolated required RiskSource inference."
+    },
+    {
+      "id": "FINITE_TYPE_PROJECTION",
+      "passed": true,
+      "detail": "Named baseline-individual/current-class assertion projection unchanged; no universal conservation claim."
+    }
+  ],
+  "total": 44,
+  "passed": 44,
+  "negative_controls": 16,
+  "finite_type_projection_rows": 35,
+  "canonical_inventory": {
+    "concepts": 47,
+    "relations": 40,
+    "declarations": 116
+  },
+  "test_only_classes": 2,
+  "reasoner": "HermiT 1.4.5.456 / ROBOT 1.9.10",
+  "shacl_inference": "none",
+  "limits": [
+    "Empirical organizational usability",
+    "General conservative extension",
+    "Pharmaceutical domain adequacy",
+    "New canonical vocabulary or stereotype",
+    "Independent transfer or expert validation",
+    "Full SQL parity",
+    "Full OntoUML antipattern or native-editor acceptance"
+  ],
+  "acceptance_ceiling": "A synthetic pharmaceutical extension preserved the declared finite rc.4 invariants and supported the stated as-of scenario under the tested profile."
+}
