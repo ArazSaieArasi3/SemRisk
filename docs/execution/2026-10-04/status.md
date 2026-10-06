@@ -1,3 +1,16 @@
+# Current revision status — Run 16 offline formal surfaces, 2026-10-06
+
+Current stage: **rc.4 source-bound offline reference and Wiki-draft parity implemented**. [Report](run-16-report.md), [candidate evidence](../../../docs/documentation/rc4/README.md).
+
+- All 116 local declaration anchors, complete FD-A–FD-J content and 14 selected critical terms; source hashes and local navigation checked.
+- Eighteen deliberate source, ID, category, link, route and history mutations reject. Exact-head CI and rendered desktop/mobile review are tracked on the batch PR.
+- Historical Wiki/rc.1 routes remain intact. Live Wiki parity, Pages deployment, final release and full conformance remain open.
+- Accepted requirements remain **34/90**; whole packages **3/19**. No manuscript or SQL payload is included, and no issue is closed by this offline checkpoint alone.
+
+Prior checkpoints below are historical.
+
+---
+
 # Current revision status — Run 15 independent checkpoint, 2026-10-06
 
 Current stage: **current asserted-source antipattern companion and five scope-contract rows independently reviewed**. [Report](run-15-report.md), [bounded companion](../../../evaluation/antipatterns/0.2.0-rc.4/README.md).

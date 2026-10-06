@@ -6,6 +6,7 @@ repository:
   documentation_profile_ref: "ArazSaieArasi3/OGCM-RF@4822b1a1b7978e94e66bd6a283024bac78b6a0b8"
 
 semantic_source:
+  snapshot_scope: "Historical P1-R2 surface source; separately bound rc.4 candidate recorded below"
   roots: [ontology/, conceptualization/]
   conceptual_model: [conceptualization/]
   ontology_sources:
@@ -53,6 +54,18 @@ pages:
       features:
         webvowl: false
         asserted_reference: true
+
+current_candidate_projection:
+  version: "0.2.0-rc.4"
+  source_ref: bd7b6a8ae55c959383a4a10c9b03744cdfaa9cb6
+  bindings: docs/documentation/rc4/surface-bindings.json
+  curated_source: docs/formal/formal-ontology-description-rc4.md
+  wiki_draft: docs/wiki/rc4/Formal-Reference.md
+  output_root: site/ontology/0.2.0-rc.4/
+  state: OFFLINE_CANDIDATE_NOT_DEPLOYED
+  live_wiki_updated: false
+  pages_deployed: false
+  release_acceptance: NOT_ESTABLISHED
 
 allocation:
   - artifact_family: ontology_and_constraints

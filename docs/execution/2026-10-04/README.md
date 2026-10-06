@@ -1,6 +1,6 @@
 Current checkpoint: [Run 9](run-9-report.md), [status](status.md). Executed 24-statement pharmaceutical literature pilot; exact remote evidence controls publication claims.
 
-> Current checkpoint: [Run 15 independent source/contract evidence](run-15-report.md), 34/90 bounded requirements and 3/19 whole package contracts. See [status](status.md) and the batch PR for exact-head CI/main readback.
+> Current checkpoint: [Run 16 offline formal surfaces](run-16-report.md). Accepted requirements remain 34/90 and whole packages 3/19. See [status](status.md) and the batch PR for exact-head CI/render/main readback.
 
 # SemRisk author-revision execution register
 
