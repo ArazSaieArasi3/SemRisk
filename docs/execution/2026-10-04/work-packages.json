@@ -97,9 +97,10 @@
       "publications/2026-icaea-sbu/claims-rc4/authoring-ceilings.md",
       "publications/2026-icaea-sbu/claims-rc4/threats-and-nonclaims.md",
       "evaluation/integrity/rc4-pre-assurance-threat-refresh.md",
-      "docs/execution/2026-10-04/run-13-report.md"
+      "docs/execution/2026-10-04/run-13-report.md",
+      "docs/execution/2026-10-04/scoped-closeout-2026-10-06.json"
     ],
-    "acceptance_result": "PASS_CONTRACT_ONLY"
+    "acceptance_result": "PASS_CONTRACT_AND_SCOPED_CLAIM_CALIBRATION; exact private candidate integration accepted separately; no final assurance/release claim"
   },
   {
     "id": "P03",
@@ -366,7 +367,7 @@
       "formalization/",
       "docs/formal/"
     ],
-    "status": "in_progress",
+    "status": "completed",
     "evidence_refs": [
       "formalization/qualified-context-contract-v0.2.0-rc.1.md",
       "evaluation/temporal/v0.2.0-rc.1/semantic-results.json",
@@ -386,13 +387,14 @@
       "docs/formal/0.2.0-rc.4/source-manifest.json",
       "docs/formal/migration-to-rc4.md",
       "docs/execution/2026-10-04/run-10-report.md",
-      "docs/execution/2026-10-04/run-10-readback.json"
+      "docs/execution/2026-10-04/run-10-readback.json",
+      "docs/execution/2026-10-04/scoped-closeout-2026-10-06.json"
     ],
-    "acceptance_result": "PASS_BOUNDED_RC4_REFERENCE: all five exact implementation workflows passed and independent review accepted; broader P06 dependency remains open",
-    "remaining": [
-      "Broader P06 conceptual/diagram conformance dependency remains open; no semantic gate waived",
-      "Durable merged-main readback for current checkpoint is tracked in PR139"
-    ]
+    "acceptance_result": "PASS_SCOPED_RC4_FORMAL_SYNCHRONIZATION: source decisions, OWL/SHACL/rules, formal reference, manifest/migration and readable example verified; no full native-editor or scholarly-release claim",
+    "remaining": [],
+    "dependency_disposition": {
+      "P06": "Required current conceptual decisions are source-bound and implemented. Broader conceptual/native-editor/full-pattern acceptance remains with P06/P08; no missing synchronization defect was identified."
+    }
   },
   {
     "id": "P08",
@@ -718,19 +720,21 @@
       "evaluation/oquare/",
       "evaluation/vveaa/"
     ],
-    "status": "in_progress",
+    "status": "completed",
     "evidence_refs": [
       "evaluation/oquare/rc4-bounded/protocol.md",
       "evaluation/oquare/rc4-bounded/results.json",
       "evaluation/oquare/rc4-bounded/class-evidence.csv",
       "evaluation/vveaa/rc4-bounded-metric-interpretation.md",
-      "docs/execution/2026-10-04/run-12-report.md"
+      "docs/execution/2026-10-04/run-12-report.md",
+      "docs/execution/2026-10-04/scoped-closeout-2026-10-06.json"
     ],
-    "acceptance_result": "PASS_BOUNDED_RAW_METRIC_IMPLEMENTATION; broader P07/P09 dependencies remain open; no overall quality score",
-    "remaining": [
-      "Broader declared P07/P09 dependency acceptance; no semantic/release gate waived",
-      "Exact-head independent review, CI and durable main readback tracked on batch PR"
-    ]
+    "acceptance_result": "PASS_SCOPED_BOUNDED_METRICS: all selected formulas, two populations, raw values, source bindings, interpretation and negative controls accepted; no aggregate quality or full OQF adoption",
+    "remaining": [],
+    "dependency_disposition": {
+      "P07": "The measured asserted ontology/inventory is available, pinned and unchanged. Broader model or release acceptance is not a missing measurement input.",
+      "P09": "These selected structural/documentation diagnostics consume no pharmaceutical corpus or expert judgment. That package remains independently open for its own claims."
+    }
   },
   {
     "id": "P14",
