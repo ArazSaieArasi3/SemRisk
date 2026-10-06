@@ -1,3 +1,15 @@
+## Scoped acceptance closeout — 2026-10-06
+
+The exact acceptance audit separates completed issue scope from unrelated open release/model gates. [Acceptance record](scoped-closeout-2026-10-06.json) and [remaining issue guide](remaining-advanced-issues-20261006.md).
+
+- #53 and #111 are completed for the exact privately reviewed claim-calibration/consistency candidate. No manuscript text or files are published here.
+- P07/#124 formal synchronization and P13/#126 bounded metrics meet their own acceptance criteria; issue closure follows this metadata PR's durable readback. Earlier blanket dependency and pending-readback notes are superseded for these scopes only.
+- The public individual requirement register remains **40/90**. Completed packages become **5/19** (P02/P03/P05 plus P07/P13). Private editorial criteria remain separately accounted; no publication-readiness percentage is inferred.
+- #115 retains exact scholarly-release identity binding. #32 retains the unresolved initial-submission page-rule eligibility check. #33/#54/#55/#56, actual human-reader/domain evidence and other scientific/release conditions remain open. #51/#125 remain deferred.
+- The local optional ownership guard is outside this PR and remains unpublished pending its separate blocked action. Existing ontology, profile, query and test bytes are unchanged.
+
+Earlier run snapshots below remain historical.
+
 # Current revision status — Run 21 selected behavior and limits, 2026-10-06
 
 Current stage: **four previously unassessed portions now have selected behavioral/category evidence and an explicit adverse observation**. [Report](run-21-report.md), [remaining issue acceptance](remaining-advanced-issues-20261006.md).

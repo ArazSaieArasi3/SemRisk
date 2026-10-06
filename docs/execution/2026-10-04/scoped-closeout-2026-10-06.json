@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-06",
+  "source_main": "6aed4e8719b71f799bf71d7a94442456e4f82a20",
+  "scope": "Acceptance-state reconciliation only; no ontology, metric, SQL, manuscript or blocked optional-guard payload changed",
+  "counts": {
+    "public_requirement_register": {
+      "accepted": 40,
+      "denominator": 90,
+      "unchanged": true
+    },
+    "completed_packages": {
+      "accepted": 5,
+      "denominator": 19,
+      "new": [
+        "P07",
+        "P13"
+      ],
+      "previous": [
+        "P02",
+        "P03",
+        "P05"
+      ]
+    },
+    "private_manuscript_acceptance": "Separate owner-accessible evidence; no private prose or file is included in this record"
+  },
+  "issue_decisions": [
+    {
+      "issue": 124,
+      "decision": "READY_FOR_COMPLETED_CLOSURE_AFTER_DURABLE_READBACK",
+      "package": "P07",
+      "acceptance_map": [
+        {
+          "criterion": "Conceptual decisions, formal code, rules and reference synchronized",
+          "evidence": [
+            "docs/formal/formal-ontology-description-rc4.md",
+            "docs/formal/0.2.0-rc.4/source-manifest.json"
+          ],
+          "verification": "25/25 manifest source blobs unchanged at inspected main; FD-A through FD-J and asserted-versus-entailed boundaries retained"
+        },
+        {
+          "criterion": "Manifests, migration and bounded claim-to-axiom/test evidence",
+          "evidence": [
+            "docs/formal/migration-to-rc4.md",
+            "docs/execution/2026-10-04/run-10-readback.json"
+          ],
+          "verification": "Existing exact-head CI and merged source readback retained; no unresolved synchronization defect found"
+        },
+        {
+          "criterion": "Readable formal example with logical/profile distinction",
+          "evidence": [
+            "docs/formal/formal-ontology-description-rc4.md"
+          ],
+          "verification": "Exposure domain/range, explicit-data profile and consistent countermodel example verified; private review candidate also checked without publication"
+        }
+      ],
+      "dependency_disposition": "P06/P08 full model/native-editor acceptance and #115/#55 release identity remain separate; their open state does not erase completed candidate synchronization.",
+      "reopen_if": "Changed source decisions, ontology, imports, shapes, rules, migration or reference without synchronized proof"
+    },
+    {
+      "issue": 126,
+      "decision": "READY_FOR_COMPLETED_CLOSURE_AFTER_DURABLE_READBACK",
+      "package": "P13",
+      "acceptance_map": [
+        {
+          "criterion": "Reuse existing pilot and preselect suitable bounded diagnostics",
+          "evidence": [
+            "evaluation/oquare/rc4-bounded/protocol.md",
+            "evaluation/vveaa/rc4-bounded-metric-interpretation.md"
+          ],
+          "verification": "Two historical metric families reused plus two explicitly local presence diagnostics; no claim all four are official OQuaRE metrics. Protocol 7a7f50b precedes calculation a7fee2d; post-calculation SKOS ownership clarification disclosed."
+        },
+        {
+          "criterion": "Formula, input, unit, numerator/denominator and raw result reproducibility",
+          "evidence": [
+            "evaluation/oquare/rc4-bounded/results.json",
+            "evaluation/oquare/rc4-bounded/class-evidence.csv"
+          ],
+          "verification": "Eight result rows over separate domain/helper populations; all 13 bound inputs and 14 relevant implementation/evidence files blob-identical to verified sources."
+        },
+        {
+          "criterion": "Negative acceptance and interpretation",
+          "evidence": [
+            "evaluation/vveaa/rc4-bounded-metric-interpretation.md"
+          ],
+          "verification": "20 controls and generated-drift rejection recorded; known blind spots and helper annotation gaps retained; no aggregate score or unsuitable scale."
+        }
+      ],
+      "execution_evidence": {
+        "merged_pr": 141,
+        "review_comment": "https://github.com/ArazSaieArasi3/SemRisk/pull/141#issuecomment-6010696222",
+        "exact_head_workflow": "https://github.com/ArazSaieArasi3/SemRisk/actions/runs/37423431718",
+        "continuity": "Source 13 files equal da148b2; relevant 14 files equal c02f7d2; original protocol blob 8d9e606fb756b724ee25c330599c785f4ecac5c0 unchanged. No fresh scientific execution claimed by this closure audit."
+      },
+      "dependency_disposition": "P07 supplies the pinned asserted source. P09 corpus, licenses and expert judgments are not inputs to these selected diagnostics. Those owners retain their own open work.",
+      "reopen_if": "Changed metric inputs, formulas, populations, unreproducible outputs or stronger unsupported interpretation"
+    },
+    {
+      "issue": 53,
+      "decision": "CLOSED_COMPLETED_SCOPED_CALIBRATION",
+      "comment": "https://github.com/ArazSaieArasi3/SemRisk/issues/53#issuecomment-6026411954",
+      "evidence_scope": "Exact private candidate, nine headline claims and 31 groups; source-bound guard and independent technical review; no public manuscript payload"
+    },
+    {
+      "issue": 111,
+      "decision": "CLOSED_COMPLETED_SCOPED_CONSISTENCY_GATE",
+      "comment": "https://github.com/ArazSaieArasi3/SemRisk/issues/111#issuecomment-6026431214",
+      "evidence_scope": "Current guard: 12 unsafe/12 bounded/2 negation/12 ledger controls; private nine-mutation gate and scoped technical intake for #53/#54; final assurance remains open; explicit recheck on changes"
+    }
+  ],
+  "protected_gates": {
+    "115": "Only final #55 exact scholarly-release ref/identity binding remains; candidate formal/live parity done",
+    "32": "Current private control set accepted; literal venue-compliant DoD retains unresolved initial seven-page eligibility",
+    "33": "Native editor/full pattern and full publication figure conditions remain",
+    "54": "Integrated final assurance NOT_ASSESSED",
+    "55_56": "Final release, rights and author decisions remain",
+    "51": "Deferred actual human review; no responses inferred",
+    "125": "Deferred full current SQL parity"
+  },
+  "private_candidate_identity": {
+    "docx_sha256": "0bdedaa3f8ae55da337c0a02a4a2c8541b534bb258305bbfdd3e6c0da3b9f92b",
+    "pdf_sha256": "6743e296b604702dce1334c71a8fc86206e6b62917b4eeffab479e5533f1fc5d",
+    "intake_sha256": "436135f5120903c28db2c16069e9c1823e778cb36e16b56b09a97b006c4e3bc6",
+    "contents": "Private; no public access or manuscript publication inferred"
+  },
+  "review": "Independent scope-specific acceptance reviews; no unresolved own-AC defect for124/126; do not close other issues from these checks"
+}
