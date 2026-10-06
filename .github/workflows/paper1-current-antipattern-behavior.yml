@@ -1,0 +1,62 @@
+name: Selected current antipattern behavior and category probes
+on:
+  pull_request:
+    paths:
+      - 'evaluation/antipatterns/0.2.0-rc.4/**'
+      - 'tools/check_current_antipattern_behavior.py'
+      - 'tools/check_rc4_extension.py'
+      - 'ontology/releases/0.2.0-rc.4/**'
+      - 'ontology/vendor/gufo-v1.0.0.ttl'
+      - 'rules/enterprise/risk-owners-at-v0.2.0-rc.1.rq'
+      - 'testdata/temporal/qualified-context-v0.2.0-rc.1.ttl'
+      - 'shapes/assessment-context-v0.2.0-rc.1.ttl'
+      - 'shapes/semantic-identity-v0.2.0-rc.3.ttl'
+      - 'shapes/exposure-scale-v0.2.0-rc.4.ttl'
+      - 'conceptualization/pharma/**'
+      - 'foundational/foundational-antipattern-register.csv'
+      - '.github/workflows/paper1-current-antipattern-behavior.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  selected-behavior:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - run: python -m pip install rdflib==7.6.0 pyshacl==0.40.1 PyYAML==6.0.2
+      - uses: actions/cache@v4
+        with:
+          path: .tools/robot.jar
+          key: robot-1.9.10-sha256-16a73c074f3df359
+      - name: Pinned existing reasoning toolchain
+        run: |
+          mkdir -p .tools
+          if [ ! -f .tools/robot.jar ]; then
+            curl -L --fail --retry 3 https://github.com/ontodev/robot/releases/download/v1.9.10/robot.jar -o .tools/robot.jar
+          fi
+          echo "16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105  .tools/robot.jar" | sha256sum -c -
+      - name: Read pinned external references without redistributing source files
+        run: |
+          mkdir -p "$RUNNER_TEMP/cmpe-inputs"
+          base=https://raw.githubusercontent.com/ArazSaieArasi3/CM-PharmE/5099888668d35f798e4759e3534e707ed906db24/releases/v1.0.0
+          curl -L --fail --retry 3 "$base/catalogs/concepts.yaml" -o "$RUNNER_TEMP/cmpe-inputs/concepts.yaml"
+          curl -L --fail --retry 3 "$base/manifest.yaml" -o "$RUNNER_TEMP/cmpe-inputs/manifest.yaml"
+      - name: Execute selected probes and preserve adverse results
+        run: |
+          python tools/check_current_antipattern_behavior.py --robot .tools/robot.jar --external-inputs "$RUNNER_TEMP/cmpe-inputs"
+          git diff --exit-code -- ontology shapes rules testdata conceptualization/pharma
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: selected-antipattern-behavior-evidence
+          path: |
+            build/current-antipattern-behavior/
+            evaluation/antipatterns/0.2.0-rc.4/behavioral/

@@ -1,0 +1,63 @@
+{
+  "observed_date": "2026-10-06",
+  "assessment": "SOURCE_LEVEL_COMPATIBILITY_GAP",
+  "native_roundtrip": "NOT_EXECUTED",
+  "compiled_plugin_binary_inspected": false,
+  "plugin_tag": "0.5.3",
+  "plugin_commit": "9fc02b8162db9910f21b8713549cafce2627dad0",
+  "plugin_source_git_blobs": {
+    "src/main/java/it/unibz/inf/ontouml/vp/model/ontouml/deserialization/ProjectDeserializer.java": "a3e20f815ae612e0be4d8ea1e86977cea9050a4a",
+    "src/main/java/it/unibz/inf/ontouml/vp/model/ontouml/serialization/ProjectSerializer.java": "f065f1617ff3011fd6d396de41684209d115d537",
+    "src/main/java/it/unibz/inf/ontouml/vp/model/ontouml/deserialization/DeserializerUtils.java": "a23627f4209c8dbdc81f259f11bd9d1799925d29",
+    "src/main/java/it/unibz/inf/ontouml/vp/model/ontouml/deserialization/PackageDeserializer.java": "aedc05a466a74c94060b9f2e794fff1f23408f60",
+    "src/main/java/it/unibz/inf/ontouml/vp/model/ontouml/deserialization/DiagramDeserializer.java": "dcf9613e0154d68fadde20803cf39aea6f99268b",
+    "src/main/java/it/unibz/inf/ontouml/vp/model/ontouml2vp/IClassDiagramLoader.java": "94bed933889f654dc832b155603747ece8d4f220",
+    "src/main/java/it/unibz/inf/ontouml/vp/model/vp2ontouml/IClassDiagramTransformer.java": "b8b9cf3ab384b928a6db50cb45c8964fc8761b9c",
+    "src/main/java/it/unibz/inf/ontouml/vp/model/ontouml2vp/IClassLoader.java": "2ceb75cbcf06455a2b61156f83264a88ff6cd41d"
+  },
+  "local_artifacts": {
+    "diagrams/ontouml/0.2.0-rc.4/model-base.json": {
+      "sha256": "687f828a0975302e27887210729b77fd490dccb91eb8431b8c8c87c1006168ae",
+      "flat_elements": true,
+      "types": {
+        "Class": 65,
+        "Literal": 7,
+        "BinaryRelation": 73,
+        "Property": 156,
+        "Note": 1,
+        "Generalization": 27,
+        "Package": 1
+      }
+    },
+    "diagrams/ontouml/0.2.0-rc.4/SemRisk-rc4.ontouml.json": {
+      "sha256": "d56ffdf51dbadc6c1f62991c7807bf81a3f5c76a4f758c4f9d988cfa027242c0",
+      "flat_elements": true,
+      "types": {
+        "Class": 65,
+        "Literal": 7,
+        "BinaryRelation": 73,
+        "Property": 156,
+        "Note": 1,
+        "Generalization": 27,
+        "Package": 1,
+        "Rectangle": 116,
+        "ClassView": 116,
+        "Path": 111,
+        "BinaryRelationView": 75,
+        "Diagram": 15,
+        "GeneralizationView": 34,
+        "Text": 1,
+        "NoteView": 1,
+        "Anchor": 2,
+        "AnchorView": 2
+      }
+    }
+  },
+  "retained_gates": [
+    "Supported annotation-preserving import/export path",
+    "Explicit source/native ID mapping",
+    "Installed editor and lawful license/eligibility",
+    "Actual import/save/reopen/export and full semantic/view comparison"
+  ],
+  "prohibited_shortcut": "Do not convert SR-REL-038 metadata Note to a domain association or count sidecar preservation as native annotation preservation."
+}

@@ -1,0 +1,321 @@
+{
+  "result": "PASS_SELECTED_BEHAVIOR_WITH_RETAINED_LIMITS",
+  "protocol_sha256": "4b053d8107d62a1952a5aaddff5603a001171151032b58a5a4cd25b016882fa5",
+  "source_files": 20,
+  "external_source_commit": "5099888668d35f798e4759e3534e707ed906db24",
+  "external_source_sha256": {
+    "concepts.yaml": "8ea58247c7ad23e1a04368383882fa7626d094609c23b1eb1c3ad4e54bcd1840",
+    "manifest.yaml": "4eb59f01462f7ac27e2c93809c029ee39ea0af45f51b3902e192a8255becb1cf"
+  },
+  "runtime_versions": {
+    "python": "3.12",
+    "rdflib": "7.6.0",
+    "pyshacl": "0.40.1",
+    "pyyaml": "6.0.2"
+  },
+  "tests": [
+    {
+      "id": "F006_PROFILE_POSITIVE",
+      "passed": true,
+      "detail": "Ownership-only data conforms to current composed explicit-data shapes."
+    },
+    {
+      "id": "F006_EXACT_PAIRS_1",
+      "passed": true,
+      "detail": "Exact actor pairs at 2026-10-05T07:59:59Z"
+    },
+    {
+      "id": "F006_EXACT_PAIRS_2",
+      "passed": true,
+      "detail": "Exact actor pairs at 2026-10-05T08:00:00Z"
+    },
+    {
+      "id": "F006_EXACT_PAIRS_3",
+      "passed": true,
+      "detail": "Exact actor pairs at 2026-10-06T00:00:00Z"
+    },
+    {
+      "id": "F006_EXACT_PAIRS_4",
+      "passed": true,
+      "detail": "Exact actor pairs at 2026-10-05T11:30:00+03:30"
+    },
+    {
+      "id": "F006_UNBOUND",
+      "passed": true,
+      "detail": "No ambient time or unbound ownership assertion."
+    },
+    {
+      "id": "F006_DUPLICATE_PATH",
+      "passed": true,
+      "detail": "DISTINCT answers survive duplicate assignment path."
+    },
+    {
+      "id": "F006_COUNTERPART_NOT_OWNER",
+      "passed": true,
+      "detail": "Additional mediation counterpart is not projected as assignee."
+    },
+    {
+      "id": "N006_MISSING_TYPE",
+      "passed": true,
+      "detail": "Only the selected active assignment pair disappears."
+    },
+    {
+      "id": "N006_MISSING_RISK",
+      "passed": true,
+      "detail": "Only the selected active assignment pair disappears."
+    },
+    {
+      "id": "N006_MISSING_ACTOR",
+      "passed": true,
+      "detail": "Only the selected active assignment pair disappears."
+    },
+    {
+      "id": "N006_MISSING_START",
+      "passed": true,
+      "detail": "Only the selected active assignment pair disappears."
+    },
+    {
+      "id": "N006_PRIMITIVE_OWNER",
+      "passed": true,
+      "detail": "Primitive hasRiskOwner triple cannot substitute for qualifying assignment."
+    },
+    {
+      "id": "N006_WRONG_QUERY_TARGET",
+      "passed": true,
+      "detail": "Executed SELECT mutant returns role-class IRI and fails exact expected answers."
+    },
+    {
+      "id": "F012_SHACL_zero_endpoint",
+      "passed": true,
+      "detail": "Only exact expected focus/path/component violations occur."
+    },
+    {
+      "id": "F012_SHACL_two_subjects",
+      "passed": true,
+      "detail": "Only exact expected focus/path/component violations occur."
+    },
+    {
+      "id": "F012_LOCAL_POLICY",
+      "passed": true,
+      "detail": "Selected local endpoint properties are not globally functional; imported restrictions are not prohibited."
+    },
+    {
+      "id": "DL_zero-endpoints",
+      "passed": true,
+      "detail": "Actual OWL 2 DL profile validation precedes reasoning."
+    },
+    {
+      "id": "CONSISTENT_zero-endpoints",
+      "passed": true,
+      "detail": "Actual HermiT-consistent selected countermodel."
+    },
+    {
+      "id": "DL_two-subjects",
+      "passed": true,
+      "detail": "Actual OWL 2 DL profile validation precedes reasoning."
+    },
+    {
+      "id": "CONSISTENT_two-subjects",
+      "passed": true,
+      "detail": "Actual HermiT-consistent selected countermodel."
+    },
+    {
+      "id": "DL_injected-global-min",
+      "passed": true,
+      "detail": "Actual OWL 2 DL profile validation precedes reasoning."
+    },
+    {
+      "id": "N_INCONSISTENT_injected-global-min",
+      "passed": true,
+      "detail": "Actual HermiT inconsistency; parser/profile failure is not accepted."
+    },
+    {
+      "id": "DL_injected-functionality",
+      "passed": true,
+      "detail": "Actual OWL 2 DL profile validation precedes reasoning."
+    },
+    {
+      "id": "N_INCONSISTENT_injected-functionality",
+      "passed": true,
+      "detail": "Actual HermiT inconsistency; parser/profile failure is not accepted."
+    },
+    {
+      "id": "DL_association",
+      "passed": true,
+      "detail": "Actual OWL 2 DL profile validation precedes reasoning."
+    },
+    {
+      "id": "CONSISTENT_association",
+      "passed": true,
+      "detail": "Actual HermiT-consistent selected countermodel."
+    },
+    {
+      "id": "DL_association-causal-shortcut",
+      "passed": true,
+      "detail": "Actual OWL 2 DL profile validation precedes reasoning."
+    },
+    {
+      "id": "N_INCONSISTENT_association-causal-shortcut",
+      "passed": true,
+      "detail": "Actual HermiT inconsistency; parser/profile failure is not accepted."
+    },
+    {
+      "id": "DL_direct-cause-contradiction",
+      "passed": true,
+      "detail": "Actual OWL 2 DL profile validation precedes reasoning."
+    },
+    {
+      "id": "N_INCONSISTENT_direct-cause-contradiction",
+      "passed": true,
+      "detail": "Actual HermiT inconsistency; parser/profile failure is not accepted."
+    },
+    {
+      "id": "DL_state-sequence",
+      "passed": true,
+      "detail": "Actual OWL 2 DL profile validation precedes reasoning."
+    },
+    {
+      "id": "CONSISTENT_state-sequence",
+      "passed": true,
+      "detail": "Actual HermiT-consistent selected countermodel."
+    },
+    {
+      "id": "DL_state-sequence-causal-shortcut",
+      "passed": true,
+      "detail": "Actual OWL 2 DL profile validation precedes reasoning."
+    },
+    {
+      "id": "N_INCONSISTENT_state-sequence-causal-shortcut",
+      "passed": true,
+      "detail": "Actual HermiT inconsistency; parser/profile failure is not accepted."
+    },
+    {
+      "id": "F014_PINNED_CATEGORY_JOIN",
+      "passed": true,
+      "detail": "12 audit rows, 16 bridge decisions and 5 marker references match the pinned 39-concept release; source conflict and unmapped gaps retained."
+    },
+    {
+      "id": "N014_OBJECT_ONLY_WRONG_NAMESPACE",
+      "passed": true,
+      "detail": "REFERENCE_NAMESPACE"
+    },
+    {
+      "id": "N014_MAPPING_TYPE",
+      "passed": true,
+      "detail": "BRIDGE_MAPPING_DECISION"
+    },
+    {
+      "id": "N014_MODE_AS_KIND",
+      "passed": true,
+      "detail": "CATEGORY_PRESERVATION"
+    },
+    {
+      "id": "N014_UNKNOWN_ID",
+      "passed": true,
+      "detail": "CATEGORY_AUDIT_IDS"
+    },
+    {
+      "id": "N014_WRONG_NAMESPACE",
+      "passed": true,
+      "detail": "REFERENCE_NAMESPACE"
+    },
+    {
+      "id": "N014_DROP_SOURCE_FLAG",
+      "passed": true,
+      "detail": "SOURCE_CONFLICT_FLAG"
+    },
+    {
+      "id": "N014_LOCAL_EQUIVALENCE",
+      "passed": true,
+      "detail": "EXTERNAL_EQUIVALENCE"
+    },
+    {
+      "id": "N014_EXTERNAL_IMPORT",
+      "passed": true,
+      "detail": "EXTERNAL_IMPORT"
+    },
+    {
+      "id": "N014_MARKER_AS_CLASS",
+      "passed": true,
+      "detail": "REFERENCE_NOT_CLASS"
+    },
+    {
+      "id": "N014_FABRICATED_BR-C014",
+      "passed": true,
+      "detail": "FABRICATED_UNMAPPED_BRIDGE"
+    },
+    {
+      "id": "N014_FABRICATED_BR-C015",
+      "passed": true,
+      "detail": "FABRICATED_UNMAPPED_BRIDGE"
+    },
+    {
+      "id": "N014_FABRICATED_BR-C016",
+      "passed": true,
+      "detail": "FABRICATED_UNMAPPED_BRIDGE"
+    },
+    {
+      "id": "N014_MISSING_AUDIT",
+      "passed": true,
+      "detail": "CATEGORY_AUDIT_IDS"
+    },
+    {
+      "id": "N014_DUPLICATE_BRIDGE",
+      "passed": true,
+      "detail": "BRIDGE_IDS"
+    }
+  ],
+  "total": 50,
+  "passed": 50,
+  "negative_controls": 25,
+  "observed_limitations": [
+    {
+      "finding": "FAP-006",
+      "status": "OBSERVED_LIMITATION",
+      "observation": "IRI-only explicit-data assignee shape accepts the known Risk Owner class IRI, and the query returns it. Universal class-as-assignee rejection is not established.",
+      "shape_conforms": true,
+      "actual_pairs": [
+        [
+          "urn:semrisk:run4:risk",
+          "urn:semrisk:entity:SR-CPT-030"
+        ],
+        [
+          "urn:semrisk:run4:risk",
+          "urn:semrisk:run4:actor-b"
+        ]
+      ]
+    }
+  ],
+  "reasoner_worlds": {
+    "owl2dl": 9,
+    "consistent": 4,
+    "inconsistent": 5
+  },
+  "findings": {
+    "FAP-006": {
+      "selected_evidence": "EXECUTED_BOUNDED",
+      "full_antipattern_status": "NOT_ESTABLISHED"
+    },
+    "FAP-012": {
+      "selected_evidence": "EXECUTED_BOUNDED",
+      "full_antipattern_status": "NOT_ESTABLISHED"
+    },
+    "FAP-013": {
+      "selected_evidence": "EXECUTED_BOUNDED",
+      "full_antipattern_status": "NOT_ESTABLISHED"
+    },
+    "FAP-014": {
+      "selected_evidence": "EXECUTED_BOUNDED",
+      "full_antipattern_status": "NOT_ESTABLISHED"
+    }
+  },
+  "all_fifteen_full_verdicts": "NOT_ESTABLISHED",
+  "limits": [
+    "No whole finding or issue closes from selected probes",
+    "All 15 full-antipattern verdicts stay NOT_ESTABLISHED",
+    "No native-editor roundtrip",
+    "No full 170 mm readability acceptance",
+    "No ontology/query/shape/SQL/private-manuscript/runtime changes",
+    "No domain or independent expert validation"
+  ]
+}
