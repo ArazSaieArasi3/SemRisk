@@ -1,0 +1,39 @@
+{
+  "result": "PASS_OFFLINE_SOURCE_PROJECTION_ONLY",
+  "source_commit": "bd7b6a8ae55c959383a4a10c9b03744cdfaa9cb6",
+  "local_terms": 116,
+  "critical_terms": 14,
+  "fd_sections": 10,
+  "mutations_rejected": [
+    "changed source despite refreshed working hashes",
+    "rewritten baseline lock",
+    "missing inventory row",
+    "duplicate inventory ID",
+    "source hash drift",
+    "scenario wrong category",
+    "critical label drift",
+    "scale identity drift",
+    "broken anchor",
+    "stale source ref",
+    "duplicate HTML ID",
+    "missing guide file",
+    "active content",
+    "duplicate version route",
+    "overwrite frozen route",
+    "history source commit changed",
+    "history output removed",
+    "history output changed"
+  ],
+  "mutation_count": 18,
+  "builder_sha256": "1f80c74497540965117f375556e6d0f737c4af0ac5b9533960e3beaa8d49fd58",
+  "checker_sha256": "292330443bbdb228eb8b1fd734c9bbf932eb5cc89d868ffe2ba342f1c8844703",
+  "output_sha256": {
+    "site/ontology/0.2.0-rc.4/index.html": "937e70c141e20bf38003e1f17a26db36d1eb6a49072d197c50df3ab6252fd98a",
+    "site/ontology/0.2.0-rc.4/guide.html": "02839d765fe21a990df8b80fa878e04a9d1aa874d8aed789499a5376318ae657",
+    "site/ontology/0.2.0-rc.4/wiki-draft.md": "5f46978cfb4c6e8f1449f5040f33268e48929e7ce1d7a82774935dea35a313de",
+    "docs/wiki/rc4/Formal-Reference.md": "5f46978cfb4c6e8f1449f5040f33268e48929e7ce1d7a82774935dea35a313de"
+  },
+  "live_wiki_parity": "NOT_ESTABLISHED",
+  "pages_deployment": "NOT_PERFORMED",
+  "release_acceptance": "NOT_ESTABLISHED"
+}

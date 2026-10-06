@@ -4,7 +4,7 @@
 
 > **Current Paper-1 revision — Run 8:** [0.2.0-rc.4](ontology/releases/0.2.0-rc.4/README.md) adds explicit Exposure endpoints and scale-specification identity. The [complete editable diagram](diagrams/ontouml/0.2.0-rc.4/README.md) covers all 47 concepts and 40 registered relation decisions. See [status](docs/execution/2026-10-04/status.md) and [Run 8 report](docs/execution/2026-10-04/run-8-report.md). Formal/native CI, case extraction and final article gates remain separately tracked.
 
-> **Author revision — Run 15 independent checkpoint (2026-10-06):** current asserted-source antipattern companion and five existing scope-contract rows reviewed. [Current status](docs/execution/2026-10-04/status.md). Bounded individual evidence 34/90; completed package contracts 3/19. Full antipattern/native-editor/readability, manuscript, independent validation and release gates remain open.
+> **Author revision — Run 16 (2026-10-06):** rc.4 offline formal reference and Wiki-draft parity. [Current status](docs/execution/2026-10-04/status.md) · [candidate documentation](docs/documentation/rc4/README.md). Accepted requirements remain 34/90; whole packages 3/19. Live deployment, full conformance, manuscript and release gates remain open.
 
 # SemRisk
 

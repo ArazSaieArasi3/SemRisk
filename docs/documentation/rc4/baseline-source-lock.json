@@ -1,0 +1,61 @@
+{
+  "source_commit": "bd7b6a8ae55c959383a4a10c9b03744cdfaa9cb6",
+  "files": {
+    "docs/formal/0.2.0-rc.4/asserted-closure.nt": {
+      "sha256": "149179d6337eba60211719fb1b663031ef329caedd1f7dcb5d5b1b3aed3085ce",
+      "git_blob_sha": "995937268db1e2cc8e6611c479781f9eb2eb8ace"
+    },
+    "docs/formal/0.2.0-rc.4/entity-inventory.csv": {
+      "sha256": "5bb0263f351343a1bb28bea50051e33b77c8551deed89e637cdf49a8d1e4734e",
+      "git_blob_sha": "84b9de749ac6e8911f06769ee71df3da35ac561c"
+    },
+    "docs/formal/0.2.0-rc.4/generated-reference.md": {
+      "sha256": "5b24c9a9f878e7283c23dc5b56c59e69d00bba2e33ece245db96613ba95c63f0",
+      "git_blob_sha": "2cd6f0ec5557ad9f99803963f08c5c429976fbbb"
+    },
+    "docs/formal/0.2.0-rc.4/source-manifest.json": {
+      "sha256": "28b69b7933a5406ddd89de776bbb0fc00c78c56c56b1625f9f1b7356eb50c5ba",
+      "git_blob_sha": "d1e694f5509b1f239d90dd784ec1c2dd35246301"
+    },
+    "docs/formal/formal-ontology-description-rc4.md": {
+      "sha256": "6102ac328480a5ce2b39b98c80148e549022c746391ea6dd17006953d4caf054",
+      "git_blob_sha": "3bda2580641e56af22d661c75a1b96935b799f07"
+    },
+    "docs/formal/migration-to-rc4.md": {
+      "sha256": "23b7ff196f59257215315b2fc1279da3b3287089591d6f847479d70f4c030a1b",
+      "git_blob_sha": "2c825d4de7ffbc78c32865462387cbcf9127f367"
+    },
+    "docs/ontology/formal-ontology-description-p1-r2-v0.2.md": {
+      "sha256": "96fcab7e41321ae53264d65573d80ce6a31233f4040d7dfec72c2cc96b08a9ac",
+      "git_blob_sha": "ff5d02bdb92e72642aa2e7db9d418878ede20c3a"
+    },
+    "ontology/releases/0.2.0-rc.4/assessment-context.ttl": {
+      "sha256": "ab6678acd63f408758721d9f224bcd91c838d4684a47dcefd8801b1b6be737d9",
+      "git_blob_sha": "4f2087a8e31fe49573082b01a58d28e20901d2cc"
+    },
+    "ontology/releases/0.2.0-rc.4/core.ttl": {
+      "sha256": "3a18524a597dba048622e1bf617729cd614e83a3c8c505ef8a72ec1861882ba7",
+      "git_blob_sha": "352af8b2a55fc4e3b99542a0cc3d006f6994ab59"
+    },
+    "ontology/releases/0.2.0-rc.4/enterprise.ttl": {
+      "sha256": "7a10aba1ed04e67ceb9b8bc641f71dc627ca5e04d73deb7fa1c1a73b4e956aa2",
+      "git_blob_sha": "6fc1c8afd00bdbe6e1a695cdde36617ab2737173"
+    },
+    "ontology/releases/0.2.0-rc.4/governance.ttl": {
+      "sha256": "a47e94537a0c6df243a13bf326f7b5235c17b10991701f35eb888e2b948102ac",
+      "git_blob_sha": "fc6da3e0850fcf1de8ded0412a3ddb228728a916"
+    },
+    "ontology/releases/0.2.0-rc.4/mappings.ttl": {
+      "sha256": "9c2642ca4ed45b54b9643898517e11579fc056e4a525b7a36673bef0b33c713d",
+      "git_blob_sha": "b83ad043c09f75befaa452f4fcbe28754427244d"
+    },
+    "ontology/releases/0.2.0-rc.4/method.ttl": {
+      "sha256": "3789456bf4cc3421126b1bb989aad526769e1154b65bd660235c280516eb4ff9",
+      "git_blob_sha": "5927ba386c9f5853ca962f50f5f540d4c4211dd4"
+    },
+    "ontology/releases/0.2.0-rc.4/pharma.ttl": {
+      "sha256": "0930d814bf299dda409a4ea00111ba369e4955c57b24c4e2012733c073bf0a11",
+      "git_blob_sha": "fda0034d43f48a7dc7da2d907db9cb8c11c0fde0"
+    }
+  }
+}

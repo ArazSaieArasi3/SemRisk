@@ -1,0 +1,47 @@
+{
+  "version": "0.2.0-rc.4",
+  "route": "/ontology/0.2.0-rc.4/",
+  "source_commit": "bd7b6a8ae55c959383a4a10c9b03744cdfaa9cb6",
+  "state": "OFFLINE_CANDIDATE_NOT_DEPLOYED",
+  "asserted_triples": 1618,
+  "local_terms": 116,
+  "critical_terms": [
+    "urn:semrisk:entity:SR-CPT-001",
+    "urn:semrisk:entity:SR-CPT-006",
+    "urn:semrisk:entity:SR-CPT-007",
+    "urn:semrisk:entity:SR-CPT-010",
+    "urn:semrisk:entity:SR-CPT-011",
+    "urn:semrisk:entity:SR-CPT-013",
+    "urn:semrisk:entity:SR-CPT-026",
+    "urn:semrisk:entity:SR-CPT-027",
+    "urn:semrisk:entity:SR-CPT-028",
+    "urn:semrisk:entity:SR-CPT-029",
+    "urn:semrisk:entity:SR-CPT-033",
+    "urn:semrisk:entity:SR-CPT-035",
+    "urn:semrisk:entity:SR-CPT-036",
+    "urn:semrisk:profile:assessment-context:NumericScale"
+  ],
+  "fd_sections": 10,
+  "source_sha256": {
+    "docs/formal/0.2.0-rc.4/asserted-closure.nt": "149179d6337eba60211719fb1b663031ef329caedd1f7dcb5d5b1b3aed3085ce",
+    "docs/formal/0.2.0-rc.4/entity-inventory.csv": "5bb0263f351343a1bb28bea50051e33b77c8551deed89e637cdf49a8d1e4734e",
+    "docs/formal/0.2.0-rc.4/source-manifest.json": "28b69b7933a5406ddd89de776bbb0fc00c78c56c56b1625f9f1b7356eb50c5ba",
+    "docs/formal/formal-ontology-description-rc4.md": "6102ac328480a5ce2b39b98c80148e549022c746391ea6dd17006953d4caf054",
+    "ontology/releases/0.2.0-rc.4/assessment-context.ttl": "ab6678acd63f408758721d9f224bcd91c838d4684a47dcefd8801b1b6be737d9",
+    "ontology/releases/0.2.0-rc.4/core.ttl": "3a18524a597dba048622e1bf617729cd614e83a3c8c505ef8a72ec1861882ba7",
+    "ontology/releases/0.2.0-rc.4/enterprise.ttl": "7a10aba1ed04e67ceb9b8bc641f71dc627ca5e04d73deb7fa1c1a73b4e956aa2",
+    "ontology/releases/0.2.0-rc.4/governance.ttl": "a47e94537a0c6df243a13bf326f7b5235c17b10991701f35eb888e2b948102ac",
+    "ontology/releases/0.2.0-rc.4/mappings.ttl": "9c2642ca4ed45b54b9643898517e11579fc056e4a525b7a36673bef0b33c713d",
+    "ontology/releases/0.2.0-rc.4/method.ttl": "3789456bf4cc3421126b1bb989aad526769e1154b65bd660235c280516eb4ff9",
+    "ontology/releases/0.2.0-rc.4/pharma.ttl": "0930d814bf299dda409a4ea00111ba369e4955c57b24c4e2012733c073bf0a11"
+  },
+  "output_sha256": {
+    "site/ontology/0.2.0-rc.4/index.html": "937e70c141e20bf38003e1f17a26db36d1eb6a49072d197c50df3ab6252fd98a",
+    "site/ontology/0.2.0-rc.4/guide.html": "02839d765fe21a990df8b80fa878e04a9d1aa874d8aed789499a5376318ae657",
+    "site/ontology/0.2.0-rc.4/wiki-draft.md": "5f46978cfb4c6e8f1449f5040f33268e48929e7ce1d7a82774935dea35a313de",
+    "docs/wiki/rc4/Formal-Reference.md": "5f46978cfb4c6e8f1449f5040f33268e48929e7ce1d7a82774935dea35a313de"
+  },
+  "live_wiki_updated": false,
+  "pages_deployed": false,
+  "scholarly_release": false
+}
