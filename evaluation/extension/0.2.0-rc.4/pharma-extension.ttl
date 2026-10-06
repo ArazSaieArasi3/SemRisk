@@ -1,0 +1,7 @@
+@prefix test: <urn:semrisk:test:extension:pharma:> .
+@prefix sr: <urn:semrisk:entity:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+# Synthetic compatibility fixture only; no canonical vocabulary promotion.
+test:PharmaceuticalExposure a owl:Class ; rdfs:subClassOf sr:SR-CPT-010 .
+test:PharmaceuticalRiskSource a owl:Class ; rdfs:subClassOf sr:SR-CPT-003 .

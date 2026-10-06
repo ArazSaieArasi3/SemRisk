@@ -1,0 +1,11 @@
+PREFIX sr: <urn:semrisk:entity:>
+PREFIX ac: <urn:semrisk:profile:assessment-context:>
+PREFIX test: <urn:semrisk:test:extension:pharma:>
+SELECT DISTINCT ?exposure ?subject ?source WHERE {
+ FILTER(BOUND(?asOf))
+ ?exposure a sr:SR-CPT-010, test:PharmaceuticalExposure ;
+   sr:SR-REL-039 ?subject ; sr:SR-REL-040 ?source ; ac:validFrom ?start .
+ ?source a test:PharmaceuticalRiskSource .
+ OPTIONAL { ?exposure ac:validTo ?end }
+ FILTER(?start <= ?asOf && (!BOUND(?end) || ?asOf < ?end))
+} ORDER BY ?exposure

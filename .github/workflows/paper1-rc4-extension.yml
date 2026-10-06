@@ -1,0 +1,55 @@
+name: Finite rc4 pharmaceutical extension compatibility
+on:
+  pull_request:
+    paths:
+      - 'evaluation/extension/0.2.0-rc.4/**'
+      - 'tools/check_rc4_extension.py'
+      - 'ontology/releases/0.2.0-rc.4/**'
+      - 'ontology/vendor/gufo-v1.0.0.ttl'
+      - 'docs/formal/0.2.0-rc.4/entity-inventory.csv'
+      - 'foundational/exposure-scale-v0.2.0-rc.4/concept-category-audit.csv'
+      - 'foundational/exposure-scale-v0.2.0-rc.4/relation-formal-audit.csv'
+      - 'shapes/**'
+      - 'testdata/foundational/exposure-scale-v0.2.0-rc.4.ttl'
+      - 'rules/core/exposure-at-v0.2.0-rc.4.rq'
+      - '.github/workflows/paper1-rc4-extension.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  finite-extension:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - run: python -m pip install rdflib==7.6.0 pyshacl==0.40.1
+      - uses: actions/cache@v4
+        with:
+          path: .tools/robot.jar
+          key: robot-1.9.10-sha256-16a73c074f3df359
+      - name: Pinned existing reasoning toolchain
+        run: |
+          mkdir -p .tools
+          if [ ! -f .tools/robot.jar ]; then
+            curl -L --fail --retry 3 https://github.com/ontodev/robot/releases/download/v1.9.10/robot.jar -o .tools/robot.jar
+          fi
+          echo "16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105  .tools/robot.jar" | sha256sum -c -
+          java -jar .tools/robot.jar --version
+      - name: Actual finite extension, shape and reasoner checks
+        run: |
+          python tools/check_rc4_extension.py --robot .tools/robot.jar
+          git diff --exit-code -- ontology shapes rules testdata
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: finite-rc4-extension-evidence
+          path: |
+            build/extension-rc4/
+            evaluation/extension/0.2.0-rc.4/

@@ -151,7 +151,7 @@
     "group": "۱. جایگاه و تمایز",
     "request": "اثبات کاربردپذیری و توسعه‌پذیری",
     "package_id": "P06",
-    "status": "not_reverified",
+    "status": "verified_bounded",
     "primary_issue": 123,
     "acceptance_check": "A domain extension preserves declared core invariants and supports a concrete use scenario.",
     "artifact_destinations": [
@@ -159,8 +159,12 @@
       "foundational/",
       "architecture/"
     ],
-    "evidence_refs": [],
-    "verification_result": "NOT_ASSESSED"
+    "evidence_refs": [
+      "evaluation/extension/0.2.0-rc.4/protocol.json",
+      "evaluation/extension/0.2.0-rc.4/results.json",
+      "evaluation/extension/0.2.0-rc.4/README.md"
+    ],
+    "verification_result": "PASS_FINITE_SYNTHETIC_RC4_EXTENSION: declared core answers and finite inferred-type projection preserved with actual SHACL/HermiT and detector-specific negatives; no general conservative-extension, empirical usability or whole-package acceptance"
   },
   {
     "id": "1.10",

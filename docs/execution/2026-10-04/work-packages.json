@@ -319,11 +319,12 @@
       "evaluation/semantic-identity/v0.2.0-rc.3/ci-evidence.json",
       "ontology/releases/0.2.0-rc.3/manifest.json",
       "run-8-report.md",
-      "docs/execution/2026-10-04/objective-domain-crosswalk-2026-10-06.json"
+      "docs/execution/2026-10-04/objective-domain-crosswalk-2026-10-06.json",
+      "evaluation/extension/0.2.0-rc.4/README.md"
     ],
     "acceptance_result": "PARTIAL: rc.4 Exposure/scale decisions implemented and locally tested; whole-package gates remain explicit.",
     "remaining": [
-      "Current rc.4 extension/invariant evidence for 1.9 remains open; scenario type/instance, information identity and workflow representation decisions were resolved by rc.3 and retained in rc.4",
+      "Broader conceptual/diagram conformance remains open; 1.9 now has finite synthetic rc.4 extension evidence, not a universal conservative-extension or empirical-usability proof",
       "Build complete editable OntoUML with justified relation ends and source-linked multiplicities",
       "Run complete conceptual/diagram conformance review; do not equate bounded source probes with full antipattern detection"
     ]
