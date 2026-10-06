@@ -1,0 +1,142 @@
+{
+  "protocol_version": "1.0",
+  "status": "PREDECLARED_NOT_EXECUTED",
+  "baseline_commit": "577f4921b348fd69e9378bc7a0a767b03276dff3",
+  "requirement": "1.9",
+  "candidate": "0.2.0-rc.4",
+  "scope": "Finite synthetic extension compatibility; no canonical promotion or universal conservative-extension theorem",
+  "question": "At an explicit time, which recorded synthetic pharmaceutical-supply exposure episode connects the enterprise subject to its designated supply-risk source?",
+  "domain_interpretation": "Contextual pharmaceutical specialization of existing Exposure and broad RiskSource; no new Kind/Role stereotype or CM-PharmE equivalence",
+  "test_namespace": "urn:semrisk:test:extension:pharma:",
+  "extension_classes": {
+    "PharmaceuticalExposure": "urn:semrisk:entity:SR-CPT-010",
+    "PharmaceuticalRiskSource": "urn:semrisk:entity:SR-CPT-003"
+  },
+  "extension_tbox_allowlist": "Exactly two fresh owl:Class declarations and their forward rdfs:subClassOf axioms; no other triples",
+  "complete_fixture": "Clone the frozen current-compliant exposure/scale fixture; add PharmaceuticalExposure typing to exposureA/B and PharmaceuticalRiskSource typing to source; preserve every baseline triple",
+  "inference_witnesses": "Separate fresh witnesses typed only with each extension class; no endpoint or other typing-producing relations. Excluded from strict application-shape fixture.",
+  "instants": {
+    "2026-10-04T23:59:59Z": "exposureA",
+    "2026-10-05T00:00:00Z": "exposureB",
+    "2026-10-06T00:00:00Z": "exposureB",
+    "2026-10-05T03:30:00+03:30": "exposureB"
+  },
+  "expected_tuple_tail": [
+    "urn:semrisk:run8:subject",
+    "urn:semrisk:run8:source"
+  ],
+  "unbound_time_answers": [],
+  "invariants": [
+    "Eight ontology source-file bytes unchanged; catalog resolves only pinned local imports",
+    "All baseline fixture triples preserved",
+    "Exact complete core Exposure tuples unchanged at all declared instants and unbound time",
+    "Domain-filtered query returns the declared episodes using both extension types",
+    "Exposure A/B and equal-content scale A/B explicit differences preserved",
+    "Current NumericScale entails ArtifactVersion, ManagedInformationArtifact and FunctionalComplex; Exposure entails Situation",
+    "Finite named baseline-individual canonical ClassAssertion projection equal before/after extension",
+    "47 concept IDs,40 relation IDs,116 current declaration rows unchanged; two test-only classes counted separately"
+  ],
+  "application_validation": {
+    "tool": "pySHACL 0.40.1",
+    "rdflib": "7.6.0",
+    "inference": "none",
+    "shapes": [
+      "assessment-context-v0.2.0-rc.1",
+      "semantic-identity-v0.2.0-rc.3",
+      "exposure-scale-v0.2.0-rc.4"
+    ],
+    "complete_baseline_and_extended_fixture": "must conform",
+    "meta_shacl": true
+  },
+  "formal_validation": {
+    "robot": "1.9.10",
+    "robot_sha256": "16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105",
+    "reasoner": "HermiT 1.4.5.456",
+    "positive_worlds": [
+      "baseline",
+      "extended",
+      "isolated subtype witnesses"
+    ],
+    "required_inferences": [
+      "Fresh Exposure witness inherits SR-CPT-010 and gufo:Situation",
+      "Fresh source witness inherits SR-CPT-003"
+    ],
+    "missing_specialization": "A separate removed-subclass world must be consistent but omit its required parent inference",
+    "contradictory_specialization": "Additional PharmaceuticalExposure subclass gufo:QualityValue with an actual instance must produce genuine inconsistency, not parser/profile failure"
+  },
+  "negative_controls": [
+    "Missing each forward subclass axiom detected by isolated inherited-type evidence",
+    "Shape-valid interval mutation changes exact expected tuple set",
+    "Removed domain instance typing changes domain-specific answer set",
+    "Direct Core-subject redefinition rejected by exact extension allowlist",
+    "Reverse subclass rejected",
+    "Equivalence shortcut rejected in both directions",
+    "New key/functionality/property-chain commitment rejected",
+    "Contradictory instantiated Exposure subtype rejected by actual reasoner",
+    "Source hash drift and canonical inventory change rejected"
+  ],
+  "acceptance_ceiling": "A synthetic pharmaceutical extension preserved the declared finite rc.4 invariants and supported the stated as-of scenario under the tested profile.",
+  "nonclaims": [
+    "Empirical organizational usability",
+    "General conservative extension",
+    "Pharmaceutical domain adequacy",
+    "New canonical vocabulary or stereotype",
+    "Independent transfer or expert validation",
+    "Full SQL parity",
+    "Full OntoUML antipattern or native-editor acceptance"
+  ],
+  "source_sha256": {
+    "ontology/releases/0.2.0-rc.4/core.ttl": "3a18524a597dba048622e1bf617729cd614e83a3c8c505ef8a72ec1861882ba7",
+    "ontology/releases/0.2.0-rc.4/enterprise.ttl": "7a10aba1ed04e67ceb9b8bc641f71dc627ca5e04d73deb7fa1c1a73b4e956aa2",
+    "ontology/releases/0.2.0-rc.4/method.ttl": "3789456bf4cc3421126b1bb989aad526769e1154b65bd660235c280516eb4ff9",
+    "ontology/releases/0.2.0-rc.4/governance.ttl": "a47e94537a0c6df243a13bf326f7b5235c17b10991701f35eb888e2b948102ac",
+    "ontology/releases/0.2.0-rc.4/pharma.ttl": "0930d814bf299dda409a4ea00111ba369e4955c57b24c4e2012733c073bf0a11",
+    "ontology/releases/0.2.0-rc.4/mappings.ttl": "9c2642ca4ed45b54b9643898517e11579fc056e4a525b7a36673bef0b33c713d",
+    "ontology/releases/0.2.0-rc.4/assessment-context.ttl": "ab6678acd63f408758721d9f224bcd91c838d4684a47dcefd8801b1b6be737d9",
+    "ontology/vendor/gufo-v1.0.0.ttl": "b234c7a22d738b66dc8fcf735146fdbe828122e2a04bec43c8c9b08f34fd9027",
+    "ontology/releases/0.2.0-rc.4/catalog.xml": "59c03c5f03268589794dea087c7b8704731819cfe7c3a724416dab0580e2c5d7",
+    "ontology/releases/0.2.0-rc.4/manifest.json": "977fb62f495b3f79736ae7b3573807a58b7f29e08d050d2b41ab6741214a776d",
+    "testdata/foundational/exposure-scale-v0.2.0-rc.4.ttl": "47579c0c93e5e5a016e9f4b4fb17df1c45da368c514973523538bfba01fc5cc7",
+    "rules/core/exposure-at-v0.2.0-rc.4.rq": "eaa68935ad27cfc1327ff10029f66fa344940f24df57d70ce449b956e1438d21",
+    "shapes/assessment-context-v0.2.0-rc.1.ttl": "799e15764822d6aa955a3ee95564e11b600d312f0e0e2e7e136bebeb2d234e15",
+    "shapes/semantic-identity-v0.2.0-rc.3.ttl": "3a8f73330d139c0a7184b27aa2d1965b740e02481f8f2f07b562055ed06b5152",
+    "shapes/exposure-scale-v0.2.0-rc.4.ttl": "094d820dc73f33ea0e5d4796178ff0b14c1b407cf840dfab684940c9399c0979",
+    "docs/formal/0.2.0-rc.4/entity-inventory.csv": "5bb0263f351343a1bb28bea50051e33b77c8551deed89e637cdf49a8d1e4734e",
+    "foundational/exposure-scale-v0.2.0-rc.4/concept-category-audit.csv": "449ee5bd108a217aa8a6da98f0ad1f6aab115c89fa965c373e24013eda079d51",
+    "foundational/exposure-scale-v0.2.0-rc.4/relation-formal-audit.csv": "e5c829e8cf9a4ca2b4e9c92e8b3798fc7dc1b3b6c18b34bf8df0370ae3bbc71c"
+  },
+  "finite_projection_definition": {
+    "individuals": "Fixed set of named URIRef subjects or objects in the original pinned fixture whose IRI starts urn:semrisk:run8:; never expanded from inferred output",
+    "classes": "Fixed set of named URIRef subjects explicitly typed owl:Class in the eight pinned baseline ontology closure files; extension classes and witnesses are excluded",
+    "pairs": "Materialized rdf:type pairs whose subject and object belong to those fixed sets",
+    "reasoner_options": [
+      "--axiom-generators",
+      "SubClass ClassAssertion",
+      "--include-indirect",
+      "true"
+    ],
+    "claim": "Equality only for this finite original-individual/current-class projection"
+  },
+  "domain_query_definition": "Exact pinned Exposure SELECT semantics, plus exposure rdf:type PharmaceuticalExposure and source rdf:type PharmaceuticalRiskSource; query file frozen by SHA256 before execution",
+  "exact_abox_delta": [
+    [
+      "urn:semrisk:run8:exposureA",
+      "rdf:type",
+      "urn:semrisk:test:extension:pharma:PharmaceuticalExposure"
+    ],
+    [
+      "urn:semrisk:run8:exposureB",
+      "rdf:type",
+      "urn:semrisk:test:extension:pharma:PharmaceuticalExposure"
+    ],
+    [
+      "urn:semrisk:run8:source",
+      "rdf:type",
+      "urn:semrisk:test:extension:pharma:PharmaceuticalRiskSource"
+    ]
+  ],
+  "new_fixture_sha256": {
+    "pharma-extension.ttl": "c83183471a76ae01385aec5823201cf410fc273b7af938836c595b1397bdf5e9",
+    "pharma-exposure-at.rq": "90edf916515d1aeb17cd3ce86e5c530a3718fdb567f8b6feb1cc0e345d8f271e"
+  }
+}
