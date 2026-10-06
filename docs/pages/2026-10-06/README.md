@@ -1,4 +1,4 @@
-# Ontology-only Wiki and Pages publication candidate
+# Published ontology-only Wiki and Pages documentation
 
 Source: `67247f13ba5d0c7d32163f2b3e848af15067d92e`. This publication scope is ontology documentation, not a manuscript, scholarly release, license grant or scientific acceptance.
 
@@ -25,7 +25,11 @@ WebVOWL 1.1.7 is reused; its renderer is not OntoUML. Converter/upload implement
 
 ## Publication and acceptance
 
-This source-controlled candidate alone is not proof of deployment. Exact-head source/build/browser CI and independent technical review precede merge. Pages must be configured to a dedicated reviewed documentation-only branch, then the real URL must return all exact manifest bytes. Wiki pages require published-body readback and real navigation checks. Record these outcomes in a dated receipt after execution, never in advance.
+Published and independently read back on 2026-10-06: [Pages](https://arazsaiearasi3.github.io/SemRisk/) and [Wiki](https://github.com/ArazSaieArasi3/SemRisk/wiki). The [dated receipt](publication-receipt.json) records 41/41 exact Pages files, 8/8 current Wiki bodies, preserved legacy Wiki bodies, successful live desktop/mobile/keyboard tests and retained limits. Requirements 5.9 and 5.10 are accepted only within that bounded scope; no whole issue or package closes.
+
+### Procedure for future documentation revisions
+
+A source-controlled candidate alone is not proof of deployment. Exact-head source/build/browser CI and independent technical review precede merge. Pages must be configured to a dedicated reviewed documentation-only branch, then the real URL must return all exact manifest bytes. Wiki pages require published-body readback and real navigation checks. Record these outcomes in a dated receipt after execution, never in advance.
 
 Independent reader protocols remain NOT_EXECUTED. Human/domain validation, independent transfer, full current SQL parity, complete OntoUML acceptance, manuscript publication and final scholarly release/license/availability decisions remain separate. No whole issue or author requirement is accepted merely because this bundle builds.
 

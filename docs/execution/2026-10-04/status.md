@@ -1,3 +1,16 @@
+# Current revision status — Run 18 live ontology documentation, 2026-10-06
+
+Current stage: **ontology-only Wiki and Pages published and independently verified**. [Report](run-18-report.md), [publication receipt](../../pages/2026-10-06/publication-receipt.json).
+
+- Exact live parity: 41 Pages files, eight current Wiki pages; historical versions preserved.
+- Actual published desktop/mobile Explorer and navigation checks pass. Graph readability remains PARTIAL; independent reader protocols remain NOT_EXECUTED.
+- Accepted bounded requirements **36/90**; whole packages **3/19**. Requirements 5.9 and 5.10 are the only acceptance changes.
+- No whole-issue closure, manuscript publication, SQL parity, final release or license acceptance is inferred.
+
+Prior checkpoints below are historical.
+
+---
+
 # Current revision status — Run 16 offline formal surfaces, 2026-10-06
 
 Current stage: **rc.4 source-bound offline reference and Wiki-draft parity implemented**. [Report](run-16-report.md), [candidate evidence](../../../docs/documentation/rc4/README.md).
