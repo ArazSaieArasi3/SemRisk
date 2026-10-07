@@ -1,13 +1,13 @@
 # Remaining acceptance for the advanced issue set
 
-Checkpoint: scoped acceptance audit against `6aed4e8719b71f799bf71d7a94442456e4f82a20`. The public requirement register remains **40/90**; completed packages are **5/19** after this acceptance reconciliation. #53/#111 are closed; #124/#126 meet scoped completion and will close after durable metadata readback. Other rows below retain their actual residuals. Counts are not scientific-validity or submission-readiness percentages.
+Checkpoint: scoped acceptance audit against `6aed4e8719b71f799bf71d7a94442456e4f82a20`. The public requirement register remains **40/90**; completed packages are **5/19** after this acceptance reconciliation. #53/#111/#124/#126 are closed after their verified scope-specific acceptance. Other rows below retain their actual residuals. Counts are not scientific-validity or submission-readiness percentages.
 
 | Issue | Verified progress | Exact remaining scope |
 |---|---|---|
 | [#115](https://github.com/ArazSaieArasi3/SemRisk/issues/115) | Formal documentation and live parity complete | Only final #55 scholarly-release ref/identity binding and any resulting delta verification. No extra human/native-editor task is invented under this issue. |
-| [#124](https://github.com/ArazSaieArasi3/SemRisk/issues/124) | All own P07 formal-synchronization acceptance met | Ready for closure after durable readback. Broader P06/P08 conformance and #115/#55 scholarly-release identity remain separate owners. |
-| [#33](https://github.com/ArazSaieArasi3/SemRisk/issues/33) | Complete candidate inventory, selected readable panel, asserted subset and four selected behavioral/category probes | Full pattern applicability/conformance, annotation-preserving native-editor route and actual round trip, complete publication readability and final figure/caption binding. Class-as-assignee limitation is explicit; mitigation must be separately justified. |
-| [#126](https://github.com/ArazSaieArasi3/SemRisk/issues/126) | All own bounded metric acceptance met; eight rows and 20 controls source-bound | Ready for closure after durable readback. P09 corpus/expert work is not an input to these selected diagnostics; helper gaps remain results, not unfinished calculations. |
+| [#124](https://github.com/ArazSaieArasi3/SemRisk/issues/124) | All own P07 formal-synchronization acceptance met | Closed after PR151 durable readback. Broader P06/P08 conformance and #115/#55 scholarly-release identity remain separate owners. |
+| [#33](https://github.com/ArazSaieArasi3/SemRisk/issues/33) | Complete candidate inventory, selected readable panel, asserted subset and four selected behavioral/category probes | Full pattern applicability/conformance, annotation-preserving native-editor route and actual round trip, complete publication readability and final figure/caption binding. The default class-as-assignee limitation remains explicit; the separately versioned optional grounded entrypoint supplies bounded mitigation after validation. Full FAP acceptance is not inferred. |
+| [#126](https://github.com/ArazSaieArasi3/SemRisk/issues/126) | All own bounded metric acceptance met; eight rows and 20 controls source-bound | Closed after PR151 durable readback. P09 corpus/expert work is not an input to these selected diagnostics; helper gaps remain results, not unfinished calculations. |
 | [#53](https://github.com/ArazSaieArasi3/SemRisk/issues/53) | Closed: exact private claim calibration and adverse-evidence integration | Recheck on changed claims/evidence. Partial and insufficient statuses remain; no final assurance, release or human-validation claim. |
 | [#111](https://github.com/ArazSaieArasi3/SemRisk/issues/111) | Closed: current headline/body bindings, negative controls and private recheck/intake gate | Recheck changed inputs. #54 final assurance and #51 actual humans remain separate; neither is fabricated. |
 | [#56](https://github.com/ArazSaieArasi3/SemRisk/issues/56) | Source-specific rights notice, current private limits and truthful AI-use draft ready | Author attestations, final SemRisk/third-party reuse and release/availability decisions remain. No AI form signed or submitted. |
@@ -26,3 +26,7 @@ Checkpoint: scoped acceptance audit against `6aed4e8719b71f799bf71d7a94442456e4f
 - Final scholarly version, license/reuse, venue/submission and release decisions remain explicit owner/reviewer gates. No gate is waived to increase closure counts.
 
 #125 SQL parity and #51 external review remain deferred. Only approved ontology-documentation assets are included in the public bundle. Historical repository exposure is not undone by removing a current navigation link.
+
+## Optional repair checkpoint — 7 October 2026
+
+The validation-first grounded ownership candidate preserves frozen defaults and the four completed issue scopes. Its 39 actual checks, including 20 negative controls, are separate from three mocked software-failure controls. It does not certify real-world actor identity, mandate legacy grounding or close full antipattern acceptance. Counts remain 40/90 and 5/19.
