@@ -1,0 +1,121 @@
+{
+  "protocol_version": "1.0",
+  "checkpoint_status": "PREDECLARED_NOT_EXECUTED",
+  "baseline_commit": "6aed4e8719b71f799bf71d7a94442456e4f82a20",
+  "purpose": "Opt-in validation-first ownership entrypoint for explicitly grounded assignments; preserve frozen rc.4 and legacy behavior",
+  "scientific_basis": [
+    "Existing opt-in GroundedRiskResponsibility and named distinct Endurant evidence contract",
+    "SR-REL-028 expresses the participant/mediation side toward an actor/role bearer",
+    "Current gUFO Type and Individual are disjoint; OWL class/individual punning alone is not forbidden"
+  ],
+  "scope": "Only explicitly selected GroundedRiskResponsibility records yield guarded answers; no universal actor identity, real authority or complete FAP-006 guarantee",
+  "input_contract": {
+    "local_format": "Turtle data file; reject owl:imports in data before any reasoner call",
+    "typing": "Require explicit ac:GroundedRiskResponsibility AND SR-CPT-031 for each opted-in assignment; no hidden subclass inference",
+    "assignee": "Explicit gufo:Endurant evidence and membership among gufo:mediates values",
+    "counterpart": "Existing shape requires another explicitly different mediated Endurant and excludes sameAs paths",
+    "risk": "Aboutness target, never invented as a mediated participant",
+    "as_of": "Required four-digit-year dateTime with T separator, seconds and explicit Z or timezone offset within the XML Schema range; parse actual calendar/time validity. No implicit wall-clock default.",
+    "legacy": "Non-opted assignments are not returned and are reported as excluded from grounding scope; frozen query/profile remain unchanged",
+    "no_opted_records": "Return NOT_APPLICABLE with consistency NOT_ASSESSED and no owners field; no consistency or grounded-validation claim is made for a legacy-only graph.",
+    "validation_scope": "Extract the unchanged constraint closure of the temporal ResponsibilityShape and optional GroundedResponsibilityShape; retarget only their targets to the explicitly opted assignment nodes. Add the new membership/type-entry shape. Other unrelated profile targets are not activated.",
+    "consistency_scope": "For applicable input with opted records, the entire supplied local data graph plus pinned current ontology must be consistent before any validated result. Non-opted shape exclusion never excludes that data from this consistency check."
+  },
+  "pipeline": [
+    "Verify pinned source/tool bytes and caller input contract",
+    "Compose frozen temporal and optional grounding shapes with one separately versioned assignee-membership/type-entry constraint; MetaSHACL true, inference none",
+    "On any shape failure, return explicit VALIDATION_FAILED with no owners field",
+    "Check OWL 2 DL and actual HermiT consistency against pinned eight-file closure; reject tool/profile/consistency failures explicitly",
+    "Only after successful validation run the frozen ownership SELECT plus an explicit GroundedRiskResponsibility filter",
+    "Report bounded owner pairs, opted/legacy assignment counts and unknown-start IDs; never equate no answers with universal absence of owners"
+  ],
+  "positive_fixture": "New synthetic person/organization placeholders are Endurants without adopting actor kinds. Two opted assignments overlap at an explicit boundary; a third Endurant supports isolated missing-assignee-mediation control. One legacy assignment remains outside opted scope.",
+  "expected_opted_answers": {
+    "2026-10-04T23:59:59Z": [
+      "person"
+    ],
+    "2026-10-05T00:00:00Z": [
+      "person",
+      "organization"
+    ],
+    "2026-10-06T00:00:00Z": [
+      "organization"
+    ],
+    "2026-10-05T03:30:00+03:30": [
+      "person",
+      "organization"
+    ]
+  },
+  "positive_controls": [
+    "Counterpart mediation alone creates no owner answer",
+    "Benign OWL class/individual punning without gufo Type conflict is not blacklisted",
+    "Valid opted assignment with unknown start is reported but excluded from as-of answers",
+    "Frozen legacy query behavior remains unchanged, including its documented permissive class-token limitation",
+    "Mixed input with a non-opted assignment missing application fields: scoped shapes do not validate it, it contributes no guarded answer, and exclusion is reported. The whole input still must be OWL-consistent.",
+    "Legacy-only inconsistent data still returns NOT_APPLICABLE with consistency NOT_ASSESSED and no owners, not a false validation success."
+  ],
+  "negative_controls": [
+    "Bare known Risk Owner class IRI rejected at explicit Endurant validation",
+    "Same known RoleMixin falsely asserted Endurant passes shape stage but fails actual gUFO consistency",
+    "Missing explicit parent responsibility type rejected before query",
+    "Missing actor typing rejected",
+    "Assignee omitted from mediation while two other Endurants remain: old shape conforms, new membership constraint rejects",
+    "Missing counterpart or explicit differentFrom rejected",
+    "Literal assignee rejected",
+    "Event participant rejected; event falsely typed Endurant rejected through consistency",
+    "sameAs alias cannot be second witness",
+    "Reversed interval and missing timezone rejected",
+    "Missing/unbound/invalid caller asOf rejected explicitly",
+    "Data owl:imports rejected without external fetching",
+    "Invalid cases never return an owners field or misleading empty success answer",
+    "Mixed opted records plus a logically inconsistent non-opted record fail whole-input consistency."
+  ],
+  "toolchain": {
+    "python": "3.12",
+    "rdflib": "7.6.0",
+    "pyshacl": "0.40.1",
+    "robot": "1.9.10",
+    "hermit": "1.4.5.456",
+    "robot_sha256": "16a73c074f3df359a7338a84b4e0788785fe06117f931bb9796e9619ea776105"
+  },
+  "source_sha256": {
+    "ontology/releases/0.2.0-rc.4/core.ttl": "3a18524a597dba048622e1bf617729cd614e83a3c8c505ef8a72ec1861882ba7",
+    "ontology/releases/0.2.0-rc.4/enterprise.ttl": "7a10aba1ed04e67ceb9b8bc641f71dc627ca5e04d73deb7fa1c1a73b4e956aa2",
+    "ontology/releases/0.2.0-rc.4/method.ttl": "3789456bf4cc3421126b1bb989aad526769e1154b65bd660235c280516eb4ff9",
+    "ontology/releases/0.2.0-rc.4/governance.ttl": "a47e94537a0c6df243a13bf326f7b5235c17b10991701f35eb888e2b948102ac",
+    "ontology/releases/0.2.0-rc.4/pharma.ttl": "0930d814bf299dda409a4ea00111ba369e4955c57b24c4e2012733c073bf0a11",
+    "ontology/releases/0.2.0-rc.4/mappings.ttl": "9c2642ca4ed45b54b9643898517e11579fc056e4a525b7a36673bef0b33c713d",
+    "ontology/releases/0.2.0-rc.4/assessment-context.ttl": "ab6678acd63f408758721d9f224bcd91c838d4684a47dcefd8801b1b6be737d9",
+    "ontology/vendor/gufo-v1.0.0.ttl": "b234c7a22d738b66dc8fcf735146fdbe828122e2a04bec43c8c9b08f34fd9027",
+    "ontology/releases/0.2.0-rc.4/catalog.xml": "59c03c5f03268589794dea087c7b8704731819cfe7c3a724416dab0580e2c5d7",
+    "tools/check_rc4_extension.py": "3618ec71ce5657d637e1414c340b23b81f75c880b8cbe17c926b2db8a73f9410",
+    "rules/enterprise/risk-owners-at-v0.2.0-rc.1.rq": "4a4ca63caec6d48ecd7dbe65fb148dd896351f20c59f5fbc0080f40bfd749753",
+    "shapes/assessment-context-v0.2.0-rc.1.ttl": "799e15764822d6aa955a3ee95564e11b600d312f0e0e2e7e136bebeb2d234e15",
+    "shapes/foundational-evidence-v0.2.0-rc.2.ttl": "53cd32b2b7fb59447293de07e8b6b2b8abff932d7237718f60b9bccf88aa0f31",
+    "foundational/responsibility-grounding-contract-v0.1.md": "a2cbea84e5d5fe992a3de050569520e8539fd9ad124cac0806a4bbf24ae6309c",
+    "foundational/revision-2026-10-05/decisions.md": "96a968d1ecd3a64e54ae1095a1ba2a741a0afc6554ac1b8c33cc3f92383032d4",
+    "testdata/foundational/grounded-responsibility-v0.2.0-rc.2.ttl": "3b62ad74ff6849c5e1a9fe446fe5c68dcd75836e6cf0ffd64d52f8a2fab044f4",
+    "evaluation/antipatterns/0.2.0-rc.4/behavioral/results.json": "d83dda716ce9ac14bd39afcc9161ffc974e8fe09f4a60b273458d8f442757c4a"
+  },
+  "retained_limits": [
+    "Legacy profile is not silently strengthened",
+    "No mandatory external actor taxonomy or authoritative actor registry",
+    "No universal real-world identity/authority verification",
+    "No canonical ontology, historical shape/query, SQL, manuscript or deployment changes",
+    "Full FAP-006 and all other full-antipattern verdicts remain NOT_ESTABLISHED"
+  ],
+  "expected_risk_iri": "urn:semrisk:test:grounded-owner:risk",
+  "expected_actor_namespace": "urn:semrisk:test:grounded-owner:",
+  "answer_oracle": "Compare sorted complete (risk, actor) tuples formed from the fixed risk IRI and actor namespace; actor-only membership is insufficient.",
+  "new_artifact_sha256": {
+    "shapes/grounded-ownership-entrypoint-v1.ttl": "168b15e5ef7696f2eb77d38383283d6c73dc6111db156f1242cc706126242dea",
+    "rules/enterprise/risk-owners-grounded-v1.rq": "1d32ca698da24c5c1c7118e04e8f7915cac6cceacc617d59ce69bf9147d6dc36",
+    "evaluation/grounded-ownership/v1/positive.ttl": "4961c7662b480c7bbf39269281717e9d4ccc9c584f7861e17a322ab942a9e4f3"
+  },
+  "mocked_implementation_controls": [
+    "Simulated profile-tool error",
+    "Simulated reasoner-tool error",
+    "Simulated subprocess timeout"
+  ],
+  "mock_boundary": "Mocks verify fail-closed software branches only and are reported separately from actual formal results."
+}

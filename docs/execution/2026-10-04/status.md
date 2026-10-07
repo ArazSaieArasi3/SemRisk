@@ -1,3 +1,7 @@
+## Optional grounded ownership repair — 2026-10-07
+
+A separately versioned, opt-in validation-first ownership entrypoint addresses the observed assignee cases without changing frozen ontology/profile/query defaults. [Executed evidence and limits](../../../evaluation/grounded-ownership/v1/README.md). Current public criteria remain 40/90 and completed packages 5/19; #53/#111/#124/#126 remain completed. Exact-head CI and durable integration are required for this candidate.
+
 ## Scoped acceptance closeout — 2026-10-06
 
 The exact acceptance audit separates completed issue scope from unrelated open release/model gates. [Acceptance record](scoped-closeout-2026-10-06.json) and [remaining issue guide](remaining-advanced-issues-20261006.md).

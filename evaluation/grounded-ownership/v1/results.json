@@ -1,0 +1,247 @@
+{
+  "mocked_software_controls": [
+    {
+      "id": "mock-profile-error",
+      "passed": true,
+      "kind": "SIMULATED_TOOL_FAILURE_ONLY",
+      "stage": "OWL_PROFILE"
+    },
+    {
+      "id": "mock-reasoner-error",
+      "passed": true,
+      "kind": "SIMULATED_TOOL_FAILURE_ONLY",
+      "stage": "TOOLCHAIN"
+    },
+    {
+      "id": "mock-timeout",
+      "passed": true,
+      "kind": "SIMULATED_TOOL_FAILURE_ONLY",
+      "stage": "TOOLCHAIN"
+    }
+  ],
+  "result": "PASS_OPT_IN_VALIDATION_FIRST_OWNERSHIP",
+  "protocol_sha256": "337459943ef5c1b12eb0cd4be106ef3336ea379e90fa2fda0ef377b7bcbde505",
+  "tests": [
+    {
+      "id": "QUERY_ADAPTER",
+      "passed": true,
+      "detail": "Only the explicit opt-in filter and warning header are added to the frozen SELECT."
+    },
+    {
+      "id": "POSITIVE_EXACT_TUPLES_1",
+      "passed": true,
+      "detail": "Exact full risk/actor tuples; co-ownership and half-open boundaries preserved at 2026-10-04T23:59:59Z"
+    },
+    {
+      "id": "LEGACY_AND_COUNTERPART_EXCLUDED_1",
+      "passed": true,
+      "detail": "Neither ungrounded legacy class token nor mediation-only board appears."
+    },
+    {
+      "id": "POSITIVE_EXACT_TUPLES_2",
+      "passed": true,
+      "detail": "Exact full risk/actor tuples; co-ownership and half-open boundaries preserved at 2026-10-05T00:00:00Z"
+    },
+    {
+      "id": "LEGACY_AND_COUNTERPART_EXCLUDED_2",
+      "passed": true,
+      "detail": "Neither ungrounded legacy class token nor mediation-only board appears."
+    },
+    {
+      "id": "POSITIVE_EXACT_TUPLES_3",
+      "passed": true,
+      "detail": "Exact full risk/actor tuples; co-ownership and half-open boundaries preserved at 2026-10-06T00:00:00Z"
+    },
+    {
+      "id": "LEGACY_AND_COUNTERPART_EXCLUDED_3",
+      "passed": true,
+      "detail": "Neither ungrounded legacy class token nor mediation-only board appears."
+    },
+    {
+      "id": "POSITIVE_EXACT_TUPLES_4",
+      "passed": true,
+      "detail": "Exact full risk/actor tuples; co-ownership and half-open boundaries preserved at 2026-10-05T03:30:00+03:30"
+    },
+    {
+      "id": "LEGACY_AND_COUNTERPART_EXCLUDED_4",
+      "passed": true,
+      "detail": "Neither ungrounded legacy class token nor mediation-only board appears."
+    },
+    {
+      "id": "LEGACY_BEHAVIOR_UNCHANGED",
+      "passed": true,
+      "detail": "Frozen unguarded query retains its documented permissive legacy result."
+    },
+    {
+      "id": "BENIGN_OWL_PUNNING_ALLOWED",
+      "passed": true,
+      "detail": "OWL class declaration alone is not a blacklist; no conflicting gUFO Type commitment is invented."
+    },
+    {
+      "id": "UNKNOWN_START_REPORTED",
+      "passed": true,
+      "detail": "Missing start is reported and does not fabricate a current owner."
+    },
+    {
+      "id": "MIXED_LEGACY_SCOPE",
+      "passed": true,
+      "detail": "Unrelated non-opted application incompleteness is outside shape targets; whole data still passes consistency."
+    },
+    {
+      "id": "LEGACY_ONLY_NOT_APPLICABLE",
+      "passed": true,
+      "detail": "Legacy-only graph is not labeled grounded and supplies no owner result."
+    },
+    {
+      "id": "INCONSISTENT_LEGACY_NOT_ASSESSED",
+      "passed": true,
+      "detail": "No consistency claim or owner answer is made for inapplicable legacy-only data."
+    },
+    {
+      "id": "N_MIXED_LEGACY_INCONSISTENCY",
+      "passed": true,
+      "detail": "Explicit CONSISTENCY failure; no ownership query or owners field."
+    },
+    {
+      "id": "SHAPE_TARGET_SCOPE",
+      "passed": true,
+      "detail": "Only opted nodes are targeted; existing constraint closures are copied unchanged."
+    },
+    {
+      "id": "N_ASSIGNEE_NOT_MEDIATED",
+      "passed": true,
+      "detail": "Explicit SHACL failure; no ownership query or owners field."
+    },
+    {
+      "id": "MEMBERSHIP_REPAIR_ISOLATED",
+      "passed": true,
+      "detail": "Old opted shapes conform; the separately versioned participant constraint rejects the exact missing assignee membership."
+    },
+    {
+      "id": "N_BARE_ROLE_CLASS",
+      "passed": true,
+      "detail": "Explicit SHACL failure; no ownership query or owners field."
+    },
+    {
+      "id": "N_FORGED_ROLE_ENDURANT",
+      "passed": true,
+      "detail": "Explicit CONSISTENCY failure; no ownership query or owners field."
+    },
+    {
+      "id": "N_MISSING_EXPLICIT_PARENT",
+      "passed": true,
+      "detail": "Explicit INPUT_CONTRACT failure; no ownership query or owners field."
+    },
+    {
+      "id": "N_MISSING_PARTICIPANT_TYPE",
+      "passed": true,
+      "detail": "Explicit SHACL failure; no ownership query or owners field."
+    },
+    {
+      "id": "N_MISSING_COUNTERPART",
+      "passed": true,
+      "detail": "Explicit SHACL failure; no ownership query or owners field."
+    },
+    {
+      "id": "N_MISSING_DISTINCTNESS",
+      "passed": true,
+      "detail": "Explicit SHACL failure; no ownership query or owners field."
+    },
+    {
+      "id": "N_LITERAL_ASSIGNEE",
+      "passed": true,
+      "detail": "Explicit SHACL failure; no ownership query or owners field."
+    },
+    {
+      "id": "N_EVENT_PARTICIPANT",
+      "passed": true,
+      "detail": "Explicit SHACL failure; no ownership query or owners field."
+    },
+    {
+      "id": "N_FORGED_EVENT_ENDURANT",
+      "passed": true,
+      "detail": "Explicit CONSISTENCY failure; no ownership query or owners field."
+    },
+    {
+      "id": "N_SAMEAS_ALIAS",
+      "passed": true,
+      "detail": "Explicit SHACL failure; no ownership query or owners field."
+    },
+    {
+      "id": "N_REVERSED_INTERVAL",
+      "passed": true,
+      "detail": "Explicit SHACL failure; no ownership query or owners field."
+    },
+    {
+      "id": "N_DATA_TIMEZONE",
+      "passed": true,
+      "detail": "Explicit SHACL failure; no ownership query or owners field."
+    },
+    {
+      "id": "N_ASOF_1",
+      "passed": true,
+      "detail": "Invalid or missing caller time fails explicitly before querying."
+    },
+    {
+      "id": "N_ASOF_2",
+      "passed": true,
+      "detail": "Invalid or missing caller time fails explicitly before querying."
+    },
+    {
+      "id": "N_ASOF_3",
+      "passed": true,
+      "detail": "Invalid or missing caller time fails explicitly before querying."
+    },
+    {
+      "id": "N_ASOF_4",
+      "passed": true,
+      "detail": "Invalid or missing caller time fails explicitly before querying."
+    },
+    {
+      "id": "N_DATA_IMPORT",
+      "passed": true,
+      "detail": "Explicit INPUT_CONTRACT failure; no ownership query or owners field."
+    },
+    {
+      "id": "NO_IMPORT_REASONER_CALL",
+      "passed": true,
+      "detail": "Rejected imports never reach the reasoner."
+    },
+    {
+      "id": "CLI_VALIDATED_RESULT",
+      "passed": true,
+      "detail": "Actual CLI returns validated bounded owner pairs."
+    },
+    {
+      "id": "N_CLI_INVALID_NO_OWNERS",
+      "passed": true,
+      "detail": "Actual CLI rejection is explicit, never an empty successful owner result."
+    }
+  ],
+  "total": 39,
+  "passed": 39,
+  "negative_controls": 20,
+  "legacy_bytes_unchanged": true,
+  "default_profile_changed": false,
+  "full_FAP006_status": "NOT_ESTABLISHED",
+  "scope": "Only the explicitly opted, validated and consistent supplied records; no real-world identity or authority guarantee.",
+  "source_sha256": {
+    "ontology/releases/0.2.0-rc.4/core.ttl": "3a18524a597dba048622e1bf617729cd614e83a3c8c505ef8a72ec1861882ba7",
+    "ontology/releases/0.2.0-rc.4/enterprise.ttl": "7a10aba1ed04e67ceb9b8bc641f71dc627ca5e04d73deb7fa1c1a73b4e956aa2",
+    "ontology/releases/0.2.0-rc.4/method.ttl": "3789456bf4cc3421126b1bb989aad526769e1154b65bd660235c280516eb4ff9",
+    "ontology/releases/0.2.0-rc.4/governance.ttl": "a47e94537a0c6df243a13bf326f7b5235c17b10991701f35eb888e2b948102ac",
+    "ontology/releases/0.2.0-rc.4/pharma.ttl": "0930d814bf299dda409a4ea00111ba369e4955c57b24c4e2012733c073bf0a11",
+    "ontology/releases/0.2.0-rc.4/mappings.ttl": "9c2642ca4ed45b54b9643898517e11579fc056e4a525b7a36673bef0b33c713d",
+    "ontology/releases/0.2.0-rc.4/assessment-context.ttl": "ab6678acd63f408758721d9f224bcd91c838d4684a47dcefd8801b1b6be737d9",
+    "ontology/vendor/gufo-v1.0.0.ttl": "b234c7a22d738b66dc8fcf735146fdbe828122e2a04bec43c8c9b08f34fd9027",
+    "ontology/releases/0.2.0-rc.4/catalog.xml": "59c03c5f03268589794dea087c7b8704731819cfe7c3a724416dab0580e2c5d7",
+    "tools/check_rc4_extension.py": "3618ec71ce5657d637e1414c340b23b81f75c880b8cbe17c926b2db8a73f9410",
+    "rules/enterprise/risk-owners-at-v0.2.0-rc.1.rq": "4a4ca63caec6d48ecd7dbe65fb148dd896351f20c59f5fbc0080f40bfd749753",
+    "shapes/assessment-context-v0.2.0-rc.1.ttl": "799e15764822d6aa955a3ee95564e11b600d312f0e0e2e7e136bebeb2d234e15",
+    "shapes/foundational-evidence-v0.2.0-rc.2.ttl": "53cd32b2b7fb59447293de07e8b6b2b8abff932d7237718f60b9bccf88aa0f31",
+    "foundational/responsibility-grounding-contract-v0.1.md": "a2cbea84e5d5fe992a3de050569520e8539fd9ad124cac0806a4bbf24ae6309c",
+    "foundational/revision-2026-10-05/decisions.md": "96a968d1ecd3a64e54ae1095a1ba2a741a0afc6554ac1b8c33cc3f92383032d4",
+    "testdata/foundational/grounded-responsibility-v0.2.0-rc.2.ttl": "3b62ad74ff6849c5e1a9fe446fe5c68dcd75836e6cf0ffd64d52f8a2fab044f4",
+    "evaluation/antipatterns/0.2.0-rc.4/behavioral/results.json": "d83dda716ce9ac14bd39afcc9161ffc974e8fe09f4a60b273458d8f442757c4a"
+  }
+}

@@ -1,0 +1,20 @@
+@prefix gown: <urn:semrisk:shape:grounded-ownership:v1:> .
+@prefix ac: <urn:semrisk:profile:assessment-context:> .
+@prefix sr: <urn:semrisk:entity:> .
+@prefix gufo: <http://purl.org/nemo/gufo#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+# Optional application entry constraint, not a change to frozen rc.4 defaults.
+gown:OptedAssignmentShape a sh:NodeShape ;
+  sh:targetClass ac:GroundedRiskResponsibility ;
+  sh:class sr:SR-CPT-031 ;
+  sh:sparql [
+    sh:message "GOWN_ASSIGNEE_MEDIATION: each assignee must itself be explicitly mediated by the opted assignment." ;
+    sh:select """
+      PREFIX sr: <urn:semrisk:entity:>
+      PREFIX gufo: <http://purl.org/nemo/gufo#>
+      SELECT $this ?value WHERE {
+        $this sr:SR-REL-028 ?value .
+        FILTER NOT EXISTS { $this gufo:mediates ?value }
+      }
+    """
+  ] .
