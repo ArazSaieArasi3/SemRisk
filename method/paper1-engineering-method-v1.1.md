@@ -1,5 +1,7 @@
 # SemRisk engineering method v1.1 — 2026-10-05
 
+> **Prospective method update (2026-10-08):** The author approved [the ontology requirements engineering policy](ontology-requirements-policy-2026-10-08.md): primary SABiO adoption for continuing work, ORSD organization, semantic statements/CQs/criteria, optional EARS, UFO/OntoUML formalization and separately assessed relational mappings. The historical process and execution evidence below remain unchanged; this dated decision does not imply completed migration or validation.
+
 Status: accepted **method/reporting contract**, not a claim that all evaluation or publication stages are finished. This revision retains the actually executed OGCM-RF process and explicitly compares it with SABiO (Falbo, 2014). SABiO is a methodological reference; it is not retroactively named as the process followed from project inception. No claim to the newest SABiOx profile is made.
 
 ## Three distinct roles
